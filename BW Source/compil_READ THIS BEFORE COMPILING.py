@@ -1,0 +1,1 @@
+## Please note that you will need to edit the compile.bat file before compiling. Right click on it and choose to edit it with Notepad++ (or your other editor), then edit the various folder adresses there to match your setup.
