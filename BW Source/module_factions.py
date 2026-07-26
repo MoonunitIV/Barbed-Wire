@@ -38,6 +38,7 @@ factions = [
   ("culture_5",  "{!}culture_5", 0, 0.9, [], []),
   ("culture_6",  "{!}culture_6", 0, 0.9, [], []),
   ("culture_7",  "{!}culture_7", 0, 0.9, [], []),
+  ("culture_8",  "{!}culture_8", 0, 0.9, [], []),
   ("culture_irregulars",  "{!}culture_irregulars", 0, 0.9, [], []),
   ("culture_throd",  "{!}culture_throd", 0, 0.9, [], []),
 
@@ -68,8 +69,11 @@ factions = [
   ("kingdom_7",  "Itami Castedom",  0, 0.9, [("outlaws",-0.05),("peasant_rebels", -0.1),("deserters", -0.02),("mountain_bandits", -0.05),("forest_bandits", -0.05)],[],
   0x3333FF), #blue
 ###
+  ("kingdom_8",  "Barshide Confederacy",  0, 0.9, [("outlaws",-0.05),("peasant_rebels", -0.1),("deserters", -0.02),("mountain_bandits", -0.05),("forest_bandits", -0.05)],[],
+  0x64bc8e), #cyan
+###
   ("irregulars",  "Irregulars",    0, 0.9, [("outlaws",-0.05),("peasant_rebels", -0.1),("deserters", -0.1),("mountain_bandits", -0.05),("forest_bandits", -0.05)],[],
-  0xFFFFFF), #black
+  0x000000), #black
 ###
   ("theocracy",  "Theocracy of Throd",    0, 0.9, [("outlaws",-0.05),("peasant_rebels", -0.1),("deserters", -0.1),("mountain_bandits", -0.05),("forest_bandits", -0.05),("mutants", 0.30),("infected", 0.30),],[],
   0xFF0088), #pink
@@ -84,6 +88,7 @@ factions = [
 ##Vitzland Territories
 ##Trezzo Republic
 ##Itami Castedom
+##Barshide Confederacy
 ##Irregulars
 ##Theocracy of Throd
 ##Other

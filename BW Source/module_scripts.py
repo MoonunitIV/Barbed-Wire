@@ -285,6 +285,14 @@ scripts = [
       (faction_set_slot, "fac_culture_7", slot_faction_tier_4_troop, "trp_f7_tier_4"),
       (faction_set_slot, "fac_culture_7", slot_faction_tier_5_troop, "trp_f7_tier_5"),
       (faction_set_slot, "fac_culture_7", slot_faction_terror_troop, "trp_f7_terror"),
+      
+      (faction_set_slot, "fac_culture_8", slot_faction_tier_0_troop, "trp_f8_tier_0"),
+      (faction_set_slot, "fac_culture_8", slot_faction_tier_1_troop, "trp_f8_tier_1"),
+      (faction_set_slot, "fac_culture_8", slot_faction_tier_2_troop, "trp_f8_tier_2"),
+      (faction_set_slot, "fac_culture_8", slot_faction_tier_3_troop, "trp_f8_tier_3"),
+      (faction_set_slot, "fac_culture_8", slot_faction_tier_4_troop, "trp_f8_tier_4"),
+      (faction_set_slot, "fac_culture_8", slot_faction_tier_5_troop, "trp_f8_tier_5"),
+      (faction_set_slot, "fac_culture_8", slot_faction_terror_troop, "trp_f8_terror"),
 #
       (faction_set_slot, "fac_culture_irregulars", slot_faction_tier_0_troop, "trp_irregular_tier_0"),
       (faction_set_slot, "fac_culture_irregulars", slot_faction_tier_1_troop, "trp_irregular_tier_1"),
@@ -350,6 +358,13 @@ scripts = [
       (faction_set_slot, "fac_culture_7", slot_faction_village_walker_female_troop, "trp_town_walker_7w"),
       (faction_set_slot, "fac_culture_7", slot_faction_town_spy_male_troop, "trp_spy_walker_7"),
       (faction_set_slot, "fac_culture_7", slot_faction_town_spy_female_troop, "trp_spy_walker_7w"),
+      
+      (faction_set_slot, "fac_culture_8", slot_faction_town_walker_male_troop, "trp_town_walker_7"),
+      (faction_set_slot, "fac_culture_8", slot_faction_town_walker_female_troop, "trp_town_walker_7w"),
+      (faction_set_slot, "fac_culture_8", slot_faction_village_walker_male_troop, "trp_town_walker_7"),
+      (faction_set_slot, "fac_culture_8", slot_faction_village_walker_female_troop, "trp_town_walker_7w"),
+      (faction_set_slot, "fac_culture_8", slot_faction_town_spy_male_troop, "trp_spy_walker_7"),
+      (faction_set_slot, "fac_culture_8", slot_faction_town_spy_female_troop, "trp_spy_walker_7w"),
 #
       (faction_set_slot, "fac_culture_irregulars", slot_faction_town_walker_male_troop, "trp_town_walker_2"),
       (faction_set_slot, "fac_culture_irregulars", slot_faction_town_walker_female_troop, "trp_town_walker_2w"),
@@ -399,6 +414,10 @@ scripts = [
       (faction_set_slot, "fac_kingdom_7",  slot_faction_culture, "fac_culture_7"),
       (faction_set_slot, "fac_kingdom_7",  slot_faction_leader, "trp_kingdom_7_lord"),
       (troop_set_slot, "trp_kingdom_7_lord", slot_troop_renown, 1200),
+      
+      (faction_set_slot, "fac_kingdom_8",  slot_faction_culture, "fac_culture_8"),
+      (faction_set_slot, "fac_kingdom_8",  slot_faction_leader, "trp_kingdom_8_lord"),
+      (troop_set_slot, "trp_kingdom_8_lord", slot_troop_renown, 1200),
       
       (faction_set_slot, "fac_irregulars",  slot_faction_culture, "fac_culture_irregulars"),
       (faction_set_slot, "fac_irregulars",  slot_faction_leader, "trp_irregulars_lord"),
@@ -619,8 +638,9 @@ scripts = [
       (faction_set_slot, "fac_kingdom_5", slot_faction_banner, "mesh_banner_kingdom_e"),
       (faction_set_slot, "fac_kingdom_6", slot_faction_banner, "mesh_banner_kingdom_f"),
       (faction_set_slot, "fac_kingdom_7", slot_faction_banner, "mesh_banner_kingdom_g"),
-      (faction_set_slot, "fac_irregulars", slot_faction_banner, "mesh_banner_kingdom_h"),
-      (faction_set_slot, "fac_theocracy", slot_faction_banner, "mesh_banner_kingdom_i"),
+      (faction_set_slot, "fac_kingdom_8", slot_faction_banner, "mesh_banner_kingdom_h"),
+      (faction_set_slot, "fac_irregulars", slot_faction_banner, "mesh_banner_kingdom_i"),
+      (faction_set_slot, "fac_theocracy", slot_faction_banner, "mesh_banner_kingdom_j"),
 
       (try_for_range, ":cur_faction", npc_kingdoms_begin, npc_kingdoms_end),
         (faction_get_slot, ":cur_faction_king", ":cur_faction", slot_faction_leader),
@@ -809,7 +829,17 @@ scripts = [
       (call_script, "script_give_center_to_faction_aux", "p_town_20", "fac_kingdom_5"),#Altenkirchen = Vitzland Territories
       (call_script, "script_give_center_to_faction_aux", "p_town_21", "fac_kingdom_5"),#Hoogsel = Vitzland Territories
       (call_script, "script_give_center_to_faction_aux", "p_town_22", "fac_kingdom_5"),#Kreuzbach = Vitzland Territories
-      #(call_script, "script_give_center_to_faction_aux", "p_town_23", "fac_kingdom_2"),#Rixcester = Entenaii Dominion
+      (call_script, "script_give_center_to_faction_aux", "p_town_23", "fac_kingdom_2"),#Rixcester = Entenaii Dominion
+      (call_script, "script_give_center_to_faction_aux", "p_town_24", "fac_kingdom_2"),#Tarrin = Entenaii Dominion
+      (call_script, "script_give_center_to_faction_aux", "p_town_25", "fac_kingdom_2"),#Monmouth = Entenaii Dominion
+      (call_script, "script_give_center_to_faction_aux", "p_town_26", "fac_kingdom_2"),#Bredwardine = Entenaii Dominion
+      (call_script, "script_give_center_to_faction_aux", "p_town_27", "fac_kingdom_2"),#Glenarm = Entenaii Dominion
+      (call_script, "script_give_center_to_faction_aux", "p_town_28", "fac_kingdom_5"),#Durrwich = Vitzland Territories
+      (call_script, "script_give_center_to_faction_aux", "p_town_29", "fac_kingdom_2"),#Aberuthven = Entenaii Dominion
+      (call_script, "script_give_center_to_faction_aux", "p_town_30", "fac_kingdom_4"),#Zalchik = Molvat-Berchav Union
+      (call_script, "script_give_center_to_faction_aux", "p_town_31", "fac_kingdom_4"),#Moknovci = Molvat-Berchav Union
+      (call_script, "script_give_center_to_faction_aux", "p_town_32", "fac_kingdom_6"),#Pescadena = Trezzo Republic
+      (call_script, "script_give_center_to_faction_aux", "p_town_33", "fac_kingdom_3"),#Domhan Briomhar = Kingdom of Galvae
 
       #Now give capitals to leaders
       (call_script, "script_give_center_to_lord", "p_town_10",  "trp_kingdom_4_lord", 0),#Sely - Tzar Molvat
@@ -821,6 +851,7 @@ scripts = [
       
       #
       (call_script, "script_give_center_to_lord", "p_castle_21", "trp_kingdom_7_lord", 0),#Itami Embassy - Kytra Inu-do
+      (call_script, "script_give_center_to_lord", "p_castle_22", "trp_kingdom_8_lord", 0),#Barshide_Stronghold - Alran Guriam
       (call_script, "script_give_center_to_lord", "p_castle_19", "trp_irregulars_lord", 0),#Irregular_Fort - Leader Tredas
       (call_script, "script_give_center_to_lord", "p_castle_20", "trp_throd_lord", 0),#War_Church_of_Throd - Throd
       #
@@ -845,11 +876,13 @@ scripts = [
       (call_script, "script_give_center_to_faction_aux", "p_castle_17", "fac_kingdom_6"),#Trezzo Republic
       (call_script, "script_give_center_to_faction_aux", "p_castle_18", "fac_kingdom_6"),#Trezzo Republic
       #
-      (call_script, "script_give_center_to_faction_aux", "p_castle_21", "fac_kingdom_7"),#Itami Castedom
-      #
       (call_script, "script_give_center_to_faction_aux", "p_castle_19", "fac_irregulars"),#Irregulars
       (call_script, "script_give_center_to_faction_aux", "p_castle_20", "fac_theocracy"),#Throd
       #
+      (call_script, "script_give_center_to_faction_aux", "p_castle_21", "fac_kingdom_7"),#Itami Castedom
+      (call_script, "script_give_center_to_faction_aux", "p_castle_22", "fac_kingdom_8"),#Barshide Confederacy
+      #
+      
       
       #Add home centers for claimants
       # (troop_set_slot, "trp_kingdom_1_pretender", slot_troop_home, "p_town_4"),#Lady Isolle - Greenfield
@@ -862,12 +895,13 @@ scripts = [
       #Also the primary six towns:
       (troop_set_slot, "trp_kingdom_1_lord", slot_troop_home, "p_town_6"),#Emperor Qillian - Millhallow
       (troop_set_slot, "trp_kingdom_2_lord", slot_troop_home, "p_town_1"),#Governor-General Rosthaim - Aberstwyth
-      (troop_set_slot, "trp_kingdom_6_lord", slot_troop_home, "p_town_8"),#Doge Volsoron - Castellalvano
-      (troop_set_slot, "trp_kingdom_4_lord", slot_troop_home, "p_town_10"),#Tzar Molvat - Sely
-      (troop_set_slot, "trp_kingdom_5_lord", slot_troop_home, "p_town_19"),#Kaiser Von Ustabier - Helhoven
       (troop_set_slot, "trp_kingdom_3_lord", slot_troop_home, "p_town_16"),#King Seafra O Ceanndubhain - Mag Suaimhnis
-      #
+      (troop_set_slot, "trp_kingdom_4_lord", slot_troop_home, "p_town_10"),#Tzar Molvat - Sely
+      (troop_set_slot, "trp_kingdom_5_lord", slot_troop_home, "p_town_19"),#Kaiser Von Ustabier - Helhoven  
+      (troop_set_slot, "trp_kingdom_6_lord", slot_troop_home, "p_town_8"),#Doge Volsoron - Castellalvano
       (troop_set_slot, "trp_kingdom_7_lord", slot_troop_home, "p_castle_21"),#Kytra Inu-do - Itami Embassy
+      (troop_set_slot, "trp_kingdom_8_lord", slot_troop_home, "p_castle_22"),#Alran Guriam - Barshide Confederacy
+      #
       (troop_set_slot, "trp_irregulars_lord", slot_troop_home, "p_castle_19"),#Leader Tredas - Irregular_Fort
       (troop_set_slot, "trp_throd_lord", slot_troop_home, "p_castle_20"),#Throd - War_Church_of_Throd
       #
@@ -951,6 +985,8 @@ scripts = [
       #Trezzo Republic claims null
       #
       #Itami Castedom claims null
+      #
+      #Barshide Confederacy claims null
 
       (call_script, "script_update_village_market_towns"),
 
@@ -1325,6 +1361,7 @@ scripts = [
       (faction_set_slot, "fac_kingdom_5", slot_faction_adjective, "str_kingdom_5_adjective"),
       (faction_set_slot, "fac_kingdom_6", slot_faction_adjective, "str_kingdom_6_adjective"),
       (faction_set_slot, "fac_kingdom_7", slot_faction_adjective, "str_kingdom_7_adjective"),
+      (faction_set_slot, "fac_kingdom_8", slot_faction_adjective, "str_kingdom_8_adjective"),
       (faction_set_slot, "fac_irregulars", slot_faction_adjective, "str_irregulars_adjective"),
       (faction_set_slot, "fac_theocracy", slot_faction_adjective, "str_theocracy_adjective"),
 
@@ -8355,16 +8392,32 @@ scripts = [
       (else_try),
         (this_or_next|eq, ":item_no", "itm_brassknuckles"),
         (this_or_next|eq, ":item_no", "itm_renfieldgauntlet"),
+        (this_or_next|eq, ":item_no", "itm_ironknuckles"),
+        (this_or_next|eq, ":item_no", "itm_studdedknuckles"),
+        (this_or_next|eq, ":item_no", "itm_axeknuckles"),
+        (this_or_next|eq, ":item_no", "itm_clawknuckles"),
         (eq, ":item_no", "itm_powerfist"),
         (try_begin),
           (eq, ":extra_text_id", 0),
-           (try_begin),
-            (this_or_next|eq, ":item_no", "itm_renfieldgauntlet"),
+          (try_begin),
+           (eq, ":item_no", "itm_ironknuckles"),
+            (assign, reg1, 10),
+          (else_try),
             (eq, ":item_no", "itm_brassknuckles"),
             (assign, reg1, 15),
           (else_try),
-            (eq, ":item_no", "itm_powerfist"),
+            (eq, ":item_no", "itm_studdedknuckles"),
+            (assign, reg1, 20), 
+          (else_try),
+            (this_or_next|eq, ":item_no", "itm_axeknuckles"),
+            (eq, ":item_no", "itm_clawknuckles"),
+            (assign, reg1, 25), 
+          (else_try), 
+            (this_or_next|eq, ":item_no", "itm_renfieldgauntlet"),
             (assign, reg1, 30),
+          (else_try),
+            (eq, ":item_no", "itm_powerfist"),
+            (assign, reg1, 45),
           (try_end),
           (set_result_string, "@Punches do +{reg1} extra damage"),
           (set_trigger_result, 0),
@@ -57824,7 +57877,10 @@ scripts = [
 			(str_store_string, ":string_register", "@tezino"),#Republic
         (else_try),
 			(eq, ":speaker_faction", "fac_kingdom_7"),
-			(str_store_string, ":string_register", "@zyke"),#Republic
+			(str_store_string, ":string_register", "@zyke"),#Itami
+        (else_try),
+			(eq, ":speaker_faction", "fac_kingdom_8"),
+			(str_store_string, ":string_register", "@naki"),#Barshide
 		(else_try),
 			(str_store_string, ":string_register", "@whisky"),#Default
 		(try_end),
@@ -61748,7 +61804,27 @@ Born at {s43}^Contact in {s44} of the {s45}.^\
             # (store_sub, ":result", startup_merchants_begin, ":direction"),
           # (try_end),
         (else_try), #sarranids
-          (is_between, ":troop_no", "trp_f6_tier_1", "trp_looter"),
+          (is_between, ":troop_no", "trp_f8_tier_1", "trp_looter"),
+          (str_store_string, ":sreg", "str_kingdom_6_adjective"),
+          (try_begin),
+            (eq, ":direction", -1),
+            (assign, ":result", "trp_f8_tier_1"),
+          (else_try),
+            (eq, ":direction", 1),
+            (store_sub, ":result", "trp_looter", ":direction"),
+          (try_end),
+        (else_try),
+          (is_between, ":troop_no", "trp_f7_tier_1", "trp_f8_tier_1"),
+          (str_store_string, ":sreg", "str_kingdom_6_adjective"),
+          (try_begin),
+            (eq, ":direction", -1),
+            (assign, ":result", "trp_f7_tier_1"),
+          (else_try),
+            (eq, ":direction", 1),
+            (store_sub, ":result", "trp_looter", ":direction"),
+          (try_end),
+        (else_try), #sarranids
+          (is_between, ":troop_no", "trp_f6_tier_1", "trp_f7_tier_1"),
           (str_store_string, ":sreg", "str_kingdom_6_adjective"),
           (try_begin),
             (eq, ":direction", -1),
@@ -63047,11 +63123,12 @@ Born at {s43}^Contact in {s44} of the {s45}.^\
     # (try_end),
     (faction_set_slot, "fac_kingdom_1", slot_faction_gender_ratio, 20),
     (faction_set_slot, "fac_kingdom_2", slot_faction_gender_ratio, 20),
-    (faction_set_slot, "fac_kingdom_3", slot_faction_gender_ratio, 20),
+    (faction_set_slot, "fac_kingdom_3", slot_faction_gender_ratio, 30),
     (faction_set_slot, "fac_kingdom_4", slot_faction_gender_ratio, 40),
     (faction_set_slot, "fac_kingdom_5", slot_faction_gender_ratio, 20),
     (faction_set_slot, "fac_kingdom_6", slot_faction_gender_ratio, 20),
     (faction_set_slot, "fac_kingdom_7", slot_faction_gender_ratio, 20),
+    (faction_set_slot, "fac_kingdom_8", slot_faction_gender_ratio, 20),
     (faction_set_slot, "fac_irregulars", slot_faction_gender_ratio, 50),
     (faction_set_slot, "fac_theocracy", slot_faction_gender_ratio, 20),
 

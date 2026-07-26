@@ -100,7 +100,6 @@ vitzland_lmg_hip
 shadow_lmg_hip
 lmg_type_99_hip
 mg_gatling_cannon
-mg_heavy_1
 pistol_plasma
 pistol_plasma_heavy
 rifle_plasma
@@ -132,7 +131,6 @@ recurve_bow_alt_mode
 hunting_bow_alt_mode
 skirmisher_bow_alt_mode
 rider_bow_alt_mode
-reflex_bow
 reflex_bow_alt_mode
 long_bow_alt_mode
 ossi_bow_alt
@@ -285,7 +283,6 @@ formal
 hazard_gloves
 galvae_tanfen_gauntlets
 itami_terror_gauntlets
-itami_kytra_gauntlets
 backpack_ammo
 backpack_1
 backpack_1b
@@ -318,18 +315,20 @@ republican_uniform_doge
 itami_uniform_officer
 itami_armour_officer
 itami_uniform_kytra
-itami_armour_kytra
 throd_robe_purple
 throd_robe_god
 galvae_royal_dress
 union_civ_4
 union_civ_rich_1
 union_civ_rich_2
+itami_civ_1
+itami_civ_2
 adventurer_dress_1
 adventurer_dress_2
 adventurer_dress_3
 adventurer_dress_4
 adventurer_dress_armour_1
+phalanx_flamer_1
 mercenary_coat_2
 mercenary_coat_3
 mercenary_armour
@@ -368,8 +367,6 @@ headband_pink_scarf
 hood_with_xm17
 hood_white_helmet_black
 hood_red_helmet_black
-jackal_helm_1
-jackal_helm_1b
 metal_combat_helmet_medic
 steel_helmet_2_face_cover
 steel_helmet_3_face_cover
@@ -434,6 +431,7 @@ scottish_claymore_alt_mode
 ravensbeak_alt_mode
 flamberge_alt_mode
 estoc_alt_mode
+tagan
 lowlander_sword_alt_mode
 battleaxe1
 battleaxe2
@@ -616,6 +614,7 @@ ai_dominion_assault_rifle
 ai_galvae_assault_rifle
 ai_molvat_assault_rifle
 ai_berchav_assault_rifle
+ai_vitzland_assault_rifle
 ai_assault_ak47_black
 ai_assault_ak47_silver
 ai_assault_ak47_gold
@@ -836,6 +835,7 @@ ai_2h_dominion_assault_rifle
 ai_2h_galvae_assault_rifle
 ai_2h_molvat_assault_rifle
 ai_2h_berchav_assault_rifle
+ai_2h_vitzland_assault_rifle
 ai_2h_assault_ak47_black
 ai_2h_assault_ak47_silver
 ai_2h_assault_ak47_gold

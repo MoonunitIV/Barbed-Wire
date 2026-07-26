@@ -169,6 +169,12 @@ party_templates = [
   ("kingdom_7_reinforcements_d", "{!}kingdom_7_reinforcements_d", 0, 0, fac_commoners, 0, [(trp_f7_tier_0,20,50),(trp_f7_tier_5,2,4),(trp_f7_tier_6,1,2)]),
   ("kingdom_7_reinforcements_e", "{!}kingdom_7_reinforcements_e", 0, 0, fac_commoners, 0, [(trp_f7_tier_0,20,50),(trp_f7_terror,1,2)]),
 
+  ("kingdom_8_reinforcements_a", "{!}kingdom_8_reinforcements_a", 0, 0, fac_commoners, 0, [(trp_f8_tier_0,20,50)]),
+  ("kingdom_8_reinforcements_b", "{!}kingdom_8_reinforcements_b", 0, 0, fac_commoners, 0, [(trp_f8_tier_0,20,50),(trp_f8_tier_1,2,5),(trp_f8_tier_2,1,3)]),
+  ("kingdom_8_reinforcements_c", "{!}kingdom_8_reinforcements_c", 0, 0, fac_commoners, 0, [(trp_f8_tier_0,20,50),(trp_f8_tier_3,2,5),(trp_f8_tier_4,2,4),(trp_f8_rider,2,4)]),
+  ("kingdom_8_reinforcements_d", "{!}kingdom_8_reinforcements_d", 0, 0, fac_commoners, 0, [(trp_f8_tier_0,20,50),(trp_f8_tier_5,2,4),(trp_f8_tier_6,1,2)]),
+  ("kingdom_8_reinforcements_e", "{!}kingdom_8_reinforcements_e", 0, 0, fac_commoners, 0, [(trp_f8_tier_0,20,50),(trp_f8_terror,1,2)]),
+
 #
   ("irregulars_reinforcements_a", "{!}irregulars_reinforcements_a", 0, 0, fac_commoners, 0, [(trp_irregular_tier_0,20,50)]),
   ("irregulars_reinforcements_b", "{!}irregulars_reinforcements_b", 0, 0, fac_commoners, 0, [(trp_irregular_tier_0,20,50),(trp_irregular_tier_1,2,5),(trp_irregular_tier_2,1,3)]),

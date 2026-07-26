@@ -687,6 +687,51 @@ skins = [
       [2.7, comp_greater_than, (1, 0),(1, 5),(1, 8),(-1, 26)],
   ]),
 
+#tf_droid_big
+(
+    "droid_big", 0,
+    "ssh_flesh_golem", "dummy_mesh", "dummy_mesh",
+    "dummy_mesh", [
+      (20, 0, 0.7, -0.6, "Chin Size"),
+      (260, 0, -0.6, 1.4, "Chin Shape"),
+      (10, 0, -0.5, 0.9, "Chin Forward"),
+      (240, 0, 0.9, -0.8, "Jaw Width"),
+      (210, 0, -0.5, 1, "Jaw Position"),
+      (250, 0, 0.8, -1, "Mouth-Nose Distance"),
+      (200, 0, -0.3, 1, "Mouth Width"),
+      (50, 0, -1.5, 1, "Cheeks"),
+      (60, 0, -0.4, 1.35, "Nose Height"),
+      (70, 0, -0.6, 0.7, "Nose Width"),
+      (80, 0, 1, -0.1, "Nose Size"),
+      (270, 0, -0.5, 1, "Nose Shape"),
+      (90, 0, -0.2, 1.4, "Nose Bridge"),
+      (100, 0, -0.3, 1.5, "Cheek Bones"),
+      (150, 0, -0.2, 3, "Eye Width"),
+      (110, 0, 1.5, -0.9, "Eye to Eye Dist"),
+      (120, 0, 1.9, -1, "Eye Shape"),
+      (130, 0, -0.5, 1.1, "Eye Depth"),
+      (140, 0, 1, -1.2, "Eyelids"),
+      (160, 0, 1.3, -0.2, "Eyebrow Position"),
+      (170, 0, -0.1, 1.9, "Eyebrow Height"),
+      (220, 0, -0.1, 0.9, "Eyebrow Depth"),
+      (180, 0, -1.1, 1.6, "Eyebrow Shape"),
+      (230, 0, 1.2, -0.7, "Temple Width"),
+      (30, 0, -0.6, 0.9, "Face Depth"),
+      (40, 0, 0.9, -0.6, "Face Ratio"),
+      (190, 0, 0, 0.95, "Face Width"),
+      (280, 0, 0, 1, "Post-Edit"),
+    ],
+    [],
+    [],
+    ["hair_blonde"],
+    [],
+    [
+      ("skeleton_Head_Diffuse_01", 0xFFCBE0E0, ["hair_blonde"], [0xffffffff, 0xffb04717, 0xff502a19]),
+    ], #man_face_textures,
+    [(voice_die,"snd_battledroid_die"),(voice_hit,"snd_battledroid_hit"),(voice_grunt,"snd_battledroid_grunt"),(voice_grunt_long,"snd_battledroid_grunt_long"),(voice_yell,"snd_battledroid_yell"),(voice_warcry,"snd_battledroid_victory"),(voice_victory,"snd_battledroid_victory")], #r2series voice sounds
+    "skel_ssh_flesh_golem", 1.50,
+    psys_game_blood,psys_game_blood_2,
+  ),    
 ]# modmerger_start version=201 type=2
 try:
     component_name = "skins"

@@ -21,6 +21,7 @@ tf_test           = 10
 tf_dummy          = 11
 tf_man_high       = 12
 tf_skeleton       = 13
+tf_droid_big      = 14
 
 troop_type_mask   = 0x0000000f
 tf_hero              = 0x00000010

@@ -116,28 +116,27 @@ parties = [
 #Kreuzbach = Vitzland Territories  
   ("town_22","Kreuzbach", icon_map_vitzland_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-59.73, -156.11),[], 225),               #[swycartographr] prev. coords: (-138.47, 80.43)
 #Rixcester = Entenaii Dominion
-  #("town_23","Rixcester",  icon_map_dominion_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-95.24, 232),[], 229),               #[swycartographr] prev. coords: (-94.88, 54.99) #[swycartographr] prev. coords: (-240.55, 60.24)
-#
-  #("town_24","Tarrin",  icon_town_desert|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-95.24, 232),[], 229),               #[swycartographr] prev. coords: (-94.88, 54.99) #[swycartographr] prev. coords: (-240.55, 60.24)
-#
-  #("town_25","Monmouth",  icon_town_desert|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-95.24, 232),[], 229),               #[swycartographr] prev. coords: (-94.88, 54.99) #[swycartographr] prev. coords: (-240.55, 60.24)
-#
-  #("town_26","Bredwardine",  icon_town_desert|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-95.24, 232),[], 229),               #[swycartographr] prev. coords: (-94.88, 54.99) #[swycartographr] prev. coords: (-240.55, 60.24)
-#
-  #("town_27","Glenarm",  icon_town_desert|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-95.24, 232),[], 229),               #[swycartographr] prev. coords: (-94.88, 54.99) #[swycartographr] prev. coords: (-240.55, 60.24)
-#
-  #("town_28","Durrwich",  icon_town_desert|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-95.24, 232),[], 229),               #[swycartographr] prev. coords: (-94.88, 54.99) #[swycartographr] prev. coords: (-240.55, 60.24)
-#
-  #("town_29","Aberuthven",  icon_town_desert|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-95.24, 232),[], 229),               #[swycartographr] prev. coords: (-94.88, 54.99) #[swycartographr] prev. coords: (-240.55, 60.24)
+  ("town_23","Rixcester",  icon_map_dominion_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-174.56, 209.06),[], 229),               #[swycartographr] prev. coords: (-94.88, 54.99) #[swycartographr] prev. coords: (-240.55, 60.24) #[swycartographr] prev. coords: (-95.24, 232)
+#Tarrin = Entenaii Dominion
+  ("town_24","Tarrin",  icon_town_desert|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-192.48, -63.68), [], 126),               #[swycartographr] prev. coords: (-94.88, 54.99) #[swycartographr] prev. coords: (-240.55, 60.24)
+#Monmouth = Entenaii Dominion
+  ("town_25","Monmouth",  icon_town_desert|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-174.83, 100.52), [], 126),               #[swycartographr] prev. coords: (-94.88, 54.99) #[swycartographr] prev. coords: (-240.55, 60.24) #[swycartographr] prev. coords: (-93.94, 231.52)
+#Bredwardine = Entenaii Dominion
+  ("town_26","Bredwardine",  icon_town_desert|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-245.28, 339.83), [], 126),              #[swycartographr] prev. coords: (-94.88, 54.99) #[swycartographr] prev. coords: (-240.55, 60.24) #[swycartographr] prev. coords: (-177.43, -147.56)
+#Glenarm = Entenaii Dominion
+  ("town_27","Glenarm",  icon_town_desert|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-82.93, -89.53), [], 126),              #[swycartographr] prev. coords: (-94.88, 54.99) #[swycartographr] prev. coords: (-240.55, 60.24)
+#Durrwich = Entenaii Dominion
+  ("town_28","Durrwich",  icon_town_desert|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-5.03, -87.65), [], 126),               #[swycartographr] prev. coords: (-94.88, 54.99) #[swycartographr] prev. coords: (-240.55, 60.24)
+#Aberuthven = Entenaii Dominion
+  ("town_29","Aberuthven",  icon_town_desert|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-122.36, -109.03), [], 126),              #[swycartographr] prev. coords: (-94.88, 54.99) #[swycartographr] prev. coords: (-240.55, 60.24)
 #Zalchik = Molvat-Berchav Union
-  #("town_30","Zalchik",  icon_map_union_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-95.24, 232),[], 229),               #[swycartographr] prev. coords: (-94.88, 54.99) #[swycartographr] prev. coords: (-240.55, 60.24)
+  ("town_30","Zalchik",  icon_map_union_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(224.43, 140.07), [], 126),               #[swycartographr] prev. coords: (-94.88, 54.99) #[swycartographr] prev. coords: (-240.55, 60.24)
 #Moknovci = Molvat-Berchav Union
-  #("town_31","Moknovci",  icon_map_union_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-95.24, 232),[], 229),               #[swycartographr] prev. coords: (-94.88, 54.99) #[swycartographr] prev. coords: (-240.55, 60.24)
+  ("town_31","Moknovci",  icon_map_union_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(235.53, -165.53), [], 126),
 #Pescadena = Trezzo Republic
-  #("town_32","Pescadena",  icon_map_republic_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-95.24, 232),[], 229),               #[swycartographr] prev. coords: (-94.88, 54.99) #[swycartographr] prev. coords: (-240.55, 60.24)
+  ("town_32","Pescadena",  icon_map_republic_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-106.77, -171.69), [], 126),               #[swycartographr] prev. coords: (-94.88, 54.99) #[swycartographr] prev. coords: (-240.55, 60.24)
 #Domhan Briomhar = Kingdom of Galvae
-  #("town_30","Domhan Briomhar",  icon_map_galvae_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-95.24, 232),[], 229),               #[swycartographr] prev. coords: (-94.88, 54.99) #[swycartographr] prev. coords: (-240.55, 60.24)
-
+  ("town_33","Domhan Briomhar",  icon_map_galvae_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(41.95, -24.53), [], 126),             #[swycartographr] prev. coords: (-94.88, 54.99) #[swycartographr] prev. coords: (-240.55, 60.24)
 #
 
 ############
@@ -150,8 +149,8 @@ parties = [
   ("castle_3","Forward_Base_Victory",icon_map_bunker|pf_castle, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-100.05, -66.88),[],100),  #[swycartographr] prev. coords: (47.5, 111.3)
 
 #dominion
-  ("castle_4","First_Light_Mission",icon_map_bunker|pf_castle, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-96.4, 159.14),[],180),  #[swycartographr] prev. coords: (32.5, 47.8)
-  ("castle_5","Brazen_Mission",icon_map_bunker|pf_castle, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-76.88, 303.53),[],90),  #[swycartographr] prev. coords: (-4.8, 63.7)
+  ("castle_4","First_Light_Mission",icon_map_bunker|pf_castle, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-140.67, 225.39),[],180),  #[swycartographr] prev. coords: (32.5, 47.8) #[swycartographr] prev. coords: (-96.4, 159.14)
+  ("castle_5","Brazen_Mission",icon_map_bunker|pf_castle, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-231.85, 276.89),[],90),  #[swycartographr] prev. coords: (-4.8, 63.7) #[swycartographr] prev. coords: (-76.88, 303.53)
   ("castle_6","Open_Flame_Mission",icon_map_bunker|pf_castle, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-135.46, 110.34),[],55), #[swycartographr] prev. coords: (37.6, 17.1)
 
 #galvae
@@ -175,7 +174,10 @@ parties = [
   ("castle_18","Castel_ci_Piree",icon_map_bunker|pf_castle, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-157.12, -134.04),[],300),         #[swycartographr] prev. coords: (14.4, 70.1) #[swycartographr] prev. coords: (-156.86, -134.75)
 
 #itami
-  ("castle_21","Itami_Embassy",icon_map_tower|pf_castle, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-358.19, 145.79),[],300),
+  ("castle_21","Itami_Embassy",icon_map_bunker|pf_castle, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-91.31, 164.25),[],300),           #[swycartographr] prev. coords: (-358.19, 145.79)
+
+#barshide
+  ("castle_22","Barshide_Stronghold",icon_map_bunker|pf_castle, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(16.89, -331.18),[],300),         #[swycartographr] prev. coords: (14.4, 70.1) #[swycartographr] prev. coords: (-156.86, -134.75) #[swycartographr] prev. coords: (-338.19, 115.79)
 
 #irregulars
   ("castle_19","Uprising_Fort",icon_map_bunker|pf_castle, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-2.02, 61.2),[],300),         #[swycartographr] prev. coords: (14.4, 70.1) #[swycartographr] prev. coords: (-156.86, -134.75)
@@ -208,13 +210,13 @@ parties = [
 ##Entenaii_Dominion##
   ("village_14","Lushingmire",  icon_map_farm_2|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-227.45,215.84),[], 126),          #[swycartographr] prev. coords: (35.45, 29.59) #[swycartographr] prev. coords: (-257.57, 123.33) #[swycartographr] prev. coords: (-230.86, 236.03)
   ("village_15","Flamfell",  icon_village_b|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-241.1, 98.25),[], 170),            #[swycartographr] prev. coords: (-119.86, 105.31)
-  ("village_16","Mickleton",  icon_village_snow_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-140.36, 165.39),[], 170), ##  #[swycartographr] prev. coords: (74, 86.8)
-  ("village_17","Zelford",  icon_village_snow_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-150.9, 322.87),[], 35), ##work  #[swycartographr] prev. coords: (44.7, 91.4)
-  ("village_18","New Gavenston",  icon_village_snow_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-266.34, 272.86),[], 170), ## #[swycartographr] prev. coords: (73.7, 30.1)
-  ("village_19","Hannfield",  icon_village_snow_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-258.01, 129.63),[], 170), ##  #[swycartographr] prev. coords: (152.3, 53.5)
-  ("village_20","Rickport",  icon_village_snow_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-172.6, 144.9),[], 170), ##     #[swycartographr] prev. coords: (116, 80.3)
-  ("village_21","Bendolida",  icon_village_snow_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-96.73, 316.1),[], 100), ##    #[swycartographr] prev. coords: (60.4, 85)
-  ("village_22","Shauffield",  icon_village_snow_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-203.82, 212.58),[], 110), ## #[swycartographr] prev. coords: (125.4, 64)
+  ("village_16","Mickleton",  icon_village_b|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-140.36, 165.39),[], 170), ##  #[swycartographr] prev. coords: (74, 86.8)
+  ("village_17","Zelford",  icon_village_b|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-177.78, 71.61),[], 35), ##work  #[swycartographr] prev. coords: (44.7, 91.4) #[swycartographr] prev. coords: (-150.9, 322.87)
+  ("village_18","New Gavenston",  icon_village_b|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-266.34, 272.86),[], 170), ## #[swycartographr] prev. coords: (73.7, 30.1)
+  ("village_19","Hannfield",  icon_village_b|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-258.01, 129.63),[], 170), ##  #[swycartographr] prev. coords: (152.3, 53.5)
+  ("village_20","Rickport",  icon_village_b|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-172.6, 144.9),[], 170), ##     #[swycartographr] prev. coords: (116, 80.3)
+  ("village_21","Bendolida",  icon_village_b|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-170.91, 175.93),[], 100), ##    #[swycartographr] prev. coords: (60.4, 85) #[swycartographr] prev. coords: (-96.73, 316.1)
+  ("village_22","Shauffield",  icon_village_b|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-203.82, 212.58),[], 110), ## #[swycartographr] prev. coords: (125.4, 64)
   ("village_23","Leadenglen",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-205.26, 95.59),[], 152),           #[swycartographr] prev. coords: (-4.08, 157.23)
   ("village_24","Dilloguard",  icon_village_b|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-195.58, 167.09),[], 334),          #[swycartographr] prev. coords: (134.29, 125.51)
   ("village_25","Redport",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-202.7, 326.92),[], 170), ##          #[swycartographr] prev. coords: (125.2, -8)
@@ -227,34 +229,34 @@ parties = [
   ("village_32","Gougeburg",  icon_map_bunker|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-243.93 , 316.73 ),[], 104),        #[swycartographr] prev. coords: (32.56, 100.17) #[swycartographr] prev. coords: (-233.95, 73.1)
   ("village_33","Vanham",  icon_map_bunker|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-285.23, 85.34),[], 193),          #[swycartographr] prev. coords: (-216.88, 41.19) #[swycartographr] prev. coords: (-294.02, 67.3)
   ("village_88","Tubthumpton",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-153.36, 221.97),[], 44),              #[swycartographr] prev. coords: (123.82, -4.43)
-  ("village_105","Valeshire",  icon_map_house|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-107.38, 206.18),[], 297),              #[swycartographr] prev. coords: (-43.1, 75.42) #[swycartographr] prev. coords: (-85.4, 206.34)
+  ("village_105","Valeshire",  icon_map_house|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-231.94, 142.83),[], 297),              #[swycartographr] prev. coords: (-43.1, 75.42) #[swycartographr] prev. coords: (-85.4, 206.34) #[swycartographr] prev. coords: (-107.38, 206.18)
   ("village_92","Alcombey",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-301.04, 333.61),[], 60),           #[swycartographr] prev. coords: (42.5, -111.6) #[swycartographr] prev. coords: (23.28, -333.24)
   ("village_93","Rotherhithe",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-275.24, 363.73),[], 55),         #[swycartographr] prev. coords: (50, -94.8) #[swycartographr] prev. coords: (5.03, -349.69) #[swycartographr] prev. coords: (-313.65, 240.75)
   ("village_94","Croydon",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-205.44, 245.14),[], 15),             #[swycartographr] prev. coords: (75.4, -61.65) #[swycartographr] prev. coords: (21.99, -351.33)
   
 ##Kingdom_of_Galvae##
-  ("village_34","Peigin Ui Duillearga",  icon_village_b|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(81.74, -11.69),[], 218),            #[swycartographr] prev. coords: (61.62, 98.27) #[swycartographr] prev. coords: (108.83, -109.68)
-  ("village_35","Fionnuala Ui Se",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(205.17, -2.69),[], 268),             #[swycartographr] prev. coords: (-175.32, 74.46) #[swycartographr] prev. coords: (113.24, -43.57)
-  ("village_36","Caoimhe Ni Se",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(190.7, -134.61),[], 170),             #[swycartographr] prev. coords: (-151.88, 164.19) #[swycartographr] prev. coords: (216.8, -120.11)
-  ("village_37","Duibheasa Ui Dubhagain",  icon_map_bunker|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(162.82, -170.91),[], 261),           #[swycartographr] prev. coords: (-4.09, 4.04)
-  ("village_38","Blinne Ui Meara",  icon_map_bunker|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(91.26, -50.86),[], 29),              #[swycartographr] prev. coords: (-220.57, 85.35) #[swycartographr] prev. coords: (101.1, -60.93)
-  ("village_39","Odharnait Nic Cosgair",  icon_map_tower|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(134.71, -161.84),[], 307),            #[swycartographr] prev. coords: (-73.04, -68.71) #[swycartographr] prev. coords: (140.18, -151.72)
-  ("village_40","Barrdhubh Nic Gaibhtheachain",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(136.26, -44.02),[], 170), ## #[swycartographr] prev. coords: (-12, -53)
-  ("village_41","Maire Ui Maoil Mhichil",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(106.29, -102.62),[], 100), ##work     #[swycartographr] prev. coords: (-95.46, 150.25)
-  ("village_42","Teide Nic Cruadhlaoich",  icon_map_bunker|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(196.99, -83.61),[], 313),            #[swycartographr] prev. coords: (7.78, -89.54) #[swycartographr] prev. coords: (123.32, -72.56) #[swycartographr] prev. coords: (131.43, -63.91)
-  ("village_43","Eilin Nic Amhlaidh",  icon_map_tower2|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(181.26, -61.48),[], 18),             #[swycartographr] prev. coords: (85.43, -84.25)
-  ("village_44","Guibheasa Ui Hubhagain",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(51.8, -50),[], 130),
-  ("village_45","Cuibh Ui Mubain",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(151.5, -3),[], 170),
-  ("village_46","Tasa Ui Gain",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(124.29, -87.74),[], 170),        #[swycartographr] prev. coords: (-82.4, -48.8)
-  ("village_95","Mag na Blathanna",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(99.72, 10.37),[], 10),               #[swycartographr] prev. coords: (99, -90.5) #[swycartographr] prev. coords: (16.89, -361.1)
-  ("village_97","Tir Ceilte",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(224.99, -69.37),[], 160),        #[swycartographr] prev. coords: (82.3, -76.8) #[swycartographr] prev. coords: (13.2, -346.1)
-  ("village_98","Mag na Nathracha",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(164.4, -131.88),[], 180),           #[swycartographr] prev. coords: (117.7, -62.2) #[swycartographr] prev. coords: (27.45, -349.98)
+  ("village_34","Peigin Ui Duillearga",  icon_map_wooden_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(81.74, -11.69),[], 218),            #[swycartographr] prev. coords: (61.62, 98.27) #[swycartographr] prev. coords: (108.83, -109.68)
+  ("village_35","Fionnuala Ui Se",  icon_map_wooden_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(205.17, -2.69),[], 268),             #[swycartographr] prev. coords: (-175.32, 74.46) #[swycartographr] prev. coords: (113.24, -43.57)
+  ("village_36","Caoimhe Ni Se",  icon_map_wooden_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(190.7, -134.61),[], 170),             #[swycartographr] prev. coords: (-151.88, 164.19) #[swycartographr] prev. coords: (216.8, -120.11)
+  ("village_37","Duibheasa Ui Dubhagain",  icon_map_wooden_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(162.82, -170.91),[], 261),           #[swycartographr] prev. coords: (-4.09, 4.04)
+  ("village_38","Blinne Ui Meara",  icon_map_wooden_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(91.26, -50.86),[], 29),              #[swycartographr] prev. coords: (-220.57, 85.35) #[swycartographr] prev. coords: (101.1, -60.93)
+  ("village_39","Odharnait Nic Cosgair",  icon_map_wooden_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(134.71, -161.84),[], 307),            #[swycartographr] prev. coords: (-73.04, -68.71) #[swycartographr] prev. coords: (140.18, -151.72)
+  ("village_40","Barrdhubh Nic Gaibhtheachain",  icon_map_wooden_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(136.26, -44.02),[], 170), ## #[swycartographr] prev. coords: (-12, -53)
+  ("village_41","Maire Ui Maoil Mhichil",  icon_map_wooden_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(106.29, -102.62),[], 100), ##work     #[swycartographr] prev. coords: (-95.46, 150.25)
+  ("village_42","Teide Nic Cruadhlaoich",  icon_map_wooden_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(196.99, -83.61),[], 313),            #[swycartographr] prev. coords: (7.78, -89.54) #[swycartographr] prev. coords: (123.32, -72.56) #[swycartographr] prev. coords: (131.43, -63.91)
+  ("village_43","Eilin Nic Amhlaidh",  icon_map_wooden_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(181.26, -61.48),[], 18),             #[swycartographr] prev. coords: (85.43, -84.25)
+  ("village_44","Guibheasa Ui Hubhagain",  icon_map_wooden_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(51.8, -50),[], 130),
+  ("village_45","Cuibh Ui Mubain",  icon_map_wooden_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(151.5, -3),[], 170),
+  ("village_46","Tasa Ui Gain",  icon_map_wooden_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(124.29, -87.74),[], 170),        #[swycartographr] prev. coords: (-82.4, -48.8)
+  ("village_95","Mag na Blathanna",  icon_map_wooden_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(99.72, 10.37),[], 10),               #[swycartographr] prev. coords: (99, -90.5) #[swycartographr] prev. coords: (16.89, -361.1)
+  ("village_97","Tir Ceilte",  icon_map_wooden_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(224.99, -69.37),[], 160),        #[swycartographr] prev. coords: (82.3, -76.8) #[swycartographr] prev. coords: (13.2, -346.1)
+  ("village_98","Mag na Nathracha",  icon_map_wooden_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(164.4, -131.88),[], 180),           #[swycartographr] prev. coords: (117.7, -62.2) #[swycartographr] prev. coords: (27.45, -349.98)
   
 ##Molvat-Berchav_Union##
   ("village_47","Zhabisty",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(260.18, 278.18),[], 216),               #[swycartographr] prev. coords: (-44.34, -38.49) #[swycartographr] prev. coords: (159.2, 248.92)
   ("village_48","Luninpolatsk",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-10.74, 216.73),[], 39),                  #[swycartographr] prev. coords: (-12.86, 123.17) #[swycartographr] prev. coords: (-17, 167.19)
-  ("village_49","Komastovo",  icon_village_snow_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(97.4, 62.17),[], 10),          #[swycartographr] prev. coords: (90.8, 60.5)
-  ("village_50","Poprance",  icon_village_snow_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(293.39, -88.48),[], 170),       #[swycartographr] prev. coords: (64.1, 55.9)
+  ("village_49","Komastovo",  icon_village_b|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(97.4, 62.17),[], 10),          #[swycartographr] prev. coords: (90.8, 60.5)
+  ("village_50","Poprance",  icon_village_b|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(293.39, -88.48),[], 170),       #[swycartographr] prev. coords: (64.1, 55.9)
   ("village_51","Hrasko",  icon_map_bunker|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(35.27, 169.87),[], 328),              #[swycartographr] prev. coords: (-204.9, 132.18) #[swycartographr] prev. coords: (11.15, 177.57)
   ("village_52","Sharliaky",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(120.91, 245.29),[], 110),           #[swycartographr] prev. coords: (38.2, -67.7)
   ("village_53","Parbice",  icon_map_bunker|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(109.28, 127.04),[], 65),               #[swycartographr] prev. coords: (50.24, -61.99) #[swycartographr] prev. coords: (117.75, 81.08) #[swycartographr] prev. coords: (108.47, 82.55)
@@ -287,7 +289,7 @@ parties = [
   ("village_72","Hoogezijl",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(23.09, -206.92),[], 60),            #[swycartographr] prev. coords: (137.27, 200.05)
   ("village_73","Freikkon",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-4.69, -130.94),[], 55),           #[swycartographr] prev. coords: (-77.46, 8.86)
   ("village_74","Maasschede",  icon_map_bunker|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-5.24, -170.31),[], 15),          #[swycartographr] prev. coords: (-37.9, 228.59)
-  ("village_75","Isselbeuren",  icon_village_snow_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-64.36, -119.82),[], 10),     #[swycartographr] prev. coords: (-166.61, 145.15)
+  ("village_75","Isselbeuren",  icon_village_b|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-64.36, -119.82),[], 10),     #[swycartographr] prev. coords: (-166.61, 145.15)
   ("village_102","Kirchnitz",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-19.55, -150.92),[], 60),              #[swycartographr] prev. coords: (77.2, -91) #[swycartographr] prev. coords: (17.78, -322.53)
   ("village_103","Munzenhoring",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(24.43, -116.56),[], 55),      #[swycartographr] prev. coords: (121, -95.6) #[swycartographr] prev. coords: (21.67, -340.14)
   ("village_104","Reimunster",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(1.44, -111.99),[], 15),       #[swycartographr] prev. coords: (159, -58.5) #[swycartographr] prev. coords: (8.99, -355.07)
@@ -302,8 +304,8 @@ parties = [
   ("village_82","Bolora",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-136.69, -185.2),[], 60),           #[swycartographr] prev. coords: (77.18, 148.94)
   ("village_83","Trenremo",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-168.6, -178.49),[], 55),          #[swycartographr] prev. coords: (-274.25, 203.03) #[swycartographr] prev. coords: (-186.12, -195.21)
   ("village_84","Guidoceno",  icon_map_bunker|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-164.95, -315.06),[], 15),         #[swycartographr] prev. coords: (25.36, 60.11) #[swycartographr] prev. coords: (-166.94, -301.71)
-  ("village_85","Ceretta",  icon_village_snow_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-196.09, -121.5),[], 10),       #[swycartographr] prev. coords: (22.8, 71.7)
-  ("village_86","Netalina",  icon_village_snow_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-101.8, -240.18),[], 35),  #[swycartographr] prev. coords: (60.5, 68.2)
+  ("village_85","Ceretta",  icon_village_b|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-196.09, -121.5),[], 10),       #[swycartographr] prev. coords: (22.8, 71.7)
+  ("village_86","Netalina",  icon_village_b|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-101.8, -240.18),[], 35),  #[swycartographr] prev. coords: (60.5, 68.2)
   ("village_87","Riogoza",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-167.47, -288.54),[], 100),              #[swycartographr] prev. coords: (-11.37, 30.95) #[swycartographr] prev. coords: (-53.08, -22.02) #[swycartographr] prev. coords: (-119.5, 290.99)
   ("village_106","Santatima",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-132.41, -91.0),[], 35),            #[swycartographr] prev. coords: (10.3, -162.71) #[swycartographr] prev. coords: (3.57, -91)
   ("village_107","Barcejara",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-194.36, -182.49),[], 160),     #[swycartographr] prev. coords: (156.6, -84) #[swycartographr] prev. coords: (-2.67, -354.52)
@@ -383,12 +385,6 @@ parties = [
   ("bridge_b_t","bridge_b_a",icon_bridge_b|pf_is_static|pf_always_visible|pf_no_label,no_menu,pt_none,fac_neutral,0,ai_bhvr_hold,0,(-99.37,123.65),[],239), #[swycartographr] prev. coords: (-147.55, 0.26) #[swycartographr] prev. coords: (51.75, -118.98) rot: 182 #[swycartographr] prev. coords: (-76.48, -179.13) rot: 311 #[swycartographr] prev. coords: (-76.32, -179.18) rot: 302 #[swycartographr] prev. coords: (-76.6, -179.36) rot: 307
   ("bridge_b_u","bridge_b_a",icon_bridge_b|pf_is_static|pf_always_visible|pf_no_label,no_menu,pt_none,fac_neutral,0,ai_bhvr_hold,0,(-76.46,-179.28),[],307), #[swycartographr] prev. coords: (-147.55, 0.26) #[swycartographr] prev. coords: (51.75, -118.98) rot: 182 #[swycartographr] prev. coords: (-76.48, -179.13) rot: 311 #[swycartographr] prev. coords: (-76.32, -179.18) rot: 302 #[swycartographr] prev. coords: (-76.6, -179.36)
 
-  ("map_warehouse","map_warehouse",icon_map_warehouse|pf_is_static|pf_always_visible|pf_no_label,no_menu,pt_none,fac_neutral,0,ai_bhvr_hold,0,(-152.33,126.47),[],278), #[swycartographr] prev. coords: (-179.03, 143.46)
-  ("map_warehouse2","map_warehouse",icon_map_warehouse|pf_is_static|pf_always_visible|pf_no_label,no_menu,pt_none,fac_neutral,0,ai_bhvr_hold,0,(-132.24,7.06),[],96), #[swycartographr] prev. coords: (-120.37, 37.52)
-  ("map_warehouse3","map_warehouse",icon_map_warehouse|pf_is_static|pf_always_visible|pf_no_label,no_menu,pt_none,fac_neutral,0,ai_bhvr_hold,0,(58.35,3.42),[],111), #[swycartographr] prev. coords: (68.8, 20.34)
-  ("map_warehouse4","map_warehouse",icon_map_warehouse|pf_is_static|pf_always_visible|pf_no_label,no_menu,pt_none,fac_neutral,0,ai_bhvr_hold,0,(-51.36,234.8),[],147), #[swycartographr] prev. coords: (-34.55, 218.49)
-  ("map_warehouse5","map_warehouse",icon_map_warehouse|pf_is_static|pf_always_visible|pf_no_label,no_menu,pt_none,fac_neutral,0,ai_bhvr_hold,0,(74.5,80.09),[],115), #[swycartographr] prev. coords: (-22.79, 108.05)
-
   ("map_boat_1a","map_boat_1a",icon_map_boat_1|pf_is_static|pf_always_visible|pf_no_label,no_menu,pt_none,fac_neutral,0,ai_bhvr_hold,0,(-27.56,-282.32),[],209), #[swycartographr] prev. coords: (-194.49, -12.37)
   ("map_boat_1b","map_boat_1a",icon_map_boat_1|pf_is_static|pf_always_visible|pf_no_label,no_menu,pt_none,fac_neutral,0,ai_bhvr_hold,0,(221.75,-110.39),[],299), #[swycartographr] prev. coords: (43.88, 208.73)
   ("map_boat_1c","map_boat_1a",icon_map_boat_1|pf_is_static|pf_always_visible|pf_no_label,no_menu,pt_none,fac_neutral,0,ai_bhvr_hold,0,(28.22,292.34),[],191), #[swycartographr] prev. coords: (41.87, 162.79)
@@ -404,32 +400,23 @@ parties = [
   ("map_secret_base_yanizar","Yanizar_Camp",icon_bandit_camp|pf_is_static|pf_hide_defenders,no_menu,pt_none,fac_neutral,0,ai_bhvr_hold,0,(-97.83,-202.97),[],303), #[swycartographr] prev. coords: (-246.77, 151.74) #[swycartographr] prev. coords: (-232.62, 110.74)
 
 #
-  ("map_razed_city_1", "Tarrin (RAZED)", icon_map_razed_city|pf_is_static|pf_always_visible, no_menu, pt_none, fac_neutral, 0, ai_bhvr_hold, 0, (-192.48, -63.68), [], 126), #[swycartographr] prev. coords: (5.68, 89.59) #[swycartographr] prev. coords: (234.58, -145.79)
-  ("map_razed_city_2", "Monmouth (RAZED)", icon_map_razed_city|pf_is_static|pf_always_visible, no_menu, pt_none, fac_neutral, 0, ai_bhvr_hold, 0, (-93.94, 231.52), [], 126), #[swycartographr] prev. coords: (5.68, 89.59) #[swycartographr] prev. coords: (234.58, -145.79)
-  ("map_razed_city_3", "Bredwardine (RAZED)", icon_map_razed_city|pf_is_static|pf_always_visible, no_menu, pt_none, fac_neutral, 0, ai_bhvr_hold, 0, (-177.43, -147.56), [], 126), #[swycartographr] prev. coords: (5.68, 89.59) #[swycartographr] prev. coords: (234.58, -145.79)
-  ("map_razed_city_4", "Glenarm (RAZED)", icon_map_razed_city|pf_is_static|pf_always_visible, no_menu, pt_none, fac_neutral, 0, ai_bhvr_hold, 0, (-82.93, -89.53), [], 126), #[swycartographr] prev. coords: (5.68, 89.59) #[swycartographr] prev. coords: (234.58, -145.79)
-  ("map_razed_city_5", "Durrwich (RAZED", icon_map_razed_city|pf_is_static|pf_always_visible, no_menu, pt_none, fac_neutral, 0, ai_bhvr_hold, 0, (-5.03, -87.65), [], 126), #[swycartographr] prev. coords: (5.68, 89.59) #[swycartographr] prev. coords: (234.58, -145.79)
-  ("map_razed_city_6", "Aberuthven (RAZED)", icon_map_razed_city|pf_is_static|pf_always_visible, no_menu, pt_none, fac_neutral, 0, ai_bhvr_hold, 0, (-122.36, -109.03), [], 126), #[swycartographr] prev. coords: (5.68, 89.59) #[swycartographr] prev. coords: (234.58, -145.79)
-  ("map_razed_city_7", "Zalchik (RAZED)", icon_map_razed_city|pf_is_static|pf_always_visible, no_menu, pt_none, fac_neutral, 0, ai_bhvr_hold, 0, (224.43, 140.07), [], 126), #[swycartographr] prev. coords: (5.68, 89.59) #[swycartographr] prev. coords: (234.58, -145.79)
-  ("map_razed_city_8", "Moknovci (RAZED)", icon_map_razed_city|pf_is_static|pf_always_visible, no_menu, pt_none, fac_neutral, 0, ai_bhvr_hold, 0, (235.53, -165.53), [], 126), #[swycartographr] prev. coords: (5.68, 89.59) #[swycartographr] prev. coords: (234.58, -145.79)
-  ("map_razed_city_9", "Pescadena (RAZED)", icon_map_razed_city|pf_is_static|pf_always_visible, no_menu, pt_none, fac_neutral, 0, ai_bhvr_hold, 0, (-106.77, -171.69), [], 126), #[swycartographr] prev. coords: (5.68, 89.59) #[swycartographr] prev. coords: (234.58, -145.79)
-  ("map_razed_city_10", "Domhan Briomhar (RAZED)", icon_map_razed_city|pf_is_static|pf_always_visible, no_menu, pt_none, fac_neutral, 0, ai_bhvr_hold, 0, (41.95, -24.53), [], 126), #[swycartographr] prev. coords: (5.68, 89.59) #[swycartographr] prev. coords: (234.58, -145.79) #[swycartographr] prev. coords: (77.08, -125.28)
-
-  # ("looter_spawn_point"   ,"{!}looter_sp",pf_disabled|pf_is_static, no_menu, pt_none, fac_outlaws,0,ai_bhvr_hold,0,(26, 77),[(trp_looter,15,0)]),
-  # ("steppe_bandit_spawn_point"  ,"the steppes",pf_disabled|pf_is_static, no_menu, pt_none, fac_outlaws,0,ai_bhvr_hold,0,(125, 9),[(trp_looter,15,0)]),
-  # ("taiga_bandit_spawn_point"   ,"the tundra",pf_disabled|pf_is_static, no_menu, pt_none, fac_outlaws,0,ai_bhvr_hold,0,(78, 84),[(trp_looter,15,0)]),
-  # ("forest_bandit_spawn_point"  ,"the forests",pf_disabled|pf_is_static, no_menu, pt_none, fac_outlaws,0,ai_bhvr_hold,0,(-35, 18),[(trp_looter,15,0)]),
-  # ("mountain_bandit_spawn_point","the highlands",pf_disabled|pf_is_static, no_menu, pt_none, fac_outlaws,0,ai_bhvr_hold,0,(-90, -26.8),[(trp_looter,15,0)]),
+  ("map_razed_city_1", "RAZED CITY", icon_map_razed_city|pf_is_static|pf_always_visible, no_menu, pt_none, fac_neutral, 0, ai_bhvr_hold, 0,(41.95, -24.53), [], 126),  #[swycartographr] prev. coords: (5.68, 89.59) #[swycartographr] prev. coords: (234.58, -145.79) #[swycartographr] prev. coords: (77.08, -125.28)
+#
+  ("looter_spawn_point"   ,"{!}looter_sp",pf_disabled|pf_is_static, no_menu, pt_none, fac_outlaws,0,ai_bhvr_hold,0,(26, 77),[(trp_looter,15,0)]),
+  ("steppe_bandit_spawn_point"  ,"the steppes",pf_disabled|pf_is_static, no_menu, pt_none, fac_outlaws,0,ai_bhvr_hold,0,(125, 9),[(trp_looter,15,0)]),
+  ("taiga_bandit_spawn_point"   ,"the tundra",pf_disabled|pf_is_static, no_menu, pt_none, fac_outlaws,0,ai_bhvr_hold,0,(78, 84),[(trp_looter,15,0)]),
+  ("forest_bandit_spawn_point"  ,"the forests",pf_disabled|pf_is_static, no_menu, pt_none, fac_outlaws,0,ai_bhvr_hold,0,(-35, 18),[(trp_looter,15,0)]),
+  ("mountain_bandit_spawn_point","the highlands",pf_disabled|pf_is_static, no_menu, pt_none, fac_outlaws,0,ai_bhvr_hold,0,(-90, -26.8),[(trp_looter,15,0)]),
   ("sea_raider_spawn_point_1"   ,"the coast",pf_disabled|pf_is_static, no_menu, pt_none, fac_outlaws,0,ai_bhvr_hold,0,(85.59, 106.26),[(trp_looter,15,0)]), #[swycartographr] prev. coords: (48.5, 110)
-  # ("sea_raider_spawn_point_2"   ,"the coast",pf_disabled|pf_is_static, no_menu, pt_none, fac_outlaws,0,ai_bhvr_hold,0,(-42, 76.7),[(trp_looter,15,0)]),
-  # ("desert_bandit_spawn_point"  ,"the deserts",pf_disabled|pf_is_static, no_menu, pt_none, fac_outlaws,0,ai_bhvr_hold,0,(110, -100),[(trp_looter,15,0)]),
+  ("sea_raider_spawn_point_2"   ,"the coast",pf_disabled|pf_is_static, no_menu, pt_none, fac_outlaws,0,ai_bhvr_hold,0,(-42, 76.7),[(trp_looter,15,0)]),
+  ("desert_bandit_spawn_point"  ,"the deserts",pf_disabled|pf_is_static, no_menu, pt_none, fac_outlaws,0,ai_bhvr_hold,0,(110, -100),[(trp_looter,15,0)]),
  # add extra towns before this point
-  ("spawn_points_end"                  ,"{!}last_spawn_point",    pf_disabled|pf_is_static, no_menu, pt_none, fac_commoners,0,ai_bhvr_hold,0,(0., -12.53),[(trp_looter,15,0)]), #[swycartographr] prev. coords: (13.15, 0) #[swycartographr] prev. coords: (24.63, 21.53) #[swycartographr] prev. coords: (2.81, 17.04) #[swycartographr] prev. coords: (5.44, -5.45) #[swycartographr] prev. coords: (0, -6.03)
-  ("reserved_1"                  ,"{!}last_spawn_point",    pf_disabled|pf_is_static, no_menu, pt_none, fac_commoners,0,ai_bhvr_hold,0,(0., -13.68),[(trp_looter,15,0)]), #[swycartographr] prev. coords: (7.14, 0) #[swycartographr] prev. coords: (27.18, 16.95) #[swycartographr] prev. coords: (15.8, 21) #[swycartographr] prev. coords: (0, -13.72)
+  ("spawn_points_end"                  ,"{!}last_spawn_point",    pf_disabled|pf_is_static, no_menu, pt_none, fac_commoners,0,ai_bhvr_hold,0,(0., -29.25),[(trp_looter,15,0)]), #[swycartographr] prev. coords: (13.15, 0) #[swycartographr] prev. coords: (24.63, 21.53) #[swycartographr] prev. coords: (2.81, 17.04) #[swycartographr] prev. coords: (5.44, -5.45) #[swycartographr] prev. coords: (-16.23, -6.03) #[swycartographr] prev. coords: (0, -12.53)
+  ("reserved_1"                  ,"{!}last_spawn_point",    pf_disabled|pf_is_static, no_menu, pt_none, fac_commoners,0,ai_bhvr_hold,0,(0., -25.77),[(trp_looter,15,0)]), #[swycartographr] prev. coords: (7.14, 0) #[swycartographr] prev. coords: (27.18, 16.95) #[swycartographr] prev. coords: (15.8, 21) #[swycartographr] prev. coords: (-17.46, -13.72) #[swycartographr] prev. coords: (0, -13.68)
   ("reserved_2"                  ,"{!}last_spawn_point",    pf_disabled|pf_is_static, no_menu, pt_none, fac_commoners,0,ai_bhvr_hold,0,(0., 35.93),[(trp_looter,15,0)]), #[swycartographr] prev. coords: (6.51, 0) #[swycartographr] prev. coords: (32.18, 11.84) #[swycartographr] prev. coords: (-58.21, 14.23) #[swycartographr] prev. coords: (-10.62, 24.52) #[swycartographr] prev. coords: (0, 55.85)
   ("reserved_3"                  ,"{!}last_spawn_point",    pf_disabled|pf_is_static, no_menu, pt_none, fac_commoners,0,ai_bhvr_hold,0,(0., -32.28),[(trp_looter,15,0)]), #[swycartographr] prev. coords: (19.66, 0) #[swycartographr] prev. coords: (26.79, 27.47) #[swycartographr] prev. coords: (0, 26.45)
   ("reserved_4"                  ,"{!}last_spawn_point",    pf_disabled|pf_is_static, no_menu, pt_none, fac_commoners,0,ai_bhvr_hold,0,(0., -43.65),[(trp_looter,15,0)]), #[swycartographr] prev. coords: (12.93, 0) #[swycartographr] prev. coords: (20.98, 22.95) #[swycartographr] prev. coords: (9.98, 25.12) #[swycartographr] prev. coords: (0, -19.76)
-  ("reserved_5"                  ,"{!}last_spawn_point",    pf_disabled|pf_is_static, no_menu, pt_none, fac_commoners,0,ai_bhvr_hold,0,(0., -14.45),[(trp_looter,15,0)]), #[swycartographr] prev. coords: (24.83, 0) #[swycartographr] prev. coords: (22.44, 33.86) #[swycartographr] prev. coords: (6.87, 30.7) #[swycartographr] prev. coords: (20.77, -13.43) #[swycartographr] prev. coords: (0, -18.42)
+  ("reserved_5"                  ,"{!}last_spawn_point",    pf_disabled|pf_is_static, no_menu, pt_none, fac_commoners,0,ai_bhvr_hold,0,(0., -23.53),[(trp_looter,15,0)]), #[swycartographr] prev. coords: (24.83, 0) #[swycartographr] prev. coords: (22.44, 33.86) #[swycartographr] prev. coords: (6.87, 30.7) #[swycartographr] prev. coords: (20.77, -13.43) #[swycartographr] prev. coords: (-16.2, -18.42) #[swycartographr] prev. coords: (0, -14.45)
 
   ("outpost_1", "Outpost", icon_map_camp_2|pf_disabled|pf_is_static|pf_always_visible, no_menu, pt_none, fac_commoners, 0, ai_bhvr_hold, 0, (-51.99, 51.91), []), #[swycartographr] prev. coords: (0, 0) #[swycartographr] prev. coords: (-15.55, -4.82)
   ("outpost_2", "Outpost", icon_map_camp_2|pf_disabled|pf_is_static|pf_always_visible, no_menu, pt_none, fac_commoners, 0, ai_bhvr_hold, 0, (-49.03, 57.4), []), #[swycartographr] prev. coords: (1, -1) #[swycartographr] prev. coords: (-37.84, 27.45)

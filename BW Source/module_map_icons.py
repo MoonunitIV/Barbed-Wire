@@ -146,8 +146,9 @@ map_icons = [
   ("map_farm_3",mcn_no_shadow,"map_farm_3", town_scale,0),
   ("map_farm_4",mcn_no_shadow,"map_farm_4", town_scale,0),
   ("map_farm_5",mcn_no_shadow,"map_farm_5", town_scale,0),
-#shed
-  # ("map_shed_1",mcn_no_shadow,"map_shed_1", town_scale,0),
+  
+#villages
+  ("map_wooden_village",mcn_no_shadow,"map_wooden_village", town_scale,0),
   # ("map_shed_2",mcn_no_shadow,"map_shed_2", town_scale,0),
 #towns
   ("map_entenaii_town",mcn_no_shadow,"map_entenaii_town", town_scale,0),
@@ -163,7 +164,6 @@ map_icons = [
   ("map_bunker",mcn_no_shadow,"map_concrete_bunker", town_scale,0),
   ("map_tower",mcn_no_shadow,"map_tower", town_scale,0),
   ("map_tower2",mcn_no_shadow,"map_tower2", town_scale,0),
-  ("map_warehouse",mcn_no_shadow,"map_warehouse", town_scale,0),
   ("map_hideout",mcn_no_shadow,"map_hideout", town_scale,0),
   ("map_razed_city",mcn_no_shadow,"bfy_map_town_a", town_scale,0),
   ("map_mercenary_camp",mcn_no_shadow,"map_mercenary_camp", town_scale,0),

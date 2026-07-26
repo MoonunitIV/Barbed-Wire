@@ -22508,6 +22508,12 @@ TOTAL:  {reg5}"),
 	  (jump_to_menu, "mnu_camp"),
 	  ]),
 	  
+      ("change_fac_8",[], "Itami Castedom",[
+	  (call_script, "script_set_faction_culture", "fac_player_faction", "fac_kingdom_8"),
+	  (call_script, "script_set_faction_culture", "fac_player_supporters_faction", "fac_kingdom_8"),
+	  (jump_to_menu, "mnu_camp"),
+	  ]),
+      
 	  ("change_fac_irregular",[], "Irregulars",[
 	  (call_script, "script_set_faction_culture", "fac_player_faction", "fac_irregulars"),
 	  (call_script, "script_set_faction_culture", "fac_player_supporters_faction", "fac_irregulars"),

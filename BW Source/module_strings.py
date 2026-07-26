@@ -2666,6 +2666,7 @@ strings = [
   ("kingdom_5_adjective",                     "Vitzland"),#Vitzland Territories
   ("kingdom_6_adjective",                     "Republican"),#Republican
   ("kingdom_7_adjective",                     "Itami"),#Itami Castedom
+  ("kingdom_8_adjective",                     "Barshide"),#Barshide Confederacy
   ("irregulars_adjective",                    "Rebel"),#Irregulars
   ("theocracy_adjective",                     "Cult"),#Throd
 

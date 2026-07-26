@@ -14898,6 +14898,7 @@ presentations = [
     (overlay_set_size, "$g_presentation_obj_gender", pos1),
     (overlay_add_item, "$g_presentation_obj_gender", "@Male"),
     (overlay_add_item, "$g_presentation_obj_gender", "@Female"),
+    (overlay_add_item, "$g_presentation_obj_gender", "@Infected"),
     (overlay_set_val, "$g_presentation_obj_gender", "$character_gender"),
     (val_sub, ":cur_y", 40),
 
@@ -15082,7 +15083,7 @@ presentations = [
 
     ### GOLD ###
     # Label
-    (create_text_overlay, reg1, "@Cash"),
+    (create_text_overlay, reg1, "@Falors"),
     (position_set_x, pos1, 900),
     (position_set_y, pos1, 900),
     (overlay_set_size, reg1, pos1),
@@ -15193,25 +15194,6 @@ presentations = [
     (position_set_x, pos1, 805),
     (position_set_y, pos1, 400),
     (overlay_set_position, "$g_presentation_obj_bow", pos1),
-
-    ### WEAPON PROF - CROSSBOW ###
-    # Label
-    # (create_text_overlay, reg1, "@UNUSED"),
-    # (position_set_x, pos1, 900),
-    # (position_set_y, pos1, 900),
-    # (overlay_set_size, reg1, pos1),
-    # (position_set_x, pos1, 695),
-    # (position_set_y, pos1, 400),
-    # (overlay_set_position, reg1, pos1),
-
-    # ## Value
-    # (create_text_overlay, "$g_presentation_obj_xbow", "str_mcc_zero", tf_center_justify),
-    # (position_set_x, pos1, 850),
-    # (position_set_y, pos1, 850),
-    # (overlay_set_size, "$g_presentation_obj_xbow", pos1),
-    # (position_set_x, pos1, 805),
-    # (position_set_y, pos1, 400),
-    # (overlay_set_position, "$g_presentation_obj_xbow", pos1),
 
     ### WEAPON PROF - THROWING ###
     # Label
