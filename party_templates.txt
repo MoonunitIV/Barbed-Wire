@@ -1,0 +1,133 @@
+partytemplatesfile version 1
+131
+pt_none none 2 0 1 7 -1 -1 -1 -1 -1 -1 
+pt_rescued_prisoners Rescued_Prisoners 2 0 1 7 -1 -1 -1 -1 -1 -1 
+pt_enemy Enemy 2 0 42 7 -1 -1 -1 -1 -1 -1 
+pt_hero_party Hero_Party 2 0 1 7 -1 -1 -1 -1 -1 -1 
+pt_village_defenders Village_Defenders 6 0 1 7 18 10 20 0 19 10 20 0 -1 -1 -1 -1 
+pt_cattle_herd Cattle_Herd 2814749767106583 0 3 7 17 80 120 0 -1 -1 -1 -1 -1 
+pt_manhunters Manhunters 2 0 33 137 72 10 60 0 -1 -1 -1 -1 -1 
+pt_merc_party Mercenary_Party 562949953421320 0 1 137 -1 -1 -1 -1 -1 -1 
+pt_looters Looters 2251799813685256 0 2 312 86 10 200 0 -1 -1 -1 -1 -1 
+pt_fallen_phalanx Fallen_Phalanx 2251799813685256 0 2 312 -1 -1 -1 -1 -1 -1 
+pt_shadow_operatives Shadow_Operatives 2251799813685256 0 2 312 -1 -1 -1 -1 -1 -1 
+pt_ezeg_pirates Ezeg_Pirates 2251799813685256 0 2 312 -1 -1 -1 -1 -1 -1 
+pt_plunderer Plunderers 562949953421320 0 2 312 -1 -1 -1 -1 -1 -1 
+pt_raiders Raiders 562949953421320 0 2 312 -1 -1 -1 -1 -1 -1 
+pt_wasteland_raiders Rogue_Adventurers 562949953421320 0 2 312 -1 -1 -1 -1 -1 -1 
+pt_bandit_gang Gangsters 562949953421320 0 2 312 -1 -1 -1 -1 -1 -1 
+pt_jackal_raiders Boar_Raiders 562949953421320 0 2 312 -1 -1 -1 -1 -1 -1 
+pt_scavenge_template Deserters 844424930131976 0 2 312 -1 -1 -1 -1 -1 -1 
+pt_church_extremists Cultists_of_Throd 562949953421320 0 2 312 152 1 5 0 -1 -1 -1 -1 -1 
+pt_steppe_bandits Peasant_Rebels 562949953421318 0 2 312 18 5 10 0 19 5 10 0 -1 -1 -1 -1 
+pt_taiga_bandits Nomads 562949953421318 0 2 312 18 5 10 0 19 5 10 0 -1 -1 -1 -1 
+pt_desert_bandits Hostile_Settlers 562949953421318 0 2 312 20 5 10 0 21 5 10 0 -1 -1 -1 -1 
+pt_forest_bandits Ghoulman_Gang 562949953421320 0 36 312 171 10 100 0 -1 -1 -1 -1 -1 
+pt_mountain_bandits Tattoo_Gang 562949953421320 0 35 312 164 10 100 0 -1 -1 -1 -1 -1 
+pt_sea_raiders White_Skulls_Gang 562949953421320 0 35 312 165 10 100 0 -1 -1 -1 -1 -1 
+pt_cannibals Cannibals 562949953421320 0 2 312 153 10 100 0 154 5 50 0 155 3 25 0 156 1 10 0 157 0 1 0 -1 
+pt_deserters Deserters 844424930131971 0 34 312 -1 -1 -1 -1 -1 -1 
+pt_infected Miasma-stricken_Mob 562949953421320 0 40 312 172 10 75 0 173 5 30 0 174 2 15 0 177 1 5 0 -1 -1 
+pt_infected_scavengers Miasma-stricken_Swarm 562949953421320 0 40 312 172 15 100 0 173 10 75 0 174 5 50 0 175 10 25 0 177 1 8 0 -1 
+pt_infected_soldiers Miasma-stricken_Horde 562949953421320 0 40 312 172 25 175 0 173 20 120 0 174 15 100 0 175 10 25 0 176 20 45 0 177 2 10 0 
+pt_undead Roaming_Undead 562949953421320 0 42 312 178 50 250 0 180 25 125 0 181 10 50 0 182 1 10 0 -1 -1 
+pt_spitters Spitters 562949953421320 0 41 312 187 5 35 0 -1 -1 -1 -1 -1 
+pt_wolfclaw_mutants Howling_Horrors 562949953421320 0 41 312 193 5 50 0 194 1 10 0 -1 -1 -1 -1 
+pt_brute_mutants Brutes 562949953421320 0 41 312 183 5 15 0 184 5 12 0 -1 -1 -1 -1 
+pt_ghouls Ghouls 562949953421320 0 41 312 189 5 15 0 188 10 60 0 -1 -1 -1 -1 
+pt_rancors Horse-Eaters 562949953421320 0 41 312 191 5 20 0 -1 -1 -1 -1 -1 
+pt_ghouls_army Ghouls 562949953421320 0 41 312 188 250 1000 0 -1 -1 -1 -1 -1 
+pt_throd_army Throd_Invasion_Force 562949953421320 0 28 312 150 350 750 0 151 150 500 0 152 25 75 0 -1 -1 -1 
+pt_messenger Messenger 67108870 0 1 7 -1 -1 -1 -1 -1 -1 
+pt_player_caravan Caravan_(owned) 7036874421960726 0 1 7 84 1 1 0 23 10 50 0 -1 -1 -1 -1 
+pt_merchant_caravan Merchant_Caravan 5629499534606358 0 1 11 84 1 1 0 23 5 25 0 -1 -1 -1 -1 
+pt_troublesome_bandits Troublesome_Bandits 2533274790658056 0 2 312 87 14 55 0 -1 -1 -1 -1 -1 
+pt_bandits_awaiting_ransom Bandits_Awaiting_Ransom 2533274790789128 0 3 312 87 24 58 0 381 1 1 1 -1 -1 -1 -1 
+pt_kidnapped_girl Kidnapped_Girl 262153 0 3 7 381 1 1 0 -1 -1 -1 -1 -1 
+pt_village_farmers Peasants 67108870 0 4 7 18 5 10 0 19 3 8 0 -1 -1 -1 -1 
+pt_refugees Refugees 67108870 0 1 7 18 10 20 0 19 6 16 0 -1 -1 -1 -1 
+pt_travellers Travellers 67108870 0 4 7 20 5 10 0 21 3 8 0 -1 -1 -1 -1 
+pt_spy_partners Unremarkable_Travellers 2814749767434240 0 3 7 400 1 1 0 23 5 11 0 -1 -1 -1 -1 
+pt_runaway_serfs Runaway_Serfs 2251799814012934 0 3 7 18 6 7 0 19 3 3 0 -1 -1 -1 -1 
+pt_spy Ordinary_Townsman 1125899907170304 0 3 7 399 1 1 0 -1 -1 -1 -1 -1 
+pt_sacrificed_messenger Sacrificed_Messenger 844424930459650 0 3 7 -1 -1 -1 -1 -1 -1 
+pt_scout_party Scouts 281474980904962 0 1 312 -1 -1 -1 -1 -1 -1 
+pt_patrol_party Patrol 562949957615618 0 1 137 -1 -1 -1 -1 -1 -1 
+pt_messenger_party Messenger 4194309 0 1 7 -1 -1 -1 -1 -1 -1 
+pt_kingdom_caravan_party Caravan 7036874421960726 0 1 7 84 1 1 0 23 12 40 0 -1 -1 -1 -1 
+pt_prisoner_train_party Prisoner_Train 1407374887747586 0 1 7 -1 -1 -1 -1 -1 -1 
+pt_default_prisoners Default_Prisoners 3 0 1 0 87 5 10 1 -1 -1 -1 -1 -1 
+pt_routed_warriors Routed_Enemies 3 0 1 137 -1 -1 -1 -1 -1 -1 
+pt_center_reinforcements Reinforcements 1125899911036936 0 1 11 -1 -1 -1 -1 -1 -1 
+pt_kingdom_hero_party War_Party 4259844 0 1 137 -1 -1 -1 -1 -1 -1 
+pt_kingdom_1_reinforcements_a {!}kingdom_1_reinforcements_a 0 0 1 0 201 15 40 0 -1 -1 -1 -1 -1 
+pt_kingdom_1_reinforcements_b {!}kingdom_1_reinforcements_b 0 0 1 0 201 15 40 0 202 2 5 0 203 1 3 0 -1 -1 -1 
+pt_kingdom_1_reinforcements_c {!}kingdom_1_reinforcements_c 0 0 1 0 201 15 40 0 204 2 5 0 205 2 4 0 210 1 2 0 -1 -1 
+pt_kingdom_1_reinforcements_d {!}kingdom_1_reinforcements_d 0 0 1 0 201 15 40 0 206 1 2 0 207 1 2 0 211 1 2 0 208 1 2 0 -1 
+pt_kingdom_1_reinforcements_e {!}kingdom_1_reinforcements_e 0 0 1 0 201 15 40 0 220 1 2 0 -1 -1 -1 -1 
+pt_kingdom_1_reinforcements_f {!}kingdom_1_reinforcements_f 0 0 1 0 217 5 10 0 218 3 8 0 219 1 2 0 -1 -1 -1 
+pt_kingdom_2_reinforcements_a {!}kingdom_2_reinforcements_a 0 0 1 0 224 15 40 0 -1 -1 -1 -1 -1 
+pt_kingdom_2_reinforcements_b {!}kingdom_2_reinforcements_b 0 0 1 0 224 15 40 0 225 2 5 0 226 1 3 0 -1 -1 -1 
+pt_kingdom_2_reinforcements_c {!}kingdom_2_reinforcements_c 0 0 1 0 224 15 40 0 227 2 5 0 228 2 4 0 229 2 4 0 -1 -1 
+pt_kingdom_2_reinforcements_d {!}kingdom_2_reinforcements_d 0 0 1 0 224 15 40 0 229 1 2 0 231 1 2 0 230 1 2 0 -1 -1 
+pt_kingdom_2_reinforcements_e {!}kingdom_2_reinforcements_e 0 0 1 0 224 15 40 0 239 1 2 0 -1 -1 -1 -1 
+pt_kingdom_2_reinforcements_f {!}kingdom_2_reinforcements_f 0 0 1 0 236 5 10 0 237 3 8 0 238 1 2 0 -1 -1 -1 
+pt_kingdom_3_reinforcements_a {!}kingdom_3_reinforcements_a 0 0 1 0 242 15 40 0 -1 -1 -1 -1 -1 
+pt_kingdom_3_reinforcements_b {!}kingdom_3_reinforcements_b 0 0 1 0 242 15 40 0 243 2 5 0 244 1 3 0 -1 -1 -1 
+pt_kingdom_3_reinforcements_c {!}kingdom_3_reinforcements_c 0 0 1 0 242 15 40 0 245 2 5 0 246 2 4 0 248 2 4 0 249 1 3 0 -1 
+pt_kingdom_3_reinforcements_d {!}kingdom_3_reinforcements_d 0 0 1 0 242 15 40 0 247 1 2 0 250 1 2 0 -1 -1 -1 
+pt_kingdom_3_reinforcements_e {!}kingdom_3_reinforcements_e 0 0 1 0 242 15 40 0 257 1 2 0 -1 -1 -1 -1 
+pt_kingdom_3_reinforcements_f {!}kingdom_3_reinforcements_f 0 0 1 0 254 5 10 0 255 3 8 0 256 1 2 0 -1 -1 -1 
+pt_kingdom_4_reinforcements_a {!}kingdom_4_reinforcements_a 0 0 1 0 259 15 40 0 -1 -1 -1 -1 -1 
+pt_kingdom_4_reinforcements_b {!}kingdom_4_reinforcements_b 0 0 1 0 259 15 40 0 260 2 5 0 261 1 3 0 -1 -1 -1 
+pt_kingdom_4_reinforcements_c {!}kingdom_4_reinforcements_c 0 0 1 0 259 15 40 0 262 2 5 0 263 2 5 0 264 2 4 0 269 2 4 0 -1 
+pt_kingdom_4_reinforcements_d {!}kingdom_4_reinforcements_d 0 0 1 0 259 15 40 0 266 1 2 0 270 1 2 0 271 1 2 0 267 1 2 0 268 1 2 0 
+pt_kingdom_4_reinforcements_e {!}kingdom_4_reinforcements_e 0 0 1 0 259 15 40 0 278 1 2 0 -1 -1 -1 -1 
+pt_kingdom_4_reinforcements_f {!}kingdom_4_reinforcements_f 0 0 1 0 275 5 10 0 276 3 8 0 277 1 2 0 -1 -1 -1 
+pt_kingdom_5_reinforcements_a {!}kingdom_5_reinforcements_a 0 0 1 0 280 15 40 0 -1 -1 -1 -1 -1 
+pt_kingdom_5_reinforcements_b {!}kingdom_5_reinforcements_b 0 0 1 0 280 15 40 0 281 2 5 0 282 1 3 0 -1 -1 -1 
+pt_kingdom_5_reinforcements_c {!}kingdom_5_reinforcements_c 0 0 1 0 280 15 40 0 283 2 5 0 290 1 2 0 284 2 4 0 287 2 4 0 -1 
+pt_kingdom_5_reinforcements_d {!}kingdom_5_reinforcements_d 0 0 1 0 280 15 40 0 285 1 2 0 288 1 2 0 291 1 2 0 286 1 2 0 -1 
+pt_kingdom_5_reinforcements_e {!}kingdom_5_reinforcements_e 0 0 1 0 280 15 40 0 298 1 2 0 -1 -1 -1 -1 
+pt_kingdom_5_reinforcements_f {!}kingdom_5_reinforcements_f 0 0 1 0 295 5 10 0 296 3 8 0 297 1 2 0 -1 -1 -1 
+pt_kingdom_6_reinforcements_a {!}kingdom_6_reinforcements_a 0 0 1 0 300 15 40 0 -1 -1 -1 -1 -1 
+pt_kingdom_6_reinforcements_b {!}kingdom_6_reinforcements_b 0 0 1 0 300 15 40 0 301 2 5 0 302 1 3 0 -1 -1 -1 
+pt_kingdom_6_reinforcements_c {!}kingdom_6_reinforcements_c 0 0 1 0 300 15 40 0 303 2 5 0 304 2 4 0 308 2 4 0 -1 -1 
+pt_kingdom_6_reinforcements_d {!}kingdom_6_reinforcements_d 0 0 1 0 300 15 40 0 305 2 4 0 307 1 2 0 -1 -1 -1 
+pt_kingdom_6_reinforcements_e {!}kingdom_6_reinforcements_e 0 0 1 0 300 15 40 0 315 1 2 0 -1 -1 -1 -1 
+pt_kingdom_6_reinforcements_f {!}kingdom_6_reinforcements_f 0 0 1 0 312 5 10 0 313 3 8 0 314 1 2 0 -1 -1 -1 
+pt_kingdom_7_reinforcements_a {!}kingdom_7_reinforcements_a 0 0 1 0 317 15 40 0 -1 -1 -1 -1 -1 
+pt_kingdom_7_reinforcements_b {!}kingdom_7_reinforcements_b 0 0 1 0 317 15 40 0 318 2 5 0 319 1 3 0 -1 -1 -1 
+pt_kingdom_7_reinforcements_c {!}kingdom_7_reinforcements_c 0 0 1 0 317 15 40 0 320 2 5 0 321 2 4 0 325 2 4 0 -1 -1 
+pt_kingdom_7_reinforcements_d {!}kingdom_7_reinforcements_d 0 0 1 0 317 15 40 0 322 2 4 0 324 1 2 0 -1 -1 -1 
+pt_kingdom_7_reinforcements_e {!}kingdom_7_reinforcements_e 0 0 1 0 317 15 40 0 332 1 2 0 -1 -1 -1 -1 
+pt_kingdom_7_reinforcements_f {!}kingdom_7_reinforcements_f 0 0 1 0 329 5 10 0 330 3 8 0 331 1 2 0 -1 -1 -1 
+pt_kingdom_8_reinforcements_a {!}kingdom_8_reinforcements_a 0 0 1 0 334 15 40 0 -1 -1 -1 -1 -1 
+pt_kingdom_8_reinforcements_b {!}kingdom_8_reinforcements_b 0 0 1 0 334 15 40 0 335 2 5 0 336 1 3 0 -1 -1 -1 
+pt_kingdom_8_reinforcements_c {!}kingdom_8_reinforcements_c 0 0 1 0 334 15 40 0 337 2 5 0 338 2 4 0 342 2 4 0 -1 -1 
+pt_kingdom_8_reinforcements_d {!}kingdom_8_reinforcements_d 0 0 1 0 334 15 40 0 339 2 4 0 341 1 2 0 -1 -1 -1 
+pt_kingdom_8_reinforcements_e {!}kingdom_8_reinforcements_e 0 0 1 0 334 15 40 0 349 1 2 0 -1 -1 -1 -1 
+pt_kingdom_8_reinforcements_f {!}kingdom_8_reinforcements_f 0 0 1 0 346 5 10 0 347 3 8 0 348 1 2 0 -1 -1 -1 
+pt_kingdom_9_reinforcements_a {!}kingdom_9_reinforcements_a 0 0 1 0 351 15 40 0 -1 -1 -1 -1 -1 
+pt_kingdom_9_reinforcements_b {!}kingdom_9_reinforcements_b 0 0 1 0 351 15 40 0 352 2 5 0 353 1 3 0 -1 -1 -1 
+pt_kingdom_9_reinforcements_c {!}kingdom_9_reinforcements_c 0 0 1 0 351 15 40 0 354 2 5 0 355 2 4 0 357 1 2 0 -1 -1 
+pt_kingdom_9_reinforcements_d {!}kingdom_9_reinforcements_d 0 0 1 0 351 15 40 0 356 2 4 0 -1 -1 -1 -1 
+pt_kingdom_9_reinforcements_e {!}kingdom_9_reinforcements_e 0 0 1 0 351 15 40 0 364 1 2 0 -1 -1 -1 -1 
+pt_kingdom_9_reinforcements_f {!}kingdom_9_reinforcements_f 0 0 1 0 361 5 10 0 362 3 8 0 363 1 2 0 -1 -1 -1 
+pt_kingdom_10_reinforcements_a {!}kingdom_10_reinforcements_a 0 0 1 0 366 15 40 0 -1 -1 -1 -1 -1 
+pt_kingdom_10_reinforcements_b {!}kingdom_10_reinforcements_b 0 0 1 0 366 15 40 0 367 2 5 0 368 1 3 0 -1 -1 -1 
+pt_kingdom_10_reinforcements_c {!}kingdom_10_reinforcements_c 0 0 1 0 366 15 40 0 369 2 5 0 370 2 4 0 372 1 2 0 -1 -1 
+pt_kingdom_10_reinforcements_d {!}kingdom_10_reinforcements_d 0 0 1 0 366 15 40 0 371 2 4 0 -1 -1 -1 -1 
+pt_kingdom_10_reinforcements_e {!}kingdom_10_reinforcements_e 0 0 1 0 366 15 40 0 379 1 2 0 -1 -1 -1 -1 
+pt_kingdom_10_reinforcements_f {!}kingdom_10_reinforcements_f 0 0 1 0 376 5 10 0 377 3 8 0 378 1 2 0 -1 -1 -1 
+pt_steppe_bandit_lair Steppe_Bandit_Lair 562949955519574 0 3 312 166 15 58 0 -1 -1 -1 -1 -1 
+pt_taiga_bandit_lair Tundra_Bandit_Lair 562949955519574 0 3 312 167 15 58 0 -1 -1 -1 -1 -1 
+pt_desert_bandit_lair Desert_Bandit_Lair 562949955519574 0 3 312 168 15 58 0 -1 -1 -1 -1 -1 
+pt_forest_bandit_lair Forest_Bandit_Camp 562949955519574 0 3 312 169 15 58 0 -1 -1 -1 -1 -1 
+pt_mountain_bandit_lair Mountain_Bandit_Hideout 562949955519574 0 3 312 170 15 58 0 -1 -1 -1 -1 -1 
+pt_sea_raider_lair Sea_Raider_Landing 562949955519574 0 3 312 165 15 50 0 -1 -1 -1 -1 -1 
+pt_looter_lair Kidnappers'_Hideout 562949955519574 0 3 312 86 15 25 0 -1 -1 -1 -1 -1 
+pt_bandit_lair_templates_end {!}bandit_lair_templates_end 562949953422344 0 2 312 165 15 50 0 -1 -1 -1 -1 -1 
+pt_dplmc_spouse Your_spouse 71303178 0 3 7 -1 -1 -1 -1 -1 -1 
+pt_dplmc_gift_caravan Your_Caravan 7036874421960726 0 1 11 84 1 1 0 23 5 25 0 -1 -1 -1 -1 
+pt_dplmc_recruiter Recruiter 4194309 0 3 7 1265 1 1 0 -1 -1 -1 -1 -1 

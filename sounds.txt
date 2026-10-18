@@ -1,0 +1,1447 @@
+soundsfile version 3
+1091
+ ui_popup_messagewindow.wav 257
+ none.ogg 0
+ ui_popup_experienceup.wav 2457
+ ui_popup_questnew.wav 2713
+ ui_popup_questcomplete.wav 2201
+ ui_popup_questupdate.wav 1945
+ coins_dropped_1.wav 1185
+ coins_dropped_2.wav 2721
+ cow_moo_1.ogg 2201
+ cow_slaughter.ogg 2105
+ horse_gallop_3.wav 768
+ horse_gallop_4.wav 768
+ horse_gallop_5.wav 768
+ sfx_desert_dstntbttl_os_01.wav 2056
+ sfx_desert_dstntbttl_os_02.wav 2056
+ sfx_desert_dstntbttl_os_03.wav 2056
+ sfx_desert_dstntbttl_os_04.wav 2056
+ sfx_desert_dstntbttl_os_05.wav 2056
+ sfx_desert_dstntbttl_os_06.wav 2056
+ greeting_looter_fork_it_over.wav 2057
+ greeting_looter_gimme_all.wav 2057
+ greeting_looter_what_do_we_have.wav 2057
+ greeting_looter2_hold_on_tight.wav 2057
+ greeting_looter2_you_thinks_thats_funny.wav 2057
+ greeting_criminal_1.wav 2057
+ greeting_criminal_2.wav 2057
+ greeting_criminal_3.wav 2057
+ encounter_farmer_2.ogg 2057
+ encounter_farmer_5.ogg 2057
+ encounter_farmer_7.ogg 2057
+ encounter_farmer_9.ogg 2057
+ encounter_sea_raider_5.ogg 2057
+ encounter_sea_raider_9.ogg 2057
+ encounter_sea_raider_9b.ogg 2057
+ encounter_sea_raider_10.ogg 2057
+ encounter_steppe_bandit_3.ogg 2057
+ encounter_steppe_bandit_3b.ogg 2057
+ encounter_steppe_bandit_8.ogg 2057
+ encounter_steppe_bandit_10.ogg 2057
+ encounter_steppe_bandit_12.ogg 2057
+ encounter_nobleman_1.ogg 2057
+ encounter_vaegirs_ally.ogg 2057
+ encounter_vaegirs_ally_2.ogg 2057
+ encounter_vaegirs_neutral.ogg 2057
+ encounter_vaegirs_neutral_2.ogg 2057
+ encounter_vaegirs_neutral_3.ogg 2057
+ encounter_vaegirs_neutral_4.ogg 2057
+ greeting_usa_1.wav 9
+ greeting_usa_2.wav 9
+ greeting_usa_6.wav 9
+ sword_clank_metal_09.wav 2128
+ sword_clank_metal_09b.wav 2128
+ sword_clank_metal_10.wav 2128
+ sword_clank_metal_10b.wav 2128
+ sword_clank_metal_12.wav 2128
+ sword_clank_metal_12b.wav 2128
+ sword_clank_metal_13.wav 2128
+ sword_clank_metal_13b.wav 2128
+ weapon_sabre01.wav 2128
+ weapon_sabre02.wav 2128
+ weapon_sabre03.wav 2128
+ s_swordSwing.wav 2080
+ draw_sword.wav 1056
+ put_back_sword.wav 1040
+ draw_greatsword.wav 1056
+ draw_mace.wav 1056
+ put_back_to_holster.wav 1040
+ draw_greataxe.wav 1056
+ put_back_to_leather.wav 1040
+ draw_spear.wav 1056
+ put_away_spear_01.wav 1040
+ draw_crossbow.wav 1056
+ draw_from_holster.wav 1056
+ draw_dagger.wav 1056
+ put_back_dagger.wav 1040
+ draw_bow.wav 1056
+ draw_shield.wav 1056
+ put_back_shield.wav 1040
+ draw_other.wav 1056
+ draw_other2.wav 1040
+ footstep_1.wav 1040
+ footstep_2.wav 1040
+ footstep_3.wav 1040
+ footstep_4.wav 1040
+ footstep_wood_1.wav 1296
+ footstep_wood_2.wav 1296
+ footstep_wood_4.wav 1296
+ water_walk_1.wav 1840
+ water_walk_2.wav 1840
+ water_walk_3.wav 1840
+ water_walk_4.wav 1840
+ jump_begin.wav 1680
+ jump_end.wav 1424
+ jump_begin_water.wav 912
+ jump_end_water.wav 912
+ horse_walk_1.wav 1328
+ horse_walk_2.wav 1328
+ horse_walk_3.wav 1328
+ horse_walk_4.wav 1328
+ horse_trot_1.wav 1600
+ horse_trot_2.wav 1600
+ horse_trot_3.wav 1600
+ horse_trot_4.wav 1600
+ horse_canter_1.wav 1856
+ horse_canter_2.wav 1856
+ horse_canter_3.wav 1856
+ horse_canter_4.wav 1856
+ horse_gallop_6.wav 2128
+ horse_gallop_7.wav 2128
+ horse_gallop_8.wav 2128
+ horse_gallop_9.wav 2128
+ s_footstep_horse_4b.wav 2096
+ s_footstep_horse_4f.wav 2096
+ s_footstep_horse_5b.wav 2096
+ s_footstep_horse_5f.wav 2096
+ s_footstep_horse_2b.wav 2096
+ s_footstep_horse_2f.wav 2096
+ s_footstep_horse_3b.wav 2096
+ s_footstep_horse_3f.wav 2096
+ horse_jump_begin.wav 1680
+ horse_jump_end.wav 1936
+ pull_bow_1.wav 1280
+ pull_arrow.wav 1280
+ release_bow_1.wav 1024
+ throw_javelin_2.wav 1280
+ throw_axe_1.wav 1792
+ throw_knife_1.wav 1280
+ throw_stone_1.wav 1280
+ body_hit_1.wav 64
+ body_hit_2.wav 64
+ body_hit_3.wav 64
+ impact_body2.wav 64
+ impact_body6.wav 64
+ arrow_pass_by_1.wav 112
+ arrow_pass_by_2.wav 112
+ arrow_pass_by_3.wav 112
+ arrow_pass_by_4.wav 112
+ bullet_pass_01.wav 112
+ bullet_pass_02.wav 112
+ bullet_pass_03.wav 112
+ bullet_pass_04.wav 112
+ bullet_pass_05.wav 112
+ bullet_pass_06.wav 112
+ bullet_pass_07.wav 112
+ bullet_pass_08.wav 112
+ bullet_pass_09.wav 112
+ bullet_pass_10.wav 112
+ bullet_pass_11.wav 112
+ bullet_pass_12.wav 112
+ javelin_pass_by_1.wav 112
+ javelin_pass_by_2.wav 112
+ stone_pass_by_1.wav 2416
+ axe_pass_by_1.wav 112
+ knife_pass_by_1.wav 112
+ arrow_hit_ground_2.wav 1904
+ arrow_hit_ground_3.wav 1904
+ bullet_hit_ground1.wav 1904
+ bullet_hit_ground2.wav 1904
+ bullet_hit_ground3.wav 1904
+ bullet_hit_ground4.wav 1904
+ bullet_hit_ground5.wav 1904
+ incoming_javelin_hit_ground_1.wav 1904
+ incoming_stone_hit_ground_1.wav 1904
+ outgoing_arrow_hit_ground.wav 1904
+ body_fall_small_1.wav 2384
+ body_fall_small_2.wav 2384
+ body_fall_1.wav 2144
+ body_fall_2.wav 2144
+ body_fall_3.wav 2144
+ horse_body_fall_begin_1.wav 2672
+ horse_body_fall_end_1.wav 2672
+ body_fall_very_big_1.wav 2672
+ hit_wood_wood_1.wav 3184
+ hit_wood_wood_2.wav 3184
+ hit_wood_wood_3.wav 3184
+ hit_wood_wood_4.wav 3184
+ hit_wood_metal_4.wav 3184
+ hit_wood_metal_5.wav 3184
+ hit_wood_metal_6.wav 3184
+ hit_metal_metal_3.wav 2672
+ hit_metal_metal_4.wav 2672
+ hit_metal_metal_5.wav 2672
+ hit_metal_metal_6.wav 2672
+ hit_metal_metal_7.wav 2672
+ hit_metal_metal_8.wav 2672
+ hit_metal_metal_9.wav 2672
+ hit_metal_metal_10.wav 2672
+ clang_metal_1.wav 2672
+ clang_metal_2.wav 2672
+ hit_metal_metal_1.wav 2672
+ hit_metal_metal_2.wav 2672
+ hit_wood_metal_7.wav 2672
+ shield_hit_wood_wood_1.wav 2416
+ shield_hit_wood_wood_2.wav 2416
+ shield_hit_wood_wood_3.wav 2416
+ shield_hit_metal_metal_1.wav 2672
+ shield_hit_metal_metal_2.wav 2672
+ shield_hit_metal_metal_3.wav 2672
+ shield_hit_metal_metal_4.wav 2672
+ shield_hit_cut_3.wav 2672
+ shield_hit_cut_4.wav 2672
+ shield_hit_cut_5.wav 2672
+ shield_hit_cut_10.wav 2672
+ shield_hit_metal_wood_1.wav 2672
+ shield_hit_metal_wood_2.wav 2672
+ shield_hit_metal_wood_3.wav 2672
+ shield_broken.wav 144
+ man_pain_1.wav 1904
+ man_pain_2.wav 1904
+ man_pain_3.wav 1904
+ man_pain_4.wav 1904
+ man_pain_5.wav 1904
+ man_pain_6.wav 1904
+ man_pain_7.wav 1904
+ man_pain_8.wav 1904
+ man_pain_9.wav 1904
+ man_pain_10.wav 1904
+ man_pain_11.wav 1904
+ man_pain_12.wav 1904
+ man_pain_13.wav 1904
+ man_pain_14.wav 1904
+ man_pain_15.wav 1904
+ man_pain_16.wav 1904
+ man_pain_17.wav 1904
+ man_pain_18.wav 1904
+ man_pain_19.wav 1904
+ man_pain_20.wav 1904
+ man_pain_21.wav 1904
+ man_pain_22.wav 1904
+ man_pain_23.wav 1904
+ man_pain_24.wav 1904
+ man_pain_25.wav 1904
+ man_pain_26.wav 1904
+ man_pain_27.wav 1904
+ man_pain_28.wav 1904
+ man_pain_29.wav 1904
+ man_death_1.wav 2208
+ man_death_2.wav 2208
+ man_death_3.wav 2208
+ man_death_4.wav 2208
+ man_death_5.wav 2208
+ man_death_6.wav 2208
+ man_death_7.wav 2208
+ man_death_8.wav 2208
+ man_death_9.wav 2208
+ man_death_10.wav 2208
+ man_death_11.wav 2208
+ man_death_12.wav 2208
+ man_death_13.wav 2208
+ man_death_14.wav 2208
+ man_death_15.wav 2208
+ man_death_16.wav 2208
+ man_death_17.wav 2208
+ man_death_18.wav 2208
+ man_death_19.wav 2208
+ man_death_20.wav 2208
+ man_death_21.wav 2208
+ man_death_22.wav 2208
+ man_death_23.wav 2208
+ man_death_24.wav 2208
+ man_death_25.wav 2208
+ man_death_26.wav 2208
+ man_death_27.wav 2208
+ man_death_28.wav 2208
+ man_death_29.wav 2208
+ man_death_30.wav 2208
+ man_death_31.wav 2208
+ man_death_32.wav 2208
+ woman_hit_2.wav 112
+ woman_hit_3.wav 112
+ woman_hit_b_2.wav 112
+ woman_hit_b_4.wav 112
+ woman_hit_b_6.wav 112
+ woman_hit_b_7.wav 112
+ woman_hit_b_8.wav 112
+ woman_hit_b_11.wav 112
+ woman_hit_b_14.wav 112
+ woman_hit_b_16.wav 112
+ woman_pain_1.wav 112
+ woman_pain_2.wav 112
+ woman_pain_3.wav 112
+ woman_pain_4.wav 112
+ woman_pain_5.wav 112
+ woman_pain_6.wav 112
+ woman_pain_7.wav 112
+ woman_pain_8.wav 112
+ woman_pain_9.wav 112
+ woman_pain_10.wav 112
+ woman_pain_11.wav 112
+ woman_pain_12.wav 112
+ woman_fall_1.wav 2464
+ woman_hit_b_5.wav 2464
+ woman_death_1.wav 2464
+ woman_death_2.wav 2464
+ woman_death_3.wav 2464
+ woman_death_4.wav 2464
+ woman_death_5.wav 2464
+ woman_death_6.wav 2464
+ woman_death_7.wav 2464
+ woman_death_8.wav 2464
+ woman_death_9.wav 2464
+ woman_death_10.wav 2464
+ woman_death_11.wav 2464
+ woman_death_12.wav 2464
+ woman_death_13.wav 2464
+ woman_death_14.wav 2464
+ woman_death_15.wav 2464
+ woman_death_16.wav 2464
+ woman_death_17.wav 2464
+ woman_death_18.wav 2464
+ woman_death_19.wav 2464
+ woman_death_20.wav 2464
+ woman_death_21.wav 2464
+ woman_death_22.wav 2464
+ woman_death_23.wav 2464
+ woman_yell_1.wav 2432
+ woman_yell_2.wav 2432
+ horse_breath_4.wav 1040
+ horse_breath_5.wav 1040
+ horse_breath_6.wav 1040
+ horse_breath_7.wav 1040
+ horse_snort_1.wav 536
+ horse_snort_2.wav 536
+ horse_snort_3.wav 536
+ horse_snort_4.wav 536
+ horse_snort_5.wav 536
+ horse_whinny-1.wav 3080
+ horse_whinny-2.wav 3080
+ arrow_hit_body_1.wav 64
+ arrow_hit_body_2.wav 64
+ arrow_hit_body_3.wav 64
+ sword_hit_lo_armor_lo_dmg_1.wav 2384
+ sword_hit_lo_armor_lo_dmg_2.wav 2384
+ sword_hit_lo_armor_lo_dmg_3.wav 2384
+ sword_hit_lo_armor_hi_dmg_1.wav 2384
+ sword_hit_lo_armor_hi_dmg_2.wav 2384
+ sword_hit_lo_armor_hi_dmg_3.wav 2384
+ metal_hit_high_armor_low_damage.wav 2384
+ metal_hit_high_armor_low_damage_2.wav 2384
+ metal_hit_high_armor_low_damage_3.wav 2384
+ sword_hit_hi_armor_hi_dmg_1.wav 2384
+ sword_hit_hi_armor_hi_dmg_2.wav 2384
+ sword_hit_hi_armor_hi_dmg_3.wav 2384
+ blunt_hit_low_1.wav 2384
+ blunt_hit_low_2.wav 2384
+ blunt_hit_low_3.wav 2384
+ blunt_hit_high_1.wav 2384
+ blunt_hit_high_2.wav 2384
+ blunt_hit_high_3.wav 2384
+ wooden_hit_high_armor_low_damage.wav 2384
+ wooden_hit_high_armor_low_damage_2.wav 2384
+ punch_1.wav 2640
+ punch_4.wav 2640
+ punch_5.wav 2640
+ player_hit_by_arrow.wav 2736
+ man_excercise_1.wav 1072
+ man_excercise_2.wav 1072
+ man_excercise_4.wav 1072
+ man_ugh_1.wav 2096
+ man_ugh_2.wav 2096
+ man_ugh_4.wav 2096
+ man_ugh_7.wav 2096
+ man_ugh_12.wav 2096
+ man_ugh_13.wav 2096
+ man_ugh_17.wav 2096
+ man_stun_1.wav 2096
+ man_grunt_1.wav 1888
+ man_grunt_2.wav 1888
+ man_grunt_3.wav 1888
+ man_grunt_4.wav 1888
+ man_grunt_5.wav 1888
+ man_grunt_6.wav 1888
+ man_grunt_7.wav 1888
+ man_grunt_8.wav 1888
+ man_grunt_9.wav 1888
+ man_grunt_10.wav 1888
+ man_grunt_11.wav 1888
+ man_grunt_12.wav 1888
+ man_grunt_13.wav 1888
+ man_grunt_14.wav 1888
+ man_grunt_15.wav 1888
+ man_grunt_16.wav 1888
+ man_grunt_17.wav 1888
+ man_grunt_18.wav 1888
+ man_grunt_19.wav 1888
+ man_grunt_20.wav 1888
+ man_yell_4.wav 2128
+ man_yell_4_2.wav 2128
+ man_yell_7.wav 2128
+ man_yell_9.wav 2128
+ man_yell_11.wav 2128
+ man_yell_13.wav 2128
+ man_yell_15.wav 2128
+ man_yell_16.wav 2128
+ man_yell_17.wav 2128
+ man_yell_20.wav 2128
+ man_shortyell_4.wav 2128
+ man_shortyell_5.wav 2128
+ man_shortyell_6.wav 2128
+ man_shortyell_9.wav 2128
+ man_shortyell_11.wav 2128
+ man_shortyell_11b.wav 2128
+ man_yell_b_18.wav 2128
+ man_yell_22.wav 2128
+ man_yell_c_20.wav 2128
+ man_insult_2.wav 80
+ man_insult_3.wav 80
+ man_insult_7.wav 80
+ man_insult_9.wav 80
+ man_insult_13.wav 80
+ man_insult_15.wav 80
+ man_insult_16.wav 80
+ block_fist_3.wav 0
+ block_fist_4.wav 0
+ man_victory_3.wav 2384
+ man_victory_4.wav 2384
+ man_victory_5.wav 2384
+ man_victory_8.wav 2384
+ man_victory_15.wav 2384
+ man_victory_49.wav 2384
+ man_victory_52.wav 2384
+ man_victory_54.wav 2384
+ man_victory_57.wav 2384
+ man_victory_71.wav 2384
+ horse_exterior_whinny_01.wav 8
+ horse_exterior_whinny_02.wav 8
+ horse_exterior_whinny_03.wav 8
+ horse_exterior_whinny_04.wav 8
+ horse_exterior_whinny_05.wav 8
+ horse_whinny.wav 8
+ sfx_dogbarkdistant_os_01.wav 2104
+ sfx_dogbarkdistant_os_02.wav 2104
+ sfx_dogbarkdistant_os_03.wav 2104
+ sfx_dogbarkdistant_os_04.wav 2104
+ sfx_dogbarkdistant_os_05.wav 2104
+ sfx_desert_owl_os_01.wav 2104
+ sfx_desert_owl_os_02.wav 2104
+ sfx_desert_owl_os_03.wav 2104
+ d_blacksmith2.ogg 360
+ d_carpenter1.ogg 360
+ d_saw_short3.ogg 360
+ amb_pittcrowd_ahh_01.wav 907
+ amb_pittcrowd_ahh_02.wav 907
+ amb_pittcrowd_ahh_03.wav 907
+ amb_pittcrowd_cheer_01.wav 907
+ amb_pittcrowd_cheer_02.wav 907
+ amb_pittcrowd_cheer_03.wav 907
+ rain-amb.wav 1195
+ Fire_Torch_Loop3.wav 1182
+ m4a1_01.wav 1264
+ m4a1_02.wav 1264
+ m4a1_03.wav 1264
+ m4a1_04.wav 1264
+ m1carbine.wav 1264
+ deagle_01.wav 1264
+ deagle_02.wav 1264
+ deagle_03.wav 1264
+ r700.wav 1264
+ thompson.wav 1264
+ ak47_01.wav 1264
+ tec9.wav 1264
+ g36c.wav 1264
+ colt1911.wav 1264
+ mp5.wav 1264
+ ump45.wav 1264
+ uzi.wav 1264
+ mp40.wav 1264
+ mg42.wav 1264
+ mauser.wav 1264
+ m249.wav 1264
+ type99.wav 1264
+ gewehr_sniper.wav 1264
+ wpn_plasmarifle_fire_3d_01.wav 1264
+ wpn_plasmarifle_fire_3d_02.wav 1264
+ wpn_plasmapistol_fire_3d_01.wav 1264
+ wpn_plasmapistol_fire_3d_02.wav 1264
+ wpn_powerfist_fire_3d.wav 2288
+ wpn_9mm_fire_3d_01.wav 1264
+ wpn_9mm_fire_3d_02.wav 1264
+ wpn_9mm_fire_3d_03.wav 1264
+ wpn_9mm_fire_3d_04.wav 1264
+ wpn_9mmsmg_fire_3d_01.wav 1264
+ wpn_9mmsmg_fire_3d_02.wav 1264
+ wpn_9mmsmg_fire_3d_03.wav 1264
+ wpn_9mmsmg_fire_3d_04.wav 1264
+ wpn_45_smg_3d_01.wav 1264
+ wpn_45_smg_3d_02.wav 1264
+ wpn_45_smg_3d_03.wav 1264
+ wpn_10mmpistolfire_3d_01.wav 1264
+ wpn_10mmpistolfire_3d_02.wav 1264
+ wpn_10mmpistolfire_3d_03.wav 1264
+ wpn_policepistol_fire_3d_01.wav 1264
+ wpn_policepistol_fire_3d_02.wav 1264
+ wpn_policepistol_fire_3d_03.wav 1264
+ wpn_fire_357revolver_3d_01.wav 1264
+ wpn_fire_357revolver_3d_02.wav 1264
+ wpn_fire_357revolver_3d_03.wav 1264
+ wpn_44revolv_fire_3d_01.wav 1264
+ wpn_44revolv_fire_3d_02.wav 1264
+ wpn_44revolv_fire_3d_03.wav 1264
+ wpn_fire_huntingrevolver_3d_01.wav 1264
+ wpn_fire_huntingrevolver_3d_02.wav 1264
+ wpn_fire_huntingrevolver_3d_03.wav 1264
+ wpn_assaultcarb_fire_3d_01.wav 1264
+ wpn_assaultcarb_fire_3d_02.wav 1264
+ wpn_assaultcarb_fire_3d_03.wav 1264
+ wpn_marksmancarbine_fire_3d_01.wav 1264
+ wpn_marksmancarbine_fire_3d_02.wav 1264
+ wpn_marksmancarbine_fire_3d_03.wav 1264
+ wpn_huntingrifle_fire_3d_01.wav 1264
+ wpn_huntingrifle_fire_3d_02.wav 1264
+ wpn_huntingrifle_fire_3d_03.wav 1264
+ wpn_trailcarbine_fire_3d_01.wav 1264
+ wpn_trailcarbine_fire_3d_02.wav 1264
+ wpn_trailcarbine_fire_3d_03.wav 1264
+ wpn_pistol22_fire_3d.wav 1264
+ wpn_rifleassaultg3_fire_3d.wav 1264
+ wpn_autorifle_fire_3d_01.wav 1264
+ wpn_autorifle_fire_3d_02.wav 1264
+ wpn_autorifle_fire_3d_03.wav 1264
+ wpn_riflegauss_fire_3d.wav 1264
+ wpn_huntingshotgun_fire_3d_01.wav 1264
+ wpn_huntingshotgun_fire_3d_02.wav 1264
+ wpn_riotshotgun_fire_3d_01.wav 1264
+ wpn_riotshotgun_fire_3d_02.wav 1264
+ wpn_sawedoffshotgun_fire_3d_01.wav 1264
+ wpn_sawedoffshotgun_fire_3d_02.wav 1264
+ wpn_shotguncombat_fire_3d.wav 1264
+ wpn_silenced22smg_fire_3d_01.wav 1264
+ wpn_silenced22smg_fire_3d_02.wav 1264
+ wpn_silenced22smg_fire_3d_03.wav 1264
+ wpn_flamer_fire_3d_lpm.wav 1264
+ rpg.wav 1264
+ garand_shot.ogg 1264
+ garand_ping.wav 1265
+ wpn_flamer_idle_lpm.wav 1104
+ wpn_rifleplasma_idle_lpm.wav 1104
+ wpn_9mmreload.wav 1185
+ wpn_riflesmg_reload.wav 1185
+ wpn_flamer_reload.wav 1185
+ wpn_pistolplasma_reload.wav 1185
+ wpn_44revolv_reload.wav 1185
+ wpn_pistol10mm_firedry.wav 1185
+ flash_bang.wav 2209
+ grenade3.wav 4080
+ fx_explosion_molotov_01.wav 4080
+ fx_explosion_molotov_02.wav 4080
+ grenade2.wav 4080
+ amb_slum_day_lp.wav 387
+ amb_cmpmcrn_day_lp.wav 899
+ amb_cmpmcrn_night_lp.wav 899
+ amb_dstrydcty_day_lp.wav 899
+ amb_dstrydcty_night_lp.wav 899
+ ambf_wind_day_lp.wav 2179
+ ambf_wind_night_lp.wav 2179
+ amb_sandstorm_lp.wav 2179
+ thunder_close_1.wav 2697
+ thunder_close_2.wav 2697
+ thunder_close_3.wav 2697
+ amb_blackmountain_thunder_01.wav 2616
+ amb_blackmountain_thunder_02.wav 2616
+ amb_blackmountain_thunder_03.wav 2616
+ amb_blackmountain_thunder_04.wav 2616
+ amb_blackmountain_thunder_05.wav 2616
+ amb_blackmountain_thunder_06.wav 2616
+ windmill_fan.wav 2698
+ amb_storm_03.wav 1082
+ amb_storm_04.wav 1082
+ amb_storm_01.wav 1082
+ amb_storm_02.wav 1082
+ sfx_industrialmachine02_lp.wav 2618
+ sfx_acloop.wav 2618
+ glass.wav 2698
+ emt_holdingtank_lp.wav 2618
+ sfx_steamburst_os_01.wav 2618
+ sfx_steamburst_os_02.wav 2618
+ sfx_steamburst_os_03.wav 2618
+ sfx_steamrelease_os_1.wav 2618
+ sfx_steamrelease_os_2.wav 2618
+ sfx_steamrelease_os_3.wav 2618
+ sfx_steamrelease_os_4.wav 2618
+ sfx_console_01_lp.wav 2618
+ sfx_neonsign_pt1.wav 2618
+ amb_campfire.wav 2698
+ rain_heavy_roof.wav 1342
+ rain_heavy_stone.wav 1342
+ fx_explosion_nukebig_demo.wav 1416
+ amb_insects_wasteland_flies_01.wav 2104
+ amb_insects_wasteland_flies_02.wav 2104
+ amb_insects_wasteland_flies_03.wav 2104
+ amb_insects_wasteland_flies_04.wav 2104
+ amb_insects_wasteland_flies_05.wav 2104
+ amb_insects_wasteland_flies_06.wav 2104
+ amb_insects_wasteland_flies_07.wav 2104
+ amb_insects_wasteland_flies_08.wav 2104
+ amb_insects_wasteland_flies_09.wav 2104
+ amb_insects_wasteland_flies_10.wav 2104
+ amb_insects_wasteland_flies_11.wav 2104
+ amb_insects_wasteland_flies_12.wav 2104
+ amb_canyonwind_01.wav 2104
+ amb_canyonwind_02.wav 2104
+ amb_canyonwind_03.wav 2104
+ amb_canyonwind_04.wav 2104
+ amb_dstrydcty_debris_02.wav 2096
+ amb_dstrydcty_debris_03.wav 2096
+ amb_dstrydcty_debris_04.wav 2096
+ amb_dstrydcty_debris_05.wav 2096
+ amb_dstrydcty_debris_06.wav 2096
+ amb_dstrydcty_debris_07.wav 2096
+ amb_insects_wasteland_cricket_01.wav 2104
+ amb_insects_wasteland_cricket_02.wav 2104
+ amb_insects_wasteland_cricket_03.wav 2104
+ amb_insects_wasteland_cricket_04.wav 2104
+ amb_insects_wasteland_cricket_05.wav 2104
+ amb_insects_wasteland_cricket_06.wav 2104
+ amb_insects_wasteland_cricket_07.wav 2104
+ amb_insects_wasteland_cricket_08.wav 2104
+ amb_insects_wasteland_cricket_09.wav 2104
+ amb_insects_wasteland_cricket_10.wav 2104
+ amb_insects_wasteland_cricket_11.wav 2104
+ amb_insects_wasteland_cricket_12.wav 2104
+ amb_insects_wasteland_cricket_13.wav 2104
+ amb_insects_wasteland_cricket_14.wav 2104
+ amb_insects_wasteland_cricket_15.wav 2104
+ amb_insects_wasteland_rustle_01.wav 2104
+ amb_insects_wasteland_rustle_02.wav 2104
+ amb_insects_wasteland_rustle_03.wav 2104
+ amb_insects_wasteland_rustle_04.wav 2104
+ amb_insects_wasteland_rustle_05.wav 2104
+ amb_insects_wasteland_rustle_06.wav 2104
+ amb_insects_wasteland_rustle_07.wav 2104
+ amb_insects_wasteland_rustle_08.wav 2104
+ amb_insects_wasteland_rustle_09.wav 2104
+ amb_insects_wasteland_rustle_10.wav 2104
+ amb_r_creaking_01.wav 2104
+ amb_r_creaking_02.wav 2104
+ amb_r_creaking_03.wav 2104
+ amb_r_creaking_04.wav 2104
+ amb_r_creaking_05.wav 2104
+ amb_r_creaking_06.wav 2104
+ amb_r_creaking_07.wav 2104
+ amb_r_creaking_08.wav 2104
+ amb_r_creaking_09.wav 2104
+ amb_r_creaking_10.wav 2104
+ amb_r_creaking_11.wav 2104
+ amb_r_creaking_12.wav 2104
+ amb_r_creaking_13.wav 2104
+ amb_r_creaking_14.wav 2104
+ amb_r_creaking_15.wav 2104
+ amb_r_creaking_16.wav 2104
+ amb_r_creaking_17.wav 2104
+ amb_r_creaking_18.wav 2104
+ amb_regions_city_creaking_b_01.wav 2104
+ amb_regions_city_creaking_b_02.wav 2104
+ amb_regions_city_creaking_b_03.wav 2104
+ amb_regions_city_creaking_b_04.wav 2104
+ amb_regions_city_creaking_b_05.wav 2104
+ sfx_desert_cicadas_os_01.wav 2104
+ sfx_desert_cicadas_os_02.wav 2104
+ sfx_desert_cicadas_os_03.wav 2104
+ sfx_desert_cicadas_os_04.wav 2104
+ ambr_city_gunshots_low_01.wav 2184
+ ambr_city_gunshots_low_02.wav 2184
+ ambr_city_gunshots_low_03.wav 2184
+ ambr_city_gunshots_low_04.wav 2184
+ ambr_city_gunshots_low_05.wav 2184
+ amb_dstrydcty_guna_01.wav 2184
+ amb_dstrydcty_guna_02.wav 2184
+ amb_dstrydcty_guna_03.wav 2184
+ amb_dstrydcty_guna_04.wav 2184
+ amb_dstrydcty_guna_05.wav 2184
+ amb_dstrydcty_guna_06.wav 2184
+ amb_dstrydcty_guna_07.wav 2184
+ amb_dstrydcty_gunb_01.wav 2184
+ amb_dstrydcty_gunb_02.wav 2184
+ amb_dstrydcty_gunb_03.wav 2184
+ amb_dstrydcty_gunb_04.wav 2184
+ amb_dstrydcty_gunb_05.wav 2184
+ amb_dstrydcty_gunb_06.wav 2184
+ amb_dstrydcty_gunb_07.wav 2184
+ sfx_desert_eagle_os_01.wav 2104
+ sfx_desert_eagle_os_02.wav 2104
+ sfx_desert_eagle_os_03.wav 2104
+ sfx_desert_eagle_os_04.wav 2104
+ sfx_desert_eagle_os_05.wav 2104
+ sfx_desert_hawk_os_01.wav 2104
+ sfx_desert_hawk_os_02.wav 2104
+ sfx_desert_hawk_os_03.wav 2104
+ sfx_desert_hawk_os_04.wav 2104
+ ambr_generic_rumble_01_2d.wav 2105
+ ambr_generic_rumble_02_2d.wav 2105
+ sfx_distantmetalrumble_0s_01.wav 2104
+ sfx_distantmetalrumble_0s_02.wav 2104
+ ambr_plains_windgust_01.wav 2104
+ ambr_plains_windgust_02.wav 2104
+ ambr_plains_windgust_03.wav 2104
+ ambr_plains_windgust_04.wav 2104
+ ambr_plains_windgust_05.wav 2104
+ ambr_plains_windgust_06.wav 2104
+ ambr_plains_windgust_07.wav 2104
+ ambr_plains_windgust_08.wav 2104
+ ambr_plains_windgust_09.wav 2104
+ ambr_plains_windgust_10.wav 2104
+ ambr_plains_windgust_11.wav 2104
+ ambr_plains_windgust_12.wav 2104
+ ambr_plains_windgust_13.wav 2104
+ sfx_windgust_a01.wav 2104
+ sfx_windgust_a02.wav 2104
+ sfx_windgust_a03.wav 2104
+ sfx_windgust_a04.wav 2104
+ sfx_windgust_b01.wav 2104
+ sfx_windgust_b02.wav 2104
+ sfx_windgust_b03.wav 2104
+ sfx_windgust_b04.wav 2104
+ sfx_windgust_c01.wav 2104
+ sfx_windgust_c02.wav 2104
+ sfx_windgust_c03.wav 2104
+ sfx_windgust_c04.wav 2104
+ sfx_windgust_d01.wav 2104
+ sfx_windgust_d02.wav 2104
+ sfx_windgust_d03.wav 2104
+ sfx_windgust_d04.wav 2104
+ sfx_windgust_e01.wav 2104
+ sfx_windgust_e02.wav 2104
+ sfx_windgust_e03.wav 2104
+ sfx_windgust_e04.wav 2104
+ sfx_windgust_f01.wav 2104
+ sfx_windgust_f02.wav 2104
+ sfx_windgust_f03.wav 2104
+ sfx_windgust_f04.wav 2104
+ sfx_windgust_g01.wav 2104
+ sfx_windgust_g02.wav 2104
+ sfx_windgust_g03.wav 2104
+ sfx_windgust_g04.wav 2104
+ sfx_howls_01.wav 2104
+ sfx_howls_02.wav 2104
+ sfx_howls_03.wav 2104
+ sfx_howls_04.wav 2104
+ sfx_howls_05.wav 2104
+ sfx_howls_06.wav 2104
+ sfx_vultures_01.wavsfx_vultures_02.wavsfx_vultures_03.wavsfx_vultures_04.wav 2104
+ sfx_desert_sand_os_01.wav 2104
+ sfx_desert_sand_os_02.wav 2104
+ sfx_desert_sand_os_03.wav 2104
+ sfx_desert_sand_os_04.wav 2104
+ sfx_desert_sand_os_05.wav 2104
+ sfx_desert_sand_os_06.wav 2104
+ sfx_desert_sand_os_07.wav 2104
+ sfx_desert_sand_os_08.wav 2104
+ sfx_desert_sand_os_09.wav 2104
+ sfx_desert_sand_os_10.wav 2104
+ sfx_desert_snake_os_01.wav 2104
+ sfx_desert_snake_os_02.wav 2104
+ sfx_desert_snake_os_03.wav 2104
+ sfx_desert_snake_os_04.wav 2104
+ sfx_desert_snake_os_05.wav 2104
+ sfx_desert_snake_os_06.wav 2104
+ sfx_desert_snake_os_07.wav 2104
+ sfx_desert_bird-b_os_01.wav 2104
+ sfx_desert_bird-b_os_02.wav 2104
+ sfx_desert_bird-b_os_03.wav 2104
+ sfx_desert_bird-b_os_04.wav 2104
+ sfx_desert_bird-b_os_05.wav 2104
+ sfx_desert_bird-b_os_06.wav 2104
+ sfx_desert_bird-b_os_07.wav 2104
+ sfx_desert_bird-c_os_01.wav 2104
+ sfx_desert_bird-c_os_02.wav 2104
+ sfx_desert_bird-c_os_03.wav 2104
+ sfx_desert_bird-d_os_01.wav 2104
+ sfx_desert_bird-d_os_02.wav 2104
+ sfx_desert_bird-d_os_03.wav 2104
+ sfx_desert_bird-d_os_04.wav 2104
+ sfx_desert_bird-e_os_01.wav 2104
+ sfx_desert_bird-e_os_02.wav 2104
+ sfx_desert_bird-e_os_03.wav 2104
+ sfx_desert_bird-f_os_01.wav 2104
+ sfx_desert_bird-f_os_02.wav 2104
+ sfx_desert_bird-f_os_03.wav 2104
+ sfx_desert_bird-f_os_04.wav 2104
+ sfx_desert_bird-g_os_01.wav 2104
+ sfx_desert_bird-g_os_02.wav 2104
+ sfx_desert_bird-g_os_03.wav 2104
+ sfx_desert_bird-g_os_04.wav 2104
+ sfx_desert_bird-h_os_01.wav 2104
+ sfx_desert_bird-h_os_02.wav 2104
+ sfx_desert_bird-h_os_03.wav 2104
+ sfx_desert_bird-a_os_01.wav 2104
+ sfx_desert_bird-a_os_02.wav 2104
+ sfx_desert_bird-a_os_03.wav 2104
+ ambr_bird_oasis_01.wav 2104
+ ambr_bird_oasis_02.wav 2104
+ ambr_bird_oasis_03.wav 2104
+ ambr_bird_oasis_04.wav 2104
+ ambr_bird_oasis_05.wav 2104
+ ambr_bird_oasis_06.wav 2104
+ ambr_bird_oasis_07.wav 2104
+ ambr_bird_oasis_08.wav 2104
+ ambr_bird_oasis_09.wav 2104
+ ambr_bird_oasis_10.wav 2104
+ ambr_bird_oasis_11.wav 2104
+ ambr_bird_carrion_09.wav 2104
+ ambr_bird_carrion_11.wav 2104
+ ambr_bird_carrion_12.wav 2104
+ ambr_bird_carrion_13.wav 2104
+ ambr_bird_carrion_01.wav 2104
+ ambr_bird_carrion_02.wav 2104
+ ambr_bird_carrion_03.wav 2104
+ ambr_bird_carrion_04.wav 2104
+ ambr_bird_carrion_05.wav 2104
+ ambr_bird_carrion_06.wav 2104
+ ambr_bird_carrion_07.wav 2104
+ ambr_bird_carrion_08.wav 2104
+ amb_cmpmcrn_alarm.wav 2104
+ amb_electricarc_small_a_01.wav 2104
+ amb_electricarc_small_a_02.wav 2104
+ amb_electricarc_small_a_03.wav 2104
+ amb_electricarc_small_a_04.wav 2104
+ amb_electricarc_small_b_01.wav 2104
+ amb_electricarc_small_b_02.wav 2104
+ amb_electricarc_small_b_03.wav 2104
+ amb_electricarc_small_b_04.wav 2104
+ amb_cmpmcrn_machine_01.wav 2104
+ amb_cmpmcrn_machine_02.wav 2104
+ amb_cmpmcrn_machine_03.wav 2104
+ amb_cmpmcrn_machine_04.wav 2104
+ amb_cmpmcrn_machine_05.wav 2104
+ amb_cmpmcrn_machine_06.wav 2104
+ amb_cmpmcrn_machineb_01.wav 2104
+ amb_cmpmcrn_machineb_02.wav 2104
+ amb_cmpmcrn_machineb_03.wav 2104
+ amb_cmpmcrn_machineb_04.wav 2104
+ amb_cmpmcrn_machineb_05.wav 2104
+ amb_cmpmcrn_machineb_06.wav 2104
+ amb_cmpmcrn_tooldrop_01.wav 2104
+ amb_cmpmcrn_tooldrop_02.wav 2104
+ amb_cmpmcrn_tooldrop_03.wav 2104
+ amb_cmpmcrn_tooldrop_04.wav 2104
+ amb_cmpmcrn_tooldrop_05.wav 2104
+ amb_cmpmcrn_tooldrop_06.wav 2104
+ amb_pipewater_a_01_lp.wav 2104
+ amb_pipewater_a_02_lp.wav 2104
+ amb_pipewater_a_03_lp.wav 2104
+ amb_pipewater_d_01_lp.wav 2104
+ sfx_cantossdistant_os_01.wav 2104
+ sfx_cantossdistant_os_02.wav 2104
+ sfx_cantossdistant_os_03.wav 2104
+ sfx_cantossdistant_os_04.wav 2104
+ sfx_cantossdistant_os_05.wav 2104
+ sfx_cantossdistant_os_06.wav 2104
+ sfx_desert_leaves_os_01.wav 2104
+ sfx_desert_leaves_os_02.wav 2104
+ sfx_desert_leaves_os_03.wav 2104
+ sfx_desert_leaves_os_04.wav 2104
+ sfx_desert_twigbreak_os_01.wav 2104
+ sfx_desert_twigbreak_os_02.wav 2104
+ sfx_desert_twigbreak_os_03.wav 2104
+ sfx_desert_twigbreak_os_04.wav 2104
+ sfx_desert_twigbreak_os_05.wav 2104
+ ambient_random_dog_2.wav 3928
+ dog_whine1.wav 1112
+ dog_whine2.wav 1112
+ dog_whine3.wav 1112
+ dog_growl3.wav 600
+ heli.ogg 1866
+ car_loop.wav 2114
+ ui_health_heartbeat_a_lp.wav 779
+ ui_health_heartbeat_b_lp.wav 779
+ new_rank_good.wav 521
+ new_rank_evil.wav 521
+ greeting_cannibal_1.wav 2057
+ greeting_cannibal_2.wav 2057
+ greeting_cannibal_3.wav 2057
+ greeting_drunkards.wav 2057
+ greeting_bennet_clan_1.wav 2057
+ greeting_bennet_clan_2.wav 2057
+ greeting_bennet_clan_3.wav 2057
+ 27511__drni__old-radio-noise-findstation-switchoff-ukw.ogg 2106
+ 80399__benboncan__radio-garble.ogg 2106
+ xxx_radiostatictestsmall.wav 2106
+ ui_radio_signallost.wav 2057
+ horror_scream_man_0.wav 2728
+ horror_scream_man_2.wav 2728
+ horror_scream_man_3.wav 2728
+ horror_scream_man_4.wav 2728
+ horror_scream_man_1.wav 2728
+ us_new_taunt_1.wav 680
+ us_new_taunt_2.wav 680
+ us_new_taunt_3.wav 680
+ us_new_taunt_4.wav 680
+ us_new_taunt_5.wav 680
+ us_new_reloading.wav 680
+ survivor_reloading1.wav 680
+ survivor_reloading2.wav 680
+ us_new_grenade_1.wav 680
+ us_new_grenade_2.wav 680
+ survivor_frag.wav 680
+ us_new_smokegrenade.wav 680
+ survivor_smoke.wav 680
+ yell1.wav 2728
+ yell2.wav 2728
+ yell3.wav 2728
+ yell4.wav 2728
+ yell5.wav 2728
+ yell6.wav 2728
+ yell7.wav 2728
+ yell8.wav 2728
+ yell9.wav 2728
+ yell10.wav 2728
+ yell11.wav 2728
+ yell12.wav 2728
+ yell13.wav 2728
+ yell14.wav 2728
+ yell15.wav 2728
+ yell16.wav 2728
+ yell17.wav 2728
+ yell18.wav 2728
+ yell19.wav 2728
+ yell20.wav 2728
+ yell21.wav 2728
+ yell22.wav 2728
+ yell23.wav 2728
+ yell24.wav 2728
+ yell25.wav 2728
+ yell26.wav 2728
+ yell27.wav 2728
+ yell28.wav 2728
+ yell29.wav 2728
+ yell30.wav 2728
+ yell31.wav 2728
+ yell32.wav 2728
+ man_cough_1.wav 2184
+ man_cough_2.wav 2184
+ man_cough_3.wav 2184
+ greeting_usa_4.wav 1544
+ greeting_random_that_boy_aint.wav 1544
+ greeting_random_oh_my_god_look.wav 1544
+ greeting_crazy_hug_a.wav 1544
+ greeting_crazy_hug_b.wav 1544
+ greeting_scavenger_1.wav 1544
+ greeting_scavenger_3.wav 1544
+ greeting_scavenger_4.wav 1544
+ greeting_scavenger_5.wav 1544
+ greeting_southern_1.wav 1544
+ greeting_southern_2.wav 1544
+ greeting_southern_2b.wav 1544
+ greeting_random_whats_up_yall.wav 1544
+ Hello-SoundBible.com-218208532.wav 1544
+ generic_robot_1.ogg 2648
+ guitar1.ogg 1086
+ guitar2.ogg 1086
+ guitar3.ogg 1086
+ RBL_See_My_Jumper_Hanging_On_the_Line.ogg 1086
+ spider_battle1.wav 2136
+ spider_battle2.wav 2136
+ spider_death.wav 2136
+ infected_standard_1.wav 1400
+ infected_standard_2.wav 1648
+ infected_alerted_2.wav 2160
+ infected_short_1.wav 2160
+ Zombie_hit_01.wav 2672
+ Zombie_hit_02.wav 2672
+ Zombie_hit_03.wav 2672
+ Zombie_01.wav 2144
+ Zombie_02.wav 2144
+ Zombie_03.wav 2144
+ Zombie_04.wav 2144
+ Zombie_05.wav 2144
+ Zombie_06.wav 2144
+ Zombie_07.wav 2144
+ Zombie_08.wav 2144
+ Zombie_09.wav 2144
+ Zombie_10.wav 2144
+ Zombie_11.wav 2144
+ Zombie_12.wav 2144
+ Zombie_13.wav 2144
+ Zombie_14.wav 2144
+ Zombie_15.wav 2144
+ Zombie_16.wav 2144
+ Zombie_17.wav 2144
+ Zombie_18.wav 2144
+ Zombie_19.wav 2144
+ Zombie_20.wav 2144
+ Zombie_21.wav 2144
+ Zombie_22.wav 2144
+ Zombie_die_01.wav 2688
+ Zombie_die_02.wav 2688
+ Zombie_die_03.wav 2688
+ infected_hit.wav 2672
+ infected_hit_female.wav 2672
+ nzh2.wav 1872
+ nzh3.wav 1872
+ nzh4.wav 1872
+ nzh5.wav 1872
+ nzh6.wav 1872
+ nzh7.wav 1872
+ nzh8.wav 1872
+ nzh9.wav 1872
+ nzh10.wav 1872
+ nzh11.wav 1872
+ nzh12.wav 1872
+ nzh13.wav 1872
+ nzh14.wav 1872
+ nzh15.wav 1872
+ nzh16.wav 1872
+ nzh17.wav 1872
+ nzh18.wav 1872
+ nzh19.wav 1872
+ nzh20.wav 1872
+ nzh21.wav 1872
+ nzh22.wav 1872
+ nzh23.wav 1872
+ nzs1.wav 1872
+ nzd2.wav 2144
+ nzd3.wav 2144
+ nzd4.wav 2144
+ nzd5.wav 2144
+ nzd6.wav 2144
+ nzd7.wav 2144
+ nzd8.wav 2144
+ nzd9.wav 2144
+ nzd10.wav 2144
+ nzd11.wav 2144
+ nzg1.wav 2144
+ nzs2.wav 3456
+ nzs3.wav 3456
+ nzs4.wav 3456
+ nzs5.wav 3456
+ nzs6.wav 3456
+ nzs7.wav 3456
+ nzs8.wav 3456
+ nzs9.wav 3456
+ nzg2.wav 1088
+ nzg3.wav 1088
+ nzg4.wav 1088
+ nzg5.wav 1088
+ nzg6.wav 1088
+ nzg7.wav 1088
+ nzg8.wav 1088
+ nzg9.wav 1088
+ nzg10.wav 1088
+ nzg11.wav 1088
+ nzg12.wav 1088
+ nzg13.wav 1088
+ nzg14.wav 1088
+ nzg15.wav 1088
+ nzg16.wav 1088
+ nzg17.wav 1088
+ nzg18.wav 1088
+ nzg19.wav 1088
+ nzg20.wav 1088
+ nzg21.wav 1088
+ nzh1.wav 1088
+ gamorrean_death1.ogg 2696
+ gamorrean_death2.ogg 2696
+ gamorrean_death3.ogg 2696
+ gamorrean_falling1.ogg 2696
+ gamorrean_taunt1.ogg 2152
+ gamorrean_taunt2.ogg 2152
+ gamorrean_gloat1.ogg 2152
+ gamorrean_anger2.ogg 2152
+ gamorrean_pain25.ogg 2680
+ gamorrean_pain50.ogg 2680
+ gamorrean_pain75.ogg 2680
+ gamorrean_pain100.ogg 2680
+ gamorrean_gasp.ogg 2680
+ gamorrean_land1.ogg 2680
+ gamorrean_victory1.ogg 2648
+ battledroid_pain25.ogg 2688
+ battledroid_pain50.ogg 2688
+ battledroid_pain75.ogg 2688
+ battledroid_talk01.ogg 2144
+ battledroid_talk02.ogg 2144
+ battledroid_talk03.ogg 2144
+ battleroid_talk01.ogg 2656
+ dice_roll.wav 2720
+ bar_1.wav 2057
+ bar_2.wav 2057
+ bar_3.wav 2057
+ bar_4.wav 2057
+ bar_5.wav 2057
+ bar_6.wav 2057
+ bar_7.wav 2057
+ bar_8.wav 2057
+ bar_fem_1.wav 2057
+ bar_fem_2.wav 2057
+ bar_fem_3.wav 2057
+ bar_fem_4.wav 2057
+ bar_fem_5.wav 2057
+ bar_fem_6.wav 2057
+ bar_fem_7.wav 2057
+ bar_fem_8.wav 2057
+353
+snd_click 257 1 0 0 
+snd_tutorial_1 0 1 1 0 
+snd_tutorial_2 0 1 1 0 
+snd_tutorial_fail 0 1 1 0 
+snd_gong 2457 1 2 0 
+snd_quest_taken 2713 1 3 0 
+snd_quest_completed 2201 1 4 0 
+snd_quest_succeeded 1689 1 4 0 
+snd_quest_concluded 1945 1 3 0 
+snd_quest_failed 1945 1 5 0 
+snd_quest_cancelled 1945 1 5 0 
+snd_money_received 1185 1 6 0 
+snd_money_paid 2721 1 7 0 
+snd_cow_moo 2201 1 8 0 
+snd_cow_slaughter 2105 1 9 0 
+snd_gallop 768 3 10 0 11 0 12 0 
+snd_battle 2056 6 13 0 14 0 15 0 16 0 17 0 18 0 
+snd_hide 0 1 1 0 
+snd_unhide 0 1 1 0 
+snd_encounter_looters 2057 5 19 0 20 0 21 0 22 0 23 0 
+snd_encounter_bandits 2057 3 24 0 25 0 26 0 
+snd_encounter_farmers 2057 4 27 0 28 0 29 0 30 0 
+snd_encounter_sea_raiders 2057 4 31 0 32 0 33 0 34 0 
+snd_encounter_steppe_bandits 2057 5 35 0 36 0 37 0 38 0 39 0 
+snd_encounter_nobleman 2057 1 40 0 
+snd_encounter_vaegirs_ally 2057 2 41 0 42 0 
+snd_encounter_vaegirs_neutral 2057 4 43 0 44 0 45 0 46 0 
+snd_encounter_vaegirs_enemy 2057 4 43 0 44 0 45 0 46 0 
+snd_sneak_town_halt 9 3 47 0 48 0 49 0 
+snd_sword_clash_1 2128 11 50 0 51 0 52 0 53 0 54 0 55 0 56 0 57 0 58 0 59 0 60 0 
+snd_sword_clash_2 0 1 1 0 
+snd_sword_clash_3 0 1 1 0 
+snd_sword_swing 2080 1 61 0 
+snd_draw_sword 1056 1 62 0 
+snd_put_back_sword 1040 1 63 0 
+snd_draw_greatsword 1056 1 64 0 
+snd_put_back_greatsword 1040 1 63 0 
+snd_draw_axe 1056 1 65 0 
+snd_put_back_axe 1040 1 66 0 
+snd_draw_greataxe 1056 1 67 0 
+snd_put_back_greataxe 1040 1 68 0 
+snd_draw_spear 1056 1 69 0 
+snd_put_back_spear 1040 1 70 0 
+snd_draw_crossbow 1056 1 71 0 
+snd_put_back_crossbow 1040 1 68 0 
+snd_draw_revolver 1056 1 72 0 
+snd_put_back_revolver 1040 1 66 0 
+snd_draw_dagger 1056 1 73 0 
+snd_put_back_dagger 1040 1 74 0 
+snd_draw_bow 1056 1 75 0 
+snd_put_back_bow 1040 1 66 0 
+snd_draw_shield 1056 1 76 0 
+snd_put_back_shield 1040 1 77 0 
+snd_draw_other 1056 1 78 0 
+snd_put_back_other 1040 1 79 0 
+snd_footstep_grass 1040 4 80 0 81 0 82 0 83 0 
+snd_footstep_wood 1296 3 84 0 85 0 86 0 
+snd_footstep_water 1840 4 87 0 88 0 89 0 90 0 
+snd_jump_begin 1680 1 91 0 
+snd_jump_end 1424 1 92 0 
+snd_jump_begin_water 912 1 93 0 
+snd_jump_end_water 912 1 94 0 
+snd_horse_walk 1328 4 95 0 96 0 97 0 98 0 
+snd_horse_trot 1600 4 99 0 100 0 101 0 102 0 
+snd_horse_canter 1856 4 103 0 104 0 105 0 106 0 
+snd_horse_gallop 2128 4 107 0 108 0 109 0 110 0 
+snd_footstep_horse 0 1 1 0 
+snd_footstep_horse_1b 2096 4 111 0 112 0 113 0 114 0 
+snd_footstep_horse_1f 2096 4 115 0 116 0 117 0 118 0 
+snd_footstep_horse_2b 2096 1 115 0 
+snd_footstep_horse_2f 2096 1 116 0 
+snd_footstep_horse_3b 2096 1 117 0 
+snd_footstep_horse_3f 2096 1 118 0 
+snd_footstep_horse_4b 2096 1 111 0 
+snd_footstep_horse_4f 2096 1 112 0 
+snd_footstep_horse_5b 2096 1 113 0 
+snd_footstep_horse_5f 2096 1 114 0 
+snd_horse_jump_begin 1680 1 119 0 
+snd_horse_jump_end 1936 1 120 0 
+snd_horse_jump_begin_water 2704 1 93 0 
+snd_horse_jump_end_water 2704 1 94 0 
+snd_reload_crossbow 0 1 1 0 
+snd_reload_crossbow_continue 0 1 1 0 
+snd_pull_bow 1280 1 121 0 
+snd_pull_arrow 1280 1 122 0 
+snd_release_bow 1024 1 123 0 
+snd_release_crossbow 1792 1 1 0 
+snd_release_crossbow_medium 0 1 1 0 
+snd_release_crossbow_far 0 1 1 0 
+snd_throw_javelin 1280 1 124 0 
+snd_throw_axe 1792 1 125 0 
+snd_throw_knife 1280 1 126 0 
+snd_throw_stone 1280 1 127 0 
+snd_bullet_hit_body 64 5 128 0 129 0 130 0 131 0 132 0 
+snd_player_hit_by_bullet 2736 5 128 0 129 0 130 0 131 0 132 0 
+snd_arrow_pass_by 112 4 133 0 134 0 135 0 136 0 
+snd_bolt_pass_by 112 12 137 0 138 0 139 0 140 0 141 0 142 0 143 0 144 0 145 0 146 0 147 0 148 0 
+snd_javelin_pass_by 112 2 149 0 150 0 
+snd_stone_pass_by 2416 1 151 0 
+snd_axe_pass_by 112 1 152 0 
+snd_knife_pass_by 112 1 153 0 
+snd_bullet_pass_by 112 12 137 0 138 0 139 0 140 0 141 0 142 0 143 0 144 0 145 0 146 0 147 0 148 0 
+snd_incoming_arrow_hit_ground 1904 2 154 0 155 0 
+snd_incoming_bolt_hit_ground 1904 5 156 0 157 0 158 0 159 0 160 0 
+snd_incoming_javelin_hit_ground 1904 1 161 0 
+snd_incoming_stone_hit_ground 1904 1 162 0 
+snd_incoming_axe_hit_ground 1904 1 161 0 
+snd_incoming_knife_hit_ground 1904 1 162 0 
+snd_incoming_bullet_hit_ground 1904 5 156 0 157 0 158 0 159 0 160 0 
+snd_outgoing_arrow_hit_ground 1904 1 163 0 
+snd_outgoing_bolt_hit_ground 1904 5 156 0 157 0 158 0 159 0 160 0 
+snd_outgoing_javelin_hit_ground 2672 1 163 0 
+snd_outgoing_stone_hit_ground 1904 1 162 0 
+snd_outgoing_axe_hit_ground 1904 1 161 0 
+snd_outgoing_knife_hit_ground 1904 1 162 0 
+snd_outgoing_bullet_hit_ground 1904 5 156 0 157 0 158 0 159 0 160 0 
+snd_body_fall_small 2384 2 164 0 165 0 
+snd_body_fall_big 2144 3 166 0 167 0 168 0 
+snd_horse_body_fall_begin 2672 1 169 0 
+snd_horse_body_fall_end 2672 3 170 0 167 0 171 0 
+snd_hit_wood_wood 3184 7 172 0 173 0 174 0 175 0 176 0 177 0 178 0 
+snd_hit_metal_metal 2672 13 179 0 180 0 181 0 182 0 183 0 184 0 185 0 186 0 187 0 188 0 58 0 59 0 60 0 
+snd_hit_wood_metal 2672 3 189 0 190 0 191 0 
+snd_shield_hit_wood_wood 2416 3 192 0 193 0 194 0 
+snd_shield_hit_metal_metal 2672 4 195 0 196 0 197 0 198 0 
+snd_shield_hit_wood_metal 2672 4 199 0 200 0 201 0 202 0 
+snd_shield_hit_metal_wood 2672 3 203 0 204 0 205 0 
+snd_shield_broken 144 1 206 0 
+snd_man_hit 1904 29 207 0 208 0 209 0 210 0 211 0 212 0 213 0 214 0 215 0 216 0 217 0 218 0 219 0 220 0 221 0 222 0 223 0 224 0 225 0 226 0 227 0 228 0 229 0 230 0 231 0 232 0 233 0 234 0 235 0 
+snd_man_die 2208 32 236 0 237 0 238 0 239 0 240 0 241 0 242 0 243 0 244 0 245 0 246 0 247 0 248 0 249 0 250 0 251 0 252 0 253 0 254 0 255 0 256 0 257 0 258 0 259 0 260 0 261 0 262 0 263 0 264 0 265 0 266 0 267 0 
+snd_woman_hit 112 22 268 0 269 0 270 0 271 0 272 0 273 0 274 0 275 0 276 0 277 0 278 0 279 0 280 0 281 0 282 0 283 0 284 0 285 0 286 0 287 0 288 0 289 0 
+snd_woman_die 2464 25 290 0 291 0 292 0 293 0 294 0 295 0 296 0 297 0 298 0 299 0 300 0 301 0 302 0 303 0 304 0 305 0 306 0 307 0 308 0 309 0 310 0 311 0 312 0 313 0 314 0 
+snd_woman_yell 2432 2 315 0 316 0 
+snd_horse_breath 1040 4 317 0 318 0 319 0 320 0 
+snd_horse_snort 536 5 321 0 322 0 323 0 324 0 325 0 
+snd_horse_low_whinny 3080 2 326 0 327 0 
+snd_arrow_hit_body 64 3 328 0 329 0 330 0 
+snd_metal_hit_low_armor_low_damage 2384 3 331 0 332 0 333 0 
+snd_metal_hit_low_armor_high_damage 2384 3 334 0 335 0 336 0 
+snd_metal_hit_high_armor_low_damage 2384 3 337 0 338 0 339 0 
+snd_metal_hit_high_armor_high_damage 2384 3 340 0 341 0 342 0 
+snd_wooden_hit_low_armor_low_damage 2384 3 343 0 344 0 345 0 
+snd_wooden_hit_low_armor_high_damage 2384 3 346 0 347 0 348 0 
+snd_wooden_hit_high_armor_low_damage 2384 2 349 0 350 0 
+snd_wooden_hit_high_armor_high_damage 2384 3 346 0 347 0 348 0 
+snd_mp_arrow_hit_target 0 1 1 0 
+snd_blunt_hit 2640 4 351 0 352 0 352 0 353 0 
+snd_player_hit_by_arrow 2736 1 354 0 
+snd_pistol_shot 0 1 1 0 
+snd_man_grunt 1072 3 355 0 356 0 357 0 
+snd_man_breath_hard 2096 7 358 0 359 0 360 0 361 0 362 0 363 0 364 0 
+snd_man_stun 2096 1 365 0 
+snd_man_grunt_long 1888 20 366 0 367 0 368 0 369 0 370 0 371 0 372 0 373 0 374 0 375 0 376 0 377 0 378 0 379 0 380 0 381 0 382 0 383 0 384 0 385 0 
+snd_man_yell 2128 19 386 0 387 0 388 0 389 0 390 0 391 0 392 0 393 0 394 0 395 0 396 0 397 0 398 0 399 0 400 0 401 0 402 0 403 0 404 0 
+snd_man_warcry 80 7 405 0 406 0 407 0 408 0 409 0 410 0 411 0 
+snd_block_fist 0 2 412 0 413 0 
+snd_man_hit_blunt_weak 2640 24 207 0 208 0 209 0 210 0 211 0 212 0 213 0 214 0 215 0 216 0 217 0 218 0 219 0 220 0 221 0 222 0 223 0 224 0 225 0 226 0 227 0 228 0 229 0 230 0 
+snd_man_hit_blunt_strong 2640 24 207 0 208 0 209 0 210 0 211 0 212 0 213 0 214 0 215 0 216 0 217 0 218 0 219 0 220 0 221 0 222 0 223 0 224 0 225 0 226 0 227 0 228 0 229 0 230 0 
+snd_man_hit_pierce_weak 2640 24 207 0 208 0 209 0 210 0 211 0 212 0 213 0 214 0 215 0 216 0 217 0 218 0 219 0 220 0 221 0 222 0 223 0 224 0 225 0 226 0 227 0 228 0 229 0 230 0 
+snd_man_hit_pierce_strong 2640 24 207 0 208 0 209 0 210 0 211 0 212 0 213 0 214 0 215 0 216 0 217 0 218 0 219 0 220 0 221 0 222 0 223 0 224 0 225 0 226 0 227 0 228 0 229 0 230 0 
+snd_man_hit_cut_weak 2640 24 207 0 208 0 209 0 210 0 211 0 212 0 213 0 214 0 215 0 216 0 217 0 218 0 219 0 220 0 221 0 222 0 223 0 224 0 225 0 226 0 227 0 228 0 229 0 230 0 
+snd_man_hit_cut_strong 2640 24 207 0 208 0 209 0 210 0 211 0 212 0 213 0 214 0 215 0 216 0 217 0 218 0 219 0 220 0 221 0 222 0 223 0 224 0 225 0 226 0 227 0 228 0 229 0 230 0 
+snd_man_victory 2384 10 414 0 415 0 416 0 417 0 418 0 419 0 420 0 421 0 422 0 423 0 
+snd_neigh 8 6 424 0 425 0 426 0 427 0 428 0 429 0 
+snd_distant_dog_bark 2104 5 430 0 431 0 432 0 433 0 434 0 
+snd_distant_owl 2104 3 435 0 436 0 437 0 
+snd_distant_chicken 0 1 1 0 
+snd_distant_worker 360 3 438 0 439 0 440 0 
+snd_distant_carpenter 0 1 1 0 
+snd_distant_blacksmith 0 1 1 0 
+snd_arena_ambiance 907 6 441 0 442 0 443 0 444 0 445 0 446 0 
+snd_town_ambiance 0 1 1 0 
+snd_rain 1195 1 447 0 
+snd_fire_loop 1182 1 448 0 
+snd_torch_loop 1182 1 448 0 
+snd_dummy_hit 144 2 199 0 201 0 
+snd_dummy_destroyed 144 1 206 0 
+snd_gourd_destroyed 152 1 206 0 
+snd_your_flag_taken 0 1 1 0 
+snd_enemy_flag_taken 0 1 1 0 
+snd_flag_returned 0 1 1 0 
+snd_team_scored_a_point 0 1 1 0 
+snd_enemy_scored_a_point 0 1 1 0 
+snd_m4a1 1264 4 449 0 450 0 451 0 452 0 
+snd_m1carbine 1264 1 453 0 
+snd_deagle 1264 3 454 0 455 0 456 0 
+snd_r700 1264 1 457 0 
+snd_thompson 1264 1 458 0 
+snd_ak47 1264 1 459 0 
+snd_tec9 1264 1 460 0 
+snd_g36c 1264 1 461 0 
+snd_colt1911 1264 1 462 0 
+snd_mp5 1264 1 463 0 
+snd_ump45 1264 1 464 0 
+snd_uzi 1264 1 465 0 
+snd_mp40 1264 1 466 0 
+snd_mg42 1264 1 467 0 
+snd_mauser 1264 1 468 0 
+snd_m249 1264 1 469 0 
+snd_type99 1264 1 470 0 
+snd_gewehr_sniper 1264 1 471 0 
+snd_plasmarifle_fire 1264 2 472 0 473 0 
+snd_plasmapistol_fire 1264 2 474 0 475 0 
+snd_powerfist 2288 1 476 0 
+snd_9mm_fire 1264 4 477 0 478 0 479 0 480 0 
+snd_9mmsmg_fire 1264 4 481 0 482 0 483 0 484 0 
+snd_45_smg_fire 1264 3 485 0 486 0 487 0 
+snd_10mmpistolfire 1264 3 488 0 489 0 490 0 
+snd_policepistolfire 1264 3 491 0 492 0 493 0 
+snd_357revolv_fire 1264 3 494 0 495 0 496 0 
+snd_44revolv_fire 1264 3 497 0 498 0 499 0 
+snd_fire_huntingrevolver 1264 3 500 0 501 0 502 0 
+snd_assaultcarb_fire 1264 3 503 0 504 0 505 0 
+snd_marksmancarbine 1264 3 506 0 507 0 508 0 
+snd_huntingrifle_fire 1264 3 509 0 510 0 511 0 
+snd_trailcarbine_fire 1264 3 512 0 513 0 514 0 
+snd_pistol22_fire 1264 1 515 0 
+snd_assault_modern_fire 1264 1 516 0 
+snd_autorifle_fire 1264 3 517 0 518 0 519 0 
+snd_riflegauss_fire 1264 1 520 0 
+snd_huntingshotgun_fire 1264 2 521 0 522 0 
+snd_riotshotgun_fire 1264 2 523 0 524 0 
+snd_sawedoffshotgun_fire 1264 2 525 0 526 0 
+snd_shotguncombat_fire 1264 1 527 0 
+snd_silenced_fire 1264 3 528 0 529 0 530 0 
+snd_flamer_fire 1264 1 531 0 
+snd_rpgshot 1264 1 532 0 
+snd_garand_shot 1264 1 533 0 
+snd_garand_ping 1265 1 534 0 
+snd_flamer_idle 1104 1 535 0 
+snd_rifleplasma_idle 1104 1 536 0 
+snd_9mmreload 1185 1 537 0 
+snd_smgreload 1185 1 538 0 
+snd_flamer_reload 1185 1 539 0 
+snd_pistolplasma_reload 1185 1 540 0 
+snd_44revolv_reload 1185 1 541 0 
+snd_firedry 1185 1 542 0 
+snd_flashbang_effect 2209 1 543 0 
+snd_grenade1 4080 1 544 0 
+snd_molotov 4080 2 545 0 546 0 
+snd_flashbang 4080 1 547 0 
+snd_ambient_town 387 1 548 0 
+snd_ambient_day 899 1 549 0 
+snd_ambient_night 899 1 550 0 
+snd_ambient_plain_day 899 1 551 0 
+snd_ambient_plain_night 899 1 552 0 
+snd_ambient_wind_day 2179 1 553 0 
+snd_ambient_wind_night 2179 1 554 0 
+snd_ambient_sandstorm 2179 1 555 0 
+snd_ambient_thunder_close 2697 3 556 0 557 0 558 0 
+snd_ambient_thunder 2616 6 559 0 560 0 561 0 562 0 563 0 564 0 
+snd_ambient_windmill 2698 1 565 0 
+snd_ambient_storm 1082 4 566 0 567 0 568 0 569 0 
+snd_ambient_generator 2618 1 570 0 
+snd_ambient_aircondition 2618 1 571 0 
+snd_ambient_brokeglass 2698 1 572 0 
+snd_ambient_holdingtank 2618 1 573 0 
+snd_ambient_steam 2618 7 574 0 575 0 576 0 577 0 578 0 579 0 580 0 
+snd_ambient_console 2618 1 581 0 
+snd_ambient_lamp 2618 1 582 0 
+snd_ambient_fire 2698 1 583 0 
+snd_ambient_rain_roof 1342 1 584 0 
+snd_ambient_rain_stone 1342 1 585 0 
+snd_ambient_nuke 1416 1 586 0 
+snd_distant_flies 2104 12 587 0 588 0 589 0 590 0 591 0 592 0 593 0 594 0 595 0 596 0 597 0 598 0 
+snd_distant_canyonwind 2104 4 599 0 600 0 601 0 602 0 
+snd_distant_debris 2096 6 603 0 604 0 605 0 606 0 607 0 608 0 
+snd_distant_cricket 2104 15 609 0 610 0 611 0 612 0 613 0 614 0 615 0 616 0 617 0 618 0 619 0 620 0 621 0 622 0 623 0 
+snd_distant_rustle 2104 10 624 0 625 0 626 0 627 0 628 0 629 0 630 0 631 0 632 0 633 0 
+snd_distant_creaking 2104 18 634 0 635 0 636 0 637 0 638 0 639 0 640 0 641 0 642 0 643 0 644 0 645 0 646 0 647 0 648 0 649 0 650 0 651 0 
+snd_distant_city_creaking 2104 5 652 0 653 0 654 0 655 0 656 0 
+snd_distant_cicadas 2104 4 657 0 658 0 659 0 660 0 
+snd_distant_city_gunshots 2184 5 661 0 662 0 663 0 664 0 665 0 
+snd_distant_gunshots 2184 20 13 0 14 0 15 0 16 0 17 0 18 0 666 0 667 0 668 0 669 0 670 0 671 0 672 0 673 0 674 0 675 0 676 0 677 0 678 0 679 0 
+snd_distant_eagle 2104 5 680 0 681 0 682 0 683 0 684 0 
+snd_distant_hawk 2104 4 685 0 686 0 687 0 688 0 
+snd_distant_rumble 2105 2 689 0 690 0 
+snd_distant_metalrumble 2104 2 691 0 692 0 
+snd_distant_plain_wind 2104 13 693 0 694 0 695 0 696 0 697 0 698 0 699 0 700 0 701 0 702 0 703 0 704 0 705 0 
+snd_distant_wind 2104 28 706 0 707 0 708 0 709 0 710 0 711 0 712 0 713 0 714 0 715 0 716 0 717 0 718 0 719 0 720 0 721 0 722 0 723 0 724 0 725 0 726 0 727 0 728 0 729 0 730 0 731 0 732 0 733 0 
+snd_distant_howls 2104 6 734 0 735 0 736 0 737 0 738 0 739 0 
+snd_distant_vultures 2104 1 740 0 
+snd_distant_sand 2104 10 741 0 742 0 743 0 744 0 745 0 746 0 747 0 748 0 749 0 750 0 
+snd_distant_snake 2104 7 751 0 752 0 753 0 754 0 755 0 756 0 757 0 
+snd_distant_bird 2104 31 758 0 759 0 760 0 761 0 762 0 763 0 764 0 765 0 766 0 767 0 768 0 769 0 770 0 771 0 772 0 773 0 774 0 775 0 776 0 777 0 778 0 779 0 780 0 781 0 782 0 783 0 784 0 785 0 786 0 787 0 788 0 
+snd_distant_bird_forest 2104 11 789 0 790 0 791 0 792 0 793 0 794 0 795 0 796 0 797 0 798 0 799 0 
+snd_distant_bird_carrion 2104 12 800 0 801 0 802 0 803 0 804 0 805 0 806 0 807 0 808 0 809 0 810 0 811 0 
+snd_distant_alarm 2104 1 812 0 
+snd_distant_electric 2104 8 813 0 814 0 815 0 816 0 817 0 818 0 819 0 820 0 
+snd_distant_machine 2104 12 821 0 822 0 823 0 824 0 825 0 826 0 827 0 828 0 829 0 830 0 831 0 832 0 
+snd_distant_tooldrop 2104 6 833 0 834 0 835 0 836 0 837 0 838 0 
+snd_ambient_pipewater 2104 4 839 0 840 0 841 0 842 0 
+snd_distant_cantoss 2104 6 843 0 844 0 845 0 846 0 847 0 848 0 
+snd_distant_leaves 2104 4 849 0 850 0 851 0 852 0 
+snd_distant_twigbreak 2104 5 853 0 854 0 855 0 856 0 857 0 
+snd_dog_bark 3928 1 858 0 
+snd_dog_whine 1112 3 859 0 860 0 861 0 
+snd_dog_growl 600 1 862 0 
+snd_heli_loop 1866 1 863 0 
+snd_car_loop 2114 1 864 0 
+snd_heartbeat 779 1 865 0 
+snd_heartbeat_low 779 1 866 0 
+snd_marker_added 265 1 626 0 
+snd_honour_pos 521 1 867 0 
+snd_honour_neg 521 1 868 0 
+snd_encounter_cannibal 2057 3 869 0 870 0 871 0 
+snd_encounter_drunk 2057 1 872 0 
+snd_encounter_bennet 2057 4 873 0 874 0 873 0 875 0 
+snd_radio_1 2106 2 876 0 877 0 
+snd_radio_static 2106 1 878 0 
+snd_radio_signal 2057 1 879 0 
+snd_scream_man 2728 5 880 0 881 0 882 0 883 0 884 0 
+snd_usa_cry 680 5 885 0 886 0 887 0 888 0 889 0 
+snd_usa_reloading 680 3 890 0 891 0 892 0 
+snd_usa_grenade 680 3 893 0 894 0 895 0 
+snd_usa_grenade_smoke 680 2 896 0 897 0 
+snd_warcry 2728 32 898 0 899 0 900 0 901 0 902 0 903 0 904 0 905 0 906 0 907 0 908 0 909 0 910 0 911 0 912 0 913 0 914 0 915 0 916 0 917 0 918 0 919 0 920 0 921 0 922 0 923 0 924 0 925 0 926 0 927 0 928 0 929 0 
+snd_man_cough 2184 3 930 0 931 0 932 0 
+snd_man_random 1544 14 933 0 934 0 935 0 936 0 937 0 938 0 939 0 940 0 941 0 942 0 943 0 944 0 945 0 946 0 
+snd_generic_robot_1 2648 1 947 0 
+snd_guitar_solo 1086 4 948 0 949 0 950 0 951 0 
+snd_spider_attack 2136 2 952 0 953 0 
+snd_spider_death 2136 1 954 0 
+snd_infected_standard_1 1400 1 955 0 
+snd_infected_standard_2 1648 1 956 0 
+snd_infected_alerted_2 2160 2 957 0 958 0 
+snd_infected_hit 2672 3 959 0 960 0 961 0 
+snd_infected_grunt 2144 22 962 0 963 0 964 0 965 0 966 0 967 0 968 0 969 0 970 0 971 0 972 0 973 0 974 0 975 0 976 0 977 0 978 0 979 0 980 0 981 0 982 0 983 0 
+snd_infected_grunt_long 2128 22 962 0 963 0 964 0 965 0 966 0 967 0 968 0 969 0 970 0 971 0 972 0 973 0 974 0 975 0 976 0 977 0 978 0 979 0 980 0 981 0 982 0 983 0 
+snd_infected_die 2688 3 984 0 985 0 986 0 
+snd_infected_hit_male 2672 1 987 0 
+snd_infected_hit_female 2672 1 988 0 
+snd_nz_hit 1872 23 989 0 990 0 991 0 992 0 993 0 994 0 995 0 996 0 997 0 998 0 999 0 1000 0 1001 0 1002 0 1003 0 1004 0 1005 0 1006 0 1007 0 1008 0 1009 0 1010 0 1011 0 
+snd_nz_die 2144 11 1012 0 1013 0 1014 0 1015 0 1016 0 1017 0 1018 0 1019 0 1020 0 1021 0 1022 0 
+snd_nz_victory 3456 8 1023 0 1024 0 1025 0 1026 0 1027 0 1028 0 1029 0 1030 0 
+snd_nz_grunt 1088 21 1031 0 1032 0 1033 0 1034 0 1035 0 1036 0 1037 0 1038 0 1039 0 1040 0 1041 0 1042 0 1043 0 1044 0 1045 0 1046 0 1047 0 1048 0 1049 0 1050 0 1051 0 
+snd_nz_stun 2096 8 1023 0 1024 0 1025 0 1026 0 1027 0 1028 0 1029 0 1030 0 
+snd_nz_grunt_long 1872 21 1031 0 1032 0 1033 0 1034 0 1035 0 1036 0 1037 0 1038 0 1039 0 1040 0 1041 0 1042 0 1043 0 1044 0 1045 0 1046 0 1047 0 1048 0 1049 0 1050 0 1051 0 
+snd_gamorrean_die 2696 4 1052 0 1053 0 1054 0 1055 0 
+snd_gamorrean_grunt 2152 4 1056 0 1057 0 1058 0 1059 0 
+snd_gamorrean_grunt_long 2136 4 1056 0 1057 0 1058 0 1059 0 
+snd_gamorrean_hit 2680 6 1060 0 1061 0 1062 0 1063 0 1064 0 1065 0 
+snd_gamorrean_victory 2648 5 1066 0 1059 0 1056 0 1057 0 1058 0 
+snd_gamorrean_yell 2664 5 1059 0 1066 0 1056 0 1057 0 1058 0 
+snd_battledroid_die 2688 3 1067 0 1068 0 1069 0 
+snd_battledroid_grunt 2144 3 1070 0 1071 0 1072 0 
+snd_battledroid_grunt_long 2128 3 1070 0 1071 0 1072 0 
+snd_battledroid_hit 2672 3 1067 0 1068 0 1069 0 
+snd_battledroid_victory 2640 3 1070 0 1071 0 1072 0 
+snd_battledroid_yell 2656 3 1073 0 1071 0 1072 0 
+snd_dice_roll 2720 1 1074 0 
+snd_bartender_male 2057 8 1075 0 1076 0 1077 0 1078 0 1079 0 1080 0 1081 0 1082 0 
+snd_bartender_female 2057 8 1083 0 1084 0 1085 0 1086 0 1087 0 1088 0 1089 0 1090 0 

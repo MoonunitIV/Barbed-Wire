@@ -1,0 +1,7 @@
+infopagesfile version 1
+5
+ip_player Player _
+ip_player_party Player_Party _
+ip_player_party_companions Player_Companions _
+ip_player_relations Player_Relations _
+ip_player_score Player_Score _
