@@ -11354,7 +11354,16 @@ TOTAL:  {reg5}"),
        "Take a walk around the courtyard",
        [
         ], "To the fort courtyard"),
-
+    ("town_recruitment",
+       [
+		(party_slot_eq,"$current_town",slot_party_type, spt_town),
+		(eq,"$entry_to_town_forbidden",0),
+       ],
+       "Visit the cannon foundry.",
+       [
+	     (jump_to_menu,"mnu_cannon_recruitment"),
+		
+	   ],"Door to the Foundry."),
 ("town_enterprise",
       [
         (party_slot_eq,"$current_town",slot_party_type, spt_town),
@@ -11436,9 +11445,9 @@ TOTAL:  {reg5}"),
     
 ("recruit_professionals",
     [
-        (is_between, "$current_town", towns_begin, towns_end),
+        (is_between, "$current_town", castles_begin, castles_end),
         (call_script, "script_cf_town_recruit_professionals_cond"),
-    ],"Recruit Faction Guards.",
+    ],"Recruit Faction Auxiliaries.",
     [
         (try_begin),
         (call_script, "script_cf_enter_center_location_bandit_check"),
@@ -11446,7 +11455,7 @@ TOTAL:  {reg5}"),
         (jump_to_menu, "mnu_recruit_professionals"),
         (try_end),
     ]),
-#
+
 
 ("visit_lady",
 	[
@@ -13319,6 +13328,100 @@ TOTAL:  {reg5}"),
         ]),
     ]
   ),
+  
+  (
+    "cannon_recruitment",0,
+    "Currently you have {reg1} cannons in the party: {reg2} three pound, {reg3} six pound, {reg4} twelve pound. You currently can own up to {reg5} cannons.",
+    "none",
+    [
+	  (call_script, "script_get_cannon_count", "p_main_party"),
+	  (assign, reg10, 3000),
+	  (assign, reg11, 6000),
+	  (assign, reg12, 12000),
+	],
+    [
+      ("3_pound_recruit",
+	  [
+	    (store_troop_gold, ":gold", "trp_player"),
+		(call_script, "script_get_cannon_count", "p_main_party"),
+		(lt, reg1, reg5),
+		(ge, ":gold", reg10),
+	  ],
+       "Recruit three pound cannon. Cost: {reg10}",
+       [
+	     (call_script, "script_get_cannon_count", "p_main_party"),
+		 (val_add, reg2, 1),
+		 (party_set_slot, "p_main_party",slot_party_cannons_3lb, reg2),
+		 (troop_remove_gold, "trp_player", reg10),
+       ]),
+		
+      ("6_pound_recruit",
+	  [
+	    (store_troop_gold, ":gold", "trp_player"),
+		(call_script, "script_get_cannon_count", "p_main_party"),
+		(lt, reg1, reg5),
+		(ge, ":gold", reg11),
+	  ],
+       "Recruit six pound cannon. Cost: {reg11}",
+       [
+	     (call_script, "script_get_cannon_count", "p_main_party"),
+		 (val_add, reg3, 1),
+		 (party_set_slot, "p_main_party",slot_party_cannons_6lb, reg3),
+		 (troop_remove_gold, "trp_player", reg11),
+        ]),
+		
+      ("12_pound_recruit",
+	  [
+	    (store_troop_gold, ":gold", "trp_player"),
+		(call_script, "script_get_cannon_count", "p_main_party"),
+		(lt, reg1, reg5),
+		(ge, ":gold", reg12),
+	  ],
+       "Recruit twelve pound cannon. Cost: {reg12}",
+       [
+	     (call_script, "script_get_cannon_count", "p_main_party"),
+		 (val_add, reg4, 1),
+		 (party_set_slot, "p_main_party",slot_party_cannons_12lb, reg4),
+		 (troop_remove_gold, "trp_player", reg12),
+        ]),
+
+	  ("3_pound_disband",
+	  [
+		(call_script, "script_get_cannon_count", "p_main_party"),
+		(gt, reg2, 0),
+	  ],"Disband three pound cannon crew.",
+       [
+          (call_script, "script_get_cannon_count", "p_main_party"),
+		  (val_sub, reg2, 1),
+		  (party_set_slot, "p_main_party", slot_party_cannons_3lb, reg2),
+ 	   ]),
+      ("6_pound_disband",
+	  [
+		(call_script, "script_get_cannon_count", "p_main_party"),
+		(gt, reg3, 0),
+	  ],"Disband six pound cannon crew.",
+       [
+         (call_script, "script_get_cannon_count", "p_main_party"),
+		 (val_sub, reg3, 1),
+		 (party_set_slot, "p_main_party", slot_party_cannons_6lb, reg3),
+ 	   ]),
+	  ("12_pound_disband",
+	  [
+		(call_script, "script_get_cannon_count", "p_main_party"),
+		(gt, reg4, 0),
+	  ],"Disband twelve pound cannon crew.",
+       [
+         (call_script, "script_get_cannon_count", "p_main_party"),
+		 (val_sub, reg4, 1),
+		 (party_set_slot, "p_main_party", slot_party_cannons_12lb, reg4),
+ 	   ]),
+		
+      ("back_to_town_menu",[],"Head back.",
+       [
+          (jump_to_menu,"mnu_town"),
+ 	   ]),
+    ]
+    ),
 
 ##diplomacy start+
 # ##Begin auto-sell credit rubik (Custom Commander)
@@ -16465,300 +16568,300 @@ TOTAL:  {reg5}"),
     []
   ),
 
-    # (
-    # "bandit_lair",0,
-    # "{s3}",
-    # "none",
-    # [
-      # (try_begin),
-        # (eq, "$loot_screen_shown", 1),
+    (
+    "bandit_lair",0,
+    "{s3}",
+    "none",
+    [
+      (try_begin),
+        (eq, "$loot_screen_shown", 1),
 
-        # (try_for_range, ":bandit_template", bandit_party_templates_begin, bandit_party_templates_end), #SB : template range
-          # (party_template_slot_eq, ":bandit_template", slot_party_template_lair_party, "$g_encountered_party"),
-          # (party_template_set_slot, ":bandit_template", slot_party_template_lair_party, 0),
-        # (try_end),
+        (try_for_range, ":bandit_template", bandit_party_templates_begin, bandit_party_templates_end), #SB : template range
+          (party_template_slot_eq, ":bandit_template", slot_party_template_lair_party, "$g_encountered_party"),
+          (party_template_set_slot, ":bandit_template", slot_party_template_lair_party, 0),
+        (try_end),
 
-        # (try_begin),
-          # (ge, "$g_encountered_party", 0),
-          # (party_is_active, "$g_encountered_party"),
-          # (party_get_template_id, ":template", "$g_encountered_party"),
-          # (neq, ":template", "pt_looter_lair"),
-          # (remove_party, "$g_encountered_party"),
-        # (try_end),
+        (try_begin),
+          (ge, "$g_encountered_party", 0),
+          (party_is_active, "$g_encountered_party"),
+          (party_get_template_id, ":template", "$g_encountered_party"),
+          (neq, ":template", "pt_looter_lair"),
+          (remove_party, "$g_encountered_party"),
+        (try_end),
 
-        # (assign, "$g_leave_encounter", 0),
-        # (change_screen_return),
+        (assign, "$g_leave_encounter", 0),
+        (change_screen_return),
 
-      # (else_try),
-        # (party_stack_get_troop_id, ":bandit_type", "$g_encountered_party", 0),
-        # (str_store_troop_name_plural, s4, ":bandit_type"),
-        # (str_store_string, s5, "str_bandit_approach_defile"),
+      (else_try),
+        (party_stack_get_troop_id, ":bandit_type", "$g_encountered_party", 0),
+        (str_store_troop_name_plural, s4, ":bandit_type"),
+        (str_store_string, s5, "str_bandit_approach_defile"),
 
-        # #SB : set pictures
-        # (try_begin),
-          # (eq, ":bandit_type", "trp_desert_bandit"),
-          # (str_store_string, s5, "str_bandit_approach_defile"),
-        # (else_try),
-          # (eq, ":bandit_type", "trp_mountain_bandit"),
-          # (str_store_string, s5, "str_bandit_approach_cliffs"),
-          # (set_background_mesh, "mesh_pic_mountain_bandits"),
-        # (else_try),
-          # (eq, ":bandit_type", "trp_forest_bandit"),
-          # (str_store_string, s5, "str_bandit_approach_swamp"),
-          # (set_background_mesh, "mesh_pic_forest_bandits"),
-        # (else_try),
-          # (eq, ":bandit_type", "trp_taiga_bandit"),
-          # (str_store_string, s5, "str_bandit_approach_swamp"),
-          # (set_background_mesh, "mesh_pic_steppe_bandits"),
-        # (else_try),
-          # (eq, ":bandit_type", "trp_steppe_bandit"),
-          # (str_store_string, s5, "str_bandit_approach_thickets"),
-          # (set_background_mesh, "mesh_pic_steppe_bandits"),
-        # (else_try),
-          # (eq, ":bandit_type", "trp_sea_raider"),
-          # (str_store_string, s5, "str_bandit_approach_cove"),
-          # (set_background_mesh, "mesh_pic_sea_raiders"),
-        # (try_end),
+        #SB : set pictures
+        (try_begin),
+          (eq, ":bandit_type", "trp_desert_bandit"),
+          (str_store_string, s5, "str_bandit_approach_defile"),
+        (else_try),
+          (eq, ":bandit_type", "trp_mountain_bandit"),
+          (str_store_string, s5, "str_bandit_approach_cliffs"),
+          (set_background_mesh, "mesh_pic_mountain_bandits"),
+        (else_try),
+          (eq, ":bandit_type", "trp_forest_bandit"),
+          (str_store_string, s5, "str_bandit_approach_swamp"),
+          (set_background_mesh, "mesh_pic_forest_bandits"),
+        (else_try),
+          (eq, ":bandit_type", "trp_taiga_bandit"),
+          (str_store_string, s5, "str_bandit_approach_swamp"),
+          (set_background_mesh, "mesh_pic_steppe_bandits"),
+        (else_try),
+          (eq, ":bandit_type", "trp_steppe_bandit"),
+          (str_store_string, s5, "str_bandit_approach_thickets"),
+          (set_background_mesh, "mesh_pic_steppe_bandits"),
+        (else_try),
+          (eq, ":bandit_type", "trp_sea_raider"),
+          (str_store_string, s5, "str_bandit_approach_cove"),
+          (set_background_mesh, "mesh_pic_sea_raiders"),
+        (try_end),
 
 
-        # (try_begin),
-          # (party_slot_eq, "$g_encountered_party", slot_party_ai_substate, 0), #used in place of global variable
-          # (str_store_string, s3, "str_bandit_hideout_preattack"),
-        # (else_try),
-          # (party_get_template_id, ":template", "$g_encountered_party"),
-          # (eq, ":template", "pt_looter_lair"),
-          # (party_slot_eq, "$g_encountered_party", slot_party_ai_substate, 1), #used in place of global variable
-          # (str_store_string, s3, "str_lost_startup_hideout_attack"),
-        # (else_try),
-          # (party_slot_eq, "$g_encountered_party", slot_party_ai_substate, 1), #used in place of global variable
-          # (str_store_string, s3, "str_bandit_hideout_failure"),
-          # (set_background_mesh, "mesh_pic_wounded"),
-          # (try_begin),
-            # (eq, "$character_gender", tf_woman),
-            # (set_background_mesh, "mesh_pic_wounded_fem"),
-          # (try_end),
-        # (else_try),
-          # (party_slot_eq, "$g_encountered_party", slot_party_ai_substate, 2), #used in place of global variable
-          # (str_store_string, s3, "str_bandit_hideout_success"),
-          # (set_background_mesh, "mesh_pic_victory"),
-        # (try_end),
-      # (try_end),
-    # ],
-    # [
-      # ("continue_1",
-      # [
-        # (party_slot_eq, "$g_encountered_party", slot_party_ai_substate, 0), #used in place of global variable
-      # ],
-      # "Attack the hideout",
+        (try_begin),
+          (party_slot_eq, "$g_encountered_party", slot_party_ai_substate, 0), #used in place of global variable
+          (str_store_string, s3, "str_bandit_hideout_preattack"),
+        (else_try),
+          (party_get_template_id, ":template", "$g_encountered_party"),
+          (eq, ":template", "pt_looter_lair"),
+          (party_slot_eq, "$g_encountered_party", slot_party_ai_substate, 1), #used in place of global variable
+          (str_store_string, s3, "str_lost_startup_hideout_attack"),
+        (else_try),
+          (party_slot_eq, "$g_encountered_party", slot_party_ai_substate, 1), #used in place of global variable
+          (str_store_string, s3, "str_bandit_hideout_failure"),
+          (set_background_mesh, "mesh_pic_wounded"),
+          (try_begin),
+            (eq, "$character_gender", tf_woman),
+            (set_background_mesh, "mesh_pic_wounded_fem"),
+          (try_end),
+        (else_try),
+          (party_slot_eq, "$g_encountered_party", slot_party_ai_substate, 2), #used in place of global variable
+          (str_store_string, s3, "str_bandit_hideout_success"),
+          (set_background_mesh, "mesh_pic_victory"),
+        (try_end),
+      (try_end),
+    ],
+    [
+      ("continue_1",
+      [
+        (party_slot_eq, "$g_encountered_party", slot_party_ai_substate, 0), #used in place of global variable
+      ],
+      "Attack the hideout",
 
-      # [
-        # (party_set_slot, "$g_encountered_party", slot_party_ai_substate, 1),
-        # (party_get_template_id, ":template", "$g_encountered_party"),
-        # (assign, "$g_enemy_party", "$g_encountered_party"),
+      [
+        (party_set_slot, "$g_encountered_party", slot_party_ai_substate, 1),
+        (party_get_template_id, ":template", "$g_encountered_party"),
+        (assign, "$g_enemy_party", "$g_encountered_party"),
 
-        # (try_begin),
-          # (eq, ":template", "pt_sea_raider_lair"),
-          # (assign, ":bandit_troop", "trp_sea_raider"),
-          # (assign, ":scene_to_use", "scn_lair_sea_raiders"),
-        # (else_try),
-          # (eq, ":template", "pt_forest_bandit_lair"),
-          # (assign, ":bandit_troop", "trp_forest_bandit"),
-          # (assign, ":scene_to_use", "scn_lair_forest_bandits"),
-        # (else_try),
-          # (eq, ":template", "pt_desert_bandit_lair"),
-          # (assign, ":bandit_troop", "trp_desert_bandit"),
-          # (assign, ":scene_to_use", "scn_lair_desert_bandits"),
-        # (else_try),
-          # (eq, ":template", "pt_mountain_bandit_lair"),
-          # (assign, ":bandit_troop", "trp_mountain_bandit"),
-          # (assign, ":scene_to_use", "scn_lair_mountain_bandits"),
-        # (else_try),
-          # (eq, ":template", "pt_taiga_bandit_lair"),
-          # (assign, ":bandit_troop", "trp_taiga_bandit"),
-          # (assign, ":scene_to_use", "scn_lair_taiga_bandits"),
-        # (else_try),
-          # (eq, ":template", "pt_steppe_bandit_lair"),
-          # (assign, ":bandit_troop", "trp_steppe_bandit"),
-          # (assign, ":scene_to_use", "scn_lair_steppe_bandits"),
-        # (else_try),
-          # (eq, ":template", "pt_looter_lair"),
-          # (assign, ":bandit_troop", "trp_looter"),
+        (try_begin),
+          (eq, ":template", "pt_sea_raider_lair"),
+          (assign, ":bandit_troop", "trp_sea_raider"),
+          (assign, ":scene_to_use", "scn_lair_sea_raiders"),
+        (else_try),
+          (eq, ":template", "pt_forest_bandit_lair"),
+          (assign, ":bandit_troop", "trp_forest_bandit"),
+          (assign, ":scene_to_use", "scn_lair_forest_bandits"),
+        (else_try),
+          (eq, ":template", "pt_desert_bandit_lair"),
+          (assign, ":bandit_troop", "trp_desert_bandit"),
+          (assign, ":scene_to_use", "scn_lair_desert_bandits"),
+        (else_try),
+          (eq, ":template", "pt_mountain_bandit_lair"),
+          (assign, ":bandit_troop", "trp_mountain_bandit"),
+          (assign, ":scene_to_use", "scn_lair_mountain_bandits"),
+        (else_try),
+          (eq, ":template", "pt_taiga_bandit_lair"),
+          (assign, ":bandit_troop", "trp_taiga_bandit"),
+          (assign, ":scene_to_use", "scn_lair_taiga_bandits"),
+        (else_try),
+          (eq, ":template", "pt_steppe_bandit_lair"),
+          (assign, ":bandit_troop", "trp_steppe_bandit"),
+          (assign, ":scene_to_use", "scn_lair_steppe_bandits"),
+        (else_try),
+          (eq, ":template", "pt_looter_lair"),
+          (assign, ":bandit_troop", "trp_looter"),
 
-          # (store_faction_of_party, ":starting_town_faction", "$g_starting_town"),
+          (store_faction_of_party, ":starting_town_faction", "$g_starting_town"),
 
-          # (try_begin),
-            # (eq, ":starting_town_faction", "fac_kingdom_1"), #player selected swadian city as starting town.
-            # (assign, ":scene_to_use", "scn_lair_forest_bandits"),
-          # (else_try),
-            # (eq, ":starting_town_faction", "fac_kingdom_2"), #player selected Vaegir city as starting town.
-            # (assign, ":scene_to_use", "scn_lair_taiga_bandits"),
-          # (else_try),
-            # (eq, ":starting_town_faction", "fac_kingdom_3"), #player selected Khergit city as starting town.
-            # (assign, ":scene_to_use", "scn_lair_steppe_bandits"),
-          # (else_try),
-            # (eq, ":starting_town_faction", "fac_kingdom_4"), #player selected Nord city as starting town.
-            # (assign, ":scene_to_use", "scn_lair_sea_raiders"),
-          # (else_try),
-            # (eq, ":starting_town_faction", "fac_kingdom_5"), #player selected Rhodok city as starting town.
-            # (assign, ":scene_to_use", "scn_lair_mountain_bandits"),
-          # (else_try),
-            # (eq, ":starting_town_faction", "fac_kingdom_6"), #player selected Sarranid city as starting town.
-            # (assign, ":scene_to_use", "scn_lair_desert_bandits"),
-          # (try_end),
-        # (try_end),
+          (try_begin),
+            (eq, ":starting_town_faction", "fac_kingdom_1"), #player selected swadian city as starting town.
+            (assign, ":scene_to_use", "scn_lair_forest_bandits"),
+          (else_try),
+            (eq, ":starting_town_faction", "fac_kingdom_2"), #player selected Vaegir city as starting town.
+            (assign, ":scene_to_use", "scn_lair_taiga_bandits"),
+          (else_try),
+            (eq, ":starting_town_faction", "fac_kingdom_3"), #player selected Khergit city as starting town.
+            (assign, ":scene_to_use", "scn_lair_steppe_bandits"),
+          (else_try),
+            (eq, ":starting_town_faction", "fac_kingdom_4"), #player selected Nord city as starting town.
+            (assign, ":scene_to_use", "scn_lair_sea_raiders"),
+          (else_try),
+            (eq, ":starting_town_faction", "fac_kingdom_5"), #player selected Rhodok city as starting town.
+            (assign, ":scene_to_use", "scn_lair_mountain_bandits"),
+          (else_try),
+            (eq, ":starting_town_faction", "fac_kingdom_6"), #player selected Sarranid city as starting town.
+            (assign, ":scene_to_use", "scn_lair_desert_bandits"),
+          (try_end),
+        (try_end),
 
-        # (modify_visitors_at_site,":scene_to_use"),
-        # (reset_visitors),
+        (modify_visitors_at_site,":scene_to_use"),
+        (reset_visitors),
 
-        # (store_character_level, ":player_level", "trp_player"),
-        # (store_add, ":number_of_bandits_will_be_spawned_at_each_period", 5, ":player_level"),
-        # (val_div, ":number_of_bandits_will_be_spawned_at_each_period", 3),
+        (store_character_level, ":player_level", "trp_player"),
+        (store_add, ":number_of_bandits_will_be_spawned_at_each_period", 5, ":player_level"),
+        (val_div, ":number_of_bandits_will_be_spawned_at_each_period", 3),
 
-        # (try_for_range, ":unused", 0, ":number_of_bandits_will_be_spawned_at_each_period"),
-          # (store_random_in_range, ":random_entry_point", 2, 11),
-          # (set_visitor, ":random_entry_point", ":bandit_troop", 1),
-        # (try_end),
+        (try_for_range, ":unused", 0, ":number_of_bandits_will_be_spawned_at_each_period"),
+          (store_random_in_range, ":random_entry_point", 2, 11),
+          (set_visitor, ":random_entry_point", ":bandit_troop", 1),
+        (try_end),
 
-        # (party_clear, "p_temp_casualties"),
+        (party_clear, "p_temp_casualties"),
 
-        # (set_party_battle_mode),
-        # (set_battle_advantage, 0),
-        # (assign, "$g_battle_result", 0),
-        # (set_jump_mission,"mt_bandit_lair"),
+        (set_party_battle_mode),
+        (set_battle_advantage, 0),
+        (assign, "$g_battle_result", 0),
+        (set_jump_mission,"mt_bandit_lair"),
 
-        # (jump_to_scene, ":scene_to_use"),
-        # (change_screen_mission),
-      # ]),
+        (jump_to_scene, ":scene_to_use"),
+        (change_screen_mission),
+      ]),
 
-      # ("leave_no_attack",
-      # [
-        # (party_slot_eq, "$g_encountered_party", slot_party_ai_substate, 0),
-      # ],
-      # "Leave",
-      # [
-        # (change_screen_return),
-      # ]),
+      ("leave_no_attack",
+      [
+        (party_slot_eq, "$g_encountered_party", slot_party_ai_substate, 0),
+      ],
+      "Leave",
+      [
+        (change_screen_return),
+      ]),
 
-      # ("leave_victory",
-      # [
-        # (party_slot_eq, "$g_encountered_party", slot_party_ai_substate, 2),
-      # ],
-      # "Continue",
-      # [
-        # (try_for_range, ":bandit_template", bandit_party_templates_begin, bandit_party_templates_end), #SB : template range
-          # (party_template_slot_eq, ":bandit_template", slot_party_template_lair_party, "$g_encountered_party"),
-          # (party_template_set_slot, ":bandit_template", slot_party_template_lair_party, 0),
-        # (try_end),
+      ("leave_victory",
+      [
+        (party_slot_eq, "$g_encountered_party", slot_party_ai_substate, 2),
+      ],
+      "Continue",
+      [
+        (try_for_range, ":bandit_template", bandit_party_templates_begin, bandit_party_templates_end), #SB : template range
+          (party_template_slot_eq, ":bandit_template", slot_party_template_lair_party, "$g_encountered_party"),
+          (party_template_set_slot, ":bandit_template", slot_party_template_lair_party, 0),
+        (try_end),
 
-        # (party_get_template_id, ":template", "$g_encountered_party"),
-        # (try_begin),
-          # (neq, ":template", "pt_looter_lair"),
-          # (check_quest_active, "qst_destroy_bandit_lair"),
-          # (quest_slot_eq, "qst_destroy_bandit_lair", slot_quest_target_party, "$g_encountered_party"),
-          # (call_script, "script_succeed_quest", "qst_destroy_bandit_lair"),
-        # (try_end),
+        (party_get_template_id, ":template", "$g_encountered_party"),
+        (try_begin),
+          (neq, ":template", "pt_looter_lair"),
+          (check_quest_active, "qst_destroy_bandit_lair"),
+          (quest_slot_eq, "qst_destroy_bandit_lair", slot_quest_target_party, "$g_encountered_party"),
+          (call_script, "script_succeed_quest", "qst_destroy_bandit_lair"),
+        (try_end),
 
-        # (assign, "$g_leave_encounter", 0),
-        # (change_screen_return),
+        (assign, "$g_leave_encounter", 0),
+        (change_screen_return),
 
-        # (try_begin),
-          # (eq, "$loot_screen_shown", 0),
-          # (assign, "$loot_screen_shown", 1),
-# #          (try_begin),
-# #            (gt, "$g_ally_party", 0),
-# #            (call_script, "script_party_add_party", "$g_ally_party", "p_temp_party"), #Add remaining prisoners to ally TODO: FIX it.
-# #          (else_try),
-# #            (party_get_num_attached_parties, ":num_quick_attachments", "p_main_party"),
-# #            (gt, ":num_quick_attachments", 0),
-# #            (party_get_attached_party_with_rank, ":helper_party", "p_main_party", 0),
-# #            (call_script, "script_party_add_party", ":helper_party", "p_temp_party"), #Add remaining prisoners to our reinforcements
-# #          (try_end),
-          # (troop_clear_inventory, "trp_temp_troop"),
+        (try_begin),
+          (eq, "$loot_screen_shown", 0),
+          (assign, "$loot_screen_shown", 1),
+#          (try_begin),
+#            (gt, "$g_ally_party", 0),
+#            (call_script, "script_party_add_party", "$g_ally_party", "p_temp_party"), #Add remaining prisoners to ally TODO: FIX it.
+#          (else_try),
+#            (party_get_num_attached_parties, ":num_quick_attachments", "p_main_party"),
+#            (gt, ":num_quick_attachments", 0),
+#            (party_get_attached_party_with_rank, ":helper_party", "p_main_party", 0),
+#            (call_script, "script_party_add_party", ":helper_party", "p_temp_party"), #Add remaining prisoners to our reinforcements
+#          (try_end),
+          (troop_clear_inventory, "trp_temp_troop"),
 
-          # (party_get_num_companion_stacks, ":num_stacks", "p_temp_casualties"),
-          # (try_for_range, ":stack_no", 0, ":num_stacks"),
-            # (party_stack_get_troop_id, ":stack_troop", "p_temp_casualties", ":stack_no"),
-            # (try_begin),
-              # (party_stack_get_size, ":stack_size", "p_temp_casualties", ":stack_no"),
-              # (party_stack_get_troop_id, ":stack_troop", "p_temp_casualties", ":stack_no"),
-              # (gt, ":stack_size", 0),
-              # (party_add_members, "p_total_enemy_casualties", ":stack_troop", ":stack_size"), #addition_to_p_total_enemy_casualties
-              # (party_stack_get_num_wounded, ":stack_wounded_size", "p_temp_casualties", ":stack_no"),
-              # (gt, ":stack_wounded_size", 0),
-              # (party_wound_members, "p_total_enemy_casualties", ":stack_troop", ":stack_wounded_size"),
-            # (try_end),
-          # (try_end),
+          (party_get_num_companion_stacks, ":num_stacks", "p_temp_casualties"),
+          (try_for_range, ":stack_no", 0, ":num_stacks"),
+            (party_stack_get_troop_id, ":stack_troop", "p_temp_casualties", ":stack_no"),
+            (try_begin),
+              (party_stack_get_size, ":stack_size", "p_temp_casualties", ":stack_no"),
+              (party_stack_get_troop_id, ":stack_troop", "p_temp_casualties", ":stack_no"),
+              (gt, ":stack_size", 0),
+              (party_add_members, "p_total_enemy_casualties", ":stack_troop", ":stack_size"), #addition_to_p_total_enemy_casualties
+              (party_stack_get_num_wounded, ":stack_wounded_size", "p_temp_casualties", ":stack_no"),
+              (gt, ":stack_wounded_size", 0),
+              (party_wound_members, "p_total_enemy_casualties", ":stack_troop", ":stack_wounded_size"),
+            (try_end),
+          (try_end),
 
-          # (call_script, "script_party_calculate_loot", "p_total_enemy_casualties"), #p_encountered_party_backup changed to total_enemy_casualties
-          # (gt, reg0, 0),
-          # (troop_sort_inventory, "trp_temp_troop"),
-          # ##diplomacy start+
-          # ##OLD:
-          # #(change_screen_loot, "trp_temp_troop"),
-          # ##NEW:
-          # ##jump to rubik's CC autoloot
-          # (try_begin),
-            # (call_script, "script_party_calculate_loot", "p_total_enemy_casualties"),
-            # (assign, "$dplmc_return_menu", "mnu_bandit_lair"),
-            # #SB : variable resets
-            # (assign, "$lord_selected", "trp_player"),
-            # (str_clear, dplmc_loot_string),
-            # (jump_to_menu, "mnu_dplmc_manage_loot_pool"),
-          # (else_try),
-             # #Fall back to old behavior
-            # (change_screen_loot, "trp_temp_troop"),
-          # (try_end),
-          # ##diplomacy end+
-        # (try_end),
+          (call_script, "script_party_calculate_loot", "p_total_enemy_casualties"), #p_encountered_party_backup changed to total_enemy_casualties
+          (gt, reg0, 0),
+          (troop_sort_inventory, "trp_temp_troop"),
+          ##diplomacy start+
+          ##OLD:
+          #(change_screen_loot, "trp_temp_troop"),
+          ##NEW:
+          ##jump to rubik's CC autoloot
+          (try_begin),
+            (call_script, "script_party_calculate_loot", "p_total_enemy_casualties"),
+            (assign, "$dplmc_return_menu", "mnu_bandit_lair"),
+            #SB : variable resets
+            (assign, "$lord_selected", "trp_player"),
+            (str_clear, dplmc_loot_string),
+            (jump_to_menu, "mnu_dplmc_manage_loot_pool"),
+          (else_try),
+             #Fall back to old behavior
+            (change_screen_loot, "trp_temp_troop"),
+          (try_end),
+          ##diplomacy end+
+        (try_end),
 
-        # (try_begin),
-          # (ge, "$g_encountered_party", 0),
-          # (party_is_active, "$g_encountered_party"),
-          # (party_get_template_id, ":template", "$g_encountered_party"),
-          # (eq, ":template", "pt_looter_lair"),
-          # (remove_party, "$g_encountered_party"),
-        # (try_end),
-      # ]),
+        (try_begin),
+          (ge, "$g_encountered_party", 0),
+          (party_is_active, "$g_encountered_party"),
+          (party_get_template_id, ":template", "$g_encountered_party"),
+          (eq, ":template", "pt_looter_lair"),
+          (remove_party, "$g_encountered_party"),
+        (try_end),
+      ]),
 
-      # ("leave_defeat",
-      # [
-        # (party_slot_eq, "$g_encountered_party", slot_party_ai_substate, 1),
-      # ],
-      # "Continue",
-      # [
-        # (try_for_range, ":bandit_template", bandit_party_templates_begin, bandit_party_templates_end), #SB : template range
-          # (party_template_slot_eq, ":bandit_template", slot_party_template_lair_party, "$g_encountered_party"),
-          # (party_template_set_slot, ":bandit_template", slot_party_template_lair_party, 0),
-        # (try_end),
+      ("leave_defeat",
+      [
+        (party_slot_eq, "$g_encountered_party", slot_party_ai_substate, 1),
+      ],
+      "Continue",
+      [
+        (try_for_range, ":bandit_template", bandit_party_templates_begin, bandit_party_templates_end), #SB : template range
+          (party_template_slot_eq, ":bandit_template", slot_party_template_lair_party, "$g_encountered_party"),
+          (party_template_set_slot, ":bandit_template", slot_party_template_lair_party, 0),
+        (try_end),
 
-        # (try_begin),
-          # (party_get_template_id, ":template", "$g_encountered_party"),
-          # (neq, ":template", "pt_looter_lair"),
-          # (check_quest_active, "qst_destroy_bandit_lair"),
-          # (quest_slot_eq, "qst_destroy_bandit_lair", slot_quest_target_party, "$g_encountered_party"),
-          # (call_script, "script_fail_quest", "qst_destroy_bandit_lair"),
-        # (try_end),
+        (try_begin),
+          (party_get_template_id, ":template", "$g_encountered_party"),
+          (neq, ":template", "pt_looter_lair"),
+          (check_quest_active, "qst_destroy_bandit_lair"),
+          (quest_slot_eq, "qst_destroy_bandit_lair", slot_quest_target_party, "$g_encountered_party"),
+          (call_script, "script_fail_quest", "qst_destroy_bandit_lair"),
+        (try_end),
 
-        # (try_begin),
-          # (ge, "$g_encountered_party", 0),
-          # (party_is_active, "$g_encountered_party"),
-          # (party_get_template_id, ":template", "$g_encountered_party"),
-          # (neq, ":template", "pt_looter_lair"),
-          # (remove_party, "$g_encountered_party"),
-        # (try_end),
+        (try_begin),
+          (ge, "$g_encountered_party", 0),
+          (party_is_active, "$g_encountered_party"),
+          (party_get_template_id, ":template", "$g_encountered_party"),
+          (neq, ":template", "pt_looter_lair"),
+          (remove_party, "$g_encountered_party"),
+        (try_end),
 
-        # (assign, "$g_leave_encounter", 0),
+        (assign, "$g_leave_encounter", 0),
 
-        # (try_begin),
-            # (party_is_active, "$g_encountered_party"),
-            # (party_set_slot, "$g_encountered_party", slot_party_ai_substate, 0),
-        # (try_end),
+        (try_begin),
+            (party_is_active, "$g_encountered_party"),
+            (party_set_slot, "$g_encountered_party", slot_party_ai_substate, 0),
+        (try_end),
 
-        # (change_screen_return),
-        # ]),
+        (change_screen_return),
+        ]),
 
-     # ]
-  # ),
+     ]
+  ),
 
 
   (
@@ -17201,7 +17304,8 @@ TOTAL:  {reg5}"),
 "none",
 [(store_faction_of_party, ":cur_faction", "$current_town"),
 (faction_get_slot, ":volunteer_troop", ":cur_faction", slot_faction_terror_troop),
-(party_get_slot, ":volunteer_amount", "$current_town", slot_center_volunteer_troop_amount),
+(assign, ":volunteer_amount", 1),
+#(party_get_slot, ":volunteer_amount", "$current_town", slot_center_volunteer_troop_amount),
 (party_get_free_companions_capacity, ":free_capacity", "p_main_party"),
 (store_troop_gold, ":gold", "trp_player"),
 (store_div, ":gold_capacity", ":gold", 500),
@@ -17282,7 +17386,7 @@ TOTAL:  {reg5}"),
 "{s18}",
 "none",
 [(store_faction_of_party, ":cur_faction", "$current_town"),
-(faction_get_slot, ":volunteer_troop", ":cur_faction", slot_faction_guard_troop),
+(faction_get_slot, ":volunteer_troop", ":cur_faction", slot_faction_aux_troop),
 (party_get_slot, ":volunteer_amount", "$current_town", slot_center_volunteer_troop_amount),
 (party_get_free_companions_capacity, ":free_capacity", "p_main_party"),
 (store_troop_gold, ":gold", "trp_player"),
@@ -19248,7 +19352,7 @@ TOTAL:  {reg5}"),
           "Force Throd army attack",
           [
 			(store_faction_of_party, ":center_faction", "$g_encountered_party"),
-			(assign,":faction", "fac_theocracy"),
+			(assign,":faction", "fac_kingdom_10"),
 			
 			(try_begin),
 				(store_relation, ":relation", ":center_faction", ":faction"),
@@ -22514,9 +22618,9 @@ TOTAL:  {reg5}"),
 	  (jump_to_menu, "mnu_camp"),
 	  ]),
       
-	  ("change_fac_irregular",[], "Irregulars",[
-	  (call_script, "script_set_faction_culture", "fac_player_faction", "fac_irregulars"),
-	  (call_script, "script_set_faction_culture", "fac_player_supporters_faction", "fac_irregulars"),
+	  ("change_fac_irregular",[], "Renegades",[
+	  (call_script, "script_set_faction_culture", "fac_player_faction", "fac_kingdom_9"),
+	  (call_script, "script_set_faction_culture", "fac_player_supporters_faction", "fac_kingdom_9"),
 	  (jump_to_menu, "mnu_camp"),
 	  ]),
 	  

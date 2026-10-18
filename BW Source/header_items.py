@@ -402,13 +402,13 @@ itc_morningstar = itc_cut_two_handed |  itc_parry_two_handed |itc_cleaver
 itc_parry_polearm = itcf_parry_forward_polearm | itcf_parry_up_polearm | itcf_parry_right_polearm | itcf_parry_left_polearm
 itc_poleaxe    = itc_parry_polearm| itcf_overswing_polearm |itcf_thrust_polearm|itcf_slashright_polearm|itcf_slashleft_polearm
 itc_staff      = itc_parry_polearm| itcf_thrust_onehanded_lance |itcf_thrust_onehanded_lance_horseback| itcf_overswing_polearm |itcf_thrust_polearm|itcf_slashright_polearm|itcf_slashleft_polearm
-itc_spear      = itc_parry_polearm| itcf_thrust_onehanded_lance |itcf_thrust_onehanded_lance_horseback | itcf_thrust_polearm | itcf_overswing_spear | itcf_overswing_musket  #tocan |itcf_slashright_polearm|itcf_slashleft_polearm
+itc_spear      = itc_parry_polearm| itcf_thrust_onehanded_lance |itcf_thrust_onehanded_lance_horseback | itcf_thrust_polearm | itcf_overswing_musket  #tocan |itcf_slashright_polearm|itcf_slashleft_polearm
 itc_cutting_spear = itc_parry_polearm| itcf_thrust_onehanded_lance |itcf_thrust_onehanded_lance_horseback | itcf_thrust_polearm |itcf_overswing_polearm
-itc_pike       = itc_parry_polearm| itcf_thrust_onehanded_lance |itcf_thrust_onehanded_lance_horseback | itcf_thrust_polearm | itcf_overswing_spear | itcf_overswing_musket  
+itc_pike       = itc_parry_polearm| itcf_thrust_onehanded_lance |itcf_thrust_onehanded_lance_horseback | itcf_thrust_polearm | itcf_overswing_musket  
 itc_guandao    = itc_parry_polearm|itcf_overswing_polearm|itcf_thrust_polearm|itcf_slashright_polearm|itcf_slashleft_polearm|itcf_horseback_slashright_onehanded|itcf_horseback_slashleft_onehanded|itcf_horseback_slash_polearm
 
 itc_greatlance = itcf_thrust_onehanded_lance |itcf_thrust_onehanded_lance_horseback| itcf_thrust_polearm
-itc_musket_melee = itc_parry_polearm|itcf_overswing_musket|itcf_thrust_musket|itcf_slashright_twohanded|itcf_slashleft_twohanded
+itc_musket_melee = itc_parry_polearm|itcf_overswing_musket|itcf_thrust_musket #|itcf_slashright_twohanded|itcf_slashleft_twohanded
 
 itc_spear_upstab =  itc_spear|itcf_force_64_bits|itcf_overswing_spear|itcf_overswing_musket
 itc_lance_upstab =  itc_spear|itcf_force_64_bits|itcf_overswing_spear|itcf_overswing_musket

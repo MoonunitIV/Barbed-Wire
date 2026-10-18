@@ -156,6 +156,7 @@ slot_agent_cover_cycle	          	= 55
 slot_agent_cover_cycle_ai	         = 56
 slot_agent_last_time_hit_enemy		= 57
 slot_agent_last_cover_used			= 58
+slot_agent_is_poisoned              = 59
 
 ########################################################
 ##  FACTION SLOTS          #############################
@@ -196,19 +197,20 @@ slot_faction_quick_battle_tier_1_cavalry       = 45
 slot_faction_quick_battle_tier_2_cavalry       = 46
 
 slot_faction_gender_ratio = 40 #SB : gender ratio slot
-slot_faction_tier_0_troop         = 47
-slot_faction_tier_1_troop         = 41
-slot_faction_tier_2_troop         = 42
-slot_faction_tier_3_troop         = 43
-slot_faction_tier_4_troop         = 44
-slot_faction_tier_5_troop         = 45
-slot_faction_terror_troop         = 46
+slot_faction_tier_0_troop         = 41
+slot_faction_tier_1_troop         = 42
+slot_faction_tier_2_troop         = 43
+slot_faction_tier_3_troop         = 44
+slot_faction_tier_4_troop         = 45
+slot_faction_tier_5_troop         = 46
+slot_faction_terror_troop         = 47
+slot_faction_aux_troop         = 48
 
-slot_faction_deserter_troop       = 48
-slot_faction_guard_troop          = 49
-slot_faction_messenger_troop      = 50
-slot_faction_prison_guard_troop   = 51
-slot_faction_castle_guard_troop   = 52
+slot_faction_deserter_troop       = 49
+slot_faction_guard_troop          = 50
+slot_faction_messenger_troop      = 51
+slot_faction_prison_guard_troop   = 52
+slot_faction_castle_guard_troop   = 53
 
 slot_faction_town_walker_male_troop      = 53
 slot_faction_town_walker_female_troop    = 54
@@ -230,6 +232,7 @@ slot_faction_reinforcements_b        = 78
 slot_faction_reinforcements_c        = 79
 slot_faction_reinforcements_d        = 83
 slot_faction_reinforcements_e        = 111
+slot_faction_reinforcements_f        = 112
 
 slot_faction_num_armies              = 80
 slot_faction_num_castles             = 81
@@ -651,7 +654,7 @@ spt_kingdom_hero_party = 13
 spt_village_farmer     = 15
 spt_vehicle            = 16
 spt_cattle_herd        = 17
-# spt_bandit_lair       = 18
+spt_bandit_lair       = 18
 #spt_deserter           = 20
 spt_bandit_party       = 22
 spt_outpost            = 35
@@ -1414,11 +1417,11 @@ kingdoms_end = "fac_kingdoms_end"
 npc_kingdoms_begin = "fac_kingdom_1"
 npc_kingdoms_end = kingdoms_end
 
-kingdoms_plus_irregular_end = "fac_robber_knights"
+kingdoms_plus_renegade_end = "fac_robber_knights"
 
 bandits_begin = "trp_looter"
 infested_mut_begin = "trp_infected_1"
-infested_end = "trp_f1_tier_0"
+infested_end = "trp_f1_levy"
 bandits_end = infested_mut_begin
 
 kingdom_ladies_begin = "trp_knight_1_1_wife"
@@ -1921,6 +1924,75 @@ ACHIEVEMENT_EMPRESS = 78,
 ACHIEVEMENT_TALK_OF_THE_TOWN = 79,
 ACHIEVEMENT_LADY_OF_THE_LAKE = 80,
 
+####DrTomas constants
+###cannons
+##party constants:
+cannon_adjust_x = 1000 #cms
+cannon_move_y = 2000
+cannon_captain_adjust_y = -300
+cannon_sidekicks_adjust_x = 200
+cannon_rotation_value = 60
+cannon_rotation_value_brute = 90
+cannon_reload_timer = 30
+cannon_cost = 3000
+cannon_count_per_side = 6
+cannon_count_per_party = 2
+#teams
+enemy_team = 0
+player_team = 1
+enemy_team2 = 2
+ally_team = 3
+#divisions?
+cannon_division = 8
+#cannon other
+crap_factor = 1000
+#cannon operations
+op_non_funcional = 0
+op_funcional = 1
+#cannon rotation
+cannon_rotating = 0
+cannon_static = 1
+#cannon reload
+cannon_ready = 0
+cannon_needs_loading = 1
+#balls
+ball_landed = 0
+ball_falling = 1
+##party slots:
+slot_party_cannons = 500 ##should be free
+slot_party_cannons_3lb = 500 ##should be free
+slot_party_cannons_6lb = 501 ##should be free
+slot_party_cannons_12lb = 502 ##should be free
+##agent slots:
+slot_agent_captain = 300
+slot_agent_party = 301
+slot_agent_cannon_type = 302
+##scene props:
+#canons
+slot_spr_captain = 300
+slot_spr_sidekick = 301
+slot_spr_sidekick2 = 302
+slot_spr_agent_for_reload = 303
+slot_spr_target_agent = 304
+slot_spr_cannon_op = 305
+slot_spr_cannon_rotation = 306
+slot_spr_cannon_reloding = 307
+slot_spr_loading_seconds = 308
+slot_spr_damage_multiplayer = 309
+#balls
+slot_balls_cannon = 300
+slot_balls_target_x = 301
+slot_balls_target_y = 302
+slot_balls_target_z = 303
+slot_balls_target_z_spot = 304
+slot_balls_target_moving = 305
+slot_balls_target_speed = 306
+##auxiliiary player slots:
+#agent slots:
+slot_possessed = 100
+slot_real_troop = 101
+
+
 ##diplomacy begin
 # recruiter kit begin
 dplmc_slot_party_recruiter_needed_recruits = 234           # Amount of recruits the employer ordered.
@@ -2303,6 +2375,9 @@ ammo_mg                        = 7
 ammo_plasma                    = 8
 ammo_flame                     = 9
 ammo_flame_burst               = 10
+ammo_arty                      = 11
+ammo_rocket                    = 12
+ammo_grenade                   = 13
 
 skl_crafting = "skl_reserved_9"
 skl_scavenger = "skl_reserved_14"

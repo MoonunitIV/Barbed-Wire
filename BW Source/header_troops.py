@@ -223,7 +223,7 @@ def entry(n):
 # LAV TWEAKS BEGIN
 
 # Generate constants for attribute levels in [3..64) range.
-for index in range(3, 129):
+for index in range(3, 300):
     globals()['str_%d' % index] = bignum | index
     globals()['agi_%d' % index] = bignum | (index << 8)
     globals()['int_%d' % index] = bignum | (index << 16)

@@ -1370,11 +1370,11 @@ scene_props_native = [
   ("suspension_bridge_a",0,"suspension_bridge_a","bo_suspension_bridge_a", []),
   ("mine_a",0,"mine_a","bo_mine_a", []),
   
-  
+###########################################################################################   
   #add new props here to avoid displacement of deleted/missing props
-  
+###########################################################################################  
   ("prop_broken_building_3_cut",0,"broken_building_3_cut","bo_broken_building_3_cut",[]),
-
+########################################################################################### 
 #Barbed Wire Props
   ("prop_barbedwire",0,"barbedwire","bo_barbedwire",[]),
   ("prop_barbedwire1",0,"barbedwire1","bo_barbedwire1",[]),
@@ -1396,16 +1396,23 @@ scene_props_native = [
   ("prop_vickers",0,"vickers","bo_vickers",[]),
   
   ("prop_bunker_fort",0,"bfy_bunker_underground_a","bo_bfy_bunker_underground_a",[]),
-  
+########################################################################################### 
 #Barbed Wire ironsights
 #pistols
-#is_empire_revolver
-#is_dominion_revolver
-#is_galvae_revolver
-#is_molvat_revolver
-#is_vitzland_pistol
-#is_pistol_c96
+  ("is_empire_revolver",0,"is_webleymk6","0",[]),
+  ("is_dominion_revolver",0,"is_webleybulldog","0",[]),
+  ("is_galvae_revolver",0,"is_webleybulldog","0",[]),
+  ("is_molvat_revolver",0,"is_nagant","0",[]),
 #is_trezzo_revolver
+
+  # ("is_dominion_revolver",0,"is_webleybulldog","0",[]),
+  # ("is_dominion_revolver",0,"is_webleybulldog","0",[]),
+  # ("is_dominion_revolver",0,"is_webleybulldog","0",[]),
+  # ("is_dominion_revolver",0,"is_webleybulldog","0",[]),
+  # ("is_dominion_revolver",0,"is_webleybulldog","0",[]),
+  # ("is_dominion_revolver",0,"is_webleybulldog","0",[]),
+  # ("is_dominion_revolver",0,"is_webleybulldog","0",[]),
+
 #is_common_revolver_1
 #is_common_revolver_2
 #is_common_revolver_3
@@ -1416,8 +1423,29 @@ scene_props_native = [
 #is_common_revolver_8
 #is_common_revolver_9
 #is_common_revolver_10
+#is_common_revolver_11
+#is_common_revolver_12
+#is_common_revolver_13
+#is_common_revolver_14
+#is_common_revolver_15
+#is_common_revolver_16
+#is_common_revolver_17
+#is_common_revolver_18
+#is_common_revolver_19
+#is_common_revolver_20
+#is_common_revolver_21
+#is_common_revolver_22
+#is_common_revolver_23
+
 #is_crook_revolver_1
-#is_crook_revolver_1_alt
+
+#is_dominion_pistol
+#is_molvat_pistol
+#is_vitzland_pistol
+#is_trezzo_pistol
+#is_itami_pistol
+#is_itami_pistol_2
+#is_bashide_pistol
 #is_common_pistol_1
 #is_common_pistol_2
 #is_common_pistol_3
@@ -1426,83 +1454,92 @@ scene_props_native = [
 #is_common_pistol_6
 #is_common_pistol_7
 #is_common_pistol_8
+#is_common_pistol_9
+
 #smgs
+#is_dominion_smg
+#is_galvae_smg
 #is_molvat_smg
+#is_berchav_smg
 #is_vitzland_smg
+#is_vitzland_smg_2
 #is_trezzo_smg
 #is_trezzo_smg_2
-#is_irregular_smg
-#is_irregular_smg_2
+#is_itami_smg
+#is_bashide_smg
+#is_bashide_smg_2
+#is_renegade_smg
+#is_renegade_smg_2
+
 #rifles
   ("is_empire_bolt_action_rifle",0,"is_smle","0",[]),
+#is_empire_bolt_action_carbine_silent
   ("is_dominion_bolt_action_rifle",0,"is_metford","0",[]),
+#is_dominion_bolt_action_rifle_2
   ("is_galvae_bolt_action_rifle",0,"is_krag","0",[]),
   ("is_molvat_bolt_action_rifle",0,"is_mosin","0",[]),
+#is_berchav_bolt_action_rifle 
   ("is_vitzland_bolt_action_rifle",0,"is_schoenauer","0",[]),
+#is_vitzland_bolt_action_rifle_2
+#is_vitzland_semi_rifle
   ("is_trezzo_bolt_action_rifle",0,"is_carcano1891","0",[]),
-
-#is_empire_bolt_action_carbine_silent
-
-#is_berchav_bolt_action_rifle
-
-#is_molvat_semi_rifle
-
-#is_irregular_bolt_action_rifle
-  ("is_irregular_bolt_action_rifle",0,"is_beaumont1871_88","0",[]),
-
+  ("is_trezzo_bolt_action_rifle_2",0,"is_carcano1891","0",[]),
+#is_itami_bolt_action_rifle
+#is_itami_bolt_action_rifle_2
+#is_bashide_bolt_action_rifle
+  ("is_bashide_bolt_action_rifle_2",0,"is_schoenauer","0",[]),
+#
+  ("is_renegade_bolt_action_rifle",0,"is_beaumont1871_88","0",[]),
 #is_common_bolt_action_rifle
-
-#is_common_bolt_action_rifle_1
   ("is_common_bolt_action_rifle_1",0,"is_lebel1886","0",[]),
-
 #is_common_bolt_action_rifle_2
-
 #is_common_bolt_action_rifle_3
-
+#is_common_bolt_action_rifle_4
+#is_common_bolt_action_rifle_5
 #is_common_bolt_action_rifle_single
 
 #Assault Rifles
-#is_dominion_assault_rifle
+#is_entenaii_assault_rifle
+  ("is_dominion_assault_rifle",0,"is_chauchat","0",[]),
 #is_galvae_assault_rifle
-#is_molvat_assault_rifle
-#is_berchav_assault_rifle
-
-#Snipers
-#is_empire_sniper
-#is_berchav_sniper
-
+  ("is_molvat_assault_rifle",0,"is_fedorov","0",[]),
+  ("is_berchav_assault_rifle",0,"is_avs36","0",[]),
+  ("is_vitzland_assault_rifle",0,"is_fg42","0",[]),
+#is_trezzo_assault_rifle
+  #("is_itami_assault_rifle",0,"is_zb26","0",[]),
 #shotguns
 
 #is_entenaii_shotgun
 #is_dominion_shotgun
+#is_galvae_shotgun
 #is_vitzland_sawnoff
 #is_vitzland_shotgun
 #is_hunting_shotgun
 #is_double_barrel_shotgun
 #is_double_barrel_shotgun_short
+#is_double_barrel_shotgun_antique
 
 #is_shotgun_riot
 
 #lmgs
-#empire
   ("is_entenaii_empire_lmg",0,"is_lewis","0",[]),
-#dominion
   ("is_entenaii_dominion_lmg",0,"is_hotchkiss1909","0",[]),
-  
-
-#is_galvae_lmg_hip
 #is_galvae_lmg
-#is_molvat_lmg_hip
 #is_molvat_lmg
-#is_vitzland_lmg_hip
 #is_vitzland_lmg
-#is_shadow_lmg
+#is_vitzland_lmg_2
+#is_trezzo_lmg
+#is_itami_lmg
+#is_bashide_lmg
   ("is_shadow_lmg",0,"is_mg34","0",[]),
-
-#is_lmg_type_99_hip
-#is_lmg_type_99
-
+#is_shadow_lmg_2
 #other
+#is_entenaii_antitank_rifle
+#is_union_antitank_rifle
+#is_vitzland_antitank_rifle
+  ("is_itami_grenade_launcher",0,"is_chinalake","0",[]),
 
+
+########################################################################################### 
 
 ]

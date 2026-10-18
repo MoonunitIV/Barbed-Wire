@@ -2182,7 +2182,7 @@ acf_enforce_all,
 ["rifle_bolt_fire_contd", acf_rot_vertical_bow, amf_use_weapon_speed|amf_play|amf_priority_equip|amf_start_instantly|amf_continue_to_next|amf_rider_rot_pistol, [0.7, "bolt_rifle_160", 24, 80, arf_blend_in_1]],
 ["rifle_bolt_aim", acf_rot_vertical_bow, amf_keep|amf_priority_weapon_idle|amf_rider_rot_pistol, [0.35, "bolt_rifle_160", 1, 1, arf_blend_in_4]],
 #Garand reload is used for bolt action rifles too, both are loaded with similar movements, similar enough that most won't even realize, if they bother to look - Mongol
-["garand_reload", 0, amf_play|amf_priority_reload|amf_client_prediction|amf_start_instantly, [3.5, "garand_reload", 3, 100, arf_blend_in_16]],
+["garand_reload", 0, amf_play|amf_priority_reload|amf_client_prediction|amf_start_instantly, [3, "garand_reload", 3, 100, arf_blend_in_16]],
 
 # Shotgun additions
 #["shotgun_ready", acf_rot_vertical_bow, amf_use_weapon_speed|amf_keep|amf_priority_weapon_idle|amf_rider_rot_pistol, [0.35, "bolt_rifle_160", 100, 80, arf_blend_in_16]],
@@ -2190,7 +2190,10 @@ acf_enforce_all,
 ["shotgun_fire_contd", acf_rot_vertical_bow, amf_use_weapon_speed|amf_play|amf_priority_attack|amf_start_instantly|amf_rider_rot_pistol, [1.2, "shoot_pump_shotgun", 20,144, arf_blend_in_1]],
 ["shotgun_aim", acf_rot_vertical_bow, amf_keep|amf_priority_weapon_idle|amf_rider_rot_pistol, [0.35, "shoot_pump_shotgun", 2, 2, arf_blend_in_4]],
 ["shotgun_reload", 0, amf_play|amf_priority_reload|amf_client_prediction|amf_start_instantly, [6, "aro_shotgunreload", 3, 180, arf_blend_in_16]],
+#
+["shotgun_reload_short", 0, amf_play|amf_priority_reload|amf_client_prediction|amf_start_instantly, [6, "aro_shotgunreload", 100, 180, arf_blend_in_16]],
 
+#
 ["reload_revolver", 0, amf_play|amf_priority_reload|amf_client_prediction|amf_start_instantly, [5.5, "reload_revolver", 3, 270, arf_blend_in_16]],
 
 ["rifle_higher_ready", acf_rot_vertical_bow, amf_use_weapon_speed|amf_keep|amf_priority_weapon_idle|amf_rider_rot_pistol, [0.35, "bolt_rifle_higher", 100, 80, arf_blend_in_16]],
@@ -2231,7 +2234,7 @@ acf_enforce_all,
 ["walk_backward_crouch", acf_enforce_lowerbody,  amf_use_cycle_period|amf_client_prediction|amf_priority_ride,
  [1.7, "low_walk", 48, 0, arf_use_walk_progress|arf_cyclic|blend_in_walk|arf_make_walk_sound,pack2f(0.4,0.9), (0, 0, 0), 0.0],],
 ["player_crouch", acf_enforce_lowerbody, amf_client_prediction|amf_priority_die,
- [1.3, "crouch_down", 50, 51,  arf_cyclic|arf_blend_in_4],],
+ [1.3, "hh_crouch_with_gun", 1, 10,  arf_cyclic|arf_blend_in_4],],
 ["rifle_walk_right_crouch_45", acf_enforce_lowerbody, amf_use_cycle_period|amf_client_prediction|amf_priority_ride,
  [1.7, "ani_rifle_low_walk45", 0, 48, arf_use_walk_progress|arf_cyclic|blend_in_walk|arf_make_walk_sound,pack2f(0.4,0.9), (0, 0, 0), 0.0],],
 ["rifle_walk_left_crouch_45", acf_enforce_lowerbody,  amf_use_cycle_period|amf_client_prediction|amf_priority_ride,

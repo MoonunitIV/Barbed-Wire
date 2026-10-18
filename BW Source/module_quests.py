@@ -293,9 +293,9 @@ quests = [
   "{!}placeholder"
   ), #possibly replaces rescue lord
 
- # ("destroy_bandit_lair", "Destroy Bandit Lair", qf_random_quest,
-  # "{!}{s9} of {s4} asked you to discover a {s6} and destroy it."
-  # ),
+ ("destroy_bandit_lair", "Destroy Bandit Lair", qf_random_quest,
+  "{!}{s9} of {s4} asked you to discover a {s6} and destroy it."
+  ),
 
  ("deliver_message_courier", "Deliver Message to {s13}", qf_random_quest,
   "{!}{s9} asked you to take a message to {s13}. {s13} was at {s4} when you were given this quest."

@@ -1070,7 +1070,7 @@ strings = [
 #npc12 = Renfield
 #npc13 = Aulus
 #npc14 = Philbert
-#npc15 = Vorigan
+#npc15 = Kilroy
 #npc16 = Mide
   #Declan
   ("npc1_intro", "Mainn mhith. Yer wouldn't by a'chance be in the market for a tracker, would you?"), 
@@ -1085,7 +1085,7 @@ strings = [
   #Giotto
   ("npc6_intro", "I am lost... Lost..."), 
   #Xetina
-  ("npc7_intro", "Yes? Keep your distance, by the way."), 
+  ("npc7_intro", "Stop staring at me. If you think I'll strip for a couple of falors, go look for some easy girls under the red lanterns. But if you're slow on the uptake, let me put it plainly: if you don't leave, you'll see me dance gracefully over your body while blood pours from your throat. So, what are you going to do? - (The moment you take a step back, she smiles and lets out a hoarse little laugh) - Well? What's the matter? I'm not that dangerous. I simply don't care for pointless conversations. If you've not come here on business, you'd best leave me alone."), #Xetina
   #Grigori
   #Pshol ty! Go-go unless you're buying the next round. These monsters won't kill themselves, and I'm not getting any soberer.
   ("npc8_intro", "Dobriy den,drug! Ah....tochno, good day friend-came here to drink a? I come here-all the time. Kstati-you look wery...kak eto skazati-to...full open to some trouble, and it happens so-thet im too! I fire monsters,creatures...raznoe vsyakoe...AND Demons! I have shot howling horrors, ghouls, even a horse-eater! And a lot of animals too-konechno."), 
@@ -1101,8 +1101,8 @@ strings = [
   ("npc13_intro", "Tidings, traveller. I am Aulus. No doubt you will have heard of me."), 
   #Philbert
   ("npc14_intro", "(The man looks at you inquisitively)"), 
-  #Vorigan
-  ("npc15_intro", "Oh! Say, friend, are you by chance heading out of town anytime soon?"), 
+  #Kilroy
+  ("npc15_intro", "Kilroy idle."), 
   #Mide
   ("npc16_intro", "Mainn mhith. Are you looking for another gun by your side?"), 
 
@@ -1112,7 +1112,9 @@ strings = [
   ("npc4_intro_response_1", "Hmm... I have never heard of the family of Tranthem."), #Hilmont
   ("npc5_intro_response_1", "Certainly. With whom do I have the pleasure of drinking?"), #Yilmazok
   ("npc6_intro_response_1", "Why so gloomy, friend?"), #Giotto
-  ("npc7_intro_response_1", "My apologies. I was merely going to say that you look a bit down on your luck."), #Xetina
+  #Xetina
+  ("npc7_intro_response_1", "It's rather risky to threaten someone who can get you out of this hole in exchange for your services. But I hope you're quick of hand as well as sharp of wit. So, with whom do I have the pleasure of speaking, if I may ask?"), #Xetina
+
   #Grigori
   ("npc8_intro_response_1", "You want me to hire you?"), 
   #
@@ -1124,7 +1126,9 @@ strings = [
   #
   ("npc13_intro_response_1", "My apologises sir, I can't say that I have."), #Aulus
   ("npc14_intro_response_1", "Hello. Might I make your acquantiance?"), #Philbert
-  ("npc15_intro_response_1", "I am. What concern is it of your, may I ask?"), #Vorigan
+  #Kilroy
+  ("npc15_intro_response_1", "Hello, Automaton. Odd seeing one of you just...unattended."), 
+  
   ("npc16_intro_response_1", "I could be. What's your story?"), #Mide
 
   ("npc1_intro_response_2", "Step back, sir, and keep your hand away from my purse."), #Declan
@@ -1133,7 +1137,10 @@ strings = [
   ("npc4_intro_response_2", "Eh? No thanks, we don't want any."), #Hilmont
   ("npc5_intro_response_2", "I have no time for that."), #Yilmazok
   ("npc6_intro_response_2", "No doubt. Well, good luck getting found."), #Giotto
-  ("npc7_intro_response_2", "Right. I'll not bother you, then."), #Xetina
+  
+  #Xetina
+  ("npc7_intro_response_2", "I think I'll keep my falors safely away from those wild eyes of yours for now. Good day, savage."), #Xetina
+  
   #Grigori
   ("npc8_intro_response_2", "I'm not in the mood to drink"),
   #
@@ -1145,7 +1152,9 @@ strings = [
   #
   ("npc13_intro_response_2", "Bah. I have no time for 'celebrities'..."), #Aulus
   ("npc14_intro_response_2", "Uh, nevermind..."), #Philbert
-  ("npc15_intro_response_2", "I'd be obliged if you minded your own business, sir."), #Vorigan
+  #Kilroy
+  ("npc15_intro_response_2", "What the hell? Stay away from me rust bucket."), 
+  
   ("npc16_intro_response_2", "Mind your own business, lass."), #Mide
 
 #backstory intro
@@ -1153,9 +1162,11 @@ strings = [
   ("npc2_backstory_a", "It's a tragic tale, sir."), #Rikiar
   ("npc3_backstory_a", "A good question, and I shall tell you!"), #Gesgehe
   ("npc4_backstory_a", "Really? Well, perhaps your ignorance can be forgiven. Our ancestral lands are far to the south."), #Hilmont
-  ("npc5_backstory_a", "I am Yilmazok, a Yanizar mercenary. I come from island to east, Barshide. Gorberia is a dangerous place yes?"), #Yilmazok
+  ("npc5_backstory_a", "I am Yilmazok, a yanizar mercenary. I come from island to east, Bashide. Gorberia is a dangerous place yes?"), #Yilmazok
   ("npc6_backstory_a", "I have commited the greatest of sins, {sir/madame}, and it is to my shame that I must appoint you my confessor, if you should like to hear it."), #Giotto
-  ("npc7_backstory_a", "My luck? You could say that."), #Xetina
+  #Xetina
+  ("npc7_backstory_a", "Well, well. Could it be that poor Xetina's fortunes have finally turned, in the form of a mysterious stranger offering falors for service?"), #Xetina
+
   #Grigori
   ("npc8_backstory_a", "Konechno! Of course! How else would I get away from my wife for a couple of... dopustim... months? I need a good otma... - a reason! I do not see her often anyway, but I still hate her speeches about Kak zhe ty menya dostal pritaskivat v dom vonyuchiye tushi!... always complaining about the stench of monsters in the house. Zabud."), 
   #
@@ -1167,7 +1178,9 @@ strings = [
   #
   ("npc13_backstory_a", "You have not? Then perhaps you will have heard of my steed, who cuts across the Gorberia plains like a beam of moonlight? Or of my pistol, a connoisseur of the blood of the richest warlords of the land?"),
   ("npc14_backstory_a", "(The man gestures to his nametag, which reads 'Philbert'"), #Philbert
-  ("npc15_backstory_a", "I'm an engineer, specialized in the art of fortification. If you need a wall knocked down, I can do that, given enough time. If you need a wall built back up, I can do that too, although it will take longer and cost you more. And you can't cut costs, either, unless you want your new edifice coming down underneath you, as someone around here has just found out."),
+  #Kilroy
+  ("npc15_backstory_a", "Kilroy generates."),
+  #
   ("npc16_backstory_a", "Well, {sir/madame}, as long as I can remember I've had a weakness for pretty things, and it's gotten me into trouble, you see."), #Mide
 
 #backstory main body
@@ -1177,7 +1190,8 @@ strings = [
   ("npc4_backstory_b", "Like all the men of my family, I have come to a foreign land to make a name for myself in the profession of arms before returning home to take over custodianship of my estates. Unfortunately, the authorities in these lands have little understanding of the warrior code, and have chosen to call me a bandit and raider, and put a price on my head -- a most unfair libel to throw at a gentleman adventurer, you will surely agree."),
   ("npc5_backstory_b", "I come to earn money for my family. My mother is old, father is dead. I have many brother and sister, but not enough work for them, so we starve. So I take up bow and come here on steamship. I get many strange looks, everyone have gun here. But I know bow, so I use bow."),
   ("npc6_backstory_b", "I was a captain of cavalry in the service of the warlord {s19}in {s20}, and my brother served with me. But we were both in love with the same woman, a prostitute -- a temptress, who played upon our jealousies! My brother and I quarreled. I had drunk too much. He slapped me with his glove, and I stabbed him with my knife... My own brother! My hands were stained with the blood of my kin!"),
-  ("npc7_backstory_b", "It was my bad luck to be born to a weak father who married me off to a drunken layabout who beat me. It was my bad luck, when I ran away from my husband, to be taken by a group of raiders. It was my bad luck that the only one among them who was kind to me, who taught me to hunt and to fight, inspired the jealousy of the others, who knifed him and forced me to run away again."),
+  #Xetina
+  ("npc7_backstory_b", "- (She flashes a crooked grin, and her hand slides to the hilt of her sword.) — And what is this work? Killing and tracking prey? Then fortune smiles upon you, for I am Xetina the Unfortunate, a tracker. And, since we're speaking of it, I could certainly use the money. "), #Xetina
   #Grigori
   ("npc8_backstory_b", "Ah, nu ti pomnish — I'm a hunter. Like to drink and go drunk. Killed vsyo chto bylo — all kinds of monsters and tvarey. My wife scolds me for bringing their carcasses into dom."),
   #
@@ -1199,7 +1213,8 @@ strings = [
   ("npc4_backstory_c", "But I am anxious to avoid any further trouble, so if you knew of any company of fighting men where I might enlist, I would be most grateful."),
   ("npc5_backstory_c", "No one hire me yet. But is ok. I will find captain who trust arrow kill same as bullet. Maybe is you?"),
   ("npc6_backstory_c", "Do you believe there is hope for a man like me? Can I find the path of righteousness, or am I doomed to follow the demons that dwell inside of me?"),
-  ("npc7_backstory_c", "But I do not count myself unlucky, stranger, no more than any other woman of Gorberia, this fetid backwater, this dungheap among the nations, populated by apes and coyotes."),
+  #Xetina
+  ("npc7_backstory_c", "But I won't speak to you about my past. This is hardly the place for such conversations. Besides, a girl shouldn't go telling every stranger she meets all her secrets."), #Xetina
   #Grigori
   ("npc8_backstory_c", "I shoot good, and I shoot fast. I drink a lot, too. If you hire me, I will go with you segodnya—right away. No pay needed... just buy a barrel of ale, or piva"),
   # 
@@ -1219,6 +1234,7 @@ strings = [
   ("npc4_backstory_later", "I went back to my family's county, to inspect my lands. But we had locusts, you see, and bad rains, and other things, so here I am again, looking for work."),
   ("npc5_backstory_later", "I still looking, many people make war here. But none believe in my bow..."),
   ("npc6_backstory_later", "I have been wandering Gorberia, but have yet to find redemption."),
+  #Xetina
   ("npc7_backstory_later", "I have been wandering, looking for work as a tracker, but it has not been easy. Gorberia's citizens are mostly ill-bred, lice-ridden, and ignorant, and it is not easy to work with such people."),
   #Grigori
   ("npc8_backstory_later", "Ah hello drug! Well do you changed your mind? Its scuchno chto pizdec here, my wife got even more angrier as I return to her, and it doesnt get...luchshe any day. Tak-Chto scazesh drug?"),
@@ -1238,7 +1254,8 @@ strings = [
   ("npc4_backstory_response_1", "I run such a company, and might be able to hire an extra hand."),
   ("npc5_backstory_response_1", "I think I could put your bow to use. Anyone who can fight I want on my team."),
   ("npc6_backstory_response_1", "You could join us. Right wrongs, fight oppressors, redeem yourself, that kind of thing."),
-  ("npc7_backstory_response_1", "Hmm... Are you by any chance looking for work?"),
+  #Xetina
+  ("npc7_backstory_response_1", "Pleased to meet you, Xetina. My name is (player name), but call me Captain. And I happen to be looking for an experienced tracker to join my company."), #Xetina
   #Grigori
   ("npc8_backstory_response_1", "Okay, I hire you."),
   #
@@ -1257,7 +1274,9 @@ strings = [
   ("npc4_backstory_response_2", "No, sorry, I haven't heard of one."),
   ("npc5_backstory_response_2", "Sorry, but you are about 500 years too late. Unless those arrows are filled with dynamite, you better head on home."),
   ("npc6_backstory_response_2", "Away with you, accursed fraticide!"),
-  ("npc7_backstory_response_2", "Actually, I'm rather fond of the place. Good day to you."),
+  #Xetina
+  ("npc7_backstory_response_2", "Too much time has been wasted already. Good day, whatever your name was."), #Xetina
+
   #Grigori
   ("npc8_backstory_response_2", "Your wife is a very unfortunate woman."),
   #
@@ -1276,7 +1295,9 @@ strings = [
   ("npc4_signup", "Good! I look forward to vanquishing your enemies."),
   ("npc5_signup", "Galza! You shall be glad of my bow, captain."),
   ("npc6_signup", "Yes! You must have been sent by divine providence! Lead me -- lead me away from darkness!"),
-  ("npc7_signup", "I might be. I could certainly use the money."),
+  #Xetina
+  ("npc7_signup", "As you wish, Captain, but I must make my terms clear."), #Xetina
+
   #Grigori
   ("npc8_signup", "Molodec! Just let me finish my drink, and we go. Day Bog tebe zdorovya."),
   #
@@ -1295,7 +1316,8 @@ strings = [
   ("npc4_signup_2", "Note however that as a gentleman and the holder of territory, I expect to be in a position of command, and not be treated as one of the common soldiers."),
   ("npc5_signup_2", "Lead the way, I will fill our enemy with arrows before they can even take aim!"),
   ("npc6_signup_2", "I am well practiced in the arts of war -- but I beg you, {sir/madame}, I wish to use my skills to defend the innocent, the pure, and the defenseless, not to be a common raider and wreak more misery than I have already wrought."),
-  ("npc7_signup_2", "But let your followers know that I do not suffer louts and brutes. Anyone who misbehaves around me will quickly find a flicknife in their gullet."),
+  #Xetina
+  ("npc7_signup_2", "If any of your men take it upon themselves to lay their hands on me, don't be surprised if one of them ends up dead or unable to hold a weapon ever again."),
   #Grigori
   ("npc8_signup_2", ""),
   #
@@ -1314,7 +1336,8 @@ strings = [
   ("npc4_signup_response_1", "Very well. I'll be glad to have you with us, um, 'Baron.'"),
   ("npc5_signup_response_1", "Indeed, they won't know what hit them!"),
   ("npc6_signup_response_1", "Happy to be of service! Get your things together, and we shall be on our way."),
-  ("npc7_signup_response_1", "I will hire you. Try not to shoot anyone on your first day."),
+  #Xetina
+  ("npc7_signup_response_1", "Heh. I suppose that's not the worst demand I've ever heard. All right, Xetina, I'll hire you, though I have a feeling you're merely trying to drive up your price. But do try to keep order in my company, and don't go shooting anyone just for giving you a sideways glance, all right?"),
   #Grigori
   ("npc8_signup_response_1", "No fear, ma'am. You're the widow and the daughter of a warlord, and you'll be treated as such."),
   #
@@ -1334,7 +1357,8 @@ strings = [
   ("npc4_signup_response_2", "Actually, we are not in the habit of hiring raiders with invented pedigrees. Good day, sir."),
   ("npc5_signup_response_2", "I think you severely underestimate the power of a gun."),
   ("npc6_signup_response_2", "On second thought, maybe a mercenary company is not what you need right now."),
-  ("npc7_signup_response_2", "Actually, on second thought, you sound like you might be trouble. Good day to you. "),
+  #Xetina
+  ("npc7_signup_response_2", "You aren't worth even five falors... But thank you for the performance. I'm sure the half-witted and hard-of-hearing mercenaries will welcome you with open arms. Good day, little rogue."),
   #Grigori
   ("npc8_signup_response_2", "Ah. Actually, if you don't do whatever I order you to do, you'd best seek your fortune elsewhere."),
   
@@ -1353,7 +1377,8 @@ strings = [
   ("npc4_payment", "Excellent. Before we depart, would you be so kind to lend me {reg3} falors? I had to pawn a family heirloom at a pawnbroker here in {s20}, and I would like to retrieve it before we leave."),
   ("npc5_payment", "Zapil, captain. I must ask for {reg3} falors from you before we go. I need something to send home to my family."),
   ("npc6_payment", "{!}."),
-  ("npc7_payment", "All right then. I will come with you. But I want a payment of {reg3} falors first. You aren't expecting me to work for free, do you?"),
+  #Xetina
+  ("npc7_payment", "Excellent, dear Captain. Then my gun and sword are at your service. But first I want {reg3} falors. You weren't expecting me to work for free in exchange for one charming look from you, were you? - (And with that, Xetina hold out her hand to you, palm open, the same hand that had moments before rested upon the hilt of her blade.) -"),
   #Grigori
   ("npc8_payment", "Then I will fight your enemies for you. But first I want a bounty of {reg3} falors. If you are a worthy captain who can lead {his/her} company to riches and plunder, you should have no trouble paying. I cannot afford to follow a pauper."),
   #
@@ -1372,7 +1397,9 @@ strings = [
   ("npc4_payment_response", "Certainly. Here's {reg3} falors."),
   ("npc5_payment_response", "Well... here's {reg3} falors, then. I hope it feeds your family well."),
   ("npc6_payment_response", "{!}."),
-  ("npc7_payment_response", "No, of course not. Here's {reg3} falors."),
+  #Xetina
+  ("npc7_payment_response", "Hm. I had almost come to believe that there were still virtues left in this world. Here are your {reg3} falors."),
+
   #Grigori
   ("npc8_payment_response", "Oh, I am no pauper. Here's {reg3} falors for you."),
   
@@ -1391,7 +1418,8 @@ strings = [
   ("npc4_morality_speech", "Your pardon -- just so you know, the men of the Hilmont family do not care to {s21}. I will not be pleased if you continue to take this course."),
   ("npc5_morality_speech", "Wanu, captain. It is not good to {s21}. I need captain who give food, pay, and not get me killed."),
   ("npc6_morality_speech", "Excuse me, {sir/madame}. As you know, I joined with you to right wrongs, protect the innocent, and make amends for my sin. I did not expect to {s21}."),
-  ("npc7_morality_speech", "Captain -- I do not like to see us {s21}. Such are the actions of a common raider chief, with no regard for his followers."),
+  #Xetina
+  ("npc7_morality_speech", "Captain, perhaps I'm missing something, but isn't our company a gathering of {s21}? How are you any different from a bandit chief who doesn't give a damn about his own people?"),
   #Grigori
   ("npc8_morality_speech", "I was not pleased that you decided to {s21}. To fall in battle is an honour, but to fight in a company led by a coward is a disgrace."),
   #
@@ -1429,7 +1457,8 @@ strings = [
   ("npc4_personalityclash_speech", "{Sir/Madame}. The Hilmont family is one of the most ancient and respected families in this part of the world, with a provenance dating back to the Old Gorberia. Yet {s11} openly shows me disrespect, and casts doubt on the provenance of my family."),
   ("npc5_personalityclash_speech", "I speak with you, captain. {s11} doesn't like me. I think they scared of my people."),
   ("npc6_personalityclash_speech", "Your pardon, {sir/madame}, but I cannot keep my tongue stilled any longer. That hussy, {s11} -- every time she sees me she flips me the bird."),
-  ("npc7_personalityclash_speech", "Captain, I have done my best to put up with your followers' rude talk and filthy habits. But that one who calls himself {s11} is beyond tolerance."),
+  #Xetina
+  ("npc7_personalityclash_speech", "Captain, I have done my best to put up with your followers' rude talk and filthy habits. But that one who calls himself {s11} is beyond tolerance."), #Xetina
   #Grigori
   ("npc8_personalityclash_speech", "Just so you know, I cannot abide that insolent yellowbelly {s11}. Some minutes ago, I was remarking to our companions how the settlers of this region were more than usually slack-jawed and beetle-browed, and speculated that perhaps they had bred with apes."),
   #
@@ -1448,7 +1477,8 @@ strings = [
   ("npc4_personalityclash_speech_b", "{Sir/Madame}, these are indeed sorry days if common folk are allowed to mock their betters. That is all."),
   ("npc5_personalityclash_speech_b", "I tell them I am same under skin. They say they should cut me to make sure. I think they need to find new captain..."),
   ("npc6_personalityclash_speech_b", "I know the crime I committed was an abomination, but I am seeking repentance, and I deserve better than to be the object of some girl's aggression. I just thought you should know."),
-  ("npc7_personalityclash_speech_b", "I do not care for how he stares at me around the campfire after a meal, as he picks his teeth. I believe I recognize him from my days as a raider. He is base and ignorant. I do not care to travel with such people."),
+  #Xetina
+  ("npc7_personalityclash_speech_b", "Oh, my dear Captain, it seems another day of complaints and sorrow has come for your ears. Ugh, how disgusted I am by the way that fellow stares at me by the campfire after a meal, picking his teeth. I may have lived among bandits and other scum, but even I have retained some shred of self-respect. People like him are always the same: a filthy mouth full of rotting stumps of teeth; a head that looks more like a pot — knock on it, and you'll hear nothing in reply; and, of course, plenty of stupidity. I don't wish to travel with such rabble any longer."),
   #Grigori
   ("npc8_personalityclash_speech_b", "{s11}, that font of impudence, overheard me, and called me ignorant, and a hillbilly, and other words I do not care to repeat. It was only out of respect for you that I refrained from cutting his throat then and there. I thought it only fit that I should warn you."),
   #
@@ -1469,7 +1499,8 @@ strings = [
   ("npc4_personalityclash2_speech", "{Sir/Madame}. I happened to exchange a few words with {s11} as we were dividing up the spoils of battle. Please inform her that when she speaks to me, she should call me 'Sir' or perhaps 'Sir Hilmont,' or 'Your Grace,' but certainly not just 'Hilmont.'"),
   ("npc5_personalityclash2_speech", "Captain. {s11} would make good target practice."),
   ("npc6_personalityclash2_speech", "Sir. Did you see {s11} during that last battle? He taunts the fallen foe as they lay stricken and helpless on the battlefield, mocking their parentage, their foolishness for having fought us."),
-  ("npc7_personalityclash2_speech", "Captain -- I have been searching my mind trying to remember where I have seen {s11}, the one who calls himself old-money. As I watched him in action during that last battle, I suddenly remembered. He is a good fighter, but also a vicious one."),
+  #Xetina
+  ("npc7_personalityclash2_speech", "Captain, I won't bore you with my thoughts, but I've been trying to remember where I've seen {s11} before, the man who styled himself a member of the old nobility... And then it came to me. Watching him in that last battle, I remembered our 'friend.' He's a good fighter, I'll give him that, but he's no stranger to cruelty either."), #Xetina
   #Grigori
   ("npc8_personalityclash2_speech", "Captain. {s11} is a most insolent girl. I have tried to be polite, even friendly, only to have her rebuff me."),
   #
@@ -1488,17 +1519,18 @@ strings = [
   ("npc4_personalityclash2_speech_b", "I am from a good family, and she is trailer trash. She must remember her place."),#Hilmont - Xetina
   ("npc5_personalityclash2_speech_b", "When last battle over, I walk around collecting my arrows. But {s11} grabs arrow before me, and say I couldn't hurt a fly with it. I think I should give demonstration..."), #Yilmazok - Kakerine
   ("npc6_personalityclash2_speech_b", "Commander -- such hubris will not be overlooked by Heaven, and I fear we shall all of us pay the price."), #Giotto - Aulus
-  ("npc7_personalityclash2_speech_b", "Back when I lived in the ravines, we would sometimes fight with a rival band called the Brethen of the Woods. Captain -- I would not trust any man who hides his origins, and particularly would not trust a common raider who calls himself a gentleman."),#Xetina - Hilmont
+  #Xetina
+  ("npc7_personalityclash2_speech_b", "When I lived in the ravines, we sometimes crossed paths with a hostile band called the Brothers of the Wood. Captain, I wouldn't trust a man who hides his past. And an ordinary bandit who suddenly decides to dress himself up as a gentleman? I wouldn't even turn my back on him. Still, those are merely the words of a woman who spent far too long living among bandits. But stay on your guard all the same: nothing good ever comes from people like him."), #Xetina - Hilmont
   #Grigori
   ("npc8_personalityclash2_speech_b",  "As we were cleaning our weapons after that last battle, I remarked that I thought her a handsome girl, and after I regained my lands I would happily find her a match with one of my soldiers. I thought it was a very generous offer, as a woman disinherited by her father is hardly going to find herself awash in prospects. But rather than thank me, she simply turned her back without a word. It was only out of respect for your leadership that I did not immediately try to teach her some manners."),  #Tomasia - Gesgehe
   #
   ("npc9_personalityclash2_speech_b", "I appreciate that he is willing to risk his life in battle, but that alone does not make a gentleman. He is not from an old family, and his family's wealth comes from commerce and usury. He may fight with us as an auxiliary, but should not attempt to steal glory from his betters."),# Galgalliel - Rikiar
   ("npc10_personalityclash2_speech_b", "In that last battle he was shouting at me: 'Go forward, go back, hold the line.' When I told him to mind his own trimming he said he'd have me flogged.  Captain, that man is looking for a bullet in his chest, begging your pardon."),
   ("npc11_personalityclash2_speech_b", "He said it was a prayer of thanksgiving for victory, but it didn't sound like that to me. Captain, I don't want him raising up the ghosts of the dead to make trouble for us on our travels. I think you had best be rid of him"),
-  ("npc12_personalityclash2_speech_b", "Captain, if that man knew the slightest thing about medical matters, he would know that one should never undermine a patient's confidence in his doctor, particularly not during a complicated operation. If you would be kind enough to dismiss him from this company, you would be doing all of us a great service."), # jeremenus - Vorigan
+  ("npc12_personalityclash2_speech_b", "Captain, if that man knew the slightest thing about medical matters, he would know that one should never undermine a patient's confidence in his doctor, particularly not during a complicated operation. If you would be kind enough to dismiss him from this company, you would be doing all of us a great service."), # jeremenus - Kilroy
   ("npc13_personalityclash2_speech_b", "When all the dust settled, {s11} turned on me and told me not to 'tempt the wrath of the Heavens' with my 'hubris.' I responded that at least I hadn't killed my own brother, which I think bothers the Heavens a lot more than battlefield small talk. {s11} turns red like a baboon's arse and would have struck me had I not artfully dodged out of his away. Tell him to lighten up, will you?"), #Aulus - Giotto
   ("npc14_personalityclash2_speech_b", "{Sir/Madame}, such defiance of proper authority is a corrosive influence on our company, and I shall have him flogged if he does so again."), #Philbert - Hamonet
-  ("npc15_personalityclash2_speech_b", "{s11} responded that Master Surgeon Dius was an 'antiquated know-nothing.' Captain, no true doctor would have such disrespect for the great masters of the past. I do not believe you should employ such an obvious impostor."), #Vorigan - Brouprix
+  ("npc15_personalityclash2_speech_b", "{s11} responded that Master Surgeon Dius was an 'antiquated know-nothing.' Captain, no true doctor would have such disrespect for the great masters of the past. I do not believe you should employ such an obvious impostor."), #Kilroy - Brouprix
   ("npc16_personalityclash2_speech_b", "After our last scrap, I was slicing open the guts of some our foes to check for hidden money, as a girl who counts her pennies ought. He gagged and muttered that I was an 'animal.' I'll inspect his innards for contraband if he doesn't keep a civil tongue in his head."), #Mide - Declan
 
   ("npc1_personalitymatch_speech", "Boss. {s11} back there didn't do badly in that last fight at all. He's a good egg, too."),
@@ -1507,7 +1539,8 @@ strings = [
   ("npc4_personalitymatch_speech", "Excuse me, {sir/madame}. I just wanted to say a word in praise of {s11}. He did well in that last battle."),
   ("npc5_personalitymatch_speech", "That was good battle, captain! {s11} is good man to have in a fight."),
   ("npc6_personalitymatch_speech", "Captain. Sometimes I am troubled by all this bloodshed, although I know that proud warlords must be humbled, and cruel raiders tamed, if we are to restore peace to Gorberia."),
-  ("npc7_personalitymatch_speech", "Captain. I was just talking to {s11}. She may be a bit savage, but I believe that she is a faithful friend."),
+  #Xetina
+  ("npc7_personalitymatch_speech", "Captain. I was just speaking with {s11}. She may be a little wild, but I'm not nearly as civilized as my late father would have liked me to be, either. Still, I consider her a loyal friend. I wouldn't be afraid to travel with someone like her, even into the deepest ravines — and I don't say that lightly."),
   #Grigori
   ("npc8_personalitymatch_speech", "A fine battle that was, captain. And I have to say, I admire the taunts that {s11} hurled at our enemy."),
   #
@@ -1526,7 +1559,8 @@ strings = [
   ("npc4_personalitymatch_speech_b", "You chose well to enlist him in our company. He knows a thing or two about a fight, and also knows the importance of respecting his comrades-in-arms, unlike some others I might mention."),
   ("npc5_personalitymatch_speech_b", "He must come from powerful family. He tell me of ancestors long ago, who do great deeds."),
   ("npc6_personalitymatch_speech_b", "I must say that {s11} is a source of great comfort to me. I have told him of my sin, and he said to me that Heaven will forgive my transgression, if I truly repent and truly desire such forgiveness. He is wise, and I am glad that he is with us."),
-  ("npc7_personalitymatch_speech_b", "At some point in the future, if you have no need of our services, she has promised to go back to the ravines with me and find the raiders who murdered my lover, and help me take my revenge. It was a kind offer. I am glad that she is with us."),
+  #Xetina
+  ("npc7_personalitymatch_speech_b", "If someday you no longer have any need for our services, she promised to return to the ravines with me. We'll find the bastards who killed my... my friend. Yes, my friend... Perhaps then I can finally put an end to this chain of sleepless nights and my fear of the past. But who knows — perhaps on that fateful day, it won't be them who pay in blood, but me... Hah, don't worry about it, Captain. Just know that her decision to come with me means a great deal to me, and it warms my cold little heart. I'm glad she's with us."), #Xetina
   #Grigori
   ("npc8_personalitymatch_speech_b", "He managed to include their geneology, their appearance, and their eating habits in a well-framed Old Gorberian poem. I personally prefer the folksong, but we Unionists respect poetic craftwork when we hear it."),
   #
@@ -1545,7 +1579,8 @@ strings = [
   ("npc4_retirement_speech", "I have fought with you honourably, as befits a son of the Hilmont family, but I am not altogether satisfied with your leadership. I will go home to my ancestral estates, which are much in need of my services."),
   ("npc5_retirement_speech", "Captain. I have no more arrows for you. I must go back to family."),
   ("npc6_retirement_speech", "I joined this company in the hope that you would lead me out of darkness, and indeed I have found a measure of peace here. But I have some qualms about your leadership, and have begun to suspect that the path to redemption can be found elsewhere."),
-  ("npc7_retirement_speech", "I am tired of this squalid life of endless warfare, seeing men debased by fear, greed, lust, and a hundred other sins. I have money in my purse. I am going overseas to look for a better land than Gorberia. I assume that you will fare well without me."),
+  #Xetina
+  ("npc7_retirement_speech", "Captain, I have to tell you the truth. You are the only person in this entire land who saw something in me beyond my wildness, my sharp tongue, and my appearance, and I'm grateful to you for everything, despite all the conflicts within the company... But I have to leave you. No, it's not you, and it's not the company. I'm simply tired of all this. I'm sick to death of all these wars and all the blood spilled at the whims of the powerful and because of their vices. - (Xetina pats the pouch at her belt, emphasizing that it is heavy and stuffed with everything she needs for the journey.) - Sounds convincing, doesn't it? I think it'll be enough to get me by overseas. Maybe there I'll finally become plain old Xetina, rather than Xetina the Unfortunate. Only time will tell. And you'll manage just fine without me through all the troubles of Gorberia. I wish you nothing but luck... Farewell, dear Captain, and watch your back."),
   #Grigori
   ("npc8_retirement_speech", "Nu zaebis...alright,its been wery nice with you friend...but now i will go back to my wife,and budu slushti her (eyo) complains all day...will see you again in same tavern,tak chto ti zahodi-esli chto"),
   #
@@ -1564,9 +1599,11 @@ strings = [
   ("npc4_rehire_speech", "Why hello, captain. It's been a while. You've done well for yourself, I hear. For my part, I've been having some difficulties coaxing a living from my estates -- locusts, bad rains, unruly settlers, that sort of thing. I thought I might take up the gun once more. I know there's been some bad blood between us, but I'd be honoured to fight in your ranks once again."),
   ("npc5_rehire_speech", "Captain! I have return. My family eat all the food I buy, so now I need more. Do you need my bow again?"),
   ("npc6_rehire_speech", "It is good to see you, {sir/madame}. Everywhere I go, men are in awe of your deeds. I have not had it so well since I left. Wherever I go, I feel my demons returning. My soul is in turmoil. For reasons that I cannot fully explain, I had found peace in your company, even if I had questions about your leadership. Will you allow me to serve with you once again?"),
-  ("npc7_rehire_speech", "Captain! It is good to see you. Forgive what I may have said when we parted. I took a ship out of Piloscity, bound for the east, but it was taken by pirates and after my ransom I was set ashore back here. There may be better places in the world than Gorberia, but I have yet to see them. So I think, if it is my lot to live here, then your company is as good a livelihood as any. Will you have me back?"),
+  #Xetina
+  ("npc7_rehire_speech", "Well, look who it is! It's the Captain himself! Good to see you, my dear Captain. I know, I know, I'm as lovely and as sharp-tongued as ever... I know, people don't usually come back after saying farewell, especially after such a tirade about wars and vices... But fate has its own whims and its own ideas about me. I don't know how long it's been since we last met, but I boarded a ship in Pilos-City bound east, and pirates seized it. After my ransom was paid, they put me ashore back here. Apparently, fate decided that it was too soon for me to leave Gorberia. Perhaps there are better places in the world, but I haven't found them yet. So, if I'm fated to keep living here, your company isn't the worst way to make a living... And I'm truly sorry if I offended you. I'm even a little ashamed to ask this, but is there perhaps a place for Xetina the Unfortunate in your company?"),
+  
   #Grigori
-  ("npc8_rehire_speech", "Ei! Zdarova! Nice to see you here agayn drug! How was you? Killed a bunch of monsters and bandits a? Ya da! Koroche-its nice to see you agayn,friend"),
+  ("npc8_rehire_speech", "Ei! Zdarova! Nice to see you here agayn drug! How was you? Killed a bunch of monsters and bandits a? Ya da! Koroche-its nice to see you agayn, friend. Maybe i come with you again? My wife won't stop nagging."),
   #
   ("npc9_rehire_speech", "My dear, dear {man/lady}! So good it is to see you! I have sought service with the warlords of this land, but have been most grieviously disappointed. Half of them ask me to collect debts from fellow warlords, as though I were a banker's errand boy, or chase down his settlers, as though I were a farm overseer. One even asked me to murder one of his creditors! I have looked for you, to see if you would wish me to join you again."), #Galgalliel
   ("npc10_rehire_speech", "Captain! It's good to see you. You see, it turns out I'm not much of a farmer. Too soft on the hired hands, I figure. I let them rob me blind. I guess fighting is what I know best. So tell me, captain, are you still looking for good men?"),
@@ -1584,7 +1621,8 @@ strings = [
   ("npc4_home_intro", "The Woods of Ehlerdah. Bah. This place is thick with bandits and outlaws."),
   ("npc5_home_intro", "Sir, we are nearing Halmar, largest town in the lower plains. My mother's sister went here to marry a townsman and I thought to seek service with the warlord here. That is when I ran into you."),
   ("npc6_home_intro", "I can see by the vines and terraces on the hillside that I am near home. I have no wish to see my family, so I will linger outside the walls if you go into town. I am sure that you will understand."),
-  ("npc7_home_intro", "Do you smell that? Salt fish, rotting flax and river mud. The smells of my childhood. I want to retch."),
+  #Xetina
+  ("npc7_home_intro", "Can you smell that, Captain? Salt fish, rotting flax, and river mud. The smells of my childhood. Even after all these years, they still make me sick, but at the same time I feel a longing for what once was... I don't know. There's something almost sickening about the feeling. It's as though my whole body is burning, while my mind can't focus, because my entire life is passing before my eyes... A life I hated, and a life I've lost. And don't look at me like that, Captain. I just remembered why I hated that spineless excuse for a father of mine, and why I avoided these places for so long."),
   #Grigori
   ("npc8_home_intro", "Hmf. Do you hear that? It must be the crash of waves on the headland. We must be near Gundig's Point."),
   #
@@ -1604,7 +1642,8 @@ strings = [
   ("npc4_home_description", "Well, you see, the Warlord declared this to be his personal hunting preserve, and said he'd kill any man who as much as loaded his rifle here. So what happens? Some family goes hungry, and succumbs to the temptation to poach, and the warlord's enforcer comes along and strings him up and takes his land. His sons, rather than starve, go raider. And so naturally anyone in the whole valley who feels the need to run away from a debt or a nagging wife or a vengeful governer comes up here to join them, living on mutant pigs and berries and the purses of unwary travellers."),
   ("npc5_home_description", "Boarmen had always come here, to trade and raid, and in the last days of the Empire we began to settle. Just like the Vitzland, Imperial, Dominion, Unionists and Republicans, we took the Emperor's coin to keep the other tribes at bay. But when the Great Horde attacked our homeland in my grandfather's day, we moved into this region in force. We pushed the Vitzland back, and made their forts our own."),
   ("npc6_home_description", "Here in the Vale of Greenfield, our dialect and customs are closer than anywhere else in Gorberia to those of the old Gorberia. We grow olives and wine, both crops brought to this land from overseas by the emperors, and also follow the old Gorberian ways. We keep our pledges and pay our debts."),
-  ("npc7_home_description", "Before I was married off, and before I was taken by bandits, I lived here. I was born in a hovel and spent my childhood in the fields. Our landlords were Canadian, but we never saw them, merely their cursed minions and overseers. My father, coward that he was, cringed before them."),
+  #Xetina
+  ("npc7_home_description", "I suppose I can tell you a little about myself now, Captain. But don't expect my stories to be told in any particular order. I might start at the end, in the middle, or right at the beginning of my life. As you may have noticed, I used to live here. Hell, I was born here. I remember that wretched shack in particular, the one that was always leaking and creaking in the wind, and these cursed fields. The owners of these miserable lands were Canadians, but I never saw them even once — only their accursed servants and overseers."),
   #Grigori
   ("npc8_home_description", "You haven't heard the story? When Gundig Hairy-Breeks came to Gorberia from Canada, he planted his flag on the headland and said that it would remain there until he recaptured his 'inheritance.' His 'inheritance', he called it. Gundig believed the preachers who told him that the Emperor had bequeathed Gorberia to the Unionists, when in fact he just gave us a small strip of land along the coast, so that we would crew his fishing boats."),
   #
@@ -1624,7 +1663,8 @@ strings = [
   ("npc4_home_description_2", "How do I know this, you ask? Well... I was taken by them, and held for ransom, but I got away. That's really all there is to tell."),
   ("npc5_home_description_2", "Of course, you know how things go. My father's generation were hard warriors from the cold lands across the mountains, but this generation all has houses in the town and great estates and spend time as much trading as they do practicing shooting. The next generation will grow soft on Unity wine and will lose their lands to the next batch of illiterate hill-raiders to come over the mountains, just you watch. It's how things always were, and how things always will be."),
   ("npc6_home_description_2", "We men of Greenfield also never forget an insult, and avenge any wrong done unto us. Old-fashioned Gorberian honour, I dare say, has brought me to my current fallen state. But despite that, I am proud to be from this region. Our warlord is a commander of the Imperial warlord in Birson, but as far as we are concerned he is just yet another barbarian chieftain, and we are the Empire's true heirs."),
-  ("npc7_home_description_2", "We were allowed to fish the river, raise pigs amid the reedbeds, and grow whatever we could in our private plots, but in the open fields we were only permitted to grow flax, to be taken to Arlingfield and woven into linen. So we were always hungry, and weak, and never had the courage to rebel."),
+  #Xetina
+  ("npc7_home_description_2", "And my father, may his grave tremble, was a coward of the worst sort. He groveled before everyone, hoping to earn their approval... Even my engagement to that damned drunkard was a solution to his debts. Ugh, it makes me sick to remember all this. Let's move on, or I'll end up telling you how I ran away from my husband, only to fall straight into the hands of bandits."),
   #Grigori
   ("npc8_home_description_2", "The skalds' tales at least gave Gundig an excuse to raise a warband -- not that we Unionists ever need an excuse, mind. He sailed across the sea, rallied the Gorberia Unionists to his flag, and marched on the Rock of Rivacheg. The Vitzland killed him, and threw his flag into the surf. But the Unionists keep coming, and some day all of Gorberia will be ours."),
   #
@@ -1643,6 +1683,7 @@ strings = [
   ("npc4_home_recap", "Our ancestral barony is over the mountains, across the Culdarr pass."),
   ("npc5_home_recap", "I was born in the highlands on the other side of the mountains, past Tulga, but I have relatives in {s21}."),
   ("npc6_home_recap", "My family lives in {s21}, but I cannot bear to face them."),
+  
   ("npc7_home_recap", "I was born in a hovel in the fens, not far from {s21}."),
   #Grigori
   ("npc8_home_recap", "I was born overseas, in Canada, and my husband's home also was in Canada."),
@@ -1672,7 +1713,7 @@ strings = [
   ("npc12_honorific", "captain"),
   ("npc13_honorific", "oh valorous one"), #Aulus
   ("npc14_honorific", "commander"), #Philbert
-  ("npc15_honorific", "captain"), #Vorigan
+  ("npc15_honorific", "captain"), #Kilroy
   ("npc16_honorific", "captain"), #Mide
 
   ("npc1_kingsupport_1", "That's a great idea, Boss. All these warlords and chiefs and landed governers who rule now, with their prisons and gibbets and scaffolds, the whippings and brandings and hangings for any man who might be driven by the crying of his children to steal a loaf of bread, or maybe a horse -- Gorberia deserves something better."), #Declan
@@ -1690,8 +1731,8 @@ strings = [
   ("npc11_kingsupport_1", "Why, that's a fine idea, {laddie/lassie}! I suppose I shall have to learn to call you 'Majesty', or 'Your Grace', then..."), #Kakerine
   ("npc12_kingsupport_1", "I am sure that you would make a fine warlord, captain. I flatter myself that I am a good judge of character, and you have demonstrated a capacity for compassion that far exceeds that of these others who call themselves leaders."), #Brouprix
   ("npc13_kingsupport_1", "That would be a fine thing, {sir/ma'am}! Many is the tale of the hero who has proven his worthiness to lead a nation through valor. Perhaps you know the song of Antaran son of Ashdab, who rose from obscurity to become warlord of Dabarah. A splendid tale!"), #Aulus
-  ("npc14_kingsupport_1", "Well, sir, the heavens have instituted a hierarchy in this world, and normally I would have no truck with usurpation. But I also think that the warlords of this land are a weak and sorry lot, not worthy of the task, and that leaves the mantle free to be taken by a better {man/ruler}, such as yourself."), #lezalit
-  ("npc15_kingsupport_1", "Well, you pay your men on time, when you can, generally speaking. That's the best qualification for kingship there is, in my book. You show some respect for the rights of others."), #Vorigan
+  ("npc14_kingsupport_1", "Well, sir, the heavens have instituted a hierarchy in this world, and normally I would have no truck with usurpation. But I also think that the warlords of this land are a weak and sorry lot, not worthy of the task, and that leaves the mantle free to be taken by a better {man/ruler}, such as yourself."), #philbert
+  ("npc15_kingsupport_1", "Well, you pay your men on time, when you can, generally speaking. That's the best qualification for kingship there is, in my book. You show some respect for the rights of others."), #Kilroy
   ("npc16_kingsupport_1", "Why not, captain? I'm sure you'd make a fine {warlord/warlady} -- and of course I'd hope you remember the little people like myself who did you a pretty turn on your scramble to the throne."), #Mide
 
 
@@ -1711,7 +1752,7 @@ strings = [
   ("npc12_kingsupport_2", "Of course, captain.  But if I have learned anything in my travels in this land, it is that Gorberias are sticklers for precedent. Everything must be done as it was done in the days of the old Empire -- even though not more than one in a hundred of them can read enough Old Gorberian to understand the chronicles! Silver Springs merchants marry their daughters according to the 'imperial' rite. Rivacheg cattle herders churn 'imperial' butter. And of course, every warlord must be crowned according to 'imperial' law."), #Brouprix
   ("npc13_kingsupport_2", "Of course, {Sir/Madame}. Also, as we learn from the tale of Antaran, when claiming a throne, it does not hurt to be the subject of an epic, recited around campfires and hearthfires, describing one's deeds. As you no doubt know, I fancy myself a fair crafter of couplets."), #Aulus
   ("npc14_kingsupport_2", "I would indeed, sir. I think you can unite this land, and then we'll be able to raise an army such as Gorberia has not seen for many generations -- Imperial snipers, Vitzland riflemen, Dominion cavalty, Enlightened flamers, Canadian grenadiers, and Boarmen skirmishers, and take it over the mountains to subdue all the lands that the Gorberian emperors once held sway."), #Philbert
-  ("npc15_kingsupport_2", "I would. People might say that you don't have royal blood in your veins. But as far as I've seen, royal blood makes you a skinflint. Warlords and governers will take out loans or commission building projects without half a thought to how they're ever going to pay back all those commoners who expect to eat after an honest day's work. If you ask me, an honest tongue makes a {man/woman} a {warlord/warlady}, not a fancy pedigree."), #Vorigan
+  ("npc15_kingsupport_2", "I would. People might say that you don't have royal blood in your veins. But as far as I've seen, royal blood makes you a skinflint. Warlords and governers will take out loans or commission building projects without half a thought to how they're ever going to pay back all those commoners who expect to eat after an honest day's work. If you ask me, an honest tongue makes a {man/woman} a {warlord/warlady}, not a fancy pedigree."), #Kilroy
   ("npc16_kingsupport_2", "Of course, {Sir/Ma'am}. And what's more, I figure a girl like me could do you a bit of a service raising support with the commanders of this land. I may have only had a small part in their schemes and intrigues over the years, but I think I know what they want. And given what I know of their secrets, they'd not want to be denying me admission to their halls, now would they?"), #Mide
 
   ("npc1_kingsupport_2a", "Please go on..."), #Declan
@@ -1730,7 +1771,7 @@ strings = [
   ("npc12_kingsupport_2a", "Interesting. Please go on..."), #Brouprix
   ("npc13_kingsupport_2a", "Why, yes, that you are."), #Aulus
   ("npc14_kingsupport_2a", "Please go on..."), #Philbert
-  ("npc15_kingsupport_2a", "Well-spoken, my good man"), #Vorigan
+  ("npc15_kingsupport_2a", "Well-spoken, my good man"), #Kilroy
   ("npc16_kingsupport_2a", "Interesting... Please continue"), #Mide
 
   ("npc1_kingsupport_2b", "Well. We saw how that turned out..."), #Declan
@@ -1749,7 +1790,7 @@ strings = [
   ("npc12_kingsupport_2b", "Enough, sir. I will not have you mock our traditions"), #Brouprix
   ("npc13_kingsupport_2b", "Hmm. I'm not sure about that."), #Aulus
   ("npc14_kingsupport_2b", "Actually, I was looking forward to a bit of rest after becoming {warlord/warlady}..."), #Philbert
-  ("npc15_kingsupport_2b", "{Warlord/Warlady} of the Clerks, maybe, Enough of such talk"), #Vorigan
+  ("npc15_kingsupport_2b", "{Warlord/Warlady} of the Clerks, maybe, Enough of such talk"), #Kilroy
   ("npc16_kingsupport_2b", "No offense, but I'm not sure that's the approach I'd take"), #Mide
 
   ("npc1_kingsupport_3", "If I could go about this land for a few weeks, telling the common folk that you were going to amnesty their kinfolk like the emperors of old -- well, they would start talking of you as the Emperor, and that would pave your way to the throne. Shall I do that, Boss?"), #Declan
@@ -1768,26 +1809,26 @@ strings = [
   ("npc12_kingsupport_3", "But you know what? There was no 'imperial' law when it came to the crown. Sometimes one emperor handed the empire to his son. Sometimes he split it between his generals. Sometimes one emperor murdered the last. There's no right 'Gorberian' way to crown a {warlord/warlord or warlady}, and thus it makes sense that the crown should go to the one most fit to govern -- which would be you, naturally. Give me a couple of weeks, and I'll write a tract which proves it and find a copyist to post a version in every town saloon in the land. What do you say to that idea, captain?"),
   ("npc13_kingsupport_3", "Then give me leave for a few weeks, oh gallant one, and I will spin such a tale as would stir even the dullest heart, inspiring admiration for your virtues, compassion for your hardships, and indignation at those who would stand in your way. I assume, of course, that I would be able to take a certain amount of poetic license with the details?"), #Aulus
   ("npc14_kingsupport_3", "Give me leave for a few weeks, {sir/madame}, and I will let all the worthy men of this land know that you are the one to unite not just Gorberia, but all the other Gorberian dominions. For according to my thinking, no one should be {warlord/warlord or warlady} here unless they have the capacity to rule the entirety of the region -- and you alone have demonstrated such a capacity, {sir/madame}."), #Philbert
-  ("npc15_kingsupport_3", "I'm glad you think so. Here's what I suggest. I know men in the guilds here, men like me, who've been shafted and shaken down until they can take no more. Here's what I'll tell them -- you're honest. You respect the burghers. You'll pay your debts. You won't beggar your subjects."), #Vorigan
+  ("npc15_kingsupport_3", "I'm glad you think so. Here's what I suggest. I know men in the guilds here, men like me, who've been shafted and shaken down until they can take no more. Here's what I'll tell them -- you're honest. You respect the burghers. You'll pay your debts. You won't beggar your subjects."), #Kilroy
   ("npc16_kingsupport_3", "Give me leave for a few weeks, and I'll do a little tour of my former employers' forts. I'll sing them a pretty song about what you'll do as {warlord/warlady}, about all the ancient freedoms you'll restore -- let them rob their tenants and tax the merchants and fight their wars and spend themselves silly without a thought to tomorrow, as an old-money ought! What do you say to that, captain?"), #Mide
 
   ("npc1_kingsupport_objection", "Boss -- you've given leave to Galgalliel to go tell the governers that they will have rights over pasture, market, and forest? I can't say I like that. Give him his way, and he'll set up gibbets in every village in the land, where there will dangle some poor sod like me who thought he might pick up a rifle, head to the woods and put a bit of meat on his table."), #Declan
   ("npc2_kingsupport_objection", "Um, captain. Tomasia has ridden off to tell the commanders of this land that you'll let them settle their quarrels by force and violence. You know they rarely actually fight each other, right? Most of the time, it's the traders and travellers on the roads between their forts that get clobbered in their petty disputes. Any excuse to shake down a caravan, they'll take. I really hope that she misunderstood you, sir."), #Rikiar
   ("npc3_kingsupport_objection", "Captain -- Xetina has set off on some sort of expedition, which she says that you countenanced. She says that she will go about the settlements of this land, telling the poor villagers that once you are {warlord/warlady}, you intend to hang all thieves and bandits. {Sir/Madame}, I am a merchant's daughter, and know well the scourge of banditry. I also know that Xetina has suffered great wrongs. But surely you do not intend to hang men indiscriminately. There must be some place for mercy in your faction"),
-  ("npc4_kingsupport_objection", "Captain. Vorigan has set off on a journey, telling the burghers that you claim the throne because you know how to balance your accounts. That's nonsense. commanders and warlords fight and rule. If they had to haggle over wages and overruns with every passing vagabond who ever did a scrap of work on their estates, then there would be nothing but disorder and chaos."),
+  ("npc4_kingsupport_objection", "Captain. Kilroy has set off on a journey, telling the burghers that you claim the throne because you know how to balance your accounts. That's nonsense. commanders and warlords fight and rule. If they had to haggle over wages and overruns with every passing vagabond who ever did a scrap of work on their estates, then there would be nothing but disorder and chaos."),
   ("npc5_kingsupport_objection", "Captain. I do not know why you send ??Gesgehe??. The disrespect me, no good will come from this."), #Yilmazok
   ("npc6_kingsupport_objection", "I understand that you have dispatched Hilmont to fabricate a claim of royal descent. I have to tell you, {sir/madame} -- I do not think that the heavens will smile on such an attempt to take the throne by fraud."), #Giotto
   ("npc7_kingsupport_objection", "I have heard what you told Hamonet, about giving every common criminal the right of appeal to the {warlord/ruler}. I do not approve. Bandits should be hanged when caught. Give them a trial or an appeal, and they will talk their way out of the noose. Hamonet is a good man, but no man can fully understand what these wolves in human form do to women"), #Xetina
   #Grigori
-  ("npc8_kingsupport_objection", "Captain -- you have dispatched Firentis to tell the commanders of this land that you intend to impose a peace, under which no one should settle their disputes by the gun. Would you have us all die in our beds, then? That is a great shame, for my people. A {warlord/sovereign}'s duty is to lead us into battle, not to tell us how to handle our quarrels and differences."), #Tomasia
+  ("npc8_kingsupport_objection", "Captain -- you have dispatched Giotto to tell the commanders of this land that you intend to impose a peace, under which no one should settle their disputes by the gun. Would you have us all die in our beds, then? That is a great shame, for my people. A {warlord/sovereign}'s duty is to lead us into battle, not to tell us how to handle our quarrels and differences."), #Tomasia
   #
   ("npc9_kingsupport_objection", "{Sir/Madame} -- it is with great regret that I have learned that you have told Yilmazok to let his people know that you will allow them to lead their flocks over the lands of their betters. I hope that I am mistaken about this, sir. The money we demand is but small compensation for the damage they cause to our flocks and the pollution of our water sources. {Sir/Ma'am}, if your future faction is to be some nomads' paradise, then I for one do not look forward to it."), #Galgalliel
   ("npc10_kingsupport_objection", "I hear that you've got Aulus spinning poems to justify your ascent to the throne. I can't say I approve, {Brother/Sister}. If men fight for a {warlord/sovereign}, it should be because they know they're going to get something good out of it, not because they've taken a liking to a silly song."), #Hamonet
-  ("npc11_kingsupport_objection", "I hear that Lezalit is off and about telling folks that you're going to make yourself {warlord/warlady} and then lead an army over the mountains. Shall there be no end to these wars, {laddie/lassie}? I was thinking that if you made yourself {warlord/warlady}, then maybe you'd give us a bit of peace. But I guess the heavens have made Gorberia blood to be spilt, and Gorberia bones to be broken, and there's no getting round their decree."), #Kakerine
-  ("npc12_kingsupport_objection", "Captain. I hear that you've gone and made Klethi, of all people, some sort of ambassador to the aristocracy. I shudder to think of what that amoral girl might be promising them on your behalf -- and dignifying all these gross indulgences by calling them 'ancient freedoms.' By doing this, you mock those of us who who had hoped that you would have helped Gorberia escape its bloody past, and move towards a new age of peace and learning. Enough, I have said my peace."), #Brouprix
+  ("npc11_kingsupport_objection", "I hear that Philbert is off and about telling folks that you're going to make yourself {warlord/warlady} and then lead an army over the mountains. Shall there be no end to these wars, {laddie/lassie}? I was thinking that if you made yourself {warlord/warlady}, then maybe you'd give us a bit of peace. But I guess the heavens have made Gorberia blood to be spilt, and Gorberia bones to be broken, and there's no getting round their decree."), #Kakerine
+  ("npc12_kingsupport_objection", "Captain. I hear that you've gone and made Mide, of all people, some sort of ambassador to the aristocracy. I shudder to think of what that amoral girl might be promising them on your behalf -- and dignifying all these gross indulgences by calling them 'ancient freedoms.' By doing this, you mock those of us who who had hoped that you would have helped Gorberia escape its bloody past, and move towards a new age of peace and learning. Enough, I have said my peace."), #Brouprix
   ("npc13_kingsupport_objection", "Oh valiant one -- I hear that you have given leave to Brouprix to produce some testily-worded dissertation that undermines everything the people of this land hold dear, and accuses the old emperors of murder and usurpation. Captain -- I know as a poet that people must have heroes to emulate, and a golden age to restore. Will you create a faction in which cynics and scholars tell us what we must believe? I can think of nothing more dull."), #Aulus
-  ("npc14_kingsupport_objection", "I understand that you've sent your man Declan to proclaim to all Gorberia that you intend to free all the miscreants of this land upon your accession to the throne. What a foul idea... Men must be governed, {sir/madame} -- with whips and chains and the noose, if necessary. You'll find that out the hard way if you become {warlord/warlady}, I'll warrant."), #lezalit
-  ("npc15_kingsupport_objection", "I understand that you've given leave to Katrin to spread some nonsense about marks on your hands. I just want to say that, as an educated man, I find it disturbing that you would resort to old women's superstitions to back your claim. Village women will believe one thing one day, another thing the next. Now a horoscope, properly cast by an astrologer at a royal university with a reputation to uphold, might tell you something worth knowing, but those have not been performed in Gorberia for some time."), #Vorigan
+  ("npc14_kingsupport_objection", "I understand that you've sent your man Declan to proclaim to all Gorberia that you intend to free all the miscreants of this land upon your accession to the throne. What a foul idea... Men must be governed, {sir/madame} -- with whips and chains and the noose, if necessary. You'll find that out the hard way if you become {warlord/warlady}, I'll warrant."), #philbert
+  ("npc15_kingsupport_objection", "I understand that you've given leave to Kakerine to spread some nonsense about marks on your hands. I just want to say that, as an educated man, I find it disturbing that you would resort to old women's superstitions to back your claim. Village women will believe one thing one day, another thing the next. Now a horoscope, properly cast by an astrologer at a royal university with a reputation to uphold, might tell you something worth knowing, but those have not been performed in Gorberia for some time."), #Kilroy
   ("npc16_kingsupport_objection", "Oy -- Captain! I hear that Rikiar's gone off to sing a pretty song to the merchants, on how you'll hand them Gorberia on a silver platter for them to feast upon, smack their lips, and suck the marrow from the bones. I hope that's just a tale you're telling. An old-money warlord will at least toss a few coppers to the poor when he holds his feasts, and will make sure that the servants go home with full bellies. A merchant marries his daughter, and you'd be lucky to get a few crusts and scraps of gristle from the table. That's my experience, anyway."), #Mide
 
 #
@@ -1807,7 +1848,7 @@ strings = [
   ("npc12_intel_mission", "If you wish, Captain, I would not mind taking the time to pay a visit to a pupil of mine, now employed by the governor of {s17}. I had great hopes for him, but I have heard that he has lately endorsed the use of muskmelon for the treatment of palsy, on the grounds that its cold essence offsets an abundance of yellow bile. This is a travesty of medicine, and I must journey there swiftly to correct him. While I am there, if you wish, I could question him on the latest trends within the {s18}, a matter which may interest you."), #Brouprix
   ("npc13_intel_mission", "Oh valiant one! With your permission, I was thinking that I might pay a visit to the dales near {s17}. I try not to revisit old pastures, but I must confess a certain curiosity as to how a comely shepherdess of my former acquaintance is getting along. On the way, I may attempt to stop in at the fort. I suspect that it would not be terribly difficult for me to charm my way into the governor's home, and I may be able to provide you with the latest news from the {s18}."), #Aulus
   ("npc14_intel_mission", "Captain... As you may know, I helped train the garrison of {s17}. One of their number has lately been in touch with me, and suggests that if I were to visit him, he could pass me information on events within the {s18}. I am willing to do this, if you can spare me. While it is a great disgrace to be a traitor, there is no dishonor in making use of one."), #Philbert
-  ("npc15_intel_mission", "Captain. As you may know, I have for some time harbored a wish to go to {s17}, and study the masonry -- one of the finest examples of the old Gorberian style. As it happens, one of my colleagues is currently engaged there doing repair work on the curtain wall. While his sense of professional obligation I think would prevent him, rightfully, from disclosing to me any weaknesses in its defenses, I suspect that he would not be averse to offering up his opinion on the general state of the {s18}, if that is of interest to you."), #Vorigan
+  ("npc15_intel_mission", "Captain. As you may know, I have for some time harbored a wish to go to {s17}, and study the masonry -- one of the finest examples of the old Gorberian style. As it happens, one of my colleagues is currently engaged there doing repair work on the curtain wall. While his sense of professional obligation I think would prevent him, rightfully, from disclosing to me any weaknesses in its defenses, I suspect that he would not be averse to offering up his opinion on the general state of the {s18}, if that is of interest to you."), #Kilroy
   ("npc16_intel_mission", "Oy, Captain! I had a mind to pay a visit to my old haunts at {s17}. Let's just say that the governor and lady of the place had commissioned a certain service from me, and had been a bit lax about payment. However, a certain sparkly bauble in the lady's possession will fit the bill nicely. I see no need to trouble them by letting them know about my visit, but I could have a wee chat with my old friend the fort steward, who'll be letting me into the place, about goings-on in the {s18}."), #Mide
 
 
@@ -1823,11 +1864,11 @@ strings = [
   #
   ("npc9_fief_acceptance", "{Sir/Ma'am}, I was cheated of my inheritance -- but now, with this offer of this estate, you make right what was wrong. It would give me the greatest honor to serve you, to fight for you, and to hold this land in service to you."), #Galgalliel
   ("npc10_fief_acceptance", "You'd make me a governor? Well, no thank you -- but if you would call me 'tribune' -- the tribunes being the people's servants in the old times -- then I suppose I could bring myself to run {s17} for you. I'd put food in the bellies of the hungry, and raise a fine force of Dominion foot to fight on your behalf, {Brother/Sister}. But I can't promise that the real blue-bloods will enjoy rubbing shoulders with me in your councils."), #Hamonet
-  ("npc11_fief_acceptance", "Ay! You'd grant old Katrin a rank of command? Well, I'd be daft to turn you down, now wouldn't I? My, the strange turns that life takes... Fancy this old bag of bones becoming a great peer of the region of Gorberia."), #Kakerine
+  ("npc11_fief_acceptance", "Ay! You'd grant old Kakerine a rank of command? Well, I'd be daft to turn you down, now wouldn't I? My, the strange turns that life takes... Fancy this old bag of bones becoming a great peer of the region of Gorberia."), #Kakerine
   ("npc12_fief_acceptance", "Well, {sir/ma'am}, I'd have you know that don't believe in the holding of land in service to the warlord. Farmers and landholders should govern their own affairs, under the distant watch of the sovereign. That being said, Gorberia has seen far too much bloodshed for us to turn the social order on its head right now. Give me that land, and I'll endeavor to prepare it for a brighter future -- if not in this generation, than perhaps in the next."), #Brouprix
   ("npc13_fief_acceptance", "How generous and kind of you, {sir/ma'am}. Allow me to express the utmost reverence for your wisdom in selecting me. Truly, your perspicacity exceeds that of Warlord Laminur, who could read the character of a man from a single hair of his head. Your judgment surpasses that of the Emperor Akembra, to whom even the jinns submitted their disputes. Anyway, I accept."), #Aulus
   ("npc14_fief_acceptance", "You do me a great honor, captain. In Mexico, a youngest son such as myself has few opportunities to earn an estate of his own. But here, in Gorberia, there is still the chance for a man to win with his gun what was denied him by his birth! I shall hold {s17} as your commander, and raise an army to fight for your glory and for mine."), #Philbert
-  ("npc15_fief_acceptance", "Well, {sir/ma'am}, that's a gracious act, and marks you as the kind of leader who can save this sorry land from the incompetence of the current batch. I suspect a lot of the old-money walords around here will think that a commoner like me isn't fit to hold an estate. Well, when they see what I do with it, and what revenues I can bring in, they'll change their tune!"), #Vorigan
+  ("npc15_fief_acceptance", "Well, {sir/ma'am}, that's a gracious act, and marks you as the kind of leader who can save this sorry land from the incompetence of the current batch. I suspect a lot of the old-money walords around here will think that a commoner like me isn't fit to hold an estate. Well, when they see what I do with it, and what revenues I can bring in, they'll change their tune!"), #Kilroy
   ("npc16_fief_acceptance", "Oh, that's most generous of you, {sir/ma'am}. I've been in and out of many a great ranch-house or manor -- not always with the master's permission, I should add -- but I never thought I'd own one myself. Let me think... When I collect my first year's rents, what baubles shall I buy myself?"), #Mide
 
   ("npc1_woman_to_woman", "You should be a warlady by now..."), #Declan
@@ -1846,7 +1887,7 @@ strings = [
   ("npc12_woman_to_woman", "You should be a warlady by now..."), #Brouprix
   ("npc13_woman_to_woman", "You should be a warlady by now..."), #Aulus
   ("npc14_woman_to_woman", "You should be a warlady by now..."), #Philbert
-  ("npc15_woman_to_woman", "You should be a warlady by now..."), #Vorigan
+  ("npc15_woman_to_woman", "You should be a warlady by now..."), #Kilroy
   ("npc16_woman_to_woman", "You should be a warlady by now..."), #Mide
 
   ("npc1_turn_against", "I'm sorry that we meet like this, boss. There's no question that I owe my rise in life to you. You doubtless think me ungrateful. However, one has to follow one's destiny -- isn't that correct?"), #Declan
@@ -1865,7 +1906,7 @@ strings = [
   ("npc12_turn_against", "So, it seems we must fight. I would have you know, {sir/ma'am}, that I have not betrayed you. I had never served you as a man, but served the principles which I believed you upheld. As you no longer uphold them, I must do my best to thwart you. But I bear you no ill will, and I hope that we can meet again some day as friends"), #Brouprix
   ("npc13_turn_against", "It is sad to meet you as my enemy, Captain -- but on the other hand, to meet such a titan of the battlefield as yourself in combat is a rare privilege. Truly, the news of our contest today shall keep the bards and poets of Gorberia in beer and money for months to come, do you think?"), #Aulus
   ("npc14_turn_against", "Well, {playername}. We meet as enemies. I confess that I have mixed feelings. It grieves me to make war on you, but if we meet in battle and I prevail, I will have defeated the worthiest foe in all Gorberia, and I will know that my mastery of the military art is complete!"), #Philbert
-  ("npc15_turn_against", "Ah... I have not been looking forward to this day. I just want to say that in my sight, if you'd kept your faith in me, things would never have come to this. But no doubt you see it differently."), #Vorigan
+  ("npc15_turn_against", "Ah... I have not been looking forward to this day. I just want to say that in my sight, if you'd kept your faith in me, things would never have come to this. But no doubt you see it differently."), #Kilroy
   ("npc16_turn_against", "Hello, Captain! So, I guess we're enemies! One small word of warning if we end up fighting each other -- once the rage of battle hits me, I can't always account for my actions. Just know that whatever I do, it's not personal. Maybe if we both walk away from this, we can meet once more as friends?"), #Mide
 
 #NPC companion changes end
@@ -2666,8 +2707,8 @@ strings = [
   ("kingdom_5_adjective",                     "Vitzland"),#Vitzland Territories
   ("kingdom_6_adjective",                     "Republican"),#Republican
   ("kingdom_7_adjective",                     "Itami"),#Itami Castedom
-  ("kingdom_8_adjective",                     "Barshide"),#Barshide Confederacy
-  ("irregulars_adjective",                    "Rebel"),#Irregulars
+  ("kingdom_8_adjective",                     "Confederate"),#Bashide Confederacy
+  ("irregulars_adjective",                    "Rebel"),#Renegades
   ("theocracy_adjective",                     "Cult"),#Throd
 
 

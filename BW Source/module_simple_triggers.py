@@ -1041,7 +1041,7 @@ simple_triggers = [
               (try_end),
 
                 (call_script, "script_troop_get_relation_with_troop", ":troop_no", ":faction_leader"),
-                (this_or_next|le, reg0, -75), #was -75 50
+                (this_or_next|le, reg0, -90), #was -75 50
                 (eq, ":num_centers", 0), #if there is no walled centers that faction has defection happens 100%.
 
                 (call_script, "script_cf_troop_can_intrigue", ":troop_no", 0), #Should include battle, prisoner, in a fort with others
@@ -7820,19 +7820,19 @@ simple_triggers = [
         (gt, ":days_passed", 100),
 		(spawn_around_party,":party_no","pt_throd_army"),
 		(store_random_in_range, ":no_infected", 100, 850),
-		(party_force_add_members, reg0, "trp_throd_tier_0", ":no_infected"),
+		(party_force_add_members, reg0, "trp_f10_levy", ":no_infected"),
         (store_random_in_range, ":no_infected", 200, 500),
-		(party_force_add_members, reg0, "trp_throd_tier_1", ":no_infected"),
+		(party_force_add_members, reg0, "trp_f10_tier_1", ":no_infected"),
         (store_random_in_range, ":no_infected", 100, 175),
-		(party_force_add_members, reg0, "trp_throd_tier_2", ":no_infected"),
+		(party_force_add_members, reg0, "trp_f10_tier_2", ":no_infected"),
         (store_random_in_range, ":no_infected", 80, 150),
-		(party_force_add_members, reg0, "trp_throd_tier_3", ":no_infected"),
+		(party_force_add_members, reg0, "trp_f10_tier_3", ":no_infected"),
         (store_random_in_range, ":no_infected", 40, 100),
-		(party_force_add_members, reg0, "trp_throd_tier_4", ":no_infected"),
+		(party_force_add_members, reg0, "trp_f10_tier_4", ":no_infected"),
         (store_random_in_range, ":no_infected", 20, 50),
-		(party_force_add_members, reg0, "trp_throd_tier_5", ":no_infected"),
+		(party_force_add_members, reg0, "trp_f10_tier_5", ":no_infected"),
         (store_random_in_range, ":no_infected", 5, 15),
-		(party_force_add_members, reg0, "trp_throd_rider", ":no_infected"),
+		(party_force_add_members, reg0, "trp_f10_rider", ":no_infected"),
 		(str_store_string, s6, "@Throd Cultists"),
 	  (else_try),
 		(spawn_around_party,":party_no","pt_ghouls_army"),

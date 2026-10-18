@@ -1901,52 +1901,6 @@ or you won't be able to hang on to a single man you catch.", "ramun_ask_about_ca
 
   ]],
 
-  # [anyone,"merchant_quest_1b",
-  # [
-  # ],
-  # "You won't be able to do this by yourself, though. If you try and take on the whole gang singlehandedly, the hunter will become the hunted, I'll warrant. You'll first want to round up a group of volunteers. There are always a few lads in the settlements around here, looking for a bit of work that's more interesting than tilling the soil or hauling water. They'll follow you if you pay. So... Take this purse of 100 falors. Consider it an advance on your reward. Go round to the settlements, and use the money to hire some help. I'll reckon that you need at least five men to take on these bandits.", "merchant_quest_1c",
-  # [
-    # (call_script, "script_troop_add_gold", "trp_player", 100),
-
-    # (str_store_troop_name, s9, "$g_talk_troop"),
-    # (str_store_party_name_link, s1, "$g_starting_town"), #SB : link center
-    # (str_store_string, s2, "str_start_up_quest_message_1"),
-
-    # (call_script, "script_start_quest", "qst_collect_men", "$g_talk_troop"),
-
-    # (party_get_position, pos1, "$current_town"),
-  # ]],
-
-  # [anyone|plyr,"merchant_quest_1c",
-  # [
-  # ],
-  # "Very good, sir. I'll go collect some men from around the settlements.", "merchant_quest_1d",[]],
-
-  # #SB : add flavor element to quest reward for defeating bandit
-  # [anyone,"merchant_quest_1d",
-  # [
-    # (str_store_party_name, s1, "$current_town"),
-    # # (eq, "$g_killed_first_bandit", 1),
-    # # (assign, reg10, "$g_killed_first_bandit"),
-  # ],
-  # "Good. You can find me again in the tavern here in {s1} after you've got your group together. Then we'll speak about what we do next.", "close_window",
-  # [
-    # # (try_begin),
-      # # (eq, "$g_killed_first_bandit", 1),
-      # # (assign, ":chance", 100), #salvage chance
-      # # (try_for_range, ":item_slot", ek_item_0, ek_head),
-        # # (troop_get_inventory_slot, ":item_no", "trp_bandit", ":item_slot"),
-        # # (gt, ":item_no", 0),
-        # # (store_random_in_range, ":random_no", 0, 100),
-        # # (lt, ":random_no", ":chance"),
-        # # (troop_add_item, "trp_player", ":item_no", 0),
-        # # (val_div, ":chance", 2),
-      # # (try_end),
-    # # (try_end),
-    # (assign, "$dialog_with_merchant_ended", 1),
-  # ]],
-
-
 
 #Mine Foreman
   [trp_salt_mine_merchant,"start", [(call_script, "script_dplmc_print_subordinate_says_sir_madame_to_s0"),],
@@ -4733,7 +4687,7 @@ Rest: {s6} ({reg2})^^", "consume_2", []],
   # [anyone,"start", [(neg|main_party_has_troop,"$g_talk_troop"),(eq, "$g_encountered_party", "p_four_ways_inn")], "{!}Do you want me to rejoin you?", "close_window",[]], # unused
 #  [anyone,"member_separate_inn", [], "I don't know what you will do without me, but you are the boss. I'll wait for you at the Four Ways inn.", "close_window",
 #  [anyone,"member_separate_inn", [], "All right then. I'll meet you at the four ways inn. Good luck.", "close_window",
-#   [(remove_member_from_party,"$g_talk_troop", "p_main_party"),(add_troop_to_site, "$g_talk_troop", "scn_four_ways_inn", borcha_inn_entry)]],
+#   [(remove_member_from_party,"$g_talk_troop", "p_main_party"),(add_troop_to_site, "$g_talk_troop", "scn_four_ways_inn", declan_inn_entry)]],
 
 ##diplomacy start+
 ##Allow wife to join as companion, by Lathrael (modified)
@@ -6858,7 +6812,7 @@ Still I am sorry that I'll leave you soon. You must promise me, you'll come visi
 (assign, ":is_female", reg65), #SB : store into reg65
 (try_begin),
    ##Enable the "Tribune" dialogue option for all Custodian or Benefactor companions
-   ##from the Rhodok lands, instead of just Bunduk.  Currently there are no others
+   ##from the Rhodok lands, instead of just Hamonet.  Currently there are no others
    ##besides him, but other mods may add them.
    #(eq, "$g_talk_troop", "trp_npc10"),
    (this_or_next|troop_slot_eq, "$g_talk_troop", slot_lord_reputation_type, lrep_benefactor),
@@ -17354,7 +17308,7 @@ What kind of recruits do you want?", "dplmc_constable_recruit_select",
 		(assign, ":formal_response", 1),
 	(else_try),
 		#"Well-educated commoners" includes some custodians but not others.
-		#(For example, in Native compare Katrin with Artimenner.)
+		#(For example, in Native compare Kakerine with Artimenner.)
 		(eq, ":personality", lrep_custodian),
 
 		#Checking intelligence by itself isn't enough, since there isn't all
@@ -20247,43 +20201,43 @@ I knew that I had found someone worthy of becoming my commander.", "lord_invite_
                    (assign, "$g_comment_found", 0),
                    ]],
 
-# [anyone|auto_proceed,"lord_start",
-# [
-# (check_quest_active, "qst_destroy_bandit_lair"),
-# (check_quest_succeeded, "qst_destroy_bandit_lair"),
-# (quest_slot_eq, "qst_destroy_bandit_lair", slot_quest_giver_troop, "$g_talk_troop"),
-# ], "{!}.", "lair_quest_intermediate_1",
-# [
-# ]],
+[anyone|auto_proceed,"lord_start",
+[
+(check_quest_active, "qst_destroy_bandit_lair"),
+(check_quest_succeeded, "qst_destroy_bandit_lair"),
+(quest_slot_eq, "qst_destroy_bandit_lair", slot_quest_giver_troop, "$g_talk_troop"),
+], "{!}.", "lair_quest_intermediate_1",
+[
+]],
 
-# [anyone,"lair_quest_intermediate_1",
-# [
-# ], "Splendid work, {playername} -- your audacious attack is the talk of the realm. No doubt they, or others like them, will soon be back, but for a short while you have bought this land a small respite. We are most grateful to you.", "lord_pretalk",
-# [
-# (quest_get_slot, ":quest_gold_reward", "qst_destroy_bandit_lair", slot_quest_gold_reward),
-# (call_script, "script_troop_add_gold", "trp_player", ":quest_gold_reward"),
-# (assign, ":xp_reward", ":quest_gold_reward"),
-# (val_mul, ":xp_reward", 2),
-# (add_xp_as_reward, ":xp_reward"),
-# (call_script, "script_change_troop_renown", "trp_player", 3),
-# (call_script, "script_troop_change_relation_with_troop", "trp_player", "$g_talk_troop", 4),
-# (call_script, "script_end_quest", "qst_destroy_bandit_lair"),
-# (assign, reg5, ":quest_gold_reward"),
-# ]],
+[anyone,"lair_quest_intermediate_1",
+[
+], "Splendid work, {playername} -- your audacious attack is the talk of the realm. No doubt they, or others like them, will soon be back, but for a short while you have bought this land a small respite. We are most grateful to you.", "lord_pretalk",
+[
+(quest_get_slot, ":quest_gold_reward", "qst_destroy_bandit_lair", slot_quest_gold_reward),
+(call_script, "script_troop_add_gold", "trp_player", ":quest_gold_reward"),
+(assign, ":xp_reward", ":quest_gold_reward"),
+(val_mul, ":xp_reward", 2),
+(add_xp_as_reward, ":xp_reward"),
+(call_script, "script_change_troop_renown", "trp_player", 3),
+(call_script, "script_troop_change_relation_with_troop", "trp_player", "$g_talk_troop", 4),
+(call_script, "script_end_quest", "qst_destroy_bandit_lair"),
+(assign, reg5, ":quest_gold_reward"),
+]],
 
-# [anyone|auto_proceed,"lord_start",
-# [
-# (check_quest_active, "qst_destroy_bandit_lair"),
-# (check_quest_failed, "qst_destroy_bandit_lair"),
-# (quest_slot_eq, "qst_destroy_bandit_lair", slot_quest_giver_troop, "$g_talk_troop"),
-# ], "{!}.", "lair_quest_intermediate_2",
-# []],
+[anyone|auto_proceed,"lord_start",
+[
+(check_quest_active, "qst_destroy_bandit_lair"),
+(check_quest_failed, "qst_destroy_bandit_lair"),
+(quest_slot_eq, "qst_destroy_bandit_lair", slot_quest_giver_troop, "$g_talk_troop"),
+], "{!}.", "lair_quest_intermediate_2",
+[]],
 
-# [anyone,"lair_quest_intermediate_2",
-# [], "Well, {playername}, I guess that at least some of those brigands eluded you -- and of course, it will be the peaceful travellers of this land who will pay the price. Still, it was good of you to try.", "lord_pretalk",
-# [
-# (call_script, "script_end_quest", "qst_destroy_bandit_lair"),
-# ]],
+[anyone,"lair_quest_intermediate_2",
+[], "Well, {playername}, I guess that at least some of those brigands eluded you -- and of course, it will be the peaceful travellers of this land who will pay the price. Still, it was good of you to try.", "lord_pretalk",
+[
+(call_script, "script_end_quest", "qst_destroy_bandit_lair"),
+]],
 
 [anyone,"lord_start",
 [
@@ -31935,7 +31889,7 @@ Hand over my {reg19} falors, if you please, and end our business together.", "lo
   [anyone,"lord_tell_mission", [
   (eq, "$player_has_homage" ,1),
   (neq, "$random_quest_no", "qst_rescue_prisoner"),
-  # (neq, "$random_quest_no", "qst_destroy_bandit_lair"),
+  (neq, "$random_quest_no", "qst_destroy_bandit_lair"),
   (neq, "$random_quest_no", "qst_raise_troops"),
   (neq, "$random_quest_no", "qst_escort_lady"),
   (neq, "$random_quest_no", "qst_lend_companion"),
@@ -32115,15 +32069,15 @@ Hand over my {reg19} falors, if you please, and end our business together.", "lo
 
 
 
-  # [anyone,"lord_tell_mission", [
-  # (eq,"$random_quest_no", "qst_destroy_bandit_lair"),
-  # (quest_get_slot, ":bandit_lair", "qst_destroy_bandit_lair", slot_quest_target_party),
+  [anyone,"lord_tell_mission", [
+  (eq,"$random_quest_no", "qst_destroy_bandit_lair"),
+  (quest_get_slot, ":bandit_lair", "qst_destroy_bandit_lair", slot_quest_target_party),
 
-  # (party_stack_get_troop_id, ":bandit_type", ":bandit_lair", 0),
-  # (str_store_troop_name_plural, s4, ":bandit_type"),
+  (party_stack_get_troop_id, ":bandit_type", ":bandit_lair", 0),
+  (str_store_troop_name_plural, s4, ":bandit_type"),
 
-  # ], "Yes -- there is something you can do for us. We have heard reports that a group of {s4} have established a hideout in this area, and have been attacking travellers. If you could find their lair and destroy it, we would be very grateful.", "destroy_lair_quest_brief", #s48 is bandits, s42 is the road information
-   # []],
+  ], "Yes -- there is something you can do for us. We have heard reports that a group of {s4} have established a hideout in this area, and have been attacking travellers. If you could find their lair and destroy it, we would be very grateful.", "destroy_lair_quest_brief", #s48 is bandits, s42 is the road information
+   []],
 
 
    #SB : move reg3 assignment to consequence
@@ -39934,9 +39888,9 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
 		(try_begin),
 			(eq, ":quest_type", "qst_track_down_bandits"),
 			(str_store_string, s10, "str__has_put_together_a_bounty_on_some_bandits_who_have_been_attacking_travellers_in_the_area"),
-		# (else_try),
-			# (eq, ":quest_type", "qst_destroy_bandit_lair"),
-			# (str_store_string, s10, "str__has_been_worried_about_bandits_establishing_a_hideout_near_his_home"),
+		(else_try),
+			(eq, ":quest_type", "qst_destroy_bandit_lair"),
+			(str_store_string, s10, "str__has_been_worried_about_bandits_establishing_a_hideout_near_his_home"),
 		(else_try),
 			(eq, ":quest_type", "qst_retaliate_for_border_incident"),
 			(str_store_string, s10, "str__is_looking_for_a_way_to_avoid_an_impending_war"),
@@ -43792,85 +43746,84 @@ Hmm. Thank you for bring me this in time, {playername}. Here, take my seal as pr
 
 
 
-  # [anyone,"destroy_lair_quest_brief", [
-     # (eq,"$random_quest_no", "qst_destroy_bandit_lair"),
-	 # (quest_get_slot, ":bandit_lair", "qst_destroy_bandit_lair", slot_quest_target_party),
-	 # (party_get_template_id, ":bandit_type", ":bandit_lair"),
-	 # (eq, ":bandit_type", "pt_sea_raider_lair"),
-	 # ],
-	# "The raiders are likely to have laid up their ships in a well-concealed cove, somewhere along the coastline, preferably next to a small stream where they have some water. The best way to discover its location would be to find a group of sea raiders who appear to be heading back to their base to resupply, and follow them.", "merchant_quest_track_bandit_lair_choice",
-   # []],
+  [anyone,"destroy_lair_quest_brief", [
+     (eq,"$random_quest_no", "qst_destroy_bandit_lair"),
+	 (quest_get_slot, ":bandit_lair", "qst_destroy_bandit_lair", slot_quest_target_party),
+	 (party_get_template_id, ":bandit_type", ":bandit_lair"),
+	 (eq, ":bandit_type", "pt_sea_raider_lair"),
+	 ],
+	"The raiders are likely to have laid up their ships in a well-concealed cove, somewhere along the coastline, preferably next to a small stream where they have some water. The best way to discover its location would be to find a group of sea raiders who appear to be heading back to their base to resupply, and follow them.", "merchant_quest_track_bandit_lair_choice",
+   []],
 
-  # [anyone,"destroy_lair_quest_brief", [
-     # (eq,"$random_quest_no", "qst_destroy_bandit_lair"),
-	 # (quest_get_slot, ":bandit_lair", "qst_destroy_bandit_lair", slot_quest_target_party),
-	 # (party_get_template_id, ":bandit_type", ":bandit_lair"),
-	 # (eq, ":bandit_type", "pt_desert_bandit_lair"),
-	 # ],
-	# "Bandits such as these usually establish their hideouts in the foothills on the edge of the desert, often in a canyon near a spring. This gives them both water and concealment. The best way to discover its location would be to find a group of desert bandits who appear to be heading back to their base to resupply, and follow them.", "merchant_quest_track_bandit_lair_choice",
-   # []],
+  [anyone,"destroy_lair_quest_brief", [
+     (eq,"$random_quest_no", "qst_destroy_bandit_lair"),
+	 (quest_get_slot, ":bandit_lair", "qst_destroy_bandit_lair", slot_quest_target_party),
+	 (party_get_template_id, ":bandit_type", ":bandit_lair"),
+	 (eq, ":bandit_type", "pt_desert_bandit_lair"),
+	 ],
+	"Bandits such as these usually establish their hideouts in the foothills on the edge of the desert, often in a canyon near a spring. This gives them both water and concealment. The best way to discover its location would be to find a group of desert bandits who appear to be heading back to their base to resupply, and follow them.", "merchant_quest_track_bandit_lair_choice",
+   []],
 
-  # [anyone,"destroy_lair_quest_brief", [
-     # (eq,"$random_quest_no", "qst_destroy_bandit_lair"),
-	 # (quest_get_slot, ":bandit_lair", "qst_destroy_bandit_lair", slot_quest_target_party),
-	 # (party_get_template_id, ":bandit_type", ":bandit_lair"),
-	 # (eq, ":bandit_type", "pt_mountain_bandit_lair"),
-	 # ],
-	# "Bandits such as these will usually establish a base in the highlands, often on an steep ledge where they have a view of the surrounding countryside. This makes them difficult to surprise. The best way to discover its location would be to find a group of mountain bandits who appear to be heading back to their base to resupply, and follow them.", "merchant_quest_track_bandit_lair_choice",
-   # []],
+  [anyone,"destroy_lair_quest_brief", [
+     (eq,"$random_quest_no", "qst_destroy_bandit_lair"),
+	 (quest_get_slot, ":bandit_lair", "qst_destroy_bandit_lair", slot_quest_target_party),
+	 (party_get_template_id, ":bandit_type", ":bandit_lair"),
+	 (eq, ":bandit_type", "pt_mountain_bandit_lair"),
+	 ],
+	"Bandits such as these will usually establish a base in the highlands, often on an steep ledge where they have a view of the surrounding countryside. This makes them difficult to surprise. The best way to discover its location would be to find a group of mountain bandits who appear to be heading back to their base to resupply, and follow them.", "merchant_quest_track_bandit_lair_choice",
+   []],
 
-  # [anyone,"destroy_lair_quest_brief", [
-     # (eq,"$random_quest_no", "qst_destroy_bandit_lair"),
-	 # (quest_get_slot, ":bandit_lair", "qst_destroy_bandit_lair", slot_quest_target_party),
-	 # (party_get_template_id, ":bandit_type", ":bandit_lair"),
-	 # (eq, ":bandit_type", "pt_forest_bandit_lair"),
-	 # ],
-	# "Bandits such as these will usually set up their encampments deep in the woods, sometimes in the middle of a swamp. The best way to discover its location would be to find a group of forest bandits who appear to be heading back to their base to resupply, and follow them.", "merchant_quest_track_bandit_lair_choice",
-   # []],
+  [anyone,"destroy_lair_quest_brief", [
+     (eq,"$random_quest_no", "qst_destroy_bandit_lair"),
+	 (quest_get_slot, ":bandit_lair", "qst_destroy_bandit_lair", slot_quest_target_party),
+	 (party_get_template_id, ":bandit_type", ":bandit_lair"),
+	 (eq, ":bandit_type", "pt_forest_bandit_lair"),
+	 ],
+	"Bandits such as these will usually set up their encampments deep in the woods, sometimes in the middle of a swamp. The best way to discover its location would be to find a group of forest bandits who appear to be heading back to their base to resupply, and follow them.", "merchant_quest_track_bandit_lair_choice",
+   []],
 
-  # [anyone,"destroy_lair_quest_brief", [
-     # (eq,"$random_quest_no", "qst_destroy_bandit_lair"),
-	 # (quest_get_slot, ":bandit_lair", "qst_destroy_bandit_lair", slot_quest_target_party),
-	 # (party_get_template_id, ":bandit_type", ":bandit_lair"),
-	 # (eq, ":bandit_type", "pt_steppe_bandit_lair"),
-	 # ],
-	# "Bandits such as these will usually set up their encampments in the woodland on the steppe, where they have some concealment. The best way to discover its location would be to find a group of steppe bandits who appear to be heading back to their base to resupply, and follow them.", "merchant_quest_track_bandit_lair_choice",
-   # []],
+  [anyone,"destroy_lair_quest_brief", [
+     (eq,"$random_quest_no", "qst_destroy_bandit_lair"),
+	 (quest_get_slot, ":bandit_lair", "qst_destroy_bandit_lair", slot_quest_target_party),
+	 (party_get_template_id, ":bandit_type", ":bandit_lair"),
+	 (eq, ":bandit_type", "pt_steppe_bandit_lair"),
+	 ],
+	"Bandits such as these will usually set up their encampments in the woodland on the steppe, where they have some concealment. The best way to discover its location would be to find a group of steppe bandits who appear to be heading back to their base to resupply, and follow them.", "merchant_quest_track_bandit_lair_choice",
+   []],
 
-  # [anyone,"destroy_lair_quest_brief", [
-     # (eq,"$random_quest_no", "qst_destroy_bandit_lair"),
-	 # (quest_get_slot, ":bandit_lair", "qst_destroy_bandit_lair", slot_quest_target_party),
-	 # (party_get_template_id, ":bandit_type", ":bandit_lair"),
-	 # (eq, ":bandit_type", "pt_taiga_bandit_lair"),
-	 # ],
-	# "Bandits such as these will usually set up their encampments deep in the woods. The best way to discover its location would be to find a group of tundra bandits who appear to be heading back to their base to resupply, and follow them.", "merchant_quest_track_bandit_lair_choice",
-   # []],
+  [anyone,"destroy_lair_quest_brief", [
+     (eq,"$random_quest_no", "qst_destroy_bandit_lair"),
+	 (quest_get_slot, ":bandit_lair", "qst_destroy_bandit_lair", slot_quest_target_party),
+	 (party_get_template_id, ":bandit_type", ":bandit_lair"),
+	 (eq, ":bandit_type", "pt_taiga_bandit_lair"),
+	 ],
+	"Bandits such as these will usually set up their encampments deep in the woods. The best way to discover its location would be to find a group of tundra bandits who appear to be heading back to their base to resupply, and follow them.", "merchant_quest_track_bandit_lair_choice",
+   []],
 
-  # [anyone|plyr,"merchant_quest_track_bandit_lair_choice", [], "Aye, I'll do it.", "merchant_quest_destroy_lair_brief", [
+  [anyone|plyr,"merchant_quest_track_bandit_lair_choice", [], "Aye, I'll do it.", "merchant_quest_destroy_lair_brief", [
 
-    # (quest_get_slot, ":target_party", "qst_destroy_bandit_lair", slot_quest_target_party),
-    # (party_set_flags, ":target_party", pf_quest_party, 1),
-# #    (quest_set_slot, "qst_track_down_bandits", slot_quest_target_party, "$g_bandit_party_for_bounty"), #WHY IS THIS COMMENTED OUT?
-    # (quest_set_slot, "qst_destroy_bandit_lair", slot_quest_giver_troop, "$g_talk_troop"),
-    # (quest_set_slot, "qst_destroy_bandit_lair", slot_quest_giver_center, "$g_encountered_party"),
+    (quest_get_slot, ":target_party", "qst_destroy_bandit_lair", slot_quest_target_party),
+    (party_set_flags, ":target_party", pf_quest_party, 1),
+#    (quest_set_slot, "qst_track_down_bandits", slot_quest_target_party, "$g_bandit_party_for_bounty"), #WHY IS THIS COMMENTED OUT?
+    (quest_set_slot, "qst_destroy_bandit_lair", slot_quest_giver_troop, "$g_talk_troop"),
+    (quest_set_slot, "qst_destroy_bandit_lair", slot_quest_giver_center, "$g_encountered_party"),
 
-    # (str_store_troop_name_link, s11, "$g_talk_troop"),
-    # (str_store_party_name, s9, ":target_party"),
-    # (setup_quest_text, "qst_destroy_bandit_lair"),
-    # (str_store_string, s2, "str_bandit_lair_quest_description"),
-    # (call_script, "script_start_quest", "qst_destroy_bandit_lair", "$g_talk_troop"),
-  # ]],
+    (str_store_troop_name_link, s11, "$g_talk_troop"),
+    (str_store_party_name, s9, ":target_party"),
+    (setup_quest_text, "qst_destroy_bandit_lair"),
+    (str_store_string, s2, "str_bandit_lair_quest_description"),
+    (call_script, "script_start_quest", "qst_destroy_bandit_lair", "$g_talk_troop"),
+  ]],
 
-  # [anyone|plyr,"merchant_quest_track_bandit_lair_choice", [], "I'm afraid I can't take the job at the moment.", "lord_pretalk",[
-  # (quest_set_slot, "qst_destroy_bandit_lair", slot_quest_dont_give_again_remaining_days, 1),
-  # ]],
+  [anyone|plyr,"merchant_quest_track_bandit_lair_choice", [], "I'm afraid I can't take the job at the moment.", "lord_pretalk",[
+  (quest_set_slot, "qst_destroy_bandit_lair", slot_quest_dont_give_again_remaining_days, 1),
+  ]],
 
-   # [anyone,"merchant_quest_destroy_lair_brief", [
-  # ], "Very good. We will await word of your success.", "close_window",
-   # [
-   # (assign, "$g_leave_encounter", 1),
-   # ]],
-
+   [anyone,"merchant_quest_destroy_lair_brief", [
+  ], "Very good. We will await word of your success.", "close_window",
+   [
+   (assign, "$g_leave_encounter", 1),
+   ]],
 
 
   [anyone,"merchant_quest_requested", [
@@ -46622,7 +46575,6 @@ Hmm. Thank you for bring me this in time, {playername}. Here, take my seal as pr
     (party_remove_prisoners, "p_main_party", "trp_fugitive", 1),
   ]],
   [anyone,"prisoner_chat_2", [], "No, I swear I won't.", "close_window",[]],
-
 
   [anyone,"start", [(party_slot_eq, "$current_town", slot_town_lord, "trp_player"),
                     (this_or_next|is_between,"$g_talk_troop",weapon_merchants_begin,weapon_merchants_end),

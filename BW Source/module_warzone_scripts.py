@@ -4482,6 +4482,9 @@ module_warzone_scripts = [
     (this_or_next|eq, ":item", "itm_grenade_stick_bundle"),
     (this_or_next|eq, ":item", "itm_hand_torpedo"),
     (this_or_next|eq, ":item", "itm_lunge_mine"),
+    (this_or_next|eq, ":item", "itm_artillery_ammo"),
+    (this_or_next|eq, ":item", "itm_rocket_ammo"),
+    (this_or_next|eq, ":item", "itm_grenade_ammo"),
     (eq, ":item", "itm_grenade"),
 
     (try_begin),
@@ -4547,6 +4550,8 @@ module_warzone_scripts = [
     (play_sound_at_position, "snd_grenade1", pos15, sf_vol_15),
     (particle_system_burst, "psys_war_smoke_tall_short", pos15, 50),
   (else_try),
+    (this_or_next|eq, ":item", "itm_flameammo_burst"),
+    (this_or_next|eq, ":item", "itm_grenade_molotov_ashmaker"),
     (eq, ":item", "itm_grenade_molotov"),
     (play_sound_at_position, "snd_molotov", pos15, sf_vol_15),
     (particle_system_burst, "psys_war_smoke_tall_short", pos15, 50),
@@ -4589,6 +4594,9 @@ module_warzone_scripts = [
       (this_or_next|eq, ":item", "itm_grenade_stick"),
       (this_or_next|eq, ":item", "itm_grenade_frag"),
       (this_or_next|eq, ":item", "itm_lunge_mine"),
+      (this_or_next|eq, ":item", "itm_artillery_ammo"),
+      (this_or_next|eq, ":item", "itm_rocket_ammo"),
+      (this_or_next|eq, ":item", "itm_grenade_ammo"),
       (eq, ":item", "itm_grenade"),
       (gt, "$g_player", -1),
       (eq, "$g_player", ":cur_agent"),
@@ -4818,7 +4826,7 @@ module_warzone_scripts = [
 ("miasma_grenade", [
   (store_script_param, ":target_pos", 1),
   (store_script_param, ":frag_thrower_agent", 2),
-  (store_script_param, ":explosion_radius", 3),
+  # (store_script_param, ":explosion_radius", 3),
   # (store_script_param, ":friendlyfire", 4),
 
   (set_fixed_point_multiplier, 100),
@@ -4835,54 +4843,6 @@ module_warzone_scripts = [
   (assign, ":summoned_agent", reg0),
   (agent_get_team, ":thrower_team", ":frag_thrower_agent"),
   (agent_set_team, ":summoned_agent", ":thrower_team"),
-  
-  # (try_begin),
-    # (gt, "$g_player", 0),
-    # (agent_get_position, pos40, "$g_player"),
-    # (get_distance_between_positions_in_meters, ":meters", pos40, pos15),
-    # (lt, ":meters", 25),
-    # (val_max, ":meters", 1),
-    # (store_div, ":shake_strength", 100, ":meters"),
-    # (val_add, "$g_fate_cam_shake_frames", ":shake_strength"),
-  # (try_end),
-
-  # (try_begin),
-    # (eq, ":friendlyfire", 0),
-    (agent_get_team, ":frag_thrower_team", ":frag_thrower_agent"),
-  # (try_end),
-
-  (try_for_agents, ":cur_agent", pos15, ":explosion_radius"),
-    (agent_is_alive, ":cur_agent"),
-
-    (try_begin),
-      # (eq, ":cur_agent", "$g_player"),
-      # (play_sound, "snd_flashbang_effect"),
-    # (else_try),
-      (neq, "$g_player", ":cur_agent"),
-      (store_random_in_range, ":rnd", 0, 20),
-      (eq, ":rnd", 1),
-
-      (agent_get_troop_id, ":agent_troop_id", ":cur_agent"),
-      (troop_get_type,":troop_type",":agent_troop_id"),
-      (eq, ":troop_type", 0),
-
-      (agent_get_position, pos4, ":cur_agent"),
-      (play_sound_at_position, "snd_warcry", pos4),
-    (try_end),
-
-    # (assign,":stop",0),
-    # (try_begin),
-      # (eq, ":friendlyfire", 0),
-      (agent_get_team, ":cur_agent_team", ":cur_agent"),
-      (neg|teams_are_enemies, ":frag_thrower_team", ":cur_agent_team"),
-      # (assign,":stop",1),
-    # (try_end),
-    # (eq,":stop",0),
-
-    # (agent_get_position, pos4, ":cur_agent"),
-    (agent_set_slot, ":cur_agent", slot_agent_smokecover, 1),
-    # (agent_set_accuracy_modifier, ":cur_agent", 0),
-  (try_end),
   ]),
 
 # script_flamer_fire
@@ -7712,6 +7672,7 @@ module_warzone_scripts = [
             (neq, ":cur_item", "itm_shotgun_riot"),
             (item_set_slot, ":cur_item", slot_item_ammo_type, ammo_shotgun),
             (item_set_slot, ":cur_item", slot_item_reload_sound, "snd_smgreload"),
+            (item_set_slot, ":cur_item", slot_item_has_ironsight, "spr_is_shotgun_old"),
         (else_try),
             (is_between, ":cur_item", lmg_begin, mg_end),
             (item_set_slot, ":cur_item", slot_item_ammo_type, ammo_mg),
@@ -7721,6 +7682,7 @@ module_warzone_scripts = [
         #init custom weapon settings
         (try_begin),
         (this_or_next|eq, ":cur_item", "itm_flamethrower_union"),
+        (this_or_next|eq, ":cur_item", "itm_flamethrower_bashide"),
         (eq, ":cur_item", "itm_flamethrower"),
         (item_set_slot, ":cur_item", slot_item_particle, -1),
         (item_set_slot, ":cur_item", slot_item_ammo_type, ammo_flame),
@@ -7730,7 +7692,30 @@ module_warzone_scripts = [
         (eq, ":cur_item", "itm_flamethrower_vitzland"),
         (item_set_slot, ":cur_item", slot_item_particle, -1),
         (item_set_slot, ":cur_item", slot_item_ammo_type, ammo_flame_burst),
+        (assign, ":reload_animation", "anim_pistol_reload"),
         (item_set_slot, ":cur_item", slot_item_reload_sound, "snd_flamer_reload"),
+    (else_try),
+        #(this_or_next|eq, ":cur_item", ""),
+        (eq, ":cur_item", "itm_cannon_tyrant"),
+        (item_set_slot, ":cur_item", slot_item_particle, -1),
+        (item_set_slot, ":cur_item", slot_item_ammo_type, ammo_arty),
+        (item_set_slot, ":cur_item", slot_item_reload_sound, "snd_usa_reloading"),
+    (else_try),
+       #(this_or_next|eq, ":cur_item", ""),
+        (eq, ":cur_item", "itm_itami_grenadelauncher"),
+        (item_set_slot, ":cur_item", slot_item_particle, -1),
+        (item_set_slot, ":cur_item", slot_item_ammo_type, ammo_grenade),
+        (assign, ":aim_loop_animation", "anim_shotgun_aim"),
+        (assign, ":fire_animation", "anim_shotgun_fire"), 
+        (assign, ":reload_animation", "anim_shotgun_reload_short"), 
+        (item_set_slot, ":cur_item", slot_item_reload_sound, "snd_smgreload"),
+        (item_set_slot, ":cur_item", slot_item_has_ironsight, "spr_is_itami_grenade_launcher"), 
+    (else_try),
+        #(this_or_next|eq, ":cur_item", ""),
+        (eq, ":cur_item", "itm_rocketlauncher"),
+        (item_set_slot, ":cur_item", slot_item_particle, -1),
+        (item_set_slot, ":cur_item", slot_item_ammo_type, ammo_rocket),
+        (item_set_slot, ":cur_item", slot_item_reload_sound, "snd_usa_reloading"),
     (else_try),
         (eq, ":cur_item", "itm_pistol_walther_ppk"),
         (item_set_slot, ":cur_item", slot_item_has_ironsight, "spr_is_pistol_walther_ppk"), 
@@ -7744,7 +7729,7 @@ module_warzone_scripts = [
 ### - Added ironsights to all guns, except for the minigun and autocannon, kinda pointless on those
 ### - Cleaned up the code structure as requested by tocan and Kraggrim
         
-        ### Rifles and bolt action rifles
+        ### Rifles and bolt action rifles ###
         
         (eq, ":cur_item", "itm_rifle_arisaka"),
         (assign, ":ready_animation", "anim_rifle_bolt_ready"),
@@ -7757,6 +7742,8 @@ module_warzone_scripts = [
 ##Barbed Wire###
 ################
 ##Entenaii Empire
+        (this_or_next|eq, ":cur_item", "itm_empire_bolt_action_carbine"),
+        (this_or_next|eq, ":cur_item", "itm_empire_bolt_action_rifle_bayonet"),
         (eq, ":cur_item", "itm_empire_bolt_action_rifle"),
         (assign, ":ready_animation", "anim_rifle_bolt_ready"),
         (assign, ":fire_animation", "anim_rifle_bolt_fire"),
@@ -7764,24 +7751,9 @@ module_warzone_scripts = [
         (assign, ":reload_animation", "anim_garand_reload"),                   
         (item_set_slot, ":cur_item", slot_item_has_ironsight, "spr_is_empire_bolt_action_rifle"),    
     (else_try),
-
-        (eq, ":cur_item", "itm_empire_bolt_action_rifle_bayonet"),
-        (assign, ":ready_animation", "anim_rifle_bolt_ready"),
-        (assign, ":fire_animation", "anim_rifle_bolt_fire"),
-        (assign, ":aim_loop_animation", "anim_rifle_bolt_aim"),
-        (assign, ":reload_animation", "anim_garand_reload"),                   
-        (item_set_slot, ":cur_item", slot_item_has_ironsight, "spr_is_empire_bolt_action_rifle"),    
-    (else_try),
- 
-        (eq, ":cur_item", "itm_empire_bolt_action_carbine"),
-        (assign, ":ready_animation", "anim_rifle_bolt_ready"),
-        (assign, ":fire_animation", "anim_rifle_bolt_fire"),
-        (assign, ":aim_loop_animation", "anim_rifle_bolt_aim"),
-        (assign, ":reload_animation", "anim_garand_reload"),                   
-        (item_set_slot, ":cur_item", slot_item_has_ironsight, "spr_is_empire_bolt_action_rifle"),    
-    (else_try),
-    
 ##Entenaii Dominion
+        (this_or_next|eq, ":cur_item", "itm_dominion_bolt_action_carbine"),
+        (this_or_next|eq, ":cur_item", "itm_dominion_bolt_action_rifle_bayonet"),
         (eq, ":cur_item", "itm_dominion_bolt_action_rifle"),
         (assign, ":ready_animation", "anim_rifle_bolt_ready"),
         (assign, ":fire_animation", "anim_rifle_bolt_fire"),
@@ -7789,24 +7761,9 @@ module_warzone_scripts = [
         (assign, ":reload_animation", "anim_garand_reload"),                   
         (item_set_slot, ":cur_item", slot_item_has_ironsight, "spr_is_dominion_bolt_action_rifle"),    
     (else_try),
-    
-        (eq, ":cur_item", "itm_dominion_bolt_action_rifle_bayonet"),
-        (assign, ":ready_animation", "anim_rifle_bolt_ready"),
-        (assign, ":fire_animation", "anim_rifle_bolt_fire"),
-        (assign, ":aim_loop_animation", "anim_rifle_bolt_aim"),
-        (assign, ":reload_animation", "anim_garand_reload"),                   
-        (item_set_slot, ":cur_item", slot_item_has_ironsight, "spr_is_dominion_bolt_action_rifle"),    
-    (else_try),
-    
-        (eq, ":cur_item", "itm_dominion_bolt_action_carbine"),
-        (assign, ":ready_animation", "anim_rifle_bolt_ready"),
-        (assign, ":fire_animation", "anim_rifle_bolt_fire"),
-        (assign, ":aim_loop_animation", "anim_rifle_bolt_aim"),
-        (assign, ":reload_animation", "anim_garand_reload"),                   
-        (item_set_slot, ":cur_item", slot_item_has_ironsight, "spr_is_dominion_bolt_action_rifle"),    
-    (else_try),
-    
 ##Kingdom of Galvae
+        (this_or_next|eq, ":cur_item", "itm_galvae_bolt_action_carbine"),
+        (this_or_next|eq, ":cur_item", "itm_galvae_bolt_action_rifle_bayonet"),
         (eq, ":cur_item", "itm_galvae_bolt_action_rifle"),
         (assign, ":ready_animation", "anim_rifle_bolt_ready"),
         (assign, ":fire_animation", "anim_rifle_bolt_fire"),
@@ -7814,24 +7771,10 @@ module_warzone_scripts = [
         (assign, ":reload_animation", "anim_garand_reload"),                   
         (item_set_slot, ":cur_item", slot_item_has_ironsight, "spr_is_galvae_bolt_action_rifle"),    
     (else_try),
-  
-        (eq, ":cur_item", "itm_galvae_bolt_action_rifle_bayonet"),
-        (assign, ":ready_animation", "anim_rifle_bolt_ready"),
-        (assign, ":fire_animation", "anim_rifle_bolt_fire"),
-        (assign, ":aim_loop_animation", "anim_rifle_bolt_aim"),
-        (assign, ":reload_animation", "anim_garand_reload"),                   
-        (item_set_slot, ":cur_item", slot_item_has_ironsight, "spr_is_galvae_bolt_action_rifle"),    
-    (else_try),
-    
-        (eq, ":cur_item", "itm_galvae_bolt_action_carbine"),
-        (assign, ":ready_animation", "anim_rifle_bolt_ready"),
-        (assign, ":fire_animation", "anim_rifle_bolt_fire"),
-        (assign, ":aim_loop_animation", "anim_rifle_bolt_aim"),
-        (assign, ":reload_animation", "anim_garand_reload"),                   
-        (item_set_slot, ":cur_item", slot_item_has_ironsight, "spr_is_galvae_bolt_action_rifle"),    
-    (else_try),
-        
 ##Molvat-Berchav Union
+        (this_or_next|eq, ":cur_item", "itm_molvat_bolt_action_sawnoff"),
+        (this_or_next|eq, ":cur_item", "itm_molvat_bolt_action_carbine"),
+        (this_or_next|eq, ":cur_item", "itm_molvat_bolt_action_rifle_bayonet"),
         (eq, ":cur_item", "itm_molvat_bolt_action_rifle"),
         (assign, ":ready_animation", "anim_rifle_bolt_ready"),
         (assign, ":fire_animation", "anim_rifle_bolt_fire"),
@@ -7839,23 +7782,7 @@ module_warzone_scripts = [
         (assign, ":reload_animation", "anim_garand_reload"),                   
         (item_set_slot, ":cur_item", slot_item_has_ironsight, "spr_is_molvat_bolt_action_rifle"),    
     (else_try),
-    
-        (eq, ":cur_item", "itm_molvat_bolt_action_rifle_bayonet"),
-        (assign, ":ready_animation", "anim_rifle_bolt_ready"),
-        (assign, ":fire_animation", "anim_rifle_bolt_fire"),
-        (assign, ":aim_loop_animation", "anim_rifle_bolt_aim"),
-        (assign, ":reload_animation", "anim_garand_reload"),                   
-        (item_set_slot, ":cur_item", slot_item_has_ironsight, "spr_is_molvat_bolt_action_rifle"),    
-    (else_try),
-    
-        (eq, ":cur_item", "itm_molvat_bolt_action_carbine"),
-        (assign, ":ready_animation", "anim_rifle_bolt_ready"),
-        (assign, ":fire_animation", "anim_rifle_bolt_fire"),
-        (assign, ":aim_loop_animation", "anim_rifle_bolt_aim"),
-        (assign, ":reload_animation", "anim_garand_reload"),                   
-        (item_set_slot, ":cur_item", slot_item_has_ironsight, "spr_is_molvat_bolt_action_rifle"),    
-    (else_try),
-    
+        (this_or_next|eq, ":cur_item", "itm_berchav_bolt_action_rifle_bayonet"),
         (eq, ":cur_item", "itm_berchav_bolt_action_rifle"),
         (assign, ":ready_animation", "anim_rifle_bolt_ready"),
         (assign, ":fire_animation", "anim_rifle_bolt_fire"),
@@ -7863,15 +7790,6 @@ module_warzone_scripts = [
         (assign, ":reload_animation", "anim_garand_reload"),                   
         (item_set_slot, ":cur_item", slot_item_has_ironsight, "spr_is_molvat_bolt_action_rifle"),    
     (else_try),
-    
-        (eq, ":cur_item", "itm_berchav_bolt_action_rifle_bayonet"),
-        (assign, ":ready_animation", "anim_rifle_bolt_ready"),
-        (assign, ":fire_animation", "anim_rifle_bolt_fire"),
-        (assign, ":aim_loop_animation", "anim_rifle_bolt_aim"),
-        (assign, ":reload_animation", "anim_garand_reload"),                   
-        (item_set_slot, ":cur_item", slot_item_has_ironsight, "spr_is_molvat_bolt_action_rifle"),    
-    (else_try),
-    
         (eq, ":cur_item", "itm_molvat_semi_rifle"),
         (assign, ":ready_animation", "anim_rifle_bolt_ready"),
         (assign, ":fire_animation", "anim_rifle_bolt_fire"),
@@ -7881,6 +7799,8 @@ module_warzone_scripts = [
     (else_try),
     
 ##Vitzland Territories
+        (this_or_next|eq, ":cur_item", "itm_vitzland_bolt_action_carbine"),
+        (this_or_next|eq, ":cur_item", "itm_vitzland_bolt_action_rifle_bayonet"),
         (eq, ":cur_item", "itm_vitzland_bolt_action_rifle"),
         (assign, ":ready_animation", "anim_rifle_bolt_ready"),
         (assign, ":fire_animation", "anim_rifle_bolt_fire"),
@@ -7888,24 +7808,10 @@ module_warzone_scripts = [
         (assign, ":reload_animation", "anim_garand_reload"),                   
         (item_set_slot, ":cur_item", slot_item_has_ironsight, "spr_is_vitzland_bolt_action_rifle"),    
     (else_try),
-    
-        (eq, ":cur_item", "itm_vitzland_bolt_action_rifle_bayonet"),
-        (assign, ":ready_animation", "anim_rifle_bolt_ready"),
-        (assign, ":fire_animation", "anim_rifle_bolt_fire"),
-        (assign, ":aim_loop_animation", "anim_rifle_bolt_aim"),
-        (assign, ":reload_animation", "anim_garand_reload"),                   
-        (item_set_slot, ":cur_item", slot_item_has_ironsight, "spr_is_vitzland_bolt_action_rifle"),    
-    (else_try),
-    
-        (eq, ":cur_item", "itm_vitzland_bolt_action_carbine"),
-        (assign, ":ready_animation", "anim_rifle_bolt_ready"),
-        (assign, ":fire_animation", "anim_rifle_bolt_fire"),
-        (assign, ":aim_loop_animation", "anim_rifle_bolt_aim"),
-        (assign, ":reload_animation", "anim_garand_reload"),                   
-        (item_set_slot, ":cur_item", slot_item_has_ironsight, "spr_is_vitzland_bolt_action_rifle"),    
-    (else_try),
-    
+
 ##Trezzo Republic
+        (this_or_next|eq, ":cur_item", "itm_trezzo_bolt_action_carbine"),
+        (this_or_next|eq, ":cur_item", "itm_trezzo_bolt_action_rifle_bayonet"),
         (eq, ":cur_item", "itm_trezzo_bolt_action_rifle"),
         (assign, ":ready_animation", "anim_rifle_bolt_ready"),
         (assign, ":fire_animation", "anim_rifle_bolt_fire"),
@@ -7914,135 +7820,60 @@ module_warzone_scripts = [
         (item_set_slot, ":cur_item", slot_item_has_ironsight, "spr_is_trezzo_bolt_action_rifle"),    
     (else_try),
     
-        (eq, ":cur_item", "itm_trezzo_bolt_action_rifle_bayonet"),
-        (assign, ":ready_animation", "anim_rifle_bolt_ready"),
-        (assign, ":fire_animation", "anim_rifle_bolt_fire"),
-        (assign, ":aim_loop_animation", "anim_rifle_bolt_aim"),
-        (assign, ":reload_animation", "anim_garand_reload"),                   
-        (item_set_slot, ":cur_item", slot_item_has_ironsight, "spr_is_trezzo_bolt_action_rifle"),    
-    (else_try),
-    
-        (eq, ":cur_item", "itm_trezzo_bolt_action_carbine"),
-        (assign, ":ready_animation", "anim_rifle_bolt_ready"),
-        (assign, ":fire_animation", "anim_rifle_bolt_fire"),
-        (assign, ":aim_loop_animation", "anim_rifle_bolt_aim"),
-        (assign, ":reload_animation", "anim_garand_reload"),                   
-        (item_set_slot, ":cur_item", slot_item_has_ironsight, "spr_is_trezzo_bolt_action_rifle"),    
-    (else_try),
 ##irregular
-        (eq, ":cur_item", "itm_irregular_bolt_action_rifle"),
+        (this_or_next|eq, ":cur_item", "itm_renegade_bolt_action_carbine"),
+        (this_or_next|eq, ":cur_item", "itm_renegade_bolt_action_rifle_bayonet"),
+        (eq, ":cur_item", "itm_renegade_bolt_action_rifle"),
         (assign, ":ready_animation", "anim_rifle_bolt_ready"),
         (assign, ":fire_animation", "anim_rifle_bolt_fire"),
         (assign, ":aim_loop_animation", "anim_rifle_bolt_aim"),
         (assign, ":reload_animation", "anim_garand_reload"),                   
-        (item_set_slot, ":cur_item", slot_item_has_ironsight, "spr_is_irregular_bolt_action_rifle"),    
-    (else_try),
-    
-        (eq, ":cur_item", "itm_irregular_bolt_action_rifle_bayonet"),
-        (assign, ":ready_animation", "anim_rifle_bolt_ready"),
-        (assign, ":fire_animation", "anim_rifle_bolt_fire"),
-        (assign, ":aim_loop_animation", "anim_rifle_bolt_aim"),
-        (assign, ":reload_animation", "anim_garand_reload"),                   
-        (item_set_slot, ":cur_item", slot_item_has_ironsight, "spr_is_irregular_bolt_action_rifle"),    
-    (else_try),
-
-        (eq, ":cur_item", "itm_irregular_bolt_action_carbine"),
-        (assign, ":ready_animation", "anim_rifle_bolt_ready"),
-        (assign, ":fire_animation", "anim_rifle_bolt_fire"),
-        (assign, ":aim_loop_animation", "anim_rifle_bolt_aim"),
-        (assign, ":reload_animation", "anim_garand_reload"),                   
-        (item_set_slot, ":cur_item", slot_item_has_ironsight, "spr_is_irregular_bolt_action_rifle"),    
+        (item_set_slot, ":cur_item", slot_item_has_ironsight, "spr_is_renegade_bolt_action_rifle"),    
     (else_try),
 
 ##Other
+        (this_or_next|eq, ":cur_item", "itm_common_bolt_action_rifle_bayonet"),
         (eq, ":cur_item", "itm_common_bolt_action_rifle"),
         (assign, ":ready_animation", "anim_rifle_bolt_ready"),
         (assign, ":fire_animation", "anim_rifle_bolt_fire"),
         (assign, ":aim_loop_animation", "anim_rifle_bolt_aim"),
         (assign, ":reload_animation", "anim_garand_reload"),                   
         (item_set_slot, ":cur_item", slot_item_has_ironsight, "spr_is_rifle_arisaka"),    
+
     (else_try),
-    
-        (eq, ":cur_item", "itm_common_bolt_action_rifle_bayonet"),
-        (assign, ":ready_animation", "anim_rifle_bolt_ready"),
-        (assign, ":fire_animation", "anim_rifle_bolt_fire"),
-        (assign, ":aim_loop_animation", "anim_rifle_bolt_aim"),
-        (assign, ":reload_animation", "anim_garand_reload"),                   
-        (item_set_slot, ":cur_item", slot_item_has_ironsight, "spr_is_rifle_arisaka"),    
-    (else_try),
-    
+        (this_or_next|eq, ":cur_item", "itm_common_bolt_action_carbine_1"),
+        (this_or_next|eq, ":cur_item", "itm_common_bolt_action_rifle_bayonet_1"),
         (eq, ":cur_item", "itm_common_bolt_action_rifle_1"),
         (assign, ":ready_animation", "anim_rifle_bolt_ready"),
         (assign, ":fire_animation", "anim_rifle_bolt_fire"),
         (assign, ":aim_loop_animation", "anim_rifle_bolt_aim"),
         (assign, ":reload_animation", "anim_garand_reload"),                   
-        (item_set_slot, ":cur_item", slot_item_has_ironsight, "spr_is_common_bolt_action_rifle_1"),    
+        (item_set_slot, ":cur_item", slot_item_has_ironsight, "spr_is_common_bolt_action_rifle_1"),
+        
     (else_try),
-    
-        (eq, ":cur_item", "itm_common_bolt_action_rifle_bayonet_1"),
-        (assign, ":ready_animation", "anim_rifle_bolt_ready"),
-        (assign, ":fire_animation", "anim_rifle_bolt_fire"),
-        (assign, ":aim_loop_animation", "anim_rifle_bolt_aim"),
-        (assign, ":reload_animation", "anim_garand_reload"),                   
-        (item_set_slot, ":cur_item", slot_item_has_ironsight, "spr_is_common_bolt_action_rifle_1"),    
-    (else_try),
-    
-        (eq, ":cur_item", "itm_common_bolt_action_carbine_1"),
-        (assign, ":ready_animation", "anim_rifle_bolt_ready"),
-        (assign, ":fire_animation", "anim_rifle_bolt_fire"),
-        (assign, ":aim_loop_animation", "anim_rifle_bolt_aim"),
-        (assign, ":reload_animation", "anim_garand_reload"),                   
-        (item_set_slot, ":cur_item", slot_item_has_ironsight, "spr_is_common_bolt_action_rifle_1"),    
-    (else_try),
-      
+        (this_or_next|eq, ":cur_item", "itm_common_bolt_action_carbine_2"),
+        (this_or_next|eq, ":cur_item", "itm_common_bolt_action_rifle_bayonet_2"),
         (eq, ":cur_item", "itm_common_bolt_action_rifle_2"),
         (assign, ":ready_animation", "anim_rifle_bolt_ready"),
         (assign, ":fire_animation", "anim_rifle_bolt_fire"),
         (assign, ":aim_loop_animation", "anim_rifle_bolt_aim"),
         (assign, ":reload_animation", "anim_garand_reload"),                   
-        (item_set_slot, ":cur_item", slot_item_has_ironsight, "spr_is_rifle_arisaka"),         
+        (item_set_slot, ":cur_item", slot_item_has_ironsight, "spr_is_rifle_arisaka"),
+        
     (else_try),
-       
-        (eq, ":cur_item", "itm_common_bolt_action_rifle_bayonet_2"),
+        (this_or_next|eq, ":cur_item", "itm_common_bolt_action_carbine_3"),
+        (this_or_next|eq, ":cur_item", "itm_common_bolt_action_rifle_bayonet_3"),
+        (eq, ":cur_item", "itm_common_bolt_action_rifle_3"),
         (assign, ":ready_animation", "anim_rifle_bolt_ready"),
         (assign, ":fire_animation", "anim_rifle_bolt_fire"),
         (assign, ":aim_loop_animation", "anim_rifle_bolt_aim"),
         (assign, ":reload_animation", "anim_garand_reload"),                   
         (item_set_slot, ":cur_item", slot_item_has_ironsight, "spr_is_rifle_arisaka"),         
     (else_try),
-    
-        (eq, ":cur_item", "itm_common_bolt_action_carbine_2"),
-        (assign, ":ready_animation", "anim_rifle_bolt_ready"),
-        (assign, ":fire_animation", "anim_rifle_bolt_fire"),
-        (assign, ":aim_loop_animation", "anim_rifle_bolt_aim"),
-        (assign, ":reload_animation", "anim_garand_reload"),                   
-        (item_set_slot, ":cur_item", slot_item_has_ironsight, "spr_is_rifle_arisaka"),    
-    (else_try),
-    
-    (eq, ":cur_item", "itm_common_bolt_action_rifle_3"),
-        (assign, ":ready_animation", "anim_rifle_bolt_ready"),
-        (assign, ":fire_animation", "anim_rifle_bolt_fire"),
-        (assign, ":aim_loop_animation", "anim_rifle_bolt_aim"),
-        (assign, ":reload_animation", "anim_garand_reload"),                   
-        (item_set_slot, ":cur_item", slot_item_has_ironsight, "spr_is_rifle_arisaka"),         
-    (else_try),
-       
-        (eq, ":cur_item", "itm_common_bolt_action_rifle_bayonet_3"),
-        (assign, ":ready_animation", "anim_rifle_bolt_ready"),
-        (assign, ":fire_animation", "anim_rifle_bolt_fire"),
-        (assign, ":aim_loop_animation", "anim_rifle_bolt_aim"),
-        (assign, ":reload_animation", "anim_garand_reload"),                   
-        (item_set_slot, ":cur_item", slot_item_has_ironsight, "spr_is_rifle_arisaka"),         
-    (else_try),
-    
-        (eq, ":cur_item", "itm_common_bolt_action_carbine_3"),
-        (assign, ":ready_animation", "anim_rifle_bolt_ready"),
-        (assign, ":fire_animation", "anim_rifle_bolt_fire"),
-        (assign, ":aim_loop_animation", "anim_rifle_bolt_aim"),
-        (assign, ":reload_animation", "anim_garand_reload"),                   
-        (item_set_slot, ":cur_item", slot_item_has_ironsight, "spr_is_rifle_arisaka"),    
-    (else_try),
-#singleshot
+
+### singleshot ###
+        (this_or_next|eq, ":cur_item", "itm_common_bolt_action_carbine_single"),
+        (this_or_next|eq, ":cur_item", "itm_common_bolt_action_rifle_single_bayonet"),
         (eq, ":cur_item", "itm_common_bolt_action_rifle_single"),
         (assign, ":ready_animation", "anim_rifle_bolt_ready"),
         (assign, ":fire_animation", "anim_rifle_bolt_fire"),
@@ -8051,7 +7882,11 @@ module_warzone_scripts = [
         (item_set_slot, ":cur_item", slot_item_has_ironsight, "spr_is_rifle_arisaka"),       
     (else_try), 
     
-        (eq, ":cur_item", "itm_common_bolt_action_rifle_single_bayonet"),
+### Antitank ###
+        (this_or_next|eq, ":cur_item", "itm_vitzland_antitank_rifle"),
+        (this_or_next|eq, ":cur_item", "itm_union_antitank_rifle"),
+        (eq, ":cur_item", "itm_entenaii_antitank_rifle"),
+        (item_set_slot, ":cur_item", slot_item_ammo_type, ammo_large_caliber),
         (assign, ":ready_animation", "anim_rifle_bolt_ready"),
         (assign, ":fire_animation", "anim_rifle_bolt_fire"),
         (assign, ":aim_loop_animation", "anim_rifle_bolt_aim"),
@@ -8059,13 +7894,7 @@ module_warzone_scripts = [
         (item_set_slot, ":cur_item", slot_item_has_ironsight, "spr_is_rifle_arisaka"),       
     (else_try), 
     
-        (eq, ":cur_item", "itm_common_bolt_action_carbine_single"),
-        (assign, ":ready_animation", "anim_rifle_bolt_ready"),
-        (assign, ":fire_animation", "anim_rifle_bolt_fire"),
-        (assign, ":aim_loop_animation", "anim_rifle_bolt_aim"),
-        (assign, ":reload_animation", "anim_garand_reload"),        
-        (item_set_slot, ":cur_item", slot_item_has_ironsight, "spr_is_rifle_arisaka"),       
-    (else_try), 
+
 ################
         (eq, ":cur_item", "itm_rifle_arisaka_b"),
         (assign, ":ready_animation", "anim_rifle_bolt_ready"),
@@ -8104,7 +7933,11 @@ module_warzone_scripts = [
         (assign, ":reload_animation", "anim_garand_reload"),        
         (item_set_slot, ":cur_item", slot_item_has_ironsight, "spr_is_rifle_pa_musket"),       
     (else_try), 
-    
+        (this_or_next|eq, ":cur_item", "itm_horselord_carbine"),
+        (this_or_next|eq, ":cur_item", "itm_rifle_remington_model_700_5"),
+        (this_or_next|eq, ":cur_item", "itm_rifle_remington_model_700_4"),
+        (this_or_next|eq, ":cur_item", "itm_rifle_remington_model_700_3"),
+        (this_or_next|eq, ":cur_item", "itm_rifle_remington_model_700_2"),
         (eq, ":cur_item", "itm_rifle_remington_model_700"),
         (assign, ":ready_animation", "anim_rifle_bolt_ready"),
         (assign, ":fire_animation", "anim_rifle_bolt_fire"),
@@ -8119,12 +7952,12 @@ module_warzone_scripts = [
         (assign, ":aim_loop_animation", "anim_rifle_higher_aim"),        
         (item_set_slot, ":cur_item", slot_item_has_ironsight, "spr_is_rifle_ruger_mini14"),   
     (else_try), 
-    
-        (eq, ":cur_item", "itm_rifle_svt40"),
+        (this_or_next|eq, ":cur_item", "itm_molvat_semi_rifle"),
+        (eq, ":cur_item", "itm_molvat_semi_rifle_2"),
         (assign, ":ready_animation", "anim_rifle_semi_ready"),
         (assign, ":fire_animation", "anim_rifle_semi_fire"),
         (assign, ":aim_loop_animation", "anim_rifle_semi_aim"),
-        (item_set_slot, ":cur_item", slot_item_has_ironsight, "spr_is_rifle_svt40"),         
+        (item_set_slot, ":cur_item", slot_item_has_ironsight, "spr_is_molvat_semi_rifle_2"),         
     (else_try), 
     
         (eq, ":cur_item", "itm_rifle_winchester"),
@@ -8159,18 +7992,47 @@ module_warzone_scripts = [
         (item_set_slot, ":cur_item", slot_item_has_ironsight, "spr_is_rifle_m1_garand_alt"),   
     (else_try), 
     
-### assault rifles
+### assault rifles  ###
         (eq, ":cur_item", "itm_assault_rab"),
         (item_set_slot, ":cur_item", slot_item_has_ironsight, "spr_is_assault_rab"),
     (else_try), 
         
+################
+##Barbed Wire###
+################
+##Entenaii Empire
+        (eq, ":cur_item", "itm_entenaii_assault_rifle"),
+        (item_set_slot, ":cur_item", slot_item_has_ironsight, "spr_is_assault_m42"),
+    (else_try), 
+##Entenaii Dominion
+        (this_or_next|eq, ":cur_item", "itm_dominion_assault_rifle_special"),
+        (eq, ":cur_item", "itm_dominion_assault_rifle"),
+        (item_set_slot, ":cur_item", slot_item_has_ironsight, "spr_is_dominion_assault_rifle"),
+    (else_try), 
+
+##Kingdom of Galvae
+##Molvat-Berchav Union
+        (eq, ":cur_item", "itm_berchav_assault_rifle"),
+        (item_set_slot, ":cur_item", slot_item_has_ironsight, "spr_is_berchav_assault_rifle"),
+    (else_try), 
+ 
+##Vitzland Territories
+        (eq, ":cur_item", "itm_vitzland_assault_rifle"),
+        (item_set_slot, ":cur_item", slot_item_has_ironsight, "spr_is_vitzland_assault_rifle"),
+    (else_try), 
+##Trezzo Republic
+##Itami Castedom
+##Bashide Confederacy
+##Renegades
+##Theocracy of Throd
+##Other
+        
+#     
         (eq, ":cur_item", "itm_assault_m16a2"),
         (item_set_slot, ":cur_item", slot_item_has_ironsight, "spr_is_assault_m16a2"),
     (else_try), 
         
-        (eq, ":cur_item", "itm_assault_m42"),
-        (item_set_slot, ":cur_item", slot_item_has_ironsight, "spr_is_assault_m42"),
-    (else_try), 
+        
         
         (eq, ":cur_item", "itm_assault_m4a1"),
         (item_set_slot, ":cur_item", slot_item_has_ironsight, "spr_is_assault_m4a1"),
@@ -8180,7 +8042,8 @@ module_warzone_scripts = [
         (item_set_slot, ":cur_item", slot_item_has_ironsight, "spr_is_assault_service_rifle"),
     (else_try), 
     
-### lmgs
+    
+### lmgs    ###
     
 ################
 ##Barbed Wire###
@@ -8195,7 +8058,7 @@ module_warzone_scripts = [
 ##Molvat-Berchav Union
 ##Vitzland Territories
 ##Trezzo Republic
-##Irregular
+##Renegade
 ##Other
         (this_or_next|eq, ":cur_item", "itm_shadow_lmg_hip"),
         (eq, ":cur_item", "itm_shadow_lmg"),
@@ -8203,6 +8066,7 @@ module_warzone_scripts = [
     (else_try),
 
 ################
+        (this_or_next|eq, ":cur_item", "itm_lmg_type_99_hip"),
         (eq, ":cur_item", "itm_lmg_type_99"),
         (assign, ":ready_animation", "anim_type99_ready"),
         (assign, ":fire_animation", "anim_type99_fire"),
@@ -8212,12 +8076,7 @@ module_warzone_scripts = [
         (item_set_slot, ":cur_item", slot_item_has_ironsight, "spr_is_lmg_type_99"),
     (else_try), 
 
-        (eq, ":cur_item", "itm_lmg_type_99_hip"),
-        (assign, ":reload_animation", "anim_type99_reload"),            
-        (item_set_slot, ":cur_item", slot_item_has_ironsight, "spr_is_lmg_type_99"),
-    (else_try), 
-
-### pistols
+### pistols     ###
         (eq, ":cur_item", "itm_pistol_1911"),
         (item_set_slot, ":cur_item", slot_item_has_ironsight, "spr_is_pistol_1911"),
     (else_try), 
@@ -8233,14 +8092,15 @@ module_warzone_scripts = [
         (item_set_slot, ":cur_item", slot_item_has_ironsight, "spr_is_pistol_walther_ppk"), 
     (else_try),
 ##Vitzland Territories
-        (eq, ":cur_item", "itm_pistol_c96"),
+        (this_or_next|eq, ":cur_item", "itm_vitzland_pistol_2_w_butt"),
+        (eq, ":cur_item", "itm_vitzland_pistol_2"),
         (item_set_slot, ":cur_item", slot_item_has_ironsight, "spr_is_pistol_c96"),
     (else_try), 
         (eq, ":cur_item", "itm_vitzland_pistol"),
         (item_set_slot, ":cur_item", slot_item_has_ironsight, "spr_is_pistol_c96"),
     (else_try),
 ##Trezzo Republic
-##Irregular
+##Renegade
 ##Other
         (eq, ":cur_item", "itm_pistol_1911_2"),
         (item_set_slot, ":cur_item", slot_item_has_ironsight, "spr_is_pistol_1911_2"),
@@ -8249,7 +8109,7 @@ module_warzone_scripts = [
         (item_set_slot, ":cur_item", slot_item_has_ironsight, "spr_is_pistol_c96"),
     (else_try),
 
-### Revolvers
+### Revolvers   ###
     
         (eq, ":cur_item", "itm_pistol_sw_629_2"),
         (assign, ":reload_animation", "anim_reload_revolver"),
@@ -8285,7 +8145,7 @@ module_warzone_scripts = [
         (assign, ":reload_animation", "anim_reload_revolver"),
         (item_set_slot, ":cur_item", slot_item_has_ironsight, "spr_is_pistol_revolver_1"),
     (else_try),
-##Irregular
+##Renegade
 ##Other
         (eq, ":cur_item", "itm_common_revolver_1"),
         (assign, ":reload_animation", "anim_reload_revolver"),
@@ -8336,7 +8196,72 @@ module_warzone_scripts = [
         (assign, ":reload_animation", "anim_reload_revolver"),
         (item_set_slot, ":cur_item", slot_item_has_ironsight, "spr_is_pistol_revolver_1"),
     (else_try),
-
+    
+    (eq, ":cur_item", "itm_common_revolver_11"),
+        (assign, ":reload_animation", "anim_reload_revolver"),
+        (item_set_slot, ":cur_item", slot_item_has_ironsight, "spr_is_pistol_revolver_1"),
+    (else_try),
+    
+    (eq, ":cur_item", "itm_common_revolver_12"),
+        (assign, ":reload_animation", "anim_reload_revolver"),
+        (item_set_slot, ":cur_item", slot_item_has_ironsight, "spr_is_pistol_revolver_1"),
+    (else_try),
+    
+    (eq, ":cur_item", "itm_common_revolver_13"),
+        (assign, ":reload_animation", "anim_reload_revolver"),
+        (item_set_slot, ":cur_item", slot_item_has_ironsight, "spr_is_pistol_revolver_1"),
+    (else_try),
+    
+    (eq, ":cur_item", "itm_common_revolver_14"),
+        (assign, ":reload_animation", "anim_reload_revolver"),
+        (item_set_slot, ":cur_item", slot_item_has_ironsight, "spr_is_pistol_revolver_1"),
+    (else_try),
+    
+    (eq, ":cur_item", "itm_common_revolver_15"),
+        (assign, ":reload_animation", "anim_reload_revolver"),
+        (item_set_slot, ":cur_item", slot_item_has_ironsight, "spr_is_pistol_revolver_1"),
+    (else_try),
+    
+    (eq, ":cur_item", "itm_common_revolver_16"),
+        (assign, ":reload_animation", "anim_reload_revolver"),
+        (item_set_slot, ":cur_item", slot_item_has_ironsight, "spr_is_pistol_revolver_1"),
+    (else_try),
+    
+    (eq, ":cur_item", "itm_common_revolver_17"),
+        (assign, ":reload_animation", "anim_reload_revolver"),
+        (item_set_slot, ":cur_item", slot_item_has_ironsight, "spr_is_pistol_revolver_1"),
+    (else_try),
+    
+    (eq, ":cur_item", "itm_common_revolver_18"),
+        (assign, ":reload_animation", "anim_reload_revolver"),
+        (item_set_slot, ":cur_item", slot_item_has_ironsight, "spr_is_pistol_revolver_1"),
+    (else_try),
+    
+    (eq, ":cur_item", "itm_common_revolver_19"),
+        (assign, ":reload_animation", "anim_reload_revolver"),
+        (item_set_slot, ":cur_item", slot_item_has_ironsight, "spr_is_pistol_revolver_1"),
+    (else_try),
+    
+    (eq, ":cur_item", "itm_common_revolver_20"),
+        (assign, ":reload_animation", "anim_reload_revolver"),
+        (item_set_slot, ":cur_item", slot_item_has_ironsight, "spr_is_pistol_revolver_1"),
+    (else_try),
+    
+    (eq, ":cur_item", "itm_common_revolver_21"),
+        (assign, ":reload_animation", "anim_reload_revolver"),
+        (item_set_slot, ":cur_item", slot_item_has_ironsight, "spr_is_pistol_revolver_1"),
+    (else_try),
+    
+    (eq, ":cur_item", "itm_common_revolver_22"),
+        (assign, ":reload_animation", "anim_reload_revolver"),
+        (item_set_slot, ":cur_item", slot_item_has_ironsight, "spr_is_pistol_revolver_1"),
+    (else_try),
+    
+    (eq, ":cur_item", "itm_common_revolver_23"),
+        (assign, ":reload_animation", "anim_reload_revolver"),
+        (item_set_slot, ":cur_item", slot_item_has_ironsight, "spr_is_pistol_revolver_1"),
+    (else_try),
+    
         (eq, ":cur_item", "itm_pistol_sw_model_500"),
         (assign, ":reload_animation", "anim_reload_revolver"),
         (item_set_slot, ":cur_item", slot_item_has_ironsight, "spr_is_pistol_sw_500"),
@@ -8357,7 +8282,7 @@ module_warzone_scripts = [
         (item_set_slot, ":cur_item", slot_item_has_ironsight, "spr_is_pistol_revolver_2"),
     (else_try),            
 
-### SMGS    
+### SMGS    ###
 
         (eq, ":cur_item", "itm_smg_mp40"),
         (assign, ":ready_animation", "anim_rifle_ready_grip"),
@@ -8375,6 +8300,7 @@ module_warzone_scripts = [
 ##Entenaii Dominion
 ##Kingdom of Galvae
 ##Molvat-Berchav Union
+        (this_or_next|eq, ":cur_item", "itm_molvat_smg_2"),
         (eq, ":cur_item", "itm_molvat_smg"),
         (item_set_slot, ":cur_item", slot_item_has_ironsight, "spr_is_smg_m31"),    
     (else_try),
@@ -8395,8 +8321,8 @@ module_warzone_scripts = [
         (assign, ":end_animation", "anim_rifle_unready_grip"),        
         (item_set_slot, ":cur_item", slot_item_has_ironsight, "spr_is_smg_mp40"),        
     (else_try),
-##Irregular 
-        (eq, ":cur_item", "itm_irregular_smg"),
+##Renegade 
+        (eq, ":cur_item", "itm_renegade_smg"),
         (assign, ":ready_animation", "anim_rifle_ready_grip"),
         (assign, ":fire_animation", "anim_rifle_fire_grip"),
         (assign, ":aim_loop_animation", "anim_rifle_aim_grip"),
@@ -8404,7 +8330,7 @@ module_warzone_scripts = [
         (assign, ":end_animation", "anim_rifle_unready_grip"),        
         (item_set_slot, ":cur_item", slot_item_has_ironsight, "spr_is_smg_mp40"),        
     (else_try),
-        (eq, ":cur_item", "itm_irregular_smg_2"),
+        (eq, ":cur_item", "itm_renegade_smg_2"),
         (item_set_slot, ":cur_item", slot_item_has_ironsight, "spr_is_smg_m31"),    
     (else_try),  
 ##Other
@@ -8412,7 +8338,7 @@ module_warzone_scripts = [
         (eq, ":cur_item", "itm_smg_m31"),
         (item_set_slot, ":cur_item", slot_item_has_ironsight, "spr_is_smg_m31"),    
     (else_try),   
-
+        (this_or_next|eq, ":cur_item", "itm_smg_sten_silenced"),
         (eq, ":cur_item", "itm_smg_sten"),
         (item_set_slot, ":cur_item", slot_item_has_ironsight, "spr_is_smg_sten"),                 
     (else_try), 
@@ -8426,7 +8352,7 @@ module_warzone_scripts = [
         (item_set_slot, ":cur_item", slot_item_has_ironsight, "spr_is_smg_tommygun"),             
     (else_try), 
      
-### Shotguns    
+### Shotguns    ###
 
         (eq, ":cur_item", "itm_shotgun_old"),
         (assign, ":aim_loop_animation", "anim_shotgun_aim"),
@@ -8472,10 +8398,9 @@ module_warzone_scripts = [
     (else_try),
 ##Trezzo Republic
 
-##Irregular
+##Renegade
 
 ##Other
-
         (eq, ":cur_item", "itm_shotgun_short_old"),
         (assign, ":aim_loop_animation", "anim_shotgun_aim"), 
         (assign, ":fire_animation", "anim_shotgun_fire"), 
@@ -8492,6 +8417,12 @@ module_warzone_scripts = [
         (item_set_slot, ":cur_item", slot_item_has_ironsight, "spr_is_shotgun_handcannon"),                
         (item_set_slot, ":cur_item", slot_item_ammo_type, ammo_shotgun),     
     (else_try),
+    
+    (eq, ":cur_item", "itm_shotgun_benelli_m4"),
+        (assign, ":fire_animation", "anim_rifle_semi_fire"), 
+        (assign, ":reload_animation", "anim_shotgun_reload"),         
+        (item_set_slot, ":cur_item", slot_item_has_ironsight, "spr_is_shotgun_benelli_m4"),         
+    (else_try), 
 ##
     (eq, ":cur_item", "itm_shotgun_riot"),
         (assign, ":aim_loop_animation", "anim_shotgun_aim"),
@@ -8550,6 +8481,8 @@ module_warzone_scripts = [
     (item_set_slot, "itm_mg_heavy_1", slot_item_has_ironsight, -1),
     (item_set_slot, "itm_flamethrower", slot_item_has_ironsight, -1),
     (item_set_slot, "itm_flamethrower_union", slot_item_has_ironsight, -1),
+    (item_set_slot, "itm_flamethrower_bashide", slot_item_has_ironsight, -1),
+    (item_set_slot, "itm_flamethrower_ashmaker", slot_item_has_ironsight, -1),
     
 	#scoped
 	(item_set_slot, "itm_ai_rifle_m14_scoped", slot_item_has_scope, 1),
@@ -8587,6 +8520,9 @@ module_warzone_scripts = [
 		(assign, ":plasma", 0),
 		(assign, ":flameammo", 0),
         (assign, ":flameammo_burst", 0),
+        (assign, ":arty", 0),
+        (assign, ":rocket", 0),
+        (assign, ":nade", 0),
 
     (try_begin),
       (eq,":mode",1),
@@ -8627,6 +8563,15 @@ module_warzone_scripts = [
         (else_try),
           (item_slot_eq,":equipment",slot_item_ammo_type,ammo_plasma),
           (assign, ":plasma", 1),
+        (else_try),
+          (item_slot_eq,":equipment",slot_item_ammo_type,ammo_arty),
+          (assign, ":arty", 1),
+        (else_try),
+          (item_slot_eq,":equipment",slot_item_ammo_type,ammo_rocket),
+          (assign, ":rocket", 1),
+        (else_try),
+          (item_slot_eq,":equipment",slot_item_ammo_type,ammo_grenade),
+          (assign, ":nade", 1),  
         (try_end),
 			(else_try),
         (eq,":mode",1),
@@ -8661,6 +8606,15 @@ module_warzone_scripts = [
         (else_try),
           (item_slot_eq,":equipment",slot_item_ammo_type,ammo_plasma),
           (assign, ":plasma", 1),
+        (else_try),
+          (item_slot_eq,":equipment",slot_item_ammo_type,ammo_arty),
+          (assign, ":arty", 1),
+        (else_try),
+          (item_slot_eq,":equipment",slot_item_ammo_type,ammo_rocket),
+          (assign, ":rocket", 1),
+        (else_try),
+          (item_slot_eq,":equipment",slot_item_ammo_type,ammo_grenade),
+          (assign, ":nade", 1),
         (try_end),
 			(try_end),
 		(try_end),
@@ -8675,6 +8629,7 @@ module_warzone_scripts = [
         (troop_get_inventory_slot_modifier, ":e_mod", "trp_player", ":inv_slot"),
 
         (try_begin),
+          (this_or_next|eq, ":equipment", "itm_pistol_ammo_miasma"),
           (this_or_next|eq, ":equipment", "itm_pistol_ammo_6"),
           (this_or_next|eq, ":equipment", "itm_pistol_ammo_6_pw"),
           (this_or_next|eq, ":equipment", "itm_pistol_ammo_5"),
@@ -8757,6 +8712,21 @@ module_warzone_scripts = [
           (neq, ":plasma", 1),
           # (str_store_string, s10, "@a Plasma gun"),
           (assign, ":unequip", 1),
+        (else_try),
+          (eq, ":equipment", "itm_artillery_ammo"),
+          (neq, ":arty", 1),
+          # (str_store_string, s10, "@an Artillery Piece"),
+          (assign, ":unequip", 1),
+        (else_try),
+          (eq, ":equipment", "itm_rocket_ammo"),
+          (neq, ":rocket", 1),
+          # (str_store_string, s10, "@a Rocket Launcher"),
+          (assign, ":unequip", 1),
+        (else_try),
+          (eq, ":equipment", "itm_grenade_ammo"),
+          (neq, ":nade", 1),
+          # (str_store_string, s10, "@a Grenade Launcher"),
+          (assign, ":unequip", 1),
         (try_end),
       (else_try),
         (eq,":mode",1),
@@ -8767,6 +8737,7 @@ module_warzone_scripts = [
         # (troop_get_inventory_slot_modifier, ":e_mod", "trp_player", ":inv_slot"),
 
         (try_begin),
+          (this_or_next|eq, ":equipment", "itm_pistol_ammo_miasma"),
           (this_or_next|eq, ":equipment", "itm_pistol_ammo_6"),
           (this_or_next|eq, ":equipment", "itm_pistol_ammo_6_pw"),
           (this_or_next|eq, ":equipment", "itm_pistol_ammo_5"),
@@ -8848,6 +8819,21 @@ module_warzone_scripts = [
           (eq, ":equipment", "itm_plasma_ammo"),
           (neq, ":plasma", 1),
           # (str_store_string, s10, "@a Experimental"),
+          (assign, ":unequip", 1),
+        (else_try),
+          (eq, ":equipment", "itm_artillery_ammo"),
+          (neq, ":arty", 1),
+          # (str_store_string, s10, "@an Artillery Piece"),
+          (assign, ":unequip", 1),
+        (else_try),
+          (eq, ":equipment", "itm_rocket_ammo"),
+          (neq, ":rocket", 1),
+          # (str_store_string, s10, "@a Rocket Launcher"),
+          (assign, ":unequip", 1),
+        (else_try),
+          (eq, ":equipment", "itm_grenade_ammo"),
+          (neq, ":nade", 1),
+          # (str_store_string, s10, "@a Grenade Launcher"),
           (assign, ":unequip", 1),
         (try_end),
       (try_end),
@@ -12386,6 +12372,7 @@ module_warzone_scripts = [
 	(faction_get_slot, ":source_faction_tier_4_troop", ":source_faction_culture", slot_faction_tier_4_troop),
 	(faction_get_slot, ":source_faction_tier_5_troop", ":source_faction_culture", slot_faction_tier_5_troop),
     (faction_get_slot, ":source_faction_terror_troop", ":source_faction_culture", slot_faction_terror_troop),
+    (faction_get_slot, ":source_faction_aux_troop", ":source_faction_culture", slot_faction_aux_troop),
 	
 	(faction_set_slot, ":target_faction",  slot_faction_tier_0_troop, ":source_faction_tier_0_troop"),
     (faction_set_slot, ":target_faction",  slot_faction_tier_1_troop, ":source_faction_tier_1_troop"),
@@ -12394,6 +12381,8 @@ module_warzone_scripts = [
 	(faction_set_slot, ":target_faction",  slot_faction_tier_4_troop, ":source_faction_tier_4_troop"),
 	(faction_set_slot, ":target_faction",  slot_faction_tier_5_troop, ":source_faction_tier_5_troop"),
 	(faction_set_slot, ":target_faction",  slot_faction_terror_troop, ":source_faction_terror_troop"),
+    (faction_set_slot, ":target_faction",  slot_faction_aux_troop, ":source_faction_aux_troop"),
+    
 	
 	(faction_get_slot, ":source_faction_town_walker_male_troop", ":source_faction_culture", slot_faction_town_walker_male_troop),
 	(faction_get_slot, ":source_faction_town_walker_female_troop", ":source_faction_culture", slot_faction_town_walker_female_troop),
@@ -12425,6 +12414,7 @@ module_warzone_scripts = [
           (faction_set_slot, ":target_faction",  slot_faction_reinforcements_c, "pt_kingdom_1_reinforcements_c"),
           (faction_set_slot, ":target_faction",  slot_faction_reinforcements_d, "pt_kingdom_1_reinforcements_d"),
           (faction_set_slot, ":target_faction",  slot_faction_reinforcements_e, "pt_kingdom_1_reinforcements_e"),
+          (faction_set_slot, ":target_faction",  slot_faction_reinforcements_f, "pt_kingdom_1_reinforcements_f"),
         (else_try),
           (faction_slot_eq, ":target_faction", slot_faction_culture, "fac_culture_2"),
 
@@ -12438,6 +12428,7 @@ module_warzone_scripts = [
           (faction_set_slot, ":target_faction",  slot_faction_reinforcements_c, "pt_kingdom_2_reinforcements_c"),
           (faction_set_slot, ":target_faction",  slot_faction_reinforcements_d, "pt_kingdom_2_reinforcements_d"),
           (faction_set_slot, ":target_faction",  slot_faction_reinforcements_e, "pt_kingdom_2_reinforcements_e"),
+          (faction_set_slot, ":target_faction",  slot_faction_reinforcements_f, "pt_kingdom_2_reinforcements_f"),
         (else_try),
           (faction_slot_eq, ":target_faction", slot_faction_culture, "fac_culture_3"),
 
@@ -12451,6 +12442,7 @@ module_warzone_scripts = [
           (faction_set_slot, ":target_faction",  slot_faction_reinforcements_c, "pt_kingdom_3_reinforcements_c"),
           (faction_set_slot, ":target_faction",  slot_faction_reinforcements_d, "pt_kingdom_3_reinforcements_d"),
           (faction_set_slot, ":target_faction",  slot_faction_reinforcements_e, "pt_kingdom_3_reinforcements_e"),
+          (faction_set_slot, ":target_faction",  slot_faction_reinforcements_f, "pt_kingdom_3_reinforcements_f"),
         (else_try),
           (faction_slot_eq, ":target_faction", slot_faction_culture, "fac_culture_4"),
 
@@ -12464,6 +12456,7 @@ module_warzone_scripts = [
           (faction_set_slot, ":target_faction",  slot_faction_reinforcements_c, "pt_kingdom_4_reinforcements_c"),
           (faction_set_slot, ":target_faction",  slot_faction_reinforcements_d, "pt_kingdom_4_reinforcements_d"),
           (faction_set_slot, ":target_faction",  slot_faction_reinforcements_e, "pt_kingdom_4_reinforcements_e"),
+          (faction_set_slot, ":target_faction",  slot_faction_reinforcements_f, "pt_kingdom_4_reinforcements_f"),
         (else_try),
           (faction_slot_eq, ":target_faction", slot_faction_culture, "fac_culture_5"),
 
@@ -12477,6 +12470,7 @@ module_warzone_scripts = [
           (faction_set_slot, ":target_faction",  slot_faction_reinforcements_c, "pt_kingdom_5_reinforcements_c"),
           (faction_set_slot, ":target_faction",  slot_faction_reinforcements_d, "pt_kingdom_5_reinforcements_d"),
           (faction_set_slot, ":target_faction",  slot_faction_reinforcements_e, "pt_kingdom_5_reinforcements_e"),
+          (faction_set_slot, ":target_faction",  slot_faction_reinforcements_f, "pt_kingdom_5_reinforcements_f"),
         (else_try),
           (faction_slot_eq, ":target_faction", slot_faction_culture, "fac_culture_6"),
 
@@ -12490,6 +12484,7 @@ module_warzone_scripts = [
           (faction_set_slot, ":target_faction",  slot_faction_reinforcements_c, "pt_kingdom_6_reinforcements_c"),
           (faction_set_slot, ":target_faction",  slot_faction_reinforcements_d, "pt_kingdom_6_reinforcements_d"),
           (faction_set_slot, ":target_faction",  slot_faction_reinforcements_e, "pt_kingdom_6_reinforcements_e"),
+          (faction_set_slot, ":target_faction",  slot_faction_reinforcements_f, "pt_kingdom_6_reinforcements_f"),
         (else_try),
           (faction_slot_eq, ":target_faction", slot_faction_culture, "fac_culture_7"),
 
@@ -12503,6 +12498,7 @@ module_warzone_scripts = [
           (faction_set_slot, ":target_faction",  slot_faction_reinforcements_c, "pt_kingdom_7_reinforcements_c"),
           (faction_set_slot, ":target_faction",  slot_faction_reinforcements_d, "pt_kingdom_7_reinforcements_d"),
           (faction_set_slot, ":target_faction",  slot_faction_reinforcements_e, "pt_kingdom_7_reinforcements_e"),
+          (faction_set_slot, ":target_faction",  slot_faction_reinforcements_f, "pt_kingdom_7_reinforcements_f"),
         (else_try),
           (faction_slot_eq, ":target_faction", slot_faction_culture, "fac_culture_8"),
 
@@ -12516,33 +12512,36 @@ module_warzone_scripts = [
           (faction_set_slot, ":target_faction",  slot_faction_reinforcements_c, "pt_kingdom_8_reinforcements_c"),
           (faction_set_slot, ":target_faction",  slot_faction_reinforcements_d, "pt_kingdom_8_reinforcements_d"),
           (faction_set_slot, ":target_faction",  slot_faction_reinforcements_e, "pt_kingdom_8_reinforcements_e"),
+          (faction_set_slot, ":target_faction",  slot_faction_reinforcements_f, "pt_kingdom_8_reinforcements_f"),
         (else_try),
-          (faction_slot_eq, ":target_faction", slot_faction_culture, "fac_culture_irregulars"),
+          (faction_slot_eq, ":target_faction", slot_faction_culture, "fac_culture_9"),
 
-          # (faction_set_slot, ":target_faction", slot_faction_deserter_troop, "trp_irregulars_deserter"),
-          (faction_set_slot, ":target_faction", slot_faction_guard_troop, "trp_irregular_hall_guard"),
+          # (faction_set_slot, ":target_faction", slot_faction_deserter_troop, "trp_f9_deserter"),
+          (faction_set_slot, ":target_faction", slot_faction_guard_troop, "trp_f9_hall_guard"),
           (faction_set_slot, ":target_faction",  slot_faction_messenger_troop, "trp_courier"),
-          (faction_set_slot, ":target_faction", slot_faction_prison_guard_troop, "trp_irregular_guard"),
-          (faction_set_slot, ":target_faction", slot_faction_castle_guard_troop, "trp_irregular_castle_guard"),
-          (faction_set_slot, ":target_faction",  slot_faction_reinforcements_a, "pt_irregulars_reinforcements_a"),
-          (faction_set_slot, ":target_faction",  slot_faction_reinforcements_b, "pt_irregulars_reinforcements_b"),
-          (faction_set_slot, ":target_faction",  slot_faction_reinforcements_c, "pt_irregulars_reinforcements_c"),
-          (faction_set_slot, ":target_faction",  slot_faction_reinforcements_d, "pt_irregulars_reinforcements_d"),
-          (faction_set_slot, ":target_faction",  slot_faction_reinforcements_e, "pt_irregulars_reinforcements_e"),
+          (faction_set_slot, ":target_faction", slot_faction_prison_guard_troop, "trp_f9_guard"),
+          (faction_set_slot, ":target_faction", slot_faction_castle_guard_troop, "trp_f9_castle_guard"),
+          (faction_set_slot, ":target_faction",  slot_faction_reinforcements_a, "pt_kingdom_9_reinforcements_a"),
+          (faction_set_slot, ":target_faction",  slot_faction_reinforcements_b, "pt_kingdom_9_reinforcements_b"),
+          (faction_set_slot, ":target_faction",  slot_faction_reinforcements_c, "pt_kingdom_9_reinforcements_c"),
+          (faction_set_slot, ":target_faction",  slot_faction_reinforcements_d, "pt_kingdom_9_reinforcements_d"),
+          (faction_set_slot, ":target_faction",  slot_faction_reinforcements_e, "pt_kingdom_9_reinforcements_e"),
+          (faction_set_slot, ":target_faction",  slot_faction_reinforcements_f, "pt_kingdom_9_reinforcements_f"),
           
         (else_try),
-          (faction_slot_eq, ":target_faction", slot_faction_culture, "fac_culture_throd"),
+          (faction_slot_eq, ":target_faction", slot_faction_culture, "fac_culture_10"),
 
-          # (faction_set_slot, ":target_faction", slot_faction_deserter_troop, "trp_irregulars_deserter"),
-          (faction_set_slot, ":target_faction", slot_faction_guard_troop, "trp_throd_hall_guard"),
+          # (faction_set_slot, ":target_faction", slot_faction_deserter_troop, "trp_f10_deserter"),
+          (faction_set_slot, ":target_faction", slot_faction_guard_troop, "trp_f10_hall_guard"),
           (faction_set_slot, ":target_faction",  slot_faction_messenger_troop, "trp_courier"),
-          (faction_set_slot, ":target_faction", slot_faction_prison_guard_troop, "trp_throd_guard"),
-          (faction_set_slot, ":target_faction", slot_faction_castle_guard_troop, "trp_throd_castle_guard"),
-          (faction_set_slot, ":target_faction",  slot_faction_reinforcements_a, "pt_throd_reinforcements_a"),
-          (faction_set_slot, ":target_faction",  slot_faction_reinforcements_b, "pt_throd_reinforcements_b"),
-          (faction_set_slot, ":target_faction",  slot_faction_reinforcements_c, "pt_throd_reinforcements_c"),
-          (faction_set_slot, ":target_faction",  slot_faction_reinforcements_d, "pt_throd_reinforcements_d"),
-          (faction_set_slot, ":target_faction",  slot_faction_reinforcements_e, "pt_throd_reinforcements_e"),
+          (faction_set_slot, ":target_faction", slot_faction_prison_guard_troop, "trp_f10_guard"),
+          (faction_set_slot, ":target_faction", slot_faction_castle_guard_troop, "trp_f10_castle_guard"),
+          (faction_set_slot, ":target_faction",  slot_faction_reinforcements_a, "pt_kingdom_10_reinforcements_a"),
+          (faction_set_slot, ":target_faction",  slot_faction_reinforcements_b, "pt_kingdom_10_reinforcements_b"),
+          (faction_set_slot, ":target_faction",  slot_faction_reinforcements_c, "pt_kingdom_10_reinforcements_c"),
+          (faction_set_slot, ":target_faction",  slot_faction_reinforcements_d, "pt_kingdom_10_reinforcements_d"),
+          (faction_set_slot, ":target_faction",  slot_faction_reinforcements_e, "pt_kingdom_10_reinforcements_e"),
+          (faction_set_slot, ":target_faction",  slot_faction_reinforcements_f, "pt_kingdom_10_reinforcements_f"),
     (try_end),
 	
 	

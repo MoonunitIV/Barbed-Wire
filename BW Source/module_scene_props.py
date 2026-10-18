@@ -5867,7 +5867,7 @@ scene_props = [
 ("lightbulb_night",0,"lightbulb_1_off","0",  []),
 ("lightbulb_off",0,"lightbulb_1_off","0", []),
 
-#ironsights
+#### Ironsights ####
 ("is_rifle_pa_bolt-action",0,"is_rifle_pa_bolt-action","0",[]),
 ("is_rifle_arisaka",0,"is_rifle_arisaka","0",[]),
 ("is_rifle_lever_action",0,"is_rifle_lever_action","0",[]),
@@ -5877,7 +5877,7 @@ scene_props = [
 ("is_rifle_plasma",0,"is_rifle_plasma","0",[]),
 ("is_rifle_remington_model_700",0,"is_rifle_remington_model_700","0",[]),
 ("is_rifle_ruger_mini14",0,"is_rifle_ruger_mini14","0",[]),
-("is_rifle_svt40",0,"is_rifle_svt40","0",[]),
+("is_molvat_semi_rifle_2",0,"is_rifle_svt40","0",[]),
 ("is_rifle_winchester",0,"is_rifle_winchester","0",[]),
 ("is_rifle_m1_garand",0,"is_rifle_m1_garand","0",[]),
 ("is_rifle_m1_garand_alt",0,"is_rifle_m1_garand_alt","0",[]),
@@ -5958,6 +5958,7 @@ scene_props = [
 
 ("is_default_red_dot",0,"is_default_red_dot","0",[]),
 
+#### ####
 ("prop_cerveza_cristal",0,"cerveza","0",[]),
 
 ("container_box_a",sokf_type_container,"a_crate","bo_a_crate", []),

@@ -56,15 +56,15 @@ party_templates = [
   ("scavenge_template","Deserters",icon_axeman|carries_goods(3),0,fac_outlaws,bandit_personality,[]),  
   ("church_extremists","Cultists of Throd",icon_axeman|carries_goods(2),0,fac_outlaws,bandit_personality,[(trp_zealot,1,5)]),
 
-  ("steppe_bandits","Peasant Rebels",icon_peasant|carries_goods(2),0,fac_outlaws,bandit_personality,[(trp_farmer,10,50),(trp_peasant_woman,10,50)]),
-  ("taiga_bandits","Nomads",icon_peasant|carries_goods(2),0,fac_outlaws,bandit_personality,[(trp_farmer,10,50),(trp_peasant_woman,10,50)]),
-  ("desert_bandits","Hostile Settlers",icon_peasant|carries_goods(2),0,fac_outlaws,bandit_personality,[(trp_traveler,10,50),(trp_traveler_w,10,50)]),
+  ("steppe_bandits","Peasant Rebels",icon_peasant|carries_goods(2),0,fac_outlaws,bandit_personality,[(trp_farmer,5,10),(trp_peasant_woman,5,10)]),
+  ("taiga_bandits","Nomads",icon_peasant|carries_goods(2),0,fac_outlaws,bandit_personality,[(trp_farmer,5,10),(trp_peasant_woman,5,10)]),
+  ("desert_bandits","Hostile Settlers",icon_peasant|carries_goods(2),0,fac_outlaws,bandit_personality,[(trp_traveler,5,10),(trp_traveler_w,5,10)]),
   
-  ("forest_bandits","Revolutionaries",icon_axeman|carries_goods(2),0,fac_forest_bandits,bandit_personality,[(trp_blades_warrior,4,200)]),
-  ("mountain_bandits","Tattoo Gang",icon_axeman|carries_goods(2),0,fac_mountain_bandits,bandit_personality,[(trp_the_suits,4,90)]),
-  ("sea_raiders","White Scarves",icon_axeman|carries_goods(2),0,fac_mountain_bandits,bandit_personality,[(trp_sea_raider,5,100)]),
+  ("forest_bandits","Ghoulman_Gang",icon_axeman|carries_goods(2),0,fac_forest_bandits,bandit_personality,[(trp_blades_warrior,10,100)]),
+  ("mountain_bandits","Tattoo Gang",icon_axeman|carries_goods(2),0,fac_mountain_bandits,bandit_personality,[(trp_the_suits,10,100)]),
+  ("sea_raiders","White Skulls Gang",icon_axeman|carries_goods(2),0,fac_mountain_bandits,bandit_personality,[(trp_sea_raider,10,100)]),
   
-  ("cannibals","Cannibals",icon_axeman|carries_goods(2),0,fac_outlaws,bandit_personality,[(trp_cannibal,5,50)]),
+  ("cannibals","Cannibals",icon_axeman|carries_goods(2),0,fac_outlaws,bandit_personality,[(trp_cannibal,10,100),(trp_cannibal_cruel,5,50),(trp_cannibal_harvester,3,25),(trp_cannibal_butcher,1,10),(trp_cannibal_legend,0,1)]),
 
   ("deserters","Deserters",icon_vaegir_knight|carries_goods(3),0,fac_deserters,bandit_personality,[]),  
 #infected
@@ -84,7 +84,7 @@ party_templates = [
   
   ("ghouls_army", "Ghouls", icon_axeman|carries_goods(2), 0, fac_mutants, bandit_personality, [(trp_ghoul, 250, 1000)]),
   
-  ("throd_army", "Throd Invasion Force", icon_axeman|carries_goods(2), 0, fac_theocracy, bandit_personality, [(trp_cultist, 350,750),(trp_fanatic, 150,500),(trp_zealot, 25,75)]),
+  ("throd_army", "Throd Invasion Force", icon_axeman|carries_goods(2), 0, fac_kingdom_10, bandit_personality, [(trp_cultist, 350,750),(trp_fanatic, 150,500),(trp_zealot, 25,75)]),
 
 #factions
   # ("faction_scouts","Raiders",icon_gray_knight|carries_goods(16)|pf_quest_party,0,fac_commoners,bandit_personality,[]),
@@ -97,8 +97,10 @@ party_templates = [
   ("bandits_awaiting_ransom","Bandits Awaiting Ransom",icon_axeman|carries_goods(9)|pf_auto_remove_in_town|pf_quest_party,0,fac_neutral,bandit_personality,[(trp_bandit,24,58),(trp_kidnapped_girl,1,1,pmf_is_prisoner)]),
   ("kidnapped_girl","Kidnapped Girl",icon_woman|pf_quest_party,0,fac_neutral,merchant_personality,[(trp_kidnapped_girl,1,1)]),
 
-  ("village_farmers","Travellers",icon_peasant|pf_civilian,0,fac_innocents,merchant_personality,[(trp_farmer,5,10),(trp_peasant_woman,3,8)]),
+  ("village_farmers","Peasants",icon_peasant|pf_civilian,0,fac_innocents,merchant_personality,[(trp_farmer,5,10),(trp_peasant_woman,3,8)]),
   ("refugees","Refugees",icon_peasant|pf_civilian,0,fac_commoners,merchant_personality,[(trp_farmer,10,20),(trp_peasant_woman,6,16)]),
+  
+  ("travellers","Travellers",icon_peasant|pf_civilian,0,fac_innocents,merchant_personality,[(trp_traveler,5,10),(trp_traveler_w,3,8)]),
 
   ("spy_partners", "Unremarkable Travellers", icon_player|carries_goods(10)|pf_default_behavior|pf_quest_party,0,fac_neutral,merchant_personality,[(trp_spy_partner,1,1),(trp_caravan_guard,5,11)]),
   ("runaway_serfs","Runaway Serfs",icon_peasant|carries_goods(8)|pf_default_behavior|pf_quest_party,0,fac_neutral,merchant_personality,[(trp_farmer,6,7), (trp_peasant_woman,3,3)]),
@@ -122,81 +124,86 @@ party_templates = [
   ("kingdom_hero_party","War Party",icon_flagbearer_a|pf_show_faction|pf_default_behavior,0,fac_commoners,soldier_personality,[]),
   
 # Reinforcements
-  # each faction includes three party templates. One is less-modernised, one is med-modernised and one is high-modernised
-  # less-modernised templates are generally includes 7-14 troops in total, 
-  # med-modernised templates are generally includes 5-10 troops in total, 
-  # high-modernised templates are generally includes 3-5 troops in total
 
-  ("kingdom_1_reinforcements_a", "{!}kingdom_1_reinforcements_a", 0, 0, fac_commoners, 0, [(trp_f1_tier_0,20,50)]),
-  ("kingdom_1_reinforcements_b", "{!}kingdom_1_reinforcements_b", 0, 0, fac_commoners, 0, [(trp_f1_tier_0,20,50),(trp_f1_tier_1,2,5),(trp_f1_tier_2,1,3)]),
-  ("kingdom_1_reinforcements_c", "{!}kingdom_1_reinforcements_c", 0, 0, fac_commoners, 0, [(trp_f1_tier_0,20,50),(trp_f1_tier_3,2,5),(trp_f1_tier_4,2,4),(trp_f1_tier_4_cavalry,1,2)]),
-  ("kingdom_1_reinforcements_d", "{!}kingdom_1_reinforcements_d", 0, 0, fac_commoners, 0, [(trp_f1_tier_0,20,50),(trp_f1_tier_5,1,2),(trp_f1_tier_5_infantry,1,2),(trp_f1_tier_5_cavalry,1,2),(trp_f1_tier_6_sniper,1,2)]),
-  ("kingdom_1_reinforcements_e", "{!}kingdom_1_reinforcements_e", 0, 0, fac_commoners, 0, [(trp_f1_tier_0,20,50),(trp_f1_terror,1,2)]),
+  ("kingdom_1_reinforcements_a", "{!}kingdom_1_reinforcements_a", 0, 0, fac_commoners, 0, [(trp_f1_levy,15,40)]),
+  ("kingdom_1_reinforcements_b", "{!}kingdom_1_reinforcements_b", 0, 0, fac_commoners, 0, [(trp_f1_levy,15,40),(trp_f1_tier_1,2,5),(trp_f1_tier_2,1,3)]),
+  ("kingdom_1_reinforcements_c", "{!}kingdom_1_reinforcements_c", 0, 0, fac_commoners, 0, [(trp_f1_levy,15,40),(trp_f1_tier_3,2,5),(trp_f1_tier_4,2,4),(trp_f1_tier_4_cavalry,1,2)]),
+  ("kingdom_1_reinforcements_d", "{!}kingdom_1_reinforcements_d", 0, 0, fac_commoners, 0, [(trp_f1_levy,15,40),(trp_f1_tier_5,1,2),(trp_f1_flamer,1,2),(trp_f1_tier_5_cavalry,1,2),(trp_f1_tier_6,1,2)]),
+  ("kingdom_1_reinforcements_e", "{!}kingdom_1_reinforcements_e", 0, 0, fac_commoners, 0, [(trp_f1_levy,15,40),(trp_f1_terror,1,2)]),
+  ("kingdom_1_reinforcements_f", "{!}kingdom_1_reinforcements_f", 0, 0, fac_commoners, 0, [(trp_f1_aux_1,5,10),(trp_f1_aux_2,3,8),(trp_f1_aux_3,1,2)]),
 
-  ("kingdom_2_reinforcements_a", "{!}kingdom_2_reinforcements_a", 0, 0, fac_commoners, 0, [(trp_f2_tier_0,20,50)]),
-  ("kingdom_2_reinforcements_b", "{!}kingdom_2_reinforcements_b", 0, 0, fac_commoners, 0, [(trp_f2_tier_0,20,50),(trp_f2_tier_1,2,5),(trp_f2_tier_2,1,3)]),
-  ("kingdom_2_reinforcements_c", "{!}kingdom_2_reinforcements_c", 0, 0, fac_commoners, 0, [(trp_f2_tier_0,20,50),(trp_f2_tier_3,2,5),(trp_f2_tier_4,2,4),(trp_f2_fanatic,2,4)]),
-  ("kingdom_2_reinforcements_d", "{!}kingdom_2_reinforcements_d", 0, 0, fac_commoners, 0, [(trp_f2_tier_0,20,50),(trp_f2_tier_5,1,2),(trp_f2_rider,1,2),(trp_f2_flamer,1,2)]),
-  ("kingdom_2_reinforcements_e", "{!}kingdom_2_reinforcements_e", 0, 0, fac_commoners, 0, [(trp_f2_tier_0,20,50),(trp_f2_terror,1,2)]),
+  ("kingdom_2_reinforcements_a", "{!}kingdom_2_reinforcements_a", 0, 0, fac_commoners, 0, [(trp_f2_levy,15,40)]),
+  ("kingdom_2_reinforcements_b", "{!}kingdom_2_reinforcements_b", 0, 0, fac_commoners, 0, [(trp_f2_levy,15,40),(trp_f2_tier_1,2,5),(trp_f2_tier_2,1,3)]),
+  ("kingdom_2_reinforcements_c", "{!}kingdom_2_reinforcements_c", 0, 0, fac_commoners, 0, [(trp_f2_levy,15,40),(trp_f2_tier_3,2,5),(trp_f2_tier_4,2,4),(trp_f2_tier_5,2,4)]),
+  ("kingdom_2_reinforcements_d", "{!}kingdom_2_reinforcements_d", 0, 0, fac_commoners, 0, [(trp_f2_levy,15,40),(trp_f2_tier_5,1,2),(trp_f2_rider,1,2),(trp_f2_tier_6,1,2)]),
+  ("kingdom_2_reinforcements_e", "{!}kingdom_2_reinforcements_e", 0, 0, fac_commoners, 0, [(trp_f2_levy,15,40),(trp_f2_terror,1,2)]),
+  ("kingdom_2_reinforcements_f", "{!}kingdom_2_reinforcements_f", 0, 0, fac_commoners, 0, [(trp_f2_aux_1,5,10),(trp_f2_aux_2,3,8),(trp_f2_aux_3,1,2)]),
 
-  ("kingdom_3_reinforcements_a", "{!}kingdom_3_reinforcements_a", 0, 0, fac_commoners, 0, [(trp_f3_tier_0,20,50)]),
-  ("kingdom_3_reinforcements_b", "{!}kingdom_3_reinforcements_b", 0, 0, fac_commoners, 0, [(trp_f3_tier_0,20,50),(trp_f3_tier_1,2,5),(trp_f3_tier_2,1,3)]),
-  ("kingdom_3_reinforcements_c", "{!}kingdom_3_reinforcements_c", 0, 0, fac_commoners, 0, [(trp_f3_tier_0,20,50),(trp_f3_tier_3,2,5),(trp_f3_tier_4,2,4),(trp_f3_infantry,2,4),(trp_f3_rider,1,3)]),
-  ("kingdom_3_reinforcements_d", "{!}kingdom_3_reinforcements_d", 0, 0, fac_commoners, 0, [(trp_f3_tier_0,20,50),(trp_f3_tier_5,1,2),(trp_f3_vet_rider,1,2)]),
-  ("kingdom_3_reinforcements_e", "{!}kingdom_3_reinforcements_e", 0, 0, fac_commoners, 0, [(trp_f3_tier_0,20,50),(trp_f3_terror,1,2)]),
+  ("kingdom_3_reinforcements_a", "{!}kingdom_3_reinforcements_a", 0, 0, fac_commoners, 0, [(trp_f3_levy,15,40)]),
+  ("kingdom_3_reinforcements_b", "{!}kingdom_3_reinforcements_b", 0, 0, fac_commoners, 0, [(trp_f3_levy,15,40),(trp_f3_tier_1,2,5),(trp_f3_tier_2,1,3)]),
+  ("kingdom_3_reinforcements_c", "{!}kingdom_3_reinforcements_c", 0, 0, fac_commoners, 0, [(trp_f3_levy,15,40),(trp_f3_tier_3,2,5),(trp_f3_tier_4,2,4),(trp_f3_infantry,2,4),(trp_f3_rider,1,3)]),
+  ("kingdom_3_reinforcements_d", "{!}kingdom_3_reinforcements_d", 0, 0, fac_commoners, 0, [(trp_f3_levy,15,40),(trp_f3_tier_5,1,2),(trp_f3_vet_rider,1,2)]),
+  ("kingdom_3_reinforcements_e", "{!}kingdom_3_reinforcements_e", 0, 0, fac_commoners, 0, [(trp_f3_levy,15,40),(trp_f3_terror,1,2)]),
+  ("kingdom_3_reinforcements_f", "{!}kingdom_3_reinforcements_f", 0, 0, fac_commoners, 0, [(trp_f3_aux_1,5,10),(trp_f3_aux_2,3,8),(trp_f3_aux_3,1,2)]),
+
+  ("kingdom_4_reinforcements_a", "{!}kingdom_4_reinforcements_a", 0, 0, fac_commoners, 0, [(trp_f4_levy,15,40)]),
+  ("kingdom_4_reinforcements_b", "{!}kingdom_4_reinforcements_b", 0, 0, fac_commoners, 0, [(trp_f4_levy,15,40),(trp_f4_tier_1,2,5),(trp_f4_tier_2,1,3)]),
+  ("kingdom_4_reinforcements_c", "{!}kingdom_4_reinforcements_c", 0, 0, fac_commoners, 0, [(trp_f4_levy,15,40),(trp_f4_tier_3,2,5),(trp_f4_tier_3b,2,5),(trp_f4_tier_4,2,4),(trp_f4_tier_4_cavalry,2,4)]),
+  ("kingdom_4_reinforcements_d", "{!}kingdom_4_reinforcements_d", 0, 0, fac_commoners, 0, [(trp_f4_levy,15,40),(trp_f4_tier_5,1,2),(trp_f4_tier_5_cavalry,1,2),(trp_f4_gunner_cavalry,1,2),(trp_f4_flamer,1,2),(trp_f4_gunner,1,2)]),
+  ("kingdom_4_reinforcements_e", "{!}kingdom_4_reinforcements_e", 0, 0, fac_commoners, 0, [(trp_f4_levy,15,40),(trp_f4_terror,1,2)]),
+  ("kingdom_4_reinforcements_f", "{!}kingdom_4_reinforcements_f", 0, 0, fac_commoners, 0, [(trp_f4_aux_1,5,10),(trp_f4_aux_2,3,8),(trp_f4_aux_3,1,2)]),
+
+  ("kingdom_5_reinforcements_a", "{!}kingdom_5_reinforcements_a", 0, 0, fac_commoners, 0, [(trp_f5_levy,15,40)]),
+  ("kingdom_5_reinforcements_b", "{!}kingdom_5_reinforcements_b", 0, 0, fac_commoners, 0, [(trp_f5_levy,15,40),(trp_f5_tier_1,2,5),(trp_f5_tier_2,1,3)]),
+  ("kingdom_5_reinforcements_c", "{!}kingdom_5_reinforcements_c", 0, 0, fac_commoners, 0, [(trp_f5_levy,15,40),(trp_f5_tier_3,2,5),(trp_f5_rider,1,2),(trp_f5_tier_4,2,4),(trp_f5_flamer,2,4)]),
+  ("kingdom_5_reinforcements_d", "{!}kingdom_5_reinforcements_d", 0, 0, fac_commoners, 0, [(trp_f5_levy,15,40),(trp_f5_tier_5,1,2),(trp_f5_gunner,1,2),(trp_f5_rider_vet,1,2),(trp_f5_tier_6,1,2)]),
+  ("kingdom_5_reinforcements_e", "{!}kingdom_5_reinforcements_e", 0, 0, fac_commoners, 0, [(trp_f5_levy,15,40),(trp_f5_terror,1,2)]),
+  ("kingdom_5_reinforcements_f", "{!}kingdom_5_reinforcements_f", 0, 0, fac_commoners, 0, [(trp_f5_aux_1,5,10),(trp_f5_aux_2,3,8),(trp_f5_aux_3,1,2)]),
+
+  ("kingdom_6_reinforcements_a", "{!}kingdom_6_reinforcements_a", 0, 0, fac_commoners, 0, [(trp_f6_levy,15,40)]),
+  ("kingdom_6_reinforcements_b", "{!}kingdom_6_reinforcements_b", 0, 0, fac_commoners, 0, [(trp_f6_levy,15,40),(trp_f6_tier_1,2,5),(trp_f6_tier_2,1,3)]),
+  ("kingdom_6_reinforcements_c", "{!}kingdom_6_reinforcements_c", 0, 0, fac_commoners, 0, [(trp_f6_levy,15,40),(trp_f6_tier_3,2,5),(trp_f6_tier_4,2,4),(trp_f6_rider,2,4)]),
+  ("kingdom_6_reinforcements_d", "{!}kingdom_6_reinforcements_d", 0, 0, fac_commoners, 0, [(trp_f6_levy,15,40),(trp_f6_tier_5,2,4),(trp_f6_tier_6,1,2)]),
+  ("kingdom_6_reinforcements_e", "{!}kingdom_6_reinforcements_e", 0, 0, fac_commoners, 0, [(trp_f6_levy,15,40),(trp_f6_terror,1,2)]),
+  ("kingdom_6_reinforcements_f", "{!}kingdom_6_reinforcements_f", 0, 0, fac_commoners, 0, [(trp_f6_aux_1,5,10),(trp_f6_aux_2,3,8),(trp_f6_aux_3,1,2)]),
+
+  ("kingdom_7_reinforcements_a", "{!}kingdom_7_reinforcements_a", 0, 0, fac_commoners, 0, [(trp_f7_levy,15,40)]),
+  ("kingdom_7_reinforcements_b", "{!}kingdom_7_reinforcements_b", 0, 0, fac_commoners, 0, [(trp_f7_levy,15,40),(trp_f7_tier_1,2,5),(trp_f7_tier_2,1,3)]),
+  ("kingdom_7_reinforcements_c", "{!}kingdom_7_reinforcements_c", 0, 0, fac_commoners, 0, [(trp_f7_levy,15,40),(trp_f7_tier_3,2,5),(trp_f7_tier_4,2,4),(trp_f7_rider,2,4)]),
+  ("kingdom_7_reinforcements_d", "{!}kingdom_7_reinforcements_d", 0, 0, fac_commoners, 0, [(trp_f7_levy,15,40),(trp_f7_tier_5,2,4),(trp_f7_tier_6,1,2)]),
+  ("kingdom_7_reinforcements_e", "{!}kingdom_7_reinforcements_e", 0, 0, fac_commoners, 0, [(trp_f7_levy,15,40),(trp_f7_terror,1,2)]),
+  ("kingdom_7_reinforcements_f", "{!}kingdom_7_reinforcements_f", 0, 0, fac_commoners, 0, [(trp_f7_aux_1,5,10),(trp_f7_aux_2,3,8),(trp_f7_aux_3,1,2)]),
+
+  ("kingdom_8_reinforcements_a", "{!}kingdom_8_reinforcements_a", 0, 0, fac_commoners, 0, [(trp_f8_levy,15,40)]),
+  ("kingdom_8_reinforcements_b", "{!}kingdom_8_reinforcements_b", 0, 0, fac_commoners, 0, [(trp_f8_levy,15,40),(trp_f8_tier_1,2,5),(trp_f8_tier_2,1,3)]),
+  ("kingdom_8_reinforcements_c", "{!}kingdom_8_reinforcements_c", 0, 0, fac_commoners, 0, [(trp_f8_levy,15,40),(trp_f8_tier_3,2,5),(trp_f8_tier_4,2,4),(trp_f8_rider,2,4)]),
+  ("kingdom_8_reinforcements_d", "{!}kingdom_8_reinforcements_d", 0, 0, fac_commoners, 0, [(trp_f8_levy,15,40),(trp_f8_tier_5,2,4),(trp_f8_tier_6,1,2)]),
+  ("kingdom_8_reinforcements_e", "{!}kingdom_8_reinforcements_e", 0, 0, fac_commoners, 0, [(trp_f8_levy,15,40),(trp_f8_terror,1,2)]),
+  ("kingdom_8_reinforcements_f", "{!}kingdom_8_reinforcements_f", 0, 0, fac_commoners, 0, [(trp_f8_aux_1,5,10),(trp_f8_aux_2,3,8),(trp_f8_aux_3,1,2)]),
+
+  ("kingdom_9_reinforcements_a", "{!}kingdom_9_reinforcements_a", 0, 0, fac_commoners, 0, [(trp_f9_levy,15,40)]),
+  ("kingdom_9_reinforcements_b", "{!}kingdom_9_reinforcements_b", 0, 0, fac_commoners, 0, [(trp_f9_levy,15,40),(trp_f9_tier_1,2,5),(trp_f9_tier_2,1,3)]),
+  ("kingdom_9_reinforcements_c", "{!}kingdom_9_reinforcements_c", 0, 0, fac_commoners, 0, [(trp_f9_levy,15,40),(trp_f9_tier_3,2,5),(trp_f9_tier_4,2,4),(trp_f9_rider,1,2)]),
+  ("kingdom_9_reinforcements_d", "{!}kingdom_9_reinforcements_d", 0, 0, fac_commoners, 0, [(trp_f9_levy,15,40),(trp_f9_tier_5,2,4),]),
+  ("kingdom_9_reinforcements_e", "{!}kingdom_9_reinforcements_e", 0, 0, fac_commoners, 0, [(trp_f9_levy,15,40),(trp_f9_terror,1,2)]),
+  ("kingdom_9_reinforcements_f", "{!}kingdom_9_reinforcements_f", 0, 0, fac_commoners, 0, [(trp_f9_aux_1,5,10),(trp_f9_aux_2,3,8),(trp_f9_aux_3,1,2)]),
+
+  ("kingdom_10_reinforcements_a", "{!}kingdom_10_reinforcements_a", 0, 0, fac_commoners, 0, [(trp_f10_levy,15,40)]),
+  ("kingdom_10_reinforcements_b", "{!}kingdom_10_reinforcements_b", 0, 0, fac_commoners, 0, [(trp_f10_levy,15,40),(trp_f10_tier_1,2,5),(trp_f10_tier_2,1,3)]),
+  ("kingdom_10_reinforcements_c", "{!}kingdom_10_reinforcements_c", 0, 0, fac_commoners, 0, [(trp_f10_levy,15,40),(trp_f10_tier_3,2,5),(trp_f10_tier_4,2,4),(trp_f10_rider,1,2)]),
+  ("kingdom_10_reinforcements_d", "{!}kingdom_10_reinforcements_d", 0, 0, fac_commoners, 0, [(trp_f10_levy,15,40),(trp_f10_tier_5,2,4),]),
+  ("kingdom_10_reinforcements_e", "{!}kingdom_10_reinforcements_e", 0, 0, fac_commoners, 0, [(trp_f10_levy,15,40),(trp_f10_terror,1,2)]),
+  ("kingdom_10_reinforcements_f", "{!}kingdom_10_reinforcements_f", 0, 0, fac_commoners, 0, [(trp_f10_aux_1,5,10),(trp_f10_aux_2,3,8),(trp_f10_aux_3,1,2)]),
+
+  ("steppe_bandit_lair" ,"Steppe Bandit Lair",icon_bandit_lair|carries_goods(2)|pf_is_static|pf_hide_defenders,0,fac_neutral,bandit_personality,[(trp_steppe_bandit,15,58)]),
+  ("taiga_bandit_lair","Tundra Bandit Lair",icon_bandit_lair|carries_goods(2)|pf_is_static|pf_hide_defenders,0,fac_neutral,bandit_personality,[(trp_taiga_bandit,15,58)]),
+  ("desert_bandit_lair" ,"Desert Bandit Lair",icon_bandit_lair|carries_goods(2)|pf_is_static|pf_hide_defenders,0,fac_neutral,bandit_personality,[(trp_desert_bandit,15,58)]),
+  ("forest_bandit_lair" ,"Forest Bandit Camp",icon_bandit_lair|carries_goods(2)|pf_is_static|pf_hide_defenders,0,fac_neutral,bandit_personality,[(trp_forest_bandit,15,58)]),
+  ("mountain_bandit_lair" ,"Mountain Bandit Hideout",icon_bandit_lair|carries_goods(2)|pf_is_static|pf_hide_defenders,0,fac_neutral,bandit_personality,[(trp_mountain_bandit,15,58)]),
+  ("sea_raider_lair","Sea Raider Landing",icon_bandit_lair|carries_goods(2)|pf_is_static|pf_hide_defenders,0,fac_neutral,bandit_personality,[(trp_sea_raider,15,50)]),
+  ("looter_lair","Kidnappers' Hideout",icon_bandit_lair|carries_goods(2)|pf_is_static|pf_hide_defenders,0,fac_neutral,bandit_personality,[(trp_looter,15,25)]),
   
-  ("kingdom_4_reinforcements_a", "{!}kingdom_4_reinforcements_a", 0, 0, fac_commoners, 0, [(trp_f4_tier_0,20,50)]),
-  ("kingdom_4_reinforcements_b", "{!}kingdom_4_reinforcements_b", 0, 0, fac_commoners, 0, [(trp_f4_tier_0,20,50),(trp_f4_tier_1,2,5),(trp_f4_tier_2,1,3)]),
-  ("kingdom_4_reinforcements_c", "{!}kingdom_4_reinforcements_c", 0, 0, fac_commoners, 0, [(trp_f4_tier_0,20,50),(trp_f4_tier_3,2,5),(trp_f4_tier_3b,2,5),(trp_f4_tier_4,2,4),(trp_f4_tier_4_cavalry,2,4)]),
-  ("kingdom_4_reinforcements_d", "{!}kingdom_4_reinforcements_d", 0, 0, fac_commoners, 0, [(trp_f4_tier_0,20,50),(trp_f4_tier_5,1,2),(trp_f4_tier_5_cavalry,1,2),(trp_f4_tier_6_cavalry,1,2),(trp_f4_flamer,1,2),(trp_f4_tier_6,1,2)]),
-  ("kingdom_4_reinforcements_e", "{!}kingdom_4_reinforcements_e", 0, 0, fac_commoners, 0, [(trp_f4_tier_0,20,50),(trp_f4_terror,1,2)]),
-  
-  ("kingdom_5_reinforcements_a", "{!}kingdom_5_reinforcements_a", 0, 0, fac_commoners, 0, [(trp_f5_tier_0,20,50)]),
-  ("kingdom_5_reinforcements_b", "{!}kingdom_5_reinforcements_b", 0, 0, fac_commoners, 0, [(trp_f5_tier_0,20,50),(trp_f5_tier_1,2,5),(trp_f5_tier_2,1,3)]),
-  ("kingdom_5_reinforcements_c", "{!}kingdom_5_reinforcements_c", 0, 0, fac_commoners, 0, [(trp_f5_tier_0,20,50),(trp_f5_tier_3,2,5),(trp_f5_rider,1,2),(trp_f5_tier_4,2,4),(trp_f5_flamer,2,4)]),
-  ("kingdom_5_reinforcements_d", "{!}kingdom_5_reinforcements_d", 0, 0, fac_commoners, 0, [(trp_f5_tier_0,20,50),(trp_f5_tier_5,1,2),(trp_f5_gunner,1,2),(trp_f5_rider_vet,1,2),(trp_f5_tier_6,1,2)]),
-  ("kingdom_5_reinforcements_e", "{!}kingdom_5_reinforcements_e", 0, 0, fac_commoners, 0, [(trp_f5_tier_0,20,50),(trp_f5_terror,1,2)]),
-  
-  ("kingdom_6_reinforcements_a", "{!}kingdom_6_reinforcements_a", 0, 0, fac_commoners, 0, [(trp_f6_tier_0,20,50)]),
-  ("kingdom_6_reinforcements_b", "{!}kingdom_6_reinforcements_b", 0, 0, fac_commoners, 0, [(trp_f6_tier_0,20,50),(trp_f6_tier_1,2,5),(trp_f6_tier_2,1,3)]),
-  ("kingdom_6_reinforcements_c", "{!}kingdom_6_reinforcements_c", 0, 0, fac_commoners, 0, [(trp_f6_tier_0,20,50),(trp_f6_tier_3,2,5),(trp_f6_tier_4,2,4),(trp_f6_rider,2,4)]),
-  ("kingdom_6_reinforcements_d", "{!}kingdom_6_reinforcements_d", 0, 0, fac_commoners, 0, [(trp_f6_tier_0,20,50),(trp_f6_tier_5,2,4),(trp_f6_tier_6,1,2)]),
-  ("kingdom_6_reinforcements_e", "{!}kingdom_6_reinforcements_e", 0, 0, fac_commoners, 0, [(trp_f6_tier_0,20,50),(trp_f6_terror,1,2)]),
-
-  ("kingdom_7_reinforcements_a", "{!}kingdom_7_reinforcements_a", 0, 0, fac_commoners, 0, [(trp_f7_tier_0,20,50)]),
-  ("kingdom_7_reinforcements_b", "{!}kingdom_7_reinforcements_b", 0, 0, fac_commoners, 0, [(trp_f7_tier_0,20,50),(trp_f7_tier_1,2,5),(trp_f7_tier_2,1,3)]),
-  ("kingdom_7_reinforcements_c", "{!}kingdom_7_reinforcements_c", 0, 0, fac_commoners, 0, [(trp_f7_tier_0,20,50),(trp_f7_tier_3,2,5),(trp_f7_tier_4,2,4),(trp_f7_rider,2,4)]),
-  ("kingdom_7_reinforcements_d", "{!}kingdom_7_reinforcements_d", 0, 0, fac_commoners, 0, [(trp_f7_tier_0,20,50),(trp_f7_tier_5,2,4),(trp_f7_tier_6,1,2)]),
-  ("kingdom_7_reinforcements_e", "{!}kingdom_7_reinforcements_e", 0, 0, fac_commoners, 0, [(trp_f7_tier_0,20,50),(trp_f7_terror,1,2)]),
-
-  ("kingdom_8_reinforcements_a", "{!}kingdom_8_reinforcements_a", 0, 0, fac_commoners, 0, [(trp_f8_tier_0,20,50)]),
-  ("kingdom_8_reinforcements_b", "{!}kingdom_8_reinforcements_b", 0, 0, fac_commoners, 0, [(trp_f8_tier_0,20,50),(trp_f8_tier_1,2,5),(trp_f8_tier_2,1,3)]),
-  ("kingdom_8_reinforcements_c", "{!}kingdom_8_reinforcements_c", 0, 0, fac_commoners, 0, [(trp_f8_tier_0,20,50),(trp_f8_tier_3,2,5),(trp_f8_tier_4,2,4),(trp_f8_rider,2,4)]),
-  ("kingdom_8_reinforcements_d", "{!}kingdom_8_reinforcements_d", 0, 0, fac_commoners, 0, [(trp_f8_tier_0,20,50),(trp_f8_tier_5,2,4),(trp_f8_tier_6,1,2)]),
-  ("kingdom_8_reinforcements_e", "{!}kingdom_8_reinforcements_e", 0, 0, fac_commoners, 0, [(trp_f8_tier_0,20,50),(trp_f8_terror,1,2)]),
-
-#
-  ("irregulars_reinforcements_a", "{!}irregulars_reinforcements_a", 0, 0, fac_commoners, 0, [(trp_irregular_tier_0,20,50)]),
-  ("irregulars_reinforcements_b", "{!}irregulars_reinforcements_b", 0, 0, fac_commoners, 0, [(trp_irregular_tier_0,20,50),(trp_irregular_tier_1,2,5),(trp_irregular_tier_2,1,3)]),
-  ("irregulars_reinforcements_c", "{!}irregulars_reinforcements_c", 0, 0, fac_commoners, 0, [(trp_irregular_tier_0,20,50),(trp_irregular_tier_3,2,5),(trp_irregular_tier_4,2,4),(trp_irregular_rider,1,2)]),
-  ("irregulars_reinforcements_d", "{!}irregulars_reinforcements_d", 0, 0, fac_commoners, 0, [(trp_irregular_tier_0,20,50),(trp_irregular_tier_5,2,4),]),
-  ("irregulars_reinforcements_e", "{!}irregulars_reinforcements_e", 0, 0, fac_commoners, 0, [(trp_irregular_tier_0,20,50),(trp_irregular_terror,1,2)]),
-#
-  ("throd_reinforcements_a", "{!}throd_reinforcements_a", 0, 0, fac_commoners, 0, [(trp_throd_tier_0,20,50)]),
-  ("throd_reinforcements_b", "{!}throd_reinforcements_b", 0, 0, fac_commoners, 0, [(trp_throd_tier_0,20,50),(trp_throd_tier_1,2,5),(trp_throd_tier_2,1,3)]),
-  ("throd_reinforcements_c", "{!}throd_reinforcements_c", 0, 0, fac_commoners, 0, [(trp_throd_tier_0,20,50),(trp_throd_tier_3,2,5),(trp_throd_tier_4,2,4),(trp_throd_rider,1,2)]),
-  ("throd_reinforcements_d", "{!}throd_reinforcements_d", 0, 0, fac_commoners, 0, [(trp_throd_tier_0,20,50),(trp_throd_tier_5,2,4),]),
-  ("throd_reinforcements_e", "{!}throd_reinforcements_e", 0, 0, fac_commoners, 0, [(trp_throd_tier_0,20,50),(trp_throd_terror,1,2)]),
-
-  # ("steppe_bandit_lair" ,"Steppe Bandit Lair",icon_bandit_lair|carries_goods(2)|pf_is_static|pf_hide_defenders,0,fac_neutral,bandit_personality,[(trp_steppe_bandit,15,58)]),
-  # ("taiga_bandit_lair","Tundra Bandit Lair",icon_bandit_lair|carries_goods(2)|pf_is_static|pf_hide_defenders,0,fac_neutral,bandit_personality,[(trp_taiga_bandit,15,58)]),
-  # ("desert_bandit_lair" ,"Desert Bandit Lair",icon_bandit_lair|carries_goods(2)|pf_is_static|pf_hide_defenders,0,fac_neutral,bandit_personality,[(trp_desert_bandit,15,58)]),
-  # ("forest_bandit_lair" ,"Forest Bandit Camp",icon_bandit_lair|carries_goods(2)|pf_is_static|pf_hide_defenders,0,fac_neutral,bandit_personality,[(trp_forest_bandit,15,58)]),
-  # ("mountain_bandit_lair" ,"Mountain Bandit Hideout",icon_bandit_lair|carries_goods(2)|pf_is_static|pf_hide_defenders,0,fac_neutral,bandit_personality,[(trp_mountain_bandit,15,58)]),
-  # ("sea_raider_lair","Sea Raider Landing",icon_bandit_lair|carries_goods(2)|pf_is_static|pf_hide_defenders,0,fac_neutral,bandit_personality,[(trp_sea_raider,15,50)]),
-  # ("looter_lair","Kidnappers' Hideout",icon_bandit_lair|carries_goods(2)|pf_is_static|pf_hide_defenders,0,fac_neutral,bandit_personality,[(trp_looter,15,25)]),
-  
-  # ("bandit_lair_templates_end","{!}bandit_lair_templates_end",icon_axeman|carries_goods(2)|pf_is_static,0,fac_outlaws,bandit_personality,[(trp_sea_raider,15,50)]),
+  ("bandit_lair_templates_end","{!}bandit_lair_templates_end",icon_axeman|carries_goods(2)|pf_is_static,0,fac_outlaws,bandit_personality,[(trp_sea_raider,15,50)]),
 
   # ("leaded_looters","Band of robbers",icon_axeman|carries_goods(8)|pf_quest_party,0,fac_neutral,bandit_personality,[(trp_looter_leader,1,1),(trp_looter,3,3)]),
 
