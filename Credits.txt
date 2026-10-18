@@ -1,0 +1,261 @@
+kk4ever2000 - Team member
+
+Warzone: Acron Team
+full Warzone: Acron credits:
+credits:
+People directly contributing:
+- oliver (some assets, the main guy of 457AD)
+- tocan (coding, original idea, main developer)
+- kraggrim (scenes, coding, models, 2d art)
+- Darth Mongol the unwise (scenes, models, animations)
+- Butters (scenes, some coding)
+- dstn (coding, worldbuilding, lore)
+- Aro (animations)
+- Nooxy (models)
+- Northwind (names and dialog)
+- NouH (python coding help)
+- lvx for freelancer integration and fixes
+- taragoth, original creator of freelancer
+
+OSP packages/mods used:
+- The Reckoning (La Grandmaster)
+- Napoleonic Zombies
+- Chile Zombies
+- Furok
+- TLD team
+- Gokiller (adapted scenes from scening contest)
+- Akathir (adapted scenes from scening contest)
+- AndreusAS (models)
+- ArchdukeOvHell (models)
+
+Sketchfab contributors:
+DJMaesen, YadroGames, Igr1mat4k, Adriancgmask, sanyaork, Long Nguyễn, l0wpoly, buh, Pieter Ferreira, Brendan, avellium, KIFIR, Sir Erdees, FrodoUndead, Shedmon, Renafox, tobiasherbers, Thunder, Duane's Mind, Caboose3d, Daniel Zhabotinsky, Berk Gedik, britdawgmasterfunk, legitbanana, Vziuh, SuperMopsek, AEN, SKeLLeR, Lander Van den Branden, IronEqual, Kirilllucas, liltoba, Firewarden, Thompson, TastyTony, John Machine, HenRi, Millenia3d, Soother, Spike, Tijmen Matthys, Joe_Y.
+
+Archieduke - Dieselpunk OSP
+	-IYI-O-R-T- - Steam Punk mutant skin textures
+	Hinkel for the late 19th century military tunic included in Willhelm and ExParot's Victorian uniform pack
+	alexandr-sl from CGTrader for his 'Fantasy Battle-Mech'
+	Dariel for his Sword Planet helmets
+Nerzuhl - Art, mech animation, Whitelinghand Assets
+Between Empires Team - Weapons, Other assets
+Wilk22 - Single Hussar Wing
+Willhelm - Many things
+Blood and Iron Team
+Tumajan - Jan Tuma´s Sturmhaube helmets
+Kentucky 『 ＨＥＩＧＵＩ 』 James (jacobhind)- Ottoman Civilian Clothes,Bandit Dresses, Waistcoats, Sayazn Assets
+Pentagathus - Tohlobaria Modular Models with Texture Atlas
+Battle for yugoslavia:
+	BNS Marko
+	Nemeruis
+	GoldEagleMNE
+	Negast
+	Lucke189
+Brytenwalda Studios - Assets,code
+Finland At WW2 Developers
+Kong Ming - Shashka
+Battle of Europe Team
+crackbrick - Zeppelin 3D Model
+Gothic Knight - Classical OSP
+Teutonic Order: Drang nach Osten Team - armours, weapons
+Skobelev - WW1 Russian Weapons
+Civil war in russia mod - uniforms
+AnibalStakemann - To Cuba! assets
+Crusaders Way to Expiation Team
+rathos
+iggorbb
+bogmir
+adonnay
+RR_Razor
+Amade
+Dthehun
+Luigi
+James
+POP
+GetAssista
+youhou
+CryptoCactus
+Queen Pinky
+Wanderer
+Caba`drin
+MadVader
+Psiphoon
+Wei Xiadi
+Mordachai
+Barf
+cmpxchg8b
+doomsayer
+SacredStoneHead
+Rath0s
+motomaru
+vosvoy
+pumpkin lord - vyrn
+血与钢 + IdoLDC - Da ming armour
+migdeu19
+rgcotl
+The American Civil War: Revived!
+Matsuri5, 
+Madsci, 
+Dalion, 
+Helm8000, 
+Useful Lesbian (Eldar), 
+Skepalt, 
+Kawooz_Mirza, 
+Johandros, 
+Erundil, 
+Vetrogor, 
+someone, 
+Swyter, 
+cokjan, 
+Zion, 
+Seek & Destroy, 
+MarcosPZero, 
+Luke_SkyOtter, 
+pizzaman6, 
+UwU_XD,
+Tasmit, 
+Hinkel, 
+Poomtang, 
+Azrooh, 
+Tessius, 
+Durnius, 
+Gabrilduro,
+Dellivils
+gsanders
+bobthe8th
+CounterPoint391
+DrTomas (Tomas T)
+many many others
+Between Republics:
+	Eldar for developing the Between Empires mod that Between Republics is built on.
+	HMY_LM for various assets used in the mod, along with upcoming scripting projects.
+	Kwin1314 for the sinicisation patch(Chinese Localisation).
+	BISMARCK for opening the mod to the Chinese-speaking community.
+	L'Aigle for some assets.
+	Snow in the East for some assets.
+	WWII China Battlefield for some assets.
+	Several Chinese OSPs, including one marked as "Fysg", for various architecture items and outfits.
+	Pack3D model for the tram.
+Harry_
+The Full Invasion team
+NEWOH_UA 
+Deadpool45676 
+LorDric 
+polished landscapes by Gutekfiutek,
+better graphics by uraikus,
+Improved Buildings by SendMeSmile,
+More metal sounds by Checkmaty,
+Ambient soundtrack by Adorno,
+Crusader banners by Anardion,
+Traditional Banner Pack by Somebody (which allows more than 8 pages of banners to choose from),
+Combat Animation Enhancement by Papa Lazarou,
+Faction arms colored by Monnikje,
+better banners by MarkQuinn,
+camel by Xenoargh,
+Towers walls and ladders by leandrojas,
+elephant by Rigadoon, Barabas, and Deras,
+armors from texture fiddling by lucky lancer.
+Some horses of Saregonas modified,
+spak_items by spak,
+Horse armor originally made by Mongoloid(not sure for what game)
+added freelancer - credits next post
+added Pre-Battle Orders & Deployment by Caba`drin - credits a few posts down
+Thanks to Iorya Dragon for the use of their modified PBOD, Freelancer module files out of Warband enhanced
+added Rigale by Cernunos 
+extra credits: Duh, Caba'drin, the rigale team, Ogrecorps, the OSP sharers of the forum
+
+Added Diplomacy by waihti, zParsifal,
+Included work:
+hessuu - Recruiter Kit
+fisheye - autoloot
+rubik - autoloot improvements, initial version of autosell, viewing troop equipment (from custom commander)
+jrider - relation presentation
+
+Helmets by:
+Luigi.
+Njiekovic
+Ursca (special thanks here for the new sallet pack)
+Ubberdorc
+Mirathei
+Raz.
+The Pope
+TRC
+Dindi
+Female armor pack by Subotai
+Terrain advantage by Arch3r
+Plated Chargers by Njunja and wanderer949
+Viking model pack by dejawolf thanks Rybopiotr for keeping this saved
+Highlander model pack by Yamabusi
+Indo Persian Shields and Indo Persian Armor by drakharios
+Roman equipment by RR_Raptor65, Llew
+Unique Armory by Talak
+Wes Helmets by mr. master
+Eastern Armor by Njunja
+Ficus's Roman Pack by Ficus
+narf's_transitional_armour_pack by Narf
+narf's_plate_armour_pack by Narf
+Pino_Armors_Packs by Pino
+Mackie's OSP Weapons Pack by Mackie and xenoargh
+Mount & Gladius by Llew, Narf
+TLD by The TLD team
+Battlefield Priests by Yamabusi
+GRIM AGE by Furok
+horse textures by wildhorse
+maws horses
+maw's Armor Pack by maw, Burrek, Lord Condormanius, Ornumentum, Stainless Steel 6.0, DaBlade, Subotai
+magic system from Curtain of Fire by Mirathei
+Red & Blue:1936 Development Team 
+Iron Europe Team
+
+
+Random russian OSPs, author unknown:
+https://mountworld.ucoz.ru/load/osp_resursy/
+
+3D Models:
+'Handflammpatrone DM34' by Jan Andreas
+"Lunge mine" (https://skfb.ly/6WZsE) by SamRi is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+"Walther Model SLD" (https://skfb.ly/oPWBW) by kino is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+"Taylor Water Canteen" (https://skfb.ly/oy77r) by Zachary Taylor is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+"Canteen" (https://skfb.ly/pEFB7) by matthew huff is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+"Free Ammo Set Ver.2 ULTRA" (https://skfb.ly/pIyTC) by LQC is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+"Bangalore" by Tactical_Beard is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+"ROKS-3 Flamethrower" by Yoni Van Gucht is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+"Triple-barrel-shotgun" (https://skfb.ly/6yuqR) by dogefan1717 is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+"Triple barrel shotgun pistol" by Long Nguyễn is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+"(FREE) De Liste Carbine Game Asset" (https://skfb.ly/otLYD) by Autonk is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+"remington model 31 (retexture)" (https://skfb.ly/6WoXM) by kythulu is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+"Vicker's Machine gun (ww1)" (https://skfb.ly/ottpE) by Janovich is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+"PM ( Makarov pistol) FREE TO USE" (https://skfb.ly/6WRCu) by Vladislav Horiainov is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+"MAS38 mid-poly gun model french" (https://skfb.ly/osByF) by Autonk is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+"M15/ST61" (https://skfb.ly/oLtEQ) by Marcus is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+"Carcano folding Bayonet knife" (https://skfb.ly/oTCMZ) by Ovidiu Barat is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+"Mauser C96 "The Redeemer"" (https://skfb.ly/6tQuM) by Tuuttipingu is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+"AR10 Prototype 1" (https://skfb.ly/p9Wnu) by Losss is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+"Gun M1903 model" (https://skfb.ly/oxAyA) by NghiaNguyeen is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+"Lahti L-35" (https://skfb.ly/6sBqM) by Tuuttipingu is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+#Not yet added:
+"Citroen U23 (Lowpoly, Game-ready Model)" (https://skfb.ly/pz8sQ) by Kyiv_Enjoer is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+"(FREE) Ford TT French Army Medical Truck" (https://skfb.ly/o9CMx) by Autonk is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+"Trench Knife" (https://skfb.ly/oTNYF) by J_W is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+"Sledgehammer" (https://skfb.ly/pnUSJ) by otosakanum2 is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+"Gun Type64" (https://skfb.ly/ooIX8) by emelyarules is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+"Wrenchpress" (https://skfb.ly/6xPFq) by henskelion is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+"Rifle grenades Game-Ready Assets" (https://skfb.ly/pqFKD) by Ovidiu Barat is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+"FREE WW1 Trench shovel asset" (https://skfb.ly/oGIIX) by remidoes3d is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+"Panzerschreck" (https://skfb.ly/6RnYt) by Tactical_Beard is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+"Primitive Axe" (https://skfb.ly/oo8Lz) by emelyarules is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+"Ww2-mortar" (https://skfb.ly/ov9Zy) by Ara_my45yt is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+"Swiss Sig STWG 57 Bayonet" (https://skfb.ly/pqFLq) by Ovidiu Barat is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+"Berthier Bayonet" (https://skfb.ly/6vXxI) by Warloo is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+"Sturmpistole | WW2" (https://skfb.ly/o9MrC) by Svyatoslav Ovchinnik is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+"Farquhar-Hill" (https://skfb.ly/6twEo) by Tuuttipingu is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+"Stechkin Automatic pistol" (https://skfb.ly/WvoZ) by Tuuttipingu is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+"1911A1 Engraved" (https://skfb.ly/6sMnt) by Tuuttipingu is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+"Carl Gustav m/45" (https://skfb.ly/6oxAH) by Tuuttipingu is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+"Fairbairn-Sykes fighting knife" (https://skfb.ly/6XM9P) by oxxxxxygen is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+"M79 grenade launcher" (https://skfb.ly/owYHo) by Murky_Order is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+"Haenel MP28" (https://skfb.ly/pGvMK) by MarkedFour.Springfield is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+"GP7 Gasmask" (https://skfb.ly/pLqG9) by Shadoff is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+"Russian GP-5  Gas Mask - (Filter Damaged)" (https://skfb.ly/6QSYs) by MattMakesSwords is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+"Old Miner's helmet Low-Poly Reworked" (https://skfb.ly/o6Usq) by TwilightFox is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
