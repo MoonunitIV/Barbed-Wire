@@ -1512,7 +1512,7 @@ scene_props_native = [
 #is_entenaii_shotgun
 #is_dominion_shotgun
 #is_galvae_shotgun
-#is_vitzland_sawnoff
+  ("is_vitzland_sawnoff",0,"is_sawed_pirateout","0",[]),
 #is_vitzland_shotgun
 #is_hunting_shotgun
 #is_double_barrel_shotgun

@@ -89,39 +89,39 @@ man_face_keys = [
     # (280,0,0.0,1.0, "Post-Edit"),
     ]
 woman_face_keys = [
-(230,0,1.5,-1.8, "Chin Size"), 
-(220,0,-1.7,1.5, "Chin Shape"), 
-(10,0,-1.7,2.0, "Chin Forward"),
-(20,0,-1.7,2.0, "Jaw Width"), 
-(40,0,-1.0,1.5, "Jaw Position"),
-(90,0,-1.7,1.7, "Jaw Neck"),
-(50,0,-2.0,1.7, "Cheeks"),
-(100,0,-1.7,1.7, "Cheek Bones"),
-(270,0,1.5,-1.3, "Mouth-Nose Distance"),
-(30,0,-1.7,1.5, "Mouth Width"),
-(160,0,1.7,-2.0, "Lips Position"),
-
-(60,0,1.5,-1.5, "Nose Height"),
-(70,0,-1.5,1.7, "Nose Width"),
-(80,0,1.0,-1.0, "Nose Size"),
-(240,0,1.4,-1.4, "Nose Shape"),
-
-(150,0,-2.0,1.5, "Eye Width"),
-(110,0,1.5,-1.5, "Eye to Eye Dist"),
-(120,0,1.9,-1.9, "Eye Shape"),
-(130,0,-1.7,1.7, "Eye Position"),
-(140,0,-1.0,1.5, "Eyelids"),
-
-(170,0,-2.5,2.0, "Eyebrow Height"),
-(180,0,-2.5,1.2, "Eyebrow Shape"),
-(260,0,1.5,-1.5, "Temple Width"),
-
-(200,0,1.7,-1.7, "Face tall-short"),
-(210,0,-1.7,1.7, "Face Depth"),
-(250,0,-1.4,1.4, "Face Ratio"),
-(190,0,-2.4,1.7, "Face Width"),
-
-(280,0,0.0,1.0, "Post-Edit"),
+    (230,0,1.5,-1.8, "Chin Size"), 
+    (220,0,-1.7,1.5, "Chin Shape"), 
+    (10,0,-1.7,2.0, "Chin Forward"),
+    (20,0,-1.7,2.0, "Jaw Width"), 
+    (40,0,-1.0,1.5, "Jaw Position"),
+    (90,0,-1.7,1.7, "Jaw Neck"),
+    (50,0,-2.0,1.7, "Cheeks"),
+    (100,0,-1.7,1.7, "Cheek Bones"),
+    (270,0,1.5,-1.3, "Mouth-Nose Distance"),
+    (30,0,-1.7,1.5, "Mouth Width"),
+    (160,0,1.7,-2.0, "Lips Position"),
+    
+    (60,0,1.5,-1.5, "Nose Height"),
+    (70,0,-1.5,1.7, "Nose Width"),
+    (80,0,1.0,-1.0, "Nose Size"),
+    (240,0,1.4,-1.4, "Nose Shape"),
+    
+    (150,0,-2.0,1.5, "Eye Width"),
+    (110,0,1.5,-1.5, "Eye to Eye Dist"),
+    (120,0,1.9,-1.9, "Eye Shape"),
+    (130,0,-1.7,1.7, "Eye Position"),
+    (140,0,-1.0,1.5, "Eyelids"),
+    
+    (170,0,-2.5,2.0, "Eyebrow Height"),
+    (180,0,-2.5,1.2, "Eyebrow Shape"),
+    (260,0,1.5,-1.5, "Temple Width"),
+    
+    (200,0,1.7,-1.7, "Face tall-short"),
+    (210,0,-1.7,1.7, "Face Depth"),
+    (250,0,-1.4,1.4, "Face Ratio"),
+    (190,0,-2.4,1.7, "Face Width"),
+    
+    (280,0,0.0,1.0, "Post-Edit"),
 ]
 no_face_keys = []
 
@@ -616,8 +616,8 @@ skins = [
 
 #tf_skeleton
 ("skeleton", 0,
-    "Body_Skeleton_01", "Legs_Skeleton_01_L", "Hand_Skeleton_02_L",
-    "Head_Skeleton_01",
+    "body_skeleton_01", "legs_skeleton_01_L", "hand_skeleton_02_L",
+    "head_skeleton_01",
     [
       (20, 0, 0.7, -0.6, "Chin Size"),
       (260, 0, -0.6, 1.4, "Chin Shape"),
@@ -708,7 +708,7 @@ skins = [
     ["hair_blonde"],
     [],
     [
-      ("skeleton_Head_Diffuse_01", 0xFFCBE0E0, ["hair_blonde"], [0xffffffff, 0xffb04717, 0xff502a19]),
+      ("default", 0xFFCBE0E0, ["hair_blonde"], [0xffffffff, 0xffb04717, 0xff502a19]),
     ], #man_face_textures,
     [(voice_die,"snd_battledroid_die"),(voice_hit,"snd_battledroid_hit"),(voice_grunt,"snd_battledroid_grunt"),(voice_grunt_long,"snd_battledroid_grunt_long"),(voice_yell,"snd_battledroid_yell"),(voice_warcry,"snd_battledroid_victory"),(voice_victory,"snd_battledroid_victory")], #r2series voice sounds
     "skel_ssh_flesh_golem", 1.50,

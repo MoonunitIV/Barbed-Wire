@@ -444,19 +444,6 @@ companion_gear = [
   itm_renegade_bolt_action_carbine,
   itm_rifle_ammo, itm_rifle_ammo_empty,
   itm_trench_club_1,
-  itm_trench_club_2,
-  itm_trench_club_3,
-  itm_trench_club_4,
-  itm_trench_club_5,
-  itm_trench_club_6,
-  itm_trench_club_7,
-  itm_trench_club_8,
-  itm_trench_club_9,
-  itm_trench_club_10,
-  itm_trench_club_11,
-  itm_trench_club_12,
-  itm_trench_club_13,
-  itm_trench_club_14,
   itm_renegade_uniform_regular,
   itm_civil_hat_1,
   ]
@@ -798,17 +785,6 @@ troops = [
   itm_trench_club_1,
   itm_trench_club_2,
   itm_trench_club_3,
-  itm_trench_club_4,
-  itm_trench_club_5,
-  itm_trench_club_6,
-  itm_trench_club_7,
-  itm_trench_club_8,
-  itm_trench_club_9,
-  itm_trench_club_10,
-  itm_trench_club_11,
-  itm_trench_club_12,
-  itm_trench_club_13,
-  itm_trench_club_14,
   itm_long_trench_club_1,
   itm_long_trench_club_2,
   itm_staff,
@@ -1014,17 +990,6 @@ troops = [
   itm_trench_club_1,
   itm_trench_club_2,
   itm_trench_club_3,
-  itm_trench_club_4,
-  itm_trench_club_5,
-  itm_trench_club_6,
-  itm_trench_club_7,
-  itm_trench_club_8,
-  itm_trench_club_9,
-  itm_trench_club_10,
-  itm_trench_club_11,
-  itm_trench_club_12,
-  itm_trench_club_13,
-  itm_trench_club_14,
   itm_long_trench_club_1,
   itm_long_trench_club_2,
   itm_hatchet,
@@ -1078,25 +1043,13 @@ troops = [
   itm_lead_pipe,
   itm_hand_axe,
   itm_bowie_knife,
-  itm_knife,
-  itm_trench_club_2,
   itm_metal_blade,
   itm_shovel,
   itm_hammer_big,
-  itm_trench_club_1,
-  itm_trench_club_2,
-  itm_trench_club_3,
+
   itm_trench_club_4,
   itm_trench_club_5,
   itm_trench_club_6,
-  itm_trench_club_7,
-  itm_trench_club_8,
-  itm_trench_club_9,
-  itm_trench_club_10,
-  itm_trench_club_11,
-  itm_trench_club_12,
-  itm_trench_club_13,
-  itm_trench_club_14,
 
   itm_swamp_bandit_cuirass_1,
 
@@ -1121,20 +1074,10 @@ troops = [
   itm_knife,
   itm_bayonet_2,
   itm_bayonet_1,
-  itm_trench_club_1,
-  itm_trench_club_2,
-  itm_trench_club_3,
-  itm_trench_club_4,
-  itm_trench_club_5,
-  itm_trench_club_6,
-  itm_trench_club_7,
-  itm_trench_club_8,
+
   itm_trench_club_9,
   itm_trench_club_10,
   itm_trench_club_11,
-  itm_trench_club_12,
-  itm_trench_club_13,
-  itm_trench_club_14,
 
   itm_bastard_club_1,
   itm_crowbar,
@@ -1173,21 +1116,11 @@ troops = [
   itm_bayonet_2,
   itm_katana,
   itm_bayonet_1,
-  itm_trench_club_1,
-  itm_trench_club_2,
-  itm_trench_club_3,
-  itm_trench_club_4,
-  itm_trench_club_5,
-  itm_trench_club_6,
-  itm_trench_club_7,
-  itm_trench_club_8,
+
   itm_trench_club_9,
   itm_trench_club_10,
   itm_trench_club_11,
-  itm_trench_club_12,
-  itm_trench_club_13,
-  itm_trench_club_14,
-  
+ 
   itm_bastard_club_1,
   itm_hatchet_tactical,
   itm_big_spiked_club,
@@ -1213,20 +1146,11 @@ troops = [
   itm_bayonet_2,
   itm_katana,
   itm_bayonet_1,
-  itm_trench_club_1,
-  itm_trench_club_2,
-  itm_trench_club_3,
-  itm_trench_club_4,
-  itm_trench_club_5,
-  itm_trench_club_6,
-  itm_trench_club_7,
-  itm_trench_club_8,
-  itm_trench_club_9,
+
   itm_trench_club_10,
   itm_trench_club_11,
   itm_trench_club_12,
-  itm_trench_club_13,
-  itm_trench_club_14,
+
   itm_bastard_club_1,
   itm_hatchet_tactical,
   itm_big_spiked_club,
@@ -1252,17 +1176,7 @@ troops = [
   itm_bayonet_2,
   itm_katana,
   itm_bayonet_1,
-  itm_trench_club_1,
-  itm_trench_club_2,
-  itm_trench_club_3,
-  itm_trench_club_4,
-  itm_trench_club_5,
-  itm_trench_club_6,
-  itm_trench_club_7,
-  itm_trench_club_8,
-  itm_trench_club_9,
-  itm_trench_club_10,
-  itm_trench_club_11,
+
   itm_trench_club_12,
   itm_trench_club_13,
   itm_trench_club_14,
@@ -1328,20 +1242,9 @@ troops = [
   tf_has_body|tf_has_ranged,no_scene,reserved,fac_commoners,[
   itm_slug_ammo,
 
-  itm_trench_club_1,
-  itm_trench_club_2,
-  itm_trench_club_3,
   itm_trench_club_4,
   itm_trench_club_5,
   itm_trench_club_6,
-  itm_trench_club_7,
-  itm_trench_club_8,
-  itm_trench_club_9,
-  itm_trench_club_10,
-  itm_trench_club_11,
-  itm_trench_club_12,
-  itm_trench_club_13,
-  itm_trench_club_14,
 
   itm_long_trench_club_1,
   itm_long_trench_club_2,
@@ -1352,6 +1255,7 @@ troops = [
   itm_bandit_fullhelm,
   itm_bandit_fullhelm2,
   itm_bucket_helm,
+  itm_bucket_helm_black,
   itm_bandit_bulwark_helm,
   itm_trench_knight_helm,
   itm_trench_knight_helm_2,
@@ -1401,20 +1305,9 @@ troops = [
   itm_pistol_ammo_2,
   itm_pistol_ammo_3,
 
-  itm_trench_club_1,
-  itm_trench_club_2,
-  itm_trench_club_3,
-  itm_trench_club_4,
-  itm_trench_club_5,
-  itm_trench_club_6,
   itm_trench_club_7,
   itm_trench_club_8,
   itm_trench_club_9,
-  itm_trench_club_10,
-  itm_trench_club_11,
-  itm_trench_club_12,
-  itm_trench_club_13,
-  itm_trench_club_14,
 
   itm_long_trench_club_1,
   itm_long_trench_club_2,
@@ -1438,6 +1331,7 @@ troops = [
   itm_steel_helmet_1b_gas,
   
   itm_bucket_helm,
+  itm_bucket_helm_black,
 
   itm_leather_gloves_metal,
   itm_black_gloves_metal,
@@ -1473,6 +1367,7 @@ troops = [
   itm_pot_helmet_face_cover,
   
   itm_bucket_helm,
+  itm_bucket_helm_black,
 
   itm_simple_helmet,
   itm_simple_helmet_face_cover,
@@ -1499,20 +1394,10 @@ troops = [
 
   itm_light_cav_sword,
   itm_iron_staff,
-  itm_trench_club_1,
-  itm_trench_club_2,
-  itm_trench_club_3,
+
   itm_trench_club_4,
   itm_trench_club_5,
   itm_trench_club_6,
-  itm_trench_club_7,
-  itm_trench_club_8,
-  itm_trench_club_9,
-  itm_trench_club_10,
-  itm_trench_club_11,
-  itm_trench_club_12,
-  itm_trench_club_13,
-  itm_trench_club_14,
 
   itm_long_trench_club_1,
   itm_long_trench_club_2,
@@ -1551,20 +1436,10 @@ troops = [
   itm_saber1,
   itm_lance_plain,
   itm_light_cav_sword,
-  itm_trench_club_1,
-  itm_trench_club_2,
-  itm_trench_club_3,
-  itm_trench_club_4,
-  itm_trench_club_5,
-  itm_trench_club_6,
+
   itm_trench_club_7,
   itm_trench_club_8,
   itm_trench_club_9,
-  itm_trench_club_10,
-  itm_trench_club_11,
-  itm_trench_club_12,
-  itm_trench_club_13,
-  itm_trench_club_14,
 
   itm_long_trench_club_1,
   itm_long_trench_club_2,
@@ -1605,8 +1480,6 @@ troops = [
   itm_smg_1,
 
   itm_knife,
-  itm_knife,
-  itm_knife,
   itm_bayonet_2,
   itm_bayonet_1,
   itm_bowie_knife,
@@ -1636,27 +1509,14 @@ troops = [
   itm_crook_revolver_1,
 
   itm_mace_1,
-  itm_trench_club_1,
-  itm_trench_club_2,
-  itm_trench_club_3,
   itm_trench_club_4,
   itm_trench_club_5,
   itm_trench_club_6,
-  itm_trench_club_7,
-  itm_trench_club_8,
-  itm_trench_club_9,
-  itm_trench_club_10,
-  itm_trench_club_11,
-  itm_trench_club_12,
-  itm_trench_club_13,
-  itm_trench_club_14,
 
   itm_long_trench_club_1,
   itm_long_trench_club_2,
   itm_staff,
-  itm_trench_club_2,
   itm_bowie_knife,
-  itm_knife,
   itm_kukri_rusty,
   itm_kukri_old,
   itm_metal_blade,
@@ -1737,7 +1597,7 @@ troops = [
   itm_pack_horse,
   ]+smg_1,
   attr_lvl_35,wp_4_m,knows_battle_4,mercenary_face_1, mercenary_face_2],
-["sieur","Sieur","Sieur",tf_has_body|tf_has_hand|tf_has_head|tf_has_ranged,no_scene,reserved,fac_commoners,[
+["sieur","Sieur","Sieur",tf_guarantee_all_w_horse,no_scene,reserved,fac_commoners,[
   itm_rifle_ammo, itm_rifle_ammo_empty,
   itm_rifle_ammo_4,
 
@@ -1747,20 +1607,10 @@ troops = [
   itm_hatchet_tactical,
   itm_battleaxe1,
   itm_battleaxe2,
-  itm_trench_club_1,
-  itm_trench_club_2,
-  itm_trench_club_3,
-  itm_trench_club_4,
-  itm_trench_club_5,
-  itm_trench_club_6,
-  itm_trench_club_7,
-  itm_trench_club_8,
-  itm_trench_club_9,
+
   itm_trench_club_10,
   itm_trench_club_11,
   itm_trench_club_12,
-  itm_trench_club_13,
-  itm_trench_club_14,
 
   itm_long_trench_club_1,
   itm_long_trench_club_2,
@@ -1779,27 +1629,17 @@ troops = [
   itm_palfrey_2,
   ]+carbines,
   attr_lvl_40,wp_5_m,knows_battle_5,mercenary_face_1, mercenary_face_2],
-["knight","Knight","Knights",tf_has_body|tf_has_hand|tf_has_head|tf_has_ranged,no_scene,reserved,fac_commoners,[
+["knight","Knight","Knights",tf_guarantee_all_w_horse,no_scene,reserved,fac_commoners,[
   itm_rifle_ammo_pw, itm_rifle_ammo_empty,
 
   itm_big_spiked_club,
   itm_hatchet_tactical,
   itm_saber1,
   itm_trooper_sword,
-  itm_trench_club_1,
-  itm_trench_club_2,
-  itm_trench_club_3,
-  itm_trench_club_4,
-  itm_trench_club_5,
-  itm_trench_club_6,
-  itm_trench_club_7,
-  itm_trench_club_8,
-  itm_trench_club_9,
-  itm_trench_club_10,
+
   itm_trench_club_11,
   itm_trench_club_12,
   itm_trench_club_13,
-  itm_trench_club_14,
 
   itm_long_trench_club_1,
   itm_long_trench_club_2,
@@ -1826,7 +1666,7 @@ troops = [
   itm_trench_steed_1,
   ]+carbines,
   attr_lvl_45,wp_6_m,knows_battle_6,mercenary_face_1, mercenary_face_2],
-["champion","Champion","Champions",tf_has_body|tf_has_hand|tf_has_head|tf_has_ranged,no_scene,reserved,fac_commoners,[
+["champion","Champion","Champions",tf_guarantee_all_w_horse,no_scene,reserved,fac_commoners,[
   itm_rifle_ammo_pw, itm_rifle_ammo_empty,
   itm_assault_service_rifle,
 
@@ -1837,17 +1677,7 @@ troops = [
   itm_trooper_sword,
   itm_lance_plain,
   itm_light_cav_sword,
-  itm_trench_club_1,
-  itm_trench_club_2,
-  itm_trench_club_3,
-  itm_trench_club_4,
-  itm_trench_club_5,
-  itm_trench_club_6,
-  itm_trench_club_7,
-  itm_trench_club_8,
-  itm_trench_club_9,
-  itm_trench_club_10,
-  itm_trench_club_11,
+
   itm_trench_club_12,
   itm_trench_club_13,
   itm_trench_club_14,
@@ -1884,27 +1714,14 @@ troops = [
   itm_crook_revolver_1,
 
   itm_mace_1,
-  itm_trench_club_1,
-  itm_trench_club_2,
-  itm_trench_club_3,
   itm_trench_club_4,
   itm_trench_club_5,
   itm_trench_club_6,
-  itm_trench_club_7,
-  itm_trench_club_8,
-  itm_trench_club_9,
-  itm_trench_club_10,
-  itm_trench_club_11,
-  itm_trench_club_12,
-  itm_trench_club_13,
-  itm_trench_club_14,
 
   itm_long_trench_club_1,
   itm_long_trench_club_2,
   itm_staff,
-  itm_trench_club_2,
   itm_bowie_knife,
-  itm_knife,
   itm_kukri_rusty,
   itm_kukri_old,
   itm_metal_blade,
@@ -1935,14 +1752,16 @@ troops = [
 ["scutifer_dark","Dark_Scutifer","Dark_Scutifers",tf_ghoul_human|tf_has_body|tf_has_ranged,no_scene,0,fac_commoners,[
   itm_rifle_ammo, itm_rifle_ammo_empty,
 
-  itm_knife,
-  itm_trench_club_2,
   itm_kukri_rusty,
   itm_mace_1,
   itm_staff,
   itm_bowie_knife,
   itm_big_club,
   itm_hatchet,
+
+  itm_trench_club_5,
+  itm_trench_club_6,
+  itm_trench_club_7,
 
   itm_poor_shirt_1,
   itm_poor_shirt_2,
@@ -1959,13 +1778,14 @@ troops = [
   itm_pistol_ammo_2,
   itm_pistol_ammo_3,
 
-  itm_knife,
-  itm_trench_club_2,
   itm_axe1,
   itm_axe2,
   itm_metal_blade,
   itm_hand_axe,
   itm_staff,
+  itm_trench_club_5,
+  itm_trench_club_6,
+  itm_trench_club_7,
 
   itm_wood_shield,
   itm_round_shield_leather,
@@ -1985,16 +1805,19 @@ troops = [
   itm_pack_horse,
   ]+smg_1,
   attr_lvl_35,wp_4_m,knows_battle_4,mercenary_face_1, mercenary_face_2],
-["sieur_dark","Dark_Sieur","Dark_Sieur",tf_ghoul_human|tf_has_body|tf_has_hand|tf_has_head|tf_has_ranged,no_scene,reserved,fac_commoners,[
+["sieur_dark","Dark_Sieur","Dark_Sieur",tf_ghoul_human|tf_guarantee_all_w_horse,no_scene,reserved,fac_commoners,[
   itm_rifle_ammo, itm_rifle_ammo_empty,
   itm_rifle_ammo_4,
 
-  itm_trench_club_2,
   itm_saber1,
   itm_trooper_sword,
   itm_hatchet_tactical,
   itm_battleaxe1,
   itm_battleaxe2,
+
+  itm_trench_club_6,
+  itm_trench_club_7,
+  itm_trench_club_8,
   
   itm_bal_shield_1,
   itm_bal_shield_2,
@@ -2010,15 +1833,18 @@ troops = [
   itm_palfrey_2,
   ]+carbines,
   attr_lvl_40,wp_5_m,knows_battle_5,mercenary_face_1, mercenary_face_2],
-["knight_dark","Dark_Knight","Dark_Knights",tf_ghoul_human|tf_has_body|tf_has_hand|tf_has_head|tf_has_ranged,no_scene,reserved,fac_commoners,[
+["knight_dark","Dark_Knight","Dark_Knights",tf_ghoul_human|tf_guarantee_all_w_horse,no_scene,reserved,fac_commoners,[
   itm_rifle_ammo_pw, itm_rifle_ammo_empty,
 
-  itm_trench_club_2,
   itm_big_spiked_club,
   itm_hatchet_tactical,
   itm_saber1,
   itm_trooper_sword,
-  
+
+  itm_trench_club_9,
+  itm_trench_club_10,
+  itm_trench_club_11,
+
   itm_blackgod_knight_shield,
   itm_bal_shield_1,
   itm_bal_shield_2,
@@ -2038,7 +1864,7 @@ troops = [
   itm_trench_steed_1,
   ]+carbines,
   attr_lvl_45,wp_6_m,knows_battle_6,mercenary_face_1, mercenary_face_2],
-["champion_dark","Dark_Champion","Dark_Champions",tf_ghoul_human|tf_has_body|tf_has_hand|tf_has_head|tf_has_ranged,no_scene,reserved,fac_commoners,[
+["champion_dark","Dark_Champion","Dark_Champions",tf_ghoul_human|tf_guarantee_all_w_horse,no_scene,reserved,fac_commoners,[
   itm_rifle_ammo_pw, itm_rifle_ammo_empty,
   itm_assault_service_rifle,
 
@@ -2048,6 +1874,9 @@ troops = [
   itm_saber1,
   itm_trooper_sword,
   itm_lance_plain,
+  itm_trench_club_12,
+  itm_trench_club_13,
+  itm_trench_club_14,
   
   itm_blackgod_knight_shield,
   itm_bal_shield_1,
@@ -2238,20 +2067,10 @@ troops = [
   itm_hammer_big,
   itm_light_cav_sword,
   itm_iron_staff,
-  itm_trench_club_1,
-  itm_trench_club_2,
-  itm_trench_club_3,
-  itm_trench_club_4,
-  itm_trench_club_5,
-  itm_trench_club_6,
-  itm_trench_club_7,
+
   itm_trench_club_8,
   itm_trench_club_9,
   itm_trench_club_10,
-  itm_trench_club_11,
-  itm_trench_club_12,
-  itm_trench_club_13,
-  itm_trench_club_14,
 
   itm_long_trench_club_1,
   itm_long_trench_club_2,
@@ -2617,6 +2436,7 @@ troops = [
   itm_bandit_fullhelm,
   itm_bandit_fullhelm2,
   itm_bucket_helm,
+  itm_bucket_helm_black,
   itm_bandit_bulwark_helm,
   itm_trench_knight_helm,
   itm_trench_knight_helm_2,
@@ -3010,7 +2830,7 @@ troops = [
   (itm_black_gloves_metal,imod_ragged),
   ]+smg_2,
   attr_lvl_30,wp_5_m,knows_battle_5,bandit_face1, bandit_face2],
-["marauder","Marauder","Marauder",tf_has_body|tf_guarantee_ranged|tf_has_head|tf_has_hand,0,0,fac_outlaws,[
+["marauder","Marauder","Marauder",tf_has_body|tf_guarantee_ranged|tf_has_head|tf_has_hand|tf_guarantee_horse,0,0,fac_outlaws,[
   itm_slug_ammo,
 
   itm_throwing_spears,
@@ -3537,6 +3357,7 @@ troops = [
   itm_bandit_fullhelm,
   itm_bandit_fullhelm2,
   itm_bucket_helm,
+  itm_bucket_helm_black,
   itm_metal_combat_helmet,
 
   itm_leather_gloves,
@@ -3587,6 +3408,9 @@ troops = [
   itm_bandit_fullhelm,
   itm_bandit_fullhelm2,
   itm_bucket_helm,
+  itm_bucket_helm_black,
+  itm_bucket_helm_horns,
+  itm_bucket_helm_black_horns,
   itm_bandit_bulwark_helm,
   itm_metal_combat_helmet,
 
@@ -3829,6 +3653,9 @@ troops = [
   itm_bandit_knight_helm_burnt,
   itm_bandit_knight_helm_black,
   itm_bucket_helm,
+  itm_bucket_helm_black,
+  itm_bucket_helm_horns,
+  itm_bucket_helm_black_horns,
   itm_bandit_bulwark_helm,
   itm_trench_knight_helm,
   itm_trench_knight_helm_2,
@@ -3843,7 +3670,7 @@ troops = [
   itm_extra_armour_outlaw_2,
   ]+rifles,
   attr_lvl_40,wp_6_m,knows_battle_6,bandit_face1, bandit_face2],
-["marauder_legend","Legendary Marauder","Legendary Marauder",tf_has_body|tf_guarantee_ranged|tf_has_head|tf_has_hand,0,0,fac_outlaws,[
+["marauder_legend","Legendary Marauder","Legendary Marauder",tf_has_body|tf_guarantee_ranged|tf_has_head|tf_has_hand|tf_guarantee_horse,0,0,fac_outlaws,[
   itm_buckshot_ammo,
 
   itm_katana,
@@ -3885,6 +3712,9 @@ troops = [
   
   itm_bandit_trench_helm,
   itm_bucket_helm,
+  itm_bucket_helm_black,
+  itm_bucket_helm_horns,
+  itm_bucket_helm_black_horns,
   itm_bandit_bulwark_helm,
   itm_trench_knight_helm,
   itm_trench_knight_helm_2,
@@ -4244,7 +4074,7 @@ troops = [
   (itm_black_gloves_metal,imod_ragged),
   ]+rifles,
   attr_lvl_30,wp_5_m,knows_battle_5,bandit_face1, bandit_face2],
-["jackal_marauder","Jackal_Marauder","Jackal_Marauder",tf_has_body|tf_guarantee_ranged|tf_has_head,0,0,fac_outlaws,
+["jackal_marauder","Jackal_Marauder","Jackal_Marauder",tf_has_body|tf_guarantee_ranged|tf_has_head|tf_guarantee_horse,0,0,fac_outlaws,
   [
   itm_rifle_ammo, itm_rifle_ammo_empty,
 
@@ -4410,7 +4240,7 @@ troops = [
   (itm_black_gloves_metal,imod_ragged),
   ]+rifles,
   attr_lvl_30,wp_5_m,knows_battle_5,bandit_face1, bandit_face2],
-["wolf_marauder","Wolf_Marauder","Wolf_Marauder",tf_has_body|tf_guarantee_ranged|tf_has_head,0,0,fac_outlaws,
+["wolf_marauder","Wolf_Marauder","Wolf_Marauder",tf_has_body|tf_guarantee_ranged|tf_has_head|tf_guarantee_horse,0,0,fac_outlaws,
   [
   itm_rifle_ammo, itm_rifle_ammo_empty,
 
@@ -4577,7 +4407,7 @@ troops = [
   (itm_black_gloves_metal,imod_ragged),
   ]+rifles,
   attr_lvl_30,wp_5_m,knows_battle_5,bandit_face1, bandit_face2],
-["boar_marauder","Boar_Marauder","Boar_Marauder",tf_has_body|tf_guarantee_ranged|tf_has_head,0,0,fac_outlaws,
+["boar_marauder","Boar_Marauder","Boar_Marauder",tf_has_body|tf_guarantee_ranged|tf_has_head|tf_guarantee_horse,0,0,fac_outlaws,
   [
   itm_rifle_ammo, itm_rifle_ammo_empty,
 
@@ -4749,7 +4579,7 @@ troops = [
   (itm_black_gloves_metal,imod_ragged),
   ]+rifles,
   attr_lvl_30,wp_5_m,knows_battle_5,bandit_face1, bandit_face2],
-["goat_marauder","Goat_Marauder","Goat_Marauder",tf_has_body|tf_guarantee_ranged|tf_has_head,0,0,fac_outlaws,
+["goat_marauder","Goat_Marauder","Goat_Marauder",tf_has_body|tf_guarantee_ranged|tf_has_head|tf_guarantee_horse,0,0,fac_outlaws,
   [
   itm_rifle_ammo, itm_rifle_ammo_empty,
 
@@ -4913,7 +4743,7 @@ troops = [
   itm_bear_gauntlets,
   ]+rifles,
   attr_lvl_30,wp_5_m,knows_battle_5,bandit_face1, bandit_face2],
-["bear_marauder","Bear_Marauder","Bear_Marauder",tf_has_body|tf_guarantee_ranged|tf_has_head,0,0,fac_outlaws,
+["bear_marauder","Bear_Marauder","Bear_Marauder",tf_has_body|tf_guarantee_ranged|tf_has_head|tf_guarantee_horse,0,0,fac_outlaws,
   [
   itm_rifle_ammo, itm_rifle_ammo_empty,
 
@@ -5387,7 +5217,7 @@ troops = [
   itm_scale_gauntlets,
   ],
   attr_lvl_30,wp_5_m,knows_battle_5,mercenary_face_1, mercenary_face_2],
-["ezeg_pillager","Ezeg_Pillager","Ezeg_Pillagers",tf_has_body|tf_has_head|tf_guarantee_horse|tf_has_shield|tf_has_hand,no_scene,reserved,fac_outlaws,[
+["ezeg_pillager","Ezeg_Pillager","Ezeg_Pillagers",tf_has_body|tf_has_head|tf_guarantee_horse|tf_has_hand,no_scene,reserved,fac_outlaws,[
   itm_ezeg_arrows,
   itm_rider_bow,
   itm_skirmisher_bow,
@@ -5543,6 +5373,7 @@ troops = [
   itm_butchering_knife,
   
   itm_cannibal_body,
+  itm_cannibal_vest,
   
   itm_cannibal_head,
   itm_cannibal_hood,
@@ -5566,7 +5397,8 @@ troops = [
   itm_cleaver,
   itm_butchering_knife,
 
-  itm_cannibal_body,
+  itm_cannibal_vest_cult,
+  itm_cannibal_vest_bones,
   
   itm_cannibal_hood_2,
 
@@ -5575,8 +5407,6 @@ troops = [
   itm_cannibal_hands,
   itm_leather_gloves,
   itm_black_gloves,
-  
-  itm_extra_armour_cult,
   ],
   attr_lvl_25,wp_5_m,knows_battle_5,bandit_face1, bandit_face2],
 ["cannibal_harvester","Cannibal_Harvester","Cannibal_Harvesters",
@@ -5591,7 +5421,8 @@ troops = [
   itm_cannibal_spear,
   itm_mackie_billhook,
 
-  itm_cannibal_body,
+  itm_cannibal_vest_cult_bones,
+  itm_cannibal_vest_mutant,
   
   itm_cannibal_hood_3,
   itm_cannibal_hood_4,
@@ -5601,8 +5432,6 @@ troops = [
   itm_cannibal_hands,
   itm_leather_gloves,
   itm_black_gloves,
-  
-  itm_extra_armour_cult,
   ],
   attr_lvl_35,wp_6_m,knows_battle_6,bandit_face1, bandit_face2],
 ["cannibal_butcher","Cannibal_Butcher","Cannibal_Butchers",
@@ -5616,7 +5445,7 @@ troops = [
   itm_meatsplitter_1,
   itm_meatsplitter_2,
 
-  itm_cannibal_body,
+  itm_cannibal_vest_miasma,
   
   itm_cannibal_hood_5,
 
@@ -5641,7 +5470,7 @@ troops = [
   itm_meatsplitter_1,
   itm_meatsplitter_2,
 
-  itm_cannibal_body,
+  itm_cannibal_vest_demon,
   
   itm_cannibal_hood_boss,
 
@@ -5867,37 +5696,20 @@ troops = [
   itm_white_gloves,
   ],
   attr_lvl_30,wp_5_m,knows_battle_5,bandit_face1, bandit_face2],
-["desert_bandit","Experimental_Gunsmith","Experimental_Gunsmiths",
+["desert_bandit","Empty_One","Empty_Ones",
   tf_has_body|tf_guarantee_ranged|tf_has_head,0,0,fac_outlaws,
   [
-  itm_plasma_ammo,
-
-  itm_pistol_plasma,
-  itm_pistol_plasma_heavy,
-  itm_rifle_plasma,
+  itm_rifle_ammo, itm_rifle_ammo_empty,
   
   itm_trench_knife,
+  itm_trench_club_1,
 
-  itm_sloppy_trench_coat,
+  itm_empty_one_uniform,
 
-  itm_civil_hat_1_mask,
-  itm_civil_hat_1b_mask,
-  itm_civil_hat_1c_mask,
-  itm_civil_hat_1d_mask,
-  itm_civil_hat_2_mask,
-  itm_civil_hat_3_mask,
-  itm_civil_hat_4_mask,
-  itm_civil_hat_5_mask,
-  itm_civil_hat_7_mask,
-  itm_civil_hat_9_mask,
-  itm_civil_hat_10_mask,
-  itm_civil_hat_11_mask,
-  itm_civil_hat_12_mask,
-  itm_civil_hat_13_mask,
-  itm_civil_hat_14_mask,
+  itm_empty_one_helmet,
 
   itm_black_gloves,
-  ],
+  ]+rifles,
   attr_lvl_30,wp_5_m,knows_battle_5,bandit_face1, bandit_face2],
 ["forest_bandit","Horselord","Horselords",
   tf_has_body|tf_guarantee_ranged|tf_has_head|tf_guarantee_horse,0,0,fac_outlaws,
@@ -6665,20 +6477,9 @@ troops = [
   itm_empire_bolt_action_rifle_bayonet,
   itm_empire_bolt_action_rifle,
 
-  itm_trench_club_1,
-  itm_trench_club_2,
-  itm_trench_club_3,
-  itm_trench_club_4,
   itm_trench_club_5,
   itm_trench_club_6,
   itm_trench_club_7,
-  itm_trench_club_8,
-  itm_trench_club_9,
-  itm_trench_club_10,
-  itm_trench_club_11,
-  itm_trench_club_12,
-  itm_trench_club_13,
-  itm_trench_club_14,
 
   itm_bowie_knife,
   itm_bayonet_2,
@@ -6727,21 +6528,10 @@ troops = [
   itm_pistol_ammo_pw,
   itm_smg_sten,
 
-  itm_trench_club_1,
-  itm_trench_club_2,
-  itm_trench_club_3,
-  itm_trench_club_4,
-  itm_trench_club_5,
-  itm_trench_club_6,
-  itm_trench_club_7,
   itm_trench_club_8,
   itm_trench_club_9,
   itm_trench_club_10,
-  itm_trench_club_11,
-  itm_trench_club_12,
-  itm_trench_club_13,
-  itm_trench_club_14,
-  itm_trench_club_2,
+
   itm_bowie_knife,
   itm_bayonet_2,
   itm_trooper_sword,
@@ -6922,20 +6712,9 @@ troops = [
   itm_blunt_slug_ammo,
   itm_shotgun_riot,
 
-  itm_trench_club_1,
-  itm_trench_club_2,
-  itm_trench_club_3,
-  itm_trench_club_4,
-  itm_trench_club_5,
   itm_trench_club_6,
   itm_trench_club_7,
   itm_trench_club_8,
-  itm_trench_club_9,
-  itm_trench_club_10,
-  itm_trench_club_11,
-  itm_trench_club_12,
-  itm_trench_club_13,
-  itm_trench_club_14,
 
   itm_long_trench_club_1,
   itm_long_trench_club_2,
@@ -6955,20 +6734,9 @@ troops = [
   itm_buckshot_ammo,
   itm_entenaii_shotgun,
 
-  itm_trench_club_1,
-  itm_trench_club_2,
-  itm_trench_club_3,
-  itm_trench_club_4,
-  itm_trench_club_5,
-  itm_trench_club_6,
   itm_trench_club_7,
   itm_trench_club_8,
   itm_trench_club_9,
-  itm_trench_club_10,
-  itm_trench_club_11,
-  itm_trench_club_12,
-  itm_trench_club_13,
-  itm_trench_club_14,
 
   itm_long_trench_club_1,
   itm_long_trench_club_2,
@@ -7079,7 +6847,9 @@ troops = [
   itm_mg_ammo_pw,
   itm_entenaii_empire_lmg,
 
-  itm_trench_club_4,
+  itm_trench_club_10,
+  itm_trench_club_11,
+  itm_trench_club_12,
 
   itm_entenaii_automaton_body,
 
@@ -7095,7 +6865,9 @@ troops = [
   itm_mg_ammo_pw,
   itm_mg_heavy_1,
 
-  itm_trench_club_4,
+  itm_trench_club_12,
+  itm_trench_club_13,
+  itm_trench_club_14,
 
   itm_entenaii_automaton_heavy_body,
 
@@ -11025,7 +10797,7 @@ troops = [
 
 #Cavalry
 ["f10_rider","Miasma-slave Rider","Miasma-slave Riders",
-  tf_infected|tf_allways_fall_dead|tf_no_capture_alive|tf_guarantee_ranged|tf_has_body|tf_has_hand|tf_has_head|tf_guarantee_horse|tf_guarantee_helmet|tf_guarantee_boots,0,0,fac_kingdom_10,
+  tf_infected|tf_allways_fall_dead|tf_no_capture_alive|tf_guarantee_ranged|tf_has_body|tf_has_hand|tf_guarantee_horse|tf_guarantee_helmet|tf_guarantee_boots,0,0,fac_kingdom_10,
   [
   itm_grenade_miasma,
   
@@ -13908,6 +13680,8 @@ troops = [
   (itm_blunt_slug_ammo_pw, imod_large_bag),
   
   (itm_shotgun_riot, imod_masterwork),
+  
+  itm_republican_mastri_helmet,
   
   ]+republican_lord_gear,
   lord_attrib,wp_m(260),lord_skills|knows_trainer_4, 0x00000001380825d444cb68b92b8d3b1d00000000001dd71e0000000000000000, rhodok_face_old_2],
