@@ -1,8 +1,18 @@
-kk4ever2000 - Team member
+Direct Contributers:
+kk4ever2000 - Co-Developer, textures, model finding, companion, ideas, motivation
+boii - Modeller
+Normynd - Companion Dialogue
+LoMany - Lore (Entenaii Dominion)
+Nerzuhl - Assets (from whitelinghand), companion
+BOCXOD - Lore (Vitzland)
 
-Warzone: Acron Team
-full Warzone: Acron credits:
-credits:
+Other Contributers:
+Aro
+phosphor
+
+
+
+Warzone: Acron Team:
 People directly contributing:
 - oliver (some assets, the main guy of 457AD)
 - tocan (coding, original idea, main developer)

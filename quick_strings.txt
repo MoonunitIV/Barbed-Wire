@@ -1,4 +1,4 @@
-28347
+28348
 qstr_scope_addon_mesh_pis scope_addon_mesh_pistol
 qstr_scope_addon_mesh_ak scope_addon_mesh_ak
 qstr_scope_addon_mesh_ass scope_addon_mesh_assault
@@ -28346,3 +28346,4 @@ qstr_Poisoned Poisoned
 qstr_+1_to_Ironflesh +1_to_Ironflesh
 qstr_+1_to_Wound_Treatmen +1_to_Wound_Treatment
 qstr_+1_to_Weapon_Master +1_to_Weapon_Master
+qstr_+1_to_Leadership +1_to_Leadership
