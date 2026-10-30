@@ -1054,8 +1054,10 @@ strings = [
 
 #other strings
   ("here_plus_space", "here "),
-
+  
+##########################################################################################
 #NPC strings
+##########################################################################################
 #npc1 = Declan
 #npc2 = Rikiar
 #npc3 = Gesgehe
@@ -1073,7 +1075,7 @@ strings = [
 #npc15 = Kilroy
 #npc16 = Mide
   #Declan
-  ("npc1_intro", "Mainn mhith. Yer wouldn't by a'chance be in the market for a tracker, would you?"), 
+  ("npc1_intro", "Mainn mhith! Don't take this the wrong way, but might you happen to be looking for a tracker for your company? If so, then this good sir has come to the right man, because... - (He gave his puffed-out chest a careless slap, trying to look like a seasoned veteran. But the moment you took a closer look, the whole image fell apart, revealing the truth of the matter. His eyes darted from corner to door like a frightened animal's, betraying a desperate man doing everything he could to cling to a thin veneer of confidence. Still, he kept playing his part to the bitter end.) - A tracker, right here in front of you! And I assure you, I'm not half bad at what I do. I'll earn every last falor, you have my word... But let's not drag this conversation out. Just a thought, that's all. Better yet, why don't we sit down and have a drink, unless you're a teetotaller or some kind of holy man?"), 
   #Rikiar
   ("npc2_intro", "Hello. Would you be so kind as to buy a carafe and drink with me? I'm down to my last five falors and I'd rather not drink alone."), 
   #Gesgehe
@@ -1106,7 +1108,8 @@ strings = [
   #Mide
   ("npc16_intro", "Mainn mhith. Are you looking for another gun by your side?"), 
 
-  ("npc1_intro_response_1", "Perhaps. What's the urgency?"), #Declan
+  #postive response
+  ("npc1_intro_response_1", "I don't mind a drink, but there's something about your eyes I don't like. They're awfully restless. Are you running from trouble, by any chance? No need to dodge the question — give it to me straight. Then I'll decide whether to hire you or leave you to the mercy of fate."), #Declan
   ("npc2_intro_response_1", "Your last five falors? What happened to you?"), #Rikiar
   ("npc3_intro_response_1", "Hello. What's a clearly well-brought up young lady like you doing in a place like this?"), #Gesgehe
   ("npc4_intro_response_1", "Hmm... I have never heard of the family of Tranthem."), #Hilmont
@@ -1131,7 +1134,8 @@ strings = [
   
   ("npc16_intro_response_1", "I could be. What's your story?"), #Mide
 
-  ("npc1_intro_response_2", "Step back, sir, and keep your hand away from my purse."), #Declan
+  #negative response
+  ("npc1_intro_response_2", "Here's my advice: go wash yourself. You reek of dung and rot. And go throw up while you're at it, you drunkard. There's something downright repulsive about that look in your eyes."), #Declan
   ("npc2_intro_response_2", "I have better things to do."), #Rikiar
   ("npc3_intro_response_2", "Run along now, girl. I have work to do."), #Gesgehe
   ("npc4_intro_response_2", "Eh? No thanks, we don't want any."), #Hilmont
@@ -1158,7 +1162,7 @@ strings = [
   ("npc16_intro_response_2", "Mind your own business, lass."), #Mide
 
 #backstory intro
-  ("npc1_backstory_a", "Well, {sir/ma'am}, it's a long story..."), #Declan
+  ("npc1_backstory_a", "All right, you've caught me out, {sir/ma'am}, but we'd best sit down. That way, we can avoid drawing any unwanted attention. Just don't expect a seven-hour tale. I'm no scribbling of some Gorberian noble, nor am I a bawdy satire. I'm a proud Galvaenian, and I've made more than a few mistakes worth regretting. But let's leave all that for the holy folk to wag their tongues over. Now, listen closely — and, better still, keep your ears open and an eye on the doors."), #Declan
   ("npc2_backstory_a", "It's a tragic tale, sir."), #Rikiar
   ("npc3_backstory_a", "A good question, and I shall tell you!"), #Gesgehe
   ("npc4_backstory_a", "Really? Well, perhaps your ignorance can be forgiven. Our ancestral lands are far to the south."), #Hilmont
@@ -1184,7 +1188,7 @@ strings = [
   ("npc16_backstory_a", "Well, {sir/madame}, as long as I can remember I've had a weakness for pretty things, and it's gotten me into trouble, you see."), #Mide
 
 #backstory main body
-  ("npc1_backstory_b", "I had a bit of a misunderstanding {s19}in {s20} about a truck that I found abandoned outside the inn. It was the spitting image of a truck I'd lost some time before. Naturally I got in for a closer look. As it turns out, the truck belonged to a trader, a pinch-faced old goat who wouldn't accept that it all was a simple misunderstanding, and went off to get the guard."), #Declan
+  ("npc1_backstory_b", "I'll keep it brief. My name's Declan, and as I said, I'm a Galvaenian... And I've found myself in the stupidest predicament of my entire life. And I swear by the mother of that cartwright, that truck looked exactly like mine! Ah, if only I'd never stopped at that inn. Believe me, it was all one great big mistake, and it all came down to my own curiosity. It was the spitting image of the one I'd lost some time ago. So, naturally, I climbed inside to get a closer look. And don't go getting the wrong idea — I didn't steal a thing. I only wanted to make sure it was my truck, and not somebody else's. But then, like a bolt from the blue, along came some sour-faced old trader — who just happened to own the very truck in question. Oh, the things he called me! He even started insulting all my ancestors... You should've seen his face turn purple, his eyes bulging out of their sockets! Another moment and I thought he'd burst from sheer spite and bile. Shame he didn't. Instead, he just spat and shook his head back and forth. Well, I tried to settle things peacefully, but the moment he so much as mentioned my mother, I gave him a proper thrashing... Only, I hadn't noticed his assistant. The little squealer ran off hollering for the guards while the old goat was busy picking his teeth up off the ground. And that's my life for you... Covered in someone else's spit and blood, and now I'm to dance on the chopping block for the crowd's amusement — all because I climbed into the wrong truck."), #Declan
   ("npc2_backstory_b", "A while back, I left Mexico with a caravan of goods. I was hoping to sell it all in Scramton and make a hefty sum. But, what do you know... we were ambushed by a party of Boarmen raiders who drove away with most of the trucks and goods. And two days later, my own caravan guards ran away with the rest of what I had."),
   ("npc3_backstory_b", "My father, a well-known merchant {s19}in {s20}, decided that I should be married to one of his business partners, a man well past the age of 30. I have been an obedient daughter all of my life, but it was a ridiculous and horrid proposition. So I ran away!"),
   ("npc4_backstory_b", "Like all the men of my family, I have come to a foreign land to make a name for myself in the profession of arms before returning home to take over custodianship of my estates. Unfortunately, the authorities in these lands have little understanding of the warrior code, and have chosen to call me a bandit and raider, and put a price on my head -- a most unfair libel to throw at a gentleman adventurer, you will surely agree."),
@@ -1207,7 +1211,7 @@ strings = [
   ("npc16_backstory_b", "I grew up in Arlingfield fort as an indentured servant, working alongside my mother in the kitchens. I would amuse myself by hunting mice through the pantries and sculleries. I was so good at it that I put the fort cats out of a job, and eventually the commander realized that I might also be employed to track down bigger game, on certain errands of a type perhaps better left unsaid. Needless to say, I found a number of opportunities to avail myself of trinkets that had formerly belonged to Sir's enemies. So I was able to buy myself out of indenture, and find hire as a free agent. My last job was {s19}in {s20}."), #Mide
 
 #backstory recruit pitch
-  ("npc1_backstory_c", "But if I was with a larger group who could vouch for me, they might let it pass. I'd be very grateful to you."), #Declan
+  ("npc1_backstory_c", "If I'd been a little quicker on my feet, I might've left these parts by now. But instead, here I am... Jumping at every little sound, waiting for justice to catch up with me. If I'd been travelling with a larger group, I'm sure there'd be someone willing to vouch for me to the guards. Perhaps then they'd get off my back, and that trader would be left not only short a few teeth, but also without the chance to watch my sorry carcass swinging from the gallows... Believe me, someone like you would have my gratitude for the rest of my days.And that's my story. Now I'm backed into a corner, doing my best to stay out of trouble. But I really do need work... Still, the decision is yours. I'm but a slave to fate, and you're the one who decides what fate has in store for me."), #Declan
   ("npc2_backstory_c", "So here I am, no money and no way home."),
   ("npc3_backstory_c", "I shall marry whom I want, when I want. Moreover, regardless of what my father might think, I am perfectly capable of taking care of myself. I was thinking that I should perhaps join a band of nomads, or perhaps a troop of mercenaries!"),
   ("npc4_backstory_c", "But I am anxious to avoid any further trouble, so if you knew of any company of fighting men where I might enlist, I would be most grateful."),
@@ -1248,7 +1252,8 @@ strings = [
   ("npc15_backstory_later", "I've been going from fort to fort, looking to see if walls or towers need repair. But either the warlord's away, or he's got other things on his mind, or I run into his creditors on the street, begging for change, and I realize that here's one job not to take. So if you hear of anything, let me know."),
   ("npc16_backstory_later", "I do the odd job from time to time. But there's naught like steady employment, and a regular run of corpses to loot."), #Mide
 
-  ("npc1_backstory_response_1", "Perhaps. But how do I know that there won't be a 'misunderstanding' about one of my trucks?"), #Declan
+  #positive response
+  ("npc1_backstory_response_1", "Quite a tale, Declan, and a very instructive one at that. I'm truly sorry you've found yourself in such a predicament. But how do I know there won't be another 'misunderstanding' involving one of my trucks, hmm?"), #Declan
   ("npc2_backstory_response_1", "Well, perhaps I could offer you work. Can you fight?"),
   ("npc3_backstory_response_1", "Well, as it happens I run a company of mercenaries."),
   ("npc4_backstory_response_1", "I run such a company, and might be able to hire an extra hand."),
@@ -1268,7 +1273,8 @@ strings = [
   ("npc15_backstory_response_1", "Where do you need to go?"),
   ("npc16_backstory_response_1", "I might be. What can you do?"), #Mide
 
-  ("npc1_backstory_response_2", "I'll do no such thing. I have better things to do then to help thieves avoid justice."), #Declan
+  #negative response
+  ("npc1_backstory_response_2", "A fine story for a satirical play! In fact, I already have a title for it: *The Curious Thief and the Bald-Headed Trader*. I'm sure it'll keep people entertained for the next three months. Farewell, you wretch. Perhaps fortune will smile upon you, and you'll drink yourself to death before justice catches up with you."), #Declan
   ("npc2_backstory_response_2", "Hard luck, friend. Good day to you."),
   ("npc3_backstory_response_2", "Go back to your family, lass. Fathers must always be obeyed."),
   ("npc4_backstory_response_2", "No, sorry, I haven't heard of one."),
@@ -1289,7 +1295,7 @@ strings = [
   ("npc15_backstory_response_2", "Sorry. I've got all the men that I can manage right now."),
   ("npc16_backstory_response_2", "Sorry, lass. You sound like you might be trouble."), #Mide
 
-  ("npc1_signup", "{Sir/Madame} -- I'm offended that you would even think such a thing. I'd be most indebted to you, and you'll see that I show my gratitude."), #Declan
+  ("npc1_signup", "I swear by my father's beard and my grandfather's! I understand your caution, but the very thought that you'd consider me capable of robbing my own saviour is an insult. May I be damned if I ever break my word, for to a Galvaean, nothing is more sacred than an oath. And my word, I assure you, is harder than stone. Believe me, I'm in your debt, and I'll repay your kindness with all the gratitude I'm capable of showing."), #Declan
   ("npc2_signup", "Well, I will confess that I am not a soldier by trade."),
   ("npc3_signup", "Do you? Well, I am in no position to be picky! I would be pleased to join you."),
   ("npc4_signup", "Good! I look forward to vanquishing your enemies."),
@@ -1310,7 +1316,7 @@ strings = [
   ("npc15_signup", "Mexico, eventually, but I'd welcome the opportunity to get a few falors in my pocket, first, so I don't come home empty handed. So if you promise me food and a share of the loot, I'd be happy to fight with you for a while."),
   ("npc16_signup", "Well, {sir/madame}, let me tell you. I may not know how to read and write, but I know the quickest way to a man's heart is between his fourth and fifth rib, if you understand me. "), #Mide
 
-  ("npc1_signup_2", "I've ridden over a fair amount of rough country in my time, more often than not in a hurry. I'm a good tracker and I've got a good eye for terrain. So what do you say?"), #Declan
+  ("npc1_signup_2", "I've travelled through more than my fair share of godforsaken places in my time, usually in a hurry. I know my trade, and I can tell a clearing from a marsh, and a mountain from a hill. And as for finding my way around, I'm better at it than some tavern wench is at picking a man. So, what's your answer? Or should I start twisting a rope and hang myself from that beam?"), #Declan
   ("npc2_signup_2", "I'm a fast learner. I can ride, and know a fair bit about trade, prices and such."),
   ("npc3_signup_2", "I think you would find I would be a most valuable addition to your ranks. I am well versed in the classics of literature and can retell various classic Gorberiana. I play the banjo and am a skilled manager of staff."),
   ("npc4_signup_2", "Note however that as a gentleman and the holder of territory, I expect to be in a position of command, and not be treated as one of the common soldiers."),
@@ -1329,8 +1335,11 @@ strings = [
   ("npc14_signup_2", "I am a skilled gunman, and I can also instruct your men in fighting. But I warn you that I do not care to fight for a leader who is lax in discipline with {his/her} men, for in the long run they will not respect a soft hand. "),
   ("npc15_signup_2", "Siegework is my speciality, although I reckon can handle myself well enough in an open battle, if need be."),
   ("npc16_signup_2", "I can throw knives, in addition to stabbing with them, and I'm slippery as quicksilver. You'll find me useful in a fight, I'll warrant."), #Mide
-
-  ("npc1_signup_response_1", "Good. You can be useful to us."), #Declan
+  
+  #postive response
+  #Declan
+  ("npc1_signup_response_1", "Then we'll put that to the test, Declan. But I'll make one thing clear from the start: I won't tolerate traitors or cowards in my company. And from this day on, you will address me as Captain."),
+  #
   ("npc2_signup_response_1", "That will do."),
   ("npc3_signup_response_1", "Um, that's a start. We can teach you the rest."),
   ("npc4_signup_response_1", "Very well. I'll be glad to have you with us, um, 'Baron.'"),
@@ -1350,8 +1359,10 @@ strings = [
   ("npc15_signup_response_1", "That works for me. I will be pleased to hire you."),
   ("npc16_signup_response_1", "It sounds like you can do the job. I will hire you."), #Mide
 
-#11
-  ("npc1_signup_response_2", "I'd prefer not to take the risk. Good day, sir."), #Declan
+  #negative_response
+  #Declan
+  ("npc1_signup_response_2", "I've heard quite enough stories for one day, and I'm convinced that a company of deaf and dumb mercenaries could use a tracker just like you — someone to lead them not in circles, but in zigzags, much to the enemy's amusement. Good day, thief."),
+  #
   ("npc2_signup_response_2", "I'm afraid I'm only looking for men with some experience. Good day to you."),
   ("npc3_signup_response_2", "Actually, we were looking for a slightly different skill-set."),
   ("npc4_signup_response_2", "Actually, we are not in the habit of hiring raiders with invented pedigrees. Good day, sir."),
@@ -1371,7 +1382,9 @@ strings = [
   ("npc15_signup_response_2", "Actually, I need a different kind of expertise. My apologies."),
   ("npc16_signup_response_2", "To be honest, I'd prefer someone who was a little less tempted to larceny."), #Mide
 
-  ("npc1_payment", "I will be very useful to you, {sir/madame}, you can bet on that. Just one more thing before we leave, would you mind lending me {reg3} falors? I am ashamed to say it, but I have made myself a bit of debt here, staying in this saloon over the last few weeks and the saloon owners no longer believe that I am loaded with money as I used to tell them. You know, things could get ugly here if they see me leaving with you before paying them."), #Declan
+  #Declan
+  ("npc1_payment", "As you say, Captain. I'll do my best to live up to your trust... But there's one small snag before we leave. Would you lend me {reg3} falors? I'm ashamed to admit it, but I've run up a bit of a debt here over the past few weeks I've spent in this saloon. And the owners no longer believe I've got pockets full of falors, as I've been telling them all along. You see, things could turn ugly if they catch sight of me leaving with you without settling my bill... I daresay we could take on a couple of drunks, but taking on the whole guard? I'm afraid no one could manage that..."),
+  #
   ("npc2_payment", "{!}."),
   ("npc3_payment", "{!}."),
   ("npc4_payment", "Excellent. Before we depart, would you be so kind to lend me {reg3} falors? I had to pawn a family heirloom at a pawnbroker here in {s20}, and I would like to retrieve it before we leave."),
@@ -1391,7 +1404,9 @@ strings = [
   ("npc15_payment", "Good. By the way, as a skilled engineer I would expect a payment for my services. A signing bonus of {reg3} falors would be fair, I think."),
   ("npc16_payment", "Now, that's good news, captain. So, how about paying me a little something to seal off our agreement? A mere {reg3} would be enough. Please don't take this the wrong way, but I've had some bad luck with employers in the past. "), #Mide
 
-  ("npc1_payment_response", "Very well, here's {reg3} falors. Now, fall in with the rest."), #Declan
+  #Declan
+  ("npc1_payment_response", "Ah, every time I leave a falor or two in some tavern, and I haven't even drained a whole cup of wine! I suppose that's the lot of every commander. Here are your falors. Now get along and join the others, and try not to get yourself into another scrape. I've no desire to become the subject of bawdy rhymes and drunken songs."),
+  #
   ("npc2_payment_response", "{!}."),
   ("npc3_payment_response", "{!}."),
   ("npc4_payment_response", "Certainly. Here's {reg3} falors."),
@@ -1412,7 +1427,9 @@ strings = [
   ("npc15_payment_response", "All right, here's {reg3} falors. Glad to have you with us."),
   ("npc16_payment_response", "All right, here's {reg3} falors for you. Make yourself ready."), #Mide
 
-  ("npc1_morality_speech", "Oy -- boss. Please don't take this the wrong way, but it's a hard life and it's a bit much that we {s21}. Take a little more care in the future, captain, if you don't mind my saying."), #Declan
+  #Declan
+  ("npc1_morality_speech", "Hey, Captain. I may not be the sharpest tool in the shed, and I hope you won't take this the wrong way, but life is hard enough as it is. There's no need to {s21} as well — best not take that kind of risk next time. But the choice is yours. I'm just speaking my mind."), 
+  #
   ("npc2_morality_speech", "I hope you don't mind my saying so, but it's a bit hard for me to see us {s21}. Maybe I ought to try to be more of a hardened soldier, but if we could try to exercise a little mercy from time to time, I'd sleep better."),
   ("npc3_morality_speech", "Perhaps it is not my place to say so, {sir/madame}, but I confess that I am somewhat shocked that we {s21}. Of course I realize that war is cruel, but there is no need to make it more cruel than necessary."),
   ("npc4_morality_speech", "Your pardon -- just so you know, the men of the Hilmont family do not care to {s21}. I will not be pleased if you continue to take this course."),
@@ -1431,8 +1448,10 @@ strings = [
   ("npc14_morality_speech", "I do not care to {s21}. No one with a reputation for cowardice will be properly feared by his men."),
   ("npc15_morality_speech", "{Sir/Madame} -- just so you know my opinion, any commander with sense will not let his company {s21}.I hope you don't mind me speaking so bluntly."),
   ("npc16_morality_speech", "Captain. I don't like to {s21}. So many throats left uncut, and so many wallets left unexplored..."), #Mide
-
-  ("npc1_2ary_morality_speech", "Boss -- just so you know, I've got no problem if we {s21}. Living to fight another day makes good sense to me."),
+  
+  #Declan
+  ("npc1_2ary_morality_speech", "Captain, don't take this as whining, but hear me out: I wouldn't mind if we {s21}. I'd say it's better to live to see another day, so we can give someone a good thrashing tomorrow. Seems like a perfectly sensible decision to me. But that's just my opinion."),
+  #
   ("npc2_2ary_morality_speech", "{Sir/Madame} -- I'm not altogether happy that we {s21}. I'm a merchant, and in our business one is bonded by one's word. I don't want a reputation for dishonesty -- that would spell my end as a trader, {sir/madame}."),
   ("npc3_2ary_morality_speech", "{Sir/Madame} -- I think it was a brave decision you took to {s21}. There is no shame in finding a way to avoid the spilling of blood."),
   ("npc4_2ary_morality_speech", "Your pardon -- whatever anyone else says, I think nothing of it that you {s21}. You should adopt whatever ruse you need to survive in these troubled times."),
@@ -1451,7 +1470,9 @@ strings = [
   ("npc15_2ary_morality_speech", "You know, friend {playername}, it's none too reassuring to see how you just {s21}. If you can break your word to them, you can break your word to me, is how I figure it."),
   ("npc16_2ary_morality_speech", "Captain -- just so you know, it's no problem by me that we {s21}. We do what we need to do to live, and they'd do the same to us if they were in our shoes."), #Mide
 
-  ("npc1_personalityclash_speech", "Captain -- no offense, but I'm a bit tired of {s11}, who puts on airs like she's something better than your humble servant Declan."),
+  #Declan
+  ("npc1_personalityclash_speech", "Captain, by the beards of my great-grandfather and his father before him! That {s11} gets on my nerves more than any miserly merchant's mug ever could. I'm barely holding myself back from giving her a good whack across the back. And if she'd just kept to herself, well, to hell with her! But no, she has to act like some highborn lady who thinks she's better than everyone else in this company. And fine, I could put up with that, but what gets under my skin most is that she seems to have it in for me in particular... Begging your pardon, but my hands are itching to teach her a lesson."),
+  #
   ("npc2_personalityclash_speech", "{Sir/Madame} -- as you recall I was a merchant before I signed on with you. I respect men who make their living peacefully, risking all to bring goods for far away lands."),
   ("npc3_personalityclash_speech", "Captain -- in my opinion, {s11} is a hard and cruel man. He speaks of nothing but the need to flog, beat, and hang his fellow soldiers."),
   ("npc4_personalityclash_speech", "{Sir/Madame}. The Hilmont family is one of the most ancient and respected families in this part of the world, with a provenance dating back to the Old Gorberia. Yet {s11} openly shows me disrespect, and casts doubt on the provenance of my family."),
@@ -1471,7 +1492,9 @@ strings = [
   ("npc15_personalityclash_speech", "Excuse me. I hope you don't mind me telling you that in my opinion, that girl {s11} is a danger to the party. She's a feral brat, disrespectful of authority and the basic principles of the military art."),
   ("npc16_personalityclash_speech", "Oy, captain. Just so you know -- there's something funny about {s11}. He makes strange scrawlings in the dirt, and mutters to himself."), #Mide
 
-  ("npc1_personalityclash_speech_b", "She's a common raider, just like myself, and she has no right to tell me to keep my distance from her, as she did just now."),
+  #Declan
+  ("npc1_personalityclash_speech_b", "Oh, by my father's beard, she's insufferable, Captain. She's no better than the rest of us — just another bandit with no roof over her head... Just like... me, eh. I'm no saint, Captain, but she has no right to tell me how to behave or demand that I keep my distance from her. If she'd asked me nicely, I would've backed off without making a fuss. But all she knows how to do is give orders and hurl insults, just as she did a moment ago."),
+  #
   ("npc2_personalityclash_speech_b", "I don't much care to hear {s11} gloat about the caravans he has looted, or he plans to loot, like he has no respect for good honest trade."),
   ("npc3_personalityclash_speech_b", "I know that an army is not a nursery, and that strong discipline is important, but I do believe that man enjoys cruelty for cruelty's sake. I hope you do not mind me saying so."),
   ("npc4_personalityclash_speech_b", "{Sir/Madame}, these are indeed sorry days if common folk are allowed to mock their betters. That is all."),
@@ -1493,7 +1516,9 @@ strings = [
 
 
 ### set off by behavior after victorious battle
-  ("npc1_personalityclash2_speech", "Oy -- boss, I don't fancy myself a sensitive soul, but I don't particularly like how {s11} went about cutting the throats of the enemy wounded, back there."),
+  #Declan
+  ("npc1_personalityclash2_speech", "Captain, I've spilled plenty of blood in my time, and I doubt I'll ever wash the stains from my hands or pray the sins from my soul... But this is too much, even for those who tried to kill us. {s11} won't even let the wounded die in peace... That fury takes pleasure in their dying agony. Damn all of Gorberia, but a man ought to show at least a shred of mercy, even to his enemies!"),
+  #
   ("npc2_personalityclash2_speech", "{Sir/Madame}. If you don't mind, I'd prefer not to be deployed anywhere near {s11}, after what he said to me during that last battle."),
   ("npc3_personalityclash2_speech", "{Sir/Madame}. Since I have joined your company, I have tried hard to learn how to live like a soldier, and how to honour the warrior's code. If I occasionally make mistakes, I would hope to be forgiven."),
   ("npc4_personalityclash2_speech", "{Sir/Madame}. I happened to exchange a few words with {s11} as we were dividing up the spoils of battle. Please inform her that when she speaks to me, she should call me 'Sir' or perhaps 'Sir Hilmont,' or 'Your Grace,' but certainly not just 'Hilmont.'"),
@@ -1513,7 +1538,9 @@ strings = [
   ("npc15_personalityclash2_speech", "Commander -- I must tell you that I question {s11}'s medical credentials. As he was tending to our wounded after that last battle, I saw fit to remind him that the peerless Master Surgeon Dius often advocated administering a distillation of beetroot, to restore the humor imbalance brought by loss of sanguinity."),
   ("npc16_personalityclash2_speech", "Beg your pardon, {sir/ma'am}. {s11} might have been a very good thief, but he's not got the stomach to be a warrior, if you ask me."), #Mide
 
-  ("npc1_personalityclash2_speech_b", "The way she whistles cheerfully as she does it -- it puts a chill down my spine, it does."),#Declan - Mide
+  #Declan - Mide
+  ("npc1_personalityclash2_speech_b", "Oh, merciful ancestors, the sound of her cheerful whistling is enough to send a chill down anyone's spine, even that of a battle-hardened veteran... She's no woman, Captain, but a proper monster. Still, I'm glad she's on our side for now, because I'd rather not lose my own scalp."),
+  #
   ("npc2_personalityclash2_speech_b", "The enemy was bearing down on us, and he says, 'Step aside, merchant, this is roughnecks's work.' Next time I will step aside, and let him take a bullet in the gut."), #Rikiar - Galgalliel
   ("npc3_personalityclash2_speech_b", "After our last victory I was picking through the slain, and availed myself of one of our foe's wallets. No sooner had I done so then {s11} came up behind me and struck it from my hands, saying that it was she who had made the kill, and thus she deserved the spoils. Sir, I could not tell in the heat of battle who had struck whom. If {s11} had simply told me that she deserved the purse, I would gladly have given it to her."),#Gesgehe - Tomasia
   ("npc4_personalityclash2_speech_b", "I am from a good family, and she is trailer trash. She must remember her place."),#Hilmont - Xetina
@@ -1533,7 +1560,7 @@ strings = [
   ("npc15_personalityclash2_speech_b", "{s11} responded that Master Surgeon Dius was an 'antiquated know-nothing.' Captain, no true doctor would have such disrespect for the great masters of the past. I do not believe you should employ such an obvious impostor."), #Kilroy - Brouprix
   ("npc16_personalityclash2_speech_b", "After our last scrap, I was slicing open the guts of some our foes to check for hidden money, as a girl who counts her pennies ought. He gagged and muttered that I was an 'animal.' I'll inspect his innards for contraband if he doesn't keep a civil tongue in his head."), #Mide - Declan
 
-  ("npc1_personalitymatch_speech", "Boss. {s11} back there didn't do badly in that last fight at all. He's a good egg, too."),
+  ("npc1_personalitymatch_speech", "Boss. {s11} back there didn't do badly in that last fight at all. You should've seen him wield that rifle, Captain! He fought like an entire company of men, you have my word — and the beards of all my ancestors! {s11} deserves every last falor and every bit of praise he gets. And he's a good fellow, too."),
   ("npc2_personalitymatch_speech", "{Sir/Madame}. I just wanted to tell you that {s11} may be a rough sort, and I'll venture a thoroughgoing rogue as well, but I'm proud to call him my companion."),
   ("npc3_personalitymatch_speech", "Hello, {sir/madame}! I had just wanted to tell you that {s11} is a most gallant soldier. Did you see him in our last battle?"),
   ("npc4_personalitymatch_speech", "Excuse me, {sir/madame}. I just wanted to say a word in praise of {s11}. He did well in that last battle."),
@@ -1553,7 +1580,7 @@ strings = [
   ("npc15_personalitymatch_speech", "Captain. I was just having a word with {s11} after our last battle, and it strikes me that the man has got a good head on his shoulders."),
   ("npc16_personalitymatch_speech", "Oy -- captain. I was just having a chat with {s11}, as we picked through the bodies after our last little scrap."), #Mide
 
-  ("npc1_personalitymatch_speech_b", "Without good honest souls like him to bring money into Gorberia, scoundrels like me would have a hard time in life, I'll warrant. I'm glad to have him with us."),
+  ("npc1_personalitymatch_speech_b", "If it weren't for honest lads like him, bringing coin into Gorberia, the likes of me would've starved to death long ago or ended up rotting in a ditch while the guards jeered at us. I'm glad to have him with us."),
   ("npc2_personalitymatch_speech_b", "Based on how he did in that last fight, I'd say that I'd trust my back to him any day, although I'd still keep a hand on my wallet."),
   ("npc3_personalitymatch_speech_b", "I also confess that I find him a truly delightful companion, a man of both wit and manners. Perhaps, perhaps... Ah, but I say too much. Good day, {sir/madame}."),
   ("npc4_personalitymatch_speech_b", "You chose well to enlist him in our company. He knows a thing or two about a fight, and also knows the importance of respecting his comrades-in-arms, unlike some others I might mention."),
@@ -1573,7 +1600,9 @@ strings = [
   ("npc15_personalitymatch_speech_b", "War, like any other affair, requires careful planning and preparation, and a firm grasp of strategic principals. All other things being equal, the best trained army will win the battle, an observation that I think our last fight bears out. The men may curse him now, but they'll learn to thank him, I'll warrant."),
   ("npc16_personalitymatch_speech_b", "Have you heard her story? Can you believe the wrongs done to her? I tell you, it makes my blood boil. I want to cut off all the little bits of those bastards who mistreated her -- and I'll do it, too, if we ever run into them in our travels."), #Mide
 
-  ("npc1_retirement_speech", "I'm a bit tired of marching up and down the land, shedding my blood for someone else's cause. The loot is good, but I think I've got enough of that, now. I'm going to head back to my village, take a wife, settle down, maybe raise horses if I can afford it."),
+  #Declan
+  ("npc1_retirement_speech", "Ah, I do enjoy wandering from one corner of the world to another, but I'm tired of roaming these lands like a vagabond, and I'm even more tired of spilling blood — especially at the whim of rich folk and other highborn sorts. I know the spoils are good, perhaps too good to turn down... But I've lost the taste for fighting that I once had. And lately, I feel as though I can hear the voices of my long-dead father and mother... I reckon it's a sign that it's time to give up the mercenary life. I don't know where the road will take me, but perhaps I'll return to my home village and find myself a pretty wife — preferably one with a figure to match, if fortune favours me... Heh! Maybe I'll finally settle down, and if I've enough falors to spare, I'll take up horse breeding. But by my ancestors, I'll always be glad to see you, Captain! And if our paths ever cross again, you can count on a keg of ale and the finest food my coin can buy. Well, it's time for me to go. Take care of yourself!."),
+  #
   ("npc2_retirement_speech", "I'm getting a bit tired of the soldier's life. I'm going to invest my share of our loot into a cargo of goods -- furs, linens, velvets, probably -- and take them back over the mountains. I would like to thank you again for taking me on, and wish you the best of luck."),
   ("npc3_retirement_speech", "I am afraid I have something to tell you. I have decided that the soldier's life is not for me. I think it is probably too late for me to find a good marriage -- no one of my people would take a wife who had served with a company of soldiers -- but I may have enough money to start myself up as a merchant. I hope you will not be angry, {sir/madame}."),
   ("npc4_retirement_speech", "I have fought with you honourably, as befits a son of the Hilmont family, but I am not altogether satisfied with your leadership. I will go home to my ancestral estates, which are much in need of my services."),
@@ -1592,8 +1621,10 @@ strings = [
   ("npc14_retirement_speech", "I would like to inform you that I wish to sever our relationship. I intend to seek alternative employment."),
   ("npc15_retirement_speech", "I appreciate that you took me on, but I'm not altogether happy about how things have worked out. I'm going to head off elsewhere -- maybe go home, maybe find another job, I haven't quite decided yet."),
   ("npc16_retirement_speech", "I've had good times in this company, and I've found myself a pretty trinket or two on the battlefield, but right now it isn't working out. I'm leaving you to go offer my talents to someone else."), #Mide
-
-  ("npc1_rehire_speech", "Boss -- it's good to see you again. I know we had our differences in the past, but to tell you the truth, those were some of the best days I've known. And, to tell you the truth, I've had a bit of difficulty finding work. Listen, if you'd be willing to have me back, I'd be willing to sign up with your company again."),
+  
+  #Declan
+  ("npc1_rehire_speech", "Yes, yes, it's me again, your old pal Declan! I remember promising that if our paths ever crossed again, I'd treat you to a keg of ale and the finest dishes... But fate had other plans for me. And, truth be told, serving in your company was the best time of my life. And if I'm being honest, work has been scarce lately, and I haven't managed to settle down or start a family either... Ah, well... Listen, if you'd be willing to take me back, I'm ready to join your company once more. And I swear by the beards of my ancestors — I'll serve you with honour!"),
+  #
   ("npc2_rehire_speech", "{Sir/Madame}! It's good to see you again. But I'll confess -- I've been looking for you. I bought a load of goods like I told you I would, loaded them up, and took them back across the plains -- but wouldn't you know it, I was hit again by Boarmen, and lost it all. I guess I'm just destined to fight for my fortune. Also, people tell me that you've done very well for yourself. So tell me, {sir/madame}, would you have me back?"),
   ("npc3_rehire_speech", "Well, hello {sir/madame}! It is very good to see you again. I have not fared so well since we parted, I am afraid. My mother's family. whom I hoped would give me a start in trading, have not been as welcoming as I have hoped. I receive nothing but lectures from my aunts, on how I have ruined my prospects for marriage by taking service in a mercenary company. Perhaps I am better suited to war than to commerce, to share a meal over a campfire with rough fellows than to drink wine with the settlers of Silver Springs. {Sir/Madame}, I must ask you -- will you take me back?"),
   ("npc4_rehire_speech", "Why hello, captain. It's been a while. You've done well for yourself, I hear. For my part, I've been having some difficulties coaxing a living from my estates -- locusts, bad rains, unruly settlers, that sort of thing. I thought I might take up the gun once more. I know there's been some bad blood between us, but I'd be honoured to fight in your ranks once again."),

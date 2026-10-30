@@ -6511,9 +6511,9 @@ module_warzone_scripts = [
       (agent_get_troop_id, ":troop_id", ":agent_id"),
 
       (try_begin),
-        (this_or_next|eq, ":troop_id", "trp_car_mechanic"),
-        (this_or_next|eq, ":troop_id", "trp_f2_car_mechanic"),
-        (eq, ":troop_id", "trp_f1_car_mechanic"),
+        (this_or_next|eq, ":troop_id", "trp_landcraft_mechanic"),
+        (this_or_next|eq, ":troop_id", "trp_f2_landcraft_mechanic"),
+        (eq, ":troop_id", "trp_f1_landcraft_mechanic"),
 
         (assign,":continue",0),
         (try_begin),
@@ -6532,8 +6532,8 @@ module_warzone_scripts = [
         (eq,":continue",1),
 
         (try_begin),
-          (this_or_next|eq, ":troop_id", "trp_f2_car_mechanic"),
-          (eq, ":troop_id", "trp_car_mechanic"),
+          (this_or_next|eq, ":troop_id", "trp_f2_landcraft_mechanic"),
+          (eq, ":troop_id", "trp_landcraft_mechanic"),
 
           (store_random_in_range, ":rnd", 1, 4),
           (try_begin),
@@ -6552,7 +6552,7 @@ module_warzone_scripts = [
             (assign, "$g_vehicle_car_3", 1),
           (try_end),
         (else_try),
-          (eq, ":troop_id", "trp_f1_car_mechanic"),
+          (eq, ":troop_id", "trp_f1_landcraft_mechanic"),
 
 		  (store_random_in_range, ":rnd", 1, 4),
           #(store_random_in_range, ":rnd", 1, 2),
@@ -6589,9 +6589,9 @@ module_warzone_scripts = [
         # (assign, "$g_vehicle_car_1", 1),
 
       (else_try),
-        (this_or_next|eq, ":troop_id", "trp_f1_chopper_mechanic"),
-        # (this_or_next|eq, ":troop_id", "trp_f2_chopper_mechanic"),
-        (eq, ":troop_id", "trp_chopper_mechanic"),
+        (this_or_next|eq, ":troop_id", "trp_f1_aircraft_mechanic"),
+        # (this_or_next|eq, ":troop_id", "trp_f2_aircraft_mechanic"),
+        (eq, ":troop_id", "trp_aircraft_mechanic"),
 
         (assign,":continue",0),
         (try_begin),
@@ -6612,7 +6612,7 @@ module_warzone_scripts = [
         #(store_random_in_range, ":rnd", 1, 3),
         (try_begin),
          # (eq, ":rnd", 1),
-		 (eq, ":troop_id", "trp_f1_chopper_mechanic"),
+		 (eq, ":troop_id", "trp_f1_aircraft_mechanic"),
           (assign, ":prop", "spr_vehicle_chopper_1"),
           (assign, "$g_vehicle_chopper_1", 1),
 
@@ -7819,8 +7819,24 @@ module_warzone_scripts = [
         (assign, ":reload_animation", "anim_garand_reload"),                   
         (item_set_slot, ":cur_item", slot_item_has_ironsight, "spr_is_trezzo_bolt_action_rifle"),    
     (else_try),
+        (this_or_next|eq, ":cur_item", "itm_trezzo_bolt_action_carbine_single"),
+        (this_or_next|eq, ":cur_item", "itm_trezzo_bolt_action_rifle_single_bayonet"),
+        (this_or_next|eq, ":cur_item", "itm_trezzo_bolt_action_rifle_single"),
+        (this_or_next|eq, ":cur_item", "itm_trezzo_bolt_action_carbine_2"),
+        (this_or_next|eq, ":cur_item", "itm_trezzo_bolt_action_rifle_bayonet_2"),
+        (eq, ":cur_item", "itm_trezzo_bolt_action_rifle_2"),
+        (assign, ":ready_animation", "anim_rifle_bolt_ready"),
+        (assign, ":fire_animation", "anim_rifle_bolt_fire"),
+        (assign, ":aim_loop_animation", "anim_rifle_bolt_aim"),
+        (assign, ":reload_animation", "anim_garand_reload"),                   
+        (item_set_slot, ":cur_item", slot_item_has_ironsight, "spr_is_trezzo_bolt_action_rifle_2"),    
+    (else_try),
     
-##irregular
+##renegade
+        
+        (this_or_next|eq, ":cur_item", "itm_renegade_bolt_action_carbine_single"),
+        (this_or_next|eq, ":cur_item", "itm_renegade_bolt_action_rifle_single_bayonet"),
+        (this_or_next|eq, ":cur_item", "itm_renegade_bolt_action_rifle_single"),
         (this_or_next|eq, ":cur_item", "itm_renegade_bolt_action_carbine"),
         (this_or_next|eq, ":cur_item", "itm_renegade_bolt_action_rifle_bayonet"),
         (eq, ":cur_item", "itm_renegade_bolt_action_rifle"),
@@ -8002,7 +8018,7 @@ module_warzone_scripts = [
 ################
 ##Entenaii Empire
         (eq, ":cur_item", "itm_entenaii_assault_rifle"),
-        (item_set_slot, ":cur_item", slot_item_has_ironsight, "spr_is_assault_m42"),
+        (item_set_slot, ":cur_item", slot_item_has_ironsight, "spr_is_entenaii_assault_rifle"),
     (else_try), 
 ##Entenaii Dominion
         (this_or_next|eq, ":cur_item", "itm_dominion_assault_rifle_special"),
@@ -8011,6 +8027,10 @@ module_warzone_scripts = [
     (else_try), 
 
 ##Kingdom of Galvae
+        (eq, ":cur_item", "itm_galvae_assault_rifle"),
+        (item_set_slot, ":cur_item", slot_item_has_ironsight, "spr_is_galvae_assault_rifle"),
+    (else_try), 
+
 ##Molvat-Berchav Union
         (eq, ":cur_item", "itm_berchav_assault_rifle"),
         (item_set_slot, ":cur_item", slot_item_has_ironsight, "spr_is_berchav_assault_rifle"),
@@ -8021,7 +8041,15 @@ module_warzone_scripts = [
         (item_set_slot, ":cur_item", slot_item_has_ironsight, "spr_is_vitzland_assault_rifle"),
     (else_try), 
 ##Trezzo Republic
+        (this_or_next|eq, ":cur_item", "itm_trezzo_assault_rifle_bayonet"),
+        (eq, ":cur_item", "itm_trezzo_assault_rifle"),
+        (item_set_slot, ":cur_item", slot_item_has_ironsight, "spr_is_trezzo_assault_rifle"),
+    (else_try), 
 ##Itami Castedom
+        (eq, ":cur_item", "itm_itami_assault_rifle"),
+        (item_set_slot, ":cur_item", slot_item_has_ironsight, "spr_is_itami_assault_rifle"),
+    (else_try), 
+
 ##Bashide Confederacy
 ##Renegades
 ##Theocracy of Throd

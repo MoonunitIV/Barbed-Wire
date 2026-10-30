@@ -296,9 +296,9 @@ game_menus = [
             (party_add_members, "p_main_party", "trp_ghoul_walker", 5),
             (party_add_members, "p_main_party", "trp_f1_tier_5", 25),
             # (party_add_members, "p_main_party", "trp_bus_mechanic", 5),
-            # (party_add_members, "p_main_party", "trp_car_mechanic", 5),
-            # (party_add_members, "p_main_party", "trp_f1_car_mechanic", 5),
-            # (party_add_members, "p_main_party", "trp_chopper_mechanic", 5),
+            # (party_add_members, "p_main_party", "trp_landcraft_mechanic", 5),
+            # (party_add_members, "p_main_party", "trp_f1_landcraft_mechanic", 5),
+            # (party_add_members, "p_main_party", "trp_aircraft_mechanic", 5),
 
             (troop_add_item, "trp_player","itm_sausages"),
             (troop_join_as_prisoner, "trp_f1_tier_1"),
@@ -11354,16 +11354,17 @@ TOTAL:  {reg5}"),
        "Take a walk around the courtyard",
        [
         ], "To the fort courtyard"),
-    ("town_recruitment",
-       [
-		(party_slot_eq,"$current_town",slot_party_type, spt_town),
-		(eq,"$entry_to_town_forbidden",0),
-       ],
-       "Visit the cannon foundry.",
-       [
-	     (jump_to_menu,"mnu_cannon_recruitment"),
+    # ("town_recruitment",
+       # [
+		# (party_slot_eq,"$current_town",slot_party_type, spt_town),
+		# (eq,"$entry_to_town_forbidden",0),
+       # ],
+       # "Visit the cannon foundry.",
+       # [
+	     # (jump_to_menu,"mnu_cannon_recruitment"),
 		
-	   ],"Door to the Foundry."),
+	   # ],"Door to the Foundry."
+       #),
 ("town_enterprise",
       [
         (party_slot_eq,"$current_town",slot_party_type, spt_town),

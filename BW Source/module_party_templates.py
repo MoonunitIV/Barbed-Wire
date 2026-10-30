@@ -56,13 +56,13 @@ party_templates = [
   ("scavenge_template","Deserters",icon_axeman|carries_goods(3),0,fac_outlaws,bandit_personality,[]),  
   ("church_extremists","Cultists of Throd",icon_axeman|carries_goods(2),0,fac_outlaws,bandit_personality,[(trp_zealot,1,5)]),
 
-  ("steppe_bandits","Peasant Rebels",icon_peasant|carries_goods(2),0,fac_outlaws,bandit_personality,[(trp_farmer,5,10),(trp_peasant_woman,5,10)]),
-  ("taiga_bandits","Nomads",icon_peasant|carries_goods(2),0,fac_outlaws,bandit_personality,[(trp_farmer,5,10),(trp_peasant_woman,5,10)]),
-  ("desert_bandits","Hostile Settlers",icon_peasant|carries_goods(2),0,fac_outlaws,bandit_personality,[(trp_traveler,5,10),(trp_traveler_w,5,10)]),
+  ("steppe_bandits","Skinwalkers",icon_peasant|carries_goods(2),0,fac_outlaws,bandit_personality,[(trp_steppe_bandit,25,80)]),
+  ("taiga_bandits","Ashmakers",icon_peasant|carries_goods(2),0,fac_outlaws,bandit_personality,[(trp_taiga_bandit,10,50)]),
+  ("desert_bandits","Empty_Ones",icon_peasant|carries_goods(2),0,fac_outlaws,bandit_personality,[(trp_desert_bandit,5,40)]),
   
-  ("forest_bandits","Ghoulman_Gang",icon_axeman|carries_goods(2),0,fac_forest_bandits,bandit_personality,[(trp_blades_warrior,10,100)]),
-  ("mountain_bandits","Tattoo Gang",icon_axeman|carries_goods(2),0,fac_mountain_bandits,bandit_personality,[(trp_the_suits,10,100)]),
-  ("sea_raiders","White Skulls Gang",icon_axeman|carries_goods(2),0,fac_mountain_bandits,bandit_personality,[(trp_sea_raider,10,100)]),
+  ("forest_bandits","Horselords",icon_axeman|carries_goods(2),0,fac_forest_bandits,bandit_personality,[(trp_forest_bandit,10,40)]),
+  ("mountain_bandits","Munition_Bandits",icon_axeman|carries_goods(2),0,fac_mountain_bandits,bandit_personality,[(trp_mountain_bandit,10,40)]),
+  ("sea_raiders","White Skulls Gang",icon_axeman|carries_goods(2),0,fac_mountain_bandits,bandit_personality,[(trp_sea_raider,10,50)]),
   
   ("cannibals","Cannibals",icon_axeman|carries_goods(2),0,fac_outlaws,bandit_personality,[(trp_cannibal,10,100),(trp_cannibal_cruel,5,50),(trp_cannibal_harvester,3,25),(trp_cannibal_butcher,1,10),(trp_cannibal_legend,0,1)]),
 

@@ -91,6 +91,11 @@ knows_battle_8 = knows_ironflesh_9|knows_shield_8|knows_inventory_management_4|k
 wp_8_m = wp_m(500)
 wp_8_r = wp_r(500)
 
+attr_lvl_60 = str_35|agi_23|int_10|cha_10|level(60)
+knows_battle_9 = knows_ironflesh_9|knows_shield_9|knows_inventory_management_4|knows_weapon_master_9|knows_riding_9|knows_athletics_9|knows_power_strike_10|knows_power_throw_10|knows_power_draw_10|knows_horse_archery_9
+wp_9_m = wp_m(550)
+wp_9_r = wp_r(550)
+
 attr_terror = str_75|agi_25|int_8|cha_8|level(50)
 attr_terror_elite = str_100|agi_35|int_10|cha_10|level(60)
 
@@ -364,8 +369,10 @@ vitzland_lord_gear = [
 ##Trezzo Republic
 republican_lord_gear = [
   (itm_trezzo_revolver_custom, imod_masterwork),
-  (itm_pistol_ammo_pw, imod_large_bag),
-  (itm_pistol_ammo_pw, imod_large_bag),
+  itm_trezzo_smg_heritage_1,
+  itm_trezzo_smg_heritage_2,
+  (itm_pistol_ammo_2_pw, imod_large_bag),
+  (itm_pistol_ammo_2_pw, imod_large_bag),
   itm_pistol_ammo_empty, 
   (itm_noble_rapier, imod_balanced),
   (itm_noble_rapier_2, imod_balanced),
@@ -373,41 +380,47 @@ republican_lord_gear = [
   
   (itm_republican_armour_officer, imod_reinforced),
   (itm_republican_uniform_officer, imod_reinforced),
+  
   itm_republican_noble_helmet,
+  itm_republican_noble_helmet_2,
+  
+  (itm_republican_gauntlets, imod_reinforced),
   
   (itm_ammo_belt_1, imod_reinforced),
-  (itm_republican_gauntlets, imod_reinforced),
+  itm_extra_armour_republican,
   ]
 ##Itami Castedom
 itami_lord_gear = [
   (itm_itami_pistol_2, imod_masterwork),
   (itm_pistol_ammo_pw, imod_large_bag),
   (itm_pistol_ammo_pw, imod_large_bag),
-  itm_pistol_ammo_empty, 
   (itm_katana, imod_balanced),
   
   (itm_itami_armour_officer, imod_reinforced),
   (itm_itami_uniform_officer, imod_reinforced),
+  
   itm_itami_noble_helmet,
   
-  (itm_ammo_belt_1, imod_reinforced),
   (itm_itami_gauntlets, imod_reinforced),
+  
+  (itm_ammo_belt_1, imod_reinforced),
   ]
 ##Bashide Confederacy
 bashide_lord_gear = [
-  (itm_reflex_bow, imod_masterwork),
-  (itm_yanizar_arrows, imod_large_bag),
-  (itm_yanizar_arrows, imod_large_bag),
+  (itm_bashide_smg_2, imod_masterwork),
+  (itm_pistol_ammo_pw, imod_large_bag),
+  (itm_pistol_ammo_pw, imod_large_bag),
+
   (itm_tagan, imod_balanced),
   
   itm_bashide_uniform_officer_cuirass,
   itm_bashide_armour_officer,
 
   itm_bashide_noble_helmet,
-  itm_bashide_noble_helmet_2,
   
-  (itm_capelet_grey, imod_reinforced),
   (itm_bashide_gloves_b, imod_reinforced),
+  
+  (itm_extra_armour_bashide, imod_reinforced),
   ]
 ##Renegade
 renegade_lord_gear = [
@@ -422,6 +435,8 @@ renegade_lord_gear = [
   itm_renegade_officer_helmet,
   
   itm_renegade_demi_gauntlets,
+  
+  itm_extra_armour,
   ]
 ##Throd
 throd_lord_gear = [
@@ -429,15 +444,22 @@ throd_lord_gear = [
   itm_grenade_miasma,
   itm_grenade_miasma,
   itm_war_axe,
+  itm_hatchet,
   
-  itm_throd_helmet,
-  itm_throd_gauntlets,
+  itm_throd_shield,
+  
   itm_throd_robe_armoured_heavy_2,
   itm_throd_church_guard_3,
+  
+  itm_throd_helmet,
+  itm_throd_hood_theocracy,
+  
+  itm_throd_gauntlets,
+  
+  itm_extra_armour_outlaw_3,
+ 
   itm_ghoul_horse,
   itm_ghoul_horse_2,
-  itm_throd_shield,
-  itm_extra_armour_outlaw_3,
   ]
 ##Other
 companion_gear = [
@@ -541,15 +563,12 @@ troops = [
   itm_hunting_bow,
   itm_short_bow,
 
-  itm_wooden_stick, 
   itm_wooden_stick_2, 
   itm_wooden_stick_3, 
   itm_wooden_stick_4, 
-  itm_wooden_stick_5, 
-  itm_wooden_stick_6,
+
   itm_club,
   itm_shepherds_crook,
-  itm_2by4,
   itm_pitch_fork,
   itm_pitch_fork_1,
   itm_pitch_fork_2,
@@ -576,30 +595,6 @@ troops = [
   itm_civilian_outfit_8,
   itm_civilian_outfit_9,
   itm_civilian_outfit_10,
-  itm_dominion_civilian_clothes_1,
-  itm_dominion_civilian_clothes_2,
-  itm_dominion_civilian_clothes_3,
-  itm_dominion_civilian_clothes_4,
-  itm_dominion_civilian_clothes_5,
-  itm_gatheredcloaks1,
-  itm_gatheredcloaks2,
-  itm_gatheredcloaks3,
-  itm_gatheredcloaks4,
-  itm_gatheredcloaks5,
-  itm_union_civ_1,
-  itm_union_civ_2,
-  itm_union_civ_3,
-  itm_union_civ_4,
-  itm_republican_civ_1,
-  itm_republican_civ_2,
-  itm_itami_civ_1,
-  itm_itami_civ_2,
-  itm_poor_shirt_1,
-  itm_poor_shirt_2,
-  itm_poor_shirt_3,
-  itm_poor_shirt_4,
-  itm_poor_shirt_5,
-  itm_poor_shirt_6,
   
   itm_strawhat_1,
   itm_strawhat_2,  
@@ -626,14 +621,6 @@ troops = [
   itm_hunting_bow,
   itm_short_bow,
 
-  itm_wooden_stick, 
-  itm_wooden_stick_2, 
-  itm_wooden_stick_3, 
-  itm_wooden_stick_4, 
-  itm_wooden_stick_5, 
-  itm_wooden_stick_6, 
-  itm_wooden_stick_2, 
-  itm_wooden_stick_3, 
   itm_wooden_stick_4, 
   itm_wooden_stick_5, 
   itm_wooden_stick_6,
@@ -657,7 +644,6 @@ troops = [
   itm_civilian_outfit_8w,
   itm_civilian_outfit_9w,
   itm_civilian_outfit_10w,
-  itm_civilian_outfit_5w,
 
   itm_strawhat_1,
   itm_strawhat_2,    
@@ -683,12 +669,10 @@ troops = [
   itm_throwing_knives,
   itm_crook_revolver_1,
 
-  itm_wooden_stick, 
   itm_wooden_stick_2, 
   itm_wooden_stick_3, 
   itm_wooden_stick_4, 
-  itm_wooden_stick_5, 
-  itm_wooden_stick_6,
+
   itm_club,
   itm_simple_knife,
   itm_knife,
@@ -703,9 +687,6 @@ troops = [
   itm_civilian_outfit_8,
   itm_civilian_outfit_9,
   itm_civilian_outfit_10,
-  itm_civilian_outfit_5,
-  itm_civilian_outfit_8,
-  itm_civilian_outfit_9,
   
   itm_strawhat_1,
   itm_strawhat_2,  
@@ -735,9 +716,7 @@ troops = [
   itm_wooden_stick, 
   itm_wooden_stick_2, 
   itm_wooden_stick_3, 
-  itm_wooden_stick_4, 
-  itm_wooden_stick_5, 
-  itm_wooden_stick_6,
+
   itm_club,
   itm_simple_knife,
   itm_knife,
@@ -752,7 +731,6 @@ troops = [
   itm_civilian_outfit_8w,
   itm_civilian_outfit_9w,
   itm_civilian_outfit_10w,
-  itm_civilian_outfit_5w,
 
   itm_strawhat_1,
   itm_strawhat_2,  
@@ -1024,6 +1002,7 @@ troops = [
   itm_bandana_red,
   itm_bandana_green,
   itm_bandana_white,
+  itm_poor_hood,
   
   itm_leather_capelet,
   ]+revolvers,
@@ -1166,6 +1145,7 @@ troops = [
   itm_handwraps_black,
   
   itm_leather_capelet,
+  itm_bandit_straw_cloak,
   ],
   attr_lvl_35,wp_5_m,knows_battle_5,mercenary_face_1, mercenary_face_2],
 ["ranger","Ranger","Rangers",
@@ -1196,6 +1176,7 @@ troops = [
   
   itm_ammo_belt_5,
   itm_leather_capelet,
+  itm_bandit_straw_cloak,
   ],
   attr_lvl_40,wp_6_m,knows_battle_6,mercenary_face_1, mercenary_face_2],
 
@@ -1501,288 +1482,190 @@ troops = [
 
 # Trench Knights #
 ["armiger","Armiger","Armigers",tf_has_body|tf_has_head|tf_has_ranged,no_scene,reserved,fac_commoners,[
-  itm_pistol_ammo, itm_pistol_ammo_empty,
-  itm_pistol_ammo_2,
-  itm_pistol_ammo_3,
+  itm_pistol_ammo_pw, itm_pistol_ammo_empty,
+  itm_pistol_ammo_pw,
 
-  itm_darts,
-  itm_crook_revolver_1,
+  itm_mace_1,
+  itm_trench_club_2,
+  itm_trench_club_3,
+  itm_trench_club_4,
+  
+  itm_wood_shield,
+  itm_wooden_shield,
+  itm_wooden_shield_2,
+
+  itm_neutral_gloves,
+
+  itm_trench_esquire_armour,
+  
+  itm_trench_knight_helm,
+  ]+revolvers,
+  attr_lvl_30,wp_4_m,knows_battle_4,mercenary_face_1, mercenary_face_2],
+["scutifer","Scutifer","Scutifers",tf_has_body|tf_has_head|tf_has_ranged,no_scene,reserved,fac_commoners,[
+  itm_rifle_ammo_pw, itm_rifle_ammo_empty,
+  itm_rifle_ammo_pw,
 
   itm_mace_1,
   itm_trench_club_4,
   itm_trench_club_5,
   itm_trench_club_6,
-
-  itm_long_trench_club_1,
-  itm_long_trench_club_2,
-  itm_staff,
-  itm_bowie_knife,
-  itm_kukri_rusty,
-  itm_kukri_old,
-  itm_metal_blade,
-
-  itm_neutral_gloves,
-
-  itm_poor_shirt_1,
-  itm_poor_shirt_2,
-  itm_poor_shirt_3,
-  itm_poor_shirt_4,
-  itm_poor_shirt_5,
-  itm_poor_shirt_6,
-
-  itm_strawhat_1,
-  itm_strawhat_2,  
-  itm_strawhat_3,
-  itm_strawhat_4,  
-  itm_strawhat_5,
-  itm_strawhat_6,
-  itm_peasant_cap_blue,
-  itm_peasant_cap_red,
-  itm_peasant_cap_green,
-  itm_peasant_cap_black,
-  itm_peasant_cap_white,
-
-  itm_winter_hat_1, itm_winter_hat_2, itm_winter_hat_b,
-  ]+revolvers,
-  attr_lvl_25,wp_2_m,knows_battle_2,mercenary_face_1, mercenary_face_2],
-["scutifer","Scutifer","Scutifers",tf_has_body|tf_has_ranged,no_scene,0,fac_commoners,[
-  itm_rifle_ammo, itm_rifle_ammo_empty,
-
-  itm_knife,
-  itm_trench_club_2,
-  itm_kukri_rusty,
-  itm_mace_1,
-  itm_staff,
-  itm_bowie_knife,
-  itm_big_club,
-  itm_hatchet,
-
-  itm_poor_shirt_1,
-  itm_poor_shirt_2,
-  itm_poor_shirt_3,
-  itm_poor_shirt_4,
-  itm_poor_shirt_5,
-  itm_poor_shirt_6,
+  
+  itm_wood_shield,
+  itm_wooden_shield,
+  itm_wooden_shield_2,
+  
+  itm_trench_knight_plate_1,
+  
+  itm_trench_knight_helm_2,
 
   itm_neutral_gloves,
   ]+rifles,
-  attr_lvl_30,wp_3_m,knows_battle_3,mercenary_face_1, mercenary_face_2],
+  attr_lvl_35,wp_5_m,knows_battle_5,mercenary_face_1, mercenary_face_2],
 ["esquire","Esquire","Esquires",tf_has_body|tf_has_head|tf_has_ranged,no_scene,reserved,fac_commoners,[
-  itm_pistol_ammo, itm_pistol_ammo_empty,
-  itm_pistol_ammo_2,
-  itm_pistol_ammo_3,
+  itm_pistol_ammo_pw, itm_pistol_ammo_empty,
+  itm_pistol_ammo_2_pw,
+  itm_pistol_ammo_3_pw,
 
-  itm_trench_club_2,
-  itm_axe1,
-  itm_axe2,
-  itm_metal_blade,
-  itm_hand_axe,
-  itm_staff,
+  itm_mace_1,
+  itm_trench_club_5,
+  itm_trench_club_6,
+  itm_trench_club_7,
 
   itm_wood_shield,
   itm_round_shield_leather,
 
-  itm_heavy_bandit_armour,
+  itm_trench_knight_plate_2,
   
-  itm_pot_helmet,
-  itm_pot_helmet_face_cover,
-  itm_simple_helmet,
-  itm_simple_helmet_face_cover,
+  itm_trench_knight_helm_3,
 
   itm_neutral_gloves,
   
   itm_donkey_1,
   itm_donkey_2,
   itm_mule,
-  itm_pack_horse,
+  itm_travel_horse,
   ]+smg_1,
-  attr_lvl_35,wp_4_m,knows_battle_4,mercenary_face_1, mercenary_face_2],
+  attr_lvl_40,wp_6_m,knows_battle_6,mercenary_face_1, mercenary_face_2],
 ["sieur","Sieur","Sieur",tf_guarantee_all_w_horse,no_scene,reserved,fac_commoners,[
-  itm_rifle_ammo, itm_rifle_ammo_empty,
-  itm_rifle_ammo_4,
-
-  itm_trench_club_2,
-  itm_saber1,
-  itm_trooper_sword,
-  itm_hatchet_tactical,
-  itm_battleaxe1,
-  itm_battleaxe2,
+  itm_rifle_ammo_4_pw, itm_rifle_ammo_empty,
+  itm_rifle_ammo_4_pw,
 
   itm_trench_club_10,
   itm_trench_club_11,
   itm_trench_club_12,
-
-  itm_long_trench_club_1,
-  itm_long_trench_club_2,
   
-  itm_bal_shield_1,
-  itm_bal_shield_2,
-  itm_bal_shield_3,
+  itm_rectangular_shield_1,
+  itm_rectangular_shield_2,
+  itm_rectangular_shield_3,
 
-  itm_trench_knight_plate_1,
+  itm_trench_knight_plate_3,
 
-  itm_trench_helmet,
+  itm_trench_knight_helm_4,
+  itm_trench_knight_helm_5,
 
   itm_neutral_mail_mittens,
   
-  itm_palfrey_1,
-  itm_palfrey_2,
+  itm_trench_steed_1,
   ]+carbines,
-  attr_lvl_40,wp_5_m,knows_battle_5,mercenary_face_1, mercenary_face_2],
+  attr_lvl_45,wp_7_m,knows_battle_7,mercenary_face_1, mercenary_face_2],
 ["knight","Knight","Knights",tf_guarantee_all_w_horse,no_scene,reserved,fac_commoners,[
   itm_rifle_ammo_pw, itm_rifle_ammo_empty,
-
-  itm_big_spiked_club,
-  itm_hatchet_tactical,
-  itm_saber1,
-  itm_trooper_sword,
+  itm_rifle_ammo_pw,
 
   itm_trench_club_11,
   itm_trench_club_12,
   itm_trench_club_13,
-
-  itm_long_trench_club_1,
-  itm_long_trench_club_2,
   
   itm_bal_shield_1,
   itm_bal_shield_2,
   itm_bal_shield_3,
 
-  itm_trench_knight_plate_2,
-  
-  itm_trench_knight_helm,
-  itm_trench_knight_helm_2,
-  itm_trench_knight_helm_3,
-  itm_trench_knight_helm_4,
+  itm_trench_knight_plate_4,
+
   itm_trench_knight_helm_5,
   itm_trench_knight_helm_6,
   itm_trench_knight_helm_6_c,
-  itm_bandit_fullhelm,
-  itm_bandit_fullhelm2,
-  itm_bandit_bulwark_helm,
 
   itm_scale_gauntlets,
   
   itm_trench_steed_1,
+  itm_trench_steed_2,
   ]+carbines,
-  attr_lvl_45,wp_6_m,knows_battle_6,mercenary_face_1, mercenary_face_2],
+  attr_lvl_50,wp_8_m,knows_battle_8,mercenary_face_1, mercenary_face_2],
 ["champion","Champion","Champions",tf_guarantee_all_w_horse,no_scene,reserved,fac_commoners,[
   itm_rifle_ammo_pw, itm_rifle_ammo_empty,
+  itm_rifle_ammo_pw,
   itm_assault_service_rifle,
 
-  itm_flamberge,
   itm_lowlander_sword,
-  itm_tagan,
-  itm_saber1,
-  itm_trooper_sword,
+  itm_long_fighting_axe,
   itm_lance_plain,
-  itm_light_cav_sword,
-
   itm_trench_club_12,
   itm_trench_club_13,
   itm_trench_club_14,
-
-  itm_long_trench_club_1,
-  itm_long_trench_club_2,
   
   itm_bal_shield_1,
   itm_bal_shield_2,
   itm_bal_shield_3,
   
-  itm_trench_knight_plate_3,
+  itm_trench_knight_plate_5,
 
-  itm_trench_knight_helm_3,
-  itm_trench_knight_helm_4,
-  itm_trench_knight_helm_5,
-  itm_bandit_fullhelm,
-  itm_bandit_fullhelm2,
-  itm_bandit_bulwark_helm,
+  itm_trench_knight_helm_7,
 
   itm_neutral_gauntlets,
   
   itm_trench_steed_2,
   ],
-  attr_lvl_50,wp_7_m,knows_battle_7,mercenary_face_1, mercenary_face_2],
+  attr_lvl_60,wp_9_m,knows_battle_9,mercenary_face_1, mercenary_face_2],
+#
 
 # Night Raiders #
 ["armiger_dark","Dark_Armiger","Dark_Armigers",tf_ghoul_human|tf_has_body|tf_has_head|tf_has_ranged,no_scene,reserved,fac_commoners,[
-  itm_pistol_ammo, itm_pistol_ammo_empty,
-  itm_pistol_ammo_2,
-  itm_pistol_ammo_3,
+  itm_pistol_ammo_pw, itm_pistol_ammo_empty,
+  itm_pistol_ammo_pw,
 
-  itm_darts,
-  itm_crook_revolver_1,
+  itm_mace_1,
+  itm_trench_club_2,
+  itm_trench_club_3,
+  itm_trench_club_4,
+  
+  itm_wood_shield,
+  itm_wooden_shield,
+  itm_wooden_shield_2,
+
+  itm_night_raider_esquire_armour,
+  
+  itm_night_raider_helm_1,
+  
+  itm_neutral_gloves,
+  ]+revolvers,
+  attr_lvl_30,wp_4_m,knows_battle_4,mercenary_face_1, mercenary_face_2],
+["scutifer_dark","Dark_Scutifer","Dark_Scutifers",tf_ghoul_human|tf_has_body|tf_has_head|tf_has_ranged,no_scene,reserved,fac_commoners,[
+  itm_rifle_ammo_pw, itm_rifle_ammo_empty,
+  itm_rifle_ammo_pw,
 
   itm_mace_1,
   itm_trench_club_4,
   itm_trench_club_5,
   itm_trench_club_6,
+  
+  itm_wood_shield,
+  itm_wooden_shield,
+  itm_wooden_shield_2,
+  
+  itm_night_raider_plate_1,
+  
+  itm_night_raider_helm_2,
 
-  itm_long_trench_club_1,
-  itm_long_trench_club_2,
-  itm_staff,
-  itm_bowie_knife,
-  itm_kukri_rusty,
-  itm_kukri_old,
-  itm_metal_blade,
-
-  itm_night_raider_gloves,
-
-  itm_poor_shirt_1,
-  itm_poor_shirt_2,
-  itm_poor_shirt_3,
-  itm_poor_shirt_4,
-  itm_poor_shirt_5,
-  itm_poor_shirt_6,
-
-  itm_strawhat_1,
-  itm_strawhat_2,  
-  itm_strawhat_3,
-  itm_strawhat_4,  
-  itm_strawhat_5,
-  itm_strawhat_6,
-  itm_peasant_cap_blue,
-  itm_peasant_cap_red,
-  itm_peasant_cap_green,
-  itm_peasant_cap_black,
-  itm_peasant_cap_white,
-  itm_winter_hat_1, itm_winter_hat_2, itm_winter_hat_b,
-  ]+revolvers,
-  attr_lvl_25,wp_2_m,knows_battle_2,mercenary_face_1, mercenary_face_2],
-["scutifer_dark","Dark_Scutifer","Dark_Scutifers",tf_ghoul_human|tf_has_body|tf_has_ranged,no_scene,0,fac_commoners,[
-  itm_rifle_ammo, itm_rifle_ammo_empty,
-
-  itm_kukri_rusty,
-  itm_mace_1,
-  itm_staff,
-  itm_bowie_knife,
-  itm_big_club,
-  itm_hatchet,
-
-  itm_trench_club_5,
-  itm_trench_club_6,
-  itm_trench_club_7,
-
-  itm_poor_shirt_1,
-  itm_poor_shirt_2,
-  itm_poor_shirt_3,
-  itm_poor_shirt_4,
-  itm_poor_shirt_5,
-  itm_poor_shirt_6,
-
-  itm_night_raider_gloves,
+  itm_neutral_gloves,
   ]+rifles,
-  attr_lvl_30,wp_3_m,knows_battle_3,mercenary_face_1, mercenary_face_2],
+  attr_lvl_35,wp_5_m,knows_battle_5,mercenary_face_1, mercenary_face_2],
 ["esquire_dark","Dark_Esquire","Dark_Esquires",tf_ghoul_human|tf_has_body|tf_has_head|tf_has_ranged,no_scene,reserved,fac_commoners,[
-  itm_pistol_ammo, itm_pistol_ammo_empty,
-  itm_pistol_ammo_2,
-  itm_pistol_ammo_3,
+  itm_pistol_ammo_pw, itm_pistol_ammo_empty,
+  itm_pistol_ammo_2_pw,
+  itm_pistol_ammo_3_pw,
 
-  itm_axe1,
-  itm_axe2,
-  itm_metal_blade,
-  itm_hand_axe,
-  itm_staff,
+  itm_mace_1,
   itm_trench_club_5,
   itm_trench_club_6,
   itm_trench_club_7,
@@ -1790,113 +1673,87 @@ troops = [
   itm_wood_shield,
   itm_round_shield_leather,
 
-  itm_heavy_bandit_armour,
+  itm_night_raider_plate_2,
   
-  itm_pot_helmet,
-  itm_pot_helmet_face_cover,
-  itm_simple_helmet,
-  itm_simple_helmet_face_cover,
+  itm_night_raider_helm_3,
 
-  itm_night_raider_gloves,
+  itm_neutral_gloves,
   
   itm_donkey_1,
   itm_donkey_2,
   itm_mule,
-  itm_pack_horse,
+  itm_travel_horse,
   ]+smg_1,
-  attr_lvl_35,wp_4_m,knows_battle_4,mercenary_face_1, mercenary_face_2],
+  attr_lvl_40,wp_6_m,knows_battle_6,mercenary_face_1, mercenary_face_2],
 ["sieur_dark","Dark_Sieur","Dark_Sieur",tf_ghoul_human|tf_guarantee_all_w_horse,no_scene,reserved,fac_commoners,[
-  itm_rifle_ammo, itm_rifle_ammo_empty,
-  itm_rifle_ammo_4,
+  itm_rifle_ammo_4_pw, itm_rifle_ammo_empty,
+  itm_rifle_ammo_4_pw,
 
-  itm_saber1,
-  itm_trooper_sword,
-  itm_hatchet_tactical,
-  itm_battleaxe1,
-  itm_battleaxe2,
-
-  itm_trench_club_6,
-  itm_trench_club_7,
-  itm_trench_club_8,
-  
-  itm_bal_shield_1,
-  itm_bal_shield_2,
-  itm_bal_shield_3,
-
-  itm_night_raider_armour,
-
-  itm_trench_helmet,
-
-  itm_night_raider_mail_mittens,
-  
-  itm_palfrey_1,
-  itm_palfrey_2,
-  ]+carbines,
-  attr_lvl_40,wp_5_m,knows_battle_5,mercenary_face_1, mercenary_face_2],
-["knight_dark","Dark_Knight","Dark_Knights",tf_ghoul_human|tf_guarantee_all_w_horse,no_scene,reserved,fac_commoners,[
-  itm_rifle_ammo_pw, itm_rifle_ammo_empty,
-
-  itm_big_spiked_club,
-  itm_hatchet_tactical,
-  itm_saber1,
-  itm_trooper_sword,
-
-  itm_trench_club_9,
   itm_trench_club_10,
   itm_trench_club_11,
-
-  itm_blackgod_knight_shield,
-  itm_bal_shield_1,
-  itm_bal_shield_2,
-  itm_bal_shield_3,
-
-  itm_night_raider_armour_2,
+  itm_trench_club_12,
   
-  itm_night_raider_helm_1,
-  itm_night_raider_helm_2,
-  itm_night_raider_helm_3,
-  itm_bandit_fullhelm,
-  itm_bandit_fullhelm2,
-  itm_bandit_knight_helm_black,
+  itm_rectangular_shield_1,
+  itm_rectangular_shield_2,
+  itm_rectangular_shield_3,
 
-  itm_night_raider_gauntlets,
+  itm_night_raider_plate_3,
+
+  itm_night_raider_helm_4,
+
+  itm_neutral_mail_mittens,
   
   itm_trench_steed_1,
   ]+carbines,
-  attr_lvl_45,wp_6_m,knows_battle_6,mercenary_face_1, mercenary_face_2],
+  attr_lvl_45,wp_7_m,knows_battle_7,mercenary_face_1, mercenary_face_2],
+["knight_dark","Dark_Knight","Dark_Knights",tf_ghoul_human|tf_guarantee_all_w_horse,no_scene,reserved,fac_commoners,[
+  itm_rifle_ammo_pw, itm_rifle_ammo_empty,
+  itm_rifle_ammo_pw,
+
+  itm_trench_club_11,
+  itm_trench_club_12,
+  itm_trench_club_13,
+  
+  itm_bal_shield_1,
+  itm_bal_shield_2,
+  itm_bal_shield_3,
+
+  itm_night_raider_plate_4,
+
+  itm_night_raider_helm_5,
+
+  itm_scale_gauntlets,
+  
+  itm_trench_steed_1,
+  itm_trench_steed_2,
+  ]+carbines,
+  attr_lvl_50,wp_8_m,knows_battle_8,mercenary_face_1, mercenary_face_2],
 ["champion_dark","Dark_Champion","Dark_Champions",tf_ghoul_human|tf_guarantee_all_w_horse,no_scene,reserved,fac_commoners,[
   itm_rifle_ammo_pw, itm_rifle_ammo_empty,
+  itm_rifle_ammo_pw,
   itm_assault_service_rifle,
 
-  itm_flamberge,
   itm_lowlander_sword,
-  itm_tagan,
-  itm_saber1,
-  itm_trooper_sword,
+  itm_long_fighting_axe,
   itm_lance_plain,
   itm_trench_club_12,
   itm_trench_club_13,
   itm_trench_club_14,
   
-  itm_blackgod_knight_shield,
   itm_bal_shield_1,
   itm_bal_shield_2,
   itm_bal_shield_3,
   
-  itm_night_raider_armour_3,
-  itm_night_raider_armour_3,
-  itm_night_raider_armour_3,
-  itm_night_raider_armour_4,
+  itm_night_raider_plate_5,
 
-  itm_night_raider_helm_4,
-  itm_bandit_knight_helm_black,
-  itm_blackgod_knight_helmet,
+  itm_night_raider_helm_6,
 
-  itm_blackgod_knight_gauntlets,
+  itm_night_raider_gauntlets,
   
   itm_trench_steed_2,
   ],
-  attr_lvl_50,wp_7_m,knows_battle_7,mercenary_face_1, mercenary_face_2],
+  attr_lvl_60,wp_9_m,knows_battle_9,mercenary_face_1, mercenary_face_2],
+#
 
 #Foreign#
 #yanizari
@@ -1969,7 +1826,7 @@ troops = [
   attr_lvl_30,wp_5_m,knows_battle_5,mercenary_face_1, mercenary_face_2],
 
 #Candle Warriors
-["follower_woman","Red_Candle","Red_Candles",tf_woman|tf_has_body|tf_guarantee_helmet,0,0,fac_commoners,[
+["follower_woman","Red_Candle","Red_Candles",tf_woman|tf_has_body|tf_guarantee_helmet,no_scene,reserved,fac_commoners,[
   itm_arrows,
   itm_pistol_ammo, itm_pistol_ammo_empty,
   itm_pistol_ammo_2,
@@ -1984,18 +1841,6 @@ troops = [
   itm_mace_1,
   itm_trench_club_1,
   itm_trench_club_2,
-  itm_trench_club_3,
-  itm_trench_club_4,
-  itm_trench_club_5,
-  itm_trench_club_6,
-  itm_trench_club_7,
-  itm_trench_club_8,
-  itm_trench_club_9,
-  itm_trench_club_10,
-  itm_trench_club_11,
-  itm_trench_club_12,
-  itm_trench_club_13,
-  itm_trench_club_14,
   itm_long_trench_club_1,
   itm_long_trench_club_2,
   itm_hatchet,
@@ -2011,7 +1856,7 @@ troops = [
   ]+revolvers,
   attr_lvl_15,wp_2_m,knows_battle_2,
   woman_face_1,woman_face_2],
-["hunter_woman","Blue_Candle","Blue_Candles",tf_woman|tf_has_body|tf_guarantee_helmet|tf_has_ranged,0,0,fac_commoners,[
+["hunter_woman","Blue_Candle","Blue_Candles",tf_woman|tf_has_body|tf_guarantee_helmet|tf_has_ranged,no_scene,reserved,fac_commoners,[
   itm_rifle_ammo, itm_rifle_ammo_empty,
   itm_rifle_ammo_4,
 
@@ -2033,7 +1878,7 @@ troops = [
   ]+rifles,
   attr_lvl_20,wp_3_r,knows_battle_3,
   woman_face_1,woman_face_2],
-["fighter_woman","Black_Candle","Black_Candle",tf_woman|tf_has_body|tf_has_ranged|tf_guarantee_helmet|tf_guarantee_gloves,0,0,fac_commoners,[
+["fighter_woman","Black_Candle","Black_Candle",tf_woman|tf_has_body|tf_has_ranged|tf_guarantee_helmet|tf_guarantee_gloves,no_scene,reserved,fac_commoners,[
   itm_rifle_ammo, itm_rifle_ammo_empty,
   itm_common_bolt_action_rifle_bayonet_1,
 
@@ -2054,7 +1899,7 @@ troops = [
   (itm_black_gloves_metal,imod_ragged),
   ],
   attr_lvl_25,wp_4_r,knows_battle_4,woman_face_1,woman_face_2],
-["sword_sister","Black_Candle_Rider","Black_Candle_Riders",tf_woman|tf_mounted|tf_has_body|tf_guarantee_gloves|tf_guarantee_helmet|tf_guarantee_horse|tf_has_ranged,0,0,fac_commoners,[
+["sword_sister","Black_Candle_Rider","Black_Candle_Riders",tf_woman|tf_mounted|tf_has_body|tf_guarantee_gloves|tf_guarantee_helmet|tf_guarantee_horse|tf_has_ranged,no_scene,reserved,fac_commoners,[
   itm_rifle_ammo_pw, itm_rifle_ammo_empty,
 
   itm_light_cav_sword,
@@ -2094,7 +1939,7 @@ troops = [
 ["mercenaries_end","mercenaries_end","mercenaries_end",tf_hero,no_scene,reserved,fac_commoners,[itm_invisi_body,itm_invisi_boots,itm_invisi_gloves,itm_invisi_head,],def_attrib|level(4),wp(60),knows_common,mercenary_face_1, mercenary_face_2],
 ###
 #shadow_operative
-["shadow_operative_regular","Shadow_Operative","Shadow_Operatives",tf_has_body|tf_guarantee_ranged,0,0,fac_outlaws,
+["shadow_operative_regular","Shadow_Operative","Shadow_Operatives",tf_has_body|tf_guarantee_ranged|tf_has_head|tf_has_hand,0,0,fac_outlaws,
   [
   itm_pistol_ammo, itm_pistol_ammo_empty,
   itm_pistol_ammo_2,
@@ -2129,7 +1974,7 @@ troops = [
   itm_black_gloves,
   ]+smg_2,
   attr_lvl_30,wp_5_m,knows_battle_5,bandit_face1, bandit_face2],
-["shadow_operative_gunner","Shadow_Operative_Gunner","Shadow_Operative_Gunners",tf_has_body|tf_guarantee_ranged,0,0,fac_outlaws,
+["shadow_operative_gunner","Shadow_Operative_Gunner","Shadow_Operative_Gunners",tf_has_body|tf_guarantee_ranged|tf_has_head|tf_has_hand,0,0,fac_outlaws,
   [
   itm_mg_ammo,
   itm_shadow_lmg,
@@ -2149,7 +1994,7 @@ troops = [
   itm_ammo_belt_5,
   ],
   attr_lvl_30,wp_4_r,knows_battle_4,bandit_face1, bandit_face2],
-["shadow_operative_elite","Shadow_Operative_Elite","Shadow_Operative_Elites",tf_has_body|tf_guarantee_ranged,0,0,fac_outlaws,
+["shadow_operative_elite","Shadow_Operative_Elite","Shadow_Operative_Elites",tf_has_body|tf_guarantee_ranged|tf_has_head|tf_has_hand,0,0,fac_outlaws,
   [
   itm_rifle_ammo_pw, itm_rifle_ammo_empty,
 
@@ -2165,7 +2010,7 @@ troops = [
   itm_black_gloves,
   ]+rifles,
   attr_lvl_30,wp_5_m,knows_battle_5,bandit_face1, bandit_face2],
-["shadow_operative_saboteur","Shadow_Operative_Saboteur","Shadow_Operative_Saboteurs",tf_has_body|tf_guarantee_ranged|tf_guarantee_helmet|tf_has_hand,0,0,fac_outlaws,
+["shadow_operative_saboteur","Shadow_Operative_Saboteur","Shadow_Operative_Saboteurs",tf_has_body|tf_guarantee_ranged|tf_has_head|tf_has_hand,0,0,fac_outlaws,
   [
   itm_rocket_ammo,
   itm_rocketlauncher,
@@ -2182,7 +2027,7 @@ troops = [
   (itm_black_gloves_metal,imod_ragged),
   ],
   attr_lvl_30,wp_5_m,knows_battle_5,bandit_face1, bandit_face2],
-["shadow_operative_knight","Shadow_Operative_Knight","Shadow_Operative_Knights",tf_has_body|tf_guarantee_ranged|tf_guarantee_helmet,0,0,fac_outlaws,
+["shadow_operative_knight","Shadow_Operative_Knight","Shadow_Operative_Knights",tf_has_body|tf_guarantee_ranged|tf_has_head|tf_has_hand,0,0,fac_outlaws,
   [
   itm_rifle_ammo_pw, itm_rifle_ammo_empty,
   itm_shadow_lmg_2,
@@ -2223,17 +2068,6 @@ troops = [
   itm_trench_club_1,
   itm_trench_club_2,
   itm_trench_club_3,
-  itm_trench_club_4,
-  itm_trench_club_5,
-  itm_trench_club_6,
-  itm_trench_club_7,
-  itm_trench_club_8,
-  itm_trench_club_9,
-  itm_trench_club_10,
-  itm_trench_club_11,
-  itm_trench_club_12,
-  itm_trench_club_13,
-  itm_trench_club_14,
 
   itm_bastard_club_1,
 
@@ -2249,20 +2083,9 @@ troops = [
   itm_blunt_slug_ammo,
   itm_shotgun_riot,
 
-  itm_trench_club_1,
-  itm_trench_club_2,
-  itm_trench_club_3,
-  itm_trench_club_4,
-  itm_trench_club_5,
-  itm_trench_club_6,
   itm_trench_club_7,
   itm_trench_club_8,
   itm_trench_club_9,
-  itm_trench_club_10,
-  itm_trench_club_11,
-  itm_trench_club_12,
-  itm_trench_club_13,
-  itm_trench_club_14,
 
   itm_bastard_club_1,
 
@@ -2280,20 +2103,9 @@ troops = [
   itm_blunt_slug_ammo_pw,
   itm_shotgun_riot,
 
-  itm_trench_club_1,
-  itm_trench_club_2,
-  itm_trench_club_3,
-  itm_trench_club_4,
-  itm_trench_club_5,
-  itm_trench_club_6,
-  itm_trench_club_7,
   itm_trench_club_8,
   itm_trench_club_9,
   itm_trench_club_10,
-  itm_trench_club_11,
-  itm_trench_club_12,
-  itm_trench_club_13,
-  itm_trench_club_14,
 
   itm_bastard_club_1,
   
@@ -2370,17 +2182,6 @@ troops = [
   itm_trench_club_1,
   itm_trench_club_2,
   itm_trench_club_3,
-  itm_trench_club_4,
-  itm_trench_club_5,
-  itm_trench_club_6,
-  itm_trench_club_7,
-  itm_trench_club_8,
-  itm_trench_club_9,
-  itm_trench_club_10,
-  itm_trench_club_11,
-  itm_trench_club_12,
-  itm_trench_club_13,
-  itm_trench_club_14,
 
   itm_long_trench_club_1,
   itm_long_trench_club_2,
@@ -2410,17 +2211,9 @@ troops = [
   itm_leather_gloves,
   itm_black_gloves,
 
-  itm_mountain_horse_1,
   itm_mountain_horse_2,
   itm_mountain_horse_3,
   itm_mountain_horse_4,
-  itm_mountain_horse_5,
-  itm_mountain_horse_6,
-  itm_mountain_horse_7,
-  itm_mountain_horse_8,
-  itm_mountain_horse_9,
-  itm_mountain_horse_10,
-
   ],
   attr_lvl_25,wp_4_m,knows_battle_4,bandit_face1, bandit_face2],
 ["slaver_chief","Press Ganger Chief","Press Ganger Chiefs",tf_mounted|tf_has_body|tf_guarantee_helmet|tf_guarantee_horse|tf_has_hand|tf_guarantee_ranged,0,0,fac_slavers,[
@@ -2448,16 +2241,9 @@ troops = [
   
   itm_extra_armour_outlaw_1,
   
-  itm_mountain_horse_1,
-  itm_mountain_horse_2,
-  itm_mountain_horse_3,
-  itm_mountain_horse_4,
   itm_mountain_horse_5,
   itm_mountain_horse_6,
   itm_mountain_horse_7,
-  itm_mountain_horse_8,
-  itm_mountain_horse_9,
-  itm_mountain_horse_10,
   ],
   attr_lvl_30,wp_5_m,knows_battle_5,bandit_face1, bandit_face2],
 
@@ -2465,7 +2251,6 @@ troops = [
 ["bounty_hunter","Bounty_Hunter","Bounty_Hunters",tf_has_body|tf_guarantee_helmet|tf_has_hand,0,0,fac_slavers,[
   itm_pistol_ammo_4, itm_pistol_ammo_empty,
 
-  itm_knife,
   itm_big_club,
   itm_big_spiked_club,
 
@@ -2484,7 +2269,6 @@ troops = [
 ["bounty_hunter_veteran","Veteran_Bounty_Hunter","Veteran_Bounty_Hunters",tf_has_body|tf_guarantee_helmet|tf_has_hand,0,0,fac_slavers,[
   itm_rifle_ammo, itm_rifle_ammo_empty,
 
-  itm_knife,
   itm_big_club,
   itm_big_spiked_club,
 
@@ -2606,11 +2390,7 @@ troops = [
   itm_throwing_knives,
   itm_darts,
   itm_crook_revolver_1,
-
-  itm_wooden_stick, 
-  itm_wooden_stick_2, 
-  itm_wooden_stick_3, 
-  itm_wooden_stick_4, 
+ 
   itm_wooden_stick_5, 
   itm_wooden_stick_6,
   itm_club,
@@ -2620,17 +2400,6 @@ troops = [
   itm_trench_club_1,
   itm_trench_club_2,
   itm_trench_club_3,
-  itm_trench_club_4,
-  itm_trench_club_5,
-  itm_trench_club_6,
-  itm_trench_club_7,
-  itm_trench_club_8,
-  itm_trench_club_9,
-  itm_trench_club_10,
-  itm_trench_club_11,
-  itm_trench_club_12,
-  itm_trench_club_13,
-  itm_trench_club_14,
 
   itm_hatchet,
   itm_lumberjack_axe,
@@ -2652,6 +2421,7 @@ troops = [
   itm_bandit_hood_grn,
   itm_bandit_hood_red,
   itm_bandit_hood_wht,
+  itm_poor_hood,
 
   itm_leather_gloves,
   ]+revolvers,attr_lvl_15,wp_2_m,knows_battle_2,bandit_face1, bandit_face2],
@@ -2671,20 +2441,10 @@ troops = [
   itm_big_club,
   itm_spiked_club,
   itm_crowbar,
-  itm_trench_club_1,
+
   itm_trench_club_2,
   itm_trench_club_3,
   itm_trench_club_4,
-  itm_trench_club_5,
-  itm_trench_club_6,
-  itm_trench_club_7,
-  itm_trench_club_8,
-  itm_trench_club_9,
-  itm_trench_club_10,
-  itm_trench_club_11,
-  itm_trench_club_12,
-  itm_trench_club_13,
-  itm_trench_club_14,
 
   itm_long_trench_club_1,
   itm_long_trench_club_2,
@@ -2710,6 +2470,7 @@ troops = [
   itm_bandit_hood_grn_scarf,
   itm_bandit_hood_red_scarf,
   itm_bandit_hood_wht_scarf,
+  itm_poor_hood,
   
   itm_leather_gloves,
   itm_black_gloves,
@@ -2723,28 +2484,16 @@ troops = [
   itm_throwing_metal_spears,
   itm_throwing_axes,
 
-  itm_knife,
   itm_kukri_rusty,
-  
   itm_metal_blade,
   itm_long_spiked_club,
   itm_big_club,
   itm_big_spiked_club,
   itm_crowbar,
-  itm_trench_club_1,
-  itm_trench_club_2,
-  itm_trench_club_3,
+
   itm_trench_club_4,
   itm_trench_club_5,
   itm_trench_club_6,
-  itm_trench_club_7,
-  itm_trench_club_8,
-  itm_trench_club_9,
-  itm_trench_club_10,
-  itm_trench_club_11,
-  itm_trench_club_12,
-  itm_trench_club_13,
-  itm_trench_club_14,
 
   itm_long_trench_club_1,
   itm_long_trench_club_2,
@@ -2923,6 +2672,7 @@ troops = [
   itm_bandit_hood_grn_scarf,
   itm_bandit_hood_red_scarf,
   itm_bandit_hood_wht_scarf,
+  itm_poor_hood,
   
   itm_leather_gloves,
   itm_black_gloves,
@@ -2937,35 +2687,22 @@ troops = [
   itm_wooden_stick, 
   itm_wooden_stick_2, 
   itm_wooden_stick_3, 
-  itm_wooden_stick_4, 
-  itm_wooden_stick_5, 
-  itm_wooden_stick_6,
+
   itm_club,
   itm_metal_blade,
   itm_long_spiked_club,
   itm_staff,
   itm_2by4nails,
-  itm_trench_club_1,
+
   itm_trench_club_2,
   itm_trench_club_3,
   itm_trench_club_4,
-  itm_trench_club_5,
-  itm_trench_club_6,
-  itm_trench_club_7,
-  itm_trench_club_8,
-  itm_trench_club_9,
-  itm_trench_club_10,
-  itm_trench_club_11,
-  itm_trench_club_12,
-  itm_trench_club_13,
-  itm_trench_club_14,
 
   itm_long_trench_club_1,
   itm_long_trench_club_2,
   itm_hatchet,
   itm_pickaxe,
   itm_staff,
-  itm_simple_knife,
 
   itm_stones,
   itm_throwing_knives,
@@ -2999,6 +2736,7 @@ troops = [
   itm_bandit_hood_grn_scarf,
   itm_bandit_hood_red_scarf,
   itm_bandit_hood_wht_scarf,
+  itm_poor_hood,
 
   itm_leather_gloves,
   itm_black_gloves,
@@ -3041,31 +2779,17 @@ troops = [
   itm_round_shield,
   itm_wooden_shield,
   itm_wooden_stick, 
-  itm_wooden_stick_2, 
-  itm_wooden_stick_3, 
-  itm_wooden_stick_4, 
   itm_wooden_stick_5, 
   itm_wooden_stick_6,
   itm_staff,
-  itm_trench_club_1,
-  itm_trench_club_2,
+
   itm_trench_club_3,
   itm_trench_club_4,
   itm_trench_club_5,
-  itm_trench_club_6,
-  itm_trench_club_7,
-  itm_trench_club_8,
-  itm_trench_club_9,
-  itm_trench_club_10,
-  itm_trench_club_11,
-  itm_trench_club_12,
-  itm_trench_club_13,
-  itm_trench_club_14,
 
   itm_long_trench_club_1,
   itm_long_trench_club_2,
   
-
   itm_swamp_bandit_1,
   itm_swamp_bandit_2,
   itm_swamp_bandit_3,
@@ -3077,7 +2801,6 @@ troops = [
 
   itm_leather_gloves,
   itm_black_gloves,
-
   ]+revolvers,attr_lvl_25,wp_4_m,knows_battle_4,bandit_face1, bandit_face2],
 ["outlaw","Outlaw","Outlaws",tf_has_body|tf_guarantee_ranged,0,0,fac_outlaws,[
   itm_rifle_ammo, itm_rifle_ammo_empty,
@@ -3107,7 +2830,6 @@ troops = [
   itm_throwing_metal_spears,
   itm_throwing_axes,
   
-  
   itm_shortened_military_scythe,
   itm_spiked_club,
   itm_sledgehammer,
@@ -3119,9 +2841,6 @@ troops = [
   itm_swamp_bandit_medium_armour_3,
   itm_medium_bandit_cuirass_4,
   
-  itm_brodie_gasmask,
-  itm_brodie,
-  itm_brodie_face_cover,
   itm_metal_combat_helmet,
 
   itm_steel_helmet_1,
@@ -3142,12 +2861,7 @@ troops = [
   itm_mountain_horse_2,
   itm_mountain_horse_3,
   itm_mountain_horse_4,
-  itm_mountain_horse_5,
-  itm_mountain_horse_6,
-  itm_mountain_horse_7,
-  itm_mountain_horse_8,
-  itm_mountain_horse_9,
-  itm_mountain_horse_10,
+
   ]+carbines,attr_lvl_25,wp_4_m,knows_battle_4,bandit_face1, bandit_face2],
 ["corpse_thief","Corpse-thief","Corpse-thieves",tf_has_body|tf_guarantee_ranged|tf_guarantee_helmet,0,0,fac_outlaws,[
   itm_shovel,
@@ -3193,6 +2907,7 @@ troops = [
   itm_bandit_hood_grn_scarf,
   itm_bandit_hood_red_scarf,
   itm_bandit_hood_wht_scarf,
+  itm_poor_hood,
   
   itm_leather_gloves,
   itm_black_gloves,
@@ -3263,31 +2978,20 @@ troops = [
   itm_pistol_ammo_2,
   itm_pistol_ammo_3,
 
-  itm_crook_revolver_1,
-  
-  itm_knife,
   itm_metal_blade,
   itm_bayonet_1,
   itm_trench_knife,
   itm_trench_knife_1,
   
-
   itm_light_bandit_armour_1,
   itm_bandit_3,
   itm_bandit_4,
 
-  itm_brodie,
-  itm_brodie_gasmask,
-  itm_brodie_face_cover,
   itm_steel_helmet_2,
   itm_steel_helmet_2_gas,
   itm_welder_mask_ms,
-
   itm_pot_helmet,
   itm_pot_helmet_face_cover,
-
-  itm_simple_helmet,
-  itm_simple_helmet_face_cover,
   itm_steel_helmet_1,
   itm_steel_helmet_1b,
   itm_steel_helmet_1_face_cover,
@@ -3376,20 +3080,10 @@ troops = [
   itm_big_spiked_club,
   itm_spiked_club,
   itm_light_cav_sword,
-  itm_trench_club_1,
-  itm_trench_club_2,
-  itm_trench_club_3,
-  itm_trench_club_4,
-  itm_trench_club_5,
-  itm_trench_club_6,
-  itm_trench_club_7,
-  itm_trench_club_8,
+
   itm_trench_club_9,
   itm_trench_club_10,
   itm_trench_club_11,
-  itm_trench_club_12,
-  itm_trench_club_13,
-  itm_trench_club_14,
 
   itm_long_trench_club_1,
   itm_long_trench_club_2,
@@ -3430,20 +3124,10 @@ troops = [
 
   itm_kukri_rusty,
   itm_knife,
-  itm_trench_club_1,
-  itm_trench_club_2,
+
   itm_trench_club_3,
   itm_trench_club_4,
   itm_trench_club_5,
-  itm_trench_club_6,
-  itm_trench_club_7,
-  itm_trench_club_8,
-  itm_trench_club_9,
-  itm_trench_club_10,
-  itm_trench_club_11,
-  itm_trench_club_12,
-  itm_trench_club_13,
-  itm_trench_club_14,
 
   itm_long_trench_club_1,
   itm_long_trench_club_2,
@@ -3483,21 +3167,10 @@ troops = [
   itm_mg_ammo,
 
   itm_kukri_rusty,
-  itm_knife,
-  itm_trench_club_1,
-  itm_trench_club_2,
-  itm_trench_club_3,
-  itm_trench_club_4,
+
   itm_trench_club_5,
   itm_trench_club_6,
   itm_trench_club_7,
-  itm_trench_club_8,
-  itm_trench_club_9,
-  itm_trench_club_10,
-  itm_trench_club_11,
-  itm_trench_club_12,
-  itm_trench_club_13,
-  itm_trench_club_14,
 
   itm_long_trench_club_1,
   itm_long_trench_club_2,
@@ -3526,21 +3199,10 @@ troops = [
   itm_sniper_old,
 
   itm_kukri_rusty,
-  itm_knife,
-  itm_trench_club_1,
-  itm_trench_club_2,
-  itm_trench_club_3,
-  itm_trench_club_4,
+
   itm_trench_club_5,
   itm_trench_club_6,
   itm_trench_club_7,
-  itm_trench_club_8,
-  itm_trench_club_9,
-  itm_trench_club_10,
-  itm_trench_club_11,
-  itm_trench_club_12,
-  itm_trench_club_13,
-  itm_trench_club_14,
 
   itm_long_trench_club_1,
   itm_long_trench_club_2,
@@ -3557,6 +3219,8 @@ troops = [
   itm_bandit_gloves,
   itm_handwraps_black,
   itm_black_gloves,
+  
+  itm_bandit_straw_cloak,
   ],
   attr_lvl_30,wp_5_m,knows_battle_5,bandit_face1, bandit_face2],
 ["saboteur","Saboteur","Saboteurs",tf_has_body|tf_guarantee_ranged|tf_has_head|tf_has_hand,0,0,fac_outlaws,[
@@ -3570,7 +3234,6 @@ troops = [
   itm_grenade_molotov,
   itm_grenade_stick,
 
-  itm_knife,
   itm_crowbar,
   itm_wrench,
   itm_lead_pipe,
@@ -3612,6 +3275,7 @@ troops = [
   itm_handwraps_black,
   
   itm_ammo_belt_5,
+  itm_bandit_straw_cloak,
   ]+sniper_1,
   attr_lvl_30,wp_5_r,knows_battle_5,bandit_face1, bandit_face2],
 
@@ -3626,17 +3290,7 @@ troops = [
   itm_sledgehammer,
   itm_light_cav_sword,
   itm_iron_staff,
-  itm_trench_club_1,
-  itm_trench_club_2,
-  itm_trench_club_3,
-  itm_trench_club_4,
-  itm_trench_club_5,
-  itm_trench_club_6,
-  itm_trench_club_7,
-  itm_trench_club_8,
-  itm_trench_club_9,
-  itm_trench_club_10,
-  itm_trench_club_11,
+
   itm_trench_club_12,
   itm_trench_club_13,
   itm_trench_club_14,
@@ -3680,20 +3334,10 @@ troops = [
   itm_sledgehammer_small,
   itm_one_handed_war_axe_a,
   itm_light_cav_sword,
-  itm_trench_club_1,
-  itm_trench_club_2,
-  itm_trench_club_3,
-  itm_trench_club_4,
-  itm_trench_club_5,
-  itm_trench_club_6,
-  itm_trench_club_7,
-  itm_trench_club_8,
-  itm_trench_club_9,
-  itm_trench_club_10,
+
   itm_trench_club_11,
   itm_trench_club_12,
   itm_trench_club_13,
-  itm_trench_club_14,
 
   itm_long_trench_club_1,
   itm_long_trench_club_2,
@@ -3732,7 +3376,7 @@ troops = [
   attr_lvl_40,wp_6_m,knows_battle_6,bandit_face1, bandit_face2],
 
 #Adventurers
-["wasteland_bandit","Adventurer","Adventurer_Regulars",tf_has_body|tf_guarantee_ranged,0,0,fac_outlaws,[
+["wasteland_bandit","Adventurer_Rough","Adventurer_Roughs",tf_has_body|tf_guarantee_ranged,0,0,fac_outlaws,[
   itm_pistol_ammo, itm_pistol_ammo_empty,
   itm_pistol_ammo_2,
   itm_pistol_ammo_3,
@@ -3746,20 +3390,10 @@ troops = [
   itm_mace_1,
   itm_spiked_club,
   itm_crowbar,
-  itm_trench_club_1,
+
   itm_trench_club_2,
   itm_trench_club_3,
   itm_trench_club_4,
-  itm_trench_club_5,
-  itm_trench_club_6,
-  itm_trench_club_7,
-  itm_trench_club_8,
-  itm_trench_club_9,
-  itm_trench_club_10,
-  itm_trench_club_11,
-  itm_trench_club_12,
-  itm_trench_club_13,
-  itm_trench_club_14,
 
   itm_long_trench_club_1,
   itm_long_trench_club_2,
@@ -3768,32 +3402,21 @@ troops = [
   itm_hand_axe,
   itm_knife,
   itm_butchering_knife,
-
-  itm_adventurer_black,
-  itm_adventurer_blue,
-  itm_adventurer_blue_red,
-  itm_adventurer_blue_yellow,
-  itm_adventurer_brown,
-  itm_adventurer_green,
-  itm_adventurer_grey,
-  itm_adventurer_grey_2,
-  itm_adventurer_orange,
-  itm_adventurer_red,
-  itm_adventurer_red_yellow,
-  itm_adventurer_yellow,
-
-  itm_adventurer_black_hat,
-  itm_adventurer_blue_hat,
-  itm_adventurer_blue_red_hat,
-  itm_adventurer_blue_yellow_hat,
-  itm_adventurer_brown_hat,
-  itm_adventurer_green_hat,
-  itm_adventurer_grey_hat,
-  itm_adventurer_grey_hat_2,
-  itm_adventurer_orange_hat,
-  itm_adventurer_red_hat,
-  itm_adventurer_red_yellow_hat,
-  itm_adventurer_yellow_hat,
+  
+  itm_adventurer_rough_1,
+  itm_adventurer_rough_2,
+  
+  itm_winter_hat_1,
+  itm_swamp_headwear_1,
+  itm_strawhat_1,
+  itm_peasant_cap_blue,
+  itm_bandit_hood_blk,
+  itm_poor_hood,
+  itm_bandana_black,
+  itm_bandana_blue,
+  itm_bandana_red,
+  itm_bandana_green,
+  itm_bandana_white,
   
   itm_handwraps,
   itm_leather_gloves,
@@ -3801,7 +3424,7 @@ troops = [
   (itm_leather_gloves_metal,imod_ragged),
   (itm_black_gloves_metal,imod_ragged),
   ]+revolvers,attr_lvl_20,wp_3_m,knows_battle_3,bandit_face1, bandit_face2],
-["wasteland_raider","Rowdy_Adventurer","Rowdy_Adventurers",tf_has_body|tf_guarantee_ranged,0,0,fac_outlaws,[
+["wasteland_raider","Adventurer","Adventurers",tf_has_body|tf_guarantee_ranged,0,0,fac_outlaws,[
   itm_rifle_ammo, itm_rifle_ammo_empty,
 
   itm_throwing_metal_spears,
@@ -3816,20 +3439,9 @@ troops = [
   itm_big_club,
   itm_big_spiked_club,
   itm_crowbar,
-  itm_trench_club_1,
-  itm_trench_club_2,
   itm_trench_club_3,
   itm_trench_club_4,
   itm_trench_club_5,
-  itm_trench_club_6,
-  itm_trench_club_7,
-  itm_trench_club_8,
-  itm_trench_club_9,
-  itm_trench_club_10,
-  itm_trench_club_11,
-  itm_trench_club_12,
-  itm_trench_club_13,
-  itm_trench_club_14,
 
   itm_long_trench_club_1,
   itm_long_trench_club_2,
@@ -3839,27 +3451,24 @@ troops = [
   itm_staff,
   itm_butchering_knife,
   itm_hammer_big,
-
-  itm_adventurer_rough_black,
-  itm_adventurer_rough_blue,
-  itm_adventurer_rough_blue_red,
-  itm_adventurer_rough_brown,
-  itm_adventurer_rough_cream,
-  itm_adventurer_rough_green,
-
-  itm_adventurer_rough_black_hat,
-  itm_adventurer_rough_blue_hat,
-  itm_adventurer_rough_blue_red_hat,
-  itm_adventurer_rough_brown_hat,
-  itm_adventurer_rough_cream_hat,
-  itm_adventurer_rough_green_hat,
+  
+  itm_adventurer_plain_1,
+  itm_adventurer_plain_2,
+  itm_adventurer_plain_3,
+  itm_adventurer_plain_4,
+  itm_adventurer_plain_5,
+  itm_adventurer_plain_6,
+  
+  itm_bandit_helmet_1,
+  itm_bandit_helmet_2,
+  itm_bandit_helmet_3,
   
   itm_leather_gloves,
   itm_black_gloves,
   (itm_leather_gloves_metal,imod_ragged),
   (itm_black_gloves_metal,imod_ragged),
   ]+carbines,attr_lvl_25,wp_4_m,knows_battle_4,bandit_face1, bandit_face2],
-["wasteland_predator","Adventurer_Toff","Adventurer_Toffs",tf_has_body|tf_guarantee_ranged|tf_has_head|tf_has_hand,
+["wasteland_predator","Adventurer_Predator","Adventurer_Predators",tf_has_body|tf_guarantee_ranged|tf_has_head|tf_has_hand,
   0,0,fac_outlaws,
   [
   itm_pistol_ammo, itm_pistol_ammo_empty,
@@ -3871,28 +3480,18 @@ troops = [
   itm_bayonet_2,
   itm_bayonet_3,
   itm_bayonet_4,
-
-  itm_adventurer_rich_black,
-  itm_adventurer_rich_blue,
-  itm_adventurer_rich_grey,
-  itm_adventurer_rich_light_blue,
-  itm_adventurer_rich_orange,
-  itm_adventurer_rich_red,
-  itm_adventurer_rich_white,
-
-  itm_adventurer_rich_black_hat,
-  itm_adventurer_rich_blue_hat,
-  itm_adventurer_rich_grey_hat,
-  itm_adventurer_rich_light_blue_hat,
-  itm_adventurer_rich_orange_hat,
-  itm_adventurer_rich_red_hat,
-  itm_adventurer_rich_white_hat,
+  
+  itm_adventurer_coat_1,
+  
+  itm_pot_helmet,
+  itm_pot_helmet_goggles,
+  itm_simple_helmet,
 
   itm_leather_gloves,
   itm_black_gloves,
   ]+smg_2,
   attr_lvl_30,wp_5_m,knows_battle_5,bandit_face1, bandit_face2],
-["wasteland_marauder","Adventurer_Bravado","Adventurer_Bravados",tf_has_body|tf_guarantee_ranged|tf_has_head|tf_has_hand,
+["wasteland_marauder","Adventurer_Marauder","Adventurer_Marauders",tf_has_body|tf_guarantee_ranged|tf_has_head|tf_has_hand,
   0,0,fac_outlaws,
   [
   itm_slug_ammo,
@@ -3906,31 +3505,18 @@ troops = [
   itm_hammer_big,
   itm_sledgehammer_small,
   itm_one_handed_war_axe_a,
-
-  itm_round_shield,
-  itm_riot_shield,
-  itm_tc_shield_1,
-  itm_tc_shield_2,
-  itm_tc_shield_5,
-
-  itm_adventurer_bravado_grey,
-  itm_adventurer_bravado_blue,
-
-  itm_adventurer_bravado_grey_hat,
-  itm_adventurer_bravado_blue_hat,
+  
+  itm_adventurer_cavalry_1,
+  
+  itm_pot_helmet,
+  itm_pot_helmet_goggles,
+  itm_simple_helmet,
 
   itm_leather_gloves,
   itm_black_gloves,
   (itm_leather_gloves_metal,imod_ragged),
   (itm_black_gloves_metal,imod_ragged),
 
-  itm_mountain_horse_1,
-  itm_mountain_horse_2,
-  itm_mountain_horse_3,
-  itm_mountain_horse_4,
-  itm_mountain_horse_5,
-  itm_mountain_horse_6,
-  itm_mountain_horse_7,
   itm_mountain_horse_8,
   itm_mountain_horse_9,
   itm_mountain_horse_10,
@@ -3956,22 +3542,12 @@ troops = [
   itm_hammer_big,
   itm_sledgehammer_small,
   itm_one_handed_war_axe_a,
-
-  itm_adventurer_rich_black,
-  itm_adventurer_rich_blue,
-  itm_adventurer_rich_grey,
-  itm_adventurer_rich_light_blue,
-  itm_adventurer_rich_orange,
-  itm_adventurer_rich_red,
-  itm_adventurer_rich_white,
-
-  itm_adventurer_rich_black_hat,
-  itm_adventurer_rich_blue_hat,
-  itm_adventurer_rich_grey_hat,
-  itm_adventurer_rich_light_blue_hat,
-  itm_adventurer_rich_orange_hat,
-  itm_adventurer_rich_red_hat,
-  itm_adventurer_rich_white_hat,
+  
+  itm_adventurer_officer_1,
+  
+  itm_pot_helmet,
+  itm_pot_helmet_goggles,
+  itm_simple_helmet,
 
   itm_leather_gloves,
   itm_black_gloves,
@@ -3984,1191 +3560,6 @@ troops = [
   ]+shotgun_2,
   attr_lvl_35,wp_6_m,knows_battle_6,bandit_face1, bandit_face2],
 
-#totem_raiders
-["jackal_raider","Jackal_Raider","Jackal_Raiders",tf_has_body|tf_guarantee_ranged,0,0,fac_outlaws,
-  [
-  itm_pistol_ammo, itm_pistol_ammo_empty,
-  itm_pistol_ammo_2,
-  itm_pistol_ammo_3,
-
-  itm_throwing_knives,
-  itm_darts,
-  itm_crook_revolver_1,
-
-  itm_knife,
-  itm_kukri_rusty,
-  itm_metal_blade,
-  itm_mace_1,
-  itm_trench_club_1,
-  itm_trench_club_2,
-  itm_trench_club_3,
-  itm_trench_club_4,
-  itm_trench_club_5,
-  itm_trench_club_6,
-  itm_trench_club_7,
-  itm_trench_club_8,
-  itm_trench_club_9,
-  itm_trench_club_10,
-  itm_trench_club_11,
-  itm_trench_club_12,
-  itm_trench_club_13,
-  itm_trench_club_14,
-
-  itm_long_trench_club_1,
-  itm_long_trench_club_2,
-  itm_hand_axe,
-  itm_staff,
-  
-  itm_galvae_shield_1,
-  itm_galvae_shield_2,
-  itm_galvae_shield_3,
-  itm_galvae_shield_4,
-  itm_galvae_shield_5,
-  itm_galvae_shield_6,
-  itm_galvae_shield_7,
-  itm_galvae_shield_8,
-  itm_galvae_shield_9,
-  
-  itm_wild_bodypaint_1,
-  itm_wild_bodypaint_2,
-
-  itm_jackal_helm_1,
-
-  itm_handwraps,
-  
-  ]+revolvers,
-  attr_lvl_25,wp_4_m,knows_battle_4,bandit_face1, bandit_face2],
-["jackal_predator","Jackal_Predator","Jackal_Predators",tf_has_body|tf_guarantee_ranged|tf_has_head,0,0,fac_outlaws,
-  [
-  itm_rifle_ammo, itm_rifle_ammo_empty,
-
-  itm_throwing_metal_spears,
-  itm_shuriken,
-  itm_throwing_axes,
-
-  itm_big_spiked_club,
-  itm_spiked_club,
-  itm_sledgehammer,
-  itm_battle_axe,
-  itm_war_axe,
-  
-  itm_shortened_military_scythe,
-  
-  itm_galvae_shield_1,
-  itm_galvae_shield_2,
-  itm_galvae_shield_3,
-  itm_galvae_shield_4,
-  itm_galvae_shield_5,
-  itm_galvae_shield_6,
-  itm_galvae_shield_7,
-  itm_galvae_shield_8,
-  itm_galvae_shield_9,
-
-  itm_jackal_tattoo_1,
-  
-  itm_jackal_helm_1,
-
-  itm_leather_gloves,
-  itm_black_gloves,
-  (itm_leather_gloves_metal,imod_ragged),
-  (itm_black_gloves_metal,imod_ragged),
-  ]+rifles,
-  attr_lvl_30,wp_5_m,knows_battle_5,bandit_face1, bandit_face2],
-["jackal_marauder","Jackal_Marauder","Jackal_Marauder",tf_has_body|tf_guarantee_ranged|tf_has_head|tf_guarantee_horse,0,0,fac_outlaws,
-  [
-  itm_rifle_ammo, itm_rifle_ammo_empty,
-
-  itm_big_spiked_club,
-  itm_spiked_club,
-  itm_lead_pipe,
-  itm_hammer_big,
-  itm_sledgehammer_small,
-  itm_one_handed_war_axe_a,
-  itm_staff,
-  itm_knife,
-  itm_knife,
-  itm_kukri_rusty,
-  
-  itm_galvae_shield_1,
-  itm_galvae_shield_2,
-  itm_galvae_shield_3,
-  itm_galvae_shield_4,
-  itm_galvae_shield_5,
-  itm_galvae_shield_6,
-  itm_galvae_shield_7,
-  itm_galvae_shield_8,
-  itm_galvae_shield_9,
-
-  itm_jackal_tattoo_1,
-  
-  itm_jackal_helm_1,
-
-  itm_leather_gloves,
-  itm_black_gloves,
-  (itm_leather_gloves_metal,imod_ragged),
-  (itm_black_gloves_metal,imod_ragged),
-  
-  itm_wild_horse_1,
-  itm_wild_horse_2,
-  itm_wild_horse_3,
-  ]+carbines,
-  attr_lvl_30,wp_5_m,knows_battle_5,bandit_face1, bandit_face2],
-["jackal_chieftain","Jackal_Chieftain","Jackal_Chieftains",tf_has_body|tf_guarantee_all|tf_guarantee_ranged|tf_guarantee_boots|tf_has_head,0,0,fac_outlaws,
-  [
-  itm_rifle_ammo_pw, itm_rifle_ammo_empty,
-
-  itm_big_spiked_club,
-  itm_spiked_club,
-  itm_sledgehammer,
-  itm_battle_axe,
-  itm_war_axe,
-  itm_shortened_military_scythe,
-  itm_big_spiked_club,
-  itm_hammer_big,
-  itm_sledgehammer_small,
-  itm_one_handed_war_axe_a,
-  
-  itm_galvae_shield_1,
-  itm_galvae_shield_2,
-  itm_galvae_shield_3,
-  itm_galvae_shield_4,
-  itm_galvae_shield_5,
-  itm_galvae_shield_6,
-  itm_galvae_shield_7,
-  itm_galvae_shield_8,
-  itm_galvae_shield_9,
-  
-  itm_jackal_tattoo_2,
-
-  itm_jackal_helm_1b,
-
-  itm_leather_gloves,
-  itm_black_gloves,
-  (itm_leather_gloves_metal,imod_ragged),
-  (itm_black_gloves_metal,imod_ragged),
-  
-  itm_jackal_cloak,
-  ]+rifles,
-  attr_lvl_35,wp_6_m,knows_battle_6,bandit_face1, bandit_face2],
-
-["wolf_raider","Wolf_Raider","Wolf_Raiders",tf_has_body|tf_guarantee_ranged,0,0,fac_outlaws,
-  [
-  itm_pistol_ammo, itm_pistol_ammo_empty,
-  itm_pistol_ammo_2,
-  itm_pistol_ammo_3,
-
-  itm_throwing_knives,
-  itm_darts,
-  itm_crook_revolver_1,
-
-  itm_knife,
-  itm_kukri_rusty,
-  itm_metal_blade,
-  itm_mace_1,
-  itm_trench_club_1,
-  itm_trench_club_2,
-  itm_trench_club_3,
-  itm_trench_club_4,
-  itm_trench_club_5,
-  itm_trench_club_6,
-  itm_trench_club_7,
-  itm_trench_club_8,
-  itm_trench_club_9,
-  itm_trench_club_10,
-  itm_trench_club_11,
-  itm_trench_club_12,
-  itm_trench_club_13,
-  itm_trench_club_14,
-
-  itm_long_trench_club_1,
-  itm_long_trench_club_2,
-  itm_hand_axe,
-  itm_staff,
-  
-  itm_galvae_shield_1,
-  itm_galvae_shield_2,
-  itm_galvae_shield_3,
-  itm_galvae_shield_4,
-  itm_galvae_shield_5,
-  itm_galvae_shield_6,
-  itm_galvae_shield_7,
-  itm_galvae_shield_8,
-  itm_galvae_shield_9,
-  
-  itm_wild_bodypaint_1,
-  itm_wild_bodypaint_2,
-
-  itm_wolf_helm,
-
-  itm_handwraps,
-  
-  ]+revolvers,
-  attr_lvl_25,wp_4_m,knows_battle_4,bandit_face1, bandit_face2],
-["wolf_predator","Wolf_Predator","Wolf_Predators",tf_has_body|tf_guarantee_ranged|tf_has_head,0,0,fac_outlaws,
-  [
-  itm_rifle_ammo, itm_rifle_ammo_empty,
-
-  itm_throwing_metal_spears,
-  itm_shuriken,
-  itm_throwing_axes,
-
-  itm_big_spiked_club,
-  itm_spiked_club,
-  itm_sledgehammer,
-  itm_battle_axe,
-  itm_war_axe,
-  
-  itm_shortened_military_scythe,
-  
-  itm_galvae_shield_1,
-  itm_galvae_shield_2,
-  itm_galvae_shield_3,
-  itm_galvae_shield_4,
-  itm_galvae_shield_5,
-  itm_galvae_shield_6,
-  itm_galvae_shield_7,
-  itm_galvae_shield_8,
-  itm_galvae_shield_9,
-
-  itm_wolf_tattoo_1,
-  
-  itm_wolf_helm,
-
-  itm_leather_gloves,
-  itm_black_gloves,
-  (itm_leather_gloves_metal,imod_ragged),
-  (itm_black_gloves_metal,imod_ragged),
-  ]+rifles,
-  attr_lvl_30,wp_5_m,knows_battle_5,bandit_face1, bandit_face2],
-["wolf_marauder","Wolf_Marauder","Wolf_Marauder",tf_has_body|tf_guarantee_ranged|tf_has_head|tf_guarantee_horse,0,0,fac_outlaws,
-  [
-  itm_rifle_ammo, itm_rifle_ammo_empty,
-
-  itm_big_spiked_club,
-  itm_spiked_club,
-  itm_lead_pipe,
-  itm_hammer_big,
-  itm_sledgehammer_small,
-  itm_one_handed_war_axe_a,
-  itm_staff,
-  itm_knife,
-  itm_knife,
-  itm_kukri_rusty,
-  
-  itm_galvae_shield_1,
-  itm_galvae_shield_2,
-  itm_galvae_shield_3,
-  itm_galvae_shield_4,
-  itm_galvae_shield_5,
-  itm_galvae_shield_6,
-  itm_galvae_shield_7,
-  itm_galvae_shield_8,
-  itm_galvae_shield_9,
-
-  itm_wolf_tattoo_1,
-  
-  itm_wolf_helm,
-
-  itm_leather_gloves,
-  itm_black_gloves,
-  (itm_leather_gloves_metal,imod_ragged),
-  (itm_black_gloves_metal,imod_ragged),
-  
-  itm_wild_horse_1,
-  itm_wild_horse_2,
-  itm_wild_horse_3,
-  ]+carbines,
-  attr_lvl_30,wp_5_m,knows_battle_5,bandit_face1, bandit_face2],
-["wolf_chieftain","Wolf_Chieftain","Wolf_Chieftains",tf_has_body|tf_guarantee_all|tf_guarantee_ranged|tf_guarantee_boots|tf_has_head,0,0,fac_outlaws,
-  [
-  itm_rifle_ammo_pw, itm_rifle_ammo_empty,
-
-  itm_big_spiked_club,
-  itm_spiked_club,
-  itm_sledgehammer,
-  itm_battle_axe,
-  itm_war_axe,
-  itm_shortened_military_scythe,
-  itm_big_spiked_club,
-  itm_hammer_big,
-  itm_sledgehammer_small,
-  itm_one_handed_war_axe_a,
-  
-  itm_galvae_shield_1,
-  itm_galvae_shield_2,
-  itm_galvae_shield_3,
-  itm_galvae_shield_4,
-  itm_galvae_shield_5,
-  itm_galvae_shield_6,
-  itm_galvae_shield_7,
-  itm_galvae_shield_8,
-  itm_galvae_shield_9,
-  
-  itm_wolf_tattoo_1,
-
-  itm_wolf_helm_elder,
-
-  itm_leather_gloves,
-  itm_black_gloves,
-  (itm_leather_gloves_metal,imod_ragged),
-  (itm_black_gloves_metal,imod_ragged),
-  
-  itm_wolf_cloak,
-  ]+rifles,
-  attr_lvl_35,wp_6_m,knows_battle_6,bandit_face1, bandit_face2],
-
-["boar_raider","Boar_Raider","Boar_Raiders",tf_has_body|tf_guarantee_ranged,0,0,fac_outlaws,
-  [
-  itm_pistol_ammo, itm_pistol_ammo_empty,
-  itm_pistol_ammo_2,
-  itm_pistol_ammo_3,
-
-  itm_throwing_knives,
-  itm_darts,
-  itm_crook_revolver_1,
-
-  itm_knife,
-  itm_kukri_rusty,
-  itm_metal_blade,
-  itm_mace_1,
-  itm_trench_club_1,
-  itm_trench_club_2,
-  itm_trench_club_3,
-  itm_trench_club_4,
-  itm_trench_club_5,
-  itm_trench_club_6,
-  itm_trench_club_7,
-  itm_trench_club_8,
-  itm_trench_club_9,
-  itm_trench_club_10,
-  itm_trench_club_11,
-  itm_trench_club_12,
-  itm_trench_club_13,
-  itm_trench_club_14,
-
-  itm_long_trench_club_1,
-  itm_long_trench_club_2,
-  itm_hand_axe,
-  itm_staff,
-  
-  itm_galvae_shield_1,
-  itm_galvae_shield_2,
-  itm_galvae_shield_3,
-  itm_galvae_shield_4,
-  itm_galvae_shield_5,
-  itm_galvae_shield_6,
-  itm_galvae_shield_7,
-  itm_galvae_shield_8,
-  itm_galvae_shield_9,
-  
-  itm_wild_bodypaint_1,
-  itm_wild_bodypaint_2,
-
-  itm_boar_helmet,
-
-  itm_handwraps,
-  
-  ]+revolvers,
-  attr_lvl_25,wp_4_m,knows_battle_4,bandit_face1, bandit_face2],
-["boar_predator","Boar_Predator","Boar_Predators",tf_has_body|tf_guarantee_ranged|tf_has_head,0,0,fac_outlaws,
-  [
-  itm_rifle_ammo, itm_rifle_ammo_empty,
-
-  itm_throwing_metal_spears,
-  itm_shuriken,
-  itm_throwing_axes,
-
-  itm_big_spiked_club,
-  itm_spiked_club,
-  itm_sledgehammer,
-  itm_battle_axe,
-  itm_war_axe,
-  
-  
-  itm_shortened_military_scythe,
-  
-  itm_galvae_shield_1,
-  itm_galvae_shield_2,
-  itm_galvae_shield_3,
-  itm_galvae_shield_4,
-  itm_galvae_shield_5,
-  itm_galvae_shield_6,
-  itm_galvae_shield_7,
-  itm_galvae_shield_8,
-  itm_galvae_shield_9,
-  
-  itm_boar_tattoo_1,
-
-  itm_bl_boar,
-
-  itm_leather_gloves,
-  itm_black_gloves,
-  (itm_leather_gloves_metal,imod_ragged),
-  (itm_black_gloves_metal,imod_ragged),
-  ]+rifles,
-  attr_lvl_30,wp_5_m,knows_battle_5,bandit_face1, bandit_face2],
-["boar_marauder","Boar_Marauder","Boar_Marauder",tf_has_body|tf_guarantee_ranged|tf_has_head|tf_guarantee_horse,0,0,fac_outlaws,
-  [
-  itm_rifle_ammo, itm_rifle_ammo_empty,
-
-  itm_big_spiked_club,
-  itm_spiked_club,
-  itm_lead_pipe,
-  itm_hammer_big,
-  itm_sledgehammer_small,
-  itm_one_handed_war_axe_a,
-  itm_staff,
-  itm_knife,
-  itm_knife,
-  itm_kukri_rusty,
-  
-  itm_galvae_shield_1,
-  itm_galvae_shield_2,
-  itm_galvae_shield_3,
-  itm_galvae_shield_4,
-  itm_galvae_shield_5,
-  itm_galvae_shield_6,
-  itm_galvae_shield_7,
-  itm_galvae_shield_8,
-  itm_galvae_shield_9,
-  
-  itm_boar_tattoo_1,
-
-  itm_bl_boar,
-
-  itm_leather_gloves,
-  itm_black_gloves,
-  (itm_leather_gloves_metal,imod_ragged),
-  (itm_black_gloves_metal,imod_ragged),
-  
-  itm_wild_horse_1,
-  itm_wild_horse_2,
-  itm_wild_horse_3,
-  ]+carbines,
-  attr_lvl_30,wp_5_m,knows_battle_5,bandit_face1, bandit_face2],
-["boar_chieftain","Boar_Chieftain","Boar_Chieftains",
-  tf_has_body|tf_guarantee_all|tf_guarantee_ranged|tf_guarantee_boots|tf_has_head,0,0,fac_outlaws,
-  [
-  itm_rifle_ammo, itm_rifle_ammo_empty,
-
-  itm_big_spiked_club,
-  itm_spiked_club,
-  itm_sledgehammer,
-  itm_battle_axe,
-  itm_war_axe,
-  
-  
-  itm_shortened_military_scythe,
-  itm_big_spiked_club,
-  itm_hammer_big,
-  itm_sledgehammer_small,
-  itm_one_handed_war_axe_a,
-  itm_knife,
-  
-  itm_galvae_shield_1,
-  itm_galvae_shield_2,
-  itm_galvae_shield_3,
-  itm_galvae_shield_4,
-  itm_galvae_shield_5,
-  itm_galvae_shield_6,
-  itm_galvae_shield_7,
-  itm_galvae_shield_8,
-  itm_galvae_shield_9,
-  
-  itm_boar_tattoo_1,
-
-  itm_boar_cloak,
-
-  itm_boar_helmet,
-
-  itm_leather_gloves,
-  itm_black_gloves,
-  (itm_leather_gloves_metal,imod_ragged),
-  (itm_black_gloves_metal,imod_ragged),
-  
-  ]+rifles,
-  attr_lvl_35,wp_6_m,knows_battle_6,bandit_face1, bandit_face2],
-
-["goat_raider","Goat_Raider","Goat_Raiders",tf_has_body|tf_guarantee_ranged,0,0,fac_outlaws,
-  [
-  itm_pistol_ammo, itm_pistol_ammo_empty,
-  itm_pistol_ammo_2,
-  itm_pistol_ammo_3,
-
-  itm_throwing_knives,
-  itm_darts,
-  itm_crook_revolver_1,
-
-  itm_knife,
-  itm_kukri_rusty,
-  itm_metal_blade,
-  itm_mace_1,
-  itm_trench_club_1,
-  itm_trench_club_2,
-  itm_trench_club_3,
-  itm_trench_club_4,
-  itm_trench_club_5,
-  itm_trench_club_6,
-  itm_trench_club_7,
-  itm_trench_club_8,
-  itm_trench_club_9,
-  itm_trench_club_10,
-  itm_trench_club_11,
-  itm_trench_club_12,
-  itm_trench_club_13,
-  itm_trench_club_14,
-
-  itm_long_trench_club_1,
-  itm_long_trench_club_2,
-  itm_hand_axe,
-  itm_staff,
-  
-  itm_galvae_shield_1,
-  itm_galvae_shield_2,
-  itm_galvae_shield_3,
-  itm_galvae_shield_4,
-  itm_galvae_shield_5,
-  itm_galvae_shield_6,
-  itm_galvae_shield_7,
-  itm_galvae_shield_8,
-  itm_galvae_shield_9,
-  
-  itm_wild_bodypaint_1,
-  itm_wild_bodypaint_2,
-
-  itm_goat_cap,
-
-  itm_handwraps,
-  
-  ]+revolvers,
-  attr_lvl_25,wp_4_m,knows_battle_4,bandit_face1, bandit_face2],
-["goat_predator","Goat_Predator","Goat_Predators",tf_has_body|tf_guarantee_ranged|tf_has_head,0,0,fac_outlaws,
-  [
-  itm_rifle_ammo, itm_rifle_ammo_empty,
-
-  itm_throwing_metal_spears,
-  itm_shuriken,
-  itm_throwing_axes,
-
-  itm_big_spiked_club,
-  itm_spiked_club,
-  itm_sledgehammer,
-  itm_battle_axe,
-  itm_war_axe,
-  
-  
-  itm_shortened_military_scythe,
-  
-  itm_galvae_shield_1,
-  itm_galvae_shield_2,
-  itm_galvae_shield_3,
-  itm_galvae_shield_4,
-  itm_galvae_shield_5,
-  itm_galvae_shield_6,
-  itm_galvae_shield_7,
-  itm_galvae_shield_8,
-  itm_galvae_shield_9,
-  
-  itm_goat_tattoo_1,
-
-  itm_goat_cap,
-
-  itm_leather_gloves,
-  itm_black_gloves,
-  (itm_leather_gloves_metal,imod_ragged),
-  (itm_black_gloves_metal,imod_ragged),
-  ]+rifles,
-  attr_lvl_30,wp_5_m,knows_battle_5,bandit_face1, bandit_face2],
-["goat_marauder","Goat_Marauder","Goat_Marauder",tf_has_body|tf_guarantee_ranged|tf_has_head|tf_guarantee_horse,0,0,fac_outlaws,
-  [
-  itm_rifle_ammo, itm_rifle_ammo_empty,
-
-  itm_big_spiked_club,
-  itm_spiked_club,
-  itm_lead_pipe,
-  itm_hammer_big,
-  itm_sledgehammer_small,
-  itm_one_handed_war_axe_a,
-  itm_staff,
-  itm_knife,
-  itm_knife,
-  itm_kukri_rusty,
-  
-  itm_galvae_shield_1,
-  itm_galvae_shield_2,
-  itm_galvae_shield_3,
-  itm_galvae_shield_4,
-  itm_galvae_shield_5,
-  itm_galvae_shield_6,
-  itm_galvae_shield_7,
-  itm_galvae_shield_8,
-  itm_galvae_shield_9,
-  
-  itm_goat_tattoo_1,
-
-  itm_goat_cap,
-
-  itm_leather_gloves,
-  itm_black_gloves,
-  (itm_leather_gloves_metal,imod_ragged),
-  (itm_black_gloves_metal,imod_ragged),
-  
-  itm_wild_horse_1,
-  itm_wild_horse_2,
-  itm_wild_horse_3,
-  ]+carbines,
-  attr_lvl_30,wp_5_m,knows_battle_5,bandit_face1, bandit_face2],
-["goat_chieftain","Goat_Chieftain","Goat_Chieftains",tf_has_body|tf_guarantee_all|tf_guarantee_ranged|tf_has_head,0,0,fac_outlaws,
-  [
-  itm_rifle_ammo, itm_rifle_ammo_empty,
-
-  itm_big_spiked_club,
-  itm_spiked_club,
-  itm_sledgehammer,
-  itm_battle_axe,
-  itm_war_axe,
-  itm_shortened_military_scythe,
-  itm_big_spiked_club,
-  itm_hammer_big,
-  itm_sledgehammer_small,
-  itm_one_handed_war_axe_a,
-  
-  itm_galvae_shield_1,
-  itm_galvae_shield_2,
-  itm_galvae_shield_3,
-  itm_galvae_shield_4,
-  itm_galvae_shield_5,
-  itm_galvae_shield_6,
-  itm_galvae_shield_7,
-  itm_galvae_shield_8,
-  itm_galvae_shield_9,
-  
-  itm_goatskin_tunic,
-  
-  itm_goat_hat,
-
-  itm_leather_gloves,
-  itm_black_gloves,
-  (itm_leather_gloves_metal,imod_ragged),
-  (itm_black_gloves_metal,imod_ragged),
-  
-  itm_aux_armour_1,
-  ]+rifles,
-  attr_lvl_35,wp_6_m,knows_battle_6,bandit_face1, bandit_face2],
-
-["bear_raider","Bear_Raider","Bear_Raiders",tf_has_body|tf_guarantee_ranged,0,0,fac_outlaws,
-  [
-  itm_pistol_ammo, itm_pistol_ammo_empty,
-  itm_pistol_ammo_2,
-  itm_pistol_ammo_3,
-
-  itm_throwing_knives,
-  itm_darts,
-  itm_crook_revolver_1,
-
-  itm_knife,
-  itm_kukri_rusty,
-  itm_metal_blade,
-  itm_mace_1,
-  itm_trench_club_1,
-  itm_trench_club_2,
-  itm_trench_club_3,
-  itm_trench_club_4,
-  itm_trench_club_5,
-  itm_trench_club_6,
-  itm_trench_club_7,
-  itm_trench_club_8,
-  itm_trench_club_9,
-  itm_trench_club_10,
-  itm_trench_club_11,
-  itm_trench_club_12,
-  itm_trench_club_13,
-  itm_trench_club_14,
-
-  itm_long_trench_club_1,
-  itm_long_trench_club_2,
-  itm_hand_axe,
-  itm_staff,
-  
-  itm_galvae_shield_1,
-  itm_galvae_shield_2,
-  itm_galvae_shield_3,
-  itm_galvae_shield_4,
-  itm_galvae_shield_5,
-  itm_galvae_shield_6,
-  itm_galvae_shield_7,
-  itm_galvae_shield_8,
-  itm_galvae_shield_9,
-  
-  itm_wild_bodypaint_1,
-  itm_wild_bodypaint_2,
-
-  itm_bear_helm,
-
-  itm_handwraps,
-  
-  ]+revolvers,
-  attr_lvl_25,wp_4_m,knows_battle_4,bandit_face1, bandit_face2],
-["bear_predator","Bear_Predator","Bear_Predators",tf_has_body|tf_guarantee_ranged|tf_has_head,0,0,fac_outlaws,
-  [
-  itm_rifle_ammo, itm_rifle_ammo_empty,
-
-  itm_throwing_metal_spears,
-  itm_shuriken,
-  itm_throwing_axes,
-
-  itm_big_spiked_club,
-  itm_spiked_club,
-  itm_sledgehammer,
-  itm_battle_axe,
-  itm_war_axe,
-  
-  
-  itm_shortened_military_scythe,
-  
-  itm_galvae_shield_1,
-  itm_galvae_shield_2,
-  itm_galvae_shield_3,
-  itm_galvae_shield_4,
-  itm_galvae_shield_5,
-  itm_galvae_shield_6,
-  itm_galvae_shield_7,
-  itm_galvae_shield_8,
-  itm_galvae_shield_9,
-  
-  itm_bear_tattoo_1,
-
-  itm_bear_helm,
-
-  itm_bear_gauntlets,
-  ]+rifles,
-  attr_lvl_30,wp_5_m,knows_battle_5,bandit_face1, bandit_face2],
-["bear_marauder","Bear_Marauder","Bear_Marauder",tf_has_body|tf_guarantee_ranged|tf_has_head|tf_guarantee_horse,0,0,fac_outlaws,
-  [
-  itm_rifle_ammo, itm_rifle_ammo_empty,
-
-  itm_big_spiked_club,
-  itm_spiked_club,
-  itm_lead_pipe,
-  itm_hammer_big,
-  itm_sledgehammer_small,
-  itm_one_handed_war_axe_a,
-  itm_staff,
-  itm_knife,
-  itm_knife,
-  itm_kukri_rusty,
-  
-  itm_galvae_shield_1,
-  itm_galvae_shield_2,
-  itm_galvae_shield_3,
-  itm_galvae_shield_4,
-  itm_galvae_shield_5,
-  itm_galvae_shield_6,
-  itm_galvae_shield_7,
-  itm_galvae_shield_8,
-  itm_galvae_shield_9,
-  
-  itm_bear_tattoo_1,
-
-  itm_bear_helm,
-
-  itm_bear_gauntlets,
-  
-  itm_wild_horse_1,
-  itm_wild_horse_2,
-  itm_wild_horse_3,
-  ]+carbines,
-  attr_lvl_30,wp_5_m,knows_battle_5,bandit_face1, bandit_face2],
-["bear_chieftain","Bear_Chieftain","Bear_Chieftains",tf_has_body|tf_guarantee_all|tf_guarantee_ranged|tf_has_head,0,0,fac_outlaws,
-  [
-  itm_rifle_ammo, itm_rifle_ammo_empty,
-
-  itm_big_spiked_club,
-  itm_spiked_club,
-  itm_sledgehammer,
-  itm_battle_axe,
-  itm_war_axe,
-  
-  
-  itm_shortened_military_scythe,
-  itm_big_spiked_club,
-  itm_hammer_big,
-  itm_sledgehammer_small,
-  itm_one_handed_war_axe_a,
-  itm_knife,
-  
-  itm_galvae_shield_1,
-  itm_galvae_shield_2,
-  itm_galvae_shield_3,
-  itm_galvae_shield_4,
-  itm_galvae_shield_5,
-  itm_galvae_shield_6,
-  itm_galvae_shield_7,
-  itm_galvae_shield_8,
-  itm_galvae_shield_9,
-  
-  itm_bear_warrior_totem,
-
-  itm_bear_helm,
-
-  itm_bear_gauntlets,
-  itm_bear_gauntlets_dark,
-  
-  itm_white_fur_collar,
-  ]+rifles,
-  attr_lvl_35,wp_6_m,knows_battle_6,bandit_face1, bandit_face2],
-
-#nomads
-["nomad_wastrel","Nomad_Wastrel","Nomad_Wastrels",tf_has_body|tf_has_ranged,no_scene,reserved,fac_commoners,[
-  itm_arrows,
-  itm_pistol_ammo, itm_pistol_ammo_empty,
-  itm_pistol_ammo_2,
-  itm_pistol_ammo_3,
-  
-  itm_crook_revolver_1,
-
-  itm_club,
-  itm_big_club,
-  itm_crowbar,
-  itm_trench_club_1,
-  itm_trench_club_2,
-  itm_trench_club_3,
-  itm_trench_club_4,
-  itm_trench_club_5,
-  itm_trench_club_6,
-  itm_trench_club_7,
-  itm_trench_club_8,
-  itm_trench_club_9,
-  itm_trench_club_10,
-  itm_trench_club_11,
-  itm_trench_club_12,
-  itm_trench_club_13,
-  itm_trench_club_14,
-
-  itm_long_trench_club_1,
-  itm_long_trench_club_2,
-  itm_hatchet,
-  itm_simple_knife,
-  itm_knife,
-  itm_kukri_rusty,
-  itm_kukri_old,
-  itm_metal_blade,
-  itm_shovel_short,
-
-  itm_throwing_knives,
-  itm_darts,
-  itm_short_bow,
-
-  itm_leather_gloves,
-  itm_black_gloves,
-
-  itm_poor_shirt_1,
-  itm_poor_shirt_2,
-  itm_poor_shirt_3,
-  itm_poor_shirt_4,
-  itm_poor_shirt_5,
-  itm_poor_shirt_6,
-  
-  itm_upgrade_glasses_dark,
-  itm_upgrade_bandage,
-  itm_upgrade_church_tat,
-  itm_upgrade_church_tatb,
-  itm_upgrade_cigarette,
-  itm_upgrade_covid_mask,
-  itm_upgrade_eyepatch_1,
-  itm_upgrade_eyepatch_2,
-  itm_upgrade_face_scarf_1,
-  itm_upgrade_face_scarf_2,
-  itm_upgrade_face_scarf_3,
-  itm_upgrade_face_cover,
-  itm_upgrade_glasses,
-  itm_upgrade_goggle,
-  itm_upgrade_headset_1,
-  itm_upgrade_headset_2,
-  itm_upgrade_iron_mask_1,
-  itm_upgrade_iron_mask_2,
-  itm_upgrade_iron_mask_3,
-  ]+revolvers,
-  attr_lvl_10,wp_1_m,knows_battle_1,mercenary_face_1, mercenary_face_2],
-["nomad_vagabond","Nomad_Vagabond","Nomad_Vagabonds",tf_has_body|tf_has_ranged,no_scene,reserved,fac_commoners,[
-  itm_pistol_ammo, itm_pistol_ammo_empty,
-  itm_pistol_ammo_2,
-  itm_pistol_ammo_3,
-
-  itm_darts,
-
-  itm_mace_1,
-  itm_big_club,
-  itm_crowbar,
-  itm_lead_pipe,
-  itm_hand_axe,
-  itm_bowie_knife,
-  itm_knife,
-  itm_knife,
-  itm_metal_blade,
-  itm_shovel,
-  itm_hammer_big,
-
-  itm_poor_shirt_1,
-  itm_poor_shirt_2,
-  itm_poor_shirt_3,
-  itm_poor_shirt_4,
-  itm_poor_shirt_5,
-  itm_poor_shirt_6,
-  
-  itm_upgrade_glasses_dark,
-  itm_upgrade_bandage,
-  itm_upgrade_church_tat,
-  itm_upgrade_church_tatb,
-  itm_upgrade_cigarette,
-  itm_upgrade_covid_mask,
-  itm_upgrade_eyepatch_1,
-  itm_upgrade_eyepatch_2,
-  itm_upgrade_face_scarf_1,
-  itm_upgrade_face_scarf_2,
-  itm_upgrade_face_scarf_3,
-  itm_upgrade_face_cover,
-  itm_upgrade_glasses,
-  itm_upgrade_goggle,
-  itm_upgrade_headset_1,
-  itm_upgrade_headset_2,
-  itm_upgrade_iron_mask_1,
-  itm_upgrade_iron_mask_2,
-  itm_upgrade_iron_mask_3,
-  
-  itm_leather_gloves,
-  itm_black_gloves,
-  ]+semi_pistols,
-  attr_lvl_15,wp_2_m,knows_battle_2,mercenary_face_1, mercenary_face_2],
-["nomad_drifter","Nomad_Drifter","Nomad_Drifters",tf_has_body|tf_has_ranged,no_scene,reserved,fac_commoners,[
-  itm_rifle_ammo, itm_rifle_ammo_empty,
-
-  itm_knife,
-  itm_bayonet_2,
-  itm_bayonet_1,
-  itm_trench_club_1,
-  itm_trench_club_2,
-  itm_trench_club_3,
-  itm_trench_club_4,
-  itm_trench_club_5,
-  itm_trench_club_6,
-  itm_trench_club_7,
-  itm_trench_club_8,
-  itm_trench_club_9,
-  itm_trench_club_10,
-  itm_trench_club_11,
-  itm_trench_club_12,
-  itm_trench_club_13,
-  itm_trench_club_14,
-
-  itm_bastard_club_1,
-  itm_crowbar,
-  itm_hatchet_tactical,
-  itm_hand_axe,
-  itm_bowie_knife,
-  itm_hammer_big,
-
-  itm_poor_shirt_1,
-  itm_poor_shirt_2,
-  itm_poor_shirt_3,
-  itm_poor_shirt_4,
-  itm_poor_shirt_5,
-  itm_poor_shirt_6,
-  
-  itm_goat_cap,
-  
-  itm_white_fur_collar,
-
-  itm_leather_gloves,
-  itm_black_gloves,
-  ]+carbines,
-  attr_lvl_25,wp_4_m,knows_battle_4,mercenary_face_1, mercenary_face_2],
-["nomad_wanderer","Nomad_Wanderer","Nomad_Wanderers",tf_has_body|tf_has_ranged|tf_has_hand,no_scene,reserved,fac_commoners,[
-  itm_rifle_ammo, itm_rifle_ammo_empty,
-
-  itm_knife,
-  itm_bayonet_2,
-  itm_katana,
-  itm_bayonet_1,
-  itm_trench_club_1,
-  itm_trench_club_2,
-  itm_trench_club_3,
-  itm_trench_club_4,
-  itm_trench_club_5,
-  itm_trench_club_6,
-  itm_trench_club_7,
-  itm_trench_club_8,
-  itm_trench_club_9,
-  itm_trench_club_10,
-  itm_trench_club_11,
-  itm_trench_club_12,
-  itm_trench_club_13,
-  itm_trench_club_14,
-
-  itm_bastard_club_1,
-  itm_hatchet_tactical,
-  itm_big_spiked_club,
-
-  itm_poor_shirt_1,
-  itm_poor_shirt_2,
-  itm_poor_shirt_3,
-  itm_poor_shirt_4,
-  itm_poor_shirt_5,
-  itm_poor_shirt_6,
-  
-  itm_goat_hat,
-  
-  itm_white_fur_collar,
-
-  itm_leather_gloves,
-  itm_black_gloves,
-  ]+rifles,
-  attr_lvl_30,wp_5_m,knows_battle_5,mercenary_face_1, mercenary_face_2],
-
-#Foreign Adventurers
-["scavenger_violent","Foreign_Adventurer","Foreign_Adventurers",
-  tf_has_body|tf_has_head|tf_has_ranged,no_scene,reserved,fac_outlaws,
-  [
-  itm_pistol_ammo, itm_pistol_ammo_empty,
-  itm_pistol_ammo_2,
-  itm_pistol_ammo_3,
-
-  itm_adventurer_foreign_bashide_1,
-  itm_adventurer_foreign_bashide_2,
-  itm_adventurer_foreign_shonson_1,
-  itm_adventurer_foreign_shonson_2,
-  itm_adventurer_foreign_quvair_1,
-  itm_adventurer_foreign_laloch_1,
-  itm_adventurer_foreign_laloch_2,
-  itm_adventurer_foreign_istak_1,
-  itm_adventurer_foreign_istak_2,
-  itm_adventurer_foreign_kesoki_1,
-  itm_adventurer_foreign_kesoki_2,
-  
-  itm_adventurer_foreign_bashide_hat_1,
-  itm_adventurer_foreign_bashide_hat_2,
-  itm_adventurer_foreign_shonson_hat_1,
-  itm_adventurer_foreign_shonson_hat_2,
-  itm_adventurer_foreign_quvair_hat_1,
-  itm_adventurer_foreign_laloch_hat_1,
-  itm_adventurer_foreign_laloch_hat_2,
-  itm_adventurer_foreign_istak_hat_1,
-  itm_adventurer_foreign_istak_hat_2,
-  itm_adventurer_foreign_kesoki_hat_1,
-  itm_adventurer_foreign_kesoki_hat_2,
-
-  itm_leather_gloves,
-  itm_black_gloves,
-  (itm_leather_gloves_metal,imod_ragged),
-  (itm_black_gloves_metal,imod_ragged),
-  ]+revolvers,
-  attr_lvl_25,wp_4_m,knows_battle_4,bandit_face1, bandit_face2],
-["scavenger_vet_violent","Veteran_Foreign_Adventurer","Veteran_Foreign_Adventurers",
-  tf_has_body|tf_has_head|tf_has_ranged|tf_has_hand,no_scene,reserved,fac_outlaws,
-  [
-  itm_pistol_ammo_pw, itm_pistol_ammo_empty,
-  itm_pistol_ammo_2_pw,
-  itm_pistol_ammo_3_pw,
-  itm_pistol_ammo_5_pw,
-  itm_pistol_ammo_6_pw,
-
-  itm_adventurer_foreign_bashide_1,
-  itm_adventurer_foreign_bashide_2,
-  itm_adventurer_foreign_shonson_1,
-  itm_adventurer_foreign_shonson_2,
-  itm_adventurer_foreign_quvair_1,
-  itm_adventurer_foreign_laloch_1,
-  itm_adventurer_foreign_laloch_2,
-  itm_adventurer_foreign_istak_1,
-  itm_adventurer_foreign_istak_2,
-  itm_adventurer_foreign_kesoki_1,
-  itm_adventurer_foreign_kesoki_2,
-  
-  itm_adventurer_foreign_bashide_hat_1,
-  itm_adventurer_foreign_bashide_hat_2,
-  itm_adventurer_foreign_shonson_hat_1,
-  itm_adventurer_foreign_shonson_hat_2,
-  itm_adventurer_foreign_quvair_hat_1,
-  itm_adventurer_foreign_laloch_hat_1,
-  itm_adventurer_foreign_laloch_hat_2,
-  itm_adventurer_foreign_istak_hat_1,
-  itm_adventurer_foreign_istak_hat_2,
-  itm_adventurer_foreign_kesoki_hat_1,
-  itm_adventurer_foreign_kesoki_hat_2,
-
-  itm_leather_gloves,
-  itm_leather_gloves_metal,
-  itm_black_gloves,
-  itm_black_gloves_metal,
-  ]+smg_1,
-  attr_lvl_30,wp_5_m,knows_battle_5,bandit_face1, bandit_face2],
-["scavenger_legend_violent","Renouned_Foreign_Adventurer","Renouned_Foreign_Adventurers",
-  tf_has_body|tf_has_head|tf_has_ranged|tf_has_hand,no_scene,reserved,fac_outlaws,
-  [
-  itm_pistol_ammo_4, itm_pistol_ammo_empty,
-  itm_pistol_ammo_4,
-
-  itm_adventurer_foreign_bashide_1,
-  itm_adventurer_foreign_bashide_2,
-  itm_adventurer_foreign_shonson_1,
-  itm_adventurer_foreign_shonson_2,
-  itm_adventurer_foreign_quvair_1,
-  itm_adventurer_foreign_laloch_1,
-  itm_adventurer_foreign_laloch_2,
-  itm_adventurer_foreign_istak_1,
-  itm_adventurer_foreign_istak_2,
-  itm_adventurer_foreign_kesoki_1,
-  itm_adventurer_foreign_kesoki_2,
-  
-  itm_adventurer_foreign_bashide_hat_1,
-  itm_adventurer_foreign_bashide_hat_2,
-  itm_adventurer_foreign_shonson_hat_1,
-  itm_adventurer_foreign_shonson_hat_2,
-  itm_adventurer_foreign_quvair_hat_1,
-  itm_adventurer_foreign_laloch_hat_1,
-  itm_adventurer_foreign_laloch_hat_2,
-  itm_adventurer_foreign_istak_hat_1,
-  itm_adventurer_foreign_istak_hat_2,
-  itm_adventurer_foreign_kesoki_hat_1,
-  itm_adventurer_foreign_kesoki_hat_2,
-
-  itm_leather_gloves,
-  itm_leather_gloves_metal,
-  itm_black_gloves,
-  itm_black_gloves_metal,
-  ]+smg_2,
-  attr_lvl_35,wp_6_m,knows_battle_6,bandit_face1, bandit_face2],
-["scavenger_power_violent","Crusher_Foreign_Adventurer","Crusher_Foreign_Adventurers",
-  tf_has_body|tf_has_head|tf_has_hand,no_scene,reserved,fac_outlaws,
-  [
-  itm_powerfist,
-
-  itm_adventurer_foreign_bashide_1,
-  itm_adventurer_foreign_bashide_2,
-  itm_adventurer_foreign_shonson_1,
-  itm_adventurer_foreign_shonson_2,
-  itm_adventurer_foreign_quvair_1,
-  itm_adventurer_foreign_laloch_1,
-  itm_adventurer_foreign_laloch_2,
-  itm_adventurer_foreign_istak_1,
-  itm_adventurer_foreign_istak_2,
-  itm_adventurer_foreign_kesoki_1,
-  itm_adventurer_foreign_kesoki_2,
-  
-  itm_adventurer_foreign_bashide_hat_1,
-  itm_adventurer_foreign_bashide_hat_2,
-  itm_adventurer_foreign_shonson_hat_1,
-  itm_adventurer_foreign_shonson_hat_2,
-  itm_adventurer_foreign_quvair_hat_1,
-  itm_adventurer_foreign_laloch_hat_1,
-  itm_adventurer_foreign_laloch_hat_2,
-  itm_adventurer_foreign_istak_hat_1,
-  itm_adventurer_foreign_istak_hat_2,
-  itm_adventurer_foreign_kesoki_hat_1,
-  itm_adventurer_foreign_kesoki_hat_2,
-  ],
-  attr_lvl_30,wp_5_m,knows_battle_5,mercenary_face_1, mercenary_face_2],
-
 ["ezeg","Ezeg","Ezegs",tf_has_body|tf_has_ranged,no_scene,reserved,fac_outlaws,[
   itm_ezeg_arrows,
   itm_recurve_bow,
@@ -5176,9 +3567,6 @@ troops = [
   itm_kukri_old,
 
   itm_ezeg_uniform_1,
-  
-  itm_adventurer_foreign_bashide_hat_1,
-  itm_adventurer_foreign_bashide_hat_2,
 
   itm_leather_gloves,
   itm_black_gloves,
@@ -5192,9 +3580,6 @@ troops = [
   itm_bayonet_2,
 
   itm_ezeg_uniform_2,
-  
-  itm_adventurer_foreign_bashide_hat_1,
-  itm_adventurer_foreign_bashide_hat_2,
 
   itm_leather_gloves,
   itm_black_gloves,
@@ -5207,10 +3592,6 @@ troops = [
   itm_kukri_old,
 
   itm_ezeg_uniform_3,
-  itm_bandit_scale_shirt_1,
-  
-  itm_adventurer_foreign_bashide_hat_1,
-  itm_adventurer_foreign_bashide_hat_2,
   
   itm_white_fur_collar,
 
@@ -5225,11 +3606,7 @@ troops = [
 
   itm_tagan,
   
-  itm_ezeg_uniform_3,
-  itm_bandit_scale_armour_1,
-  
-  itm_adventurer_foreign_bashide_hat_1,
-  itm_adventurer_foreign_bashide_hat_2,
+#  itm_ezeg_uniform_4,
   
   itm_white_fur_collar,
 
@@ -5239,8 +3616,7 @@ troops = [
 
 #cultists
 ["cultist","Throd_Cultist","Throd_Cultists",
-  tf_has_body|tf_guarantee_ranged,
-  0,0,fac_kingdom_10,
+  tf_has_body|tf_guarantee_ranged,0,0,fac_kingdom_10,
   [
   itm_pistol_ammo, itm_pistol_ammo_empty,
   itm_pistol_ammo_2,
@@ -5267,8 +3643,7 @@ troops = [
   ]+semi_pistols,
   attr_lvl_25,wp_4_m,knows_battle_4,bandit_face1, bandit_face2],
 ["fanatic","Throd_Fanatic","Throd_Fanatics",
-  tf_has_body|tf_guarantee_ranged|tf_has_head|tf_has_hand,
-  0,0,fac_kingdom_10,
+  tf_has_body|tf_guarantee_ranged|tf_has_head|tf_has_hand,0,0,fac_kingdom_10,
   [
   itm_pistol_ammo, itm_pistol_ammo_empty,
   itm_pistol_ammo_2,
@@ -5314,8 +3689,7 @@ troops = [
   ]+smg_1,
   attr_lvl_30,wp_5_m,knows_battle_5,bandit_face1, bandit_face2],
 ["zealot","Throd_Zealot","Throd_Zealots",
-  tf_has_body|tf_guarantee_ranged|tf_has_head|tf_has_hand,
-  0,0,fac_kingdom_10,
+  tf_has_body|tf_guarantee_ranged|tf_has_head|tf_has_hand,0,0,fac_kingdom_10,
   [
   itm_rifle_ammo, itm_rifle_ammo_empty,
 
@@ -5354,9 +3728,1040 @@ troops = [
   ]+rifles,
   attr_lvl_35,wp_6_m,knows_battle_6,bandit_face1, bandit_face2],
 
+#nomads
+["nomad_wastrel","Nomad_Wastrel","Nomad_Wastrels",tf_has_body|tf_has_ranged,no_scene,reserved,fac_commoners,[
+  itm_arrows,
+  itm_pistol_ammo, itm_pistol_ammo_empty,
+  itm_pistol_ammo_2,
+  itm_pistol_ammo_3,
+  
+  itm_crook_revolver_1,
+
+  itm_club,
+  itm_big_club,
+  itm_crowbar,
+  itm_trench_club_1,
+  itm_trench_club_2,
+  itm_trench_club_3,
+
+  itm_long_trench_club_1,
+  itm_long_trench_club_2,
+  itm_hatchet,
+  itm_simple_knife,
+  itm_knife,
+  itm_kukri_rusty,
+  itm_kukri_old,
+  itm_metal_blade,
+  itm_shovel_short,
+
+  itm_throwing_knives,
+  itm_darts,
+  itm_short_bow,
+
+  itm_leather_gloves,
+  itm_black_gloves,
+
+  itm_poor_shirt_1,
+  itm_poor_shirt_2,
+  itm_poor_shirt_3,
+  itm_poor_shirt_4,
+  itm_poor_shirt_5,
+  itm_poor_shirt_6,
+  
+  itm_upgrade_glasses_dark,
+  itm_upgrade_bandage,
+  itm_upgrade_church_tat,
+  itm_upgrade_church_tatb,
+  itm_upgrade_cigarette,
+  itm_upgrade_covid_mask,
+  itm_upgrade_eyepatch_1,
+  itm_upgrade_eyepatch_2,
+  itm_upgrade_face_scarf_1,
+  itm_upgrade_face_scarf_2,
+  itm_upgrade_face_scarf_3,
+  itm_upgrade_face_cover,
+  itm_upgrade_glasses,
+  itm_upgrade_goggle,
+  itm_upgrade_headset_1,
+  itm_upgrade_headset_2,
+  itm_upgrade_iron_mask_1,
+  itm_upgrade_iron_mask_2,
+  itm_upgrade_iron_mask_3,
+  
+  ]+revolvers,
+  attr_lvl_10,wp_1_m,knows_battle_1,mercenary_face_1, mercenary_face_2],
+["nomad_vagabond","Nomad_Vagabond","Nomad_Vagabonds",tf_has_body|tf_has_ranged,no_scene,reserved,fac_commoners,[
+  itm_pistol_ammo, itm_pistol_ammo_empty,
+  itm_pistol_ammo_2,
+  itm_pistol_ammo_3,
+
+  itm_darts,
+
+  itm_mace_1,
+  itm_big_club,
+  itm_crowbar,
+  itm_lead_pipe,
+  itm_hand_axe,
+  itm_bowie_knife,
+  itm_knife,
+  itm_metal_blade,
+  itm_shovel,
+  itm_hammer_big,
+
+  itm_poor_shirt_1,
+  itm_poor_shirt_2,
+  itm_poor_shirt_3,
+  itm_poor_shirt_4,
+  itm_poor_shirt_5,
+  itm_poor_shirt_6,
+  
+  itm_upgrade_glasses_dark,
+  itm_upgrade_bandage,
+  itm_upgrade_church_tat,
+  itm_upgrade_church_tatb,
+  itm_upgrade_cigarette,
+  itm_upgrade_covid_mask,
+  itm_upgrade_eyepatch_1,
+  itm_upgrade_eyepatch_2,
+  itm_upgrade_face_scarf_1,
+  itm_upgrade_face_scarf_2,
+  itm_upgrade_face_scarf_3,
+  itm_upgrade_face_cover,
+  itm_upgrade_glasses,
+  itm_upgrade_goggle,
+  itm_upgrade_headset_1,
+  itm_upgrade_headset_2,
+  itm_upgrade_iron_mask_1,
+  itm_upgrade_iron_mask_2,
+  itm_upgrade_iron_mask_3,
+  
+  itm_leather_gloves,
+  itm_black_gloves,
+  ]+semi_pistols,
+  attr_lvl_15,wp_2_m,knows_battle_2,mercenary_face_1, mercenary_face_2],
+["nomad_drifter","Nomad_Drifter","Nomad_Drifters",tf_has_body|tf_has_ranged,no_scene,reserved,fac_commoners,[
+  itm_rifle_ammo, itm_rifle_ammo_empty,
+
+  itm_bayonet_2,
+  itm_bayonet_1,
+  itm_trench_club_5,
+  itm_trench_club_6,
+  itm_trench_club_7,
+
+  itm_bastard_club_1,
+  itm_crowbar,
+  itm_hatchet_tactical,
+  itm_hand_axe,
+  itm_bowie_knife,
+  itm_hammer_big,
+
+  itm_poor_shirt_1,
+  itm_poor_shirt_2,
+  itm_poor_shirt_3,
+  itm_poor_shirt_4,
+  itm_poor_shirt_5,
+  itm_poor_shirt_6,
+  
+  itm_upgrade_glasses_dark,
+  itm_upgrade_bandage,
+  itm_upgrade_church_tat,
+  itm_upgrade_church_tatb,
+  itm_upgrade_cigarette,
+  itm_upgrade_covid_mask,
+  itm_upgrade_eyepatch_1,
+  itm_upgrade_eyepatch_2,
+  itm_upgrade_face_scarf_1,
+  itm_upgrade_face_scarf_2,
+  itm_upgrade_face_scarf_3,
+  itm_upgrade_face_cover,
+  itm_upgrade_glasses,
+  itm_upgrade_goggle,
+  itm_upgrade_headset_1,
+  itm_upgrade_headset_2,
+  itm_upgrade_iron_mask_1,
+  itm_upgrade_iron_mask_2,
+  itm_upgrade_iron_mask_3,
+  
+  itm_white_fur_collar,
+
+  itm_leather_gloves,
+  itm_black_gloves,
+  ]+carbines,
+  attr_lvl_25,wp_4_m,knows_battle_4,mercenary_face_1, mercenary_face_2],
+["nomad_wanderer","Nomad_Wanderer","Nomad_Wanderers",tf_has_body|tf_has_ranged|tf_has_hand,no_scene,reserved,fac_commoners,[
+  itm_rifle_ammo, itm_rifle_ammo_empty,
+
+  itm_bayonet_2,
+  itm_katana,
+  itm_bayonet_1,
+  itm_trench_club_9,
+  itm_trench_club_10,
+  itm_trench_club_11,
+
+  itm_bastard_club_1,
+  itm_hatchet_tactical,
+  itm_big_spiked_club,
+
+  itm_poor_shirt_1,
+  itm_poor_shirt_2,
+  itm_poor_shirt_3,
+  itm_poor_shirt_4,
+  itm_poor_shirt_5,
+  itm_poor_shirt_6,
+  
+  itm_upgrade_glasses_dark,
+  itm_upgrade_bandage,
+  itm_upgrade_church_tat,
+  itm_upgrade_church_tatb,
+  itm_upgrade_cigarette,
+  itm_upgrade_covid_mask,
+  itm_upgrade_eyepatch_1,
+  itm_upgrade_eyepatch_2,
+  itm_upgrade_face_scarf_1,
+  itm_upgrade_face_scarf_2,
+  itm_upgrade_face_scarf_3,
+  itm_upgrade_face_cover,
+  itm_upgrade_glasses,
+  itm_upgrade_goggle,
+  itm_upgrade_headset_1,
+  itm_upgrade_headset_2,
+  itm_upgrade_iron_mask_1,
+  itm_upgrade_iron_mask_2,
+  itm_upgrade_iron_mask_3,
+  
+  itm_white_fur_collar,
+
+  itm_leather_gloves,
+  itm_black_gloves,
+  ]+rifles,
+  attr_lvl_30,wp_5_m,knows_battle_5,mercenary_face_1, mercenary_face_2],
+
+#fallen_phalanx
+["phalanx_fresh","Fresh_Warrior_of_the_Fallen_Phalanx","Fresh_Warriors_of_the_Fallen_Phalanx",
+  tf_has_body|tf_guarantee_ranged|tf_guarantee_helmet,0,0,fac_dark_knights,[
+  itm_rifle_ammo_4, itm_rifle_ammo_empty,
+  itm_rifle_ammo_4,
+  itm_common_bolt_action_rifle_bayonet_1,
+
+  itm_phalanx_uniform_1,
+
+  itm_phalanx_fresh_helmet,
+
+  itm_black_gloves,
+  ],
+  attr_lvl_25,wp_4_r,knows_battle_4,bandit_face1, bandit_face2],
+["phalanx_firstblood","Firstblood_Warrior_of_the_Fallen_Phalanx","Firstblood_Warriors_of_the_Fallen_Phalanx",
+  tf_has_body|tf_guarantee_ranged|tf_guarantee_helmet,0,0,fac_dark_knights,[
+  itm_rifle_ammo, itm_rifle_ammo_empty,
+  itm_rifle_ammo_3,
+  itm_rifle_ammo_5,
+  itm_rifle_ammo_6,
+  itm_common_bolt_action_rifle_bayonet_2,
+
+  itm_phalanx_uniform_2,
+  
+  itm_phalanx_firstblood_helmet,
+
+  itm_black_gloves,
+  ],
+  attr_lvl_30,wp_5_m,knows_battle_5,bandit_face1, bandit_face2],
+["phalanx_bloodied","Bloodied_Warrior_of_the_Fallen_Phalanx","Bloodied_Warriors_of_the_Fallen_Phalanx",
+  tf_has_body|tf_guarantee_ranged|tf_guarantee_helmet,0,0,fac_dark_knights,[
+  itm_rifle_ammo_pw, itm_rifle_ammo_empty,
+  itm_rifle_ammo_3_pw,
+  itm_rifle_ammo_5_pw,
+  itm_rifle_ammo_6_pw,
+
+  itm_common_bolt_action_rifle_bayonet_3,
+
+  itm_phalanx_uniform_3,
+
+  itm_phalanx_bloodied_helmet,
+
+  itm_black_gloves,
+  (itm_black_gloves_metal,imod_ragged),
+  ],
+  attr_lvl_35,wp_5_r,knows_battle_5,bandit_face1, bandit_face2],
+["phalanx_scarred","Scarred_Warrior_of_the_Fallen_Phalanx","Scarred_Warriors_of_the_Fallen_Phalanx",
+  tf_has_body|tf_guarantee_ranged|tf_guarantee_helmet,0,0,fac_dark_knights,[
+  itm_rifle_ammo_2_pw, itm_rifle_ammo_empty,
+  itm_rifle_ammo_2_pw,
+
+  itm_common_bolt_action_rifle_bayonet_4,
+
+  itm_phalanx_uniform_4,
+
+  itm_phalanx_scarred_helmet,
+
+  itm_leather_gloves_metal,
+  itm_black_gloves_metal,
+  itm_scale_gauntlets,
+  
+  ]+rifles,
+  attr_lvl_40,wp_5_m,knows_battle_5,bandit_face1, bandit_face2],
+["phalanx_chosen","Chosen_Warrior_of_the_Fallen_Phalanx","Chosen_Warriors_of_the_Fallen_Phalanx",
+  tf_has_body|tf_guarantee_ranged|tf_guarantee_helmet,0,0,fac_dark_knights,[
+  itm_rifle_ammo_2_pw, itm_rifle_ammo_empty,
+  itm_rifle_ammo_2_pw,
+  itm_assault_service_rifle,
+
+  itm_grenade_stick,
+
+  itm_holed_sword,
+
+  itm_phalanx_uniform_5,
+
+  itm_phalanx_chosen_helmet,
+
+  itm_leather_gloves_metal,
+  itm_black_gloves_metal,
+  itm_scale_gauntlets,
+  
+  itm_aux_armour_1,
+  itm_extra_armour_outlaw_1,
+  ],
+  attr_lvl_45,wp_7_m,knows_battle_7,bandit_face1, bandit_face2],
+
+["phalanx_flamer","Burning_Warrior_of_the_Fallen_Phalanx","Burning_Warriors_of_the_Fallen_Phalanx",
+  tf_has_body|tf_guarantee_ranged|tf_guarantee_helmet,0,0,fac_dark_knights,[
+  itm_flameammo,
+  itm_flameammo,
+  itm_flamethrower_bashide,
+
+  itm_holed_sword,
+
+  itm_phalanx_flamer_1,
+  
+  itm_phalanx_flamer_helmet,
+
+  itm_black_gloves,
+  
+  itm_flamethrower_backpack,
+  ],
+  attr_lvl_40,wp_5_m,knows_battle_5,bandit_face1, bandit_face2],
+
+#totem_raiders
+["jackal_raider","Jackal_Raider","Jackal_Raiders",tf_has_body|tf_guarantee_ranged,0,0,fac_outlaws,
+  [
+  itm_pistol_ammo, itm_pistol_ammo_empty,
+  itm_pistol_ammo_2,
+  itm_pistol_ammo_3,
+
+  itm_throwing_knives,
+  itm_darts,
+  itm_crook_revolver_1,
+
+  itm_knife,
+  itm_kukri_rusty,
+  itm_metal_blade,
+  itm_mace_1,
+
+  itm_trench_club_3,
+  itm_trench_club_4,
+  itm_trench_club_5,
+
+  itm_long_trench_club_1,
+  itm_long_trench_club_2,
+  itm_hand_axe,
+  itm_staff,
+  
+  itm_galvae_shield_1,
+  itm_galvae_shield_2,
+  itm_galvae_shield_3,
+  
+  itm_wild_bodypaint_1,
+  itm_wild_bodypaint_2,
+
+  itm_jackal_helm_1,
+
+  itm_handwraps,
+  
+  ]+revolvers,
+  attr_lvl_25,wp_4_m,knows_battle_4,bandit_face1, bandit_face2],
+["jackal_predator","Jackal_Predator","Jackal_Predators",tf_has_body|tf_guarantee_ranged|tf_has_head,0,0,fac_outlaws,
+  [
+  itm_rifle_ammo, itm_rifle_ammo_empty,
+
+  itm_throwing_metal_spears,
+  itm_shuriken,
+  itm_throwing_axes,
+
+  itm_big_spiked_club,
+  itm_spiked_club,
+  itm_sledgehammer,
+  itm_battle_axe,
+  itm_war_axe,
+  itm_shortened_military_scythe,
+  
+  itm_galvae_shield_4,
+  itm_galvae_shield_5,
+  itm_galvae_shield_6,
+  
+  itm_jackal_tattoo_1,
+  
+  itm_jackal_helm_1,
+
+  itm_leather_gloves,
+  itm_black_gloves,
+  (itm_leather_gloves_metal,imod_ragged),
+  (itm_black_gloves_metal,imod_ragged),
+  ]+rifles,
+  attr_lvl_30,wp_5_m,knows_battle_5,bandit_face1, bandit_face2],
+["jackal_marauder","Jackal_Marauder","Jackal_Marauder",tf_has_body|tf_guarantee_ranged|tf_has_head|tf_guarantee_horse,0,0,fac_outlaws,
+  [
+  itm_rifle_ammo, itm_rifle_ammo_empty,
+
+  itm_big_spiked_club,
+  itm_spiked_club,
+  itm_lead_pipe,
+  itm_hammer_big,
+  itm_sledgehammer_small,
+  itm_one_handed_war_axe_a,
+  itm_staff,
+  itm_kukri_rusty,
+  
+  itm_galvae_shield_5,
+  itm_galvae_shield_6,
+  itm_galvae_shield_7,
+
+  itm_jackal_tattoo_1,
+  
+  itm_jackal_helm_1,
+
+  itm_leather_gloves,
+  itm_black_gloves,
+  (itm_leather_gloves_metal,imod_ragged),
+  (itm_black_gloves_metal,imod_ragged),
+  
+  itm_wild_horse_1,
+  itm_wild_horse_2,
+  itm_wild_horse_3,
+  ]+carbines,
+  attr_lvl_30,wp_5_m,knows_battle_5,bandit_face1, bandit_face2],
+["jackal_chieftain","Jackal_Chieftain","Jackal_Chieftains",tf_has_body|tf_guarantee_all|tf_guarantee_ranged|tf_guarantee_boots|tf_has_head,0,0,fac_outlaws,
+  [
+  itm_rifle_ammo_pw, itm_rifle_ammo_empty,
+
+  itm_big_spiked_club,
+  itm_spiked_club,
+  itm_sledgehammer,
+  itm_battle_axe,
+  itm_war_axe,
+  itm_shortened_military_scythe,
+  itm_big_spiked_club,
+  itm_hammer_big,
+  itm_sledgehammer_small,
+  itm_one_handed_war_axe_a,
+  
+  itm_galvae_shield_7,
+  itm_galvae_shield_8,
+  itm_galvae_shield_9,
+  
+  itm_jackal_tattoo_2,
+
+  itm_jackal_helm_1b,
+
+  itm_leather_gloves,
+  itm_black_gloves,
+  (itm_leather_gloves_metal,imod_ragged),
+  (itm_black_gloves_metal,imod_ragged),
+  
+  itm_jackal_cloak,
+  ]+rifles,
+  attr_lvl_35,wp_6_m,knows_battle_6,bandit_face1, bandit_face2],
+
+["wolf_raider","Wolf_Raider","Wolf_Raiders",tf_has_body|tf_guarantee_ranged,0,0,fac_outlaws,
+  [
+  itm_pistol_ammo, itm_pistol_ammo_empty,
+  itm_pistol_ammo_2,
+  itm_pistol_ammo_3,
+
+  itm_throwing_knives,
+  itm_darts,
+  itm_crook_revolver_1,
+
+  itm_knife,
+  itm_kukri_rusty,
+  itm_metal_blade,
+  itm_mace_1,
+  itm_trench_club_3,
+  itm_trench_club_4,
+  itm_trench_club_5,
+
+
+  itm_long_trench_club_1,
+  itm_long_trench_club_2,
+  itm_hand_axe,
+  itm_staff,
+  
+  itm_galvae_shield_1,
+  itm_galvae_shield_2,
+  itm_galvae_shield_3,
+  
+  itm_wild_bodypaint_1,
+  itm_wild_bodypaint_2,
+
+  itm_wolf_helm,
+
+  itm_handwraps,
+  
+  ]+revolvers,
+  attr_lvl_25,wp_4_m,knows_battle_4,bandit_face1, bandit_face2],
+["wolf_predator","Wolf_Predator","Wolf_Predators",tf_has_body|tf_guarantee_ranged|tf_has_head,0,0,fac_outlaws,
+  [
+  itm_rifle_ammo, itm_rifle_ammo_empty,
+
+  itm_throwing_metal_spears,
+  itm_shuriken,
+  itm_throwing_axes,
+
+  itm_big_spiked_club,
+  itm_spiked_club,
+  itm_sledgehammer,
+  itm_battle_axe,
+  itm_war_axe,
+  
+  itm_shortened_military_scythe,
+  
+  itm_galvae_shield_3,
+  itm_galvae_shield_4,
+  itm_galvae_shield_5,
+
+  itm_wolf_tattoo_1,
+  
+  itm_wolf_helm,
+
+  itm_leather_gloves,
+  itm_black_gloves,
+  (itm_leather_gloves_metal,imod_ragged),
+  (itm_black_gloves_metal,imod_ragged),
+  ]+rifles,
+  attr_lvl_30,wp_5_m,knows_battle_5,bandit_face1, bandit_face2],
+["wolf_marauder","Wolf_Marauder","Wolf_Marauder",tf_has_body|tf_guarantee_ranged|tf_has_head|tf_guarantee_horse,0,0,fac_outlaws,
+  [
+  itm_rifle_ammo, itm_rifle_ammo_empty,
+
+  itm_big_spiked_club,
+  itm_spiked_club,
+  itm_lead_pipe,
+  itm_hammer_big,
+  itm_sledgehammer_small,
+  itm_one_handed_war_axe_a,
+  itm_staff,
+  itm_knife,
+  itm_knife,
+  itm_kukri_rusty,
+  
+  itm_galvae_shield_5,
+  itm_galvae_shield_6,
+  itm_galvae_shield_7,
+
+  itm_wolf_tattoo_1,
+  
+  itm_wolf_helm,
+
+  itm_leather_gloves,
+  itm_black_gloves,
+  (itm_leather_gloves_metal,imod_ragged),
+  (itm_black_gloves_metal,imod_ragged),
+  
+  itm_wild_horse_1,
+  itm_wild_horse_2,
+  itm_wild_horse_3,
+  ]+carbines,
+  attr_lvl_30,wp_5_m,knows_battle_5,bandit_face1, bandit_face2],
+["wolf_chieftain","Wolf_Chieftain","Wolf_Chieftains",tf_has_body|tf_guarantee_all|tf_guarantee_ranged|tf_guarantee_boots|tf_has_head,0,0,fac_outlaws,
+  [
+  itm_rifle_ammo_pw, itm_rifle_ammo_empty,
+
+  itm_big_spiked_club,
+  itm_spiked_club,
+  itm_sledgehammer,
+  itm_battle_axe,
+  itm_war_axe,
+  itm_shortened_military_scythe,
+  itm_big_spiked_club,
+  itm_hammer_big,
+  itm_sledgehammer_small,
+  itm_one_handed_war_axe_a,
+  
+  itm_galvae_shield_7,
+  itm_galvae_shield_8,
+  itm_galvae_shield_9,
+  
+  itm_wolf_tattoo_1,
+
+  itm_wolf_helm_elder,
+
+  itm_leather_gloves,
+  itm_black_gloves,
+  (itm_leather_gloves_metal,imod_ragged),
+  (itm_black_gloves_metal,imod_ragged),
+  
+  itm_wolf_cloak,
+  ]+rifles,
+  attr_lvl_35,wp_6_m,knows_battle_6,bandit_face1, bandit_face2],
+
+["boar_raider","Boar_Raider","Boar_Raiders",tf_has_body|tf_guarantee_ranged,0,0,fac_outlaws,
+  [
+  itm_pistol_ammo, itm_pistol_ammo_empty,
+  itm_pistol_ammo_2,
+  itm_pistol_ammo_3,
+
+  itm_throwing_knives,
+  itm_darts,
+  itm_crook_revolver_1,
+
+  itm_knife,
+  itm_kukri_rusty,
+  itm_metal_blade,
+  itm_mace_1,
+
+  itm_trench_club_3,
+  itm_trench_club_4,
+  itm_trench_club_5,
+
+  itm_long_trench_club_1,
+  itm_long_trench_club_2,
+  itm_hand_axe,
+  itm_staff,
+  
+  itm_galvae_shield_1,
+  itm_galvae_shield_2,
+  itm_galvae_shield_3,
+  
+  itm_wild_bodypaint_1,
+  itm_wild_bodypaint_2,
+
+  itm_boar_helmet,
+
+  itm_handwraps,
+  
+  ]+revolvers,
+  attr_lvl_25,wp_4_m,knows_battle_4,bandit_face1, bandit_face2],
+["boar_predator","Boar_Predator","Boar_Predators",tf_has_body|tf_guarantee_ranged|tf_has_head,0,0,fac_outlaws,
+  [
+  itm_rifle_ammo, itm_rifle_ammo_empty,
+
+  itm_throwing_metal_spears,
+  itm_shuriken,
+  itm_throwing_axes,
+
+  itm_big_spiked_club,
+  itm_spiked_club,
+  itm_sledgehammer,
+  itm_battle_axe,
+  itm_war_axe,
+  
+  itm_shortened_military_scythe,
+  
+  itm_galvae_shield_4,
+  itm_galvae_shield_5,
+  itm_galvae_shield_6,
+  
+  itm_boar_tattoo_1,
+
+  itm_bl_boar,
+
+  itm_leather_gloves,
+  itm_black_gloves,
+  (itm_leather_gloves_metal,imod_ragged),
+  (itm_black_gloves_metal,imod_ragged),
+  ]+rifles,
+  attr_lvl_30,wp_5_m,knows_battle_5,bandit_face1, bandit_face2],
+["boar_marauder","Boar_Marauder","Boar_Marauder",tf_has_body|tf_guarantee_ranged|tf_has_head|tf_guarantee_horse,0,0,fac_outlaws,
+  [
+  itm_rifle_ammo, itm_rifle_ammo_empty,
+
+  itm_big_spiked_club,
+  itm_spiked_club,
+  itm_lead_pipe,
+  itm_hammer_big,
+  itm_sledgehammer_small,
+  itm_one_handed_war_axe_a,
+  itm_staff,
+  itm_kukri_rusty,
+  
+  itm_galvae_shield_5,
+  itm_galvae_shield_6,
+  itm_galvae_shield_7,
+  
+  itm_boar_tattoo_1,
+
+  itm_bl_boar,
+
+  itm_leather_gloves,
+  itm_black_gloves,
+  (itm_leather_gloves_metal,imod_ragged),
+  (itm_black_gloves_metal,imod_ragged),
+  
+  itm_wild_horse_1,
+  itm_wild_horse_2,
+  itm_wild_horse_3,
+  ]+carbines,
+  attr_lvl_30,wp_5_m,knows_battle_5,bandit_face1, bandit_face2],
+["boar_chieftain","Boar_Chieftain","Boar_Chieftains",
+  tf_has_body|tf_guarantee_all|tf_guarantee_ranged|tf_guarantee_boots|tf_has_head,0,0,fac_outlaws,
+  [
+  itm_rifle_ammo, itm_rifle_ammo_empty,
+
+  itm_big_spiked_club,
+  itm_spiked_club,
+  itm_sledgehammer,
+  itm_battle_axe,
+  itm_war_axe,
+  
+  itm_shortened_military_scythe,
+  itm_big_spiked_club,
+  itm_hammer_big,
+  itm_sledgehammer_small,
+  itm_one_handed_war_axe_a,
+  
+  itm_galvae_shield_7,
+  itm_galvae_shield_8,
+  itm_galvae_shield_9,
+  
+  itm_boar_tattoo_1,
+
+  itm_boar_cloak,
+
+  itm_boar_helmet,
+
+  itm_leather_gloves,
+  itm_black_gloves,
+  (itm_leather_gloves_metal,imod_ragged),
+  (itm_black_gloves_metal,imod_ragged),
+  
+  ]+rifles,
+  attr_lvl_35,wp_6_m,knows_battle_6,bandit_face1, bandit_face2],
+
+["goat_raider","Goat_Raider","Goat_Raiders",tf_has_body|tf_guarantee_ranged,0,0,fac_outlaws,
+  [
+  itm_pistol_ammo, itm_pistol_ammo_empty,
+  itm_pistol_ammo_2,
+  itm_pistol_ammo_3,
+
+  itm_throwing_knives,
+  itm_darts,
+  itm_crook_revolver_1,
+
+  itm_knife,
+  itm_kukri_rusty,
+  itm_metal_blade,
+  itm_mace_1,
+  itm_trench_club_2,
+  itm_trench_club_3,
+  itm_trench_club_4,
+
+  itm_long_trench_club_1,
+  itm_long_trench_club_2,
+  itm_hand_axe,
+  itm_staff,
+  
+  itm_galvae_shield_1,
+  itm_galvae_shield_2,
+  itm_galvae_shield_3,
+  
+  itm_wild_bodypaint_1,
+  itm_wild_bodypaint_2,
+
+  itm_goat_cap,
+
+  itm_handwraps,
+  
+  ]+revolvers,
+  attr_lvl_25,wp_4_m,knows_battle_4,bandit_face1, bandit_face2],
+["goat_predator","Goat_Predator","Goat_Predators",tf_has_body|tf_guarantee_ranged|tf_has_head,0,0,fac_outlaws,
+  [
+  itm_rifle_ammo, itm_rifle_ammo_empty,
+
+  itm_throwing_metal_spears,
+  itm_shuriken,
+  itm_throwing_axes,
+
+  itm_big_spiked_club,
+  itm_spiked_club,
+  itm_sledgehammer,
+  itm_battle_axe,
+  itm_war_axe,
+
+  itm_shortened_military_scythe,
+  
+  itm_galvae_shield_3,
+  itm_galvae_shield_4,
+  itm_galvae_shield_5,
+  
+  itm_goat_tattoo_1,
+
+  itm_goat_cap,
+
+  itm_leather_gloves,
+  itm_black_gloves,
+  (itm_leather_gloves_metal,imod_ragged),
+  (itm_black_gloves_metal,imod_ragged),
+  ]+rifles,
+  attr_lvl_30,wp_5_m,knows_battle_5,bandit_face1, bandit_face2],
+["goat_marauder","Goat_Marauder","Goat_Marauder",tf_has_body|tf_guarantee_ranged|tf_has_head|tf_guarantee_horse,0,0,fac_outlaws,
+  [
+  itm_rifle_ammo, itm_rifle_ammo_empty,
+
+  itm_big_spiked_club,
+  itm_spiked_club,
+  itm_lead_pipe,
+  itm_hammer_big,
+  itm_sledgehammer_small,
+  itm_one_handed_war_axe_a,
+  itm_staff,
+  itm_kukri_rusty,
+  
+  itm_galvae_shield_5,
+  itm_galvae_shield_6,
+  itm_galvae_shield_7,
+  
+  itm_goat_tattoo_1,
+
+  itm_goat_cap,
+
+  itm_leather_gloves,
+  itm_black_gloves,
+  (itm_leather_gloves_metal,imod_ragged),
+  (itm_black_gloves_metal,imod_ragged),
+  
+  itm_wild_horse_1,
+  itm_wild_horse_2,
+  itm_wild_horse_3,
+  ]+carbines,
+  attr_lvl_30,wp_5_m,knows_battle_5,bandit_face1, bandit_face2],
+["goat_chieftain","Goat_Chieftain","Goat_Chieftains",tf_has_body|tf_guarantee_all|tf_guarantee_ranged|tf_has_head,0,0,fac_outlaws,
+  [
+  itm_rifle_ammo, itm_rifle_ammo_empty,
+
+  itm_big_spiked_club,
+  itm_spiked_club,
+  itm_sledgehammer,
+  itm_battle_axe,
+  itm_war_axe,
+  itm_shortened_military_scythe,
+  itm_big_spiked_club,
+  itm_hammer_big,
+  itm_sledgehammer_small,
+  itm_one_handed_war_axe_a,
+  
+  itm_galvae_shield_7,
+  itm_galvae_shield_8,
+  itm_galvae_shield_9,
+  
+  itm_goatskin_tunic,
+  
+  itm_goat_hat,
+
+  itm_leather_gloves,
+  itm_black_gloves,
+  (itm_leather_gloves_metal,imod_ragged),
+  (itm_black_gloves_metal,imod_ragged),
+  
+  itm_aux_armour_1,
+  ]+rifles,
+  attr_lvl_35,wp_6_m,knows_battle_6,bandit_face1, bandit_face2],
+
+["bear_raider","Bear_Raider","Bear_Raiders",tf_has_body|tf_guarantee_ranged,0,0,fac_outlaws,
+  [
+  itm_pistol_ammo, itm_pistol_ammo_empty,
+  itm_pistol_ammo_2,
+  itm_pistol_ammo_3,
+
+  itm_throwing_knives,
+  itm_darts,
+  itm_crook_revolver_1,
+
+  itm_knife,
+  itm_kukri_rusty,
+  itm_metal_blade,
+  itm_mace_1,
+  itm_trench_club_3,
+  itm_trench_club_4,
+  itm_trench_club_5,
+  itm_long_trench_club_1,
+  itm_long_trench_club_2,
+  itm_hand_axe,
+  itm_staff,
+  
+  itm_galvae_shield_1,
+  itm_galvae_shield_2,
+  itm_galvae_shield_3,
+  
+  itm_wild_bodypaint_1,
+  itm_wild_bodypaint_2,
+
+  itm_bear_helm,
+
+  itm_handwraps,
+  
+  ]+revolvers,
+  attr_lvl_25,wp_4_m,knows_battle_4,bandit_face1, bandit_face2],
+["bear_predator","Bear_Predator","Bear_Predators",tf_has_body|tf_guarantee_ranged|tf_has_head,0,0,fac_outlaws,
+  [
+  itm_rifle_ammo, itm_rifle_ammo_empty,
+
+  itm_throwing_metal_spears,
+  itm_shuriken,
+  itm_throwing_axes,
+
+  itm_big_spiked_club,
+  itm_spiked_club,
+  itm_sledgehammer,
+  itm_battle_axe,
+  itm_war_axe,
+
+  itm_shortened_military_scythe,
+  
+
+  itm_galvae_shield_4,
+  itm_galvae_shield_5,
+  itm_galvae_shield_6,
+  
+  itm_bear_tattoo_1,
+
+  itm_bear_helm,
+
+  itm_bear_gauntlets,
+  ]+rifles,
+  attr_lvl_30,wp_5_m,knows_battle_5,bandit_face1, bandit_face2],
+["bear_marauder","Bear_Marauder","Bear_Marauder",tf_has_body|tf_guarantee_ranged|tf_has_head|tf_guarantee_horse,0,0,fac_outlaws,
+  [
+  itm_rifle_ammo, itm_rifle_ammo_empty,
+
+  itm_big_spiked_club,
+  itm_spiked_club,
+  itm_lead_pipe,
+  itm_hammer_big,
+  itm_sledgehammer_small,
+  itm_one_handed_war_axe_a,
+  itm_staff,
+  itm_kukri_rusty,
+  
+  itm_galvae_shield_5,
+  itm_galvae_shield_6,
+  itm_galvae_shield_7,
+  
+  itm_bear_tattoo_1,
+
+  itm_bear_helm,
+
+  itm_bear_gauntlets,
+  
+  itm_wild_horse_1,
+  itm_wild_horse_2,
+  itm_wild_horse_3,
+  ]+carbines,
+  attr_lvl_30,wp_5_m,knows_battle_5,bandit_face1, bandit_face2],
+["bear_chieftain","Bear_Chieftain","Bear_Chieftains",tf_has_body|tf_guarantee_all|tf_guarantee_ranged|tf_has_head,0,0,fac_outlaws,
+  [
+  itm_rifle_ammo, itm_rifle_ammo_empty,
+
+  itm_big_spiked_club,
+  itm_spiked_club,
+  itm_sledgehammer,
+  itm_battle_axe,
+  itm_war_axe,
+  
+  itm_shortened_military_scythe,
+  itm_big_spiked_club,
+  itm_hammer_big,
+  itm_sledgehammer_small,
+  itm_one_handed_war_axe_a,
+  
+  itm_galvae_shield_7,
+  itm_galvae_shield_8,
+  itm_galvae_shield_9,
+  
+  itm_bear_warrior_totem,
+
+  itm_bear_helm,
+
+  itm_bear_gauntlets,
+  itm_bear_gauntlets_dark,
+  
+  itm_white_fur_collar,
+  ]+rifles,
+  attr_lvl_35,wp_6_m,knows_battle_6,bandit_face1, bandit_face2],
+
+#Nomen
+["scavenger_violent","Noman","Nomen",tf_ghoul_human|tf_has_body|tf_has_head|tf_has_ranged,0,0,fac_outlaws,
+  [
+  itm_pistol_ammo, itm_pistol_ammo_empty,
+  itm_pistol_ammo_2,
+  itm_pistol_ammo_3,
+  
+  itm_trench_club_3,
+  itm_trench_club_4,
+  itm_trench_club_5,
+  
+  itm_nomen_robe_1,
+  itm_nomen_robe_2,
+  
+  itm_noman_hood_1,
+
+  itm_leather_gloves,
+  itm_black_gloves,
+  (itm_leather_gloves_metal,imod_ragged),
+  (itm_black_gloves_metal,imod_ragged),
+  ]+revolvers,
+  attr_lvl_25,wp_4_m,knows_battle_4,bandit_face1, bandit_face2],
+["scavenger_vet_violent","Noman Watcher","Nomen Watchers",tf_ghoul_human|tf_has_body|tf_has_head|tf_has_ranged|tf_has_hand,0,0,fac_outlaws,
+  [
+  itm_pistol_ammo_pw, itm_pistol_ammo_empty,
+  itm_pistol_ammo_2_pw,
+  itm_pistol_ammo_3_pw,
+  itm_pistol_ammo_5_pw,
+  itm_pistol_ammo_6_pw,
+  
+  itm_trench_club_3,
+  itm_trench_club_4,
+  itm_trench_club_5,
+
+  itm_nomen_robe_3,
+  itm_nomen_robe_4,
+  
+  itm_noman_hood_2,
+
+  itm_leather_gloves,
+  itm_leather_gloves_metal,
+  itm_black_gloves,
+  itm_black_gloves_metal,
+  ]+smg_1,
+  attr_lvl_30,wp_5_m,knows_battle_5,bandit_face1, bandit_face2],
+["scavenger_legend_violent","Noman Seer","Nomen Seers",tf_ghoul_human|tf_has_body|tf_has_head|tf_has_ranged|tf_has_hand,0,0,fac_outlaws,
+  [
+  itm_pistol_ammo_4, itm_pistol_ammo_empty,
+  itm_pistol_ammo_4,
+  
+  itm_trench_club_3,
+  itm_trench_club_4,
+  itm_trench_club_5,
+
+  itm_nomen_robe_5,
+  
+  itm_noman_hood_3,
+
+  itm_leather_gloves,
+  itm_leather_gloves_metal,
+  itm_black_gloves,
+  itm_black_gloves_metal,
+  ]+smg_2,
+  attr_lvl_35,wp_6_m,knows_battle_6,bandit_face1, bandit_face2],
+["scavenger_power_violent","Noman Nightmare","Nomen Nightmares",tf_ghoul_human|tf_has_body|tf_has_head|tf_has_hand,0,0,fac_outlaws,
+  [
+  itm_powerfist,
+
+  itm_nomen_robe_6,
+  
+  itm_noman_hood_4,
+  ],
+  attr_lvl_30,wp_5_m,knows_battle_5,mercenary_face_1, mercenary_face_2],
+
 #cannibal
-["cannibal","Starving_Cannibal","Starving_Cannibals",
-  tf_has_body|tf_guarantee_ranged,0,0,fac_cannibals,
+["cannibal","Starving_Cannibal","Starving_Cannibals",tf_has_body|tf_guarantee_ranged|tf_guarantee_helmet|tf_guarantee_gloves,0,0,fac_cannibals,
   [
   itm_human_meat,
 
@@ -5383,8 +4788,7 @@ troops = [
   itm_cannibal_hands,
   ],
   attr_lvl_20,wp_4_m,knows_battle_4,bandit_face1, bandit_face2],
-["cannibal_cruel","Cannibal","Cannibals",
-  tf_has_body|tf_guarantee_ranged,0,0,fac_cannibals,
+["cannibal_cruel","Cannibal","Cannibals",tf_has_body|tf_guarantee_ranged|tf_guarantee_helmet|tf_guarantee_gloves,0,0,fac_cannibals,
   [
   itm_human_meat,
 
@@ -5409,8 +4813,7 @@ troops = [
   itm_black_gloves,
   ],
   attr_lvl_25,wp_5_m,knows_battle_5,bandit_face1, bandit_face2],
-["cannibal_harvester","Cannibal_Harvester","Cannibal_Harvesters",
-  tf_has_body|tf_guarantee_helmet,0,0,fac_cannibals,
+["cannibal_harvester","Cannibal_Harvester","Cannibal_Harvesters",tf_has_body|tf_guarantee_ranged|tf_guarantee_helmet|tf_guarantee_gloves,0,0,fac_cannibals,
   [
   itm_human_meat,
 
@@ -5432,10 +4835,11 @@ troops = [
   itm_cannibal_hands,
   itm_leather_gloves,
   itm_black_gloves,
+  
+  itm_canibal_horse_1,
   ],
   attr_lvl_35,wp_6_m,knows_battle_6,bandit_face1, bandit_face2],
-["cannibal_butcher","Cannibal_Butcher","Cannibal_Butchers",
-  tf_has_body|tf_guarantee_helmet,0,0,fac_cannibals,
+["cannibal_butcher","Cannibal_Butcher","Cannibal_Butchers",tf_has_body|tf_guarantee_ranged|tf_guarantee_helmet|tf_guarantee_gloves,0,0,fac_cannibals,
   [
   itm_human_meat,
 
@@ -5456,10 +4860,11 @@ troops = [
   itm_black_gloves,
   
   itm_extra_armour_cult,
+  
+  itm_canibal_horse_2,
   ]+carbines,
   attr_lvl_40,wp_7_m,knows_battle_7,bandit_face1, bandit_face2],
-["cannibal_legend","Cannibal_Legend","Cannibal_Legends",
-  tf_has_body|tf_guarantee_helmet,0,0,fac_cannibals,
+["cannibal_legend","Cannibal_Legend","Cannibal_Legends",tf_has_body|tf_guarantee_ranged|tf_guarantee_helmet|tf_guarantee_gloves,0,0,fac_cannibals,
   [
   itm_human_meat,
 
@@ -5481,115 +4886,10 @@ troops = [
   itm_black_gloves,
   
   itm_extra_armour_cult,
+  
+  itm_canibal_horse_3,
   ],
   attr_lvl_45,wp_8_m,knows_battle_8,bandit_face1, bandit_face2],
-
-#fallen_phalanx
-["phalanx_fresh","Fresh_Warrior_of_the_Fallen_Phalanx","Fresh_Warriors_of_the_Fallen_Phalanx",
-  tf_has_body|tf_guarantee_ranged|tf_guarantee_helmet,0,0,fac_dark_knights,[
-  itm_rifle_ammo_4, itm_rifle_ammo_empty,
-  itm_common_bolt_action_rifle_single,
-  itm_common_bolt_action_rifle_single_bayonet,
-
-  itm_bayonet_1,
-
-  itm_phalanx_uniform_1,
-
-  itm_phalanx_fresh_helmet,
-
-  itm_black_gloves,
-  ],
-  attr_lvl_25,wp_4_r,knows_battle_4,bandit_face1, bandit_face2],
-["phalanx_firstblood","Firstblood_Warrior_of_the_Fallen_Phalanx","Firstblood_Warriors_of_the_Fallen_Phalanx",
-  tf_has_body|tf_guarantee_ranged|tf_guarantee_helmet,0,0,fac_dark_knights,[
-  itm_rifle_ammo, itm_rifle_ammo_empty,
-  itm_rifle_ammo_3,
-  itm_rifle_ammo_5,
-  itm_rifle_ammo_6,
-
-  itm_bayonet_1,
-
-  itm_phalanx_uniform_2,
-  
-  itm_phalanx_firstblood_helmet,
-
-  itm_black_gloves,
-  ]+rifles,
-  attr_lvl_30,wp_5_m,knows_battle_5,bandit_face1, bandit_face2],
-["phalanx_bloodied","Bloodied_Warrior_of_the_Fallen_Phalanx","Bloodied_Warriors_of_the_Fallen_Phalanx",
-  tf_has_body|tf_guarantee_ranged|tf_guarantee_helmet,0,0,fac_dark_knights,[
-  itm_rifle_ammo_pw, itm_rifle_ammo_empty,
-  itm_rifle_ammo_3_pw,
-  itm_rifle_ammo_5_pw,
-  itm_rifle_ammo_6_pw,
-
-  itm_bayonet_1,
-
-  itm_phalanx_uniform_3,
-
-  itm_phalanx_bloodied_helmet,
-
-  itm_black_gloves,
-  (itm_black_gloves_metal,imod_ragged),
-  ]+rifles,
-  attr_lvl_35,wp_5_r,knows_battle_5,bandit_face1, bandit_face2],
-["phalanx_scarred","Scarred_Warrior_of_the_Fallen_Phalanx","Scarred_Warriors_of_the_Fallen_Phalanx",
-  tf_has_body|tf_guarantee_ranged|tf_guarantee_helmet,0,0,fac_dark_knights,[
-  itm_rifle_ammo_2_pw, itm_rifle_ammo_empty,
-
-  itm_bayonet_1,
-
-  itm_phalanx_uniform_4,
-
-  itm_phalanx_scarred_helmet,
-
-  itm_leather_gloves_metal,
-  itm_black_gloves_metal,
-  itm_scale_gauntlets,
-  
-  ]+rifles,
-  attr_lvl_40,wp_5_m,knows_battle_5,bandit_face1, bandit_face2],
-["phalanx_chosen","Chosen_Warrior_of_the_Fallen_Phalanx","Chosen_Warriors_of_the_Fallen_Phalanx",
-  tf_has_body|tf_guarantee_ranged|tf_guarantee_helmet,0,0,fac_dark_knights,[
-  itm_rifle_ammo_2_pw, itm_rifle_ammo_empty,
-  itm_rifle_ammo_2_pw,
-  itm_assault_service_rifle,
-
-  itm_grenade_stick,
-  itm_grenade_stick,
-
-  itm_bayonet_1,
-
-  itm_phalanx_uniform_5,
-
-  itm_phalanx_chosen_helmet,
-
-  itm_leather_gloves_metal,
-  itm_black_gloves_metal,
-  itm_scale_gauntlets,
-  
-  itm_aux_armour_1,
-  itm_extra_armour_outlaw_1,
-  ],
-  attr_lvl_45,wp_7_m,knows_battle_7,bandit_face1, bandit_face2],
-
-["phalanx_flamer","Burning_Warrior_of_the_Fallen_Phalanx","Burning_Warriors_of_the_Fallen_Phalanx",
-  tf_has_body|tf_guarantee_ranged|tf_guarantee_helmet,0,0,fac_dark_knights,[
-  itm_flameammo,
-  itm_flameammo,
-  itm_flamethrower_bashide,
-
-  itm_bayonet_1,
-
-  itm_phalanx_flamer_1,
-  
-  itm_phalanx_flamer_helmet,
-
-  itm_black_gloves,
-  
-  itm_flamethrower_backpack,
-  ],
-  attr_lvl_35,wp_5_m,knows_battle_5,bandit_face1, bandit_face2],
 
 #gangs
 ["the_suits","Tattoo Gangster","Tattoo Gangsters",
@@ -5608,9 +4908,6 @@ troops = [
   itm_renegade_uniform_guerilla,
 
   itm_civil_hat_1_mask,
-  itm_civil_hat_1b_mask,
-  itm_civil_hat_1c_mask,
-  itm_civil_hat_1d_mask,
   itm_civil_hat_2_mask,
   itm_civil_hat_3_mask,
   itm_civil_hat_4_mask,
@@ -5618,10 +4915,6 @@ troops = [
   itm_civil_hat_7_mask,
   itm_civil_hat_9_mask,
   itm_civil_hat_10_mask,
-  itm_civil_hat_11_mask,
-  itm_civil_hat_12_mask,
-  itm_civil_hat_13_mask,
-  itm_civil_hat_14_mask,
 
   itm_black_gloves,
   ],
@@ -5668,17 +4961,24 @@ troops = [
   ]+rifles,
   attr_lvl_25,wp_4_m,knows_battle_4,woman_face_1, woman_face_2],
 
-["steppe_bandit","Deranged_Psychochemist","Deranged_Psychochemists",
-  tf_has_body|tf_guarantee_ranged|tf_has_head,0,0,fac_outlaws,
-  [ 
-  itm_old_syringe,
-
-  itm_sloppy_trench_coat,
-
-  itm_medicine,
-
-  itm_black_gloves,
-  itm_syringe_glove,
+["steppe_bandit","Skinwalker","Skinwalkers",
+  tf_infected|tf_allways_fall_dead|tf_no_capture_alive|tf_guarantee_all|tf_has_body|tf_guarantee_ranged|tf_has_head,0,0,fac_outlaws,
+  [
+  itm_bamboo_shortspear,
+  itm_bamboo_spear,
+  
+  itm_poor_shirt_1,
+  itm_poor_shirt_2,
+  itm_poor_shirt_3,
+  itm_poor_shirt_4,
+  itm_poor_shirt_5,
+  itm_poor_shirt_6,
+  
+  itm_skinwalker_hood,
+  itm_skinwalker_hood_2,
+  itm_skinwalker_mask,
+  
+  itm_bandit_straw_cloak,
   ],
   attr_lvl_30,wp_5_m,knows_battle_5,bandit_face1, bandit_face2],
 ["taiga_bandit","Ashmaker","Ashmakers",
@@ -5702,11 +5002,14 @@ troops = [
   itm_rifle_ammo, itm_rifle_ammo_empty,
   
   itm_trench_knife,
-  itm_trench_club_1,
+  itm_trench_club_3,
+  itm_trench_club_4,
+  itm_trench_club_5,
 
   itm_empty_one_uniform,
 
   itm_empty_one_helmet,
+  itm_empty_one_pickelhaube,
 
   itm_black_gloves,
   ]+rifles,
@@ -5723,9 +5026,6 @@ troops = [
   itm_sloppy_trench_coat,
 
   itm_civil_hat_1_mask,
-  itm_civil_hat_1b_mask,
-  itm_civil_hat_1c_mask,
-  itm_civil_hat_1d_mask,
   itm_civil_hat_2_mask,
   itm_civil_hat_3_mask,
   itm_civil_hat_4_mask,
@@ -5733,16 +5033,9 @@ troops = [
   itm_civil_hat_7_mask,
   itm_civil_hat_9_mask,
   itm_civil_hat_10_mask,
-  itm_civil_hat_11_mask,
-  itm_civil_hat_12_mask,
-  itm_civil_hat_13_mask,
-  itm_civil_hat_14_mask,
 
   itm_black_gloves,
   
-  itm_sumpter_horse,
-  itm_saddle_horse,
-  itm_pack_horse,
   itm_palfrey_1,
   itm_palfrey_2,
   ],attr_lvl_30,wp_5_m,knows_battle_5,bandit_face1, bandit_face2],
@@ -5807,6 +5100,7 @@ troops = [
   itm_upgrade_iron_mask_1,
   itm_upgrade_iron_mask_2,
   itm_upgrade_iron_mask_3,
+  itm_poor_hood,
 
   itm_leather_gloves,
   itm_black_gloves,
@@ -6096,8 +5390,11 @@ troops = [
   itm_club,
   itm_trench_knife,
   itm_sharpened_stick,
+  
+  itm_skeleton_1,
+  
   ]+revolvers,
-  attr_lvl_15,wp_2_m,knows_battle_2,x_face, x_face],
+  attr_lvl_20,wp_3_m,knows_battle_3,x_face, x_face],
   
 ["risen_tainted","Tainted Risen","Tainted Risen",tf_skeleton|tf_allways_fall_dead|tf_no_capture_alive|tf_guarantee_all,0,0,fac_undeads,
   [
@@ -6106,23 +5403,24 @@ troops = [
   itm_bayonet_3,
   itm_shortened_spear,
   
+  itm_skeleton_2,
+  
   itm_ravga_gauntlets,
   ]+rifles,
-  attr_lvl_25,wp_3_m,knows_battle_3,x_face, x_face],
+  attr_lvl_30,wp_4_m,knows_battle_4,x_face, x_face],
 
 ["risen_cursed","Cursed One","Cursed Ones",tf_skeleton|tf_allways_fall_dead|tf_no_capture_alive|tf_guarantee_all,0,0,fac_undeads,
   [
   itm_mg_ammo,
   itm_shadow_lmg,
   
-  itm_flamberge,
+  itm_cursed_one_blade,
   
   itm_cursed_one,
   itm_cursed_one_head,
   itm_cursed_one_gauntlets,
-  itm_invisi_boots,
   ],
-  attr_lvl_40,wp_5_m,knows_battle_5,x_face, x_face],
+  attr_lvl_50,wp_7_m,knows_battle_7,x_face, x_face],
 
 # mutants
 ["brute_mutant", "Brute Mutant", "Brute Mutants",tf_mutant_big|tf_allways_fall_dead|tf_no_capture_alive|tf_guarantee_all,0, 0, fac_mutants,
@@ -6655,7 +5953,7 @@ troops = [
   attr_lvl_35,wp_6_m,knows_battle_6,man_face_middle_1, man_face_older_2],
 
 #Vehicles
-["f1_car_mechanic","Automobile_IMC","Automobile_IMCs",
+["f1_landcraft_mechanic","IMC_Automobile_Operator","IMC_Automobile_Operators",
   tf_has_body|tf_guarantee_ranged,0,0,fac_kingdom_1,
   [
   itm_pistol_ammo_pw, itm_pistol_ammo_empty,
@@ -6679,7 +5977,80 @@ troops = [
   itm_rucksack_entenaii,
   ],
   attr_lvl_25,wp_2_r,knows_battle_2,man_face_young_1, man_face_old_2],
-["f1_chopper_mechanic","Aerocraft_IMC","Aerocraft_IMCs",
+["f1_aircraft_mechanic","IMC_Aerocraft_Operator","IMC_Aerocraft_Operators",
+  tf_has_body|tf_guarantee_ranged,0,0,fac_kingdom_1,
+  [
+  itm_pistol_ammo_pw, itm_pistol_ammo_empty,
+  itm_smg_sten,
+  itm_smg_sten_silenced,
+  
+  itm_bowie_knife,
+  itm_bayonet_2,
+  itm_spanner,
+  itm_crowbar,
+  itm_wrench,
+  itm_monkeywrench,
+  itm_screwdriver,
+  itm_screwdriver2,
+  itm_entrenching_tool,
+  itm_entrenching_tool_2,
+
+  itm_entenaii_uniform_private,
+  
+  itm_entenaii_beret,
+  itm_entenaii_gasmask,
+  ],
+  attr_lvl_25,wp_2_r,knows_battle_2,man_face_young_1, man_face_old_2],
+
+["f1_landcraft_crew","Crew_Member","Crew_Members",
+  tf_has_body|tf_guarantee_ranged,0,0,fac_kingdom_1,
+  [
+  itm_pistol_ammo_pw, itm_pistol_ammo_empty,
+  itm_empire_revolver,
+  
+  itm_bowie_knife,
+  itm_bayonet_2,
+  itm_spanner,
+  itm_crowbar,
+  itm_wrench,
+  itm_monkeywrench,
+  itm_screwdriver,
+  itm_screwdriver2,
+  itm_entrenching_tool,
+  itm_entrenching_tool_2,
+
+  itm_entenaii_uniform_private,
+  
+  itm_entenaii_gasmask,
+  
+  itm_rucksack_entenaii,
+  ],
+  attr_lvl_25,wp_2_r,knows_battle_2,man_face_young_1, man_face_old_2],
+["f1_aircraft_crew","Crew_Member","Crew_Members",
+  tf_has_body|tf_guarantee_ranged,0,0,fac_kingdom_1,
+  [
+  itm_pistol_ammo_pw, itm_pistol_ammo_empty,
+  itm_smg_sten,
+  itm_smg_sten_silenced,
+  
+  itm_bowie_knife,
+  itm_bayonet_2,
+  itm_spanner,
+  itm_crowbar,
+  itm_wrench,
+  itm_monkeywrench,
+  itm_screwdriver,
+  itm_screwdriver2,
+  itm_entrenching_tool,
+  itm_entrenching_tool_2,
+
+  itm_entenaii_uniform_private,
+  
+  itm_entenaii_beret,
+  itm_entenaii_gasmask,
+  ],
+  attr_lvl_25,wp_2_r,knows_battle_2,man_face_young_1, man_face_old_2],
+["f1_mech_crew","Crew_Member","Crew_Members",
   tf_has_body|tf_guarantee_ranged,0,0,fac_kingdom_1,
   [
   itm_pistol_ammo_pw, itm_pistol_ammo_empty,
@@ -6930,6 +6301,8 @@ troops = [
   itm_entrenching_tool,
   itm_entrenching_tool_2,
   
+  itm_dominion_uniform_levy,
+  
   itm_strawhat_1,
   itm_strawhat_2,  
   itm_strawhat_3,
@@ -6938,10 +6311,9 @@ troops = [
   itm_strawhat_6,
   itm_dominion_civ_hat_1,
   
-  itm_dominion_uniform_levy,
   ],
   attr_lvl_5,wp_start,knows_battle_1,man_face_younger_1, man_face_middle_2],
-["f2_tier_1","Entenaii Dominion Recruit","Entenaii Dominion Recruits",
+["f2_tier_1","Entenaii Dominion Militaman","Entenaii Dominion Militamen",
   tf_has_body,0,0,fac_kingdom_2,
   [
   itm_pistol_ammo, itm_pistol_ammo_empty,
@@ -6967,7 +6339,7 @@ troops = [
   itm_dominion_gloves,
   ],
   attr_lvl_15,wp_2_m,knows_battle_2,man_face_younger_1, man_face_middle_2],
-["f2_tier_2","Entenaii Dominion Yeoman","Entenaii Dominion Yeomen",
+["f2_tier_2","Entenaii Dominion Milita Journeyman","Entenaii Dominion Journeymen",
   tf_has_body|tf_guarantee_ranged,0,0,fac_kingdom_2,
   [
   itm_rifle_ammo, itm_rifle_ammo_empty,
@@ -6991,7 +6363,7 @@ troops = [
   itm_rucksack_dominion,
   ],
   attr_lvl_20,wp_3_m,knows_battle_3,man_face_young_1, man_face_old_2],
-["f2_tier_3","Entenaii Dominion Regular","Entenaii Dominion Regulars",
+["f2_tier_3","Entenaii Dominion Initiate Rifleman","Entenaii Dominion Initiate Riflemen",
   tf_has_body|tf_guarantee_ranged|tf_guarantee_helmet,0,0,fac_kingdom_2,
   [
   itm_rifle_ammo, itm_rifle_ammo_empty,
@@ -7031,7 +6403,7 @@ troops = [
   itm_rucksack_dominion,
   ],
   attr_lvl_25,wp_4_m,knows_battle_4,man_face_young_1, man_face_old_2],
-["f2_tier_4","Entenaii Dominion Veteran","Entenaii Dominion Veterans",
+["f2_tier_4","Entenaii Dominion Initiate Sharpshooter","Entenaii Dominion Devotee Sharpshooter",
   tf_guarantee_ranged|tf_has_body|tf_guarantee_helmet|tf_guarantee_gloves,0,0,fac_kingdom_2,
   [
   itm_rifle_ammo_pw, itm_rifle_ammo_empty,
@@ -7071,11 +6443,11 @@ troops = [
   itm_rucksack_dominion,
   ],
   attr_lvl_30,wp_5_m,knows_battle_5,man_face_middle_1, man_face_old_2],
-["f2_tier_5","Entenaii Dominion Vanguard","Entenaii Dominion Vanguards",
+["f2_tier_5","Entenaii Dominion Devotee Machinegunner","Entenaii Dominion Machinegunners",
   tf_mounted|tf_has_body|tf_guarantee_helmet|tf_guarantee_gloves|tf_guarantee_ranged,0,0,fac_kingdom_2,
   [
-  itm_rifle_ammo, itm_rifle_ammo_empty,
-  itm_rifle_ammo,
+  itm_rifle_ammo_pw, itm_rifle_ammo_empty,
+  itm_rifle_ammo_pw,
   itm_dominion_assault_rifle,
 
   itm_trooper_sword,
@@ -7113,7 +6485,7 @@ troops = [
   itm_ammo_belt_2,
   ],
   attr_lvl_35,wp_6_m,knows_battle_6,man_face_middle_1, man_face_older_2],
-["f2_tier_6","Entenaii Dominion Protector","Entenaii Dominion Protectors",
+["f2_tier_6","Entenaii Dominion Devotee Footknight","Entenaii Dominion Devotee Footknight",
   tf_mounted|tf_has_body|tf_guarantee_helmet|tf_guarantee_gloves|tf_guarantee_ranged,0,0,fac_kingdom_2,
   [
   itm_mg_ammo,
@@ -7125,20 +6497,10 @@ troops = [
   itm_hammer_big,
   itm_sledgehammer_small,
   itm_sledgehammer,
-  itm_trench_club_1,
-  itm_trench_club_2,
-  itm_trench_club_3,
-  itm_trench_club_4,
-  itm_trench_club_5,
-  itm_trench_club_6,
-  itm_trench_club_7,
-  itm_trench_club_8,
-  itm_trench_club_9,
   itm_trench_club_10,
   itm_trench_club_11,
   itm_trench_club_12,
-  itm_trench_club_13,
-  itm_trench_club_14,
+
 
   itm_long_trench_club_1,
   itm_long_trench_club_2,
@@ -7160,7 +6522,7 @@ troops = [
   attr_lvl_40,wp_6_m,knows_battle_6,man_face_middle_1, man_face_older_2],
 
 #Cavalry
-["f2_rider","Entenaii Dominion Rough-rider","Entenaii Dominion Rough-riders",
+["f2_rider","Entenaii Dominion Initiate Wayfinder","Entenaii Dominion Initiate Wayfinders",
   tf_has_body|tf_has_hand|tf_has_head|tf_guarantee_horse|tf_guarantee_helmet,0,0,fac_kingdom_2,
   [
   itm_rifle_ammo, itm_rifle_ammo_empty,
@@ -7185,16 +6547,69 @@ troops = [
   itm_entenaii_horse_3, itm_entenaii_horse_3_gas,
   ],
   attr_lvl_30,wp_5_m,knows_battle_5,man_face_middle_1, man_face_old_2],
+["f2_rider_2","Entenaii Dominion Wayfinder","Entenaii Dominion Wayfinders",
+  tf_has_body|tf_has_hand|tf_has_head|tf_guarantee_horse|tf_guarantee_helmet|tf_guarantee_boots,0,0,fac_kingdom_2,
+  [
+  itm_rifle_ammo_2_pw, itm_rifle_ammo_empty,
+  itm_rifle_ammo_2_pw,
+  itm_dominion_assault_rifle,
+  
+  itm_grenade_molotov,
+
+  itm_light_cav_sword,
+  itm_largeclub,
+
+  itm_dominion_uniform_rough_rider,
+  
+  itm_dominion_cavalry_helmet,
+
+  itm_dominion_gauntlets,
+  
+  itm_extra_armour_dominion,
+
+  itm_entenaii_horse_1_gas,
+  itm_entenaii_horse_2_gas,
+  itm_entenaii_horse_3_gas,
+  ],
+  attr_lvl_35,wp_6_m,knows_battle_6,man_face_middle_1, man_face_old_2],
 
 #Vehicles
-["f2_car_mechanic","Entenaii Dominion Automobile Mechanic","Entenaii Dominion Automobile Mechanics",
+["f2_landcraft_mechanic","Entenaii_Dominion_Automobile_Operator","Entenaii_Dominion_Automobile_Operators",
+  tf_has_body|tf_guarantee_ranged,0,0,fac_kingdom_2,
+  [
+  itm_pistol_ammo, itm_pistol_ammo_empty,
+  itm_pistol_ammo_2,
+  itm_pistol_ammo_3,
+  itm_dominion_pistol,
+  itm_dominion_revolver,
+
+  itm_bowie_knife,
+  itm_bayonet_1,
+  itm_spanner,
+  itm_crowbar,
+  itm_wrench,
+  itm_monkeywrench,
+  itm_screwdriver,
+  itm_screwdriver2,
+  itm_entrenching_tool,
+  itm_entrenching_tool_2,
+
+  itm_dominion_uniform_yeoman,
+
+  itm_dominion_infantry_helmet,
+
+  itm_dominion_gloves,
+  
+  itm_rucksack_dominion,
+  ],
+  attr_lvl_25,wp_2_r,knows_battle_2,man_face_young_1, man_face_old_2],
+["f2_aircraft_mechanic","Entenaii_Dominion_Aerocraft_Operator","Entenaii_Dominion_Aerocraft_Operators",
   tf_has_body|tf_guarantee_ranged,0,0,fac_kingdom_2,
   [
   itm_pistol_ammo, itm_pistol_ammo_empty,
   itm_pistol_ammo_2,
   itm_pistol_ammo_3,
   itm_dominion_smg,
-  itm_dominion_pistol,
 
   itm_bowie_knife,
   itm_bayonet_1,
@@ -7387,7 +6802,7 @@ troops = [
   attr_terror_elite, wp_7_m, knows_battle_7,x_face, x_face],
 
 #Mechs
-["f2_mech","Entenaii_Dominion_Tyrant-Class_Walker","Entenaii_Dominion_Tyrant-Class_Walkers",
+["f2_mech","Entenaii_Dominion_Strider-Class_Walker","Entenaii_Dominion_Strider-Class_Walkers",
   tf_man_high|tf_guarantee_all|tf_allways_fall_dead|tf_no_capture_alive,no_scene,0,fac_kingdom_2,
   [
   itm_tech_parts,
@@ -7704,6 +7119,8 @@ troops = [
   ],
   attr_lvl_35,wp_6_m,knows_battle_6,galvae_face_middle_1, galvae_face_old_1],
 
+#Vehicles
+
 #Guards
 ["f3_guard","Galvae_Danag_Guard","Galvae_Danag_Guards",
   tf_guarantee_ranged|tf_has_body|tf_guarantee_helmet|tf_guarantee_gloves|tf_guarantee_boots,0,0,fac_kingdom_3,
@@ -7948,16 +7365,6 @@ troops = [
   
   itm_union_uniform_levy,
   
-  itm_bandit_hood_blk,
-  itm_bandit_hood_blu,
-  itm_bandit_hood_grn,
-  itm_bandit_hood_red,
-  itm_bandit_hood_wht,
-  itm_bandit_hood_blk_scarf,
-  itm_bandit_hood_blu_scarf,
-  itm_bandit_hood_grn_scarf,
-  itm_bandit_hood_red_scarf,
-  itm_bandit_hood_wht_scarf,
   itm_union_coif,
   ],
   attr_lvl_5,wp_start,knows_battle_1,0x000000000001d000000080000000000000000000001c00000000000000000000, 0x0000000ffe02c00079e7ffffffefffff00000000001fff380000000000000000],
@@ -8070,7 +7477,6 @@ troops = [
   itm_union_uniform_raider,
   
   itm_union_helmet_raider,
-  itm_union_helmet_raider_2,
 
   itm_union_gauntlets,
   
@@ -8090,6 +7496,7 @@ troops = [
   itm_union_uniform_sniper,
   
   itm_union_hood_sniper,
+  itm_poor_hood,
 
   itm_union_mittens,
   
@@ -8220,6 +7627,8 @@ troops = [
   itm_culsar_horse_3,
   ],
   attr_lvl_40,wp_6_r,knows_battle_6,brotherhood_face_middle_1, brotherhood_face_older_1],
+
+#Vehicles
 
 #Guards
 ["f4_guard","Union Safety Guard","Union Safety Guards",
@@ -8436,6 +7845,8 @@ troops = [
   itm_vitzland_uniform_regular,
 
   itm_vitzland_recruit_helmet,
+  itm_vitzland_pickelhaube,
+  itm_vitzland_pickelhaube_1,
 
   itm_vitzland_gloves,
   ],
@@ -8477,7 +7888,9 @@ troops = [
   (itm_vitzland_uniform_regular, imod_thick),
 
   itm_vitzland_helmet,
-  itm_vitzland_helmet,
+  itm_vitzland_pickelhaube_1,
+  itm_vitzland_pickelhaube_2,
+  itm_vitzland_pickelhaube_3,
   itm_vitzland_helmet_2,
   itm_vitzland_helmet_gasmask,
 
@@ -8505,6 +7918,7 @@ troops = [
   itm_vitzland_uniform_sergeant,
   
   itm_vitzland_salet_1,
+  itm_vitzland_pickelhaube_4,
 
   itm_vitzland_gloves,
   
@@ -8701,6 +8115,8 @@ troops = [
   itm_vitzland_horse_3, itm_vitzland_horse_3_gas,
   ],
   attr_lvl_30,wp_5_m,knows_battle_5,man_face_middle_1, man_face_old_2],
+
+#Vehicles
 
 #Guards
 ["f5_guard","Vitzland Forhaz Guard","Vitzland Forhaz Guards",
@@ -8966,7 +8382,7 @@ troops = [
   itm_cheap_rapier_3,
   itm_cheap_rapier_4,
 
-  (itm_republican_uniform_regular, imod_thick),
+  itm_republican_uniform_syldati,
   
   itm_republican_infantry_helmet,
 
@@ -9047,7 +8463,7 @@ troops = [
   ],
   attr_lvl_35,wp_6_r,knows_battle_6,man_face_middle_1, man_face_older_2],
 ["f6_tier_5_engineer","Republican Hutori","Republican Hutoris",
-  tf_mounted|tf_has_body|tf_guarantee_helmet|tf_guarantee_gloves|tf_guarantee_ranged,0,0,fac_kingdom_6,
+  tf_mounted|tf_has_body|tf_guarantee_helmet|tf_guarantee_gloves|tf_guarantee_boots|tf_guarantee_ranged,0,0,fac_kingdom_6,
   [
   itm_hand_torpedo,
   
@@ -9058,13 +8474,12 @@ troops = [
   itm_entrenching_tool_2,
   itm_shovel_military,
   
-  itm_republican_uniform_officer_cuirass,
+  itm_republican_uniform_engineer,
   
   itm_gas_mask_ww,
 
   itm_republican_demi_gauntlets,
   
-  itm_extra_armour_republican,
   itm_flamethrower_backpack,
   ],
   attr_lvl_35,wp_6_r,knows_battle_6,man_face_middle_1, man_face_older_2],
@@ -9110,6 +8525,8 @@ troops = [
   itm_trezzo_horse_3, itm_trezzo_horse_3_gas,
   itm_trezzo_horse_4, itm_trezzo_horse_4_gas,
   ],attr_lvl_30,wp_5_m,knows_battle_5,man_face_middle_1, man_face_old_2],
+
+#Vehicles
 
 #Guards
 ["f6_guard","Republican Vardina Guarde","Republican Vardina Guardes",
@@ -9234,8 +8651,6 @@ troops = [
 
   itm_republican_gauntlets,
   
-  itm_extra_armour_republican,
-  
   itm_vencudi_steed_3,
   ],
   attr_lvl_45,wp_7_r,knows_battle_7,man_face_middle_1, man_face_old_2],
@@ -9267,16 +8682,16 @@ troops = [
   ],
   attr_terror, wp_6_r, knows_battle_6,man_face_young_1, man_face_old_2],
 ["f6_terror_elite","Republican Servo-spider Heavy Cavalry", "Republican Servo-spider Cavalry",
-  tf_allways_fall_dead|tf_no_capture_alive|tf_mounted|tf_has_body|tf_guarantee_helmet|tf_guarantee_gloves|tf_guarantee_ranged|tf_guarantee_horse,0,0,fac_kingdom_6,
+  tf_allways_fall_dead|tf_no_capture_alive|tf_mounted|tf_has_body|tf_guarantee_helmet|tf_guarantee_gloves|tf_guarantee_boots|tf_guarantee_ranged|tf_guarantee_horse,0,0,fac_kingdom_6,
   [
-  itm_mg_ammo,
-  itm_mg_ammo,
+  itm_mg_ammo_pw,
+  itm_mg_ammo_pw,
   itm_trezzo_lmg,
   
   itm_broadsword_1,
   itm_broadsword_2,
   
-  itm_republican_armour,
+  itm_republican_servo_spider_uniform,
   
   itm_republican_cavalry_helmet,
 
@@ -9284,7 +8699,7 @@ troops = [
   
   itm_extra_armour_republican,
   
-  itm_mech_spider,
+  itm_mech_spider_2,
   ],
   attr_terror_elite, wp_7_r, knows_battle_7,man_face_young_1, man_face_old_2],
 #
@@ -9369,6 +8784,7 @@ troops = [
   itm_rifle_ammo, itm_rifle_ammo_empty,
   itm_rifle_ammo,
   itm_itami_bolt_action_rifle,
+  itm_itami_bolt_action_rifle_bayonet,
 
   itm_boloknife,
   itm_bayonet_5,
@@ -9387,7 +8803,9 @@ troops = [
   [
   itm_rifle_ammo, itm_rifle_ammo_empty,
   itm_rifle_ammo,
-  itm_itami_bolt_action_rifle_bayonet,
+  
+  itm_itami_bolt_action_rifle_2,
+  itm_itami_bolt_action_rifle_bayonet_2,
   
   itm_boloknife,
   itm_bamboo_spear,
@@ -9405,7 +8823,7 @@ troops = [
   [
   itm_rifle_ammo, itm_rifle_ammo_empty,
   itm_rifle_ammo,
-  itm_itami_bolt_action_rifle_2,
+  itm_itami_bolt_action_rifle_3,
   
   itm_boloknife,
 
@@ -9496,6 +8914,8 @@ troops = [
   itm_itami_horse_2,
   ],
   attr_lvl_30,wp_5_m,knows_battle_5,man_face_middle_1, man_face_old_2],
+
+#Vehicles
 
 #Guards
 ["f7_guard","Itami Guard","Itami Guards",
@@ -9633,7 +9053,7 @@ troops = [
 
   itm_itami_uniform_raider,
   
-  itm_itami_sergeant_helmet,
+  itm_oni_mask,
 
   itm_itami_terror_gauntlets,
   ],
@@ -9649,7 +9069,7 @@ troops = [
 
   itm_itami_uniform_raider,
   
-  itm_itami_sergeant_helmet,
+  itm_oni_mask,
 
   itm_itami_terror_gauntlets,
   ],
@@ -9772,7 +9192,7 @@ troops = [
 
   itm_bashide_uniform_raider,
   
-  itm_bashide_guard_helmet_2,
+  #itm_bashide_raider_helmet,
 
   itm_bashide_gloves,
   ],
@@ -9862,6 +9282,8 @@ troops = [
   ],
   attr_lvl_30,wp_5_m,knows_battle_5,man_face_middle_1, man_face_old_2],
 
+#Vehicles
+
 #Guards
 ["f8_guard","Bashide Guard","Bashide Guards",
   tf_guarantee_ranged|tf_has_body|tf_guarantee_helmet|tf_guarantee_gloves,0,0,fac_kingdom_8,
@@ -9930,7 +9352,7 @@ troops = [
 
   itm_turk_broadsword_a,
 
-  itm_yanizar_uniform_1,
+  itm_bashide_uniform_gidon_1,
   
   itm_bashide_gidon_headwrap_1,
 
@@ -9948,7 +9370,7 @@ troops = [
 
   itm_turk_broadsword_a,
 
-  itm_yanizar_uniform_2,
+  itm_bashide_uniform_gidon_2,
   
   itm_bashide_gidon_headwrap_2,
 
@@ -9966,7 +9388,7 @@ troops = [
 
   itm_turk_broadsword_a,
 
-  itm_yanizar_uniform_2,
+  itm_bashide_uniform_gidon_3,
   
   itm_bashide_gidon_headwrap_3,
 
@@ -10025,17 +9447,6 @@ troops = [
   itm_trench_club_1,
   itm_trench_club_2,
   itm_trench_club_3,
-  itm_trench_club_4,
-  itm_trench_club_5,
-  itm_trench_club_6,
-  itm_trench_club_7,
-  itm_trench_club_8,
-  itm_trench_club_9,
-  itm_trench_club_10,
-  itm_trench_club_11,
-  itm_trench_club_12,
-  itm_trench_club_13,
-  itm_trench_club_14,
 
   itm_long_trench_club_1,
   itm_long_trench_club_2,
@@ -10058,6 +9469,8 @@ troops = [
   itm_strawhat_4,  
   itm_strawhat_5,
   itm_strawhat_6,
+  itm_poor_hood,
+  
   ],
   attr_lvl_5,wp_start,knows_battle_1,man_face_younger_1, man_face_middle_2],
 ["f9_tier_1","Renegade Recruit","Renegade Recruits",
@@ -10075,20 +9488,11 @@ troops = [
   itm_sharpened_stick,
   itm_entrenching_tool,
   itm_entrenching_tool_2,
-  itm_trench_club_1,
-  itm_trench_club_2,
+
   itm_trench_club_3,
   itm_trench_club_4,
   itm_trench_club_5,
-  itm_trench_club_6,
-  itm_trench_club_7,
-  itm_trench_club_8,
-  itm_trench_club_9,
-  itm_trench_club_10,
-  itm_trench_club_11,
-  itm_trench_club_12,
-  itm_trench_club_13,
-  itm_trench_club_14,
+
 
   itm_long_trench_club_1,
   itm_long_trench_club_2,
@@ -10116,20 +9520,10 @@ troops = [
   itm_trench_knife_1,
   itm_entrenching_tool,
   itm_entrenching_tool_2,
-  itm_trench_club_1,
-  itm_trench_club_2,
-  itm_trench_club_3,
   itm_trench_club_4,
   itm_trench_club_5,
   itm_trench_club_6,
-  itm_trench_club_7,
-  itm_trench_club_8,
-  itm_trench_club_9,
-  itm_trench_club_10,
-  itm_trench_club_11,
-  itm_trench_club_12,
-  itm_trench_club_13,
-  itm_trench_club_14,
+
 
   itm_long_trench_club_1,
   itm_long_trench_club_2,
@@ -10156,20 +9550,9 @@ troops = [
   itm_hammer_big,
   itm_entrenching_tool,
   itm_entrenching_tool_2,
-  itm_trench_club_1,
-  itm_trench_club_2,
-  itm_trench_club_3,
-  itm_trench_club_4,
-  itm_trench_club_5,
   itm_trench_club_6,
   itm_trench_club_7,
   itm_trench_club_8,
-  itm_trench_club_9,
-  itm_trench_club_10,
-  itm_trench_club_11,
-  itm_trench_club_12,
-  itm_trench_club_13,
-  itm_trench_club_14,
 
   itm_long_trench_club_1,
   itm_long_trench_club_2,
@@ -10204,25 +9587,14 @@ troops = [
   itm_axe2,
   itm_hammer_big,
   itm_sledgehammer_small,
-  itm_trench_club_1,
-  itm_trench_club_2,
-  itm_trench_club_3,
-  itm_trench_club_4,
-  itm_trench_club_5,
-  itm_trench_club_6,
-  itm_trench_club_7,
   itm_trench_club_8,
   itm_trench_club_9,
   itm_trench_club_10,
-  itm_trench_club_11,
-  itm_trench_club_12,
-  itm_trench_club_13,
-  itm_trench_club_14,
 
   itm_long_trench_club_1,
   itm_long_trench_club_2,
   
-  itm_renegade_uniform_cavalry_1,
+  itm_renegade_uniform_cuirass,
   
   itm_renegade_raider_helmet,
 
@@ -10261,7 +9633,7 @@ troops = [
   ],
   attr_lvl_35,wp_6_m,knows_battle_6,man_face_middle_1, man_face_older_2],
 
-#Cavalry
+#Cavalry 
 ["f9_rider","Renegade Rider","Renegade Riders",
   tf_guarantee_ranged|tf_has_body|tf_has_hand|tf_has_head|tf_guarantee_horse|tf_guarantee_helmet,0,0,fac_kingdom_9,
   [
@@ -10274,7 +9646,7 @@ troops = [
   itm_spanish_dragoon_sword,
   itm_old_schianova,
 
-  itm_renegade_armour_cavalry,
+  itm_renegade_uniform_cavalry_1,
   
   itm_renegade_cavalry_helmet,
 
@@ -10283,6 +9655,30 @@ troops = [
   itm_capelet_grey,
   ]+plain_horses,
   attr_lvl_30,wp_5_m,knows_battle_5,man_face_middle_1, man_face_old_2],
+["f9_rider_heavy","Renegade Heavy Rider","Renegade Heavy Riders",
+  tf_guarantee_ranged|tf_has_body|tf_has_hand|tf_has_head|tf_guarantee_horse|tf_guarantee_boots,0,0,fac_kingdom_9,
+  [
+  itm_rifle_ammo, itm_rifle_ammo_empty,
+  itm_renegade_bolt_action_carbine,
+
+  itm_lance_plain,
+  itm_lance_renegade,
+  itm_light_cav_sword,
+  itm_hungarian_sabre,
+  itm_hungarian_grenadier_sword,
+  itm_spanish_dragoon_sword,
+  itm_old_schianova,
+
+  itm_renegade_armour_cavalry,
+  
+  itm_renegade_cavalry_helmet,
+
+  itm_renegade_demi_gauntlets,
+  
+  itm_extra_armour,
+  ]+plain_horses,
+  attr_lvl_35,wp_6_m,knows_battle_6,man_face_middle_1, man_face_old_2],
+#Vehicles
 
 #Guards
 ["f9_guard","Renegade Prison Guard","Renegade Prison Guards",
@@ -10291,34 +9687,17 @@ troops = [
   itm_blunt_slug_ammo,
   itm_shotgun_riot,
 
-  itm_trench_club_1,
-  itm_trench_club_2,
-  itm_trench_club_3,
-  itm_trench_club_4,
-  itm_trench_club_5,
-  itm_trench_club_6,
-  itm_trench_club_7,
   itm_trench_club_8,
   itm_trench_club_9,
   itm_trench_club_10,
-  itm_trench_club_11,
-  itm_trench_club_12,
-  itm_trench_club_13,
-  itm_trench_club_14,
 
   itm_long_trench_club_1,
   itm_long_trench_club_2,
 
-  itm_rectangular_shield_1,
-  itm_rectangular_shield_2,
-  itm_rectangular_shield_3,
   itm_rectangular_shield_4,
   itm_rectangular_shield_5,
   itm_rectangular_shield_6,
   itm_rectangular_shield_7,
-  itm_rectangular_shield_8,
-  itm_rectangular_shield_9,
-  itm_rectangular_shield_10,
   
   itm_renegade_uniform_guard_1,
 
@@ -10335,11 +9714,10 @@ troops = [
 
   itm_trooper_sword,
   itm_hand_axe,
+  itm_trench_club_8,
+  itm_trench_club_9,
+  itm_trench_club_10,
 
-  itm_rectangular_shield_1,
-  itm_rectangular_shield_2,
-  itm_rectangular_shield_3,
-  itm_rectangular_shield_4,
   itm_rectangular_shield_5,
   itm_rectangular_shield_6,
   itm_rectangular_shield_7,
@@ -10364,14 +9742,10 @@ troops = [
 
   itm_trooper_sword,
   itm_hand_axe,
+  itm_trench_club_10,
+  itm_trench_club_11,
+  itm_trench_club_12,
 
-  itm_rectangular_shield_1,
-  itm_rectangular_shield_2,
-  itm_rectangular_shield_3,
-  itm_rectangular_shield_4,
-  itm_rectangular_shield_5,
-  itm_rectangular_shield_6,
-  itm_rectangular_shield_7,
   itm_rectangular_shield_8,
   itm_rectangular_shield_9,
   itm_rectangular_shield_10,
@@ -10402,20 +9776,10 @@ troops = [
   itm_hand_axe,
   itm_hammer_big,
   itm_sledgehammer_small,
-  itm_trench_club_1,
-  itm_trench_club_2,
-  itm_trench_club_3,
-  itm_trench_club_4,
-  itm_trench_club_5,
-  itm_trench_club_6,
-  itm_trench_club_7,
-  itm_trench_club_8,
-  itm_trench_club_9,
+
   itm_trench_club_10,
   itm_trench_club_11,
   itm_trench_club_12,
-  itm_trench_club_13,
-  itm_trench_club_14,
 
   itm_long_trench_club_1,
   itm_long_trench_club_2,
@@ -10442,25 +9806,15 @@ troops = [
   itm_hand_axe,
   itm_hammer_big,
   itm_sledgehammer_small,
-  itm_trench_club_1,
-  itm_trench_club_2,
-  itm_trench_club_3,
-  itm_trench_club_4,
-  itm_trench_club_5,
-  itm_trench_club_6,
-  itm_trench_club_7,
-  itm_trench_club_8,
-  itm_trench_club_9,
-  itm_trench_club_10,
+
   itm_trench_club_11,
   itm_trench_club_12,
   itm_trench_club_13,
-  itm_trench_club_14,
 
   itm_long_trench_club_1,
   itm_long_trench_club_2,
   
-  itm_renegade_uniform_guerilla,
+  itm_renegade_uniform_guerilla_2,
   
   itm_renegade_raider_helmet,
 
@@ -10497,12 +9851,12 @@ troops = [
   tf_allways_fall_dead|tf_no_capture_alive|tf_mutant|tf_guarantee_all,0,0,fac_kingdom_9,
   [
   itm_invisi_attack,
-  itm_renegade_beastling_armour,
+  itm_beastling_1,
   itm_beastling_head,
   itm_beastling_hands,
   ],
   attr_terror, wp_6_m, knows_battle_6,x_face, x_face],
-["f9_terror_elite","Renegade Beast","Renegade Beaasts",
+["f9_terror_elite","Renegade_Armoured_Beast","Renegade_Armoured_Beasts",
   tf_allways_fall_dead|tf_no_capture_alive|tf_mutant_big|tf_guarantee_all,0,0,fac_kingdom_9,
   [
   itm_rancor_attack,
@@ -10514,7 +9868,7 @@ troops = [
 #
 
 ## Theocracy of Throd ##
-["f10_levy","Miasma-slave Levy","Miasma-slave Levies",
+["f10_levy","Miasma-slave Shambler","Miasma-slave Shamblers",
   tf_infected|tf_allways_fall_dead|tf_no_capture_alive|tf_has_body|tf_guarantee_boots,0,0,fac_kingdom_10,
   [
   itm_throwing_knives,
@@ -10536,7 +9890,7 @@ troops = [
   itm_slave_neck_chain,
   ],
   attr_lvl_5,wp_start,knows_battle_1,man_face_younger_1, man_face_middle_2],
-["f10_tier_1","Miasma-slave Recruit","Miasma-slave Recruits",
+["f10_tier_1","Miasma-slave Walker","Miasma-slave Walkers",
   tf_infected|tf_allways_fall_dead|tf_no_capture_alive|tf_has_body|tf_guarantee_boots,0,0,fac_kingdom_10,
   [
   itm_pistol_ammo, itm_pistol_ammo_empty,
@@ -10587,7 +9941,7 @@ troops = [
   itm_slave_neck_chain,
   ],
   attr_lvl_15,wp_2_m,knows_battle_2,man_face_younger_1, man_face_middle_2],
-["f10_tier_2","Miasma-slave Yeoman","Miasma-slave Yeomen",
+["f10_tier_2","Miasma-slave Soldier","Miasma-slave Soldiers",
   tf_infected|tf_allways_fall_dead|tf_no_capture_alive|tf_has_body|tf_guarantee_ranged|tf_guarantee_boots,0,0,fac_kingdom_10,
   [
   itm_rifle_ammo, itm_rifle_ammo_empty,
@@ -10641,7 +9995,7 @@ troops = [
   itm_slave_neck_chain,
   ],
   attr_lvl_20,wp_3_m,knows_battle_3,man_face_young_1, man_face_old_2],
-["f10_tier_3","Miasma-slave Infantry","Miasma-slave Infantries",
+["f10_tier_3","Miasma-slave Tough","Miasma-slave Toughs",
   tf_infected|tf_allways_fall_dead|tf_no_capture_alive|tf_has_body|tf_guarantee_ranged|tf_guarantee_helmet|tf_guarantee_boots,0,0,fac_kingdom_10,
   [
   itm_rifle_ammo, itm_rifle_ammo_empty,
@@ -10702,7 +10056,7 @@ troops = [
   itm_slave_neck_chain,
   ],
   attr_lvl_25,wp_4_m,knows_battle_4,man_face_young_1, man_face_old_2],
-["f10_tier_4","Miasma-slave Veteran","Miasma-slave Veterans",
+["f10_tier_4","Miasma-slave Bastard","Miasma-slave Bastards",
   tf_infected|tf_allways_fall_dead|tf_no_capture_alive|tf_guarantee_ranged|tf_has_body|tf_guarantee_helmet|tf_guarantee_gloves|tf_guarantee_boots,0,0,fac_kingdom_10,
   [
   itm_rifle_ammo, itm_rifle_ammo_empty,
@@ -10751,7 +10105,7 @@ troops = [
   itm_slave_neck_chain,
   ],
   attr_lvl_30,wp_5_m,knows_battle_5,man_face_middle_1, man_face_old_2],
-["f10_tier_5","Miasma-slave Elite","Miasma-slave Elites",
+["f10_tier_5","Miasma-slave Breaker","Miasma-slave Breakers",
   tf_infected|tf_allways_fall_dead|tf_no_capture_alive|tf_mounted|tf_has_body|tf_guarantee_helmet|tf_guarantee_gloves|tf_guarantee_ranged|tf_guarantee_boots,0,0,fac_kingdom_10,
   [
   itm_grenade_miasma,
@@ -10796,7 +10150,7 @@ troops = [
   attr_lvl_35,wp_6_m,knows_battle_6,man_face_middle_1, man_face_older_2],
 
 #Cavalry
-["f10_rider","Miasma-slave Rider","Miasma-slave Riders",
+["f10_rider","Miasma-slave Nag Rider","Miasma-slave Nag Riders",
   tf_infected|tf_allways_fall_dead|tf_no_capture_alive|tf_guarantee_ranged|tf_has_body|tf_has_hand|tf_guarantee_horse|tf_guarantee_helmet|tf_guarantee_boots,0,0,fac_kingdom_10,
   [
   itm_grenade_miasma,
@@ -10831,6 +10185,8 @@ troops = [
   ],
   attr_lvl_30,wp_5_m,knows_battle_5,man_face_middle_1, man_face_old_2],
 
+#Vehicles
+
 #Guards
 ["f10_guard","Throd_Prison Guard","Throd_Prison Guards",
   tf_infected|tf_allways_fall_dead|tf_no_capture_alive|tf_has_body|tf_guarantee_ranged,
@@ -10860,12 +10216,7 @@ troops = [
   itm_throd_robe_armoured,
   itm_throd_church_guard_1,
 
-  itm_hood_black,
-  itm_hood_black_scarf,
-  itm_hood_white,
-  itm_hood_white_scarf,
-  itm_hood_red,
-  itm_hood_red_scarf,
+  itm_throd_hood,
 
   itm_leather_gloves,
   itm_black_gloves,
@@ -10896,8 +10247,7 @@ troops = [
   itm_throd_robe_armoured_heavy_1,
   itm_throd_church_guard_2,
 
-  itm_steel_helmet_2,
-  itm_steel_helmet_2_gas,
+  itm_throd_hood_2,
 
   itm_black_gloves,
   (itm_throd_gauntlets,imod_ragged),
@@ -10926,7 +10276,7 @@ troops = [
   itm_throd_robe_armoured_heavy_2,
   itm_throd_church_guard_3,
 
-  itm_zealot_helm_1,
+  itm_throd_hood_3,
 
   itm_throd_gauntlets,
   
@@ -10936,7 +10286,7 @@ troops = [
 
 #Auxiliary
 ["f10_aux_1","Throd Biter","Throd Biters",
-  tf_ghoul|tf_allways_fall_dead|tf_no_capture_alive|tf_guarantee_all,0, 0, fac_kingdom_10,
+  tf_ghoul|tf_allways_fall_dead|tf_no_capture_alive|tf_guarantee_all|tf_guarantee_helmet|tf_guarantee_gloves,0, 0, fac_kingdom_10,
   [
   itm_ghoul_armour_light,
   itm_ghoul_armour_light2,
@@ -10981,7 +10331,7 @@ troops = [
   ],
   attr_lvl_35, wp_5_m, knows_battle_5|knows_athletics_8,x_face, x_face],
 ["f10_aux_2","Throd Hungry Biter","Throd Hungry Biters",
-  tf_ghoul|tf_allways_fall_dead|tf_no_capture_alive|tf_guarantee_all,0, 0, fac_kingdom_10,
+  tf_ghoul|tf_allways_fall_dead|tf_no_capture_alive|tf_guarantee_all|tf_guarantee_helmet|tf_guarantee_gloves,0, 0, fac_kingdom_10,
   [ 
   itm_ghoul_armour_medium,
 
@@ -11025,7 +10375,7 @@ troops = [
   ],
   attr_lvl_40, wp_6_m, knows_battle_6|knows_athletics_8,x_face, x_face],
 ["f10_aux_3","Throd Ravenous Biter","Throd Ravenous Biters",
-  tf_ghoul|tf_allways_fall_dead|tf_no_capture_alive|tf_guarantee_all,0, 0, fac_kingdom_10,
+  tf_ghoul|tf_allways_fall_dead|tf_no_capture_alive|tf_guarantee_all|tf_guarantee_helmet|tf_guarantee_gloves,0, 0, fac_kingdom_10,
   [
   itm_ghoul_armour_heavy,
   
@@ -11619,6 +10969,7 @@ troops = [
   itm_bandit_hood_grn_scarf,
   itm_bandit_hood_red_scarf,
   itm_bandit_hood_wht_scarf,
+  itm_poor_hood,
   ],
   attr_lvl_10,wp_1_m,knows_battle_1,mercenary_face_1, mercenary_face_2],
 ["drunk","Drunk","Drunk",
@@ -11716,18 +11067,12 @@ troops = [
   itm_robe_2,
   itm_robe_3,
   itm_robe_4,
-  (itm_robe_1, imod_ragged),
-  (itm_robe_2, imod_ragged),
-  (itm_robe_3, imod_ragged),
-  (itm_robe_4, imod_ragged),
+
   itm_hood_1,
   itm_hood_2,
   itm_hood_3,
   itm_hood_4,
-  (itm_hood_1, imod_ragged),
-  (itm_hood_2, imod_ragged),
-  (itm_hood_3, imod_ragged),
-  (itm_hood_4, imod_ragged),
+
   ],
   attr_lvl_10,wp_1_m,knows_battle_1,mercenary_face_1, mercenary_face_2],
 ["church_traveller","Traveler","Travellers",
@@ -12807,11 +12152,9 @@ troops = [
   0x000000019d004001570b893712c8d28d00000000001dc8990000000000000000],
 ["npc3","Gesgehe Dobega","Gesgehe",tf_woman|tf_hero|tf_unmoveable_in_party_window, 0, reserved, fac_commoners,
   [
-  itm_hooded_cloak_1,
+  itm_poor_hood,
   ]+companion_gear,
-  str_6|agi_9|int_11|cha_6|level(1),wp_m(20),knows_merchant_npc|
-  knows_wound_treatment_1|knows_trade_1|knows_first_aid_3|knows_surgery_1|knows_athletics_1|knows_riding_1,
-  0x0000000083040001583b6db8dec5925b00000000001d80980000000000000000],
+  str_4|agi_4|int_4|cha_4|level(1),wp_m(20),knows_merchant_npc,0x0000000d7f0400035915aa226b4d975200000000001ea49e0000000000000000],
 #
 ["npc4","Sir Hilmont Tranthem","Hilmont",tf_hero|tf_unmoveable_in_party_window, 0, reserved,  fac_commoners,
   [
@@ -12932,7 +12275,7 @@ troops = [
 
   itm_invisi_gloves,
   ],
-  str_10|agi_6|int_16|cha_4|level(5),wp_m(40),knows_merchant_npc|
+  str_15|agi_6|int_16|cha_4|level(10),wp_m(80),knows_merchant_npc|
   knows_tactics_1|knows_engineer_4|knows_trade_3,0x0000000f2e1021862b4b9123594eab5300000000001d55360000000000000000],
 #
 ["npc16","Mide Ui Braoin","Mide",tf_woman|tf_hero|tf_unmoveable_in_party_window, 0, reserved,  fac_commoners,
@@ -12945,6 +12288,8 @@ troops = [
   ]+companion_gear,
   str_12|agi_11|int_8|cha_7|level(4),wp_m(120),knows_warrior_npc|
   knows_power_throw_4|knows_athletics_4|knows_power_strike_5,0x00000000000c100739ce9c805d2f381300000000001cc7ad0000000000000000],
+
+#,
 #
 #NPC system changes end
 ## Galgalliel = Galgalliel Abaoz
@@ -13268,7 +12613,7 @@ troops = [
   itm_dominion_assault_rifle_special,
   ]+dominion_lord_gear,
   lord_attrib,wp_m(260),lord_skills, 0x0000000c2a0015d249b68b46a98e176400000000001d95a40000000000000000, vaegir_face_old_2],
-["knight_2_3", "Psu-volonel Jim Paulson", "Jim", tf_hero, 0, reserved,  fac_kingdom_2,
+["knight_2_3", "Psu-volonel Lomany", "Lomany", tf_hero, 0, reserved,  fac_kingdom_2,
   []+dominion_lord_gear,
   lord_attrib,wp_m(290),lord_skills, 0x0000000c131031c546a38a2765b4c86000000000001e58d30000000000000000, vaegir_face_older_2],
 ["knight_2_4", "Psu-volonel Myer Bodkin", "Myer", tf_hero, 0, reserved,  fac_kingdom_2,
@@ -13307,7 +12652,7 @@ troops = [
 ["knight_2_12", "Psu-volonel Allen Bunker", "Allen", tf_hero, 0, reserved,  fac_kingdom_2,
   []+dominion_lord_gear,
   lord_attrib,wp(170),lord_skills, 0x0000000c0f04024b2509d5d53944c6a300000000001d5b320000000000000000, vaegir_face_old_2],
-["knight_2_13", "Psu-volonel Rowland Gambrill", "Rowland", tf_hero, 0, reserved,  fac_kingdom_2,
+["knight_2_13", "Psu-volonel Boii", "Boii", tf_hero, 0, reserved,  fac_kingdom_2,
   []+dominion_lord_gear,
   lord_attrib,wp(190),lord_skills, 0x0000000c680432d3392230cb926d56ca00000000001da69b0000000000000000, vaegir_face_older_2],
 ["knight_2_14", "Psu-volonel Idris Searson", "Idris", tf_hero, 0, reserved,  fac_kingdom_2,
@@ -13463,11 +12808,24 @@ troops = [
   (itm_union_armour_brotherhood, imod_lordly),
   ]+union_lord_gear,
   lord_attrib,wp_m(290),lord_skills, 0x0000000c03040289245a314b744b30a400000000001eb2a90000000000000000, nord_face_older_2],
-["knight_4_4", "Pokovniz Jezdimir Urosevic", "Jezdimir", tf_hero, 0, reserved,  fac_kingdom_4,
-  []+union_lord_gear,
+["knight_4_4", "Pokovniz Kayfor Twogrand", "Kayfor", tf_hero, 0, reserved,  fac_kingdom_4,
+  [
+  itm_coffin_armour,
+  ]+union_lord_gear,
   lord_attrib,wp_m(310),lord_skills, 0x0000000c3f1001ca3d6955b26a8939a300000000001e39b60000000000000000, nord_face_older_2],
-["knight_4_5", "Pokovniz Vlada Markovic", "Vlada", tf_hero, 0, reserved,  fac_kingdom_4,
-  []+union_lord_gear,
+["knight_4_5", "Pokovniz Nerzuhl", "Nerzuhl", tf_hero, 0, reserved,  fac_kingdom_4,
+  [
+  itm_dark_sabre,
+  
+  itm_blackgod_knight_shield,
+  
+  itm_blackgod_knight,
+  
+  itm_blackgod_knight_helmet,
+  
+  itm_blackgod_knight_gauntlets,
+  
+  ]+union_lord_gear,
   lord_attrib,wp_m(350),lord_skills, 0x0000000ff508330546dc4a59422d450c00000000001e51340000000000000000, nord_face_older_2],
 ["knight_4_6", "Pokovniz Rasko Nestorovski", "Rasko", tf_hero, 0, reserved,  fac_kingdom_4,
   []+union_lord_gear,
@@ -13506,7 +12864,7 @@ troops = [
   itm_union_armour_officer,
   ]+union_lord_gear,
   lord_attrib,wp(200),lord_skills, 0x0000000c0700414f2cb6aa36ea50a69d00000000001dc55c0000000000000000, nord_face_older_2],
-["knight_4_15", "Pokovniz Slavisa Vladic", "Slavisa", tf_hero, 0, reserved,  fac_kingdom_4,
+["knight_4_15", "Pokovniz Normynd", "Normynd", tf_hero, 0, reserved,  fac_kingdom_4,
   []+union_lord_gear,
   lord_attrib,wp(290),lord_skills|knows_trainer_6, 0x0000000d920801831715d1aa9221372300000000001ec6630000000000000000, nord_face_older_2],
 ["knight_4_16", "Pokovniz Kuzman Vujic", "Kuzman", tf_hero, 0, reserved,  fac_kingdom_4,
@@ -13537,10 +12895,8 @@ troops = [
 ["knight_5_1", "Vittunhaulto Nolte Guldins ", "Nolte", tf_hero, 0, reserved,  fac_kingdom_5,
   [
   (itm_vitzland_smg, imod_masterwork),
-  (itm_pistol_ammo_pw, imod_large_bag),
-  (itm_pistol_ammo_pw, imod_large_bag),
-  itm_pistol_ammo_empty,
-  itm_pistol_ammo_empty,
+  (itm_pistol_ammo_2_pw, imod_large_bag),
+  (itm_pistol_ammo_2_pw, imod_large_bag),
   (itm_flamberge, imod_balanced),
   
   (itm_vitzland_armour_cavalry, imod_reinforced),
@@ -13560,10 +12916,11 @@ troops = [
   
   (itm_vitzland_armour_officer, imod_reinforced),
   (itm_vitzland_uniform_officer, imod_reinforced),
-  (itm_vitzland_salet_ubersto, imod_lordly),
-  (itm_vitzland_salet_ubersto_2, imod_lordly),
-  (itm_ammo_belt_1, imod_reinforced),
+  (itm_vitzland_pickelhaube_snake, imod_lordly),
+
   (itm_vitzland_gauntlets, imod_reinforced),
+  
+  (itm_ammo_belt_1, imod_reinforced),
   ],
   lord_attrib,wp_m(260),lord_skills|knows_trainer_4, 0x0000000c390c659229136db45a75251300000000001f16930000000000000000, rhodok_face_old_2],
 ["knight_5_3", "Ubersto Eilert Martins", "Eilert", tf_hero, 0, reserved,  fac_kingdom_5,
@@ -13578,7 +12935,7 @@ troops = [
   itm_vitzland_salet_1_gasmask,
   ]+vitzland_lord_gear,
   lord_attrib,wp_m(320),lord_skills, 0x0000000c3c005110345c59d56975ba1200000000001e24e40000000000000000, rhodok_face_older_2],
-["knight_5_5", "Ubersto Michael Ortenberg", "Michael", tf_hero, 0, reserved,  fac_kingdom_5,
+["knight_5_5", "Ubersta Spartakian", "Spartakian", tf_woman|tf_hero, 0, reserved,  fac_kingdom_5,
   [
   itm_vitzland_salet_ubersto_2,
   ]+vitzland_lord_gear,
@@ -13668,7 +13025,7 @@ troops = [
   
   (itm_republican_armour_officer, imod_reinforced),
   (itm_republican_uniform_sergeant, imod_lordly),
-  (itm_republican_noble_helmet, imod_lordly),
+  (itm_republican_notte_helmet, imod_lordly),
   
   (itm_ammo_belt_1, imod_reinforced),
   (itm_black_gloves, imod_lordly),
@@ -13768,7 +13125,9 @@ troops = [
   ]+itami_lord_gear,
   lord_attrib,wp_m(260),lord_skills|knows_trainer_4, 0x00000001380825d444cb68b92b8d3b1d00000000001dd71e0000000000000000, rhodok_face_old_2],
 ["knight_7_3", "Shyia Zou Tai", "Zou", tf_hero, 0, reserved,  fac_kingdom_7,
-  []+itami_lord_gear,
+  [
+  itm_bandit_straw_cloak,
+  ]+itami_lord_gear,
   lord_attrib,wp_m(290),lord_skills, 0x000000002208428579723147247ad4e500000000001f14d40000000000000000, rhodok_face_older_2],
 ["knight_7_4", "Shyia Xiang Zhong", "Xiang", tf_hero, 0, reserved,  fac_kingdom_7,
   [
@@ -13904,9 +13263,9 @@ troops = [
   lord_attrib,wp_m(230),lord_skills, 0x00000005590011c33d9b6d4a92ada53500000000001cc1180000000000000000, vaegir_face_middle_2],
 
 ##Theocracy of Throd
-["knight_10_1", "Master Nivoy", "Nivoy", tf_hero, 0, reserved,  fac_kingdom_10,
+["knight_10_1", "Skull Master Nivoy", "Nivoy", tf_hero, 0, reserved,  fac_kingdom_10,
   [
-  itm_robe_6,
+  itm_throd_robe_skull,
   ]+throd_lord_gear,
   lord_attrib,wp_m(230),lord_skills, 0x00000005590011c33d9b6d4a92ada53500000000001cc1180000000000000000, vaegir_face_middle_2],
 ["knight_10_2", "Master Corvo", "Corvo", tf_hero, 0, reserved,  fac_kingdom_10,
@@ -16916,7 +16275,7 @@ def_attrib|level(2),wp(50),knows_common|knows_riding_2, 0x000000055910200107632d
   level(10)|str_5|agi_5, wp(50),knows_ironflesh_2|knows_riding_2|knows_inventory_management_10,
   0, 0],
 
-["car_mechanic","Auto Mechanic","Auto Mechanics",
+["landcraft_mechanic","Auto Mechanic","Auto Mechanics",
   tf_has_body|tf_has_ranged,no_scene,0,fac_commoners,
   [
   itm_spanner,
@@ -16968,7 +16327,7 @@ def_attrib|level(2),wp(50),knows_common|knows_riding_2, 0x000000055910200107632d
   ],
   attr_lvl_15,wp_2_r,knows_battle_2|knows_horse_archery_10,mercenary_face_1, mercenary_face_2],
 
-["chopper_mechanic","Aeromobile_Mechanic","Aeromobile_Mechanics",
+["aircraft_mechanic","Aeromobile_Mechanic","Aeromobile_Mechanics",
   tf_has_body|tf_has_ranged,no_scene,0,fac_commoners,
   [
   itm_spanner,
@@ -17101,8 +16460,8 @@ upgrade(troops,"mercenary_horsearcher","sentinel_horsearcher")
 
 #fallen_phalanx
 upgrade(troops,"phalanx_fresh","phalanx_firstblood")
-upgrade2(troops,"phalanx_firstblood","phalanx_bloodied","phalanx_flamer")
-upgrade(troops,"phalanx_bloodied","phalanx_scarred")
+upgrade(troops,"phalanx_firstblood","phalanx_bloodied")
+upgrade2(troops,"phalanx_bloodied","phalanx_scarred","phalanx_flamer")
 upgrade(troops,"phalanx_scarred","phalanx_chosen")
 
 #nomads
@@ -17113,7 +16472,7 @@ upgrade(troops,"nomad_drifter","nomad_wanderer")
 ################
 ####Factions####
 ################
-##Entenaii Empire
+## Entenaii Empire ##
 upgrade(troops,"f1_levy","f1_tier_1")
 upgrade(troops,"f1_tier_1","f1_tier_2")
 upgrade2(troops,"f1_tier_2","f1_tier_3","f1_tier_4_cavalry")
@@ -17129,16 +16488,21 @@ upgrade(troops,"f1_aux_1","f1_aux_2")
 upgrade(troops,"f1_aux_2","f1_aux_3")
 #mech
 upgrade(troops,"f1_mech","f1_mech_emperor")
+#crew
+upgrade(troops,"f1_landcraft_crew","f1_aircraft_crew")
+upgrade(troops,"f1_aircraft_crew","f1_mech_crew")
 #terror
 upgrade(troops,"f1_terror","f1_terror_elite")
 
-##Entenaii Dominion
+## Entenaii Dominion ##
 upgrade(troops,"f2_levy","f2_tier_1")
 upgrade(troops,"f2_tier_1","f2_tier_2")
 upgrade2(troops,"f2_tier_2","f2_tier_3","f2_rider")
 upgrade(troops,"f2_tier_3","f2_tier_4")
 upgrade(troops,"f2_tier_4","f2_tier_5")
 upgrade(troops,"f2_tier_5","f2_tier_6")
+#cav
+upgrade(troops,"f2_rider","f2_rider_2")
 #guards
 upgrade(troops,"f2_guard","f2_castle_guard")
 upgrade(troops,"f2_castle_guard","f2_hall_guard")
@@ -17148,7 +16512,7 @@ upgrade(troops,"f2_aux_2","f2_aux_3")
 #terror
 upgrade(troops,"f2_terror","f2_terror_elite")
 
-##Kingdom of Galvae
+## Kingdom of Galvae ##
 upgrade(troops,"f3_levy","f3_tier_1")
 upgrade(troops,"f3_tier_1","f3_tier_2")
 upgrade2(troops,"f3_tier_2","f3_tier_3","f3_rider")
@@ -17164,7 +16528,7 @@ upgrade(troops,"f3_aux_2","f3_aux_3")
 #terror
 upgrade(troops,"f3_terror","f3_terror_elite")
 
-##Molvat-Berchav Union
+## Molvat-Berchav Union ##
 upgrade(troops,"f4_levy","f4_tier_1")
 upgrade(troops,"f4_tier_1","f4_tier_2")
 upgrade2(troops,"f4_tier_2","f4_tier_3b","f4_tier_3")
@@ -17183,7 +16547,7 @@ upgrade(troops,"f4_aux_2","f4_aux_3")
 #terror
 upgrade(troops,"f4_terror","f4_terror_elite")
 
-##Vitzland Territories
+## Vitzland Territories ##
 upgrade(troops,"f5_levy","f5_tier_1")
 upgrade(troops,"f5_tier_1","f5_tier_2")
 upgrade2(troops,"f5_tier_2","f5_tier_3","f5_rider")
@@ -17201,7 +16565,7 @@ upgrade(troops,"f5_aux_2","f5_aux_3")
 #terror
 upgrade(troops,"f5_terror","f5_terror_elite")
 
-##Trezzo Republic
+## Trezzo Republic ##
 upgrade(troops,"f6_levy","f6_tier_1")
 upgrade(troops,"f6_tier_1","f6_tier_2")
 upgrade2(troops,"f6_tier_2","f6_tier_3","f6_rider")
@@ -17217,7 +16581,7 @@ upgrade(troops,"f6_aux_2","f6_aux_3")
 #terror
 upgrade(troops,"f6_terror","f6_terror_elite")
 
-##Itami Castedom
+## Itami Castedom ##
 upgrade(troops,"f7_levy","f7_tier_1")
 upgrade(troops,"f7_tier_1","f7_tier_2")
 upgrade2(troops,"f7_tier_2","f7_tier_3","f7_rider")
@@ -17233,7 +16597,7 @@ upgrade(troops,"f7_aux_2","f7_aux_3")
 #terror
 upgrade(troops,"f7_terror","f7_terror_elite")
 
-##Bashide Confederacy
+## Bashide Confederacy ##
 upgrade(troops,"f8_levy","f8_tier_1")
 upgrade(troops,"f8_tier_1","f8_tier_2")
 upgrade2(troops,"f8_tier_2","f8_tier_3","f8_rider")
@@ -17249,10 +16613,11 @@ upgrade(troops,"f8_aux_2","f8_aux_3")
 #terror
 upgrade(troops,"f8_terror","f8_terror_elite")
 
-##Renegades
+## Renegades ##
 upgrade(troops,"f9_levy","f9_tier_1")
 upgrade(troops,"f9_tier_1","f9_tier_2")
 upgrade2(troops,"f9_tier_2","f9_tier_3","f9_rider")
+upgrade(troops,"f9_rider","f9_rider_heavy")
 upgrade(troops,"f9_tier_3","f9_tier_4")
 upgrade(troops,"f9_tier_4","f9_tier_5")
 #guards
@@ -17264,7 +16629,7 @@ upgrade(troops,"f9_aux_2","f9_aux_3")
 #terror
 upgrade(troops,"f9_terror","f9_terror_elite")
 
-##Theocracy of Throd
+## Theocracy of Throd ##
 upgrade(troops,"f10_levy","f10_tier_1")
 upgrade(troops,"f10_tier_1","f10_tier_2")
 upgrade2(troops,"f10_tier_2","f10_tier_3","f10_rider")

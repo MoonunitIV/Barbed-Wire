@@ -49,8 +49,7 @@ skills = [
 ("reserved_3","Reserved Skill 3",sf_base_att_cha|sf_inactive,10,"This is a reserved skill."), 
 ("reserved_4","Reserved Skill 4",sf_base_att_cha|sf_inactive,10,"This is a reserved skill."), 
   
-("persuasion","Persuasion", sf_base_att_cha,10,
-"This skill helps you make other people accept your point of view, lowers the minimum level of relationship needed to get NPCs to do what you want and affects prisoner prices. (Personal skill)"),
+("persuasion","Persuasion", sf_base_att_cha,10,"This skill helps you make other people accept your point of view, lowers the minimum level of relationship needed to get NPCs to do what you want and affects prisoner prices. (Personal skill)"),
 ("engineer","Mechanics",sf_base_att_int|sf_effects_party,10,"This skill allows you to repair, maintain, modify and build equipment and devices using the resources available. Adequate maintenance of your equipment will lower the chance of it breaking in battle. Each point of this skill reduces the probability of breaking by 7%%. Technician will also allow you to construct siege equipment and fief improvements more efficiently. (Party skill)"), #more damage high tech weapons / craft?
 ("first_aid", "First Aid",sf_base_att_int|sf_effects_party,10,"Heroes regain 5%% per skill level of hit-points lost during mission. (Party skill)"), 
 ("surgery","Surgery",sf_base_att_int|sf_effects_party,10,"Each point to this skill gives a 4%% chance that a mortally struck party member will be wounded rather than killed. (Party skill)"), 

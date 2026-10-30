@@ -1376,26 +1376,6 @@ scene_props_native = [
   ("prop_broken_building_3_cut",0,"broken_building_3_cut","bo_broken_building_3_cut",[]),
 ########################################################################################### 
 #Barbed Wire Props
-  ("prop_barbedwire",0,"barbedwire","bo_barbedwire",[]),
-  ("prop_barbedwire1",0,"barbedwire1","bo_barbedwire1",[]),
-  ("prop_barbedwire_3",0,"barbedwire_3","bo_barbedwire_3",[]),
-  ("prop_barbedwirelong",0,"barbedwirelong","bo_barbedwirelong",[]),
-  ("prop_bunkkeri",0,"bunkkeri","bo_bunkkeri",[]),
-  ("prop_sand_a",0,"sand_a","bo_sand_a",[]),
-  ("prop_sand_b",0,"sand_b","bo_sand_b",[]),
-  ("prop_sand_b_barricade",0,"sand_b_barricade","bo_sand_b_barricade",[]),
-  ("prop_sand_b_gun_nest",0,"sand_b_gun_nest","bo_sand_b_gun_nest",[]),
-  ("prop_tele_pole",0,"tele_pole","bo_tele_pole",[]),
-  ("prop_trench_broken",0,"trench_broken","bo_trench_broken",[]),
-  ("prop_trench_bunker",0,"trench_bunker","bo_trench_bunker",[]),
-  ("prop_trench_hole",0,"trench_hole","bo_trench_hole",[]),
-  ("prop_trench_tall",0,"trench_tall","bo_trench_tall",[]),
-  ("prop_barbedwire_fence",0,"barbedwire_fence","bo_barbedwire_fence",[]),
-  
-  ("prop_spike_2",0,"spike_2","bo_spike_2",[]),
-  ("prop_vickers",0,"vickers","bo_vickers",[]),
-  
-  ("prop_bunker_fort",0,"bfy_bunker_underground_a","bo_bfy_bunker_underground_a",[]),
 ########################################################################################### 
 #Barbed Wire ironsights
 #pistols
@@ -1482,7 +1462,7 @@ scene_props_native = [
   ("is_vitzland_bolt_action_rifle",0,"is_schoenauer","0",[]),
 #is_vitzland_bolt_action_rifle_2
 #is_vitzland_semi_rifle
-  ("is_trezzo_bolt_action_rifle",0,"is_carcano1891","0",[]),
+  ("is_trezzo_bolt_action_rifle",0,"is_vetterli1887","0",[]),
   ("is_trezzo_bolt_action_rifle_2",0,"is_carcano1891","0",[]),
 #is_itami_bolt_action_rifle
 #is_itami_bolt_action_rifle_2
@@ -1499,14 +1479,15 @@ scene_props_native = [
 #is_common_bolt_action_rifle_single
 
 #Assault Rifles
-#is_entenaii_assault_rifle
+
+  ("is_entenaii_assault_rifle",0,"is_bar","0",[]),
   ("is_dominion_assault_rifle",0,"is_chauchat","0",[]),
-#is_galvae_assault_rifle
+  ("is_galvae_assault_rifle",0,"is_lahti_saloranta","0",[]),
   ("is_molvat_assault_rifle",0,"is_fedorov","0",[]),
   ("is_berchav_assault_rifle",0,"is_avs36","0",[]),
   ("is_vitzland_assault_rifle",0,"is_fg42","0",[]),
-#is_trezzo_assault_rifle
-  #("is_itami_assault_rifle",0,"is_zb26","0",[]),
+  ("is_trezzo_assault_rifle",0,"is_cei_rigotti","0",[]),
+  ("is_itami_assault_rifle",0,"is_zb26","0",[]),
 #shotguns
 
 #is_entenaii_shotgun
@@ -1532,7 +1513,8 @@ scene_props_native = [
 #is_itami_lmg
 #is_bashide_lmg
   ("is_shadow_lmg",0,"is_mg34","0",[]),
-#is_shadow_lmg_2
+  ("is_shadow_lmg_2",0,"is_mg42_lmg","0",[]),
+
 #other
 #is_entenaii_antitank_rifle
 #is_union_antitank_rifle
