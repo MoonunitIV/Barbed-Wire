@@ -10162,6 +10162,7 @@ presentations = [
         # detect_total_max_tier, calculate offset_x
         (assign, ":total_max_tier", 1),
         (try_for_range, ":cur_troop", soldiers_begin, soldiers_end),
+          #(neq, ":cur_troop", ":trp_f1_landcraft_crew"), #!!!
           (neg|troop_is_hero, ":cur_troop"),
           # can upgrade
           (troop_get_upgrade_troop, ":upgrade_troop", ":cur_troop", 0),
@@ -13770,15 +13771,15 @@ presentations = [
       (eq, ":object", "$g_presentation_obj_player_map_14"),
       (jump_to_menu, "mnu_camp_action_read_book"),
       (presentation_set_duration, 0),
-    (else_try),
-      (eq, ":object", "$g_presentation_obj_player_map_10"),
-      (try_begin),
-        (neq,"$g_warzone_music",1),
-        (call_script, "script_musicplayer",0),
-      (else_try),
-        (call_script, "script_musicplayer",1),
-      (try_end),
-      (presentation_set_duration, 0),
+    # (else_try),
+      # (eq, ":object", "$g_presentation_obj_player_map_10"),
+      # (try_begin),
+        # (neq,"$g_warzone_music",1),
+        # (call_script, "script_musicplayer",0),
+      # (else_try),
+        # (call_script, "script_musicplayer",1),
+      # (try_end),
+      # (presentation_set_duration, 0),
     (else_try),
       (eq, ":object", "$g_presentation_obj_player_map_16"),
       #(jump_to_menu,"mnu_reports_native"),	#switched back as was too frustrating - krag
@@ -14898,7 +14899,7 @@ presentations = [
     (overlay_set_size, "$g_presentation_obj_gender", pos1),
     (overlay_add_item, "$g_presentation_obj_gender", "@Male"),
     (overlay_add_item, "$g_presentation_obj_gender", "@Female"),
-    (overlay_add_item, "$g_presentation_obj_gender", "@Infected"),
+    #(overlay_add_item, "$g_presentation_obj_gender", "@Infected"),
     (overlay_set_val, "$g_presentation_obj_gender", "$character_gender"),
     (val_sub, ":cur_y", 40),
 

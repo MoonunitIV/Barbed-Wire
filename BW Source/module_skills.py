@@ -75,7 +75,7 @@ skills = [
 ("athletics","Athletics",sf_base_att_agi,10,"Improves your running speed and increases your stamina. Helps you survive in this harsh environment. (Personal skill)"),
 ("shield","Prowess",sf_base_att_agi,10,"Each Prowess level increases the chance to land a critical hit by 1%% in melee. Reduces damage to shields (by 8%% per level) and improves shield speed and coverage. Also increases unarmed damage. (Personal skill)"),#damage resis   /more damage
 ("weapon_master","Weapon Master",sf_base_att_agi,10,"Makes it easier to learn weapon proficiencies and increases the proficiency limits. Limits go as: 60, 100, 140, 180, 220, 260, 300, 340, 380, 420. (Personal skill)"),
-("reserved_9","Crafter",sf_base_att_int,10,"Crafter allows you to craft basic melee weapons (unfinished feature), improve guns and repair different things. Adequate maintenance of your equipment will lower the chance of it breaking in battle. Each point of this skill reduces the probability of breaking by 7%%. Each level increases damage with crafted weapons by 5%%. Max level is 10. (Personal skill)"), 
+("crafting","Crafter",sf_base_att_int,10,"Crafter allows you to craft basic melee weapons (unfinished feature), improve guns and repair different things. Adequate maintenance of your equipment will lower the chance of it breaking in battle. Each point of this skill reduces the probability of breaking by 7%%. Each level increases damage with crafted weapons by 5%%. Max level is 10. (Personal skill)"), 
 
 ("reserved_10","Reserved Skill 10",sf_base_att_agi|sf_inactive,10,"This is a reserved skill."), 
 ("reserved_11","Reserved Skill 11",sf_base_att_agi|sf_inactive,10,"This is a reserved skill."), 
@@ -86,8 +86,8 @@ skills = [
 
 ("power_strike","Power Strike",sf_base_att_str,10,"Each point to this skill increases melee damage by 8%% and increases unarmed damage. (Personal skill)"),
 ("ironflesh","Ironflesh",sf_base_att_str,10,"Each point to this skill increases hit points by +2 and increases unarmed damage. (Personal skill)"), 
-("reserved_14","Scavenger",sf_base_att_int|sf_effects_party,10,"The Scavenger skill allows the player to find useful items in the environment, including weapons, ammunition, and medical supplies. High skill level increases the chances of finding rare and valuable items, and allows for more efficient searching and spotting of hidden items. (Party skill)"), 
-("reserved_15","Luck",sf_base_att_cha,10,"Luck affects your chances of success in various aspects. It can give an edge in finding valuable items, surviving dangerous situations and completing tasks. Helps to decide your fate. (Personal skill)"), 
+("scavenging","Scavenger",sf_base_att_int|sf_effects_party,10,"The Scavenger skill allows the player to find useful items in the environment, including weapons, ammunition, and medical supplies. High skill level increases the chances of finding rare and valuable items, and allows for more efficient searching and spotting of hidden items. (Party skill)"), 
+("lucky","Luck",sf_base_att_cha,10,"Luck affects your chances of success in various aspects. It can give an edge in finding valuable items, surviving dangerous situations and completing tasks. Helps to decide your fate. (Personal skill)"), 
 
 ("reserved_16","Reserved Skill 16",sf_base_att_str|sf_inactive,10,"This is a reserved skill."), 
 ("reserved_17","Reserved Skill 17",sf_base_att_str|sf_inactive,10,"This is a reserved skill."), 

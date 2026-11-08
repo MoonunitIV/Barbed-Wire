@@ -2770,7 +2770,7 @@ tocan_common_triggers = [ #tocan: all missions
 		    (eq, "$g_car_is_present", 2),
 		  
 		    (agent_get_troop_id, ":troop_id", ":agent_id"),
-            (eq, ":troop_id", "trp_chopper_pilot"),
+            (eq, ":troop_id", "trp_aircraft_pilot"),
 			(store_trigger_param_2, ":attacker_agent_id"),
 			
 			(agent_get_slot, ":instance_no", ":agent_id", slot_agent_horse_prop),
@@ -4474,26 +4474,26 @@ tocan_common_triggers = [ #tocan: all missions
         (start_presentation, "prsnt_player_ui"),
         ]),
 
-    (0, 0, 0, [
-        (this_or_next|key_clicked, key_page_up),
-        (key_clicked, key_page_down),
-      ],[
-        (try_begin),
-          # (key_clicked, key_page_up),
-          (key_is_down, key_page_up),
-          # (key_clicked, key_r),
-          # (key_is_down, key_r),
-          (call_script, "script_musicplayer",0),
+    # (0, 0, 0, [
+        # (this_or_next|key_clicked, key_page_up),
+        # (key_clicked, key_page_down),
+      # ],[
+        # (try_begin),
+          # # (key_clicked, key_page_up),
+          # (key_is_down, key_page_up),
+          # # (key_clicked, key_r),
+          # # (key_is_down, key_r),
+          # (call_script, "script_musicplayer",0),
 
-        (else_try),
-          # (key_clicked, key_page_down),
-          (key_is_down, key_page_down),
-          # (key_clicked, key_t),
-          # (key_is_down, key_t),
+        # (else_try),
+          # # (key_clicked, key_page_down),
+          # (key_is_down, key_page_down),
+          # # (key_clicked, key_t),
+          # # (key_is_down, key_t),
 
-          (call_script, "script_musicplayer",1),
-        (try_end),
-      ]),
+          # (call_script, "script_musicplayer",1),
+        # (try_end),
+      # ]),
 
     # #test	#disabled for now - krag
     # (ti_before_mission_start, 0, 0, [], [
@@ -5828,7 +5828,7 @@ tocan_vehicles =	[
           (assign,":continue",1),
           (try_begin),
             (agent_get_troop_id, ":troop_id", ":agent_id"),
-            (eq, ":troop_id", "trp_chopper_pilot"),
+            (eq, ":troop_id", "trp_aircraft_pilot"),
             (assign,":continue",0),
 			
 			(agent_get_slot, ":instance_no", ":agent_id", slot_agent_horse_prop),
@@ -7314,7 +7314,7 @@ common_siege_init = (
     (assign,"$g_battle_won",0),
     (assign,"$defender_reinforcement_stage",0),
     (assign,"$attacker_reinforcement_stage",0),
-    # (call_script, "script_music_set_situation_with_culture", mtf_sit_siege),
+    (call_script, "script_music_set_situation_with_culture", mtf_sit_siege),
     (call_script, "script_init_death_cam"), #SB : initialize this here
 
    ## HOLD ON START
@@ -7788,7 +7788,7 @@ tournament_triggers = [
 
   (1, 0, ti_once, [], [
       (eq, "$g_mt_mode", abm_visit),
-      # (call_script, "script_music_set_situation_with_culture", mtf_sit_travel),
+      (call_script, "script_music_set_situation_with_culture", mtf_sit_travel),
       (store_current_scene, reg(1)),
       (scene_set_slot, reg(1), slot_scene_visited, 1),
       (mission_enable_talk),
@@ -7860,7 +7860,7 @@ tournament_triggers = [
   (0, 0, ti_once, [(eq, "$g_mt_mode", abm_tournament),],
    [
      (play_sound, "snd_arena_ambiance", sf_looping),
-     # (call_script, "script_music_set_situation_with_culture", mtf_sit_arena),
+     (call_script, "script_music_set_situation_with_culture", mtf_sit_arena),
      ]),
 
   (1, 4, ti_once, [(eq, "$g_mt_mode", abm_tournament),
@@ -7888,14 +7888,14 @@ tournament_triggers = [
                        (assign, "$g_arena_training_num_agents_spawned", 0),
                        (assign, "$g_arena_training_kills", 0),
                        (assign, "$g_arena_training_won", 0),
-                       # (call_script, "script_music_set_situation_with_culture", mtf_sit_arena),
+                       (call_script, "script_music_set_situation_with_culture", mtf_sit_arena),
                        ]),
   (0, 0, ti_once, [], [(eq, "$g_mt_mode", abm_brawl),
                        (assign, "$g_arena_training_max_opponents", 10), #tocan 40
                        (assign, "$g_arena_training_num_agents_spawned", 0),
                        (assign, "$g_arena_training_kills", 0),
                        (assign, "$g_arena_training_won", 0),
-                       # (call_script, "script_music_set_situation_with_culture", mtf_sit_arena),
+                       (call_script, "script_music_set_situation_with_culture", mtf_sit_arena),
                        (set_fixed_point_multiplier, 100),
                        (try_for_agents, ":agent_id"), #tocan to make visitor animations desync
                            (agent_get_entry_no, ":entry", ":agent_id"),
@@ -8141,15 +8141,15 @@ mission_templates = [
       [
         (store_current_scene, ":cur_scene"),
         (scene_set_slot, ":cur_scene", slot_scene_visited, 1),
-        # (try_begin),
-          # (eq, "$sneaked_into_town", 1),
-          # (call_script, "script_music_set_situation_with_culture", mtf_sit_town_infiltrate),
-        # (else_try),
-          # (eq, "$talk_context", tc_tavern_talk),
-          # (call_script, "script_music_set_situation_with_culture", mtf_sit_tavern),
-        # (else_try),
-          # (call_script, "script_music_set_situation_with_culture", mtf_sit_town),
-        # (try_end),
+        (try_begin),
+          (eq, "$sneaked_into_town", 1),
+          (call_script, "script_music_set_situation_with_culture", mtf_sit_town_infiltrate),
+        (else_try),
+          (eq, "$talk_context", tc_tavern_talk),
+          (call_script, "script_music_set_situation_with_culture", mtf_sit_tavern),
+        (else_try),
+          (call_script, "script_music_set_situation_with_culture", mtf_sit_town),
+        (try_end),
       ]),
 	  
 	#loud robbery/raid unalarmed guards occasionally walk towards the player position - krag
@@ -9194,12 +9194,12 @@ mission_templates = [
           (scene_set_slot, ":cur_scene", slot_scene_visited, 1),
         (try_end),
         (call_script, "script_init_town_walker_agents"),
-        # (try_begin),
-          # (eq, "$sneaked_into_town", 1),
-          # (call_script, "script_music_set_situation_with_culture", mtf_sit_town_infiltrate),
-        # (else_try),
-          # (call_script, "script_music_set_situation_with_culture", mtf_sit_town),
-        # (try_end),
+        (try_begin),
+          (eq, "$sneaked_into_town", 1),
+          (call_script, "script_music_set_situation_with_culture", mtf_sit_town_infiltrate),
+        (else_try),
+          (call_script, "script_music_set_situation_with_culture", mtf_sit_town),
+        (try_end),
       ]),
 
       (ti_inventory_key_pressed, 0, 0,
@@ -9611,7 +9611,7 @@ mission_templates = [
           (store_current_scene, ":cur_scene"),
           (scene_set_slot, ":cur_scene", slot_scene_visited, 1),
           (call_script, "script_init_town_walker_agents"),
-          # (call_script, "script_music_set_situation_with_culture", mtf_sit_travel),
+          (call_script, "script_music_set_situation_with_culture", mtf_sit_travel),
         ]),
       (ti_before_mission_start, 0, 0, [], [(call_script, "script_change_banners_and_chest")]),
       (ti_inventory_key_pressed, 0, 0, [
@@ -9895,7 +9895,7 @@ mission_templates = [
 
       (0, 0, ti_once, [],
        [
-         # (call_script, "script_music_set_situation_with_culture", mtf_sit_ambushed),
+         (call_script, "script_music_set_situation_with_culture", mtf_sit_ambushed),
          (set_party_battle_mode),
          # (party_slot_eq, "$current_town", slot_party_type, spt_town),
          # (call_script, "script_town_init_doors", 0),
@@ -10133,8 +10133,8 @@ mission_templates = [
               (store_faction_of_party, ":center_faction", "$current_town"),
               (faction_slot_eq, ":center_faction", slot_faction_ai_state, sfai_feast),
               (faction_slot_eq, ":center_faction", slot_faction_ai_object, "$current_town"),
-              # (call_script, "script_music_set_situation_with_culture", mtf_sit_feast),
-              # #(call_script, "script_music_set_situation_with_culture", mtf_sit_lords_hall),
+              (call_script, "script_music_set_situation_with_culture", mtf_sit_feast),
+              #(call_script, "script_music_set_situation_with_culture", mtf_sit_lords_hall),
             (try_end),
             (mission_cam_set_screen_color, 0xFF736252), #roughly the colour of the menu bg
             (mission_cam_animate_to_screen_color, 0x00736252, 1500),
@@ -10142,7 +10142,7 @@ mission_templates = [
             (eq, ":no_fade", 0),
             (mission_cam_set_screen_color, 0xFF010203), #roughly dungeon moss/lichen colours
             (mission_cam_animate_to_screen_color, 0x00000000, 3000),
-            # (call_script, "script_music_set_situation_with_culture", 0), #prison
+            (call_script, "script_music_set_situation_with_culture", 0), #prison
           (try_end),
         (try_end),
         ]),
@@ -10359,10 +10359,10 @@ mission_templates = [
       (ti_tab_pressed, 0, 0, [(display_message,"str_cannot_leave_now",message_alert)], []),
       (ti_before_mission_start, 0, 0, [], [(call_script, "script_change_banners_and_chest")]),
 
-      # (0, 0, ti_once, [],
-       # [
-         # (call_script, "script_music_set_situation_with_culture", mtf_sit_ambushed),
-         # ]),
+      (0, 0, ti_once, [],
+       [
+         (call_script, "script_music_set_situation_with_culture", mtf_sit_ambushed),
+         ]),
 
       (0, 0, ti_once, [
           (store_mission_timer_a,":cur_time"),
@@ -10438,10 +10438,10 @@ mission_templates = [
       (ti_tab_pressed, 0, 0, [(display_message,"str_cannot_leave_now",message_alert)], []),
       (ti_before_mission_start, 0, 0, [], [(call_script, "script_change_banners_and_chest")]),
 
-      # (0, 0, ti_once, [],
-       # [
-         # (call_script, "script_music_set_situation_with_culture", mtf_sit_fight),
-         # ]),
+      (0, 0, ti_once, [],
+       [
+         (call_script, "script_music_set_situation_with_culture", mtf_sit_fight),
+         ]),
 
       (1, 4, ti_once, [(this_or_next|main_hero_fallen),(num_active_teams_le,1)],
        [
@@ -10712,7 +10712,7 @@ mission_templates = [
          (neq, ":troop_id", "trp_dog_companion"),
          (neq, ":troop_id", "trp_bot_companion"),
          (neq, ":troop_id", "trp_car_gunner"),
-         (neq, ":troop_id", "trp_chopper_pilot"),
+         (neq, ":troop_id", "trp_aircraft_pilot"),
          (neq, ":troop_id", "trp_bus_gunner"),
 
          (call_script, "script_agent_reassign_team", ":agent_no"),
@@ -10952,7 +10952,7 @@ mission_templates = [
             (neq, ":troop_id", "trp_dog_companion"),
             (neq, ":troop_id", "trp_bot_companion"),
             (neq, ":troop_id", "trp_car_gunner"),
-            (neq, ":troop_id", "trp_chopper_pilot"),
+            (neq, ":troop_id", "trp_aircraft_pilot"),
             # (neq, ":troop_id", "trp_havoc_pilot"),
             (neq, ":troop_id", "trp_bus_gunner"),
             (troop_get_type,":troop_type",":troop_id"),
@@ -11372,7 +11372,7 @@ mission_templates = [
                            (call_script, "script_init_death_cam"),
                            # (assign, "$g_dplmc_charge_when_dead", 1),
                            ##diplomacy end
-                           # (call_script, "script_music_set_situation_with_culture", mtf_sit_ambushed),
+                           (call_script, "script_music_set_situation_with_culture", mtf_sit_ambushed),
                             ## HOLD ON START
                            (get_player_agent_no, "$g_player"),
                            (agent_get_team, ":player_team", "$g_player"),
@@ -11461,7 +11461,7 @@ mission_templates = [
                            (call_script, "script_init_death_cam"),
                            # (assign, "$g_dplmc_charge_when_dead", 1),
                            ##diplomacy end
-                           # (call_script, "script_music_set_situation_with_culture", mtf_sit_ambushed),
+                           (call_script, "script_music_set_situation_with_culture", mtf_sit_ambushed),
                            ## HOLD ON START
                            (get_player_agent_no, "$g_player"),
                            (agent_get_team, ":player_team", "$g_player"),
@@ -11669,7 +11669,7 @@ mission_templates = [
       (1, 0, ti_once, [],
        [
          (play_sound,"snd_sneak_town_halt"),
-         # (call_script, "script_music_set_situation_with_culture", mtf_sit_fight),
+         (call_script, "script_music_set_situation_with_culture", mtf_sit_fight),
          ]),
 
       (0, 3, 0,
@@ -12005,10 +12005,10 @@ mission_templates = [
       # (ti_tab_pressed, 0, 0, [(display_message, "str_cannot_leave_now")], []),
       # (ti_before_mission_start, 0, 0, [], [(call_script, "script_change_banners_and_chest")]),
 
-      # (0, 0, ti_once, [],
-       # [
-         # (call_script, "script_music_set_situation_with_culture", mtf_sit_arena),
-         # ]),
+      (0, 0, ti_once, [],
+       [
+         (call_script, "script_music_set_situation_with_culture", mtf_sit_arena),
+         ]),
 
 
 	# #NOTE -- THIS IS A VESTIGIAL SCRIPT. FOR LORD DUELS, USE THE NEXT SCRIPT DOWN
@@ -12099,10 +12099,10 @@ mission_templates = [
             (finish_mission),
           (try_end),
       ]),
-      # (0, 0, ti_once, [],
-       # [
-         # (call_script, "script_music_set_situation_with_culture", mtf_sit_arena),
-         # ]),
+      (0, 0, ti_once, [],
+       [
+         (call_script, "script_music_set_situation_with_culture", mtf_sit_arena),
+         ]),
 
 
       (1, 4, ti_once, [
@@ -13026,15 +13026,15 @@ mission_templates = [
         (assign, "$dialog_with_merchant_ended", 0),
         (store_current_scene, ":cur_scene"),
         (scene_set_slot, ":cur_scene", slot_scene_visited, 1),
-        # (try_begin),
-          # (gt, "$sneaked_into_town", disguise_none),
-          # (call_script, "script_music_set_situation_with_culture", mtf_sit_town_infiltrate),
-        # (else_try),
-          # (eq, "$talk_context", tc_tavern_talk),
-          # (call_script, "script_music_set_situation_with_culture", mtf_sit_tavern),
-        # (else_try),
-          # (call_script, "script_music_set_situation_with_culture", mtf_sit_town),
-        # (try_end),
+        (try_begin),
+          (gt, "$sneaked_into_town", disguise_none),
+          (call_script, "script_music_set_situation_with_culture", mtf_sit_town_infiltrate),
+        (else_try),
+          (eq, "$talk_context", tc_tavern_talk),
+          (call_script, "script_music_set_situation_with_culture", mtf_sit_tavern),
+        (else_try),
+          (call_script, "script_music_set_situation_with_culture", mtf_sit_town),
+        (try_end),
       ]),
 
       (1, 0, 0,
@@ -13751,7 +13751,7 @@ mission_templates = [
             [
             (mission_disable_talk),
             (music_set_situation, mtf_sit_main_title),
-            (play_track, "track_rainy_night_in_tallinn", 2),
+            #(play_track, "track_rainy_night_in_tallinn", 2),
 
             ]),
 #cam

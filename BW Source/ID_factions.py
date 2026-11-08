@@ -42,4 +42,4 @@ fac_infected = 40
 fac_mutants = 41
 fac_undeads = 42
 fac_peasant_rebels = 43
-fac_noble_refugees = 44
+fac_vehicle_crew = 44

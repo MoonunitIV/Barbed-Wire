@@ -855,21 +855,21 @@ simple_triggers = [
       (try_end),
      # (try_end),
 
-      (try_begin),
-        (key_clicked, key_page_up),
-        (key_is_down, key_page_up),
-        # (key_clicked, key_r),
-        # (key_is_down, key_r),
-        (call_script, "script_musicplayer",0),
+      # (try_begin),
+        # (key_clicked, key_page_up),
+        # (key_is_down, key_page_up),
+        # # (key_clicked, key_r),
+        # # (key_is_down, key_r),
+        # (call_script, "script_musicplayer",0),
 
-      (else_try),
-        (key_clicked, key_page_down),
-        (key_is_down, key_page_down),
-        # (key_clicked, key_t),
-        # (key_is_down, key_t),
+      # (else_try),
+        # (key_clicked, key_page_down),
+        # (key_is_down, key_page_down),
+        # # (key_clicked, key_t),
+        # # (key_is_down, key_t),
 
-        (call_script, "script_musicplayer",1),
-      (try_end),
+        # (call_script, "script_musicplayer",1),
+      # (try_end),
 
       (str_store_string_reg, s1, s90), # make back up of s1 as it gets overwritten by game_get_date_text
     ]),
@@ -1399,12 +1399,12 @@ simple_triggers = [
      (try_end),
 
 #Music,	#disabled as changes too frequently and abruptly
-     # (try_begin),
-       # (map_free),
-        # (party_get_current_terrain, ":terrain_type", "p_main_party"),
-        # (call_script, "script_warzone_ambience_sound",":terrain_type"),
-        # # (call_script, "script_music_set_situation_with_culture", mtf_sit_travel),
-     # (try_end),
+     (try_begin),
+       (map_free),
+        (party_get_current_terrain, ":terrain_type", "p_main_party"),
+        (call_script, "script_warzone_ambience_sound",":terrain_type"),
+        (call_script, "script_music_set_situation_with_culture", mtf_sit_travel),
+     (try_end),
 
 #SB : debug block
      (try_begin),

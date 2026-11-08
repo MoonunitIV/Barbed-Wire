@@ -4766,7 +4766,7 @@ scene_props = [
       (agent_set_slot, reg0, slot_agent_rides_x, reg4),
       (agent_set_slot, reg4, slot_agent_horse_prop, ":instance"),
     ]),]),
-("vehicle_car_3", sokf_destructible|sokf_moveable, "jeep_3", "0", [
+("vehicle_car_3", sokf_destructible|sokf_moveable, "vehicle4", "0", [
     (ti_on_scene_prop_init,[
       (set_fixed_point_multiplier, 100),
       (store_trigger_param_1, ":instance"),
@@ -5013,7 +5013,7 @@ scene_props = [
       (agent_set_slot, reg0, slot_agent_rides_x, reg4),
       (agent_set_slot, reg4, slot_agent_horse_prop, ":instance"),
     ]),]),
-("vehicle_chopper_1", sokf_destructible|sokf_moveable, "chopper", "bo_chopper", [
+("vehicle_chopper_1", sokf_destructible|sokf_moveable, "zeppelin_red", "bo_chopper", [
     (ti_on_scene_prop_init,[
       (set_fixed_point_multiplier, 100),
       (store_trigger_param_1, ":instance"),
@@ -5035,7 +5035,7 @@ scene_props = [
       # (scene_prop_set_slot, ":instance", scene_prop_attached_left_rear, ":instance_3"),
       (scene_prop_set_slot, ":instance_1", scene_prop_rotation, 0),
       (scene_prop_set_slot, ":instance_2", scene_prop_rotation, 0),
-      (assign, ":troop", "trp_chopper_pilot"),
+      (assign, ":troop", "trp_aircraft_pilot"),
       (position_move_z, pos1, 1900, 0),
       # (position_move_z, pos1, 1900, 0),
       # (position_move_y, pos1, 0, 0),
@@ -5115,7 +5115,7 @@ scene_props = [
 		# #(particle_system_burst, "psys_village_fire_smoke_big", pos12, 100),
     ]),
 	]),
-("vehicle_chopper_2",sokf_destructible|sokf_moveable, "chopper_2", "bo_chopper", [
+("vehicle_chopper_2",sokf_destructible|sokf_moveable, "zeppelin", "bo_chopper", [
      (ti_on_scene_prop_init,[
       (set_fixed_point_multiplier, 100),
       (store_trigger_param_1, ":instance"),
@@ -5137,7 +5137,7 @@ scene_props = [
       # (scene_prop_set_slot, ":instance", scene_prop_attached_left_rear, ":instance_3"),
       (scene_prop_set_slot, ":instance_1", scene_prop_rotation, 0),
       (scene_prop_set_slot, ":instance_2", scene_prop_rotation, 0),
-      (assign, ":troop", "trp_chopper_pilot"),
+      (assign, ":troop", "trp_aircraft_pilot"),
       (position_move_z, pos1, 1900, 0),
       # (position_move_z, pos1, 1900, 0),
       # (position_move_y, pos1, 0, 0),

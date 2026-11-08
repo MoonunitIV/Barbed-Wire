@@ -2379,9 +2379,9 @@ ammo_arty                      = 11
 ammo_rocket                    = 12
 ammo_grenade                   = 13
 
-skl_crafting = "skl_reserved_9"
-skl_scavenger = "skl_reserved_14"
-skl_luck = "skl_reserved_15"
+skl_crafting = "skl_crafting"
+skl_scavenger = "skl_scavenging"
+skl_luck = "skl_lucky"
 
 
 #tocan scene maker

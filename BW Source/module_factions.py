@@ -178,8 +178,8 @@ factions = [
       ("cannibals", -0.15),
   ], [], 0xFF0088),   #pink alt:E2007C
   ("undeads","Undeads", max_player_rating(-30), 0.5,[("commoners",-0.7),("player_faction",-0.5)], []),
-  ("peasant_rebels","Peasant Rebels", 0, 1.0,[("noble_refugees",-1.0),("player_faction",-0.4)], []),
-  ("noble_refugees","Noble Refugees", 0, 0.5,[], []),
+  ("peasant_rebels","Peasant Rebels", 0, 1.0,[("vehicle_crew",-1.0),("player_faction",-0.4)], []),
+  ("vehicle_crew","Noble Refugees", 0, 0.5,[], []),
 ]
 
 ##diplomacy start+ Define these for convenience

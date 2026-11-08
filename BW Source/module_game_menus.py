@@ -375,7 +375,7 @@ game_menus = [
 
       ("continue",[
         (eq, "$current_startup_quest_phase", 0),
-      ],"Start the path to your destiny (skip intro)",
+      ],"Start the path to your destiny (Spawn at a random town)",
        [
         (change_screen_map),
        ]),
@@ -693,9 +693,9 @@ game_menus = [
 
   (
     "choose_skill",mnf_disable_all_keys,
-    "In a world ravaged by war and chaos, you find yourself alone and struggling to survive. The once-great cities lay in ruins, and resources are scarce. The fate of humanity is uncertain and it's up to you to navigate this new world. Will you scavenge for supplies and build a life of solitude, or will you band together with other survivors to rebuild society? The choices are yours, and the consequences of your actions will shape the world around you. Good luck on your journey.",
+    "Yur - The one hospitable planet in the Astan System, Yur is mostly covered with rough, dangerous ocean, teeming with hardy predators that are constantly fighting for dominance and survival. On land, the creatures are not much different.",
     "none",[
-        (play_sound, "snd_ambient_nuke"),
+        #(play_sound, "snd_ambient_nuke"),
 	  ],[
       ("begin_adventuring",[],"Start the way to your destiny!",[
         (call_script, "script_change_player_party_morale", 100),
@@ -2347,18 +2347,18 @@ TOTAL:  {reg5}"),
            (call_script, "script_update_troop_location_notes", ":lady", 0),
          (try_end),
 		 
-		 (try_begin),#for mongol
-			(this_or_next|key_is_down, key_left_shift),
-			(key_is_down, key_right_shift),
-			(is_edit_mode_enabled),
-			(neq,"$g_warzone_music",1),
-			(call_script, "script_musicplayer",0),
-		  (else_try),
-			#(this_or_next|key_is_down, key_left_shift),
-			#(key_is_down, key_right_shift),
-			#(is_edit_mode_enabled),
-			(call_script, "script_musicplayer",1),
-		  (try_end),
+		 # (try_begin),#for mongol
+			# (this_or_next|key_is_down, key_left_shift),
+			# (key_is_down, key_right_shift),
+			# (is_edit_mode_enabled),
+			# (neq,"$g_warzone_music",1),
+			# (call_script, "script_musicplayer",0),
+		  # (else_try),
+			# #(this_or_next|key_is_down, key_left_shift),
+			# #(key_is_down, key_right_shift),
+			# #(is_edit_mode_enabled),
+			# (call_script, "script_musicplayer",1),
+		  # (try_end),
         ]
        ),
 
@@ -4217,8 +4217,8 @@ TOTAL:  {reg5}"),
        (eq, "$g_battle_result", 1),
        (eq, "$g_enemy_fit_for_battle", 0),
        (str_store_string, s11, "@You were victorious!"),
-# #       (play_track, "track_bogus"), #clear current track.
-# #       (call_script, "script_music_set_situation_with_culture", mtf_sit_victorious),
+       (play_track, "track_bogus"), #clear current track.
+       (call_script, "script_music_set_situation_with_culture", mtf_sit_victorious),
        (try_begin),
          (gt, "$g_friend_fit_for_battle", 1),
          (set_background_mesh, "mesh_pic_victory"),
@@ -10143,12 +10143,12 @@ TOTAL:  {reg5}"),
     # "{s10} {s14}^{s11}{s12}{s13}",
     "none",
     [
-        # (try_begin),
-          # (gt, "$sneaked_into_town", disguise_none),
-          # (call_script, "script_music_set_situation_with_culture", mtf_sit_town_infiltrate),
-        # (else_try),
-          # (call_script, "script_music_set_situation_with_culture", mtf_sit_travel),
-        # (try_end),
+        (try_begin),
+          (gt, "$sneaked_into_town", disguise_none),
+          (call_script, "script_music_set_situation_with_culture", mtf_sit_town_infiltrate),
+        (else_try),
+          (call_script, "script_music_set_situation_with_culture", mtf_sit_travel),
+        (try_end),
         (store_encountered_party, "$current_town"),
 
         (try_begin),
@@ -17316,6 +17316,7 @@ TOTAL:  {reg5}"),
 (gt, ":party_capacity", 0),
 (val_min, ":volunteer_amount", ":party_capacity"),
 (try_end),
+(assign, ":volunteer_amount", 1),
 (assign, reg5, ":volunteer_amount"),
 (assign, reg7, 0),
 (try_begin),
@@ -17398,6 +17399,7 @@ TOTAL:  {reg5}"),
 (gt, ":party_capacity", 0),
 (val_min, ":volunteer_amount", ":party_capacity"),
 (try_end),
+(val_div, ":volunteer_amount", 3),
 (assign, reg5, ":volunteer_amount"),
 (assign, reg7, 0),
 (try_begin),
@@ -20923,7 +20925,7 @@ TOTAL:  {reg5}"),
    "none",
    [
    (set_background_mesh, "mesh_pic_defeat"),
-   (play_track, "track_player_death"),
+   (play_track, "track_defeated_by_neutral"),
    ],
     [
       ("continue", [], "Continue",
@@ -20938,7 +20940,7 @@ TOTAL:  {reg5}"),
    "none",
    [
    (set_background_mesh, "mesh_pic_defeat"),
-   (play_track, "track_player_death"),
+   (play_track, "track_defeated_by_neutral"),
    ],
     [
       ("continue", [], "Continue",
@@ -21713,7 +21715,7 @@ TOTAL:  {reg5}"),
     "none",
     [
 
-        # (call_script, "script_music_set_situation_with_culture", mtf_sit_travel),
+        (call_script, "script_music_set_situation_with_culture", mtf_sit_travel),
         (store_encountered_party, "$current_town"),
 
         (assign, "$talk_context", 0),
@@ -21832,7 +21834,7 @@ TOTAL:  {reg5}"),
     "none",
     [
 
-        # (call_script, "script_music_set_situation_with_culture", mtf_sit_travel),
+        (call_script, "script_music_set_situation_with_culture", mtf_sit_travel),
         (store_encountered_party, "$current_town"),
 
         (assign, "$talk_context", 0),

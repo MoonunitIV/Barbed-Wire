@@ -1,6 +1,4 @@
 from header_music import *
-
-from compiler import *
 ####################################################################################################################
 #  Each track record contains the following fields:
 #  1) Track id: used for referencing tracks.
@@ -12,47 +10,122 @@ from compiler import *
 # WARNING: You MUST add mtf_module_track flag to the flags of the tracks located under module directory
 
 tracks = [
-  ("bogus", "none.ogg", 0, 0),
-  ("captured", "birds_1.ogg", mtf_persist_until_finished, 0),
-  ("empty_village", "birds_1.ogg", mtf_persist_until_finished, 0),
-  ("escape", "birds_1.ogg", mtf_persist_until_finished, 0),
-  ("victorious_evil", "birds_1.ogg", mtf_persist_until_finished, 0),
-  ("wedding", "wedding.ogg", mtf_persist_until_finished, 0),
-  ("coronation", "birds_1.ogg", mtf_persist_until_finished, 0),
-##new
-  ("player_death", "amazing.ogg",mtf_persist_until_finished|mtf_sit_killed, 0),
-#main
-  ("ross_bugden_something_wicked", "ross_bugden_something_wicked.ogg",mtf_module_track|mtf_culture_all, 0), #mtf_sit_main_title|mtf_start_immediately
-  ("rainy_night_in_tallinn", "RAINY_NIGHT_IN_TALLINN.ogg",mtf_module_track, 0),
-  
-  #("ambient_sandstorm", "amb_sandstorm_lp.wav",mtf_module_track, 0),
-#custom
-  ("custom_0", "The_Ink_Spots_-_Maybe.ogg",mtf_module_track|mtf_culture_all|mtf_sit_travel|mtf_sit_fight|mtf_sit_multiplayer_fight|mtf_sit_ambushed|mtf_sit_town_infiltrate|mtf_sit_arena|mtf_sit_siege|mtf_sit_encounter_hostile, mtf_culture_all|mtf_sit_travel|mtf_sit_fight|mtf_sit_multiplayer_fight|mtf_sit_ambushed|mtf_sit_town_infiltrate|mtf_sit_arena|mtf_sit_siege|mtf_sit_encounter_hostile),
-  ("custom_1", "laura-branigan_self_control.ogg",mtf_module_track|mtf_culture_all|mtf_sit_travel|mtf_sit_fight|mtf_sit_multiplayer_fight|mtf_sit_ambushed|mtf_sit_town_infiltrate|mtf_sit_arena|mtf_sit_siege|mtf_sit_encounter_hostile, mtf_culture_all|mtf_sit_travel|mtf_sit_fight|mtf_sit_multiplayer_fight|mtf_sit_ambushed|mtf_sit_town_infiltrate|mtf_sit_arena|mtf_sit_siege|mtf_sit_encounter_hostile),
-  ("custom_2", "abba_lay_all_your_love_on_me.ogg",mtf_module_track|mtf_culture_all|mtf_sit_travel|mtf_sit_fight|mtf_sit_multiplayer_fight|mtf_sit_ambushed|mtf_sit_town_infiltrate|mtf_sit_arena|mtf_sit_siege|mtf_sit_encounter_hostile, mtf_culture_all|mtf_sit_travel|mtf_sit_fight|mtf_sit_multiplayer_fight|mtf_sit_ambushed|mtf_sit_town_infiltrate|mtf_sit_arena|mtf_sit_siege|mtf_sit_encounter_hostile),
-  ("custom_3", "desireless_voyage_voyage.ogg",mtf_module_track|mtf_culture_all|mtf_sit_travel|mtf_sit_fight|mtf_sit_multiplayer_fight|mtf_sit_ambushed|mtf_sit_town_infiltrate|mtf_sit_arena|mtf_sit_siege|mtf_sit_encounter_hostile, mtf_culture_all|mtf_sit_travel|mtf_sit_fight|mtf_sit_multiplayer_fight|mtf_sit_ambushed|mtf_sit_town_infiltrate|mtf_sit_arena|mtf_sit_siege|mtf_sit_encounter_hostile),
-  ("custom_4", "george-michael_careless_whisper.ogg",mtf_module_track|mtf_culture_all|mtf_sit_travel|mtf_sit_fight|mtf_sit_multiplayer_fight|mtf_sit_ambushed|mtf_sit_town_infiltrate|mtf_sit_arena|mtf_sit_siege|mtf_sit_encounter_hostile, mtf_culture_all|mtf_sit_travel|mtf_sit_fight|mtf_sit_multiplayer_fight|mtf_sit_ambushed|mtf_sit_town_infiltrate|mtf_sit_arena|mtf_sit_siege|mtf_sit_encounter_hostile),
-  ("custom_5", "queen_another_one_bites_the_dust.ogg",mtf_module_track|mtf_culture_all|mtf_sit_travel|mtf_sit_fight|mtf_sit_multiplayer_fight|mtf_sit_ambushed|mtf_sit_town_infiltrate|mtf_sit_arena|mtf_sit_siege|mtf_sit_encounter_hostile, mtf_culture_all|mtf_sit_travel|mtf_sit_fight|mtf_sit_multiplayer_fight|mtf_sit_ambushed|mtf_sit_town_infiltrate|mtf_sit_arena|mtf_sit_siege|mtf_sit_encounter_hostile),
-  ("custom_6", "Sonne_Rammstein.ogg",mtf_module_track|mtf_culture_all|mtf_sit_travel|mtf_sit_fight|mtf_sit_multiplayer_fight|mtf_sit_ambushed|mtf_sit_town_infiltrate|mtf_sit_arena|mtf_sit_siege|mtf_sit_encounter_hostile, mtf_culture_all|mtf_sit_travel|mtf_sit_fight|mtf_sit_multiplayer_fight|mtf_sit_ambushed|mtf_sit_town_infiltrate|mtf_sit_arena|mtf_sit_siege|mtf_sit_encounter_hostile),
-  ("custom_7", "Lil_Baby_Woah.ogg",mtf_module_track|mtf_culture_all|mtf_sit_travel|mtf_sit_fight|mtf_sit_multiplayer_fight|mtf_sit_ambushed|mtf_sit_town_infiltrate|mtf_sit_arena|mtf_sit_siege|mtf_sit_encounter_hostile, mtf_culture_all|mtf_sit_travel|mtf_sit_fight|mtf_sit_multiplayer_fight|mtf_sit_ambushed|mtf_sit_town_infiltrate|mtf_sit_arena|mtf_sit_siege|mtf_sit_encounter_hostile),
-  ("custom_8", "Goosebumps.ogg",mtf_module_track|mtf_culture_all|mtf_sit_travel|mtf_sit_fight|mtf_sit_multiplayer_fight|mtf_sit_ambushed|mtf_sit_town_infiltrate|mtf_sit_arena|mtf_sit_siege|mtf_sit_encounter_hostile, mtf_culture_all|mtf_sit_travel|mtf_sit_fight|mtf_sit_multiplayer_fight|mtf_sit_ambushed|mtf_sit_town_infiltrate|mtf_sit_arena|mtf_sit_siege|mtf_sit_encounter_hostile),
-  ("custom_9", "02_Enter_Shikari.ogg",mtf_module_track|mtf_culture_all|mtf_sit_travel|mtf_sit_fight|mtf_sit_multiplayer_fight|mtf_sit_ambushed|mtf_sit_town_infiltrate|mtf_sit_arena|mtf_sit_siege|mtf_sit_encounter_hostile, mtf_culture_all|mtf_sit_travel|mtf_sit_fight|mtf_sit_multiplayer_fight|mtf_sit_ambushed|mtf_sit_town_infiltrate|mtf_sit_arena|mtf_sit_siege|mtf_sit_encounter_hostile),
-  ("custom_10", "12_Sorry_Youre_Not_a_Winner.ogg",mtf_module_track|mtf_culture_all|mtf_sit_travel|mtf_sit_fight|mtf_sit_multiplayer_fight|mtf_sit_ambushed|mtf_sit_town_infiltrate|mtf_sit_arena|mtf_sit_siege|mtf_sit_encounter_hostile, mtf_culture_all|mtf_sit_travel|mtf_sit_fight|mtf_sit_multiplayer_fight|mtf_sit_ambushed|mtf_sit_town_infiltrate|mtf_sit_arena|mtf_sit_siege|mtf_sit_encounter_hostile),
-  ("custom_11", "Ich_tu_dir_weh.ogg",mtf_module_track|mtf_culture_all|mtf_sit_travel|mtf_sit_fight|mtf_sit_multiplayer_fight|mtf_sit_ambushed|mtf_sit_town_infiltrate|mtf_sit_arena|mtf_sit_siege|mtf_sit_encounter_hostile, mtf_culture_all|mtf_sit_travel|mtf_sit_fight|mtf_sit_multiplayer_fight|mtf_sit_ambushed|mtf_sit_town_infiltrate|mtf_sit_arena|mtf_sit_siege|mtf_sit_encounter_hostile),
-  ("custom_12", "In_the_Army_Now.ogg",mtf_module_track|mtf_culture_all|mtf_sit_travel|mtf_sit_fight|mtf_sit_multiplayer_fight|mtf_sit_ambushed|mtf_sit_town_infiltrate|mtf_sit_arena|mtf_sit_siege|mtf_sit_encounter_hostile, mtf_culture_all|mtf_sit_travel|mtf_sit_fight|mtf_sit_multiplayer_fight|mtf_sit_ambushed|mtf_sit_town_infiltrate|mtf_sit_arena|mtf_sit_siege|mtf_sit_encounter_hostile),
-  ("custom_13", "Where_Is_My_Mind.ogg",mtf_module_track|mtf_culture_all|mtf_sit_travel|mtf_sit_fight|mtf_sit_multiplayer_fight|mtf_sit_ambushed|mtf_sit_town_infiltrate|mtf_sit_arena|mtf_sit_siege|mtf_sit_encounter_hostile, mtf_culture_all|mtf_sit_travel|mtf_sit_fight|mtf_sit_multiplayer_fight|mtf_sit_ambushed|mtf_sit_town_infiltrate|mtf_sit_arena|mtf_sit_siege|mtf_sit_encounter_hostile),
-  ("custom_14", "99_Luftballons.ogg",mtf_module_track|mtf_culture_all|mtf_sit_travel|mtf_sit_fight|mtf_sit_multiplayer_fight|mtf_sit_ambushed|mtf_sit_town_infiltrate|mtf_sit_arena|mtf_sit_siege|mtf_sit_encounter_hostile, mtf_culture_all|mtf_sit_travel|mtf_sit_fight|mtf_sit_multiplayer_fight|mtf_sit_ambushed|mtf_sit_town_infiltrate|mtf_sit_arena|mtf_sit_siege|mtf_sit_encounter_hostile),
-  ("custom_15", "Coolio_-_Gangstas_Paradise_feat._L.V._Official_Music_Video.ogg",mtf_module_track|mtf_culture_all|mtf_sit_travel|mtf_sit_fight|mtf_sit_multiplayer_fight|mtf_sit_ambushed|mtf_sit_town_infiltrate|mtf_sit_arena|mtf_sit_siege|mtf_sit_encounter_hostile, mtf_culture_all|mtf_sit_travel|mtf_sit_fight|mtf_sit_multiplayer_fight|mtf_sit_ambushed|mtf_sit_town_infiltrate|mtf_sit_arena|mtf_sit_siege|mtf_sit_encounter_hostile),
-  ("custom_16", "move_slow.ogg",mtf_module_track|mtf_culture_all|mtf_sit_travel|mtf_sit_fight|mtf_sit_multiplayer_fight|mtf_sit_ambushed|mtf_sit_town_infiltrate|mtf_sit_arena|mtf_sit_siege|mtf_sit_encounter_hostile, mtf_culture_all|mtf_sit_travel|mtf_sit_fight|mtf_sit_multiplayer_fight|mtf_sit_ambushed|mtf_sit_town_infiltrate|mtf_sit_arena|mtf_sit_siege|mtf_sit_encounter_hostile),
-  ("custom_17", "killshot.ogg",mtf_module_track|mtf_culture_all|mtf_sit_travel|mtf_sit_fight|mtf_sit_multiplayer_fight|mtf_sit_ambushed|mtf_sit_town_infiltrate|mtf_sit_arena|mtf_sit_siege|mtf_sit_encounter_hostile, mtf_culture_all|mtf_sit_travel|mtf_sit_fight|mtf_sit_multiplayer_fight|mtf_sit_ambushed|mtf_sit_town_infiltrate|mtf_sit_arena|mtf_sit_siege|mtf_sit_encounter_hostile),
+##  ("losing_battle", "alosingbattle.mp3", sit_calm|sit_action),
+##  ("reluctant_hero", "reluctanthero.mp3", sit_action),
+##  ("the_great_hall", "thegreathall.mp3", sit_calm),
+##  ("requiem", "requiem.mp3", sit_calm),
+##  ("silent_intruder", "silentintruder.mp3", sit_calm|sit_action),
+##  ("the_pilgrimage", "thepilgrimage.mp3", sit_calm),
+##  ("ambushed", "ambushed.mp3", sit_action),
+##  ("triumph", "triumph.mp3", sit_action),
 
+##  ("losing_battle", "alosingbattle.mp3", mtf_sit_map_travel|mtf_sit_attack),
+##  ("reluctant_hero", "reluctanthero.mp3", mtf_sit_attack),
+##  ("the_great_hall", "thegreathall.mp3", mtf_sit_map_travel),
+##  ("requiem", "requiem.mp3", mtf_sit_map_travel),
+##  ("silent_intruder", "silentintruder.mp3", mtf_sit_map_travel|mtf_sit_attack),
+##  ("the_pilgrimage", "thepilgrimage.mp3", mtf_sit_map_travel),
+##  ("ambushed", "ambushed.mp3", mtf_sit_attack),
+##  ("triumph", "triumph.mp3", mtf_sit_attack),
+  ("bogus", "cant_find_this.ogg", 0, 0),
+  ("mount_and_blade_title_screen", "new_beginnings.ogg", mtf_sit_main_title|mtf_start_immediately|mtf_module_track, 0),
+
+  ("ambushed_by_neutral", "casualty.ogg", mtf_sit_ambushed|mtf_sit_siege, mtf_sit_fight|mtf_sit_multiplayer_fight|mtf_module_track),
+  ("ambushed_by_khergit", "anima.ogg", mtf_culture_3|mtf_sit_ambushed|mtf_sit_siege, mtf_sit_fight|mtf_sit_multiplayer_fight|mtf_culture_all|mtf_module_track),
+  ("ambushed_by_nord",    "patrol_bot.ogg", mtf_culture_4|mtf_sit_ambushed|mtf_sit_siege, mtf_sit_fight|mtf_sit_multiplayer_fight|mtf_culture_all|mtf_module_track),
+  ("ambushed_by_rhodok",  "alliance.ogg", mtf_culture_5|mtf_sit_ambushed|mtf_sit_siege, mtf_sit_fight|mtf_sit_multiplayer_fight|mtf_culture_all|mtf_module_track),
+  ("ambushed_by_swadian", "last_man_standing.ogg", mtf_culture_1|mtf_sit_ambushed|mtf_sit_siege, mtf_sit_fight|mtf_sit_multiplayer_fight|mtf_culture_all|mtf_module_track),
+  ("ambushed_by_vaegir",  "self_inflicted.ogg", mtf_culture_2|mtf_sit_ambushed|mtf_sit_siege, mtf_sit_fight|mtf_sit_multiplayer_fight|mtf_culture_all|mtf_module_track),
+  ("ambushed_by_sarranid", "bfg.ogg", mtf_culture_6|mtf_sit_ambushed|mtf_sit_siege, mtf_sit_fight|mtf_sit_multiplayer_fight|mtf_culture_all|mtf_module_track),
+  
+  ("arena_1", "the_witch.ogg", mtf_sit_arena|mtf_module_track, 0),
+#  ("arena_2", "arena_2.ogg", mtf_looping|mtf_sit_arena, 0),
+  ("armorer", "the_traveler.ogg", mtf_sit_travel|mtf_module_track, 0),
+  ("bandit_fight", "lost_vegas.ogg", mtf_sit_fight|mtf_sit_multiplayer_fight|mtf_sit_ambushed|mtf_module_track, 0),
+
+  ("calm_night_1", "elysium.ogg", mtf_sit_night, mtf_sit_town|mtf_sit_tavern|mtf_sit_travel|mtf_module_track),
+  ("captured", "capture.ogg", mtf_persist_until_finished, 0),
+  ("defeated_by_neutral", "defeated_by_neutral.ogg",mtf_persist_until_finished|mtf_sit_killed, 0),
+  ("defeated_by_neutral_2", "defeated_by_neutral_2.ogg", mtf_persist_until_finished|mtf_sit_killed, 0),
+  ("defeated_by_neutral_3", "defeated_by_neutral_3.ogg", mtf_persist_until_finished|mtf_sit_killed, 0),
+
+  ("empty_village", "empty_village.ogg", mtf_persist_until_finished, 0),
+  ("encounter_hostile_nords", "encounter_hostile_nords.ogg", mtf_persist_until_finished|mtf_sit_encounter_hostile, 0),
+  ("escape", "escape.ogg", mtf_persist_until_finished, 0),
+
+  ("fight_1", "sanity_unravels.ogg", mtf_sit_fight|mtf_sit_multiplayer_fight|mtf_sit_ambushed|mtf_module_track, 0),
+  ("fight_2", "the_bouncer.ogg", mtf_sit_fight|mtf_sit_multiplayer_fight|mtf_sit_ambushed|mtf_module_track, 0),
+  ("fight_3", "countach.ogg", mtf_sit_fight|mtf_sit_multiplayer_fight|mtf_sit_ambushed|mtf_module_track, 0),
+  ("fight_as_khergit", "tenebrae.ogg", mtf_culture_3|mtf_sit_fight|mtf_sit_multiplayer_fight|mtf_sit_ambushed|mtf_module_track, mtf_culture_all),
+  ("fight_4", "percussion_battery.ogg", mtf_sit_fight|mtf_sit_multiplayer_fight|mtf_sit_ambushed|mtf_module_track, 0),  
+  ("fight_as_nord", "tyrell_corporation.ogg", mtf_culture_4|mtf_sit_fight|mtf_sit_multiplayer_fight|mtf_sit_ambushed|mtf_module_track, mtf_culture_all),
+  ("fight_as_rhodok", "torn_flesh.ogg", mtf_culture_5|mtf_sit_fight|mtf_sit_multiplayer_fight|mtf_sit_ambushed|mtf_module_track, mtf_culture_all),
+#  ("fight_as_swadian", "fight_as_swadian.ogg", mtf_culture_1|mtf_sit_fight|mtf_sit_multiplayer_fight, mtf_culture_all),
+  ("fight_as_vaegir", "cosmic_death_machine.ogg", mtf_culture_2|mtf_sit_fight|mtf_sit_multiplayer_fight|mtf_sit_ambushed|mtf_module_track, mtf_culture_all),
+  ("fight_while_mounted_1", "night_crawler.ogg", mtf_sit_fight|mtf_sit_multiplayer_fight|mtf_sit_ambushed|mtf_module_track, 0),
+  ("fight_while_mounted_2", "doomed_to_survive.ogg", mtf_sit_fight|mtf_sit_multiplayer_fight|mtf_sit_ambushed|mtf_module_track, 0),
+  ("fight_while_mounted_3", "the_prophet.ogg", mtf_sit_fight|mtf_sit_multiplayer_fight|mtf_sit_ambushed|mtf_module_track, 0),
+  
+  ("infiltration_khergit", "unhuman.ogg", mtf_culture_3|mtf_sit_town_infiltrate|mtf_module_track, mtf_culture_all),
+
+  ("killed_by_khergit", "killed_by_khergit.ogg", mtf_persist_until_finished|mtf_culture_3|mtf_sit_killed, 0),
+#  ("killed_by_neutral", "killed_by_neutral.ogg", mtf_persist_until_finished|mtf_culture_6|mtf_sit_killed, 0),
+#  ("killed_by_nord", "killed_by_nord.ogg", mtf_persist_until_finished|mtf_culture_4|mtf_sit_killed, 0),
+#  ("killed_by_rhodok", "killed_by_rhodok.ogg", mtf_persist_until_finished|mtf_culture_5|mtf_sit_killed, 0),
+  ("killed_by_swadian", "killed_by_swadian.ogg", mtf_persist_until_finished|mtf_culture_1|mtf_sit_killed, 0),
+#  ("killed_by_vaegir", "killed_by_vaegir.ogg", mtf_persist_until_finished|mtf_culture_2|mtf_sit_killed, 0),
+  
+  ("lords_hall_khergit", "menace.ogg", mtf_culture_3|mtf_sit_travel, mtf_sit_town|mtf_sit_night|mtf_sit_tavern|mtf_culture_all|mtf_module_track),
+  ("lords_hall_nord", "empty_city.ogg", mtf_sit_travel, mtf_sit_town|mtf_sit_night|mtf_sit_tavern|mtf_module_track),
+  ("lords_hall_swadian", "lords_hall_swadian.ogg", mtf_sit_travel, mtf_sit_town|mtf_sit_night|mtf_sit_tavern),
+  ("lords_hall_rhodok", "lords_hall_rhodok.ogg", mtf_sit_travel, mtf_sit_town|mtf_sit_night|mtf_sit_tavern),
+  ("lords_hall_vaegir", "lords_hall_vaegir.ogg", mtf_sit_travel, mtf_sit_town|mtf_sit_night|mtf_sit_tavern),
+
+  ("mounted_snow_terrain_calm", "mounted_snow_terrain_calm.ogg", mtf_sit_travel, mtf_sit_town|mtf_sit_night|mtf_sit_night|mtf_sit_tavern),
+  ("neutral_infiltration", "neutral_infiltration.ogg", mtf_sit_town_infiltrate, 0),
+  ("outdoor_beautiful_land", "outdoor_beautiful_land.ogg", mtf_sit_travel, mtf_sit_town|mtf_sit_night|mtf_sit_night|mtf_sit_tavern),
+  ("retreat", "retreat.ogg", mtf_persist_until_finished|mtf_sit_killed, 0),
+
+  ("seige_neutral", "seige_neutral.ogg", mtf_sit_siege, mtf_sit_fight|mtf_sit_multiplayer_fight|mtf_sit_ambushed),
+  ("enter_the_juggernaut", "enter_the_juggernaut.ogg", mtf_sit_siege, mtf_sit_fight|mtf_sit_multiplayer_fight|mtf_sit_ambushed),  
+  ("siege_attempt", "siege_attempt.ogg", mtf_sit_siege, mtf_sit_fight|mtf_sit_multiplayer_fight|mtf_sit_ambushed),  
+  ("crazy_battle_music", "crazy_battle_music.ogg", mtf_sit_siege, mtf_sit_fight|mtf_sit_multiplayer_fight|mtf_sit_ambushed),
+  
+  ("tavern_1", "tavern_1.ogg", mtf_sit_tavern|mtf_sit_feast, 0),
+  ("tavern_2", "tavern_2.ogg", mtf_sit_tavern|mtf_sit_feast, 0),
+
+  ("town_neutral", "town_neutral.ogg", mtf_sit_town|mtf_sit_travel, mtf_sit_tavern|mtf_sit_night),
+  ("town_khergit", "town_khergit.ogg", mtf_culture_3|mtf_sit_town|mtf_sit_travel, mtf_sit_tavern|mtf_sit_night|mtf_culture_all),
+  ("town_nord", "town_nord.ogg", mtf_culture_4|mtf_sit_town|mtf_sit_travel, mtf_sit_tavern|mtf_sit_night|mtf_culture_all),
+  ("town_rhodok", "town_rhodok.ogg", mtf_culture_5|mtf_sit_town|mtf_sit_travel, mtf_sit_tavern|mtf_sit_night|mtf_culture_all),
+  ("town_swadian", "town_swadian.ogg", mtf_culture_1|mtf_sit_town|mtf_sit_travel, mtf_sit_tavern|mtf_sit_night|mtf_culture_all),
+  ("town_vaegir", "town_vaegir.ogg", mtf_culture_2|mtf_sit_town|mtf_sit_travel, mtf_sit_tavern|mtf_sit_night|mtf_culture_all),
+
+  ("travel_khergit", "travel_khergit.ogg", mtf_culture_3|mtf_sit_travel, mtf_sit_town|mtf_sit_tavern|mtf_sit_night|mtf_culture_all),
+  ("travel_neutral", "travel_neutral.ogg", mtf_sit_travel, mtf_sit_town|mtf_sit_tavern|mtf_sit_night),
+  ("travel_nord",    "travel_nord.ogg",    mtf_culture_4|mtf_sit_travel, mtf_sit_town|mtf_sit_tavern|mtf_sit_night|mtf_culture_all),
+  ("travel_rhodok",  "travel_rhodok.ogg",  mtf_culture_5|mtf_sit_travel, mtf_sit_town|mtf_sit_tavern|mtf_sit_night|mtf_culture_all),
+  ("travel_swadian", "travel_swadian.ogg", mtf_culture_1|mtf_sit_travel, mtf_sit_town|mtf_sit_tavern|mtf_sit_night|mtf_culture_all),
+  ("travel_vaegir",  "travel_vaegir.ogg",  mtf_culture_2|mtf_sit_travel, mtf_sit_town|mtf_sit_tavern|mtf_sit_night|mtf_culture_all),
+  ("travel_sarranid",  "middle_eastern_travel.ogg",  mtf_culture_6|mtf_sit_travel, mtf_sit_town|mtf_sit_tavern|mtf_sit_night|mtf_culture_all),
+
+  ("uncertain_homestead", "uncertain_homestead.ogg", mtf_sit_travel, mtf_sit_town|mtf_sit_night|mtf_sit_tavern),
+  ("hearth_and_brotherhood", "hearth_and_brotherhood.ogg", mtf_sit_travel, mtf_sit_town|mtf_sit_night|mtf_sit_tavern),
+  ("tragic_village", "tragic_village.ogg", mtf_sit_travel, mtf_sit_town|mtf_sit_night|mtf_sit_tavern),
+
+  ("victorious_evil", "victorious_evil.ogg", mtf_persist_until_finished, 0),
+  ("victorious_neutral_1", "victorious_neutral_1.ogg", mtf_persist_until_finished|mtf_sit_victorious, 0),
+  ("victorious_neutral_2", "victorious_neutral_2.ogg", mtf_persist_until_finished|mtf_sit_victorious, 0),
+  ("victorious_neutral_3", "victorious_neutral_3.ogg", mtf_persist_until_finished|mtf_sit_victorious, 0),
+
+  ("victorious_swadian", "victorious_swadian.ogg", mtf_persist_until_finished|mtf_culture_2|mtf_sit_victorious, 0),
+  ("victorious_vaegir", "victorious_vaegir.ogg", mtf_persist_until_finished|mtf_culture_2|mtf_sit_victorious, 0),
+  ("victorious_vaegir_2", "victorious_vaegir_2.ogg", mtf_persist_until_finished|mtf_culture_2|mtf_sit_victorious, 0),
+  ("wedding", "wedding.ogg", mtf_persist_until_finished, 0),
+
+  ("coronation", "coronation.ogg", mtf_persist_until_finished, 0),
+
+
+
+  
 ]
-# modmerger_start version=201 type=4
-try:
-    component_name = "music"
-    var_set = { "tracks":tracks, }
-    from modmerger import modmerge
-    modmerge(var_set, component_name)
-except:
-    raise
-# modmerger_end

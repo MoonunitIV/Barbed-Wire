@@ -7900,7 +7900,7 @@ module_warzone_scripts = [
     
 ### Antitank ###
         (this_or_next|eq, ":cur_item", "itm_vitzland_antitank_rifle"),
-        (this_or_next|eq, ":cur_item", "itm_union_antitank_rifle"),
+        (this_or_next|eq, ":cur_item", "itm_molvat_antitank_rifle"),
         (eq, ":cur_item", "itm_entenaii_antitank_rifle"),
         (item_set_slot, ":cur_item", slot_item_ammo_type, ammo_large_caliber),
         (assign, ":ready_animation", "anim_rifle_bolt_ready"),
@@ -11172,28 +11172,28 @@ module_warzone_scripts = [
 
 
 # script_musicplayer
-("musicplayer",
-  [
-        (store_script_param, ":on_off", 1),
+# ("musicplayer",
+  # [
+        # (store_script_param, ":on_off", 1),
 
-        (try_begin),
-          (lt,":on_off",1),
-          (call_script, "script_music_set_situation_with_culture", mtf_sit_travel),
+        # (try_begin),
+          # (lt,":on_off",1),
+          # (call_script, "script_music_set_situation_with_culture", mtf_sit_travel),
 
-          # (val_add, "$music_player", 1),
-          # (val_clamp,"$music_player", 8, 26),
-          (store_random_in_range,"$music_player", track_rainy_night_in_tallinn, track_custom_15+1),
-          (play_sound,"snd_radio_signal"),
-          (play_track, "$music_player", 2),
-          (assign,"$g_warzone_music",1),
-        (else_try),
-          (music_set_situation, 0),
-          (play_sound,"snd_radio_signal"),
-          (play_track, "track_bogus", 2),
-          (assign,"$g_warzone_music",0),
-        (try_end),
+          # # (val_add, "$music_player", 1),
+          # # (val_clamp,"$music_player", 8, 26),
+          # (store_random_in_range,"$music_player", track_rainy_night_in_tallinn, track_custom_15+1),
+          # (play_sound,"snd_radio_signal"),
+          # (play_track, "$music_player", 2),
+          # (assign,"$g_warzone_music",1),
+        # (else_try),
+          # (music_set_situation, 0),
+          # (play_sound,"snd_radio_signal"),
+          # (play_track, "track_bogus", 2),
+          # (assign,"$g_warzone_music",0),
+        # (try_end),
 
-  ]),
+  # ]),
 
 # script_cf_agent_is_in_parrying_animation
 # Component: Weapon break

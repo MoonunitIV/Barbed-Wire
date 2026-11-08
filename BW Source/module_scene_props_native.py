@@ -1517,7 +1517,7 @@ scene_props_native = [
 
 #other
 #is_entenaii_antitank_rifle
-#is_union_antitank_rifle
+#is_molvat_antitank_rifle
 #is_vitzland_antitank_rifle
   ("is_itami_grenade_launcher",0,"is_chinalake","0",[]),
 

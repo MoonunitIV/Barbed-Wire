@@ -742,7 +742,7 @@ ai_flamethrower_ashmaker
 ai_flamethrower_bashide
 ai_cannon_tyrant
 ai_entenaii_antitank_rifle
-ai_union_antitank_rifle
+ai_molvat_antitank_rifle
 ai_vitzland_antitank_rifle
 ai_itami_grenadelauncher
 ai_rocketlauncher
@@ -1087,7 +1087,7 @@ ai_2h_flamethrower_ashmaker
 ai_2h_flamethrower_bashide
 ai_2h_cannon_tyrant
 ai_2h_entenaii_antitank_rifle
-ai_2h_union_antitank_rifle
+ai_2h_molvat_antitank_rifle
 ai_2h_vitzland_antitank_rifle
 ai_2h_itami_grenadelauncher
 ai_2h_rocketlauncher

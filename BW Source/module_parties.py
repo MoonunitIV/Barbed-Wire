@@ -87,7 +87,7 @@ parties = [
 #Castellalvano = Trezzo Republic (Capital)
   ("town_8","Castellalvano", icon_map_republic_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-170.93, -216.81),[], 321),
 #T ir an Tsioraiocht = Kingdom of Galvae  
-  ("town_9","Tir an Tsioraiocht",   icon_map_galvae_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(142.67, -195.5),[], 321),  #[swycartographr] prev. coords: (143.27, -195.27)
+  ("town_9","Tir an Tsioraiocht",   icon_map_galvae_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(142.67, -195.5),[], 321),
 #Sely = Molvat-Berchav Union (Capital)
   ("town_10","Sely",   icon_map_union_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(124.59, 72.31),[], 222),            
 #Gerarissa = Trezzo Republic  
@@ -289,16 +289,16 @@ parties = [
 
 ##Empire_of_Vitzland##
   ("village_64","Kitzfeld",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-86.63, -175.3),[], 100),      
-  ("village_65","Neunfeld",  icon_map_bunker|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-15.55, -92.8),[], 100),      
+  ("village_65","Neunfeld",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-15.55, -92.8),[], 100),      
   ("village_66","Tourvoorde",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(33.31, -167.69),[], 100),    
   ("village_67","Avilun",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-59.38, -142.89),[], 100),       
-  ("village_68","Richtenwerder",  icon_map_bunker|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(81.71, -130.92),[], 100),
+  ("village_68","Richtenwerder",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(81.71, -130.92),[], 100),
   ("village_69","Munchenthal",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(23.21, -142.28),[], 100),   
   ("village_70","Klostermarkt",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-41.18, -130.74),[], 100), 
-  ("village_71","Gailstein",  icon_map_bunker|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-38.15, -157.64),[], 20),    
+  ("village_71","Gailstein",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-38.15, -157.64),[], 20),    
   ("village_72","Hoogezijl",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(23.09, -206.92),[], 60),      
   ("village_73","Freikkon",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-4.69, -130.94),[], 55),       
-  ("village_74","Maasschede",  icon_map_bunker|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-5.24, -170.31),[], 15),    
+  ("village_74","Maasschede",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-5.24, -170.31),[], 15),    
   ("village_75","Isselbeuren",  icon_village_b|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-64.36, -119.82),[], 10),   
   ("village_102","Kirchnitz",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-19.55, -150.92),[], 60),    
   ("village_103","Munzenhoring",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(24.43, -116.56),[], 55),  
@@ -307,20 +307,37 @@ parties = [
 ##Trezzo_Republic##
   ("village_76","Vallanse",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-157.6, -233.86),[], 105),   
   ("village_77","Badava",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-222.19, -173.61),[], 160),    
-  ("village_78","Aveirante",  icon_map_bunker|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-243.21, -214.09),[], 180),
+  ("village_78","Aveirante",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-243.21, -214.09),[], 180),
   ("village_79","Garano",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-119.83, -262.72),[], 0),      
   ("village_80","Casotri",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-266.27, -196.56),[], 40),    
-  ("village_81","Fatirante",  icon_map_bunker|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-260, -167.18),[], 20),    
+  ("village_81","Fatirante",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-260, -167.18),[], 20),    
   ("village_82","Bolora",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-136.69, -185.2),[], 60),      
   ("village_83","Trenremo",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-168.6, -178.49),[], 55),    
-  ("village_84","Guidoceno",  icon_map_bunker|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-164.95, -315.06),[], 15), 
+  ("village_84","Guidoceno",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-164.95, -315.06),[], 15), 
   ("village_85","Ceretta",  icon_village_b|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-196.09, -121.5),[], 10),     
   ("village_86","Netalina",  icon_village_b|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-101.8, -240.18),[], 35),    
   ("village_87","Riogoza",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-167.47, -288.54),[], 100),   
   ("village_106","Santatima",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-132.41, -91.0),[], 35),   
   ("village_107","Barcejara",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-194.36, -182.49),[], 160),
-  ("village_108","Bragarta",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-129.99, -224.4),[], 180),  
-  
+  ("village_108","Bragarta",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-134.23, -230.1),[], 180),  
+
+##Itami_Castedom##
+  ("village_115","Fuguan",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-108.56, 151.08),[], 180),    
+  ("village_116","Malluut",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-74.51, 148.13),[], 180),    
+  ("village_111","Yeogeup",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-91.36, 175.59),[], 180),    
+  ("village_112","Ulaangor",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-133.36, 312.59),[], 180),  
+  ("village_113","Iwashibetsu",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-77.74, 304.52),[], 180),
+  ("village_114","Tokyong",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-89.07, 231.99),[], 180),    
+
+##Bashide_Confederacy##
+  ("village_117","Huzuzkale",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(78.59, -397.1),[], 180),   
+  ("village_118","Siricalar",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-3.38, -405.62),[], 180),  
+  ("village_119","Dihona",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-0.72, -355.85),[], 180),     
+  ("village_120","Jeddabuk",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(22.31, -375.46),[], 180),   
+  ("village_121","Al Habous",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(22.49, -427.39),[], 180),  
+  ("village_122","Dammatat",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(83.73, -447.2),[], 180),    
+
+##
 ##Mines##
 ##Entenaii_Empire
   ("entenaii_empire_mine_iron","Iron_Mine",icon_bandit_lair|pf_is_static|pf_hide_defenders, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-189.18, -0.64),[]),  
@@ -345,6 +362,14 @@ parties = [
 ##Trezzo_Republic##
   ("republic_mine_iron","Iron_Mine",icon_bandit_lair|pf_is_static|pf_hide_defenders, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-136.79, -278.05),[]),
   ("republic_mine_coal","Iron_Mine",icon_bandit_lair|pf_is_static|pf_hide_defenders, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-163.08, -157.08),[]),
+
+##Itami_Castedom##
+  ("itami_mine_iron","Iron_Mine",icon_bandit_lair|pf_is_static|pf_hide_defenders, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-136.79, -278.05),[]),
+  ("itami_mine_coal","Iron_Mine",icon_bandit_lair|pf_is_static|pf_hide_defenders, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-163.08, -157.08),[]),
+
+##Bashide_Confederacy##
+  ("bashide_mine_iron","Iron_Mine",icon_bandit_lair|pf_is_static|pf_hide_defenders, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-136.79, -278.05),[]),
+  ("bashide_mine_coal","Iron_Mine",icon_bandit_lair|pf_is_static|pf_hide_defenders, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-163.08, -157.08),[]),
 
 #extra
 

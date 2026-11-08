@@ -147,7 +147,7 @@ scripts = [
 # INPUT: none
 ("game_start",
     [
-	  (play_track, "track_ross_bugden_something_wicked"),
+	  (play_track, "track_travel_neutral"),
       (faction_set_slot, "fac_player_supporters_faction", slot_faction_state, sfs_inactive),
 
       # (assign, "$g_player_luck", 200),
@@ -10779,7 +10779,7 @@ scripts = [
       (store_script_param_1, ":meeting_party"),
       (try_begin),
         (lt, "$g_encountered_party_relation", 0), #hostile
-#        (call_script, "script_music_set_situation_with_culture", mtf_sit_encounter_hostile),
+        (call_script, "script_music_set_situation_with_culture", mtf_sit_encounter_hostile),
       (try_end),
       (call_script, "script_get_meeting_scene"), (assign, ":meeting_scene", reg0),
       (modify_visitors_at_site,":meeting_scene"),(reset_visitors),
@@ -26057,7 +26057,7 @@ scripts = [
   # Output: none
   ("simulate_retreat",
     [
-      # (call_script, "script_music_set_situation_with_culture", mtf_sit_killed),
+      (call_script, "script_music_set_situation_with_culture", mtf_sit_killed),
       (set_show_messages, 0),
       (store_script_param, ":players_side_damage", 1),
       (store_script_param, ":enemy_side_damage", 2),
@@ -33278,7 +33278,7 @@ scripts = [
   [(store_faction_of_party, ":town_faction", "$current_town"),
   (party_get_slot, ":center_relation", "$current_town", slot_center_player_relation),
   (store_relation, ":town_faction_relation", ":town_faction", "fac_player_faction"),
-  (ge, ":center_relation", 0),
+  #(ge, ":center_relation", 0),
   (this_or_next|ge, ":center_relation", 5),
   (this_or_next|eq, ":town_faction", "$players_kingdom"),
   (this_or_next|ge, ":town_faction_relation", 5),
@@ -33297,12 +33297,12 @@ scripts = [
   [(store_faction_of_party, ":town_faction", "$current_town"),
   (party_get_slot, ":center_relation", "$current_town", slot_center_player_relation),
   (store_relation, ":town_faction_relation", ":town_faction", "fac_player_faction"),
-  (ge, ":center_relation", 0),
+  #(ge, ":center_relation", 0),
   (this_or_next|ge, ":center_relation", 10),
   (this_or_next|eq, ":town_faction", "$players_kingdom"),
   (this_or_next|ge, ":town_faction_relation", 0),
   (this_or_next|eq, ":town_faction", "$supported_pretender_old_faction"),
-  ( eq, "$players_kingdom", 0),
+  (eq, "$players_kingdom", 0),
   (party_slot_ge, "$current_town", slot_center_volunteer_troop_amount, 0),
   (party_slot_ge, "$current_town", slot_center_volunteer_troop_type, 1),
   (party_get_free_companions_capacity, ":free_capacity", "p_main_party"),
@@ -33392,7 +33392,7 @@ scripts = [
   [(store_faction_of_party, ":cur_faction", "$current_town"),
   (faction_get_slot, ":volunteer_troop", ":cur_faction", slot_faction_terror_troop),
   (party_get_slot, ":volunteer_amount", "$current_town", slot_center_volunteer_troop_amount),
-  (val_div, ":volunteer_amount", 5),
+  (assign, ":volunteer_amount", 1),
   (party_get_free_companions_capacity, ":free_capacity", "p_main_party"),
   (val_min, ":volunteer_amount", ":free_capacity"),
   (store_troop_gold, ":gold", "trp_player"),
@@ -33926,7 +33926,7 @@ scripts = [
         (troop_set_slot, "trp_npc15", slot_troop_town_with_contacts, "p_zendar"), #durquba
         (troop_set_slot, "trp_npc15", slot_lord_reputation_type, lrep_custodian), #
 
-
+        #npc16 - Mide Ui Braoin #
         (troop_set_slot, "trp_npc16", slot_troop_morality_type, tmt_aristocratic), #mide
         (troop_set_slot, "trp_npc16", slot_troop_morality_value, 4),
         (troop_set_slot, "trp_npc16", slot_troop_2ary_morality_type, tmt_humanitarian),
@@ -33939,7 +33939,6 @@ scripts = [
         (troop_set_slot, "trp_npc16", slot_troop_kingsupport_argument, argument_lords),
         (troop_set_slot, "trp_npc16", slot_troop_kingsupport_opponent, "trp_npc12"), #aulus
         (troop_set_slot, "trp_npc16", slot_troop_town_with_contacts, "p_zendar"), #khudan
-        # (troop_set_slot, "trp_npc16", slot_troop_town_with_contacts, "p_town_9"), #khudan
         (troop_set_slot, "trp_npc16", slot_lord_reputation_type, lrep_roguish), #
 
 
@@ -39266,12 +39265,14 @@ scripts = [
         (eq, ":faction_no", "fac_kingdom_6"),
         (assign, ":result", mtf_culture_6),
       (else_try),
+        (this_or_next|eq, ":faction_no", "fac_kingdom_7"),
+        (this_or_next|eq, ":faction_no", "fac_kingdom_8"),
+        (this_or_next|eq, ":faction_no", "fac_kingdom_9"),
+        (this_or_next|eq, ":faction_no", "fac_kingdom_10"),
         (this_or_next|eq, ":faction_no", "fac_outlaws"),
         (this_or_next|eq, ":faction_no", "fac_peasant_rebels"),
         (this_or_next|eq, ":faction_no", "fac_deserters"),
         (this_or_next|eq, ":faction_no", "fac_mountain_bandits"),
-        (this_or_next|eq, ":faction_no", "fac_kingdom_7"),
-        (this_or_next|eq, ":faction_no", "fac_kingdom_8"),
         (eq, ":faction_no", "fac_forest_bandits"),
         (assign, ":result", mtf_culture_6),
       (else_try),
@@ -39280,9 +39281,9 @@ scripts = [
       (assign, reg0, ":result"),
      ]),
 
-  # script_music_set_situation_with_culture
-  # Input: arg1 = music_situation
-  # Output: none
+  ## script_music_set_situation_with_culture
+  ## Input: arg1 = music_situation
+  ## Output: none
   ("music_set_situation_with_culture",
     [
       (store_script_param, ":situation", 1),
@@ -39305,12 +39306,12 @@ scripts = [
         (call_script, "script_get_closest_center", "p_main_party"),
         (call_script, "script_get_culture_with_party_faction_for_music", reg0),
         (val_or, ":culture", reg0),
-      # (else_try),
-        # (eq, ":situation", mtf_sit_multiplayer_fight),
-        # (call_script, "script_get_culture_with_faction_for_music", "$g_multiplayer_team_1_faction"),
-        # (val_or, ":culture", reg0),
-        # (call_script, "script_get_culture_with_faction_for_music", "$g_multiplayer_team_2_faction"),
-        # (val_or, ":culture", reg0),
+      (else_try),
+        (eq, ":situation", mtf_sit_multiplayer_fight),
+        (call_script, "script_get_culture_with_faction_for_music", "$g_multiplayer_team_1_faction"),
+        (val_or, ":culture", reg0),
+        (call_script, "script_get_culture_with_faction_for_music", "$g_multiplayer_team_2_faction"),
+        (val_or, ":culture", reg0),
       (else_try),
         (eq, ":situation", mtf_sit_travel),
         (call_script, "script_get_culture_with_party_faction_for_music", "p_main_party"),
@@ -39340,45 +39341,45 @@ scripts = [
      ]),
 
 
-  # # script_combat_music_set_situation_with_culture
-  # # Input: none
-  # # Output: none
-  # ("combat_music_set_situation_with_culture",
-    # [
-      # (assign, ":situation", mtf_sit_fight),
-      # (assign, ":num_allies", 0),
-      # (assign, ":num_enemies", 0),
-      # (try_for_agents, ":agent_no"),
-        # (agent_is_alive, ":agent_no"),
-        # (agent_is_human, ":agent_no"),
-        # (agent_get_troop_id, ":agent_troop_id", ":agent_no"),
-        # (store_character_level, ":troop_level", ":agent_troop_id"),
-        # (val_add,  ":troop_level", 10),
-        # (val_mul, ":troop_level", ":troop_level"),
-        # (try_begin),
-          # (agent_is_ally, ":agent_no"),
-          # (val_add, ":num_allies", ":troop_level"),
-        # (else_try),
-          # (val_add, ":num_enemies", ":troop_level"),
-        # (try_end),
-      # (try_end),
-      # (val_mul, ":num_allies", 4), #play ambushed music if we are 2 times outnumbered.
-      # (val_div, ":num_allies", 3),
-      # (try_begin),
-        # (lt, ":num_allies", ":num_enemies"),
-        # (assign, ":situation", mtf_sit_ambushed),
-      # (try_end),
-      # (call_script, "script_music_set_situation_with_culture", ":situation"),
-     # ]),
+  ## script_combat_music_set_situation_with_culture
+  ## Input: none
+  ## Output: none
+  ("combat_music_set_situation_with_culture",
+    [
+      (assign, ":situation", mtf_sit_fight),
+      (assign, ":num_allies", 0),
+      (assign, ":num_enemies", 0),
+      (try_for_agents, ":agent_no"),
+        (agent_is_alive, ":agent_no"),
+        (agent_is_human, ":agent_no"),
+        (agent_get_troop_id, ":agent_troop_id", ":agent_no"),
+        (store_character_level, ":troop_level", ":agent_troop_id"),
+        (val_add,  ":troop_level", 10),
+        (val_mul, ":troop_level", ":troop_level"),
+        (try_begin),
+          (agent_is_ally, ":agent_no"),
+          (val_add, ":num_allies", ":troop_level"),
+        (else_try),
+          (val_add, ":num_enemies", ":troop_level"),
+        (try_end),
+      (try_end),
+      (val_mul, ":num_allies", 4), #play ambushed music if we are 2 times outnumbered.
+      (val_div, ":num_allies", 3),
+      (try_begin),
+        (lt, ":num_allies", ":num_enemies"),
+        (assign, ":situation", mtf_sit_ambushed),
+      (try_end),
+      (call_script, "script_music_set_situation_with_culture", ":situation"),
+     ]),
 
-  # script_play_victorious_sound
-  # Input: none
-  # Output: none
+  ## script_play_victorious_sound
+  ## Input: none
+  ## Output: none
   ("play_victorious_sound",
    [
-     # (call_script, "script_music_set_situation_with_culture", mtf_sit_victorious),
-#      (play_cue_track, "track_victorious_neutral_1"),
-#      (play_track, "track_victorious_neutral_1", 1),
+     (call_script, "script_music_set_situation_with_culture", mtf_sit_victorious),
+     (play_cue_track, "track_victorious_neutral_1"),
+     (play_track, "track_victorious_neutral_1", 1),
      ]),
 
   # # script_set_items_for_tournament
