@@ -1,16 +1,14 @@
 Direct Contributers:
 kk4ever2000 - Co-Developer, textures, model finding, companion, ideas, motivation
-boii - Modeller
+boii - Modeller, textures
 Normynd - Companion Dialogue
-LoMany - Lore (Entenaii Dominion)
-Nerzuhl - Assets (from whitelinghand), companion
+LoMany - Lore (Entenaii Empire + Dominion)
+Nerzuhl - Assets (from whitelinghand), companion, inspiration
 BOCXOD - Lore (Vitzland)
 
 Other Contributers:
 Aro
 phosphor
-
-
 
 Warzone: Acron Team:
 People directly contributing:
@@ -40,6 +38,8 @@ OSP packages/mods used:
 
 Sketchfab contributors:
 DJMaesen, YadroGames, Igr1mat4k, Adriancgmask, sanyaork, Long Nguyễn, l0wpoly, buh, Pieter Ferreira, Brendan, avellium, KIFIR, Sir Erdees, FrodoUndead, Shedmon, Renafox, tobiasherbers, Thunder, Duane's Mind, Caboose3d, Daniel Zhabotinsky, Berk Gedik, britdawgmasterfunk, legitbanana, Vziuh, SuperMopsek, AEN, SKeLLeR, Lander Van den Branden, IronEqual, Kirilllucas, liltoba, Firewarden, Thompson, TastyTony, John Machine, HenRi, Millenia3d, Soother, Spike, Tijmen Matthys, Joe_Y.
+
+Music by Karl Casey @ White Bat Audio
 
 Archieduke - Dieselpunk OSP
 	-IYI-O-R-T- - Steam Punk mutant skin textures
@@ -268,4 +268,3 @@ https://mountworld.ucoz.ru/load/osp_resursy/
 "GP7 Gasmask" (https://skfb.ly/pLqG9) by Shadoff is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 "Russian GP-5  Gas Mask - (Filter Damaged)" (https://skfb.ly/6QSYs) by MattMakesSwords is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 "Old Miner's helmet Low-Poly Reworked" (https://skfb.ly/o6Usq) by TwilightFox is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
-

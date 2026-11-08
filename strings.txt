@@ -4586,7 +4586,7 @@ str_skl_riding Riding
 str_skl_athletics Athletics
 str_skl_shield Prowess
 str_skl_weapon_master Weapon_Master
-str_skl_reserved_9 Crafter
+str_skl_crafting Crafter
 str_skl_reserved_10 Reserved_Skill_10
 str_skl_reserved_11 Reserved_Skill_11
 str_skl_reserved_12 Reserved_Skill_12
@@ -4595,8 +4595,8 @@ str_skl_power_draw Power_Draw
 str_skl_power_throw Power_Throw
 str_skl_power_strike Power_Strike
 str_skl_ironflesh Ironflesh
-str_skl_reserved_14 Scavenger
-str_skl_reserved_15 Luck
+str_skl_scavenging Scavenger
+str_skl_lucky Luck
 str_skl_reserved_16 Reserved_Skill_16
 str_skl_reserved_17 Reserved_Skill_17
 str_skl_reserved_18 Reserved_Skill_18

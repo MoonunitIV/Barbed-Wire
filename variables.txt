@@ -1087,3 +1087,5 @@ enlisted_lord
 total_cannon_count
 relative_of_merchant_is_found
 bandits_spawned_extra
+g_multiplayer_team_1_faction
+g_multiplayer_team_2_faction
